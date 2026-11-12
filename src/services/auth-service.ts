@@ -10,6 +10,10 @@ export async function registerUser(
   jwtSecret: string,
   input: RegisterRequest
 ): Promise<AuthResponse> {
+  if (!jwtSecret) {
+    throw new HTTPException(500, { message: "Server misconfiguration: JWT_SECRET environment variable is missing" });
+  }
+
   const existingUser = await db
     .select()
     .from(users)
@@ -68,6 +72,10 @@ export async function loginUser(
   jwtSecret: string,
   input: LoginRequest
 ): Promise<AuthResponse> {
+  if (!jwtSecret) {
+    throw new HTTPException(500, { message: "Server misconfiguration: JWT_SECRET environment variable is missing" });
+  }
+
   const user = await db
     .select()
     .from(users)

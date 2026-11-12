@@ -19,7 +19,8 @@
     "binding": "ASSETS"
   },
   "vars": {
-    "ENVIRONMENT": "development"
+    "ENVIRONMENT": "production",
+    "JWT_SECRET": "fuo-exam-platform-production-jwt-secret-key-32chars-min"
   },
   "account_id": "c6146cc59d61c594f9b23499e9aa8af5"
 }
