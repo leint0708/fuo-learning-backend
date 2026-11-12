@@ -58,8 +58,7 @@ function extractOptions(q: any): Record<string, string> {
 
 export function generateSeedSql(examsRootDir: string, outFile: string) {
   const sqlStatements: string[] = [
-    "-- Seed data generated from exams/ directory",
-    "BEGIN TRANSACTION;"
+    "-- Seed data generated from exams/ directory"
   ];
   const now = new Date().toISOString();
 
@@ -146,10 +145,9 @@ export function generateSeedSql(examsRootDir: string, outFile: string) {
     }
   }
 
-  sqlStatements.push("COMMIT;");
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
   fs.writeFileSync(outFile, sqlStatements.join("\n"), "utf8");
-  console.log(`Generated ${sqlStatements.length - 2} SQL seed statements to ${outFile}`);
+  console.log(`Generated ${sqlStatements.length - 1} SQL seed statements to ${outFile}`);
 }
 
 async function main() {

@@ -10,7 +10,7 @@
     {
       "binding": "DB",
       "database_name": "fuo-learning-db",
-      "database_id": "fuo-learning-db-local",
+      "database_id": "8f9c116e-728c-4c29-9fae-a266666a28c1",
       "migrations_dir": "drizzle"
     }
   ],
@@ -20,5 +20,6 @@
   },
   "vars": {
     "ENVIRONMENT": "development"
-  }
+  },
+  "account_id": "c6146cc59d61c594f9b23499e9aa8af5"
 }
