@@ -26,6 +26,15 @@ yarn-error.log*
 # Generated seed SQL
 scripts/seed.sql
 
+# AI & Agent artifacts
+.agents/
+.specify/
+specs/
+.gemini/
+.claude/
+.cursor/
+.windsurf/
+
 # OS and Editor files
 .DS_Store
 Thumbs.db
