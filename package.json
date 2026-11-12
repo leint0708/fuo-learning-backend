@@ -1,0 +1,36 @@
+{
+  "name": "fuo-learning-backend",
+  "version": "1.0.0",
+  "description": "Backend API for exam practice platform on Cloudflare Workers",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "db:migrate:remote": "wrangler d1 migrations apply DB --remote",
+    "db:seed:local": "tsx scripts/seed-d1.ts --local",
+    "db:seed:remote": "tsx scripts/seed-d1.ts --remote"
+  },
+  "dependencies": {
+    "@hono/swagger-ui": "^0.5.0",
+    "@hono/zod-openapi": "^0.18.4",
+    "drizzle-orm": "^0.38.4",
+    "hono": "^4.6.20",
+    "jose": "^5.9.6",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.7.4",
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "@types/node": "^22.13.4",
+    "drizzle-kit": "^0.30.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8",
+    "wrangler": "^3.109.1"
+  }
+}

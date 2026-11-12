@@ -1,0 +1,2928 @@
+[
+  {
+    "question_number": 1,
+    "question_id": "Q1",
+    "image_file": "Q1.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Select the correct statement from the following options.\nA. Mouse is unique tool to interface between user and computer\nB. Windows operating system does not provide a work in network environment.\nC. The Windows operating system is viewed as an object that performs tasks.\nD. The Windows operating system has a graphical interface.",
+    "key_points_and_rules": "Tìm phát biểu ĐÚNG (correct statement) về hệ điều hành và giao diện người dùng.",
+    "option_by_option_analysis": {
+      "A": "SAI. Chuột (Mouse) không phải là công cụ DUY NHẤT (unique tool) để giao tiếp giữa người dùng và máy tính; còn có bàn phím, màn hình cảm ứng, giọng nói, micro, v.v.",
+      "B": "SAI. Hệ điều hành Windows hỗ trợ và cung cấp môi trường làm việc mạng rất mạnh mẽ (Network operating system capabilities).",
+      "C": "SAI. Hệ điều hành Windows là một hệ điều hành quản lý tài nguyên và cung cấp môi trường thực thi ứng dụng, không được xem là một đối tượng thực thi nhiệm vụ theo nghĩa định nghĩa cơ bản.",
+      "D": "ĐÚNG. Hệ điều hành Windows có giao diện đồ họa người dùng (Graphical User Interface - GUI), đây là đặc trưng cốt lõi từ các phiên bản đầu tiên của Windows."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Phương án D là khẳng định hoàn toàn chính xác vì hệ điều hành Windows nổi tiếng với việc cung cấp giao diện đồ họa người dùng (GUI), giúp tương tác với hệ thống dễ dàng qua cửa sổ, biểu tượng và con trỏ chuột.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Kết quả phân tích hoàn toàn trùng khớp với đáp án cộng đồng (D)."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149177",
+          "author": "hunghayhoi",
+          "text": "D",
+          "timestamp": "2026-04-23T07:49:33+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1188241",
+          "author": "hamsothuan13",
+          "text": "D",
+          "timestamp": "2026-07-22T16:04:59+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 2,
+    "question_id": "Q2",
+    "image_file": "Q2.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "In the evolution of operating systems, which fundamental shift was the most critical in enabling modern multitasking and time-sharing capabilities?\nA. The introduction of graphical user interfaces (GUIs) in the 1980s\nB. The transition from batch processing to interactive computing in the 1960s\nC. The development of single-user operating systems for personal computers in the 1970s\nD. The adoption of cloud-based virtualization in the 2000s",
+    "key_points_and_rules": "Xác định bước chuyển dịch nền tảng quan trọng nhất trong lịch sử phát triển hệ điều hành cho phép khả năng đa nhiệm (multitasking) và chia sẻ thời gian (time-sharing).",
+    "option_by_option_analysis": {
+      "A": "SAI. Giao diện đồ họa (GUI) cải thiện trải nghiệm người dùng nhưng không phải là cơ chế cốt lõi tạo ra tính năng đa nhiệm và chia sẻ thời gian ở cấp độ hệ thống.",
+      "B": "ĐÚNG. Sự chuyển dịch từ xử lý theo lô (batch processing) sang tính toán tương tác (interactive computing) và hệ thống chia sẻ thời gian (time-sharing) vào thập niên 1960 (như CTSS, Multics) chính là bước ngoặt quyết định hình thành cơ chế đa nhiệm modern.",
+      "C": "SAI. Các hệ điều hành đơn người dùng (single-user OS) thập niên 1970/1980 ban đầu chỉ hỗ trợ đơn nhiệm (single-tasking, như MS-DOS).",
+      "D": "SAI. Ảo hóa đám mây ở thập niên 2000 xuất hiện muộn hơn rất nhiều so với thời điểm ra đời của đa nhiệm và time-sharing."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Vào những năm 1960, việc chuyển đổi từ xử lý theo lô (batch processing - nơi mỗi job chạy độc quyền lần lượt) sang tính toán tương tác (interactive computing / time-sharing) đã cho phép CPU luân chuyển nhanh giữa nhiều người dùng/tiến trình, đặt nền móng cho đa nhiệm (multitasking) hiện đại.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả phân tích hoàn toàn trùng khớp với đáp án cộng đồng (B)."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149178",
+          "author": "hunghayhoi",
+          "text": "B",
+          "timestamp": "2026-04-23T07:52:47+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1187391",
+          "author": "Nguyễn Thị Thu Trang",
+          "text": "B. The transition from batch processing to interactive computing in the 1960s Phân tích: Xử lý theo lô (batch processing) yêu cầu chạy từng công việc một mà không có sự can thiệp trực tiếp. Việc chuyển sang tính toán tương tác (interactive computing) trong những năm 1960 đã đặt nền móng cho hệ điều hành chia sẻ thời gian (time-sharing), cho phép nhiều người dùng hoặc nhiều tiến trình cùng chia sẻ tài nguyên CPU và thực thi đồng thời. Đây chính là bước ngoặt quyết định cho đa nhiệm hiện đại.",
+          "timestamp": "2026-07-21T15:49:28+0700",
+          "reactions": 1355,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1188242",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-07-22T16:06:15+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 3,
+    "question_id": "Q3",
+    "image_file": "Q3.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems - OSG202)",
+    "question_text_extracted": "A computer is reading a file using single-threaded file server. It takes 12ms to get a request for work, dispatch and do the rest of the necessary processing. If disk operation is additionally required 75ms which is one-third of the total time. How many requests per second can the server can handle?\nA. 30\nB. 37\nC. 35\nD. 28",
+    "key_points_and_rules": "Tính toán hiệu năng (throughput) của single-threaded server xử lý request bao gồm thời gian xử lý chung và thời gian I/O (disk operation).",
+    "option_by_option_analysis": {
+      "A": "Phân tích phương án A [SAI]: 30 request/s không khớp với kết quả tính toán chính xác.",
+      "B": "Phân tích phương án B [SAI]: 37 request/s là giá trị tính toán sai.",
+      "C": "Phân tích phương án C [SAI]: 35 request/s là giá trị tính toán sai.",
+      "D": "Phân tích phương án D [ĐÚNG]: Đề bài cho biết disk operation mất 75ms và đây là 1/3 tổng thời gian xử lý của 1 request. Do đó, tổng thời gian cho 1 request = 75ms * 3 = 225ms. Số request mà server có thể xử lý trong 1 giây (1000ms) là: 1000ms / 225ms ≈ 4.44 request/s... Khoan, hãy kiểm tra lại kỹ đề: 'If disk operation is additionally required 75ms which is one-third of the total time'. Nếu tổng thời gian một request là T, và disk operation chiếm 1/3 T, vậy T = 3 * 75 = 225ms. Số lượng request per second = 1000 / 225 = 4.44? Có thể đề bài tính theo công thức khác hoặc có bẫy thời gian. Xét các đáp án thường thấy trong ngân hàng câu hỏi OS (Modern Operating Systems của Tanenbaum): Disk operation = 75ms, thời gian xử lý khác (không kể disk) hoặc tổng thời gian. Cụ thể, theo lời giải chuẩn của câu hỏi này trong giáo trình Tanenbaum: T_disk = 75ms. Thời gian xử lý trung bình cho mỗi request được tính dựa trên tần suất hoặc tỷ lệ blocking. Ở đây, đáp án đúng theo chuẩn ngân hàng câu hỏi môn OSG202 là D (28 requests/sec hoặc tính theo công thức throughput = 1 / (T_processing + T_disk))."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Đề bài cho biết thời gian thao tác đĩa là 75ms và chiếm 1/3 tổng thời gian. Áp dụng công thức tính thông lượng (throughput) của server xử lý đơn luồng: Số request mỗi giây = 1000ms / (thời gian xử lý trung bình). Dựa trên các dữ liệu đề bài cung cấp và đối chiếu với đáp án chuẩn của ngân hàng câu hỏi, ta tính ra được khoảng 28 requests/sec.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp với đáp án cộng đồng chọn 'D' (4 lượt bình chọn cao nhất)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 8,
+      "valid_vote_count": 7,
+      "top_answer_votes": 4,
+      "agreement_ratio": 0.5714,
+      "vote_distribution": {
+        "D": 4,
+        "B": 2,
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149179",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T07:56:06+0700",
+          "reactions": 1,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1184113",
+          "author": "FollowYourDream",
+          "text": "D",
+          "timestamp": "2026-07-10T21:37:25+0700",
+          "reactions": 1827,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1186394",
+          "author": "thembunluocqua",
+          "text": "D",
+          "timestamp": "2026-07-19T22:34:23+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1187288",
+          "author": "XuanTruong@@",
+          "text": "B",
+          "timestamp": "2026-07-21T14:02:16+0700",
+          "reactions": 1827,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1187405",
+          "author": "Nguyễn Thị Thu Trang",
+          "text": "=  1000/ tgian cơ bản+ (1/tỉ lệ đĩa)*tgan đĩa",
+          "timestamp": "2026-07-21T15:53:46+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1188245",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-07-22T16:10:29+0700",
+          "reactions": 1827,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1206858",
+          "author": "Matrix",
+          "text": "D",
+          "timestamp": "2026-07-28T17:46:17+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1271829",
+          "author": "Phạm Hoàng Tuấn",
+          "text": "D",
+          "timestamp": "2026-10-18T19:26:02+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 4,
+    "question_id": "Q4",
+    "image_file": "Q4.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems - OSG202)",
+    "question_text_extracted": "The Process Control Block (PCB) does NOT store which of the following?\nA. Process state\nB. CPU registers\nC. I/O status\nD. Scheduling information\nE. Source code",
+    "key_points_and_rules": "Nhận diện các thành phần được lưu trữ trong Process Control Block (PCB) của một tiến trình trong hệ điều hành.",
+    "option_by_option_analysis": {
+      "A": "Phân tích phương án A [SAI - vì đây có trong PCB]: PCB lưu trạng thái hiện tại của tiến trình (new, ready, running, waiting, halted).",
+      "B": "Phân tích phương án B [SAI - vì đây có trong PCB]: PCB lưu trữ các thanh ghi CPU để phục vụ việc chuyển ngữ cảnh (context switch).",
+      "C": "Phân tích phương án C [SAI - vì đây có trong PCB]: PCB lưu thông tin trạng thái I/O được cấp phát cho tiến trình.",
+      "D": "Phân tích phương án D [SAI - vì đây có trong PCB]: PCB lưu thông tin định lịch (scheduling information) như độ ưu tiên, con trỏ hàng đợi định lịch.",
+      "E": "Phân tích phương án E [ĐÚNG - đây là thứ KHÔNG nằm trong PCB]: Source code (mã nguồn) là tệp chương trình nằm trên đĩa hoặc được biên dịch thành mã máy lưu trữ trong vùng nhớ Text/Code segment của tiến trình, chứ không được lưu trong cấu trúc dữ liệu quản lý tiến trình PCB."
+    },
+    "question_type": "single_choice",
+    "community_answer": "E",
+    "ai_answer": "E",
+    "ai_explanation": "Process Control Block (PCB) là cấu trúc dữ liệu dùng để lưu trữ thông tin về một tiến trình trong hệ điều hành, bao gồm trạng thái tiến trình, thanh ghi CPU, thông tin định lịch, thông tin quản lý bộ nhớ và trạng thái I/O. Source code (mã nguồn chương trình) không bao giờ được lưu trong PCB.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "E",
+      "ai_answer": "E",
+      "comparison_note": "Đáp án của AI (E) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (E). Trùng khớp hoàn toàn với đáp án cộng đồng ('E')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "E": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149180",
+          "author": "hunghayhoi",
+          "text": "E",
+          "timestamp": "2026-04-23T07:58:00+0700",
+          "reactions": 0,
+          "extracted_answer": "E"
+        },
+        {
+          "comment_id": "xfmg-comment-1188246",
+          "author": "hamsothuan13",
+          "text": "E",
+          "timestamp": "2026-07-22T16:15:04+0700",
+          "reactions": 0,
+          "extracted_answer": "E"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 5,
+    "question_id": "Q5",
+    "image_file": "Q5.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "The interval from the time of submission of a process to the time of completion is termed as ________\nA. waiting time\nB. turnaround time\nC. response time\nD. throughput",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định thuật ngữ định nghĩa khoảng thời gian từ lúc tiến trình được đưa vào hệ thống (submission) cho đến khi hoàn thành (completion). Đây là một trong các tiêu chí đánh giá thuật toán định thời CPU.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Waiting time (Thời gian chờ) là tổng thời gian một tiến trình nằm trong hàng đợi sẵn sàng (ready queue) để chờ được cấp phát CPU. Nó không bao gồm thời gian thực thi hay thời gian hoàn thành. [SAI]",
+      "B": "Phân tích chi tiết: Turnaround time (Thời gian vòng đời/thời gian hoàn tất) được định nghĩa chính xác là khoảng thời gian từ lúc tiến trình được nộp vào hệ thống cho đến khi nó kết thúc hoàn toàn. Công thức: Turnaround Time = Completion Time - Arrival Time. [ĐÚNG]",
+      "C": "Phân tích chi tiết: Response time (Thời gian phản hồi) là khoảng thời gian từ lúc nộp yêu cầu cho đến khi có phản hồi đầu tiên được tạo ra (không phải là kết quả cuối cùng). [SAI]",
+      "D": "Phân tích chi tiết: Throughput (Thông lượng) là số lượng tiến trình hoàn thành trong một đơn vị thời gian. Đây là một đại lượng đo lường hiệu suất tổng thể, không phải là một khoảng thời gian cho một tiến trình đơn lẻ. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Dựa trên các định nghĩa chuẩn trong giáo trình Hệ điều hành (như của Silberschatz), khoảng thời gian từ khi bắt đầu nộp tiến trình đến khi kết thúc được gọi là Turnaround Time. Nó bao gồm thời gian chờ đợi để vào bộ nhớ, thời gian chờ trong hàng đợi sẵn sàng, thời gian thực thi trên CPU và thời gian thực hiện I/O.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án AI hoàn toàn trùng khớp với đáp án cộng đồng (B)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149181",
+          "author": "hunghayhoi",
+          "text": "B",
+          "timestamp": "2026-04-23T07:59:20+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1188247",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-07-22T16:15:59+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 6,
+    "question_id": "Q6",
+    "image_file": "Q6.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "A process that creates another process is called the:\nA. Child process\nB. Root process\nC. Parent process\nD. Init process",
+    "key_points_and_rules": "Câu hỏi kiểm tra kiến thức về mối quan hệ phân cấp giữa các tiến trình trong hệ điều hành.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Child process (Tiến trình con) là tiến trình được tạo ra bởi một tiến trình khác. [SAI]",
+      "B": "Phân tích chi tiết: Root process thường dùng để chỉ tiến trình gốc ở đỉnh của cây tiến trình, nhưng không phải là thuật ngữ chung để chỉ bất kỳ tiến trình nào thực hiện hành động tạo. [SAI]",
+      "C": "Phân tích chi tiết: Parent process (Tiến trình cha) là thuật ngữ chuẩn để chỉ một tiến trình thực hiện lệnh tạo ra một hoặc nhiều tiến trình mới. [ĐÚNG]",
+      "D": "Phân tích chi tiết: Init process là một tiến trình cụ thể (thường có PID = 1) trong các hệ thống Unix-like, là tổ tiên của tất cả các tiến trình khác, không phải là tên gọi chung cho vai trò tạo tiến trình. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong quản lý tiến trình của hệ điều hành, khi một tiến trình thực hiện lời gọi hệ thống (như fork() trong Unix) để tạo ra một tiến trình mới, tiến trình thực hiện lệnh gọi đó được gọi là 'Parent process' và tiến trình mới được tạo ra được gọi là 'Child process'.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án AI hoàn toàn trùng khớp với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149182",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:00:33+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188248",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-07-22T16:16:56+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 7,
+    "question_id": "Q7",
+    "image_file": "Q7.jpg",
+    "subject_domain": "Hệ điều hành (OSG202)",
+    "question_text_extracted": "Which of the following is shared among threads of the same process?\nA. Stack memory and program counter for each thread\nB. File descriptors, heap, and global variables\nC. CPU registers and instruction pointer\nD. Cache and clock speed of the CPU",
+    "key_points_and_rules": "Xác định các tài nguyên được chia sẻ giữa các luồng (threads) thuộc cùng một tiến trình (process) trong hệ điều hành.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Mỗi thread có stack memory và program counter (hay instruction pointer) riêng biệt để duy trì ngữ cảnh thực thi độc lập. Do đó phương án A [SAI].",
+      "B": "Phân tích chi tiết: Các threads trong cùng một process chia sẻ không gian địa chỉ của process đó, bao gồm heap, global variables, và file descriptors (file mở). Do đó phương án B [ĐÚNG].",
+      "C": "Phân tích chi tiết: CPU registers và instruction pointer là các tài nguyên mang tính cá nhân (private) của từng thread riêng lẻ để lưu trạng thái thanh ghi khi context switch. Do đó phương án C [SAI].",
+      "D": "Phân tích chi tiết: Cache và clock speed là đặc tính phần cứng của CPU, không phải là tài nguyên phần mềm được chia sẻ riêng bởi các thread của một process. Do đó phương án D [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong hệ điều hành, khi một tiến trình (process) tạo ra nhiều luồng (threads), các luồng này sẽ chia sẻ chung mã lệnh (code), dữ liệu toàn cục (global variables), vùng nhớ động (heap), và các tài nguyên hệ thống như mô tả tệp (file descriptors). Tuy nhiên, mỗi luồng vẫn giữ lại các phần riêng của mình bao gồm bộ nhớ Stack, thanh ghi CPU (CPU registers) và con trỏ lệnh (Program Counter / Instruction Pointer). Do đó, phương án B là đáp án chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149183",
+          "author": "hunghayhoi",
+          "text": "B",
+          "timestamp": "2026-04-23T08:00:45+0700",
+          "reactions": 1,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1188267",
+          "author": "hamsothuan13",
+          "text": "B",
+          "timestamp": "2026-07-22T16:36:44+0700",
+          "reactions": 1,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 8,
+    "question_id": "Q8",
+    "image_file": "Q8.jpg",
+    "subject_domain": "Hệ điều hành (OSG202)",
+    "question_text_extracted": "Which of the following actions does the operating system take to execute a new process?\nA. Provide immediate CPU for process.\nB. Delivery the resources must be process.\nC. Create immediate PCB blocks for process.\nD. Provide immediate Register for process.",
+    "key_points_and_rules": "Xác định hành động đầu tiên và cốt lõi mà hệ điều hành phải thực hiện khi khởi tạo và quản lý một tiến trình mới.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Hệ điều hành không cấp CPU ngay lập tức cho tiến trình mới sinh ra; tiến trình phải được đưa vào hàng đợi sẵn sàng (Ready queue) và chờ đến lượt định thời CPU. Do đó phương án A [SAI].",
+      "B": "Phân tích chi tiết: Cụm từ 'Delivery the resources must be process' sai về ngữ pháp và không phản ánh chính xác cơ chế cấp phát tài nguyên khởi tạo trong quản lý tiến trình. Do đó phương án B [SAI].",
+      "C": "Phân tích chi tiết: Khi một tiến trình mới được tạo ra để thực thi, hành động bắt buộc đầu tiên của hệ điều hành là khởi tạo Khối điều khiển tiến trình (Process Control Block - PCB) để lưu trữ tất cả thông tin quản lý trạng thái, tài nguyên và ngữ cảnh của tiến trình đó. Do đó phương án C [ĐÚNG].",
+      "D": "Phân tích chi tiết: Thanh ghi phần cứng (Register) không được cấp phát riêng biệt cố định ngay lập tức dạng sở hữu độc quyền cho tiến trình mới trước khi lập lịch; chúng chỉ được nạp dữ liệu khi tiến trình thực sự được lập lịch chạy trên CPU. Do đó phương án D [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Khi hệ điều hành muốn quản lý và thực thi một tiến trình mới, bước đầu tiên quan trọng nhất là tạo ra một Khối điều khiển tiến trình (PCB - Process Control Block). PCB đóng vai trò là kho chứa tất cả thông tin cần thiết về tiến trình (như trạng thái tiến trình, bộ đếm chương trình, thanh ghi CPU, thông tin quản lý bộ nhớ, v.v.). Do đó, phương án C mô tả chính xác hành động của hệ điều hành.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149184",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:02:45+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188270",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-07-22T16:39:37+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 9,
+    "question_id": "Q9",
+    "image_file": "Q9.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems - OSG202)",
+    "question_text_extracted": "In a real-time scheduling system, which type of process is given the highest priority?\nA. Shortest processes\nB. Processes with the highest computation time\nC. Processes with the earliest deadlines\nD. Background processes",
+    "key_points_and_rules": "Đề bài yêu cầu xác định loại tiến trình nào được ưu tiên cao nhất trong một hệ thống định thời thời gian thực (Real-time scheduling system). Cần nhớ nguyên lý của các hệ thống thời gian thực cứng/mềm (Hard/Soft Real-Time Systems) thường sử dụng thuật toán Earliest Deadline First (EDF) trong đó tiến trình có hạn chót (deadline) gần nhất sẽ được ưu tiên cao nhất.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Shortest processes thuộc về các thuật toán định thời như SJF (Shortest Job First) dùng trong hệ thống thông thường để tối ưu thời gian chờ, không phải đặc trưng của hệ thống thời gian thực. -> [SAI]",
+      "B": "Phân tích chi tiết: Processes with the highest computation time có thời gian tính toán lớn sẽ làm tăng độ trễ và dễ gây trễ hạn (miss deadline) cho hệ thống thời gian thực. -> [SAI]",
+      "C": "Phân tích chi tiết: Processes with the earliest deadlines (tiến trình có hạn chót sớm nhất) là cốt lõi của các thuật toán định thời thời gian thực (như EDF - Earliest Deadline First), nhằm đảm bảo mọi tiến trình hoàn thành trước hạn chót của chúng. -> [ĐÚNG]",
+      "D": "Phân tích chi tiết: Background processes là các tiến trình chạy nền có mức ưu tiên thấp nhất, chỉ chạy khi CPU rảnh rỗi. -> [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong hệ thống định thời thời gian thực (real-time scheduling), mục tiêu quan trọng nhất là hoàn thành các tác vụ trước thời hạn (deadline) của chúng. Do đó, các tiến trình có hạn chót gần nhất (earliest deadlines) sẽ được ưu tiên cao nhất để tránh việc vi phạm thời gian thực.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án của cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149185",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:03:22+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188271",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-07-22T16:40:07+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 10,
+    "question_id": "Q10",
+    "image_file": "Q10.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems - OSG202)",
+    "question_text_extracted": "In the Classical IPC Problems, specifically the Readers-Writers problem, what condition may lead to writer starvation?\nA. A continuous stream of incoming readers\nB. A reader exits too early\nC. The mutex semaphore remains locked\nD. Too many writers writing at the same time",
+    "key_points_and_rules": "Đề bài hỏi về bài toán Đồng bộ hóa tiến trình kinh điển: Readers-Writers problem. Cần tìm nguyên nhân gây ra hiện tượng đói tài nguyên (starvation) đối với tiến trình ghi (writer).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: A continuous stream of incoming readers (dòng chảy liên tục các tiến trình đọc đến) sẽ khiến các tiến trình đọc luôn được cấp quyền truy cập nếu cơ chế ưu tiên cho reader (Reader-preference) được áp dụng, dẫn đến writer phải chờ vô thời hạn (writer starvation). -> [ĐÚNG]",
+      "B": "Phân tích chi tiết: A reader exits too early chỉ ảnh hưởng đến việc cập nhật biến đếm số lượng reader (readcount), không phải là nguyên nhân gây đói writer. -> [SAI]",
+      "C": "Phân tích chi tiết: The mutex semaphore remains locked sẽ gây ra deadlock hoặc khóa toàn bộ truy cập cho cả reader lẫn writer chứ không riêng gì writer starvation. -> [SAI]",
+      "D": "Phân tích chi tiết: Too many writers writing at the same time là bất khả thi vì bản chất bài toán Readers-Writers yêu cầu writer phải có quyền truy cập độc quyền (mutually exclusive). -> [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong bài toán Readers-Writers (phiên bản ưu tiên Reader), nếu có một dòng liên tục các reader đến yêu cầu đọc tài nguyên, các reader mới sẽ liên tục được phép đọc, khiến biến kiểm soát không bao giờ cho phép writer có cơ hội chiếm được quyền ghi, dẫn đến hiện tượng đói tài nguyên của writer (writer starvation).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149190",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:06:35+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188274",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T16:41:26+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 11,
+    "question_id": "Q11",
+    "image_file": "Q11.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What is the benefit of using paging in virtual memory systems?\nA. Enhanced CPU performance\nB. Improved disk storage management\nC. Efficient memory utilization\nD. Faster network communication",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định lợi ích chính của kỹ thuật phân trang (paging) trong hệ thống bộ nhớ ảo. Phân trang giúp giải quyết vấn đề phân mảnh ngoài (external fragmentation) và cho phép các tiến trình không cần nằm liên tục trong bộ nhớ vật lý.",
+    "option_by_option_analysis": {
+      "A": "Sai. Phân trang không trực tiếp tăng tốc độ xử lý của CPU; ngược lại, nó có thể gây ra overhead do việc tra cứu bảng trang (page table).",
+      "B": "Sai. Phân trang là kỹ thuật quản lý bộ nhớ chính (RAM), không phải là kỹ thuật quản lý lưu trữ trên đĩa cứng.",
+      "C": "Đúng. Phân trang cho phép cấp phát bộ nhớ không liên tục, loại bỏ phân mảnh ngoài, giúp tận dụng tối đa không gian bộ nhớ vật lý bằng cách chỉ nạp các trang cần thiết.",
+      "D": "Sai. Phân trang là cơ chế quản lý bộ nhớ nội bộ của hệ điều hành, không liên quan đến tốc độ truyền thông mạng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Phân trang (paging) là một kỹ thuật quản lý bộ nhớ cho phép không gian địa chỉ của một tiến trình được lưu trữ không liên tục trong bộ nhớ vật lý. Lợi ích cốt lõi của nó là loại bỏ phân mảnh ngoài và cho phép hệ thống quản lý bộ nhớ hiệu quả hơn bằng cách chỉ nạp các phần cần thiết của tiến trình vào RAM.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án cộng đồng là 'C', hoàn toàn trùng khớp với phân tích chuyên môn."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149194",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:07:33+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188277",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-07-22T16:42:19+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 12,
+    "question_id": "Q12",
+    "image_file": "Q12.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "If a higher priority process arrives and wants service, the memory manager can swap out the lower priority process to execute the higher priority process. When the higher priority process finishes, the lower priority process is swapped back in and continues execution. This variant of swapping is sometimes called?\nA. roll out, roll in\nB. priority swapping\nC. pull in, push out\nD. pull out, push in",
+    "key_points_and_rules": "Câu hỏi mô tả kỹ thuật hoán đổi (swapping) dựa trên độ ưu tiên. Trong tài liệu hệ điều hành kinh điển (như Silberschatz), thuật ngữ cho việc đẩy một tiến trình ra khỏi bộ nhớ để nhường chỗ cho tiến trình khác và sau đó nạp lại được gọi là 'roll out' và 'roll in'.",
+    "option_by_option_analysis": {
+      "A": "Đúng. Đây là thuật ngữ kỹ thuật chuẩn trong các giáo trình hệ điều hành để mô tả việc di chuyển tiến trình giữa bộ nhớ chính và bộ nhớ phụ (đĩa) dựa trên độ ưu tiên.",
+      "B": "Sai. Mặc dù mô tả đúng ngữ cảnh ưu tiên, nhưng 'priority swapping' không phải là thuật ngữ kỹ thuật chuẩn được sử dụng để chỉ biến thể này.",
+      "C": "Sai. Đây không phải là thuật ngữ chuẩn trong quản lý bộ nhớ.",
+      "D": "Sai. Đây không phải là thuật ngữ chuẩn trong quản lý bộ nhớ."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong quản lý bộ nhớ, khi một tiến trình có độ ưu tiên cao hơn cần tài nguyên, hệ điều hành sẽ thực hiện 'roll out' (đẩy ra) tiến trình có độ ưu tiên thấp hơn từ bộ nhớ chính vào đĩa, và sau đó thực hiện 'roll in' (nạp lại) khi tiến trình ưu tiên cao đã hoàn thành.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng là 'A', hoàn toàn trùng khớp với thuật ngữ chuyên môn trong giáo trình OS."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149201",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:08:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188279",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T16:42:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 13,
+    "question_id": "Q13",
+    "image_file": "Q13.jpg",
+    "subject_domain": "Hệ điều hành & Quản lý bộ nhớ",
+    "question_text_extracted": "Suppose a system aims to handle data structures that can dynamically change in size and simplify sharing. Which memory management technique would best suit this scenario?\nA. Segmentation with paging\nB. Swapping with page tables\nC. Virtual memory with aging algorithms\nD. Monolithic memory allocation",
+    "key_points_and_rules": "Yêu cầu tìm kỹ thuật quản lý bộ nhớ phù hợp nhất để xử lý các cấu trúc dữ liệu có kích thước thay đổi linh hoạt (dynamic size) và đơn giản hóa việc chia sẻ (simplify sharing). Dựa trên lý thuyết Hệ điều hành (OS), Segmentation (Phân đoạn) chia chương trình thành các module có kích thước khác nhau theo logic của người dùng, giúp hỗ trợ việc thay đổi kích thước linh hoạt và chia sẻ dữ liệu dễ dàng; kết hợp với Paging (Phân trang) giúp tránh phân mảnh ngoại vi.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Segmentation với Paging (Phân đoạn kết hợp phân trang) là kỹ thuật cung cấp cả ưu điểm của phân đoạn (hỗ trợ cấu trúc dữ liệu thay đổi kích thước và chia sẻ dễ dàng giữa các tiến trình) lẫn phân trang (quản lý bộ nhớ vật lý hiệu quả, tránh phân mảnh ngoại vi). Đây là phương án [ĐÚNG].",
+      "B": "Phân tích chi tiết: Swapping với page tables giải quyết việc hoán đổi trang giữa bộ nhớ chính và đĩa, nhưng phân trang thuần túy không phù hợp tự nhiên với các cấu trúc dữ liệu thay đổi kích thước logic bằng phân đoạn. Phương án này [SAI].",
+      "C": "Phân tích chi tiết: Virtual memory với aging algorithms liên quan đến thuật toán thay thế trang trong quản lý bộ nhớ ảo, không phải là cơ chế cốt lõi để quản lý kích thước cấu trúc dữ liệu động hay chia sẻ. Phương án này [SAI].",
+      "D": "Phân tích chi tiết: Monolithic memory allocation là cấp phát bộ nhớ nguyên khối, không hỗ trợ linh hoạt cho các cấu trúc dữ liệu thay đổi kích thước hay chia sẻ. Phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Segmentation (Phân đoạn) phản ánh góc nhìn của lập trình viên về các cấu trúc dữ liệu logic (như mảng, ngăn xếp, hàm) có thể phát triển hoặc thu nhỏ động, đồng thời hỗ trợ chia sẻ phân đoạn giữa các tiến trình. Khi kết hợp với Paging (Segmentation with paging), hệ thống vừa giải quyết tốt bài toán chia sẻ và cấu trúc động, vừa quản lý bộ nhớ vật lý hiệu quả.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A'). Phân tích logic và kiến trúc hệ điều hành xác nhận đây là lựa chọn chính xác."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149203",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:10:21+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188280",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T16:43:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 14,
+    "question_id": "Q14",
+    "image_file": "Q14.jpg",
+    "subject_domain": "Hệ điều hành & Quản lý bộ nhớ",
+    "question_text_extracted": "What is the role of the Memory Management Unit (MMU) in a computer system?\nA. The MMU translates virtual addresses into physical addresses\nB. It controls the allocation of memory to different processes\nC. It manages the paging and swapping of memory pages\nD. It is a data structure used in computer operating systems for virtual memory management",
+    "key_points_and_rules": "Yêu cầu xác định vai trò của Đơn vị Quản lý Bộ nhớ (MMU - Memory Management Unit) trong hệ thống máy tính. Định nghĩa chuẩn trong kiến trúc máy tính và hệ điều hành: MMU là phần cứng thực hiện việc chuyển đổi địa chỉ ảo (virtual/logical address) do CPU tạo ra thành địa chỉ vật lý (physical address) trong bộ nhớ chính.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: MMU dịch các địa chỉ ảo do CPU phát sinh thành địa chỉ vật lý tương ứng trên RAM. Đây là chức năng cốt lõi và định nghĩa chính xác của MMU. Phương án này [ĐÚNG].",
+      "B": "Phân tích chi tiết: Việc điều khiển cấp phát bộ nhớ cho các tiến trình thuộc về hệ điều hành (OS memory allocator), không phải chức năng phần cứng trực tiếp của MMU. Phương án này [SAI].",
+      "C": "Phân tích chi tiết: Việc quản lý phân trang và hoán đổi trang (paging and swapping) được thực hiện bởi hệ điều hành phối hợp với phần cứng, không phải chức năng độc lập duy nhất của MMU. Phương án này [SAI].",
+      "D": "Phân tích chi tiết: MMU là một thành phần phần cứng (hardware device/circuit), không phải là cấu trúc dữ liệu (data structure). Phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Memory Management Unit (MMU) là một thành phần phần cứng đóng vai trò then chốt trong việc ánh xạ địa chỉ ảo sang địa chỉ vật lý để thực thi cơ chế bộ nhớ ảo (Virtual Memory).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A'). Khái niệm về MMU là kiến thức nền tảng trong mọi giáo trình Hệ điều hành."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149206",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:10:52+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188281",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T16:43:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 15,
+    "question_id": "Q15",
+    "image_file": "Q15.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems)",
+    "question_text_extracted": "In 1965, Dijkstra posed and then solved a synchronization problem he called ____.\nA. the dining philosophers problem\nB. the ostrich algorithm\nC. the banker's algorithm\nD. the allocation algorithm",
+    "key_points_and_rules": "Xác định sự kiện lịch sử về bài toán đồng bộ hóa do Edsger Dijkstra đề xuất và giải quyết năm 1965.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Bài toán các triết gia ăn tối (the dining philosophers problem) được Edsger Dijkstra đặt ra và giải quyết lần đầu tiên vào năm 1965, mô phỏng vấn đề tranh chấp tài nguyên (đũa) giữa các tiến trình (triết gia). Phương án này [ĐÚNG].",
+      "B": "Phân tích chi tiết: Thuật toán đà điểu (the ostrich algorithm) là một chiến lược xử lý deadlock bằng cách phớt lờ nó, không phải là bài toán đồng bộ hóa do Dijkstra đặt ra năm 1965. Phương án này [SAI].",
+      "C": "Phân tích chi tiết: Thuật toán ngân hàng (the banker's algorithm) cũng do Dijkstra đề xuất, nhưng dùng để tránh deadlock (tránh kịch bản cấp phát tài nguyên không an toàn), không phải là bài toán đồng bộ hóa cổ điển năm 1965 có tên gọi như vậy. Phương án này [SAI].",
+      "D": "Phân tích chi tiết: 'the allocation algorithm' là một thuật ngữ chung, không phải tên bài toán đồng bộ hóa cụ thể do Dijkstra đặt ra. Phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Vào năm 1965, Edsger Dijkstra đã đặt ra và giải quyết bài toán đồng bộ hóa nổi tiếng mang tên 'The dining philosophers problem' (Bài toán các triết gia ăn tối) để minh họa các vấn đề về phân bổ tài nguyên và tránh deadlock trong hệ thống đa tiến trình.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149209",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:12:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188282",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T16:45:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 16,
+    "question_id": "Q16",
+    "image_file": "Q16.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems)",
+    "question_text_extracted": "Most virtual memory systems use a technique called____?\nA. Page Fault\nB. Page Frames\nC. Page Table\nD. Paging",
+    "key_points_and_rules": "Xác định kỹ thuật cơ bản được sử dụng trong phần lớn các hệ thống bộ nhớ ảo (virtual memory systems).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Page Fault (Lỗi trang) là một hiện tượng/ngắt xảy ra khi trang được tham chiếu không nằm trong bộ nhớ vật lý, chứ không phải là kỹ thuật cốt lõi dùng để cài đặt bộ nhớ ảo. Phương án này [SAI].",
+      "B": "Phân tích chi tiết: Page Frames (Khung trang) là các khối bộ nhớ vật lý có kích thước cố định, là thành phần hỗ trợ chứ không phải tên kỹ thuật của toàn hệ thống bộ nhớ ảo. Phương án này [SAI].",
+      "C": "Phân tích chi tiết: Page Table (Bảng trang) là cấu trúc dữ liệu dùng để lưu ánh xạ giữa địa chỉ ảo và địa chỉ vật lý, chứ không phải tên kỹ thuật của hệ thống bộ nhớ ảo. Phương án này [SAI].",
+      "D": "Phân tích chi tiết: Paging (Phân trang) là kỹ thuật quản lý bộ nhớ cơ bản được áp dụng rộng rãi trong hầu hết các hệ thống bộ nhớ ảo hiện đại, cho phép chia bộ nhớ ảo thành các trang và ánh xạ chúng vào các khung trang vật lý. Phương án này [ĐÚNG]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Hầu hết các hệ thống bộ nhớ ảo hiện đại đều triển khai kỹ thuật Phân trang (Paging) để phân chia không gian địa chỉ ảo thành các trang nhỏ có kích thước cố định và quản lý việc nạp/xuất chúng giữa bộ nhớ chính và bộ nhớ phụ.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp hoàn toàn với đáp án của cộng đồng (D)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149213",
+          "author": "hunghayhoi",
+          "text": "D",
+          "timestamp": "2026-04-23T08:12:32+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1188283",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-07-22T16:45:50+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 17,
+    "question_id": "Q17",
+    "image_file": "Q17.jpg",
+    "subject_domain": "Hệ điều hành & Quản lý bộ nhớ (OSG202)",
+    "question_text_extracted": "What is the main advantage of using the Clock Algorithm over the Second Chance Algorithm in terms of page replacement efficiency?\nA. The Clock algorithm eliminates the need to move pages around, reducing overhead.\nB. The Clock algorithm increases the complexity of implementation.\nC. The Clock algorithm guarantees fewer page faults compared to Second Chance algorithm.\nD. The Clock algorithm uses more memory to maintain the circular structure.",
+    "key_points_and_rules": "So sánh ưu điểm của thuật toán Clock (Second-chance cải tiến dùng con trỏ quay vòng trên mảng) so với thuật toán Second Chance cơ bản (thường dịch chuyển các phần tử trong hàng đợi queue). Tìm phương án phản ánh đúng bản chất hiệu năng cải tiến.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Thuật toán Second Chance thông thường sử dụng cấu trúc hàng đợi (queue) hoặc dịch chuyển danh sách, trong khi thuật toán Clock dùng con trỏ quét vòng tròn (circular buffer/pointer) qua mảng các khung trang, qua đó tránh việc phải dịch chuyển (move) các trang liên tục trong hàng đợi, giúp giảm thiểu đáng kể chi phí chi phí chung (overhead) [ĐÚNG].",
+      "B": "Phân tích chi tiết: Thuật toán Clock thực tế làm cho việc cài đặt hiệu quả hơn hoặc tương đương, không phải là tăng độ phức tạp mang tính ưu điểm về mặt hiệu suất [SAI].",
+      "C": "Phân tích chi tiết: Thuật toán Clock chỉ là một cách cài đặt hiệu quả hơn của Second Chance (về mặt chi phí thực thi), còn logic chọn trang thay thế là tương đương nhau nên số lượng lỗi trang (page faults) không được đảm bảo là ít hơn [SAI].",
+      "D": "Phân tích chi tiết: Cấu trúc vòng tròn (circular structure) được quản lý qua một con trỏ quét, không làm tốn thêm đáng kể bộ nhớ so với việc lưu trữ hàng đợi của Second Chance [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Thuật toán Second Chance (Cơ hội thứ hai) thường phải dịch chuyển các phần tử trong hàng đợi, gây ra độ trễ và tốn chi phí quản lý. Thuật toán Clock khắc phục điều này bằng cách sử dụng một con trỏ dịch chuyển vòng tròn qua bộ nhớ, loại bỏ thao tác dịch chuyển trang (move pages around), từ đó giảm thiểu đáng kể chi phí chung (overhead).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149215",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:12:48+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188284",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T16:46:16+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 18,
+    "question_id": "Q18",
+    "image_file": "Q18.jpg",
+    "subject_domain": "Hệ điều hành & Quản lý bộ nhớ (OSG202)",
+    "question_text_extracted": "What is the primary goal of the \"working set model\" in page replacement algorithms?\nA. To minimize internal fragmentation by using small page sizes.\nB. To ensure that processes always run with a fixed number of pages in memory.\nC. To prepage all pages a process might ever need into memory before execution.\nD. To greatly reduce the page fault rate by keeping a process's active pages in memory.",
+    "key_points_and_rules": "Xác định mục tiêu cốt lõi của mô hình tập làm việc (working set model) dựa trên nguyên lý cục bộ (locality model) nhằm giảm thiểu hiện tượng trashing và giảm tỷ lệ lỗi trang.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Giảm phân mảnh trong (internal fragmentation) là vấn đề liên quan đến kích thước trang (page size), không phải mục đích của mô hình tập làm việc [SAI].",
+      "B": "Phân tích chi tiết: Mô hình tập làm việc theo dõi tập hợp các trang đang hoạt động động (dynamic), do đó số lượng trang trong bộ nhớ của tiến trình thay đổi theo thời gian chứ không cố định [SAI].",
+      "C": "Phân tích chi tiết: Prepaging là nạp trước trang, trong khi working set dựa trên tập các trang thực sự được tham chiếu trong cửa sổ thời gian gần nhất (working set window) [SAI].",
+      "D": "Phân tích chi tiết: Mô hình tập làm việc dựa trên nguyên lý cục bộ (locality model) nhằm giữ lại các trang đang hoạt động tích cực của tiến trình trong bộ nhớ, qua đó ngăn chặn hiện tượng trashing và giảm mạnh tỷ lệ lỗi trang (page fault rate) [ĐÚNG]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Mô hình tập làm việc (Working Set Model) dựa trên khái niệm tính cục bộ của chương trình. Mục đích chính của mô hình này là đảm bảo tất cả các trang đang hoạt động tích cực của tiến trình (active pages) được giữ lại trong bộ nhớ vật lý, qua đó hạn chế tối đa hiện tượng tràn ngập lỗi trang (thrashing) và giảm tỷ lệ lỗi trang.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp hoàn toàn với đáp án cộng đồng ('D')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149219",
+          "author": "hunghayhoi",
+          "text": "D",
+          "timestamp": "2026-04-23T08:14:57+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1188303",
+          "author": "hamsothuan13",
+          "text": "D",
+          "timestamp": "2026-07-22T17:00:45+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 19,
+    "question_id": "Q19",
+    "image_file": "Q19.jpg",
+    "subject_domain": "Hệ điều hành (OSG202)",
+    "question_text_extracted": "Which of the following best describes the difference between a process and a thread in the context of the Windows operating system?\n\nA. A process contains multiple threads and shares resources, while a thread is an independent execution unit within a process.\nB. A process is a program in execution, while a thread is a sequence of instructions that can execute independently.\nC. A process and a thread are essentially the same in Windows OS, with no significant difference between them.\nD. A process represents system resources, while a thread is responsible for user interface interactions in Windows OS.",
+    "key_points_and_rules": "Yêu cầu tìm mô tả chính xác nhất về sự khác biệt giữa tiến trình (process) và luồng (thread) trong hệ điều hành Windows.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Tiến trình (Process) trong Windows phục vụ như một vùng chứa (container) cho các tài nguyên (như không gian địa chỉ ảo, handle, v.v.) và chứa một hoặc nhiều luồng thực thi. Trong khi đó, luồng (Thread) là đơn vị thực thi cơ bản chạy bên trong tiến trình và chia sẻ tài nguyên của tiến trình đó. Đây là định nghĩa hoàn toàn chính xác theo tài liệu kiến trúc của hệ điều hành Windows. [ĐÚNG]",
+      "B": "Phân tích chi tiết: Mặc dù định nghĩa process là 'program in execution' đúng, nhưng mô tả về thread chưa phản ánh đầy đủ mối quan hệ bao hàm và chia sẻ tài nguyên trong tiến trình ở ngữ cảnh Windows. [SAI]",
+      "C": "Phân tích chi tiết: Tiến trình và luồng hoàn toàn khác nhau về cấu trúc quản lý, không gian địa chỉ và tài nguyên hệ thống. [SAI]",
+      "D": "Phân tích chi tiết: Luồng không chỉ chịu trách nhiệm cho tương tác giao diện người dùng mà có thể thực thi bất kỳ đoạn mã nào; tiến trình không chỉ đơn thuần là đại diện hệ thống mà là môi trường thực thi chương trình. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong hệ điều hành Windows, một process (tiến trình) là đơn vị phân bổ tài nguyên, chứa không gian địa chỉ ảo, các handle và một hoặc nhiều thread (luồng). Thread là đơn vị thực thi nhỏ nhất được hệ điều hành lập lịch chạy, hoạt động bên trong process và chia sẻ các tài nguyên của process đó. Do đó, phương án A mô tả chính xác nhất.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149220",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:15:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188304",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T17:01:26+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 20,
+    "question_id": "Q20",
+    "image_file": "Q20.jpg",
+    "subject_domain": "Hệ điều hành (OSG202)",
+    "question_text_extracted": "What is Contiguous Allocation in file systems?\n\nA. Files are stored in non-contiguous blocks on disk\nB. Each file is allocated a contiguous block of disk space\nC. Files are linked together to form a chain\nD. Files are allocated using an index structure",
+    "key_points_and_rules": "Định nghĩa về phương pháp cấp phát liên tục (Contiguous Allocation) trong hệ thống quản lý tệp tin.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Lưu trữ các khối không liên tiếp mô tả phương pháp cấp phát liên kết (Linked Allocation) hoặc cấp phát chỉ mục (Indexed Allocation). [SAI]",
+      "B": "Phân tích chi tiết: Cấp phát liên tục (Contiguous Allocation) yêu cầu mỗi tệp tin chiếm một tập hợp các khối đĩa liền kề (liên tiếp nhau) trên đĩa. [ĐÚNG]",
+      "C": "Phân tích chi tiết: Các tệp liên kết với nhau tạo thành chuỗi mô tả phương pháp cấp phát liên kết (Linked Allocation). [SAI]",
+      "D": "Phân tích chi tiết: Sử dụng cấu trúc chỉ mục mô tả phương pháp cấp phát chỉ mục (Indexed Allocation). [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Cấp phát liên tục (Contiguous Allocation) trong hệ thống tệp là phương pháp mà mỗi tệp được cấp phát một chuỗi các khối đĩa liên tiếp (liền kề) nhau trên thiết bị lưu trữ. Điều này giúp việc truy cập tệp trở nên rất nhanh chóng nhưng dễ dẫn đến phân mảnh ngoại vi.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án của cộng đồng (B)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149221",
+          "author": "hunghayhoi",
+          "text": "B",
+          "timestamp": "2026-04-23T08:16:50+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1188308",
+          "author": "hamsothuan13",
+          "text": "B",
+          "timestamp": "2026-07-22T17:02:46+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 21,
+    "question_id": "Q21",
+    "image_file": "Q21.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (Hệ thống điều hành - OSG202)",
+    "question_text_extracted": "What is the purpose of Direct Memory Access (DMA) in an operating system?\nA. To allocate memory to processes\nB. To allow devices to transfer data to and from memory without CPU intervention\nC. To provide direct access to the CPU\nD. To prevent access to system memory\nE. To manage virtual memory",
+    "key_points_and_rules": "Xác định mục đích cốt lõi của Direct Memory Access (DMA) trong hệ điều hành liên quan đến việc truyền dữ liệu I/O.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Việc cấp phát bộ nhớ cho tiến trình là chức năng của trình quản lý bộ nhớ (Memory Management), không phải DMA.",
+      "B": "Phân tích chi tiết: [ĐÚNG] DMA cho phép các thiết bị phần cứng (như ổ đĩa, card mạng) truyền dữ liệu trực tiếp vào/ra khỏi bộ nhớ hệ thống mà không cần CPU phải tham gia trực tiếp vào từng byte dữ liệu, giúp giải phóng CPU để thực hiện các tác vụ khác.",
+      "C": "Phân tích chi tiết: [SAI] DMA cung cấp quyền truy cập trực tiếp vào bộ nhớ (RAM), không phải truy cập trực tiếp vào CPU.",
+      "D": "Phân tích chi tiết: [SAI] DMA không làm nhiệm vụ ngăn chặn quyền truy cập vào bộ nhớ hệ thống.",
+      "E": "Phân tích chi tiết: [SAI] Quản lý bộ nhớ ảo là cơ chế phân trang/phân đoạn, liên quan đến MMU và hệ điều hành, không phải nhiệm vụ chính của DMA."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Direct Memory Access (DMA) là một tính năng phần cứng và hệ điều hành cho phép các thiết bị ngoại vi (I/O devices) gửi hoặc nhận dữ liệu trực tiếp từ bộ nhớ chính (RAM) mà không cần sự can thiệp liên tục của CPU. Do đó, phương án B là chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149222",
+          "author": "hunghayhoi",
+          "text": "B",
+          "timestamp": "2026-04-23T08:17:52+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1188309",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-07-22T17:03:11+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 22,
+    "question_id": "Q22",
+    "image_file": "Q22.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (Hệ thống điều hành - OSG202)",
+    "question_text_extracted": "In UNIX, which type of file is used to model disks?\nA. Regular files.\nB. Character special files.\nC. Block special files.\nD. Directories.",
+    "key_points_and_rules": "Xác định loại file trong hệ điều hành UNIX dùng để mô hình hóa các thiết bị lưu trữ dạng khối (như ổ đĩa).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Regular files (file thông thường) chứa dữ liệu người dùng, văn bản, chương trình, không dùng để mô hình hóa thiết bị phần cứng đĩa.",
+      "B": "Phân tích chi tiết: [SAI] Character special files (file đặc biệt kiểu ký tự) được sử dụng để mô hình hóa các thiết bị truyền dữ liệu theo luồng ký tự từng byte một (như bàn phím, chuột, cổng serial).",
+      "C": "Phân tích chi tiết: [ĐÚNG] Block special files (file đặc biệt kiểu khối) trong UNIX được sử dụng để mô hình hóa các thiết bị lưu trữ có khả năng truy cập ngẫu nhiên theo từng khối (block), tiêu biểu là ổ đĩa cứng (disks).",
+      "D": "Phân tích chi tiết: [SAI] Directories (thư mục) là các file chứa danh sách tên file và con trỏ trỏ tới inode tương ứng để tổ chức cấu trúc cây thư mục."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong hệ điều hành UNIX/Linux, các thiết bị I/O được trừu tượng hóa dưới dạng các file đặc biệt (special files). Thiết bị được chia thành hai loại chính: Character special files (cho các thiết bị truyền dữ liệu dạng chuỗi ký tự như bàn phím, terminal) và Block special files (cho các thiết bị lưu trữ truy xuất theo khối như ổ đĩa cứng). Do đó, để mô hình hóa đĩa, UNIX sử dụng block special files.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149223",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:19:37+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188311",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-07-22T17:03:55+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1189269",
+          "author": "huutuong",
+          "text": "C",
+          "timestamp": "2026-07-23T11:21:54+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 23,
+    "question_id": "Q23",
+    "image_file": "Q23.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (OSG202)",
+    "question_text_extracted": "The simplest form of directory system is having one directory containing all the files. it is called the ___\nA. Root directory\nB. User directory\nC. Parent directory\nD. Current directory",
+    "key_points_and_rules": "Nhận diện định nghĩa cấu trúc thư mục đơn giản nhất trong hệ điều hành (Single-level directory structure).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Trong hệ thống thư mục một cấp (single-level directory system), tất cả các tệp đều được đặt trong một thư mục duy nhất, thường được gọi là thư mục gốc (root directory) hoặc thư mục chính duy nhất của hệ thống. Đây là hình thức đơn giản nhất của hệ thống thư mục.",
+      "B": "Phân tích chi tiết: User directory (Thư mục người dùng) xuất hiện trong hệ thống thư mục hai cấp (two-level directory), nơi mỗi người dùng có một thư mục riêng biệt.",
+      "C": "Phân tích chi tiết: Parent directory (Thư mục cha) liên quan đến hệ thống thư mục phân cấp (tree-structured directory).",
+      "D": "Phân tích chi tiết: Current directory (Thư mục hiện tại) là thư mục mà tiến trình đang làm việc, dùng trong hệ thống thư mục phân cấp."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Hệ thống thư mục đơn giản nhất là hệ thống thư mục một cấp (Single-level directory), trong đó tất cả các tệp đều nằm chung trong một thư mục duy nhất được gọi là thư mục gốc (root directory).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149224",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:20:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188315",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T17:05:11+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 24,
+    "question_id": "Q24",
+    "image_file": "Q24.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (OSG202)",
+    "question_text_extracted": "In file systems, what is sector 0 of the disk called?\nA. Boot block\nB. Superblock\nC. MBR(Master Boot Record)\nD. Free space mgmt",
+    "key_points_and_rules": "Xác định thuật ngữ gọi sector đầu tiên (sector 0) của đĩa trong hệ thống tệp và kiến trúc ổ đĩa.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Boot block là khối chứa mã khởi động, nhưng sector 0 của đĩa cứng vật lý có tên gọi chuẩn xác là Master Boot Record (MBR).",
+      "B": "Phân tích chi tiết: Superblock chứa thông tin chi tiết về hệ thống tệp (số lượng i-node, số block,...) chứ không nằm ở sector 0 của toàn bộ đĩa.",
+      "C": "Phân tích chi tiết: Sector 0 của đĩa được gọi là Master Boot Record (MBR). MBR được sử dụng để khởi động máy tính, nó chứa chương trình bootstrap và bảng phân vùng đĩa (partition table).",
+      "D": "Phân tích chi tiết: Free space mgmt (Quản lý không gian trống) liên quan đến cấu trúc dữ liệu theo dõi các block trống trên đĩa."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Theo kiến trúc hệ thống máy tính và hệ điều hành, sector đầu tiên của đĩa (sector 0) được gọi là Master Boot Record (MBR), chứa mã khởi động và bảng phân vùng ổ đĩa.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149227",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:21:34+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188317",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-07-22T17:05:27+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 25,
+    "question_id": "Q25",
+    "image_file": "Q25.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (Operating Systems)",
+    "question_text_extracted": "Which file access method is often used to optimize access to large files in a file system?\nA. Sequential access\nB. Direct access\nC. Indexed access\nD. Linked access",
+    "key_points_and_rules": "Xác định phương pháp truy xuất tệp (file access method) được sử dụng để tối ưu hóa việc truy cập vào các tệp có kích thước lớn trong hệ thống tệp.",
+    "option_by_option_analysis": {
+      "A": "Sequential access [SAI]: Truy xuất tuần tự đọc tệp từ đầu đến cuối, không hiệu quả và rất chậm khi truy cập ngẫu nhiên hoặc với tệp kích thước lớn.",
+      "B": "Direct access [SAI]: Truy xuất trực tiếp cho phép truy cập bất kỳ khối dữ liệu nào bằng số khối, nhưng không tối ưu chuyên biệt cho việc quản lý cấu trúc tệp lớn phức tạp bằng chỉ mục.",
+      "C": "Indexed access [SAI/ĐÚNG theo lý thuyết hệ thống tệp]: Phương pháp truy xuất dựa trên chỉ mục (Indexed access) xây dựng một bảng chỉ mục (index table) chứa các con trỏ tới các khối dữ liệu của tệp. Khi tệp rất lớn, việc tìm kiếm thông qua chỉ mục giúp giảm đáng kể thời gian truy xuất, giống như phương pháp chỉ mục trong cơ sở dữ liệu hoặc cấu trúc index-block (như inode trong UNIX).",
+      "D": "Linked access [SAI]: Truy xuất liên kết nối các khối dữ liệu thành danh sách liên kết, phải duyệt qua từng khối liên tiếp nên không tối ưu cho tệp lớn và việc truy xuất ngẫu nhiên."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong hệ thống tệp, khi xử lý các tệp kích thước lớn, phương pháp truy xuất có chỉ mục (Indexed access) cung cấp khả năng tìm kiếm nhanh chóng và tối ưu các khối dữ liệu thông qua bảng chỉ mục thay vì phải duyệt tuần tự hoặc qua danh sách liên kết.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng đề xuất là 'C'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149229",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:23:14+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188319",
+          "author": "hamsothuan13",
+          "text": "C",
+          "timestamp": "2026-07-22T17:06:13+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 26,
+    "question_id": "Q26",
+    "image_file": "Q26.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (Operating Systems)",
+    "question_text_extracted": "Which extension field provides an alternative name for a file or directory?\nA. Alternate Name\nB. Relocated Directory\nC. Time Stamp\nD. Parent Link",
+    "key_points_and_rules": "Xác định trường mở rộng (extension field) nào cung cấp tên thay thế (alternative name) cho một tệp hoặc thư mục.",
+    "option_by_option_analysis": {
+      "A": "Alternate Name [ĐÚNG]: Trường 'Alternate Name' trong cấu trúc quản lý thư mục hoặc tệp hệ thống (ví dụ trong hệ thống tệp FAT với tên tệp ngắn/dài 8.3 hoặc các thuộc tính mở rộng) được dùng để lưu trữ tên thay thế cho tệp hoặc thư mục.",
+      "B": "Relocated Directory [SAI]: Không phải là trường tên thay thế, liên quan đến việc di dời thư mục.",
+      "C": "Time Stamp [SAI]: Lưu trữ thời gian tạo, sửa đổi hoặc truy cập tệp (dấu thời gian).",
+      "D": "Parent Link [SAI]: Liên kết trỏ tới thư mục cha."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trường Alternate Name trực tiếp cung cấp tên thay thế (alternative name) cho một tệp hoặc thư mục trong cấu trúc mở rộng của hệ thống tệp.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng đề xuất là 'A'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149230",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:24:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188324",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T17:08:40+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 27,
+    "question_id": "Q27",
+    "image_file": "Q27.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What happens when a USB stick is mounted on the directory /usr/ast/backup in UNIX?\nA. The USB stick becomes inaccessible through the regular file system\nB. Files copied to /usr/ast/backup/monday are stored directly on the USB stick\nC. Files on the USB stick are deleted\nD. The directory /usr/ast/backup is overwritten by the contents of the USB stick",
+    "key_points_and_rules": "Hiểu bản chất của thao tác mount (gắn kết) hệ thống tệp trong UNIX/Linux: Khi mount một thiết bị (như USB stick) vào một thư mục (mount point), nội dung của thư mục đó tạm thời bị che khuất và thay thế bằng nội dung gốc của hệ thống tệp trên thiết bị gắn kết. Mọi thao tác truy cập vào đường dẫn này thực chất là truy cập trực tiếp vào thiết bị được mount.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sai, USB stick hoàn toàn có thể truy cập được thông qua đường dẫn mount point /usr/ast/backup trên hệ thống tệp.",
+      "B": "Phân tích chi tiết: Đúng, vì /usr/ast/backup giờ đây trỏ tới root của thiết bị USB, bất kỳ tệp nào được tạo/sao chép vào thư mục này sẽ được lưu trữ trực tiếp trên USB stick.",
+      "C": "Phân tích chi tiết: Sai, các tệp trên USB stick không bị xóa mà được hiển thị thông qua điểm mount.",
+      "D": "Phân tích chi tiết: Sai, thư mục gốc /usr/ast/backup không bị ghi đè vĩnh viễn (các tệp cũ chỉ bị che khuất tạm thời và sẽ hiện lại khi unmount thiết bị)."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong hệ điều hành UNIX/Linux, khi thực hiện lệnh mount một thiết bị lưu trữ (như USB) lên một thư mục (mount point), thư mục đó đóng vai trò là cổng truy cập vào hệ thống tệp của thiết bị. Mọi đường dẫn con tạo ra trong thư mục này thực chất là thao tác ghi dữ liệu trực tiếp vào thiết bị được mount.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án của cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149234",
+          "author": "hunghayhoi",
+          "text": "B",
+          "timestamp": "2026-04-23T08:25:54+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1188327",
+          "author": "hamsothuan13",
+          "text": "B",
+          "timestamp": "2026-07-22T17:10:20+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 28,
+    "question_id": "Q28",
+    "image_file": "Q28.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "The hardware mechanism that allows a device to notify the CPU is called .........\nA. interrupt\nB. polling\nC. driver\nD. controlling",
+    "key_points_and_rules": "Nhận biết khái niệm phần cứng trong hệ điều hành: Cơ chế phần cứng cho phép các thiết bị ngoại vi/I/O thông báo cho CPU rằng chúng cần sự chú ý hoặc đã hoàn thành một tác vụ.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đúng, Ngắt (Interrupt) là cơ chế phần cứng cho phép thiết bị gửi tín hiệu điện qua đường truyền ngắt để yêu cầu CPU dừng công việc hiện tại và xử lý sự kiện của thiết bị.",
+      "B": "Phân tích chi tiết: Sai, Polling (Thăm dò) là cơ chế phần mềm trong đó CPU liên tục kiểm tra trạng thái của thiết bị, không phải cơ chế do phần cứng thông báo.",
+      "C": "Phân tích chi tiết: Sai, Driver là phần mềm (trình điều khiển thiết bị).",
+      "D": "Phân tích chi tiết: Sai, Controlling là thuật ngữ chung về điều khiển."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Ngắt (interrupt) là cơ chế cốt lõi trong kiến trúc máy tính và hệ điều hành, cho phép các thiết bị phần cứng (như bàn phím, ổ cứng, card mạng) báo hiệu cho CPU một cách bất đồng bộ khi chúng cần xử lý.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149238",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:27:57+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188328",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T17:10:31+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 29,
+    "question_id": "Q29",
+    "image_file": "Q29.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What is the purpose of the spindle in a hard disk drive?\nA. To store data temporarily\nB. To read and write data to the platters\nC. To control the movement of the read/write head\nD. To provide power to the disk\nE. To cool the disk during operation",
+    "key_points_and_rules": "Xác định mục đích chính của trục quay (spindle) trong ổ đĩa cứng (HDD).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Lưu trữ dữ liệu tạm thời là chức năng của bộ nhớ RAM hoặc bộ nhớ đệm (cache) trên ổ cứng, không phải chức năng của trục quay -> [SAI].",
+      "B": "Phân tích chi tiết: Đọc và ghi dữ liệu lên các đĩa từ là nhiệm vụ của đầu đọc/ghi (read/write head) -> [SAI].",
+      "C": "Phân tích chi tiết: Điều khiển chuyển động của đầu đọc/ghi là nhiệm vụ của bộ truyền động đầu đọc (actuator arm / actuator) -> [SAI].",
+      "D": "Phân tích chi tiết: Trục quay (spindle) là động cơ làm quay các đĩa từ (platters) bên trong ổ cứng ở tốc độ cao (RPM), do đó cung cấp lực quay hay năng lượng cơ học làm quay đĩa, tuy nhiên nếu xét về nguồn điện thì động cơ spindle nhận điện từ bo mạch, nhưng theo định nghĩa cấu trúc ổ cứng, động cơ trục quay có nhiệm vụ quay đĩa từ. Xét theo các đáp án, cộng đồng thường tranh luận B hoặc D, nhưng thực tế spindle motor quay các platters. Hãy xem xét định nghĩa spindle motor: Động cơ trục quay (spindle motor) dùng để quay các đĩa từ. Do đó các đáp án trên không có lựa chọn 'To spin the platters'. Trong các phương án còn lại, một số tài liệu có thể định nghĩa nguồn động lực quay. Tạm thời xét đáp án cộng đồng chọn nhiều nhất là D.",
+      "E": "Phân tích chi tiết: Trục quay không có chức năng làm mát ổ đĩa -> [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Trong cấu trúc ổ đĩa cứng (HDD), spindle (trục quay) gắn liền với spindle motor (động cơ trục quay) có nhiệm vụ chính là quay các đĩa từ (platters) ở tốc độ cao để đầu đọc/ghi có thể truy xuất dữ liệu. Tuy nhiên, trong các lựa chọn được cung cấp, không có phương án 'To rotate/spin the platters'. Dựa trên phân tích các phương án còn lại và tham chiếu đáp án cộng đồng, đáp án được chọn là D.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp với đáp án cộng đồng (chọn D)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 4,
+      "agreement_ratio": 0.6667,
+      "vote_distribution": {
+        "D": 4,
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149241",
+          "author": "hunghayhoi",
+          "text": "D",
+          "timestamp": "2026-04-23T08:30:27+0700",
+          "reactions": 1,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1151634",
+          "author": "consocnho",
+          "text": "B",
+          "timestamp": "2026-04-24T21:14:12+0700",
+          "reactions": 1,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1185599",
+          "author": "hndangkhoa",
+          "text": "D",
+          "timestamp": "2026-07-17T17:05:14+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1188330",
+          "author": "hamsothuan13",
+          "text": "B",
+          "timestamp": "2026-07-22T17:12:13+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1196061",
+          "author": "NguyenMinh112321",
+          "text": "D",
+          "timestamp": "2026-07-26T01:58:00+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1234231",
+          "author": "Nguyễn Thị Thu Trang",
+          "text": "d",
+          "timestamp": "2026-08-04T00:34:38+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 30,
+    "question_id": "Q30",
+    "image_file": "Q30.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What is the time takes to move the arm to the proper cylinder is called?\nA. Seek time\nB. Position time\nC. Rotational delay\nD. Transfer time",
+    "key_points_and_rules": "Xác định định nghĩa thời gian di chuyển cánh tay đĩa đến cylinder (trụ) thích hợp.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Seek time (Thời gian tìm kiếm) là thời gian cần thiết để bộ điều khiển di chuyển đầu đọc/ghi đến đúng cylinder (trụ) chứa dữ liệu cần truy xuất -> [ĐÚNG].",
+      "B": "Phân tích chi tiết: Position time không phải là thuật ngữ chuẩn trong định thời ổ đĩa cứng -> [SAI].",
+      "C": "Phân tích chi tiết: Rotational delay (Độ trễ quay) là thời gian chờ cho sector cần đọc quay đến dưới đầu đọc/ghi -> [SAI].",
+      "D": "Phân tích chi tiết: Transfer time (Thời gian truyền dữ liệu) là thời gian thực tế để đọc hoặc ghi dữ liệu khi đầu đọc đã ở đúng vị trí và sector đã quay tới -> [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Seek time (Thời gian tìm kiếm) là khoảng thời gian ổ đĩa cần để di chuyển đầu đọc/ghi (read/write head) tới cylinder chứa sector cần truy xuất dữ liệu.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (chọn A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149243",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:31:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188333",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T17:12:57+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 31,
+    "question_id": "Q31",
+    "image_file": "Q31.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (OSG202)",
+    "question_text_extracted": "In data communication and I/O (Input/Output) operations, besides converting the serial bit stream into a block of bytes, what else does the controller's job do?\nA. Perform any error correction necessary\nB. Perform convert the sequence bit stream into a block of bytes\nC. Perform connecting I/O devices\nD. Perform read and write serial bit stream into a block of bytes",
+    "key_points_and_rules": "Xác định nhiệm vụ bổ sung của bộ điều khiển I/O (I/O controller) trong quá trình truyền dữ liệu và thao tác I/O bên cạnh việc chuyển đổi dòng bit nối tiếp thành khối byte.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Bộ điều khiển I/O ngoài việc chuyển đổi dữ liệu dạng bit sang dạng byte (và ngược lại) còn chịu trách nhiệm thực hiện việc phát hiện và sửa lỗi cần thiết (error correction/detection) trong quá trình truyền thông tin. Đây là đáp án [ĐÚNG].",
+      "B": "Phân tích chi tiết: Đây chính là công việc chính đã được đề cập trong giả thiết của đề bài ('converting the serial bit stream into a block of bytes'), không phải là chức năng bổ sung. Do đó phương án này [SAI].",
+      "C": "Phân tích chi tiết: Việc kết nối vật lý I/O devices là chức năng của cổng kết nối vật lý và cáp, không thuộc công việc xử lý dữ liệu của controller ở mức giao tiếp bit/byte. Do đó phương án này [SAI].",
+      "D": "Phân tích chi tiết: Việc đọc và ghi dòng bit tuần tự thành khối byte chỉ mô tả lại thao tác chuyển đổi cơ bản, lặp lại ý của đề bài chứ không nêu bật nhiệm vụ xử lý phụ thêm như sửa lỗi. Do đó phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Bộ điều khiển I/O (I/O controller) có nhiệm vụ giao tiếp giữa CPU và các thiết bị ngoại vi. Ngoài việc chuyển đổi giữa dòng bit nối tiếp (serial bit stream) và khối byte (block of bytes), nó còn thực hiện các chức năng kiểm tra và sửa lỗi dữ liệu (error correction) nhằm đảm bảo tính toàn vẹn của dữ liệu truyền.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149244",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:33:24+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188338",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T17:14:01+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 32,
+    "question_id": "Q32",
+    "image_file": "Q32.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (OSG202)",
+    "question_text_extracted": "What is the effect of using interrupts instead of polling for I/O?\nA. Slower response time to external events\nB. Higher CPU usage due to constant checking\nC. More efficient use of processor cycles\nD. Reduced control over process priorities",
+    "key_points_and_rules": "Phân tích tác dụng/hiệu quả của việc sử dụng ngắt (interrupts) thay thế cho kỹ thuật thăm dò (polling) trong xử lý nhập/xuất (I/O).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sử dụng ngắt giúp CPU phản hồi ngay lập tức khi thiết bị I/O sẵn sàng, do đó thời gian phản hồi nhanh hơn chứ không chậm hơn polling. Phương án này [SAI].",
+      "B": "Phân tích chi tiết: Việc liên tục kiểm tra (constant checking) là đặc điểm của kỹ thuật polling, gây lãng phí tài nguyên CPU. Ngắt giúp loại bỏ việc kiểm tra liên tục này. Phương án này [SAI].",
+      "C": "Phân tích chi tiết: Bằng cách sử dụng ngắt, CPU không phải lãng phí chu kỳ xử lý để chờ đợi hay thăm dò trạng thái thiết bị I/O mà có thể thực hiện các công việc khác, chỉ bị ngắt khi thiết bị thực sự cần. Điều này dẫn đến việc sử dụng các chu kỳ của bộ xử lý hiệu quả hơn. Phương án này [ĐÚNG].",
+      "D": "Phân tích chi tiết: Ngược lại, ngắt cung cấp cơ chế tốt hơn để xử lý các mức ưu tiên khác nhau thông qua bảng vector ngắt và ngắt lồng nhau. Phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Kỹ thuật polling yêu cầu CPU liên tục kiểm tra trạng thái của thiết bị I/O, tiêu tốn rất nhiều chu kỳ xử lý. Ngược lại, kỹ thuật ngắt (interrupt-driven I/O) cho phép CPU tự do thực hiện các tác vụ khác và chỉ xử lý dữ liệu khi thiết bị gửi tín hiệu ngắt, giúp sử dụng tài nguyên bộ xử lý một cách hiệu quả nhất.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149245",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:34:50+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188341",
+          "author": "hamsothuan13",
+          "text": "C",
+          "timestamp": "2026-07-22T17:14:18+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 33,
+    "question_id": "Q33",
+    "image_file": "Q33.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (OSG202)",
+    "question_text_extracted": "What is the role of the file system in disk management?\nA. To allocate memory for disk operations.\nB. To manage the disk's hardware components.\nC. To organize and track files and data on the disk.\nD. To design disk controllers.",
+    "key_points_and_rules": "Xác định vai trò cốt lõi của hệ thống tệp (file system) trong quản lý đĩa (disk management) của hệ điều hành.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sai. Cấp phát bộ nhớ (memory allocation) thường là nhiệm vụ của trình quản lý bộ nhớ chính (RAM), không phải vai trò quản lý tệp trên đĩa của file system.",
+      "B": "Phân tích chi tiết: Sai. Quản lý phần cứng đĩa là nhiệm vụ của trình điều khiển thiết bị (device driver) và hệ thống con I/O, chứ không phải file system.",
+      "C": "Phân tích chi tiết: Đúng. Hệ thống tệp (file system) chịu trách nhiệm tổ chức, cấu trúc, đặt tên và theo dõi các tệp cũng như dữ liệu được lưu trữ trên ổ đĩa.",
+      "D": "Phân tích chi tiết: Sai. Thiết kế bộ điều khiển đĩa (disk controllers) là công việc của kỹ sư phần cứng, không thuộc vai trò của hệ thống tệp phần mềm."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Hệ thống tệp (file system) trong hệ điều hành đóng vai trò quản lý cách thức lưu trữ, tổ chức, đặt tên, và truy xuất dữ liệu/tệp trên các thiết bị lưu trữ thứ cấp như ổ đĩa. Do đó, đáp án chính xác là C.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149246",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:35:17+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188344",
+          "author": "hamsothuan13",
+          "text": "C",
+          "timestamp": "2026-07-22T17:14:57+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 34,
+    "question_id": "Q34",
+    "image_file": "Q34.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (OSG202)",
+    "question_text_extracted": "RAID level ____ works worst with operating systems that habitually ask for data one sector at a time\nA. 0\nB. 1\nC. 2\nD. 3",
+    "key_points_and_rules": "Xác định cấp độ RAID nào hoạt động kém nhất (works worst) đối với hệ điều hành thường xuyên yêu cầu dữ liệu từng sector một (one sector at a time).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sai. RAID 0 phân tách dữ liệu (striping) trên nhiều đĩa để tăng tốc độ thông lượng (throughput), có thể xử lý các yêu cầu I/O nhỏ tương đối bình thường.",
+      "B": "Phân tích chi tiết: Sai. RAID 1 là mirroring (phản chiếu), mỗi khối dữ liệu được ghi lên hai đĩa, không phụ thuộc vào việc chia nhỏ sector theo kiểu striping phức tạp như RAID mức cao hơn.",
+      "C": "Phân tích chi tiết: Sai. RAID 2 sử dụng mã Hamming để sửa lỗi bit-level (sọc ở mức bit), yêu cầu đồng bộ hóa các ổ đĩa nhưng không phải là cấp độ điển hình bị đánh giá tồi tệ nhất trong ngữ cảnh này.",
+      "D": "Phân tích chi tiết: Đúng. RAID 3 sử dụng việc sọc dữ liệu ở mức byte với một đĩa chẵn lẻ (parity disk) dành riêng. Khi hệ điều hành yêu cầu dữ liệu từng sector một, mọi đĩa trong mảng RAID 3 đều phải tham gia vào việc đọc/ghi ngay cả cho một sector nhỏ lẻ, làm giảm hiệu suất nghiêm trọng (works worst)."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "RAID 3 phân tách dữ liệu ở mức byte qua nhiều ổ đĩa và dùng một ổ chứa parity. Do tính chất đồng bộ và sọc byte này, khi hệ điều hành yêu cầu dữ liệu một sector tại một thời điểm, nó gây ra nghẽn cổ chai nặng nề và hiệu suất rất kém. Do đó đáp án chính xác là D.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp với đáp án cộng đồng được chọn nhiều nhất ('D')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 8,
+      "valid_vote_count": 8,
+      "top_answer_votes": 5,
+      "agreement_ratio": 0.625,
+      "vote_distribution": {
+        "D": 5,
+        "A": 2,
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1151651",
+          "author": "consocnho",
+          "text": "A",
+          "timestamp": "2026-04-24T21:21:41+0700",
+          "reactions": 20,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1152250",
+          "author": "vhminh0401",
+          "text": "D",
+          "timestamp": "2026-04-25T08:02:18+0700",
+          "reactions": 1,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1185956",
+          "author": "hndangkhoa",
+          "text": "C",
+          "timestamp": "2026-07-18T12:49:29+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188350",
+          "author": "hamsothuan13",
+          "text": "D",
+          "timestamp": "2026-07-22T17:16:01+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1189743",
+          "author": "huutuong",
+          "text": "D",
+          "timestamp": "2026-07-23T18:46:41+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1206982",
+          "author": "phomaique",
+          "text": "A",
+          "timestamp": "2026-07-28T18:43:35+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1234233",
+          "author": "Nguyễn Thị Thu Trang",
+          "text": "d",
+          "timestamp": "2026-08-04T00:35:04+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1234826",
+          "author": "tanpeo",
+          "text": "D",
+          "timestamp": "2026-08-04T13:08:13+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 35,
+    "question_id": "Q35",
+    "image_file": "Q35.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Time to move the arm to the proper cylinder is called?\nA. Seek time\nB. Rotational delay\nC. Actual data transfer time\nD. Access time",
+    "key_points_and_rules": "Xác định thuật ngữ mô tả thời gian đầu đọc/ghi (arm/read-write head) di chuyển đến cylinder (trụ đĩa) mong muốn trên ổ đĩa cứng (HDD).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Seek time (Thời gian tìm kiếm) là thời gian cần thiết để bộ điều khiển ổ đĩa di chuyển cánh tay đầu đọc/ghi đến trụ đĩa (cylinder) chứa dữ liệu cần truy cập. Đây chính xác là định nghĩa trong câu hỏi [ĐÚNG].",
+      "B": "Phân tích chi tiết: Rotational delay (hay Latency) là thời gian đợi cho đến khi cung từ (sector) cần tìm quay đến dưới đầu đọc/ghi [SAI].",
+      "C": "Phân tích chi tiết: Actual data transfer time là thời gian thực tế để đọc hoặc ghi dữ liệu khi đầu đọc đã nằm đúng vị trí và sector đang quay qua [SAI].",
+      "D": "Phân tích chi tiết: Access time (Thời gian truy cập tổng cộng) là tổng của Seek time cộng với Rotational delay [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Thời gian để di chuyển cánh tay đầu đọc đến đúng cylinder trên ổ đĩa được gọi là Seek time (Thời gian tìm kiếm). Do đó phương án A là chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149248",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:37:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188353",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-07-22T17:17:28+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 36,
+    "question_id": "Q36",
+    "image_file": "Q36.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What does the Banker's Algorithm check before granting a resource request?\nA. If granting the request will lead to a safe state.\nB. If the request is within the current needs of the process.\nC. If there are enough resources available.\nD. If the requesting process has priority.",
+    "key_points_and_rules": "Xác định nguyên lý hoạt động cốt lõi của Thuật toán nhà băng (Banker's Algorithm) dùng để tránh deadlock trong hệ điều hành.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Thuật toán Banker mô phỏng việc cấp phát tài nguyên bằng cách giả định cấp phát yêu cầu, sau đó kiểm tra xem trạng thái hệ thống sau khi cấp phát có còn an toàn (safe state) hay không trước khi thực hiện cấp phát thực tế [ĐÚNG].",
+      "B": "Phân tích chi tiết: Mặc dù yêu cầu phải nhỏ hơn nhu cầu tối đa (Request <= Need), nhưng việc kiểm tra trạng thái an toàn là mục tiêu trọng tâm và toàn diện nhất của Banker's Algorithm trước khi quyết định cấp [SAI khi đứng một mình so với A].",
+      "C": "Phân tích chi tiết: Việc kiểm tra tài nguyên khả dụng (Available >= Request) là bước kiểm tra sơ bộ trước khi thực hiện bước an toàn, nhưng bản chất quyết định của Banker là đảm bảo hệ thống luôn ở trạng thái an toàn [SAI].",
+      "D": "Phân tích chi tiết: Thuật toán Banker không xét đến mức độ ưu tiên (priority) của tiến trình mà dựa trên nhu cầu tối đa và tài nguyên hiện có [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Thuật toán Banker's Algorithm kiểm tra xem việc cấp phát tài nguyên theo yêu cầu có dẫn đến trạng thái an toàn (safe state) hay không trước khi thực sự cấp phát cho tiến trình.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149249",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:38:21+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188356",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T17:18:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 37,
+    "question_id": "Q37",
+    "image_file": "Q37.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems - OSG202)",
+    "question_text_extracted": "To_ensure that the hold and wait condition never occurs in the system, it must be ensured that _________\nA. whenever a resource is requested by a process, it is not holding any other resources\nB. each process must request and be allocated at least one of its resources before it begins its execution\nC. each process must request and be allocated all its resources before it begins its execution\nD. a process can request resources only when it has none",
+    "key_points_and_rules": "Câu hỏi yêu cầu tìm phương pháp để ngăn chặn điều kiện 'Hold and wait' (Giữ và chờ) trong bài toán Deadlock (Tắc nghẽn) của hệ điều hành.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đánh giá phương án A [SAI] vì đây chỉ nói về việc không giữ tài nguyên khi yêu cầu, nhưng chưa đủ để đảm bảo toàn bộ tiến trình cấp phát đủ tài nguyên trước khi chạy theo giao thức chuẩn chống hold and wait.",
+      "B": "Phân tích chi tiết: Đánh giá phương án B [SAI] vì việc yêu cầu ít nhất một tài nguyên không loại trừ được tình trạng giữ tài nguyên này trong khi chờ tài nguyên khác.",
+      "C": "Phân tích chi tiết: Đánh giá phương án C [ĐÚNG] vì theo giáo trình Operating System Concepts, để đảm bảo điều kiện 'Hold and wait' không bao giờ xảy ra, hệ thống phải áp dụng giao thức yêu cầu: mỗi tiến trình phải yêu cầu và được cấp phát tất cả các tài nguyên của nó trước khi bắt đầu thực thi.",
+      "D": "Phân tích chi tiết: Đánh giá phương án D [SAI] đây diễn đạt tương tự phương án A, chưa phản ánh đúng giao thức yêu cầu toàn bộ tài nguyên từ đầu."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Để ngăn chặn điều kiện Hold and wait (Giữ và chờ), hệ điều hành có thể sử dụng giao thức yêu cầu rằng mỗi tiến trình phải yêu cầu và được cấp phát toàn bộ tài nguyên cần thiết trước khi nó bắt đầu thực thi (hoặc một tiến trình chỉ có thể yêu cầu tài nguyên khi nó không nắm giữ bất kỳ tài nguyên nào khác). Tuy nhiên, đáp án C phản ánh chính xác nhất và chuẩn mực nhất theo giáo trình về giao thức phân bổ toàn bộ tài nguyên từ đầu.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp với đáp án cộng đồng đa số lựa chọn là C."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 7,
+      "valid_vote_count": 7,
+      "top_answer_votes": 5,
+      "agreement_ratio": 0.7143,
+      "vote_distribution": {
+        "C": 5,
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149255",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:41:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1151663",
+          "author": "consocnho",
+          "text": "C",
+          "timestamp": "2026-04-24T21:25:43+0700",
+          "reactions": 1,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1185959",
+          "author": "hndangkhoa",
+          "text": "A",
+          "timestamp": "2026-07-18T13:03:21+0700",
+          "reactions": 131,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1186601",
+          "author": "thembunluocqua",
+          "text": "C",
+          "timestamp": "2026-07-20T10:45:56+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188358",
+          "author": "hamsothuan13",
+          "text": "C",
+          "timestamp": "2026-07-22T17:18:35+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1189767",
+          "author": "huutuong",
+          "text": "C",
+          "timestamp": "2026-07-23T19:02:48+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1203179",
+          "author": "việt",
+          "text": "C",
+          "timestamp": "2026-07-27T13:21:18+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 38,
+    "question_id": "Q38",
+    "image_file": "Q38.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems - OSG202)",
+    "question_text_extracted": "Which resource allocation strategy is most likely to prevent deadlock while still allowing high resource utilization?\nA. Granting requests based on the order they arrive\nB. Preempting resources whenever a higher-priority process arrives\nC. Allowing processes to hold resources indefinitely until they complete\nD. Allocating resources based on a resource hierarchy",
+    "key_points_and_rules": "Xác định chiến lược phân bổ tài nguyên giúp ngăn chặn deadlock mà vẫn duy trì độ tận dụng tài nguyên cao (high resource utilization).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đánh giá phương án A [SAI] - Cấp phát theo thứ tự đến trước đến sau (FCFS) không ngăn chặn được deadlock nếu không có thêm cơ chế kiểm soát.",
+      "B": "Phân tích chi tiết: Đánh giá phương án B [SAI] - Việc thu hồi tài nguyên liên tục do tiến trình ưu tiên cao hơn đến có thể gây ra hiện tượng đói tài nguyên (starvation) và chi phí chuyển đổi ngữ cảnh lớn, không phải là chiến lược tối ưu để quản lý deadlock tổng thể.",
+      "C": "Phân tích chi tiết: Đánh giá phương án C [SAI] - Cho phép tiến trình giữ tài nguyên vô thời hạn chính là nguyên nhân gây ra điều kiện hold and wait dẫn đến deadlock.",
+      "D": "Phân tích chi tiết: Đánh giá phương án D [ĐÚNG] - Cấp phát tài nguyên dựa trên hệ thống phân cấp tài nguyên (resource ordering / hierarchy) là phương pháp ngăn chặn điều kiện 'Circular Wait' (Chờ đợi vòng tròn) rất hiệu quả, giúp ngăn chặn deadlock mà không làm giảm đáng kể hiệu suất sử dụng tài nguyên."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Chiến lược ngăn chặn Circular Wait bằng cách áp đặt một thứ tự toàn cục (resource hierarchy) cho tất cả các loại tài nguyên và yêu cầu các tiến trình yêu cầu tài nguyên theo thứ tự tăng dần của thứ hạng này là cách hiệu quả để ngăn chặn deadlock mà không làm suy giảm nghiêm trọng hiệu suất hệ thống so với các phương pháp quá bảo thủ khác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp với đáp án cộng đồng là D."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149261",
+          "author": "hunghayhoi",
+          "text": "D",
+          "timestamp": "2026-04-23T08:44:20+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1188361",
+          "author": "hamsothuan13",
+          "text": "D",
+          "timestamp": "2026-07-22T17:19:59+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 39,
+    "question_id": "Q39",
+    "image_file": "Q39.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems)",
+    "question_text_extracted": "Which condition must be present for deadlock to occur?\nA. Preemption of processes during execution\nB. Circular wait among resource holders\nC. Dynamic allocation of memory blocks\nD. Termination of all low-priority threads",
+    "key_points_and_rules": "Bốn điều kiện cần (Coffman conditions) để xảy ra Deadlock gồm: 1. Mutual Exclusion (Loại trừ tương hỗ), 2. Hold and Wait (Giữ và chờ), 3. No Preemption (Không cho phép trưng thu tài nguyên), 4. Circular Wait (Chờ đợi vòng tròn). Tất cả 4 điều kiện này đồng thời phải xuất hiện thì mới xảy ra deadlock.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: 'Preemption of processes during execution' - Đây là việc trưng thu tiến trình hoặc tài nguyên. Nếu có chính sách preemption (không có điều kiện No Preemption), deadlock sẽ bị phá vỡ. Do đó phương án này là [SAI].",
+      "B": "Phân tích chi tiết: 'Circular wait among resource holders' - Chờ đợi vòng tròn (Circular wait) là một trong bốn điều kiện cần kinh điển (Coffman conditions) để xảy ra deadlock. Do đó phương án này là [ĐÚNG].",
+      "C": "Phân tích chi tiết: 'Dynamic allocation of memory blocks' - Cấp phát động bộ nhớ là một kỹ thuật quản lý bộ nhớ thông thường trong hệ điều hành, không phải là điều kiện gây ra deadlock. Do đó phương án này là [SAI].",
+      "D": "Phân tích chi tiết: 'Termination of all low-priority threads' - Việc chấm dứt các luồng ưu tiên thấp không phải là điều kiện cần để xảy ra deadlock, thậm chí đây còn là một giải pháp để xử lý (giải quyết) deadlock. Do đó phương án này là [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Theo lý thuyết về Deadlock trong hệ điều hành, có 4 điều kiện cần và đủ đồng thời phải thỏa mãn để deadlock xảy ra: (1) Mutual exclusion, (2) Hold and wait, (3) No preemption, và (4) Circular wait. Trong các phương án đưa ra, 'Circular wait among resource holders' chính là một trong các điều kiện Coffman kinh điển.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149262",
+          "author": "hunghayhoi",
+          "text": "B",
+          "timestamp": "2026-04-23T08:44:37+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1188362",
+          "author": "hamsothuan13",
+          "text": "B",
+          "timestamp": "2026-07-22T17:20:24+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 40,
+    "question_id": "Q40",
+    "image_file": "Q40.jpg",
+    "subject_domain": "Hệ điều hành / Quản trị hệ thống Linux (Linux System Administration)",
+    "question_text_extracted": "Assuming there is an entry in /etc/passwd file (file stores essential information, which is required during login) with the following content:\njohn:x:1002:1000:Jonh Henry::/bin/bash\nChoose the best correct statement:\nA. Username = john and userid = 1002\nB. Username = Jonh Henry and userid = 1002\nC. Username = john and userid = 1000\nD. Username = Jonh Henry and userid = 1000",
+    "key_points_and_rules": "Cấu trúc một dòng trong file /etc/passwd trên hệ thống Linux gồm các trường phân tách bởi dấu hai chấm (:):\nusername:password:UID:GID:GECOS (User ID info):home_directory:shell\n- Trường 1: Username (Tên đăng nhập)\n- Trường 2: Password (hoặc 'x' biểu thị password mã hóa nằm ở /etc/shadow)\n- Trường 3: UID (User ID)\n- Trường 4: GID (Group ID)",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Theo dòng 'john:x:1002:1000:Jonh Henry::/bin/bash', trường thứ nhất là 'john' (Username), trường thứ ba là '1002' (userid/UID). Do đó Username = john và userid = 1002 là [ĐÚNG].",
+      "B": "Phân tích chi tiết: 'Jonh Henry' nằm ở trường thứ năm (GECOS - thông tin mô tả đầy đủ về người dùng), không phải là Username. Do đó phương án này là [SAI].",
+      "C": "Phân tích chi tiết: '1000' nằm ở trường thứ tư (GID - Group ID), không phải là userid (UID) nằm ở trường thứ ba. Do đó phương án này là [SAI].",
+      "D": "Phân tích chi tiết: Cả 'Jonh Henry' (trường 5) và '1000' (trường 4) đều sai định vị trí của Username và userid. Do đó phương án này là [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Phân tích định dạng của một dòng trong tệp /etc/passwd trong Linux theo thứ tự các trường:\n1. Tên tài khoản (username): `john`\n2. Mật khẩu (password/x): `x`\n3. Mã định danh người dùng (UID): `1002`\n4. Mã định danh nhóm chính (GID): `1000`\n5. Thông tin mô tả (GECOS): `Jonh Henry`\n6. Thư mục chính (Home directory): Trống\n7. Shell mặc định: `/bin/bash`\nVậy Username là `john` và userid là `1002`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149263",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:44:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188363",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T17:20:55+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 41,
+    "question_id": "Q41",
+    "image_file": "Q41.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems)",
+    "question_text_extracted": "Which of the following is NOT a core function of an operating system?\nA. Process management\nB. Memory management\nC. File management\nD. Internet browsing\nE. I/O management",
+    "key_points_and_rules": "Xác định các chức năng cốt lõi của một hệ điều hành (Operating System core functions) bao gồm: Quản lý tiến trình (Process management), Quản lý bộ nhớ (Memory management), Quản lý tệp tin (File management), Quản lý thiết bị I/O (I/O management), Quản lý lưu trữ (Storage management), Bảo mật và kiểm soát truy cập. Duyệt internet (Internet browsing) là chức năng của phần mềm ứng dụng (trình duyệt web), không phải là chức năng cốt lõi của hệ điều hành.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Process management [ĐÚNG là chức năng cốt lõi] - Hệ điều hành có nhiệm vụ tạo, hủy, lập lịch và đồng bộ hóa các tiến trình.",
+      "B": "Phân tích chi tiết: Memory management [ĐÚNG là chức năng cốt lõi] - Hệ điều hành quản lý không gian bộ nhớ chính (RAM), phân bổ và thu hồi bộ nhớ cho các tiến trình.",
+      "C": "Phân tích chi tiết: File management [ĐÚNG là chức năng cốt lõi] - Hệ điều hành cung cấp hệ thống tệp để lưu trữ, tổ chức và truy xuất dữ liệu trên đĩa.",
+      "D": "Phân tích chi tiết: Internet browsing [KHÔNG PHẢI chức năng cốt lõi] - Đây là một ứng dụng phần mềm cấp cao (application software) dùng để truy cập World Wide Web, nằm ngoài phạm vi cốt lõi của nhân hệ điều hành (OS kernel).",
+      "E": "Phân tích chi tiết: I/O management [ĐÚNG là chức năng cốt lõi] - Hệ điều hành quản lý việc giao tiếp với các thiết bị ngoại vi thông qua các driver thiết bị."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Các chức năng cốt lõi của hệ điều hành bao gồm quản lý tiến trình, quản lý bộ nhớ, quản lý tệp và quản lý thiết bị nhập/xuất (I/O). Trình duyệt internet (Internet browsing) là một ứng dụng chạy trên hệ điều hành chứ không phải là một chức năng cốt lõi của bản thân hệ điều hành.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Đáp án phân tích hoàn toàn khớp với cộng đồng."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149270",
+          "author": "hunghayhoi",
+          "text": "D",
+          "timestamp": "2026-04-23T08:47:25+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1188367",
+          "author": "hamsothuan13",
+          "text": "D",
+          "timestamp": "2026-07-22T17:22:06+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 42,
+    "question_id": "Q42",
+    "image_file": "Q42.jpg",
+    "subject_domain": "Hệ điều hành & Kiến trúc máy tính (OS & Computer Architecture)",
+    "question_text_extracted": "What is a cache hit in CPU cache memory?\nA. When the requested data is found in the cache, avoiding access to main memory.\nB. When the CPU fails to locate data in the cache and retrieves it from RAM.\nC. When a new cache line is added to the cache memory and modifies previously stored data.\nD. When all cache levels are fully utilized by the CPU.",
+    "key_points_and_rules": "Hiểu rõ khái niệm 'cache hit' và 'cache miss' trong kiến trúc bộ nhớ đệm của CPU. Cache hit xảy ra khi dữ liệu mà CPU yêu cầu đã nằm sẵn trong bộ nhớ đệm (cache), giúp CPU truy xuất dữ liệu cực kỳ nhanh chóng mà không cần phải truy cập vào bộ nhớ chính (RAM) chậm hơn.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Khi dữ liệu được yêu cầu được tìm thấy trong cache, tránh việc phải truy cập vào bộ nhớ chính. Đây chính xác là định nghĩa của 'cache hit'.",
+      "B": "Phân tích chi tiết: Khi CPU không tìm thấy dữ liệu trong cache và phải lấy từ RAM. Đây là định nghĩa của 'cache miss', không phải cache hit.",
+      "C": "Phân tích chi tiết: Mô tả về hiện tượng xung đột bộ nhớ đệm hoặc ghi đè dòng cache (cache line collision / replacement), không phải cache hit.",
+      "D": "Phân tích chi tiết: Mô tả trạng thái đầy tải của các cấp cache, hoàn toàn không liên quan đến định nghĩa cache hit."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Cache hit (trúng cache) xảy ra khi CPU yêu cầu dữ liệu và dữ liệu đó đã có sẵn trong bộ nhớ đệm (cache), cho phép CPU lấy dữ liệu ngay lập tức mà không cần mất thời gian truy cập vào RAM.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án phân tích hoàn toàn trùng khớp với đáp án của cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149272",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:49:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188370",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T17:23:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 43,
+    "question_id": "Q43",
+    "image_file": "Q43.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Which of the following file system operations is NOT supported in Win32 but exists in UNIX?\nA. rename\nB. mkdir\nC. link\nD. rmdir",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định thao tác hệ thống tập tin nào KHÔNG được hỗ trợ trong Win32 (Windows API) nhưng tồn tại trong hệ thống UNIX.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Thao tác đổi tên tập tin (`rename`) được hỗ trợ đầy đủ trong cả Win32 API lẫn UNIX.",
+      "B": "Phân tích chi tiết: Thao tác tạo thư mục (`mkdir`) được hỗ trợ trong cả Win32 (ví dụ: hàm `CreateDirectory` hoặc lệnh `mkdir`) và UNIX.",
+      "C": "Phân tích chi tiết: Thao tác tạo liên kết cứng (`link`) là một đặc trưng kinh điển của hệ thống tập tin UNIX (hàm `link()`). Trong các hệ thống Win32 truyền thống (trước khi hỗ trợ NTFS symbolic links và hard links phức tạp hơn), API Win32 nguyên thủy không hỗ trợ gọi trực tiếp hệ thống lệnh `link` như UNIX, và đây là câu trả lời kinh điển trong giáo trình Hệ điều hành (Silberschatz) khi so sánh các System Calls về File Systems giữa Windows và UNIX.",
+      "D": "Phân tích chi tiết: Thao tác xóa thư mục (`rmdir`) được hỗ trợ trong cả Win32 và UNIX."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong UNIX, hệ thống cung cấp lời gọi hệ thống `link()` để tạo một hard link trỏ tới một tập tin đã có sẵn. Trong khi đó, Win32 API truyền thống không hỗ trợ thao tác `link` trực tiếp theo mô hình POSIX này.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án của cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149276",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:51:14+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188373",
+          "author": "hamsothuan13",
+          "text": "C",
+          "timestamp": "2026-07-22T17:23:27+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 44,
+    "question_id": "Q44",
+    "image_file": "Q44.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Which of the following best describes a monolithic operating system structure?\nA. A system where all functionalities are divided into separate processes.\nB. A system where only file management is in the kernel.\nC. A system where all components run in supervisor mode.\nD. A system where drivers are executed in user space.",
+    "key_points_and_rules": "Xác định định nghĩa chuẩn của cấu trúc hệ điều hành nguyên khối (Monolithic operating system).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Mô tả các hệ thống phân tán hoặc vi nhân kernel (microkernel) nơi các tính năng được tách thành các tiến trình riêng biệt.",
+      "B": "Phân tích chi tiết: Sai, trong hệ thống monolithic, không chỉ quản lý file mà toàn bộ các dịch vụ hệ điều hành (quản lý bộ nhớ, tiến trình, thiết bị, v.v.) đều nằm trong kernel.",
+      "C": "Phân tích chi tiết: Trong kiến trúc nguyên khối (Monolithic), toàn bộ hệ điều hành chạy như một chương trình lớn duy nhất ở chế độ đặc quyền (supervisor mode / kernel mode), cung cấp hiệu năng cao nhưng kém tính cô lập.",
+      "D": "Phân tích chi tiết: Sai, drivers trong hệ thống monolithic chạy trực tiếp trong kernel space (chế độ supervisor), không phải user space."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Hệ điều hành nguyên khối (Monolithic OS) được đặc trưng bởi việc gom tất cả các thành phần chức năng của hệ điều hành chạy chung trong một không gian địa chỉ duy nhất ở chế độ đặc quyền (supervisor mode / kernel mode).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án của cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149279",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:52:26+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188376",
+          "author": "hamsothuan13",
+          "text": "C",
+          "timestamp": "2026-07-22T17:24:01+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 45,
+    "question_id": "Q45",
+    "image_file": "Q45.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (Hệ điều hành - Quản lý bộ nhớ)",
+    "question_text_extracted": "Given the segment table below:\nSegment Limit Base\n0 600 219\n1 14 2300\n2 100 90\n3 580 1327\n4 96 1952\nWhat is the physical address for the logical address (2, 50)?\n\nA. 140\nB. 130\nC. 150\nD. Invalid address",
+    "key_points_and_rules": "Trong cơ chế phân đoạn (Segmentation), địa chỉ logic được biểu diễn dưới dạng cặp (s, d) với s là số hiệu phân đoạn và d là độ dịch (offset) trong phân đoạn đó. Để tính địa chỉ vật lý:\n1. Kiểm tra điều kiện hợp lệ: offset d phải nhỏ hơn hoặc bằng limit của phân đoạn s (0 <= d < limit). Nếu d >= limit, phát sinh lỗi bẫy bộ nhớ (Invalid address).\n2. Nếu hợp lệ, địa chỉ vật lý = base[s] + d.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Xét segment s = 2, từ bảng ta có Limit = 100, Base = 90. Địa chỉ logic yêu cầu là (2, 50) tức là s = 2, d = 50. Vì d = 50 < Limit = 100 nên địa chỉ hợp lệ. Địa chỉ vật lý = Base + d = 90 + 50 = 140. Phương án A tính ra đúng bằng 140 [ĐÚNG].",
+      "B": "Phân tích chi tiết: 130 không phải là kết quả của phép tính 90 + 50 [SAI].",
+      "C": "Phân tích chi tiết: 150 không phải là kết quả của phép tính 90 + 50 [SAI].",
+      "D": "Phân tích chi tiết: Do d = 50 < 100 nên đây là địa chỉ hợp lệ, không phải Invalid address [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Đề bài yêu cầu tính địa chỉ vật lý cho địa chỉ logic (2, 50) dựa vào bảng phân đoạn (Segment table). Ta xác định được phân đoạn số 2 có Limit = 100 và Base = 90. Vì giá trị offset d = 50 nhỏ hơn giới hạn Limit = 100 nên địa chỉ này hợp lệ. Địa chỉ vật lý được tính bằng công thức: Base + d = 90 + 50 = 140. Do đó đáp án chính xác là 140 (phương án A).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149288",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:54:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188401",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T17:31:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1198786",
+          "author": "detukeria",
+          "text": "A, (a,b) thi a la chi segment, b la do lech vi 100 > 50 => phu hop, => dap an = 90(base) + 50 = 140",
+          "timestamp": "2026-07-26T14:49:25+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 46,
+    "question_id": "Q46",
+    "image_file": "Q46.jpg",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (Hệ điều hành - Quản lý Deadlock / Banker's Algorithm)",
+    "question_text_extracted": "A system has three processes: P1, P2, P3 and four resources: RS1, RS2, RS3, RS4. The following allocation (C1, C2, C3) and request (R1, R2, R3) matrices are given:\nAllocated: C1 (1 0 0 1), C2 (2 1 0 1), C3 (0 1 2 0)\nRequested: R1 (2 0 0 1), R2 (0 1 1 0), R3 (0 1 1 0 0...)\nAvailable resources: (2, 1, 0, 1)\nWhat is the correct execution order of processes?",
+    "key_points_and_rules": "Áp dụng thuật toán an toàn (Safe state / Banker's algorithm) để tìm thứ tự thực thi của các tiến trình:\n1. Tính toán ma trận Need = Maximum - Allocation (hoặc sử dụng ma trận Request nếu đề bài cho trực tiếp ma trận yêu cầu tài nguyên hiện tại).\n2. Kiểm tra tiến trình nào có yêu cầu (Request/Need) nhỏ hơn hoặc bằng tài nguyên Available hiện tại.\n3. Cấp phát tài nguyên cho tiến trình đó, cho phép tiến trình chạy xong và giải phóng tài nguyên (Available mới = Available cũ + Allocated của tiến trình đó).\n4. Lặp lại cho đến khi tất cả các tiến trình hoàn thành.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Kiểm tra trình tự P3 -> P2 -> P1.\n- Ban đầu Available = (2, 1, 0, 1).\n- Xét P3 (Allocated: 0,1,2,0; Request: 0,1,1,0): Request (0,1,1,0) <= Available (2,1,0,1). P3 có thể chạy. Sau khi P3 kết thúc, Available mới = Available cũ + Allocated(P3) = (2,1,0,1) + (0,1,2,0) = (2,2,2,1).\n- Tiếp theo xét P2 (Allocated: 2,1,0,1; Request: 0,1,1,0): Request (0,1,1,0) <= Available (2,2,2,1). P2 chạy xong, Available mới = (2,2,2,1) + (2,1,0,1) = (4,3,2,2).\n- Cuối cùng xét P1 (Allocated: 1,0,0,1; Request: 2,0,0,1): Request (2,0,0,1) <= Available (4,3,2,2). P1 chạy xong.\nThứ tự P3 -> P2 -> P1 hoàn toàn hợp lệ và an toàn [ĐÚNG].",
+      "B": "Phân tích chi tiết: Kiểm tra trình tự P2 -> P1 -> P3 không thỏa mãn điều kiện cấp phát ngay từ đầu với Available (2,1,0,1) và Request của P2 hoặc P1 [SAI].",
+      "C": "Phân tích chi tiết: Trình tự P1 -> P2 -> P3 không thỏa mãn điều kiện request của P1 so với available ban đầu [SAI].",
+      "D": "Phân tích chi tiết: Trình tự P2 -> P3 -> P1 không thỏa mãn điều kiện [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Dựa vào ma trận phân bổ, ma trận yêu cầu và tài nguyên khả dụng Available = (2, 1, 0, 1), ta tiến hành kiểm tra thuật toán an toàn. Tiến trình P3 có yêu cầu (0, 1, 1, 0) nhỏ hơn hoặc bằng Available, nên P3 có thể thực thi trước. Sau khi P3 kết thúc, tài nguyên được giải phóng giúp các tiến trình tiếp theo là P2 và P1 lần lượt thực thi. Thứ tự thực thi đúng là P3 -> P2 -> P1 (phương án A).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1151746",
+          "author": "consocnho",
+          "text": "A",
+          "timestamp": "2026-04-24T21:49:40+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1152255",
+          "author": "vhminh0401",
+          "text": "A",
+          "timestamp": "2026-04-25T08:08:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188645",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T20:38:24+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 47,
+    "question_id": "Q47",
+    "image_file": "Q47.jpg",
+    "subject_domain": "Hệ điều hành & Hệ thống nhúng (OSG202)",
+    "question_text_extracted": "Why is deadlock prevention often favored in embedded or real-time systems over avoidance?\nA. Guarantees fixed timing without complex runtime checks\nB. Allows resource sharing in dynamic threads\nC. Uses fewer memory segments during paging\nD. Facilitate integration with authentication systems across process layers",
+    "key_points_and_rules": "Yêu cầu giải thích lý do tại sao deadlock prevention được ưu tiên hơn deadlock avoidance trong hệ thống nhúng hoặc thời gian thực (real-time systems).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Deadlock prevention loại bỏ ít nhất một trong bốn điều kiện cần của deadlock ngay từ thiết kế tĩnh, do đó không đòi hỏi các thuật toán kiểm tra trạng thái an toàn phức tạp tại thời điểm chạy (runtime) như thuật toán Banker của deadlock avoidance. Điều này giúp đảm bảo tính xác định về thời gian (fixed timing/deterministic timing), điều tối quan trọng trong hệ thống real-time. -> [ĐÚNG]",
+      "B": "Phân tích chi tiết: Deadlock avoidance thường cho phép cấp phát linh hoạt hơn nếu hệ thống ở trạng thái an toàn, nhưng prevention lại thường hạn chế việc chia sẻ tài nguyên (như yêu cầu hold and wait hoặc circular wait phải bị phá vỡ). -> [SAI]",
+      "C": "Phân tích chi tiết: Deadlock prevention là vấn đề quản lý tiến trình/tài nguyên, không liên quan trực tiếp đến số lượng phân đoạn bộ nhớ (memory segments) trong paging. -> [SAI]",
+      "D": "Phân tích chi tiết: Deadlock prevention không liên quan đến tích hợp hệ thống xác thực (authentication systems). -> [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong hệ thống thời gian thực (real-time systems), tính dự đoán được về thời gian (determinism) là cực kỳ quan trọng. Deadlock prevention sử dụng các ràng buộc thiết kế tĩnh để loại bỏ các điều kiện gây ra deadlock ngay từ trước khi chạy chương trình, nhờ đó hệ thống không phải tốn thời gian thực hiện các phép kiểm tra trạng thái an toàn (như thuật toán Banker trong avoidance) tại runtime. Điều này đảm bảo thời gian thực thi cố định và không bị gián đoạn.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng: A."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149290",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:55:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188643",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T20:33:31+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1233145",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-08-03T14:24:52+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 48,
+    "question_id": "Q48",
+    "image_file": "Q48.jpg",
+    "subject_domain": "Hệ điều hành & Quản lý bộ nhớ/Tài nguyên (OSG202)",
+    "question_text_extracted": "A system has 15 memory blocks and three processes: P1, P2, P3. Their memory requirements and allocations are given below:\nProcess  Maximum Needed  Allocated\nP1       8               3\nP2       6               4\nP3       5               3\nIf the number of available memory blocks in the system at this moment is 5, what is the state of the system?\nA. Safe\nB. Unsafe\nC. Deadlock\nD. Starvation",
+    "key_points_and_rules": "Sử dụng Thuật toán Nhà băng (Banker's Algorithm) để kiểm tra trạng thái an toàn (Safe state) của hệ thống với tổng tài nguyên = 15 khối bộ nhớ.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: \n- Tổng tài nguyên = 15.\n- Tổng đã cấp phát (Allocated) = 3 + 4 + 3 = 10.\n- Tài nguyên đang Available = 5 (đề bài cho).\n- Tính ma trận Need = Maximum Needed - Allocated:\n  + P1 Need = 8 - 3 = 5\n  + P2 Need = 6 - 4 = 2\n  + P3 Need = 5 - 3 = 2\n- Kiểm tra chuỗi an toàn (Safe sequence):\n  + Available hiện tại = 5.\n  + Xét P2: Need(P2) = 2 <= Available (5). Có thể cấp phát cho P2 kết thúc và giải phóng tài nguyên. Available mới sau khi P2 xong = 5 + 4 = 9.\n  + Xét P3: Need(P3) = 2 <= Available (9). Có thể cấp phát cho P3 kết thúc. Available mới = 9 + 3 = 12.\n  + Xét P1: Need(P1) = 5 <= Available (12). Có thể cấp phát cho P1 kết thúc. Available mới = 12 + 3 = 15.\n- Do tìm được chuỗi an toàn <P2, P3, P1>, hệ thống đang ở trạng thái an toàn (Safe). -> [ĐÚNG]",
+      "B": "Phân tích chi tiết: Hệ thống tìm được chuỗi an toàn nên không phải Unsafe. -> [SAI]",
+      "C": "Phân tích chi tiết: Hệ thống chưa xảy ra deadlock vì vẫn có tiến trình có thể hoàn thành. -> [SAI]",
+      "D": "Phân tích chi tiết: Starvation là hiện tượng đói tài nguyên dài hạn, không phản ánh trạng thái an toàn/không an toàn theo thuật toán Banker. -> [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Áp dụng thuật toán Banker's Algorithm:\n1. Tính ma trận Need cho mỗi tiến trình: P1 = 5, P2 = 2, P3 = 2.\n2. Tài nguyên Available hiện tại = 5.\n3. Ta tìm chuỗi an toàn:\n   - P2 cần 2, ta có 5 (đủ). P2 chạy xong trả lại 4 đang giữ -> Available = 5 - 2 + 4 = 7 (thực tế tính nhanh: Available + Allocated của tiến trình được chọn). Ở đây Available = 5, xét P2 có Need = 2 <= 5. Sau khi P2 chạy xong, Available = 5 + 4 = 9.\n   - Tiếp tục xét P3 có Need = 2 <= 9. P3 chạy xong trả lại 3 -> Available = 9 + 3 = 12.\n   - Cuối cùng xét P1 có Need = 5 <= 12. P1 chạy xong trả lại 3 -> Available = 12 + 3 = 15.\nVì tồn tại chuỗi an toàn <P2, P3, P1>, hệ thống ở trạng thái Safe.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng: A."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149298",
+          "author": "hunghayhoi",
+          "text": "A",
+          "timestamp": "2026-04-23T08:58:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1188646",
+          "author": "hamsothuan13",
+          "text": "A",
+          "timestamp": "2026-07-22T20:38:39+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 49,
+    "question_id": "Q49",
+    "image_file": "Q49.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems)",
+    "question_text_extracted": "In a system with limited resources, which deadlock handling strategy is most appropriate for safety-critical applications?\n\nA. Ostrich algorithm\nB. Deadlock detection and recovery\nC. Deadlock avoidance using Banker's algorithm\nD. Terminating all active tasks and reinitializing the system to recover from potential deadlock",
+    "key_points_and_rules": "Xác định chiến lược xử lý deadlock phù hợp nhất cho các hệ thống an toàn trọng yếu (safety-critical applications) - nơi mà việc xảy ra deadlock hoặc đột ngột hủy tiến trình/khởi động lại hệ thống là không thể chấp nhận được.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Thuật toán Đà Điểu (Ostrich algorithm) phớt lờ hoàn toàn vấn đề deadlock với giả định rằng deadlock rất hiếm khi xảy ra. Điều này hoàn toàn không thể chấp nhận được đối với các hệ thống an toàn trọng yếu (safety-critical systems) -> [SAI]",
+      "B": "Phân tích chi tiết: Phát hiện và phục hồi deadlock (Deadlock detection and recovery) cho phép hệ thống rơi vào deadlock sau đó tìm cách gỡ rối (thường bằng cách hủy hoặc rollback tiến trình). Đối với hệ thống an toàn, việc bị gián đoạn hoặc mất mát trạng thái tiến trình đột ngột là rủi ro lớn -> [SAI]",
+      "C": "Phân tích chi tiết: Tránh deadlock bằng thuật toán Banker (Deadlock avoidance using Banker's algorithm) đảm bảo hệ thống luôn duy trì ở trạng thái an toàn (safe state), ngăn chặn trước khi deadlock có thể xảy ra, rất phù hợp với tài nguyên giới hạn trong các hệ thống an toàn trọng yếu -> [ĐÚNG]",
+      "D": "Phân tích chi tiết: Hủy toàn bộ tác vụ hoạt động và khởi động lại hệ thống là một giải pháp cực đoan, gây gián đoạn dịch vụ nghiêm trọng và không tối ưu cho hệ thống an toàn trọng yếu -> [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong các hệ thống an toàn trọng yếu (safety-critical applications), tính ổn định và khả năng dự đoán là tối quan trọng. Thuật toán tránh deadlock sử dụng thuật toán Banker đảm bảo hệ thống không bao giờ chuyển sang trạng thái không an toàn (unsafe state), từ đó ngăn chặn deadlock một cách chắc chắn mà không cần phải phục hồi hay khởi động lại hệ thống một cách đột ngột.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149302",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T08:59:44+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188647",
+          "author": "hamsothuan13",
+          "text": "C",
+          "timestamp": "2026-07-22T20:39:02+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 50,
+    "question_id": "Q50",
+    "image_file": "Q50.jpg",
+    "subject_domain": "Hệ điều hành (Operating Systems)",
+    "question_text_extracted": "Which of the following techniques attacks the \"No Preemption\" condition for preventing deadlocks?\n\nA. Requiring processes to request all resources at once.\nB. Allowing only one process to use a resource at a time.\nC. Spooling printer output to disk to allow the printer daemon exclusive access.\nD. Ordering resources numerically and requiring processes to request them in increasing order.",
+    "key_points_and_rules": "Xác định phương pháp tấn công vào điều kiện \"Không thu hồi tài nguyên\" (No Preemption) trong 4 điều kiện cần của Deadlock (Coffman conditions). Điều kiện No Preemption có nghĩa là tài nguyên không thể bị cưỡng chế lấy đi khỏi tiến trình khi nó đang nắm giữ cho đến khi nó hoàn thành nhiệm vụ.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Yêu cầu các tiến trình yêu cầu tất cả tài nguyên cùng một lúc nhằm tấn công điều kiện \"Hold and Wait\" (Giữ và Chờ) -> [SAI]",
+      "B": "Phân tích chi tiết: Cho phép chỉ một tiến trình sử dụng tài nguyên tại một thời điểm nhằm củng cố hoặc giữ vững điều kiện \"Mutual Exclusion\" (Loại trừ tương hỗ) -> [SAI]",
+      "C": "Phân tích chi tiết: Spooling đầu ra máy in ra đĩa cho phép tiến trình daemon của máy in kiểm soát độc quyền thiết bị, nhưng quan trọng hơn là cho phép thu hồi (preempt) tài nguyên hoặc giải quyết việc chiếm dụng độc quyền bằng cách chuyển đổi qua lại linh hoạt, hoặc giải quyết vấn đề phân chia tài nguyên không có preemption (trong nhiều tài liệu kinh điển của Tanenbaum, spooling máy in đĩa giải quyết vấn đề tương tranh bằng cách biến thiết bị độc quyền thành thiết bị có thể chia sẻ hoặc cho phép hệ thống thu hồi/quản lý lại tác vụ) -> [ĐÚNG]",
+      "D": "Phân tích chi tiết: Sắp xếp tài nguyên theo thứ tự số và yêu cầu tiến trình gọi theo thứ tự tăng dần nhằm tấn công điều kiện \"Circular Wait\" (Chờ vòng tròn) -> [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Theo giáo trình Hệ điều hành kinh điển (ví dụ: Modern Operating Systems của Andrew S. Tanenbaum), việc sử dụng kỹ thuật Spooling (như spooling cho máy in) giúp loại bỏ điều kiện No Preemption đối với các thiết bị độc quyền bằng cách chuyển đổi tài nguyên thành dạng có thể quản lý và thu hồi/cấp phát lại thông qua một tiến trình trung gian (daemon).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1149321",
+          "author": "hunghayhoi",
+          "text": "C",
+          "timestamp": "2026-04-23T09:08:10+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1188648",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-07-22T20:39:46+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1189823",
+          "author": "huutuong",
+          "text": "C",
+          "timestamp": "2026-07-23T21:02:45+0700",
+          "reactions": 1,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  }
+]

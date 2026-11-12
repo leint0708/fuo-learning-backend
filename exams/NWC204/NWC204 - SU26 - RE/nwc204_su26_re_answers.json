@@ -1,0 +1,2358 @@
+[
+  {
+    "question_number": 1,
+    "question_id": "Q1",
+    "image_file": "Q1.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What is the purpose of the three-way handshake in TCP communication?\nA. To establish that the destination device is present and accepting requests\nB. To encrypt the data before transmission\nC. To determine the best path for data transmission\nD. To synchronize the clocks between devices",
+    "key_points_and_rules": "Yêu cầu: Xác định mục đích của bắt tay 3 bước (three-way handshake) trong giao thức TCP.\nLý thuyết: Bắt tay 3 bước (SYN, SYN-ACK, ACK) giúp xác nhận thiết bị đích có hoạt động hay không, đang lắng nghe cổng kết nối và sẵn sàng chấp nhận yêu cầu kết nối, đồng thời đồng bộ hóa số thứ tự (Sequence Number) ban đầu giữa hai thiết bị.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Mục đích chính của bắt tay 3 bước trong TCP là thiết lập kết nối logic, đảm bảo thiết bị nhận tồn tại (present) và sẵn sàng chấp nhận các yêu cầu dữ liệu (accepting requests).",
+      "B": "[SAI] Mã hóa dữ liệu là nhiệm vụ của các giao thức tầng trên hoặc giao thức bảo mật như TLS/SSL, không thuộc về TCP 3-way handshake.",
+      "C": "[SAI] Tìm đường đi tốt nhất (routing) là chức năng của tầng Mạng (Network Layer - IP, OSPF, BGP...), không phải TCP ở tầng Giao vận (Transport Layer).",
+      "D": "[SAI] Đồng bộ hóa đồng hồ thời gian thực giữa các thiết bị là nhiệm vụ của NTP (Network Time Protocol), TCP chỉ đồng bộ số thứ tự gói tin (Sequence Number)."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Quá trình bắt tay 3 bước (Three-way Handshake) của TCP bao gồm các bước gửi gói SYN, SYN-ACK, và ACK. Mục đích cơ bản nhất của quá trình này là xác định thiết bị đích có đang hoạt động trên mạng và sẵn sàng nhận kết nối hay không, cũng như thiết lập các tham số kết nối ban đầu giữa hai bên.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án phân tích hoàn toàn trùng khớp với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271765",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-15T22:52:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1271784",
+          "author": "ank17_",
+          "text": "A",
+          "timestamp": "2026-10-16T08:36:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 2,
+    "question_id": "Q2",
+    "image_file": "Q2.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "A PC is downloading a large file from a server. The TCP window is 1000 bytes. The server is sending the file using 100-byte segments. How many segments will the server send before it requires an acknowledgment from the PC?\nA. 1 segment\nB. 10 segments\nC. 100 segments\nD. 1000 segments",
+    "key_points_and_rules": "Công thức điều khiển luồng TCP Window Size:\nSố lượng phân đoạn (Segments) có thể gửi trước khi cần ACK = Kích thước cửa sổ (Window size) / Kích thước mỗi phân đoạn (Segment size).",
+    "option_by_option_analysis": {
+      "A": "[SAI] 1 phân đoạn chỉ tương ứng với 100 bytes, chưa lấp đầy kích thước cửa sổ 1000 bytes.",
+      "B": "[ĐÚNG] Kích thước cửa sổ = 1000 bytes. Kích thước mỗi segment = 100 bytes. Số segments gửi trước khi nhận ACK = 1000 / 100 = 10 segments.",
+      "C": "[SAI] 100 segments tương ứng với 100 * 100 = 10,000 bytes, vượt quá kích thước cửa sổ.",
+      "D": "[SAI] 1000 segments tương ứng với 100,000 bytes, vượt quá kích thước cửa sổ."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Kích thước cửa sổ TCP (TCP Window Size) xác định lượng dữ liệu (tính bằng byte) mà bên gửi có thể truyền đi trước khi nhận được tin nhắn xác thực (ACK) từ bên nhận. Với cửa sổ 1000 bytes và kích thước mỗi đoạn dữ liệu là 100 bytes, máy chủ có thể gửi tối đa 1000 / 100 = 10 đoạn (segments) trước khi phải dừng lại chờ ACK.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án phân tích hoàn toàn trùng khớp với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271766",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-15T22:56:57+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1271785",
+          "author": "ank17_",
+          "text": "B",
+          "timestamp": "2026-10-16T08:36:55+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 3,
+    "question_id": "Q3",
+    "image_file": "Q3.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Why is UDP desirable for protocols that make a simple request and reply transactions?\n\nA. Flow control\nB. Low overhead\nC. Reliability\nD. Same-order delivery",
+    "key_points_and_rules": "UDP (User Datagram Protocol) là giao thức tầng Transport không kết nối (connectionless), không thực hiện bắt tay (handshake), không có cơ chế kiểm soát luồng (flow control), kiểm soát tắc nghẽn hay khôi phục lỗi/truyền lại. Kích thước header của UDP rất nhỏ (chỉ 8 bytes so với tối thiểu 20 bytes của TCP), do đó nó có chi phí xử lý (overhead) rất thấp, rất thích hợp cho các ứng dụng trao đổi dạng request-reply đơn giản (như DNS query).",
+    "option_by_option_analysis": {
+      "A": "SAI: UDP không cung cấp tính năng kiểm soát luồng (Flow control). Tính năng này thuộc về TCP.",
+      "B": "ĐÚNG: UDP có overhead rất thấp (kích thước header nhỏ chỉ 8 byte, không tốn thời gian thiết lập và giải phóng kết nối 3 bước), giúp tối ưu hóa tốc độ và tài nguyên cho các giao dịch request-reply đơn giản.",
+      "C": "SAI: UDP là giao thức không tin cậy (unreliable), không đảm bảo truyền dữ liệu thành công như TCP.",
+      "D": "SAI: UDP không đảm bảo thứ tự dữ liệu truyền đến (Same-order delivery). TCP mới đảm bảo thứ tự nhờ Sequence Number."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "UDP mong muốn cho các giao thức trao đổi request-reply đơn giản (chẳng hạn như DNS) vì UDP có overhead thấp (Low overhead): header chỉ 8 byte và không mất thời gian bắt tay khởi tạo kết nối như TCP.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả phân tích trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271767",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-15T23:01:21+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1271786",
+          "author": "ank17_",
+          "text": "Tại sao UDP phù hợp với các giao thức thực hiện những giao dịch yêu cầu và phản hồi đơn giản? A. Flow control: Kiểm soát luồng dữ liệu. B. Low overhead: Ít chi phí phụ trợ. C. Reliability: Độ tin cậy. D. Same-order delivery: Đảm bảo dữ liệu đến theo đúng thứ tự. B. Low overhead",
+          "timestamp": "2026-10-16T08:38:15+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 4,
+    "question_id": "Q4",
+    "image_file": "Q4.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Which of the following applications typically use UDP?\n\nA. File transfers\nB. Live video streaming\nC. Secure login\nD. Email",
+    "key_points_and_rules": "Giao thức UDP được ưu tiên sử dụng cho các ứng dụng đòi hỏi tốc độ cao, thời gian thực, chấp nhận mất một số gói tin mà không cần truyền lại (như Live video streaming, VoIP, Online gaming). Trong khi đó, các ứng dụng cần độ tin cậy tuyệt đối (File transfer, Secure login, Email) sẽ sử dụng TCP.",
+    "option_by_option_analysis": {
+      "A": "SAI: Truyền file (FTP, HTTP/HTTPS downloads) đòi hỏi tính toàn vẹn dữ liệu chính xác 100%, do đó dùng TCP.",
+      "B": "ĐÚNG: Phát trực tiếp video (Live video streaming) ưu tiên tốc độ phát realtime, nếu mất gói tin thì bỏ qua chứ không chờ truyền lại (tránh trễ/giật hình), nên thường sử dụng UDP (RTP/UDP).",
+      "C": "SAI: Đăng nhập an toàn (SSH, HTTPS) đòi hỏi độ tin cậy và chính xác cao, dùng TCP.",
+      "D": "SAI: Thư điện tử Email (SMTP, IMAP, POP3) đòi hỏi dữ liệu đến đầy đủ không mất mát, dùng TCP."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Live video streaming là ứng dụng thời gian thực yêu cầu độ trễ thấp, không muốn chờ truyền lại gói tin bị mất, nên thường sử dụng giao thức UDP.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả phân tích trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271768",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-15T23:12:22+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1271787",
+          "author": "ank17_",
+          "text": "B. Live video streaming",
+          "timestamp": "2026-10-16T08:39:42+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 5,
+    "question_id": "Q5",
+    "image_file": "Q5.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhich two statements describe the services provided by the data link layer? (Choose two.)\n\nA. It defines the end-to-end delivery addressing scheme.\nB. It maintains the path between the source and destination devices during the data transmission.\nC. It manages the access of frames to the network media.\nD. It provides reliable delivery through link establishment and flow control.\nE. It ensures that application data will be transmitted according to the prioritization.\nF. It packages various Layer 3 PDUs into a frame format that is compatible with the network interface.",
+    "key_points_and_rules": "Yêu cầu chọn 2 đáp án đúng về chức năng và dịch vụ của Tầng liên kết dữ liệu (Data Link Layer - Layer 2 trong mô hình OSI).\nChức năng cốt lõi của Layer 2 là đóng gói PDU tầng 3 (Packet) thành Frame phù hợp với giao diện mạng và điều khiển truy nhập đường truyền vật lý (Media Access Control - MAC).",
+    "option_by_option_analysis": {
+      "A": "[SAI] Địa chỉ truyền tải đầu-cuối (End-to-end addressing scheme) là chức năng của Tầng Mạng (Layer 3 - ví dụ địa chỉ IP).",
+      "B": "[SAI] Duy trì đường đi giữa thiết bị nguồn và đích thuộc trách nhiệm của Tầng Mạng (Routing ở Layer 3).",
+      "C": "[ĐÚNG] Quản lý việc truy nhập của các khung dữ liệu (frames) vào phương tiện truyền dẫn mạng (Network Media) qua phân tầng MAC.",
+      "D": "[SAI] Cung cấp truyền tải tin cậy qua thiết lập liên kết và kiểm soát luồng chủ yếu là chức năng của Tầng Vận chuyển (Layer 4 - TCP) hoặc các giao thức kết nối chuyên biệt.",
+      "E": "[SAI] Đảm bảo dữ liệu ứng dụng được truyền theo độ ưu tiên thuộc về cơ chế QoS tầng ứng dụng / tầng mạng.",
+      "F": "[ĐÚNG] Đóng gói các PDU Tầng 3 (Packet) thành định dạng Khung (Frame) tương thích với giao diện mạng vật lý kết nối."
+    },
+    "question_type": "multiple_choice",
+    "community_answer": "CF",
+    "ai_answer": "CF",
+    "ai_explanation": "Tầng liên kết dữ liệu (Data Link Layer) đảm nhận 2 nhiệm vụ chính:\n1. Quản lý truy cập phương tiện truyền dẫn (Media Access Control) để đưa khung (frame) lên đường truyền (Option C).\n2. Đóng gói PDU tầng 3 thành định dạng frame tương thích với giao diện mạng chuẩn bị phát đi (Option F).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "CF",
+      "ai_answer": "CF",
+      "comparison_note": "Đáp án của AI (CF) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (CF). Đáp án hoàn toàn trùng khớp với đáp án cộng đồng ('CF')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "CF": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271769",
+          "author": "Anh Nhật",
+          "text": "C F",
+          "timestamp": "2026-10-15T23:19:50+0700",
+          "reactions": 0,
+          "extracted_answer": "CF"
+        },
+        {
+          "comment_id": "xfmg-comment-1271788",
+          "author": "ank17_",
+          "text": "CF",
+          "timestamp": "2026-10-16T08:48:03+0700",
+          "reactions": 0,
+          "extracted_answer": "CF"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 6,
+    "question_id": "Q6",
+    "image_file": "Q6.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat are the three basic parts of a data link frame?\n\nA. Header, Data, and Trailer\nB. Source, Destination, and Data\nC. Start, Control, and Stop\nD. Addressing, Type, and Error Detection",
+    "key_points_and_rules": "Cấu trúc cơ bản của một Khung dữ liệu (Data Link Frame) ở Layer 2 gồm 3 thành phần chính: Phần đầu (Header), Phần dữ liệu/Tải trọng (Data/Payload), và Phần đuôi (Trailer).",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Khung dữ liệu tầng liên kết luôn bao gồm Header (chứa địa chỉ MAC, control info), Data (chứa PDU tầng 3), và Trailer (chứa kiểm lỗi FCS).",
+      "B": "[SAI] Source và Destination là các trường thông tin nằm bên trong phần Header, không phải 3 thành phần cấu trúc chính.",
+      "C": "[SAI] Start, Control, Stop chỉ là các trường dữ liệu nhỏ thuộc Header hoặc Trailer.",
+      "D": "[SAI] Addressing, Type, Error Detection là thông tin chứa trong Header và Trailer, không phải tên 3 phần chính cấu thành Frame."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Một Frame ở tầng Data Link chuẩn bao gồm 3 phần cấu trúc cơ bản:\n- Header: Chứa thông tin điều khiển như địa chỉ MAC nguồn/đích, loại giao thức.\n- Data: Chứa gói tin (Packet) nhận từ tầng mạng xuống.\n- Trailer: Chứa thông tin kiểm soát lỗi (như FCS/CRC) và đánh dấu kết thúc frame.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án trùng khớp tuyệt đối với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271770",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-15T23:21:40+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1271783",
+          "author": "ank17_",
+          "text": "A",
+          "timestamp": "2026-10-16T08:35:36+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 7,
+    "question_id": "Q7",
+    "image_file": "Q7.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "The IEEE 802 LAN/MAN data link layer consists of which two sublayers? (Choose two.)\nA. Network Control Protocol\nB. Logical Link Control\nC. Media Access Control\nD. Link Control Protocol",
+    "key_points_and_rules": "Theo tiêu chuẩn IEEE 802, tầng Liên kết dữ liệu (Data Link Layer) được chia thành hai tầng con (sublayers): Logical Link Control (LLC - IEEE 802.2) và Media Access Control (MAC). Đề bài yêu cầu chọn 2 đáp án đúng.",
+    "option_by_option_analysis": {
+      "A": "Phân tích phương án A: Network Control Protocol (NCP) là thành phần thuộc giao thức PPP (Point-to-Point Protocol), không phải tầng con của tầng Data Link theo mô hình IEEE 802 -> [SAI]",
+      "B": "Phân tích phương án B: Logical Link Control (LLC) giao tiếp với tầng mạng trên nó và quản lý các công việc như kiểm soát lỗi, kiểm soát luồng -> [ĐÚNG]",
+      "C": "Phân tích phương án C: Media Access Control (MAC) chịu trách nhiệm quản lý truy cập đường truyền vật lý và định địa chỉ phần cứng (địa chỉ MAC) -> [ĐÚNG]",
+      "D": "Phân tích phương án D: Link Control Protocol (LCP) là một phần của giao thức PPP dùng để thiết lập và cấu hình liên kết, không phải là tầng con IEEE 802 -> [SAI]"
+    },
+    "question_type": "multiple_choice",
+    "community_answer": "BC",
+    "ai_answer": "BC",
+    "ai_explanation": "Tầng Data Link theo tiêu chuẩn IEEE 802 LAN/MAN được chia thành 2 tầng con chính là Logical Link Control (LLC - IEEE 802.2) ở phía trên và Media Access Control (MAC - ví dụ IEEE 802.3 Ethernet hay IEEE 802.11 Wi-Fi) ở phía dưới. Vì vậy 2 lựa chọn đúng là B và C.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "BC",
+      "ai_answer": "BC",
+      "comparison_note": "Đáp án của AI (BC) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (BC). Đáp án phân tích hoàn toàn trùng khớp với đáp án cộng đồng ('BC')."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "BC": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271771",
+          "author": "Anh Nhật",
+          "text": "B C",
+          "timestamp": "2026-10-15T23:23:49+0700",
+          "reactions": 0,
+          "extracted_answer": "BC"
+        },
+        {
+          "comment_id": "xfmg-comment-1271789",
+          "author": "ank17_",
+          "text": "BC",
+          "timestamp": "2026-10-16T08:51:20+0700",
+          "reactions": 0,
+          "extracted_answer": "BC"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 8,
+    "question_id": "Q8",
+    "image_file": "Q8.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "A web client is receiving a response for a web page from a web server. From the perspective of the client, what is the correct order of the protocol stack that is used to decode the received transmission?\nA. Ethernet, IP, TCP, HTTP\nB. HTTP, TCP, IP, Ethernet\nC. Ethernet, TCP, IP, HTTP\nD. HTTP, Ethernet, IP, TCP",
+    "key_points_and_rules": "Quá trình giải mã (Decode / De-encapsulation) dữ liệu nhận được ở phía Client đi từ tầng thấp lên tầng cao: Data Link (Ethernet) -> Network (IP) -> Transport (TCP) -> Application (HTTP).",
+    "option_by_option_analysis": {
+      "A": "Phân tích phương án A: Thứ tự từ tầng thấp lên tầng cao là Ethernet (Data Link) -> IP (Network) -> TCP (Transport) -> HTTP (Application). Đây là thứ tự bóc tách/giải mã (decode) đúng -> [ĐÚNG]",
+      "B": "Phân tích phương án B: HTTP -> TCP -> IP -> Ethernet là thứ tự đóng gói (encapsulation) ở phía gửi (server), không phải thứ tự giải mã ở phía nhận -> [SAI]",
+      "C": "Phân tích phương án C: Đặt TCP trước IP là sai thứ tự tầng (TCP ở tầng Transport nằm trên IP ở tầng Network) -> [SAI]",
+      "D": "Phân tích phương án D: Thứ tự các giao thức bị xáo trộn không hợp lý -> [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Khi Web Client nhận được dữ liệu từ Web Server, quá trình giải mã (de-encapsulation) diễn ra từ tầng vật lý/data link lên đến tầng ứng dụng: nhận Frame Ethernet ở tầng Data Link -> giải mã Packet IP ở tầng Network -> giải mã Segment TCP ở tầng Transport -> nhận dữ liệu HTTP ở tầng Application. Do đó thứ tự đúng là Ethernet, IP, TCP, HTTP.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án phân tích hoàn toàn trùng khớp với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 2,
+      "valid_vote_count": 2,
+      "top_answer_votes": 2,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 2
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271772",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-15T23:29:10+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1271790",
+          "author": "ank17_",
+          "text": "A",
+          "timestamp": "2026-10-16T08:52:27+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 9,
+    "question_id": "Q9",
+    "image_file": "Q9.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Which two benefits result from using a layered model in networking?\n(Select two answers)\n\nA. Facilitates troubleshooting\nB. Promotes interoperability\nC. Increases application processing time\nD. Restricts vendor flexibility",
+    "key_points_and_rules": "Mô hình phân tầng (Layered Model như OSI, TCP/IP) trong mạng máy tính giúp giảm độ phức tạp, chuẩn hóa các giao tiếp và chia nhỏ quy trình truyền dữ liệu thành từng phần dễ quản lý.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Việc phân chia thành các tầng giúp đơn giản hóa quá trình phát hiện và khắc phục sự cố (troubleshooting), vì kỹ sư mạng có thể kiểm tra lần lượt từng tầng độc lập.",
+      "B": "[ĐÚNG] Mô hình phân tầng giúp chuẩn hóa các giao tiếp giữa các tầng, cho phép các thiết bị và phần mềm từ nhiều nhà cung cấp khác nhau tương thích và hoạt động cùng nhau (interoperability).",
+      "C": "[SAI] Việc làm tăng thời gian xử lý của ứng dụng không phải là lợi ích, mà là một nhược điểm/chi phí phát sinh (overhead) do phải đóng gói/mở gói dữ liệu qua nhiều tầng.",
+      "D": "[SAI] Mô hình phân tầng thực chất giúp mở rộng tính linh hoạt cho nhà cung cấp (vendor flexibility), vì họ có thể thay đổi thiết kế ở một tầng mà không ảnh hưởng tới các tầng khác."
+    },
+    "question_type": "multiple_choice",
+    "community_answer": "AB",
+    "ai_answer": "AB",
+    "ai_explanation": "Hai lợi ích chính của mô hình phân tầng trong mạng máy tính là hỗ trợ đơn giản hóa quá trình tìm và xử lý lỗi (Facilitates troubleshooting) và thúc đẩy khả năng tương thích giữa các sản phẩm của các nhà sản xuất khác nhau (Promotes interoperability). Do đó, đáp án đúng là A và B.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "AB",
+      "ai_answer": "AB",
+      "comparison_note": "Đáp án của AI (AB) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (AB). Kết quả phân tích trùng khớp 100% với đáp án cộng đồng ('AB')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "AB": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271774",
+          "author": "Anh Nhật",
+          "text": "A B",
+          "timestamp": "2026-10-15T23:38:11+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 10,
+    "question_id": "Q10",
+    "image_file": "Q10.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "UDP and TCP belong to which layer of the TCP/IP protocol?\n\nA. Application\nB. Transport\nC. Internet\nD. Network access",
+    "key_points_and_rules": "Cần xác định tầng hoạt động của hai giao thức chính là TCP (Transmission Control Protocol) và UDP (User Datagram Protocol) trong mô hình TCP/IP 4 tầng.",
+    "option_by_option_analysis": {
+      "A": "[SAI] Tầng Application chứa các giao thức như HTTP, FTP, DNS, SMTP...",
+      "B": "[ĐÚNG] TCP và UDP là hai giao thức cốt lõi hoạt động ở tầng Giao vận (Transport layer) chịu trách nhiệm truyền dữ liệu giữa các tiến trình end-to-end.",
+      "C": "[SAI] Tầng Internet chứa các giao thức như IP (IPv4/IPv6), ICMP, ARP...",
+      "D": "[SAI] Tầng Network access quản lý các giao thức liên quan đến phần cứng mạng và liên kết dữ liệu như Ethernet, Wi-Fi..."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Giao thức TCP (truyền dữ liệu tin cậy, có kết nối) và UDP (truyền dữ liệu nhanh, không kết nối) đều thuộc tầng Transport (Giao vận) trong mô hình TCP/IP. Do đó đáp án đúng là B.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả phân tích trùng khớp 100% với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271775",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-15T23:41:40+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 11,
+    "question_id": "Q11",
+    "image_file": "Q11.webp",
+    "subject_domain": "Mạng máy tính (Networking)",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat does the OSI model help with in networking?\nA. Encryption\nB. Address resolution\nC. Troubleshooting and standardization\nD. Server hosting",
+    "key_points_and_rules": "Mô hình OSI (Open Systems Interconnection) là một khung tham chiếu lý thuyết được thiết kế để tiêu chuẩn hóa các chức năng truyền thông của một hệ thống viễn thông hoặc máy tính.",
+    "option_by_option_analysis": {
+      "A": "Sai. Mặc dù mã hóa có thể xảy ra ở tầng Presentation (Tầng 6), nhưng đây không phải là mục đích chính của toàn bộ mô hình OSI.",
+      "B": "Sai. Phân giải địa chỉ (như ARP) là chức năng của các giao thức cụ thể, không phải là mục đích tổng quát của mô hình OSI.",
+      "C": "Đúng. Mô hình OSI chia nhỏ quá trình truyền thông mạng phức tạp thành 7 tầng riêng biệt. Việc này giúp các nhà sản xuất tiêu chuẩn hóa thiết bị (đảm bảo tính tương thích giữa các hãng) và giúp kỹ thuật viên dễ dàng cô lập lỗi (troubleshooting) bằng cách xác định vấn đề đang nằm ở tầng nào.",
+      "D": "Sai. Server hosting là một dịch vụ cung cấp không gian lưu trữ trên máy chủ, không liên quan đến mục đích của mô hình OSI."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Mô hình OSI được tạo ra nhằm mục đích cung cấp một ngôn ngữ chung và khung tiêu chuẩn cho các hệ thống mạng khác nhau có thể giao tiếp với nhau. Lợi ích lớn nhất của nó là giúp đơn giản hóa việc thiết kế mạng, thúc đẩy tính tiêu chuẩn hóa giữa các nhà cung cấp và hỗ trợ quá trình xử lý sự cố (troubleshooting) bằng cách phân lớp các chức năng.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271776",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-15T23:46:29+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 12,
+    "question_id": "Q12",
+    "image_file": "Q12.webp",
+    "subject_domain": "Mạng máy tính & An toàn thông tin",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhich benefit does SSH offer over Telnet for remotely managing a router?\nA. Encryption\nB. TCP usage\nC. Authorization\nD. connections via multiple VTY lines",
+    "key_points_and_rules": "So sánh giao thức quản trị từ xa: Telnet (không bảo mật) và SSH (bảo mật). Điểm khác biệt cốt lõi nằm ở cách xử lý dữ liệu trên đường truyền.",
+    "option_by_option_analysis": {
+      "A": "Đúng. SSH (Secure Shell) mã hóa toàn bộ dữ liệu truyền đi (bao gồm cả tên đăng nhập và mật khẩu), trong khi Telnet gửi dữ liệu dưới dạng văn bản thuần túy (plain text), dễ bị đánh cắp thông tin bởi các cuộc tấn công nghe lén (sniffing).",
+      "B": "Sai. Cả SSH và Telnet đều sử dụng giao thức TCP ở tầng Transport (SSH dùng cổng 22, Telnet dùng cổng 23). Đây không phải là ưu điểm riêng của SSH.",
+      "C": "Sai. Cả hai giao thức đều hỗ trợ các cơ chế xác thực và ủy quyền (Authorization) để kiểm soát quyền hạn người dùng.",
+      "D": "Sai. Cả SSH và Telnet đều cho phép kết nối thông qua các đường ảo VTY (Virtual Teletype) trên thiết bị mạng."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "A",
+    "ai_explanation": "Lý do chính mà SSH được khuyến nghị thay thế hoàn toàn cho Telnet trong quản trị thiết bị mạng là khả năng mã hóa (Encryption). SSH bảo vệ phiên làm việc khỏi các mối đe dọa an ninh mạng bằng cách mã hóa lưu lượng truy cập, điều mà Telnet không làm được.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "A",
+      "comparison_note": "Chưa có đáp án cộng đồng, nhưng dựa trên kiến thức chuyên môn về bảo mật mạng, phương án A là chính xác tuyệt đối."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 13,
+    "question_id": "Q13",
+    "image_file": "Q13.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "A technician configures a router interface with \"ipv6 address fe80::1:1 link-local\". What is the purpose of this address?\n\nA. It enables communication on the local link\nB. It routes packets to other networks\nC. It acts as a default gateway for global IPv6 traffic\nD. It is a multicast address",
+    "key_points_and_rules": "Địa chỉ IPv6 Link-Local (bắt đầu bằng fe80::/10) được sử dụng để giao tiếp giữa các thiết bị nằm trên cùng một liên kết mạng cục bộ (local link/subnet). Các gói tin có địa chỉ nguồn/đích là link-local sẽ không được router chuyển tiếp (non-routable) sang mạng khác.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Cho phép giao tiếp nội bộ trên cùng một liên kết (local link). Đây là chức năng chính cơ bản nhất của địa chỉ link-local trong IPv6.",
+      "B": "[SAI] Địa chỉ link-local không thể định tuyến (non-routable) qua các mạng khác.",
+      "C": "[SAI] Mặc dù thiết bị có thể dùng địa chỉ link-local của router làm default gateway, nhưng mục đích bản chất định nghĩa của địa chỉ link-local là để giao tiếp trên local link chứ không chỉ riêng làm gateway cho global traffic.",
+      "D": "[SAI] fe80::/10 là địa chỉ unicast (link-local unicast address), không phải địa chỉ multicast (bắt đầu bằng ff00::/8)."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Địa chỉ Link-Local trong IPv6 (bắt đầu bằng prefix fe80::/10) có mục đích cho phép các thiết bị giao tiếp với nhau trong phạm vi cùng một phân đoạn mạng cục bộ (local link). Gói tin mang địa chỉ link-local sẽ không được router định tuyến ra ngoài phân đoạn mạng đó.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271777",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-15T23:52:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 14,
+    "question_id": "Q14",
+    "image_file": "Q14.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What is the size of an IPv6 address?\n\nA. 32 bits\nB. 64 bits\nC. 128 bits\nD. 256 bits",
+    "key_points_and_rules": "Độ dài tiêu chuẩn của địa chỉ IPv6 là 128 bits (16 octets/bytes), so với IPv4 chỉ có 32 bits.",
+    "option_by_option_analysis": {
+      "A": "[SAI] 32 bits là độ dài của địa chỉ IPv4.",
+      "B": "[SAI] 64 bits là độ dài của Interface ID trong cấu trúc địa chỉ IPv6 thông thường, không phải tổng độ dài địa chỉ IPv6.",
+      "C": "[ĐÚNG] Địa chỉ IPv6 có độ dài chính xác là 128 bits, biểu diễn bằng 8 nhóm chữ số thập lục phân (hexadecimal), mỗi nhóm 16 bits ngăn cách bởi dấu hai chấm (:).",
+      "D": "[SAI] 256 bits là kích thước không chính xác đối với địa chỉ IP."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Địa chỉ IPv6 bao gồm 128 bits, cho phép cung cấp không gian địa chỉ cực lớn ($2^{128}$ địa chỉ) giải quyết triệt để sự thiếu hụt địa chỉ của IPv4 (32 bits).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án hoàn toàn trùng khớp với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1275788",
+          "author": "Kamao",
+          "text": "C",
+          "timestamp": "2026-10-27T19:25:38+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 15,
+    "question_id": "Q15",
+    "image_file": "Q15.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nGiven IPv6 address prefix 2001:db8::/48, what will be the last subnet that is created if the subnet prefix is changed to /52?\n\nA. 2001:db8:0:f00::/52\nB. 2001:db8:0:8000::/52\nC. 2001:db8:0:f::/52\nD. 2001:db8:0:f000::/52",
+    "key_points_and_rules": "IPv6 Subnetting: Địa chỉ ban đầu 2001:db8::/48 có 48 bit mạng đầu tiên (2001:0db8:0000). Khi mượn lên /52 bit, số bit mượn thêm là 52 - 48 = 4 bit. Các bit mượn này nằm ở 4 bit đầu tiên của Hextet thứ 4 (từ bit 49 đến bit 52), tương ứng với chữ số Hexadecimal đầu tiên của hextet đó.",
+    "option_by_option_analysis": {
+      "A": "[SAI] `2001:db8:0:f00::/52` tương đương với chữ số hex `0f00`, trong đó chữ số hex đầu tiên là `0` thay vì `F` (do hệ thập lục phân 4 chữ số trong hextet 4 là `F000`).",
+      "B": "[SAI] `2001:db8:0:8000::/52` là subnet đầu tiên của nửa dải trên (khi bit mượn là `1000`2 = `8`16), không phải subnet cuối cùng.",
+      "C": "[SAI] `2001:db8:0:f::/52` rút gọn từ `000f`, tương ứng các bit subnet ở vị trí 4 bit cuối của hextet, không phải 4 bit đầu.",
+      "D": "[ĐÚNG] Hextet thứ 4 gồm 16 bit (bits 49-64). Khi prefix là /52, 4 bit subnet (bits 49-52) nằm ở chữ số Hex đầu tiên của Hextet 4. Giá trị lớn nhất của 4 bit này là `1111`2 = `F`16. 12 bit còn lại của hextet 4 đều bằng 0, tạo thành `F000`. Do đó subnet cuối cùng là `2001:db8:0:f000::/52`."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Tiền tố /48 cho địa chỉ 2001:db8::/48 có nghĩa 3 hextet đầu là cố định (2001:0db8:0000). Khi mượn bit để tạo subnet /52, số bit subnet là 52 - 48 = 4 bit. 4 bit này nằm ở 4 bit đầu của hextet thứ 4 (từ bit 49 đến bit 52). Chữ số hexadecimal cao nhất của 4 bit này khi tất cả bằng 1 (1111 binary) là 'F'. Các bit còn lại trong hextet 4 bằng 0, nên hextet thứ 4 có dạng F000. Địa chỉ subnet cuối cùng là 2001:db8:0:f000::/52.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (D)."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271778",
+          "author": "Anh Nhật",
+          "text": "D",
+          "timestamp": "2026-10-16T00:04:02+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 16,
+    "question_id": "Q16",
+    "image_file": "Q16.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhich statement about IPv6 addresses is true?\n\nA. IPv6 addresses are expressed in decimal format.\nB. IPv6 addresses use 128 bits and are expressed in hexadecimal format.\nC. IPv6 addresses use 32 bits and are expressed in binary format.\nD. IPv6 addresses are composed of two parts: network and host.",
+    "key_points_and_rules": "Đặc điểm địa chỉ IPv6: Độ dài 128 bit, biểu diễn dưới dạng các số thập lục phân (Hexadecimal) tách nhau bằng dấu hai chấm (:).",
+    "option_by_option_analysis": {
+      "A": "[SAI] IPv6 được biểu diễn bằng hệ thập lục phân (hexadecimal), không phải hệ thập phân (decimal).",
+      "B": "[ĐÚNG] Địa chỉ IPv6 sử dụng độ dài 128 bit và được biểu diễn dưới dạng hexadecimal.",
+      "C": "[SAI] Địa chỉ IPv6 có độ dài 128 bit, địa chỉ IPv4 mới có độ dài 32 bit.",
+      "D": "[SAI] Trong IPv6, 2 phần chính thường được gọi là Network Prefix (Tiền tố mạng) và Interface ID (Định danh giao diện), không gọi chuẩn là host như IPv4."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Theo chuẩn giao thức Internet phiên bản 6 (IPv6), địa chỉ IPv6 có độ dài 128 bit và được viết dưới dạng thập lục phân (hexadecimal). Do đó phương án B là phát biểu đúng nhất và chính xác tuyệt đối.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (B)."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271779",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-16T00:04:36+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 17,
+    "question_id": "Q17",
+    "image_file": "Q17.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Which method allows a device to obtain an IPv6 address dynamically without the need for a DHCP server?\n\nA. Stateful DHCPv6\nB. Stateless Address Autoconfiguration (SLAAC)\nC. Manual Configuration\nD. NAT64",
+    "key_points_and_rules": "Cấu hình IPv6 động: Tìm phương thức cho phép thiết bị tự động tạo/lấy địa chỉ IPv6 mà không cần đến máy chủ DHCP (DHCP server).",
+    "option_by_option_analysis": {
+      "A": "Stateful DHCPv6: [SAI] Phương thức này yêu cầu một máy chủ DHCPv6 để quản lý và cấp phát địa chỉ IPv6 cùng các thông số mạng cho thiết bị.",
+      "B": "Stateless Address Autoconfiguration (SLAAC): [ĐÚNG] SLAAC cho phép các thiết bị tự động tạo địa chỉ IPv6 toàn cục duy nhất bằng cách kết hợp tiền tố mạng (Network Prefix) nhận từ gói tin ICMPv6 Router Advertisement (RA) của Router với định danh giao diện (Interface ID) của chính nó mà KHÔNG cần máy chủ DHCP.",
+      "C": "Manual Configuration: [SAI] Đây là cấu hình thủ công bằng tay do quản trị viên nhập, không phải là phương thức động (dynamically).",
+      "D": "NAT64: [SAI] Đây là giao thức biên dịch địa chỉ để cho phép các thiết bị IPv6 giao tiếp với các thiết bị IPv4, không phải giao thức cấp phát địa chỉ IPv6."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "SLAAC (Stateless Address Autoconfiguration) là tính năng cốt lõi của IPv6 cho phép thiết bị tự động cấu hình địa chỉ IPv6 cho mình thông qua thông điệp Router Advertisement từ router địa phương mà không cần tới máy chủ DHCP.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả phân tích trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271780",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-16T00:07:29+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 18,
+    "question_id": "Q18",
+    "image_file": "Q18.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "How can you view the ARP table on a Windows PC?\n\nA. arp -a\nB. show arp\nC. netstat -r\nD. ipconfig /all",
+    "key_points_and_rules": "Lệnh giao diện dòng lệnh (CLI) trong hệ điều hành Windows để hiển thị bảng ánh xạ địa chỉ IP - MAC (ARP table).",
+    "option_by_option_analysis": {
+      "A": "arp -a: [ĐÚNG] Lệnh `arp -a` trong Command Prompt của Windows hiển thị toàn bộ nội dung bảng ARP (bảng ánh xạ giữa địa chỉ IPv4 và địa chỉ MAC vật lý) hiện có trong bộ nhớ cache.",
+      "B": "show arp: [SAI] Đây là lệnh dùng trên thiết bị mạng Cisco IOS, không phải lệnh trên Windows Command Prompt.",
+      "C": "netstat -r: [SAI] Lệnh này hiển thị bảng tuyến đường IP (IP Routing Table), không phải bảng ARP.",
+      "D": "ipconfig /all: [SAI] Lệnh này hiển thị chi tiết thông tin cấu hình IP của các card mạng trên máy tính, không hiển thị bảng cache ARP."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong hệ điều hành Windows, câu lệnh `arp -a` được sử dụng để xem danh sách các địa chỉ IP đã được ánh xạ với địa chỉ MAC tương ứng trong bảng ARP cache.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả phân tích trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271781",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T00:07:37+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 19,
+    "question_id": "Q19",
+    "image_file": "Q19.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat protocol does IPv6 use for address resolution, replacing the function of ARP in IPv4?\n\nA. DHCPv6\nB. ICMPv6 Neighbor Discovery (ND)\nC. Address Resolution Protocol version 6 (ARPv6)\nD. Router Solicitation (RS)",
+    "key_points_and_rules": "Trong IPv4, giao thức ARP (Address Resolution Protocol) được sử dụng để ánh xạ địa chỉ IP sang địa chỉ MAC. Trong IPv6, ARP bị bãi bỏ và chức năng phân giải địa chỉ (Address Resolution) được thay thế bởi giao thức Neighbor Discovery (ND) thuộc ICMPv6 (sử dụng tin nhắn Neighbor Solicitation - NS và Neighbor Advertisement - NA).",
+    "option_by_option_analysis": {
+      "A": "SAI. DHCPv6 được dùng để cấp phát địa chỉ IP động và cấu hình tham số mạng cho host, không đảm nhận chức năng phân giải địa chỉ IP sang MAC thay cho ARP.",
+      "B": "ĐÚNG. ICMPv6 Neighbor Discovery (ND) là giao thức đảm nhận vai trò phân giải địa chỉ (Address Resolution), phát hiện router và kiểm tra tính trùng lặp địa chỉ (DAD) trong IPv6, thay thế hoàn toàn cho ARP trong IPv4.",
+      "C": "SAI. Không tồn tại giao thức nào tên là ARPv6.",
+      "D": "SAI. Router Solicitation (RS) chỉ là một loại thông điệp cụ thể thuộc giao thức Neighbor Discovery dùng để tìm kiếm router, không phải tên giao thức tổng quát thay thế ARP cho phân giải địa chỉ host-to-host."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong IPv6, chức năng phân giải địa chỉ IP thành địa chỉ MAC (vốn do ARP đảm nhiệm trong IPv4) được thay thế bằng giao thức Neighbor Discovery (ND) chạy trên nền ICMPv6. Do đó, đáp án đúng là B.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả phân tích trùng khớp với đáp án được cộng đồng lựa chọn (B)."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271782",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-16T00:11:46+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 20,
+    "question_id": "Q20",
+    "image_file": "Q20.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat property of ARP causes cached IP-to-MAC mappings to remain in memory longer?\n\nA. Entries in an ARP table are time-stamped and are purged after the timeout expires.\nB. A static IP-to-MAC address entry can be entered manually into an ARP table.\nC. The type field 0x806 appears in the header of the Ethernet frame.\nD. The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.",
+    "key_points_and_rules": "Bảng ARP lưu trữ các ánh xạ từ IP sang MAC. Các mục nhập động (dynamic entries) sẽ tự động bị xóa sau một khoảng thời gian hết hạn (timeout). Trong khi đó, các mục nhập tĩnh (static entries) do quản trị viên nhập thủ công sẽ tồn tại lâu dài/vĩnh viễn trong bộ nhớ cho đến khi thiết bị khởi động lại hoặc được xóa thủ công.",
+    "option_by_option_analysis": {
+      "A": "SAI. Việc có nhãn thời gian và bị xóa sau khi hết hạn timeout là đặc tính làm cho mục ARP động bị xóa đi (ở lại trong bộ nhớ ngắn hơn), không phải nguyên nhân làm nó ở lại lâu hơn.",
+      "B": "ĐÚNG. Việc thêm thủ công một mục tĩnh (static IP-to-MAC entry) vào bảng ARP giúp ánh xạ đó duy trì lâu hơn trong bộ nhớ (không bị tự động xoá theo thời gian timeout).",
+      "C": "SAI. Trường Type 0x0806 trong Ethernet frame nhận diện gói tin ARP, không liên quan đến thời gian lưu trữ trong bộ nhớ đệm (cache).",
+      "D": "SAI. Bảng MAC (CAM table) và bảng ARP trên switch là hai bảng hoàn toàn riêng biệt với chức năng và cấu trúc khác nhau."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Các mục nhập ARP động tự động hết hạn sau một khoảng thời gian ngắn (timeout). Để giữ ánh xạ IP-to-MAC trong bộ nhớ lâu hơn (hoặc vĩnh viễn), người ta cấu hình thủ công các mục tĩnh (static entry) vào bảng ARP. Do đó đáp án B là chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả phân tích trùng khớp với đáp án được cộng đồng lựa chọn (B)."
+    },
+    "ai_model": "gemini-3.6-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271792",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-16T15:50:27+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 21,
+    "question_id": "Q21",
+    "image_file": "Q21.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat is the purpose of the ARP cache?\nA. Prevents looping\nB. Stores MAC to IP mappings\nC. Tracks port usage\nD. Converts binary to text",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định mục đích của bộ nhớ đệm ARP (ARP cache). Giao thức ARP (Address Resolution Protocol) được sử dụng để phân giải địa chỉ IP (tầng Network) sang địa chỉ MAC (tầng Data Link).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Việc ngăn chặn vòng lặp (looping) thường là nhiệm vụ của giao thức STP (Spanning Tree Protocol) ở tầng 2 hoặc trường TTL (Time to Live) trong gói tin IP ở tầng 3.",
+      "B": "Phân tích chi tiết: [ĐÚNG] ARP cache là một bảng lưu trữ tạm thời các cặp ánh xạ giữa địa chỉ IP và địa chỉ MAC tương ứng của các thiết bị trong cùng mạng cục bộ. Điều này giúp thiết bị không phải gửi yêu cầu ARP broadcast cho mọi gói tin, từ đó tăng hiệu suất mạng.",
+      "C": "Phân tích chi tiết: [SAI] Việc theo dõi sử dụng cổng (port usage) thường liên quan đến bảng trạng thái của Firewall, bảng NAT hoặc các công cụ giám sát mạng, không phải chức năng của ARP.",
+      "D": "Phân tích chi tiết: [SAI] Chuyển đổi nhị phân sang văn bản là quá trình mã hóa/giải mã dữ liệu (như ASCII, UTF-8), thuộc tầng Presentation trong mô hình OSI, không liên quan đến ARP."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "ARP (Address Resolution Protocol) có nhiệm vụ tìm địa chỉ vật lý (MAC) khi biết địa chỉ logic (IP). Để tối ưu hóa quá trình này, các thiết bị lưu trữ các kết quả đã tìm thấy vào một bảng gọi là ARP cache. Do đó, mục đích chính của ARP cache là lưu trữ các ánh xạ từ địa chỉ MAC sang địa chỉ IP.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án hoàn toàn trùng khớp với lựa chọn của cộng đồng (B)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271793",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-16T16:01:00+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 22,
+    "question_id": "Q22",
+    "image_file": "Q22.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhich network infrastructure might an organization use to provide secure and safe access to individuals who work for a different organization but require access to the organization's data?\nA. Extranet\nB. Intranet\nC. LAN\nD. WAN",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định loại hạ tầng mạng cho phép người ngoài tổ chức (đối tác, nhà cung cấp) truy cập an toàn vào dữ liệu nội bộ của tổ chức đó.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [ĐÚNG] Extranet là một mạng nội bộ được mở rộng để cho phép các đối tượng bên ngoài (như đối tác kinh doanh, nhà cung cấp, khách hàng hoặc nhân viên từ tổ chức khác) truy cập có kiểm soát vào các tài nguyên cụ thể của tổ chức.",
+      "B": "Phân tích chi tiết: [SAI] Intranet là mạng nội bộ chỉ dành riêng cho nhân viên bên trong một tổ chức, không cho phép người ngoài truy cập.",
+      "C": "Phân tích chi tiết: [SAI] LAN (Local Area Network) là mạng máy tính nội bộ trong một phạm vi địa lý nhỏ (văn phòng, tòa nhà), nó mô tả quy mô vật lý hơn là mục đích truy cập của đối tác bên ngoài.",
+      "D": "Phân tích chi tiết: [SAI] WAN (Wide Area Network) là mạng diện rộng kết nối các khu vực địa lý lớn (như Internet), không mang tính chất đặc thù cho việc phân quyền truy cập an toàn cho đối tác như Extranet."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Dựa trên định nghĩa về các loại mạng: Intranet dành cho nội bộ, Extranet dành cho nội bộ và các đối tác tin cậy bên ngoài, còn Internet dành cho tất cả mọi người. Vì đề bài nhấn mạnh việc cung cấp quyền truy cập cho cá nhân thuộc tổ chức khác, Extranet là lựa chọn chính xác nhất.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với lựa chọn của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271794",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T16:15:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 23,
+    "question_id": "Q23",
+    "image_file": "Q23.webp",
+    "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
+    "question_text_extracted": "Which of the following is the name for all computers connected to a network that participate in sending and receiving data directly in network communication?\n\nA. Servers\nB. Intermediary devices\nC. Hosts\nD. Media",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định thuật ngữ chung cho các máy tính kết nối mạng tham gia trực tiếp vào việc gửi và nhận dữ liệu (end devices).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Servers (Máy chủ) là một loại host cụ thể cung cấp dịch vụ cho các host khác. Không phải tất cả các máy tính tham gia gửi/nhận dữ liệu đều là server (ví dụ: máy trạm/client).",
+      "B": "Phân tích chi tiết: [SAI] Intermediary devices (Thiết bị trung gian) như router, switch dùng để kết nối các host hoặc các mạng với nhau, chúng không phải là điểm đầu hay điểm cuối trực tiếp của dữ liệu người dùng.",
+      "C": "Phân tích chi tiết: [ĐÚNG] Hosts là thuật ngữ dùng để chỉ tất cả các thiết bị đầu cuối (end devices) được kết nối với mạng và tham gia trực tiếp vào quá trình truyền thông (gửi/nhận dữ liệu). Mọi host đều có địa chỉ IP.",
+      "D": "Phân tích chi tiết: [SAI] Media (Môi trường truyền dẫn) là các phương tiện vật lý như cáp đồng, cáp quang hoặc sóng vô tuyến dùng để truyền tín hiệu, không phải là máy tính."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong thuật ngữ mạng máy tính, bất kỳ thiết bị nào là nguồn hoặc đích của một thông điệp được truyền qua mạng đều được gọi là một 'Host'. Các host bao gồm máy tính cá nhân, máy chủ, điện thoại thông minh, v.v. Chúng tham gia trực tiếp vào việc tạo ra hoặc tiêu thụ dữ liệu trong quá trình giao tiếp mạng.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án AI hoàn toàn trùng khớp với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271795",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-16T16:25:02+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 24,
+    "question_id": "Q24",
+    "image_file": "Q24.webp",
+    "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
+    "question_text_extracted": "Which type of network topology lets you see the actual location of intermediary devices and cable installation?\n\nA. Physical topology\nB. Logical topology",
+    "key_points_and_rules": "Phân biệt giữa sơ đồ cấu trúc vật lý (Physical topology) và sơ đồ cấu trúc logic (Logical topology) trong thiết kế mạng.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [ĐÚNG] Physical topology (Sơ đồ vật lý) mô tả vị trí thực tế của các thiết bị trung gian (như switch, router đặt ở phòng nào, tủ rack nào) và cách lắp đặt, đi dây cáp cụ thể trong hạ tầng.",
+      "B": "Phân tích chi tiết: [SAI] Logical topology (Sơ đồ logic) tập trung vào cách dữ liệu di chuyển qua mạng, bao gồm các cổng (ports), giao thức và sơ đồ địa chỉ IP, không quan tâm đến vị trí địa lý thực tế của thiết bị."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Sơ đồ cấu trúc vật lý (Physical topology) cung cấp cái nhìn về mặt không gian và lắp đặt thực tế của hệ thống mạng, bao gồm vị trí các thiết bị trong tòa nhà và đường đi của dây cáp. Ngược lại, sơ đồ logic chỉ quan tâm đến luồng dữ liệu và cấu hình phần mềm/địa chỉ.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án AI hoàn toàn trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271796",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T16:30:27+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 25,
+    "question_id": "Q25",
+    "image_file": "Q25.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nCut-through switching reduces latency but increases the risk of forwarding corrupted frames.\nA. True\nB. False",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định tính đúng/sai của nhận định về phương pháp chuyển mạch Cut-through (chuyển mạch cắt ngang). Quy tắc: So sánh giữa Cut-through và Store-and-forward switching về độ trễ và khả năng kiểm lỗi.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Phương pháp Cut-through switching bắt đầu chuyển tiếp khung dữ liệu ngay khi đọc được địa chỉ MAC đích (thường là sau 6 byte đầu tiên). Do không đợi nhận toàn bộ khung để kiểm tra mã kiểm lỗi (FCS - Frame Check Sequence) ở cuối khung, nó giảm thiểu độ trễ (latency) đáng kể nhưng lại có nguy cơ chuyển tiếp cả những khung bị lỗi hoặc khung rác (runt frames). Nhận định này [ĐÚNG].",
+      "B": "Phân tích chi tiết: Nhận định ở phương án A là đúng theo lý thuyết mạng căn bản, do đó phương án False là [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong kỹ thuật chuyển mạch, Cut-through switching được thiết kế để tối ưu hóa tốc độ bằng cách chuyển tiếp gói tin ngay lập tức. Tuy nhiên, cái giá phải trả là thiết bị switch không thể thực hiện kiểm tra lỗi CRC/FCS trên toàn bộ khung hình trước khi gửi đi, dẫn đến việc các khung hình bị hỏng vẫn có thể được lan truyền trong mạng. Ngược lại, Store-and-forward sẽ đợi nhận hết khung, kiểm tra lỗi rồi mới gửi, giúp đảm bảo tính toàn vẹn nhưng độ trễ cao hơn.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với cộng đồng (A - True)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271797",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T16:43:10+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 26,
+    "question_id": "Q26",
+    "image_file": "Q26.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat is the purpose of the frame check sequence (FCS) in an Ethernet frame?\nA. To detect errors in transmitted frames\nB. To encrypt the frame for security\nC. To assign an IP address to the frame\nD. To prioritize network traffic",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định mục đích của trường FCS (Frame Check Sequence) trong cấu trúc khung Ethernet. Quy tắc: FCS sử dụng thuật toán CRC (Cyclic Redundancy Check) để kiểm tra tính toàn vẹn dữ liệu ở tầng liên kết dữ liệu (Data Link Layer).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: FCS chứa giá trị băm được tính toán dựa trên nội dung của khung. Khi nhận được khung, thiết bị nhận sẽ tính toán lại giá trị này và so sánh với giá trị trong trường FCS. Nếu khác nhau, khung đã bị lỗi trong quá trình truyền và sẽ bị hủy. Đây là chức năng phát hiện lỗi [ĐÚNG].",
+      "B": "Phân tích chi tiết: Việc mã hóa (encryption) thường được thực hiện ở các tầng cao hơn (như Presentation layer hoặc thông qua IPsec ở Network layer), không phải chức năng của FCS [SAI].",
+      "C": "Phân tích chi tiết: Địa chỉ IP được gán ở tầng Mạng (Network Layer) trong IP Header, không liên quan đến trường FCS ở tầng Liên kết dữ liệu [SAI].",
+      "D": "Phân tích chi tiết: Việc ưu tiên lưu lượng (QoS) thường sử dụng các trường như CoS (trong VLAN tag) hoặc DSCP (trong IP header), không phải FCS [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trường Frame Check Sequence (FCS) nằm ở cuối (trailer) của một khung Ethernet, có nhiệm vụ chính là cung cấp cơ chế phát hiện lỗi (error detection) cho dữ liệu khi di chuyển qua môi trường vật lý. Nó sử dụng thuật toán kiểm tra vòng dư (CRC) để đảm bảo dữ liệu nhận được giống hệt dữ liệu đã gửi.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271798",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T16:49:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 27,
+    "question_id": "Q27",
+    "image_file": "Q27.webp",
+    "subject_domain": "Mạng máy tính (Computer Networking)",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat will a host on an Ethernet network do if it receives a frame with a unicast destination MAC address that does not match its own MAC address?\n\nA. It will discard the frame.\nB. It will forward the frame to the next host.\nC. It will remove the frame from the media.\nD. It will strip off the data-link frame to check the destination IP address.",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định hành vi của một máy chủ (host) khi nhận được một khung tin (frame) Ethernet có địa chỉ MAC đích là unicast nhưng không khớp với địa chỉ MAC của chính nó. Quy tắc xử lý tại tầng Data Link (Lớp 2) quy định rằng card mạng (NIC) sẽ lọc các khung tin dựa trên địa chỉ vật lý.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Khi một host nhận được một khung tin unicast mà địa chỉ MAC đích không khớp với địa chỉ MAC của nó, card mạng sẽ coi khung tin đó không dành cho mình và tiến hành hủy (discard) khung tin đó ngay lập tức để tránh lãng phí tài nguyên xử lý của các tầng trên.",
+      "B": "[SAI] Các thiết bị đầu cuối (host) thông thường không có chức năng chuyển tiếp (forward) khung tin như switch hay router trừ khi được cấu hình đặc biệt.",
+      "C": "[SAI] Việc 'xóa khung tin khỏi môi trường truyền dẫn' không phải là thuật ngữ mô tả hành vi của host. Trong mạng Ethernet hiện đại, tín hiệu điện/quang chỉ đơn giản là không được host đó xử lý.",
+      "D": "[SAI] Host chỉ thực hiện gỡ bỏ phần header của khung tin (de-encapsulation) để kiểm tra địa chỉ IP ở tầng Network nếu địa chỉ MAC đích khớp với địa chỉ của nó hoặc là địa chỉ broadcast/multicast mà nó đang lắng nghe."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong mạng Ethernet, mỗi card mạng (NIC) sẽ kiểm tra địa chỉ MAC đích của mọi khung tin nhận được. Nếu địa chỉ đó là địa chỉ unicast và không trùng khớp với địa chỉ MAC vật lý của NIC, host sẽ hiểu rằng dữ liệu này được gửi cho một thiết bị khác và sẽ tự động hủy bỏ khung tin đó ở tầng Data Link mà không đưa lên các tầng cao hơn (như tầng Network để kiểm tra IP).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án AI hoàn toàn trùng khớp với đáp án cộng đồng (A). Đây là kiến thức cơ bản về lọc địa chỉ MAC tại host."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271799",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T16:54:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 28,
+    "question_id": "Q28",
+    "image_file": "Q28.webp",
+    "subject_domain": "Mạng máy tính (Computer Networking)",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat action does a switch take when it receives a frame with a destination MAC address that is not in its MAC address table?\n\nA. It discards the frame immediately.\nB. It sends the frame back to the source device.\nC. It forwards the frame out all ports except the incoming port.\nD. It sends an ARP request to find the destination device.",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định hành vi của Switch khi gặp trường hợp 'Unknown Unicast' (địa chỉ MAC đích không có trong bảng địa chỉ MAC - CAM table).",
+    "option_by_option_analysis": {
+      "A": "[SAI] Switch không hủy khung tin nếu không biết địa chỉ đích; thay vào đó, nó sẽ cố gắng chuyển tiếp để tìm thiết bị đích.",
+      "B": "[SAI] Switch không gửi ngược lại cổng nhận (loopback) trừ khi có cấu hình đặc biệt, và hành động này không giúp tìm thấy đích đến.",
+      "C": "[ĐÚNG] Đây là hành vi 'flooding' (tràn ngập). Khi Switch không tìm thấy địa chỉ MAC đích trong bảng MAC của mình, nó sẽ chuyển tiếp khung tin ra tất cả các cổng còn lại (ngoại trừ cổng đã nhận khung tin đó) để đảm bảo khung tin có thể đến được thiết bị đích nếu thiết bị đó đang kết nối với switch.",
+      "D": "[SAI] Switch hoạt động ở Lớp 2 và xử lý khung tin dựa trên bảng MAC có sẵn. Việc gửi ARP request là nhiệm vụ của các thiết bị ở Lớp 3 (như Host hoặc Router) khi cần tìm địa chỉ MAC tương ứng với một địa chỉ IP."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Khi một Switch nhận được một khung tin có địa chỉ MAC đích chưa được lưu trong bảng địa chỉ MAC (MAC address table), nó sẽ thực hiện một quy trình gọi là 'Unknown Unicast Flooding'. Switch sẽ sao chép và gửi khung tin đó ra tất cả các cổng đang hoạt động, ngoại trừ cổng mà khung tin đó vừa đi vào. Nếu thiết bị đích nhận được và phản hồi, Switch sẽ học được địa chỉ MAC đó và lưu vào bảng để sử dụng cho các lần sau.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án AI hoàn toàn trùng khớp với đáp án cộng đồng (C). Đây là nguyên lý hoạt động cơ bản của Switch lớp 2."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271800",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-16T17:00:46+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 29,
+    "question_id": "Q29",
+    "image_file": "Q29.webp",
+    "subject_domain": "Mạng máy tính (NWC204)",
+    "question_text_extracted": "A network administrator is testing network connectivity by issuing the ping command on a router. Which symbol will be displayed to indicate that a time expired during the wait for an ICMP echo reply message?\nA. $\nB. !\nC. .\nD. U",
+    "key_points_and_rules": "Xác định các ký hiệu phản hồi của lệnh ping trên thiết bị Cisco IOS. Cần tìm ký hiệu đại diện cho trạng thái hết thời gian chờ (timeout).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Ký hiệu '$' không phải là ký hiệu tiêu chuẩn trong kết quả lệnh ping của Cisco IOS để chỉ trạng thái kết nối. [SAI]",
+      "B": "Phân tích chi tiết: Ký hiệu '!' (dấu chấm than) biểu thị việc nhận được gói tin ICMP Echo Reply thành công. [SAI]",
+      "C": "Phân tích chi tiết: Ký hiệu '.' (dấu chấm) biểu thị thiết bị đã gửi gói tin nhưng không nhận được phản hồi trong khoảng thời gian chờ mặc định (thường là 2 giây), tức là 'time expired' hoặc 'timeout'. [ĐÚNG]",
+      "D": "Phân tích chi tiết: Ký hiệu 'U' biểu thị nhận được gói tin ICMP báo lỗi 'Destination Unreachable' (Đích đến không thể tới được). [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong hệ điều hành Cisco IOS, khi thực hiện lệnh ping, mỗi ký hiệu đại diện cho kết quả của một gói tin ICMP Echo Request. Dấu chấm (.) có nghĩa là thiết bị đã đợi phản hồi nhưng hết thời gian chờ mà không nhận được gì. Dấu chấm than (!) là thành công, và chữ 'U' là không thể tới được đích.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng (C). Đây là kiến thức cơ bản về quản trị thiết bị mạng Cisco."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271801",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-16T17:03:27+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 30,
+    "question_id": "Q30",
+    "image_file": "Q30.webp",
+    "subject_domain": "Mạng máy tính (NWC204)",
+    "question_text_extracted": "A user who is unable to connect to the file server contacts the help desk. The helpdesk technician asks the user to ping the IP address of the default gateway that is configured on the workstation. What is the purpose for this ping command?\nA. to obtain a dynamic IP address from the server\nB. to request that gateway forward the connection request to the file server\nC. to test that the host has the capability to reach hosts on other networks\nD. to resolve the domain name of the file server to its IP address",
+    "key_points_and_rules": "Xác định mục đích của việc ping địa chỉ Default Gateway trong quy trình xử lý sự cố mạng (troubleshooting).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Việc lấy địa chỉ IP động là chức năng của giao thức DHCP, lệnh ping không có chức năng này. [SAI]",
+      "B": "Phân tích chi tiết: Lệnh ping dùng để kiểm tra khả năng kết nối (reachability), không phải là một yêu cầu chuyển tiếp dữ liệu ứng dụng cụ thể đến server. [SAI]",
+      "C": "Phân tích chi tiết: Default Gateway là 'cửa ngõ' để một máy tính đi ra các mạng khác. Nếu ping thành công Default Gateway, điều đó chứng tỏ cấu hình IP nội bộ và kết nối vật lý đến router biên là ổn định, cho phép máy tính có khả năng liên lạc với các mạng bên ngoài. [ĐÚNG]",
+      "D": "Phân tích chi tiết: Việc phân giải tên miền sang địa chỉ IP là chức năng của DNS, không liên quan đến việc ping địa chỉ IP của gateway. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Trong quy trình xử lý sự cố kết nối, ping Default Gateway là bước quan trọng để xác định xem vấn đề nằm ở mạng nội bộ (LAN) hay ở phía bên kia của router. Nếu ping gateway thành công, máy tính đã có đường ra để kết nối với các mạng khác (như mạng chứa file server).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng (C). Đây là kỹ thuật troubleshooting mạng căn bản."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271809",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-16T23:09:38+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 31,
+    "question_id": "Q31",
+    "image_file": "Q31.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat is the loopback address for IPv6?\n\nA. 127.0.0.1\nB. 0.0.0.0\nC. ::\nD. ::1",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định địa chỉ loopback (tự vòng) trong giao thức IPv6. Cần phân biệt giữa các loại địa chỉ đặc biệt của IPv4 và IPv6.",
+    "option_by_option_analysis": {
+      "A": "Sai. 127.0.0.1 là địa chỉ loopback của giao thức IPv4.",
+      "B": "Sai. 0.0.0.0 là địa chỉ không xác định (unspecified address) của IPv4.",
+      "C": "Sai. :: (tương đương 0:0:0:0:0:0:0:0) là địa chỉ không xác định (unspecified address) của IPv6.",
+      "D": "Đúng. ::1 (tương đương 0:0:0:0:0:0:0:1) là địa chỉ loopback duy nhất được định nghĩa cho IPv6 theo tiêu chuẩn RFC 4291."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Trong IPv6, địa chỉ loopback được sử dụng để một node gửi gói tin cho chính nó. Địa chỉ này có giá trị là 0:0:0:0:0:0:0:1, và theo quy tắc nén số 0 của IPv6, nó được viết gọn thành ::1.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Đáp án trùng khớp hoàn toàn với lựa chọn của cộng đồng (D)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271808",
+          "author": "Anh Nhật",
+          "text": "D",
+          "timestamp": "2026-10-16T23:06:26+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 32,
+    "question_id": "Q32",
+    "image_file": "Q32.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "MULTIPLE CHOICE\n\nWhat term refers to the amount of data that can be transmitted over a medium in a given time?\n\nA. Bandwidth\nB. Latency\nC. Throughput\nD. Goodput",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định thuật ngữ chỉ khả năng truyền tải dữ liệu tối đa (tiềm năng) của một môi trường truyền dẫn trong một đơn vị thời gian.",
+    "option_by_option_analysis": {
+      "A": "Đúng. Bandwidth (Băng thông) là thuật ngữ chỉ lượng dữ liệu tối đa có thể (can be) truyền tải qua một liên kết mạng trong một khoảng thời gian nhất định (thường tính bằng bps).",
+      "B": "Sai. Latency (Độ trễ) là khoảng thời gian cần thiết để một gói tin đi từ nguồn đến đích.",
+      "C": "Sai. Throughput (Thông lượng) là lượng dữ liệu thực tế (actual) được truyền tải thành công qua mạng trong một đơn vị thời gian, thường thấp hơn băng thông do các yếu tố nhiễu, tắc nghẽn.",
+      "D": "Sai. Goodput là lượng dữ liệu hữu ích (dữ liệu ứng dụng, không tính phần header của các tầng giao thức) được truyền tải thành công."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Từ khóa quan trọng trong câu hỏi là 'can be transmitted' (có thể được truyền tải), ám chỉ năng lực tối đa của đường truyền. Đây chính là định nghĩa của Bandwidth (Băng thông). Nếu câu hỏi dùng từ 'is transmitted' (được truyền tải thực tế), đáp án sẽ là Throughput.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án trùng khớp hoàn toàn với lựa chọn của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271811",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T23:15:11+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 33,
+    "question_id": "Q33",
+    "image_file": "Q33.webp",
+    "subject_domain": "Mạng máy tính (Mô hình OSI)",
+    "question_text_extracted": "What is a primary role of the Physical layer in transmitting data on the network?\nA. create the signals that represent the bits in each frame on to the media\nB. provide physical addressing to the devices\nC. determine the path packets take through the network\nD. control data access to the media",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định vai trò chính của tầng Vật lý (Physical Layer - Tầng 1) trong mô hình OSI khi truyền dữ liệu. Tầng này chịu trách nhiệm về các đặc tính cơ, điện, chức năng và thủ tục để kích hoạt, duy trì và giải phóng các kết nối vật lý.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [ĐÚNG] Tầng Vật lý nhận các khung (frames) từ tầng Liên kết dữ liệu và chuyển đổi các bit thành các tín hiệu (điện, quang hoặc sóng vô tuyến) để truyền qua môi trường vật lý.",
+      "B": "Phân tích chi tiết: [SAI] Cung cấp địa chỉ vật lý (địa chỉ MAC) là chức năng của tầng Liên kết dữ liệu (Data Link Layer - Tầng 2).",
+      "C": "Phân tích chi tiết: [SAI] Xác định đường đi cho các gói tin (routing) là chức năng của tầng Mạng (Network Layer - Tầng 3).",
+      "D": "Phân tích chi tiết: [SAI] Kiểm soát truy cập môi trường truyền dẫn (Media Access Control) là chức năng của phân lớp MAC thuộc tầng Liên kết dữ liệu (Data Link Layer - Tầng 2)."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Tầng Vật lý là tầng thấp nhất trong mô hình OSI. Nhiệm vụ chính của nó là truyền tải dòng bit thô qua môi trường vật lý. Để làm được điều này, nó phải mã hóa các bit thành các tín hiệu tương ứng với loại cáp hoặc sóng đang sử dụng. Do đó, phương án A mô tả chính xác nhất vai trò này.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với lựa chọn của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271810",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T23:14:26+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 34,
+    "question_id": "Q34",
+    "image_file": "Q34.webp",
+    "subject_domain": "Mạng máy tính (Phương tiện truyền dẫn)",
+    "question_text_extracted": "Match the situation with the appropriate use of network media.\n\n1. backbone cabling in an enterprise | A. Copper Cables\n2. guest access in a coffee shop | B. Fiber Optic\n3. horizontal cabling structure | C. Wireless\n4. waiting rooms in a hospital |\n5. desktop PCs in an enterprise office |\n6. long-haul networks |\n\nOptions:\nA. 3A-5A-1B-6B-2C-4C\nB. 3A-5A-2B-4B-1C-6C\nC. 1A-6A-3B-5B-2C-4C\nD. 1A-6A-2B-4B-3C-5C",
+    "key_points_and_rules": "Câu hỏi yêu cầu ghép nối các tình huống sử dụng mạng với loại phương tiện truyền dẫn phù hợp nhất (Cáp đồng, Cáp quang, Không dây). Cần dựa trên đặc tính về khoảng cách, băng thông và tính tiện dụng của từng loại.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [ĐÚNG] \n- 3A (Horizontal cabling) & 5A (Desktop PCs): Thường dùng cáp đồng (UTP) vì rẻ và dễ lắp đặt.\n- 1B (Backbone) & 6B (Long-haul): Cần băng thông lớn và khoảng cách xa nên dùng cáp quang.\n- 2C (Coffee shop) & 4C (Hospital waiting rooms): Cần sự tiện lợi cho thiết bị di động nên dùng Wireless.",
+      "B": "Phân tích chi tiết: [SAI] Ghép 1C (Backbone dùng Wireless) và 6C (Long-haul dùng Wireless) là không hợp lý về mặt kỹ thuật cho hạ tầng doanh nghiệp và mạng đường dài.",
+      "C": "Phân tích chi tiết: [SAI] Ghép 1A (Backbone dùng cáp đồng) và 6A (Long-haul dùng cáp đồng) không tối ưu cho khoảng cách xa và băng thông lớn.",
+      "D": "Phân tích chi tiết: [SAI] Tương tự phương án C, việc dùng cáp đồng cho backbone và mạng đường dài là sai nguyên tắc thiết kế mạng hiện đại."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Dựa trên các tiêu chuẩn thiết kế mạng: \n1. Cáp quang (Fiber Optic) dùng cho trục chính (Backbone) và kết nối đường dài (Long-haul) vì ít suy hao và băng thông cực cao.\n2. Cáp đồng (Copper) dùng cho kết nối ngang (Horizontal) từ tủ rack đến các máy tính để bàn (Desktop PCs) vì chi phí thấp.\n3. Không dây (Wireless) dùng cho các khu vực công cộng (Coffee shop, Waiting rooms) để phục vụ thiết bị di động. \nĐối chiếu với các phương án, chỉ có A thỏa mãn tất cả các cặp ghép này.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với lựa chọn của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271812",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T23:35:39+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 35,
+    "question_id": "Q35",
+    "image_file": "Q35.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What are two functions of NVRAM? (Choose two.)\nA. to store the routing table\nB. to retain contents when power is removed\nC. to store the startup configuration file\nD. to contain the running configuration file\nE. to store the ARP table",
+    "key_points_and_rules": "NVRAM (Non-Volatile Random Access Memory) là bộ nhớ không khả biến trên thiết bị Cisco. Đặc điểm chính là không mất dữ liệu khi mất điện và được dùng để lưu trữ cấu hình khởi động (startup-config).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Bảng định tuyến (routing table) được lưu trữ trong RAM để truy xuất nhanh, sẽ mất khi khởi động lại. [SAI]",
+      "B": "Phân tích chi tiết: NVRAM là bộ nhớ 'Non-Volatile', nghĩa là nó giữ lại nội dung ngay cả khi nguồn điện bị ngắt. [ĐÚNG]",
+      "C": "Phân tích chi tiết: Chức năng chính của NVRAM trong router Cisco là lưu trữ tệp cấu hình khởi động (startup-config). [ĐÚNG]",
+      "D": "Phân tích chi tiết: Tệp cấu hình đang chạy (running-config) được lưu trữ trong RAM. [SAI]",
+      "E": "Phân tích chi tiết: Bảng ARP (ARP table) được lưu trữ trong RAM. [SAI]"
+    },
+    "question_type": "multiple_choice",
+    "community_answer": "BC",
+    "ai_answer": "BC",
+    "ai_explanation": "NVRAM trên router Cisco có hai đặc điểm/chức năng quan trọng: 1. Nó là bộ nhớ không khả biến, giúp duy trì dữ liệu khi thiết bị tắt nguồn. 2. Nó được sử dụng cụ thể để lưu trữ tệp startup-config, tệp này sẽ được nạp vào RAM (trở thành running-config) khi router khởi động.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "BC",
+      "ai_answer": "BC",
+      "comparison_note": "Đáp án của AI (BC) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (BC). Đáp án hoàn toàn trùng khớp với ý kiến cộng đồng (BC)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "BC": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271813",
+          "author": "Anh Nhật",
+          "text": "B C",
+          "timestamp": "2026-10-16T23:50:31+0700",
+          "reactions": 0,
+          "extracted_answer": "BC"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 36,
+    "question_id": "Q36",
+    "image_file": "Q36.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Which three commands are used to set up secure access to a router through a connection to the console interface? (Choose three.)\nA. interface fastethernet 0/0\nB. line vty 0 4\nC. line console 0\nD. enable secret cisco\nE. login\nF. password cisco",
+    "key_points_and_rules": "Để thiết lập bảo mật cho cổng Console trên router Cisco, cần thực hiện 3 bước: Truy cập vào chế độ cấu hình line console, đặt mật khẩu và kích hoạt yêu cầu đăng nhập.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Lệnh này dùng để cấu hình giao diện mạng FastEthernet, không liên quan đến bảo mật console. [SAI]",
+      "B": "Phân tích chi tiết: Lệnh này dùng để cấu hình truy cập từ xa (Telnet/SSH) qua các đường ảo (VTY), không phải console. [SAI]",
+      "C": "Phân tích chi tiết: Lệnh này dùng để vào chế độ cấu hình cho cổng console vật lý. [ĐÚNG]",
+      "D": "Phân tích chi tiết: Lệnh này dùng để đặt mật khẩu cho chế độ Privileged EXEC (enable), không trực tiếp cấu hình cho việc truy cập qua console. [SAI]",
+      "E": "Phân tích chi tiết: Lệnh này bắt buộc router phải kiểm tra mật khẩu khi có người kết nối vào line console. [ĐÚNG]",
+      "F": "Phân tích chi tiết: Lệnh này dùng để thiết lập mật khẩu cụ thể cho line đang cấu hình. [ĐÚNG]"
+    },
+    "question_type": "multiple_choice",
+    "community_answer": "CEF",
+    "ai_answer": "CEF",
+    "ai_explanation": "Để bảo mật cổng console, quy trình chuẩn là: 1. 'line console 0' để chọn cổng. 2. 'password [password]' để đặt mật khẩu. 3. 'login' để yêu cầu xác thực mật khẩu đó khi truy cập.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "CEF",
+      "ai_answer": "CEF",
+      "comparison_note": "Đáp án của AI (CEF) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (CEF). Đáp án hoàn toàn trùng khớp với ý kiến cộng đồng (CEF)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "CEF": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271814",
+          "author": "Anh Nhật",
+          "text": "C E F",
+          "timestamp": "2026-10-16T23:56:03+0700",
+          "reactions": 0,
+          "extracted_answer": "CEF"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 37,
+    "question_id": "Q37",
+    "image_file": "Q37.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Match the commands to the correct actions. (Not all options are used.)\n\nA. provides security on the console\nB. displays a message when the router is accessed\nC. configures a name on the router\n\n1. Router(config)# hostname CL1\n2. Router(config)# enable password Cisco\n3. Router(config-line)# password class\n4. Router(config)# password Cisco\n5. Router(config)# banner motd #\n\nOptions:\nA. A3-B5-C1\nB. A2-B3-C4\nC. A1-B2-C3\nD. A4-B1-C5",
+    "key_points_and_rules": "Yêu cầu ghép nối lệnh cấu hình Cisco IOS với chức năng tương ứng. A: Bảo mật console (cần vào line console), B: Thông báo khi truy cập (banner motd), C: Đặt tên router (hostname).",
+    "option_by_option_analysis": {
+      "A": "A3 (password class trong line console) là bảo mật console. B5 (banner motd) là thông báo truy cập. C1 (hostname CL1) là đặt tên router. Đây là khớp nối chính xác.",
+      "B": "A2 (enable password) không phải là bảo mật console. B3 (password class) không phải là banner. Sai.",
+      "C": "A1 (hostname) không phải là bảo mật console. Sai.",
+      "D": "A4 (password Cisco) không phải là bảo mật console. Sai."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Phân tích các lệnh:\n- A (provides security on the console): Lệnh 'password class' trong chế độ 'Router(config-line)#' (thường là line console 0) dùng để đặt mật khẩu bảo mật cho cổng console. Vậy A khớp với 3.\n- B (displays a message when the router is accessed): Lệnh 'banner motd #' dùng để thiết lập thông báo (Message of the Day) khi đăng nhập vào router. Vậy B khớp với 5.\n- C (configures a name on the router): Lệnh 'hostname CL1' dùng để đặt tên cho thiết bị. Vậy C khớp với 1.\nKết quả ghép nối là A3-B5-C1.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng là A, trùng khớp hoàn toàn với phân tích chuyên môn."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271815",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-16T23:58:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 38,
+    "question_id": "Q38",
+    "image_file": "Q38.webp",
+    "subject_domain": "Mạng máy tính (Địa chỉ IP & Subnetting)",
+    "question_text_extracted": "MULTIPLE CHOICE\nA router is configured as follows:\nR1(config)# interface g0/0/0\nR1(config-if)# ip address 10.0.0.1 255.255.255.252\nR1(config-if)# no shutdown\nHow many usable host IP addresses are available on this subnet?\n\nA. 2\nB. 4\nC. 8\nD. 16",
+    "key_points_and_rules": "Công thức tính số địa chỉ host khả dụng trong một subnet: 2^n - 2, trong đó n là số bit dành cho phần Host (Host bits).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Subnet mask là 255.255.255.252. \n- Chuyển đổi octet cuối sang nhị phân: 252 = 11111100.\n- Số bit 0 (host bits) là n = 2.\n- Tổng số địa chỉ trong subnet = 2^2 = 4.\n- Số địa chỉ host khả dụng = 2^2 - 2 = 4 - 2 = 2. \n=> Phương án A [ĐÚNG].",
+      "B": "Phân tích chi tiết: 4 là tổng số địa chỉ (bao gồm cả Network ID và Broadcast), không phải số địa chỉ khả dụng cho host. => [SAI].",
+      "C": "Phân tích chi tiết: 8 không phù hợp với mask /30 (255.255.255.252). => [SAI].",
+      "D": "Phân tích chi tiết: 16 không phù hợp với mask /30. => [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Với subnet mask 255.255.255.252 (tương đương /30), chúng ta có 2 bit dành cho phần host (32 - 30 = 2). Số lượng địa chỉ IP khả dụng cho các thiết bị đầu cuối (usable hosts) được tính bằng công thức 2^n - 2. Ở đây là 2^2 - 2 = 4 - 2 = 2 địa chỉ (trong trường hợp này là 10.0.0.1 và 10.0.0.2).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án AI hoàn toàn trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271816",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-17T00:20:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 39,
+    "question_id": "Q39",
+    "image_file": "Q39.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "What is the purpose of subnetting a network?\nA. To increase the number of available host addresses in a network.\nB. To create a single, large broadcast domain.\nC. To reduce the size of the network into smaller broadcast domains.\nD. To simplify the IP addressing scheme.",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định mục đích chính của việc chia mạng con (subnetting). Quy tắc: Subnetting chia một mạng lớn thành các mạng nhỏ hơn, mỗi mạng con là một broadcast domain riêng biệt.",
+    "option_by_option_analysis": {
+      "A": "Sai. Subnetting thực tế làm giảm số lượng host khả dụng trên mỗi subnet do phải dành riêng địa chỉ mạng và địa chỉ broadcast cho mỗi subnet.",
+      "B": "Sai. Subnetting làm ngược lại, nó chia một broadcast domain lớn thành nhiều broadcast domain nhỏ hơn.",
+      "C": "Đúng. Mục đích chính của subnetting là chia nhỏ một mạng lớn thành các mạng con (subnets), qua đó giới hạn phạm vi của broadcast traffic trong từng subnet nhỏ.",
+      "D": "Sai. Subnetting thường làm cho sơ đồ địa chỉ IP trở nên phức tạp hơn (cần quản lý subnet mask, địa chỉ mạng, broadcast) thay vì đơn giản hóa nó."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Subnetting là kỹ thuật chia một mạng IP lớn thành các mạng con nhỏ hơn. Việc này giúp quản lý lưu lượng mạng hiệu quả hơn bằng cách giới hạn phạm vi của các gói tin broadcast trong từng mạng con, thay vì để chúng lan truyền khắp toàn bộ mạng lớn.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án cộng đồng là C, hoàn toàn trùng khớp với phân tích chuyên môn."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271817",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-17T00:30:39+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 40,
+    "question_id": "Q40",
+    "image_file": "Q40.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành",
+    "question_text_extracted": "Refer to the exhibit. An administrator must send a message to everyone on the router A network. What is the broadcast address for network 172.16.16.0/22?\nA. 172.16.16.255\nB. 172.16.20.255\nC. 172.16.19.255\nD. 172.16.23.255\nE. 172.16.255.255",
+    "key_points_and_rules": "Tính toán địa chỉ broadcast cho mạng 172.16.16.0/22. Quy tắc: /22 có nghĩa là 22 bit cho network, 10 bit cho host. 22 bit = 8 + 8 + 6. Octet thứ 3 là 16 (00010000).",
+    "option_by_option_analysis": {
+      "A": "Sai. Đây là broadcast của mạng 172.16.16.0/24.",
+      "B": "Sai. Đây không phải là địa chỉ broadcast của dải /22 này.",
+      "C": "Đúng. Mạng 172.16.16.0/22 có dải từ 172.16.16.0 đến 172.16.19.255. Địa chỉ broadcast là địa chỉ cuối cùng của dải.",
+      "D": "Sai. Đây là địa chỉ nằm ngoài dải của mạng 172.16.16.0/22.",
+      "E": "Sai. Đây là địa chỉ broadcast của mạng lớp B mặc định (172.16.0.0/16)."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Địa chỉ 172.16.16.0/22 có subnet mask là 255.255.252.0. Octet thứ 3 là 16 (00010000). Với 6 bit đầu của octet thứ 3 cố định, dải octet thứ 3 là từ 16 đến 19 (16, 17, 18, 19). Do đó, dải IP là 172.16.16.0 đến 172.16.19.255. Địa chỉ broadcast là địa chỉ cuối cùng: 172.16.19.255.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án cộng đồng là C, hoàn toàn trùng khớp với phân tích chuyên môn."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271818",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-17T00:47:25+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 41,
+    "question_id": "Q41",
+    "image_file": "Q41.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (NWC204)",
+    "question_text_extracted": "What is the decimal equivalent of the /26 subnet mask?\nA. 255.255.255.192\nB. 255.255.255.0\nC. 255.255.255.224\nD. 255.255.255.128",
+    "key_points_and_rules": "Yêu cầu chuyển đổi subnet mask dạng CIDR /26 sang dạng thập phân chấm (dotted-decimal notation). Mặt nạ mạng /26 có nghĩa là có 26 bit 1 liên tiếp từ trái sang phải.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: /26 có nghĩa là 26 bit bật (1). 26 = 8 + 8 + 8 + 2. Ba octet đầu tiên hoàn toàn là các bit 1, tương đương với 255.255.255. Octet cuối cùng chứa 2 bit 1 và 6 bit 0 (11000000 trong hệ nhị phân). Giá trị thập phân là 128 + 64 = 192. Do đó, subnet mask là 255.255.255.192 [ĐÚNG].",
+      "B": "Phân tích chi tiết: 255.255.255.0 tương ứng với subnet mask /24 (24 bit 1) [SAI].",
+      "C": "Phân tích chi tiết: 255.255.255.224 tương ứng với subnet mask /27 (27 bit 1, trong đó octet cuối có 3 bit 1: 11100000) [SAI].",
+      "D": "Phân tích chi tiết: 255.255.255.128 tương ứng với subnet mask /25 (25 bit 1, trong đó octet cuối có 1 bit 1: 10000000) [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Mặt nạ mạng /26 có tổng cộng 26 bit 1. Chia thành 4 octet: 8 bit 1 ở octet 1 (255), 8 bit 1 ở octet 2 (255), 8 bit 1 ở octet 3 (255), và 2 bit 1 ở octet cuối cùng (11000000 nhị phân = 192 thập phân). Kết quả là 255.255.255.192.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271819",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-17T00:53:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 42,
+    "question_id": "Q42",
+    "image_file": "Q42.webp",
+    "subject_domain": "Mạng máy tính & Hệ điều hành (NWC204)",
+    "question_text_extracted": "What is the ANDing process used for?\nA. To securely encrypt communication between multiple network endpoints\nB. To find host addresses\nC. To determine the network address\nD. To convert decimal to binary",
+    "key_points_and_rules": "Hiểu rõ về quá trình phép toán logic AND (ANDing) giữa địa chỉ IP của thiết bị và Subnet Mask trong mạng IPv4.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Mã hóa bảo mật thông tin liên lạc được thực hiện bởi các giao thức bảo mật (như IPsec, TLS/SSL), không phải qua quá trình ANDing [SAI].",
+      "B": "Phân tích chi tiết: Quá trình ANDing dùng để xác định địa chỉ mạng (Network Address) chứ không phải tìm host addresses trực tiếp từ đầu [SAI].",
+      "C": "Phân tích chi tiết: Quá trình ANDing (phép toán bitwise AND giữa địa chỉ IP và Subnet Mask) được thiết bị sử dụng để xác định địa chỉ mạng (Network Address) nhằm biết gói tin gửi đi cùng mạng hay cần qua gateway [ĐÚNG].",
+      "D": "Phân tích chi tiết: Việc chuyển đổi từ hệ thập phân sang hệ nhị phân là một phép tính toán học số học thông thường, không phải mục đích của ANDing trong mạng [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Quá trình ANDing là phép toán logic bit-by-bit AND giữa địa chỉ IP của máy nguồn và Subnet Mask nhằm mục đích xác định địa chỉ mạng (Network Address) của gói tin.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271820",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-17T00:55:39+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 43,
+    "question_id": "Q43",
+    "image_file": "Q43.webp",
+    "subject_domain": "Mạng máy tính & Hệ thống",
+    "question_text_extracted": "(Choose 1 answer)\nRefer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?\n\nImage Exhibit shows:\nSwitch> config t\n^\n% Invalid input detected at '^' marker.\n\nOptions:\nA. The entire command, configure terminal , must be used.\nB. The administrator is already in global configuration mode.\nC. The administrator must first enter privileged EXEC mode before issuing the command.\nD. The administrator must connect via the console port to access global configuration mode.",
+    "key_points_and_rules": "Xác định lỗi khi nhập lệnh trên switch Cisco. Prompt hiện tại đang ở chế độ User EXEC mode (`Switch>`), trong khi lệnh cấu hình (như `configure terminal` hoặc viết tắt `conf t`) yêu cầu phải ở chế độ Privileged EXEC mode (`Switch#`).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Lệnh `config t` là từ khóa viết tắt hợp lệ của `configure terminal` trên thiết bị Cisco IOS.",
+      "B": "Phân tích chi tiết: [SAI] Trạng thái hiện tại có dấu `>` (`Switch>`) thể hiện quản trị viên đang ở User EXEC mode, chưa phải Global Configuration mode (vốn có dạng `Switch(config)#`).",
+      "C": "Phân tích chi tiết: [ĐÚNG] Quản trị viên phải gõ lệnh `enable` để chuyển từ User EXEC mode (`Switch>`) sang Privileged EXEC mode (`Switch#`) trước khi có thể nhập lệnh cấu hình hệ thống.",
+      "D": "Phân tích chi tiết: [SAI] Việc kết nối qua cổng console hay SSH/Telnet không ảnh hưởng đến việc thiếu quyền ở chế độ EXEC nếu chưa thực hiện lệnh `enable`."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Dựa vào hình ảnh, dấu nhắc lệnh là `Switch>`, cho biết switch đang ở chế độ User EXEC mode. Để cấu hình switch, người dùng cần phải chuyển sang chế độ Privileged EXEC mode (với dấu nhắc `Switch#`) bằng lệnh `enable` trước khi có thể vào Global Configuration mode bằng lệnh `configure terminal` (hoặc `conf t`). Do đó, phương án C là chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án cộng đồng 'C'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271821",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-17T01:04:53+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 44,
+    "question_id": "Q44",
+    "image_file": "Q44.webp",
+    "subject_domain": "Mạng máy tính & Hệ thống",
+    "question_text_extracted": "What is the purpose of the no shutdown command on a switch interface?\nA. It brings the interface out of administratively down state.\nB. It sets the interface to dynamic mode.\nC. It disables the interface permanently.\nD. It resets the configuration to default.",
+    "key_points_and_rules": "Hiểu ý nghĩa và chức năng của câu lệnh `no shutdown` trong cấu hình giao diện mạng (interface configuration mode) của thiết bị Cisco IOS.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [ĐÚNG] Mặc định các cổng trên một số thiết bị hoặc trong một số tình huống có thể ở trạng thái bị vô hiệu hóa bởi quản trị viên (administratively down). Lệnh `no shutdown` có tác dụng kích hoạt cổng hoạt động trở lại.",
+      "B": "Phân tích chi tiết: [SAI] Thiết lập chế độ dynamic mode được thực hiện thông qua các lệnh liên quan đến switchport (ví dụ: `switchport mode dynamic auto/desirable`).",
+      "C": "Phân tích chi tiết: [SAI] Để vô hiệu hóa giao diện, lệnh được sử dụng là `shutdown`, không phải `no shutdown`.",
+      "D": "Phân tích chi tiết: [SAI] Đưa cấu hình về mặc định được thực hiện bằng lệnh `default interface <interface-id>`."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong hệ điều hành Cisco IOS, lệnh `shutdown` dùng để vô hiệu hóa một giao diện mạng (đưa nó vào trạng thái administratively down). Ngược lại, câu lệnh `no shutdown` dùng để bật giao diện đó lên, đưa nó ra khỏi trạng thái bị quản trị viên vô hiệu hóa. Do đó, phương án A là đáp án chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng 'A'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271822",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-17T01:08:34+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 45,
+    "question_id": "Q45",
+    "image_file": "Q45.webp",
+    "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
+    "question_text_extracted": "Which command is used to save the active configuration file (running-config) to the file that is used upon startup or reboot (startup-config)?\nA. show running-config\nB. erase startup-config\nC. copy running-config startup-config\nD. reload",
+    "key_points_and_rules": "Yêu cầu tìm lệnh lưu cấu hình đang chạy (running-config) thành file cấu hình khởi động (startup-config) trên thiết bị Cisco.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Lệnh 'show running-config' dùng để hiển thị nội dung file cấu hình hiện tại đang chạy trên thiết bị, không phải lệnh lưu file. [SAI]",
+      "B": "Phân tích chi tiết: Lệnh 'erase startup-config' dùng để xóa file cấu hình khởi động lưu trong NVRAM, không phải lệnh lưu file. [SAI]",
+      "C": "Phân tích chi tiết: Lệnh 'copy running-config startup-config' thực hiện sao chép tệp cấu hình đang hoạt động (running-config) vào tệp cấu hình khởi động (startup-config) để lưu lại khi thiết bị khởi động lại. [ĐÚNG]",
+      "D": "Phân tích chi tiết: Lệnh 'reload' dùng để khởi động lại thiết bị switch/router. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Để lưu cấu hình đang chạy (running-config) vào bộ nhớ NVRAM (startup-config) trên các thiết bị mạng Cisco, ta dùng cú pháp lệnh copy nguồn đích: copy running-config startup-config.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án hoàn toàn trùng khớp với đáp án cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271823",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-17T01:10:48+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 46,
+    "question_id": "Q46",
+    "image_file": "Q46.webp",
+    "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
+    "question_text_extracted": "What is the correct sequence of commands to configure a console password on a switch?\nA. line console 0 → password cisco → login\nB. enable password cisco → login → password cisco\nC. enable console → password cisco → encrypt password\nD. password cisco → enable password → encrypt password",
+    "key_points_and_rules": "Yêu cầu tìm chuỗi câu lệnh chính xác để cấu hình mật khẩu cổng console (line console password) trên thiết bị switch Cisco.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Trình tự cấu hình mật khẩu console chuẩn gồm: truy cập vào cổng console ('line console 0'), đặt mật khẩu ('password cisco'), và bật tính năng yêu cầu đăng nhập ('login'). [ĐÚNG]",
+      "B": "Phân tích chi tiết: Lệnh enable password dùng cho chế độ privileged EXEC chứ không phải console, sai cú pháp tuần tự. [SAI]",
+      "C": "Phân tích chi tiết: Không tồn tại các câu lệnh như 'enable console' hay 'encrypt password' theo dạng này trong CLI của Cisco. [SAI]",
+      "D": "Phân tích chi tiết: Các lệnh đưa ra không đúng cú pháp và thứ tự trong IOS của Cisco. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Để cấu hình mật khẩu console trên thiết bị Cisco, ta vào cấu hình dòng console bằng lệnh 'line console 0', sau đó đặt mật khẩu bằng 'password [mật khẩu]' và bắt buộc phải bật kiểm tra đăng nhập bằng lệnh 'login'.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271824",
+          "author": "Anh Nhật",
+          "text": "A",
+          "timestamp": "2026-10-17T01:11:40+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 47,
+    "question_id": "Q47",
+    "image_file": "Q47.webp",
+    "subject_domain": "Mạng máy tính (Computer Networks)",
+    "question_text_extracted": "What are the four basic operations of the network layer?\nA. Addressing, Routing, Filtering, Framing\nB. Addressing, Encryption, Decryption, Routing\nC. Addressing, Encapsulation, Routing, De-encapsulation\nD. Encoding, Framing, Filtering, Switching",
+    "key_points_and_rules": "Xác định 4 hoạt động cơ bản của Tầng Mạng (Network Layer - OSI Layer 3). Các hoạt động chính của tầng Network bao gồm Addressing (đánh địa chỉ IP), Encapsulation (đóng gói dữ liệu từ Transport layer thành packet), Routing (định tuyến gói tin), và De-encapsulation (mở gói tin tại đích hoặc các bước trung gian).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Vì 'Filtering' thuộc về tầng Data Link / Firewall/Switch và 'Framing' thuộc về tầng Data Link (Layer 2).",
+      "B": "Phân tích chi tiết: [SAI] Vì 'Encryption' và 'Decryption' là các dịch vụ bảo mật thường thuộc về tầng Presentation hoặc Application/IPsec.",
+      "C": "Phân tích chi tiết: [ĐÚNG] Các hoạt động cơ bản của Tầng Mạng bao gồm Đánh địa chỉ (Addressing), Đóng gói (Encapsulation), Định tuyến (Routing) và Giải đóng gói (De-encapsulation).",
+      "D": "Phân tích chi tiết: [SAI] Vì 'Encoding', 'Framing', 'Filtering', 'Switching' liên quan chủ yếu đến tầng Physical và Data Link."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Tầng Mạng (Network Layer - Tầng 3 trong mô hình OSI) chịu trách nhiệm truyền dữ liệu từ nguồn đến đích thông qua các mạng khác nhau. Bốn hoạt động cơ bản cốt lõi của tầng này là Addressing (Đánh địa chỉ logic như IP), Encapsulation (Đóng gói dữ liệu thành packet), Routing (Định tuyến đường đi tối ưu cho gói tin) và De-encapsulation (Giải đóng gói).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án phân tích hoàn toàn trùng khớp với đáp án cộng đồng đề xuất là 'C'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271825",
+          "author": "Anh Nhật",
+          "text": "C",
+          "timestamp": "2026-10-17T01:17:18+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 48,
+    "question_id": "Q48",
+    "image_file": "Q48.webp",
+    "subject_domain": "Mạng máy tính (Computer Networks - IPv6 & NAT)",
+    "question_text_extracted": "Why is NAT not needed in IPv6?\nA. Because IPv6 has integrated security, there is no need to hide the IPv6 addresses of internal networks.\nB. Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.\nC. The problems that are induced by NAT applications are solved because the IPv6 header improves packet handling by intermediate routers.\nD. The end-to-end connectivity problems that are caused by NAT are solved because the number of routes increases with the number of nodes that are connected to the Internet.",
+    "key_points_and_rules": "Xác định lý do tại sao NAT (Network Address Translation) không cần thiết trong IPv6. NAT ra đời chủ yếu để giải quyết vấn đề cạn kiệt địa chỉ IPv4 bằng cách cho phép các thiết bị sử dụng địa chỉ nội bộ (private) chia sẻ một hoặc một số ít địa chỉ công cộng (public).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Bảo mật tích hợp (như IPsec) không phải là lý do chính loại bỏ NAT. NAT sinh ra để giải quyết vấn đề thiếu địa chỉ chứ không phải để bảo mật.",
+      "B": "Phân tích chi tiết: [ĐÚNG] IPv6 cung cấp không gian địa chỉ khổng lồ (128-bit, tương đương $2^{128}$ địa chỉ), cho phép mọi thiết bị, máy trạm hay người dùng đều có thể sở hữu một địa chỉ IP công cộng (public IP) riêng biệt, do đó không cần dùng NAT để dịch địa chỉ nội bộ sang địa chỉ công cộng nữa.",
+      "C": "Phân tích chi tiết: [SAI] Cải thiện xử lý tiêu đề gói tin (packet handling) không giải quyết được vấn đề thiếu hụt địa chỉ cốt lõi khiến NAT xuất hiện.",
+      "D": "Phân tích chi tiết: [SAI] Số lượng tuyến đường tăng lên không phải là lý do kỹ thuật chính khiến NAT trở nên thừa thãi trong IPv6."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "NAT (Network Address Translation) ban đầu được phát minh ra để giảm thiểu tình trạng cạn kiệt địa chỉ IPv4 bằng cách cho phép nhiều thiết bị trong mạng nội bộ dùng chung một địa chỉ IP công cộng. Với IPv6, không gian địa chỉ là vô cùng lớn ($2^{128}$ địa chỉ), đủ cung cấp cho mọi thiết bị trên Trái Đất một địa chỉ IP public độc lập. Do đó, tính năng dịch địa chỉ (NAT) trở nên không còn cần thiết.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án phân tích trùng khớp hoàn toàn với đáp án cộng đồng đề xuất là 'B'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271826",
+          "author": "Anh Nhật",
+          "text": "B",
+          "timestamp": "2026-10-17T01:19:33+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 49,
+    "question_id": "Q49",
+    "image_file": "Q49.webp",
+    "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
+    "question_text_extracted": "Which statement describes a feature of the IP protocol?\nA. IP encapsulation is modified based on network media.\nB. IP relies on Layer 2 protocols for transmission error control.\nC. MAC addresses are used during the IP packet encapsulation.\nD. IP relies on upper layer services to handle situations of missing or out-of-order packets.",
+    "key_points_and_rules": "Xác định đặc điểm tính chất của giao thức Internet Protocol (IP) ở Tầng 3 (Network Layer) trong mô hình OSI: Giao thức IP không đáng tin cậy (best-effort), không kết nối (connectionless), không chịu trách nhiệm kiểm soát lỗi truyền dẫn, không quan tâm đến thứ tự gói tin hay khôi phục gói tin bị mất (các tầng trên như TCP ở Tầng 4 sẽ đảm nhận việc này).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đánh giá phương án A [SAI]. Việc đóng gói và cấu trúc khung ở tầng liên kết dữ liệu (Layer 2) thay đổi tùy theo môi trường mạng (như Ethernet, Wi-Fi), nhưng việc đóng gói gói tin IP (Network Layer) giữ nguyên cấu trúc tiêu đề cơ bản độc lập với phương tiện truyền thông mạng bên dưới.",
+      "B": "Phân tích chi tiết: Đánh giá phương án B [SAI]. IP là giao thức best-effort (cố gắng truyền tốt nhất), nó không thực hiện kiểm soát lỗi (error control) hay khôi phục gói tin; việc kiểm soát lỗi thường do tầng 2 hoặc các tầng trên thực hiện, nhưng bản thân IP không dựa vào Layer 2 để kiểm soát lỗi truyền dẫn dữ liệu của chính nó.",
+      "C": "Phân tích chi tiết: Đánh giá phương án C [SAI]. Địa chỉ MAC thuộc về Tầng 2 (Data Link Layer), trong khi quá trình đóng gói gói tin IP (Layer 3) sử dụng địa chỉ IP nguồn và đích, chứ không sử dụng địa chỉ MAC (địa chỉ MAC chỉ được thêm vào khi đóng gói thành Frame ở Tầng 2).",
+      "D": "Phân tích chi tiết: Đánh giá phương án D [ĐÚNG]. Do IP là một giao thức truyền dẫn không có kết nối và không đảm bảo (best-effort), nó không theo dõi trạng thái các gói tin bị mất hoặc đến sai thứ tự. Do đó, IP phải dựa vào các dịch vụ ở tầng trên (như TCP ở Tầng Transport) để xử lý các tình huống này."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Giao thức IP (Internet Protocol) hoạt động ở Tầng 3 (Network) của mô hình OSI, có đặc điểm là best-effort (không cam kết giao hàng, không đáng tin cậy, không kết nối). IP không kiểm tra lỗi, không sắp xếp thứ tự gói tin và không quan tâm đến việc gói tin có bị thất lạc hay không. Do đó, các chức năng xử lý lỗi, sắp xếp thứ tự hoặc khôi phục gói tin bị mất sẽ do các giao thức tầng trên (như TCP ở tầng Giao vận - Transport Layer) đảm nhiệm.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp hoàn toàn với đáp án cộng đồng ('D'). Đáp án D phản ánh chính xác bản chất best-effort và sự phân chia trách nhiệm giữa Tầng Network (IP) và Tầng Transport (TCP)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271827",
+          "author": "Anh Nhật",
+          "text": "D",
+          "timestamp": "2026-10-17T01:21:52+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 50,
+    "question_id": "Q50",
+    "image_file": "Q50.webp",
+    "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
+    "question_text_extracted": "What will happen if the default gateway address is incorrectly configured on a host?\nA. The host cannot communicate with other hosts in the local network.\nB. The switch will not forward packets initiated by the host.\nC. The host will have to use ARP to determine the correct address of the default gateway.\nD. The host cannot communicate with hosts in other networks.\nE. A ping from the host to 127.0.0.1 would not be successful.",
+    "key_points_and_rules": "Xác định vai trò của Default Gateway (Cổng mặc định): Cổng mặc định là địa chỉ IP của router trên mạng cục bộ (local network), được sử dụng để chuyển tiếp các gói tin gửi đi các mạng khác (remote networks). Khi giao tiếp trong cùng mạng nội bộ, các thiết bị sử dụng địa chỉ MAC và ARP trực tiếp mà không cần thông qua Default Gateway.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đánh giá phương án A [SAI]. Giao tiếp trong cùng một mạng cục bộ (local network) diễn ra trực tiếp thông qua địa chỉ IP và địa chỉ MAC (thông qua ARP) mà không cần qua Default Gateway, nên host vẫn giao tiếp bình thường với các máy cùng mạng.",
+      "B": "Phân tích chi tiết: Đánh giá phương án B [SAI]. Switch hoạt động ở Tầng 2 (Data Link Layer), chuyển mạch dựa trên địa chỉ MAC chứ không can thiệp hay cấu hình địa chỉ Default Gateway của host.",
+      "C": "Phân tích chi tiết: Đánh giá phương án C [SAI]. ARP dùng để phân giải địa chỉ IP thành địa chỉ MAC trong cùng mạng nội bộ. Nếu cấu hình sai default gateway, host không thể tự dùng ARP để 'tìm' ra địa chỉ đúng trừ khi cấu hình đúng IP của gateway đó.",
+      "D": "Phân tích chi tiết: Đánh giá phương án D [ĐÚNG]. Default gateway chính là con đường (router) để host chuyển tiếp các gói tin ra ngoài mạng nội bộ của mình. Nếu địa chỉ này bị cấu hình sai, host sẽ không biết gửi gói tin đi đâu khi muốn liên lạc với các mạng khác (khác subnet), dẫn đến việc không thể giao tiếp với các host ở mạng ngoài.",
+      "E": "Phân tích chi tiết: Đánh giá phương án E [SAI]. 127.0.0.1 là địa chỉ loopback (chính máy đó), không liên quan đến cấu hình default gateway mạng ngoài hay mạng nội bộ."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Default gateway đóng vai trò là cửa ngõ để máy tính (host) chuyển các gói tin ra khỏi mạng cục bộ (local network) đi đến các mạng khác (external/remote networks). Khi một host có địa chỉ default gateway bị cấu hình sai, nó vẫn có thể giao tiếp bình thường với các thiết bị trong cùng mạng LAN (vì liên lạc nội mạng dùng ARP và địa chỉ MAC trực tiếp). Tuy nhiên, nó sẽ không thể gửi bất kỳ gói tin nào ra ngoài mạng Internet hoặc các mạng khác, tức là không thể giao tiếp với các host ở các mạng khác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp hoàn toàn với đáp án cộng đồng ('D'). Khẳng định đúng đắn về nguyên lý hoạt động định tuyến cục bộ và ngoại vi."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 1,
+      "valid_vote_count": 1,
+      "top_answer_votes": 1,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1271828",
+          "author": "Anh Nhật",
+          "text": "D",
+          "timestamp": "2026-10-17T01:24:32+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  }
+]

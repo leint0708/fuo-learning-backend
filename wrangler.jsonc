@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fuo-learning-backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "fuo-learning-db",
+      "database_id": "fuo-learning-db-local",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "assets": {
+    "directory": "./exams",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "ENVIRONMENT": "development"
+  }
+}

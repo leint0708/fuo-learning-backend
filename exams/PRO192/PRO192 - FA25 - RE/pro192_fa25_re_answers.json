@@ -1,0 +1,3102 @@
+[
+  {
+    "question_number": 1,
+    "question_id": "Q17",
+    "image_file": "Q17.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong lập trình hướng đối tượng, Class là khuôn mẫu (blueprint) định nghĩa các thuộc tính và phương thức, còn Object là thể hiện thực tế (instance) được khởi tạo dựa trên khuôn mẫu đó.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1023320",
+          "author": "Lữ Chí Vỹ",
+          "text": "A",
+          "timestamp": "2025-12-10T23:39:43+0700",
+          "reactions": 1,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069785",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:15:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105013",
+          "author": "cya",
+          "text": "a",
+          "timestamp": "2026-04-02T21:38:01+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1156268",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-27T14:56:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214346",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:21:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 7,
+    "question_id": "Q1",
+    "image_file": "Q1.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, các từ khóa (keywords) đều được viết hoàn toàn bằng chữ thường (lowercase). 'interface' là từ khóa được định nghĩa sẵn trong ngôn ngữ Java. Trong khi đó, 'Float' và 'Integer' là các tên lớp (class names) thuộc gói java.lang, còn 'include' không tồn tại trong Java.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033561",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:11:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1059066",
+          "author": "cya",
+          "text": "interface",
+          "timestamp": "2026-03-16T00:01:13+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1069797",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:19:13+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105040",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:40:38+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 8,
+    "question_id": "Q2",
+    "image_file": "Q2.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Để biên dịch tệp mã nguồn Java (tệp có phần mở rộng .java), ta sử dụng trình biên dịch Java thông qua lệnh `javac` kèm theo tên tệp (ví dụ: `javac program.java`). Sau khi biên dịch thành công, tệp bytecode .class tạo ra mới được thực thi bằng lệnh `java program`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033562",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:12:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069798",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:19:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1109633",
+          "author": "khanh929gg",
+          "text": "A",
+          "timestamp": "2026-04-03T09:37:53+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214357",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:22:40+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 9,
+    "question_id": "Q3",
+    "image_file": "Q3.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Theo tài liệu chính thức của Oracle, Java Platform bao gồm hai thành phần chính: Java Virtual Machine (JVM) và Java Application Programming Interface (API). Do đó đáp án A là chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án của AI trùng khớp hoàn toàn với đáp án của cộng đồng ({'A': 3})."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033563",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:12:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069799",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:19:24+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214359",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:22:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 10,
+    "question_id": "Q4",
+    "image_file": "Q4.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Đề bài hỏi khái niệm nào KHÔNG thuộc các đặc tính lập trình hướng đối tượng. Các tính chất OOP gồm Kế thừa, Đa hình, Đóng gói, Trừu tượng. Cross-platform là đặc điểm của ngôn ngữ Java (nhờ JVM) chứ không phải đặc tính của OOP.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án của AI trùng khớp hoàn toàn với đáp án của cộng đồng ({'A': 3})."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033564",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:13:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069800",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:19:31+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214361",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:22:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 11,
+    "question_id": "Q5",
+    "image_file": "Q5.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Java Virtual Machine (JVM) là một máy ảo cung cấp môi trường thực thi để chạy các chương trình Java. Nhiệm vụ chính của nó là nhận Java bytecode và chuyển đổi nó thành mã máy (machine code) để hệ điều hành có thể hiểu và thực thi được.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033569",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:16:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069801",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:19:50+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214363",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:23:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 12,
+    "question_id": "Q6",
+    "image_file": "Q6.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Toán tử `instanceof` trong Java được sử dụng để kiểm tra xem một đối tượng (object) có phải là thể hiện của một kiểu cụ thể (class, subclass, hoặc interface) hay không, trả về kết quả dạng boolean (true/false).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033565",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:14:36+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064061",
+          "author": "cya",
+          "text": "a",
+          "timestamp": "2026-03-25T12:55:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069802",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:20:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105042",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:40:53+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214365",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:23:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 13,
+    "question_id": "Q7",
+    "image_file": "Q7.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Java được thiết kế loại bỏ các con trỏ tường minh (explicit pointers) nhằm quản lý bộ nhớ tự động và đảm bảo an toàn, tránh lỗi tràn bộ nhớ hay truy cập trái phép. Vì vậy, việc 'Use of pointers' không phải là tính năng của Java.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng đề xuất là 'A'. Hoàn toàn trùng khớp với phân tích chuyên sâu."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033566",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:14:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069803",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:20:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105043",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:40:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214368",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:23:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 14,
+    "question_id": "Q8",
+    "image_file": "Q8.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Khi chạy một ứng dụng Java, Máy ảo Java (JVM) tìm kiếm phương thức `main` (cụ thể là `public static void main(String[] args)`) để bắt đầu quá trình thực thi chương trình. Do đó, 'main method' là điểm vào của chương trình Java.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng đề xuất là 'A'. Hoàn toàn trùng khớp với kiến thức chuẩn của Java."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033567",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:15:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064062",
+          "author": "cya",
+          "text": "a",
+          "timestamp": "2026-03-25T12:55:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105045",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:41:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1156275",
+          "author": "sky@lope",
+          "text": "A. điểm bắt đầu dùng main",
+          "timestamp": "2026-04-27T15:08:56+0700",
+          "reactions": 2026,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214371",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:24:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 15,
+    "question_id": "Q9",
+    "image_file": "Q9.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, các biến thành viên (instance variables) thuộc kiểu dữ liệu nguyên thủy (primitive) đều có giá trị mặc định khi không được khởi tạo tường minh. Cụ thể:\n- boolean: false\n- char: '\\u0000'\n- byte, short, int, long: 0\n- float: 0.0f\n- double: 0.0\nDo đó, giá trị mặc định của kiểu double là 0.0.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng bình luận nhiều nhất là A, hoàn toàn trùng khớp với phân tích chuyên gia."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033570",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:16:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064063",
+          "author": "cya",
+          "text": "a",
+          "timestamp": "2026-03-25T12:56:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105046",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:41:10+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214377",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:24:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 16,
+    "question_id": "Q10",
+    "image_file": "Q10.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Thực hiện trace code:\n1. `int[][] arr = {{1,2,3}, {4,5,6}, {6,7,8}};` tạo mảng 2 chiều. `arr[2]` ban đầu là `{6,7,8}`.\n2. `int[] copy = {9,10,11,12};` tạo mảng 1 chiều gồm các phần tử tại các index: index 0 -> 9, index 1 -> 10, index 2 -> 11, index 3 -> 12.\n3. `arr[2] = copy;` thay thế hàng thứ 3 của mảng arr bằng tham chiếu đến mảng `copy`.\n4. `System.out.println(arr[2][2]);` tương đương với in ra `copy[2]`, giá trị là `11`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng bình luận nhiều nhất là A, hoàn toàn chính xác."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033571",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:17:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064064",
+          "author": "cya",
+          "text": "a",
+          "timestamp": "2026-03-25T12:57:26+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069804",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:20:53+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105047",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:41:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214382",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:25:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 17,
+    "question_id": "Q11",
+    "image_file": "Q11.webp",
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Trong Java, biểu thức x + y thực hiện unboxing các đối tượng Integer x và y thành kiểu nguyên thủy int và cộng chúng lại cho ra kết quả là 15 (kiểu int). Tiếp theo, cú pháp (String)(x+y) cố gắng ép kiểu kết quả int đó thành String. Tuy nhiên, kiểu int là kiểu nguyên thủy và String là kiểu tham chiếu độc lập không có quan hệ phân cấp lớp (superclass/subclass), do đó trình biên dịch (Compiler) sẽ phát hiện lỗi 'incompatible types' và báo lỗi biên dịch (Compiler Error).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp hoàn toàn với đáp án cộng đồng ('D'). Cộng đồng đánh giá rất chính xác đây là lỗi biên dịch do ép kiểu không hợp lệ giữa kiểu nguyên thủy và String."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033572",
+          "author": "hoangthai0202",
+          "text": "D",
+          "timestamp": "2025-12-21T07:17:55+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1064065",
+          "author": "cya",
+          "text": "d loi o string",
+          "timestamp": "2026-03-25T12:57:50+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1069805",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-03-27T20:21:02+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1105051",
+          "author": "cya",
+          "text": "D",
+          "timestamp": "2026-04-02T21:41:24+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1156306",
+          "author": "sky@lope",
+          "text": "D",
+          "timestamp": "2026-04-27T15:31:04+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 18,
+    "question_id": "Q12",
+    "image_file": "Q12.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Phương thức `nextLine()` là một phương thức phổ biến thuộc lớp `java.util.Scanner`, dùng để đọc toàn bộ dòng nhập từ bàn phím cho đến khi gặp ký tự xuống dòng.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033573",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:18:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064066",
+          "author": "cya",
+          "text": "a",
+          "timestamp": "2026-03-25T12:57:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069806",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:21:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105052",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:41:29+0700",
+          "reactions": 315,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1156307",
+          "author": "sky@lope",
+          "text": "a",
+          "timestamp": "2026-04-27T15:31:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 19,
+    "question_id": "Q13",
+    "image_file": "Q13.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, Checked Exceptions là các ngoại lệ kế thừa từ lớp Exception (nhưng không phải là RuntimeException). Trình biên dịch (compiler) kiểm tra các ngoại lệ này tại thời điểm biên dịch (compile-time). Nếu một phương thức có thể ném ra checked exception, nó bắt buộc phải xử lý bằng khối try-catch hoặc khai báo throws trong chữ ký phương thức, nếu không chương trình sẽ không thể biên dịch thành công.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A'). Cả hai đều xác định đúng định nghĩa về checked exception tại compile-time."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033574",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:18:51+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105053",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:41:37+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1156316",
+          "author": "sky@lope",
+          "text": "Checked đi với Compile-time (Thời gian biên dịch). Unchecked đi với Runtime (Thời gian thực thi).",
+          "timestamp": "2026-04-27T15:35:55+0700",
+          "reactions": 2026,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1214387",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:26:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 20,
+    "question_id": "Q14",
+    "image_file": "Q14.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Theo tài liệu chuẩn của Java, lớp `Scanner` hỗ trợ constructor nhận vào một đối tượng `Path` và một bảng mã `Charset` (ví dụ: `StandardCharsets.UTF_8`) kể từ Java 11: `new Scanner(Path.of(\"filename\"), Charset)`. Do đó, phương án A là cách khởi tạo chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp với đáp án cộng đồng ('A'). Phản ánh đúng cú pháp chuẩn của Java khi kết hợp `Scanner` và `Path.of()` cùng `StandardCharsets`."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033575",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:19:21+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069807",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:21:51+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105055",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:41:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1156339",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-27T15:42:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 21,
+    "question_id": "Q15",
+    "image_file": "Q15.webp",
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Encapsulation is about data hiding. The 'private' modifier restricts access to the class itself, preventing external classes from directly modifying or accessing the internal state of an object. This is the most restrictive and therefore the strongest form of encapsulation in Java.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). The community answer 'C' is correct. There is no ambiguity here as 'private' is the standard answer for the strongest encapsulation."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033576",
+          "author": "hoangthai0202",
+          "text": "C",
+          "timestamp": "2025-12-21T07:19:56+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1069808",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-03-27T20:22:09+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1105057",
+          "author": "cya",
+          "text": "C",
+          "timestamp": "2026-04-02T21:41:50+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1156359",
+          "author": "sky@lope",
+          "text": "C",
+          "timestamp": "2026-04-27T15:47:34+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 22,
+    "question_id": "Q16",
+    "image_file": "Q16.webp",
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "In Java, the 'this' keyword is used inside an instance method or constructor to refer to the current object. It is commonly used to distinguish between instance variables and parameters with the same name.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). The community answer 'B' is correct. The distinction between 'current object' and 'current class' is a fundamental concept in Java."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033577",
+          "author": "hoangthai0202",
+          "text": "B",
+          "timestamp": "2025-12-21T07:20:15+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1069809",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-03-27T20:22:27+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1074145",
+          "author": "Remind",
+          "text": "b",
+          "timestamp": "2026-03-28T20:45:46+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1105060",
+          "author": "cya",
+          "text": "B",
+          "timestamp": "2026-04-02T21:41:57+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1156361",
+          "author": "sky@lope",
+          "text": "B",
+          "timestamp": "2026-04-27T15:48:05+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 23,
+    "question_id": "Q18",
+    "image_file": "Q18.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong ngôn ngữ lập trình Java, toán tử dấu chấm (.) được sử dụng để truy cập vào các thành viên (biến hoặc phương thức) của một đối tượng. Ví dụ: 'obj.name' hoặc 'obj.doSomething()'.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án của tôi trùng khớp hoàn toàn với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033578",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:20:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069810",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:22:37+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105062",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:42:02+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1156366",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-27T15:49:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214400",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:28:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 24,
+    "question_id": "Q19",
+    "image_file": "Q19.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trace code: 1. Khởi tạo đối tượng 'p' thuộc lớp 'Person'. 2. Biến 'id' ban đầu là 'New Id'. 3. Dòng 'p.id = \"FPTU\"' cập nhật giá trị của biến instance 'id' thành 'FPTU'. 4. 'System.out.println(p.id)' in ra giá trị hiện tại của 'id', tức là 'FPTU'.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án của tôi trùng khớp hoàn toàn với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033579",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:21:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064072",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T13:00:36+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069813",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:23:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105082",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:43:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1156367",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-27T15:49:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 25,
+    "question_id": "Q20",
+    "image_file": "Q20.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong hàm main, đối tượng p được khởi tạo. Sau đó, p.id được gán là 'FPT'. Khi gọi p.calPerson(p), tham số p trỏ đến cùng đối tượng đó. Bên trong phương thức, p.id bị gán lại thành 'HCM'. Lệnh System.out.print(p.id) sẽ in ra giá trị hiện tại của id là 'HCM'.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng là A, hoàn toàn trùng khớp với phân tích logic của JVM."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033580",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:22:54+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064075",
+          "author": "cya",
+          "text": "hcm",
+          "timestamp": "2026-03-25T13:01:15+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1069815",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:23:48+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105093",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:44:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1167081",
+          "author": "Datttt",
+          "text": "A",
+          "timestamp": "2026-05-04T13:50:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214410",
+          "author": "huutuong",
+          "text": "a",
+          "timestamp": "2026-07-30T17:29:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 26,
+    "question_id": "Q21",
+    "image_file": "Q21.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Java ưu tiên gọi phương thức cụ thể hơn phương thức varargs. 1. t.method() gọi varargs (độ dài 0). 2. t.method(2) gọi method(int x) (2*2=4). 3. t.method(3, 4) gọi varargs (độ dài 2). Kết quả là 042.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng là A, hoàn toàn trùng khớp với quy tắc nạp chồng phương thức trong Java."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033581",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:24:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069818",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:24:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105095",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:44:28+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1214414",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T17:30:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 27,
+    "question_id": "Q22",
+    "image_file": "Q22.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, các phương thức static không bị ghi đè (override) mà bị ẩn (hide). Khi gọi một phương thức static thông qua một biến tham chiếu (ở đây là 'objA' thuộc kiểu 'A'), JVM sẽ thực thi phương thức của lớp tương ứng với kiểu của biến tham chiếu đó, bất kể đối tượng thực tế được khởi tạo là gì (ở đây là 'new B()'). Do đó, 'objA.displayMessage()' sẽ gọi phương thức của lớp 'A'.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng là 'A'. Phân tích của tôi hoàn toàn trùng khớp với đáp án cộng đồng. Nhiều người nhầm lẫn đây là đa hình (polymorphism) nhưng thực tế đây là cơ chế ẩn phương thức static."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033582",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:25:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064104",
+          "author": "cya",
+          "text": "A vi co static",
+          "timestamp": "2026-03-25T13:10:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069820",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:25:36+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105097",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:44:34+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 28,
+    "question_id": "Q23",
+    "image_file": "Q23.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Từ khóa 'this' trong Java được sử dụng để tham chiếu đến đối tượng hiện tại đang thực thi phương thức hoặc constructor. Trong khi đó, từ khóa 'super' được sử dụng để tham chiếu đến đối tượng của lớp cha hoặc gọi các thành viên của lớp cha.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng là 'A'. Phân tích của tôi hoàn toàn trùng khớp với đáp án cộng đồng."
+    },
+    "ai_model": "gemini-3.1-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033583",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:25:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069822",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:25:50+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105098",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:44:40+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 29,
+    "question_id": "Q24",
+    "image_file": "Q24.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Theo lý thuyết lập trình hướng đối tượng (OOP) và đặc thù của ngôn ngữ Java, subclass là lớp được tạo ra dựa trên một lớp đã có sẵn để kế thừa và mở rộng tính năng. Do đó, phương án A là định nghĩa chuẩn xác nhất.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Khẳng định trùng khớp hoàn toàn với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemma-4-26b-a4b-it",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033584",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:26:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069823",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:26:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105101",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:44:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 30,
+    "question_id": "Q25",
+    "image_file": "Q25.webp",
+    "question_type": "multiple_choice",
+    "community_answer": "AB",
+    "ai_answer": "AB",
+    "ai_explanation": "Phân tích các mức độ truy cập: \n- private: class-level (A đúng).\n- default: package-level (D sai).\n- protected: package-level + subclass-level (C sai vì mô tả thiếu/sai phạm vi).\n- public: world-level (B đúng).\nVì đề bài yêu cầu chọn 2 đáp án, A và B là hai mệnh đề chính xác nhất.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "AB",
+      "ai_answer": "AB",
+      "comparison_note": "Đáp án của AI (AB) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (AB). Khẳng định trùng khớp hoàn toàn với đáp án cộng đồng (AB)."
+    },
+    "ai_model": "gemma-4-26b-a4b-it",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "AB": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033585",
+          "author": "hoangthai0202",
+          "text": "A,B",
+          "timestamp": "2025-12-21T07:26:45+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1069830",
+          "author": "long156206",
+          "text": "ab",
+          "timestamp": "2026-03-27T20:28:19+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1105102",
+          "author": "cya",
+          "text": "AB",
+          "timestamp": "2026-04-02T21:45:09+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1157418",
+          "author": "sky@lope",
+          "text": "A,B",
+          "timestamp": "2026-04-27T22:35:53+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 31,
+    "question_id": "Q26",
+    "image_file": "Q26.webp",
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Xét toàn bộ các phương án, không có phương án nào thực sự đúng hoàn toàn theo định nghĩa chuẩn của Java. Tuy nhiên, nếu dựa theo phân tích mã nguồn và cộng đồng bình luận, đáp án C thường được xem xét trong các bộ câu hỏi ôn tập theo nghĩa cơ chế khởi tạo constructor luôn gọi constructor lớp cha, tuy nhiên câu hỏi có thể có sự nhầm lẫn nhỏ trong đề gốc. Theo phân bố cộng đồng và nội dung PRO192, các phát biểu về kế thừa cơ bản trong Java đều tuân thủ nguyên lý OOP.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án cộng đồng chọn 'C'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1034137",
+          "author": "Nguyễn Thế Vinh",
+          "text": "C",
+          "timestamp": "2025-12-21T20:32:07+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1069831",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-03-27T20:28:39+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1102152",
+          "author": "Phatfpt",
+          "text": "C nha mấy em ghệ của anh <3",
+          "timestamp": "2026-04-02T09:40:38+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1105110",
+          "author": "cya",
+          "text": "C",
+          "timestamp": "2026-04-02T21:45:26+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1167082",
+          "author": "Datttt",
+          "text": "c",
+          "timestamp": "2026-05-04T14:01:42+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 32,
+    "question_id": "Q27",
+    "image_file": "Q27.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Toán tử `instanceof` trong Java trả về `true` nếu đối tượng bên trái là thể hiện của lớp/interface ở bên phải (hoặc của lớp con của nó), và `false` nếu ngược lại.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng 'A'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033587",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:27:53+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069834",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:28:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105112",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:45:42+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 33,
+    "question_id": "Q28",
+    "image_file": "Q28.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, mọi lớp đều mặc định kế thừa từ lớp Object. Lớp Object cung cấp phương thức toString() trả về một chuỗi gồm tên lớp và mã băm (hashcode). Khi ta ghi đè (override) phương thức này trong một lớp con, ta có thể trả về một chuỗi mô tả chi tiết các thông tin của đối tượng đó, giúp việc debug và hiển thị dữ liệu dễ dàng hơn. Do đó, đáp án A phản ánh đúng bản chất của hành động này.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án trùng khớp với lựa chọn của cộng đồng (A). Đây là một kiến thức cơ bản về tính đa hình và lớp Object trong Java."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033589",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:28:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064144",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T13:17:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069836",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:29:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105115",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:45:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1157435",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-27T22:38:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 34,
+    "question_id": "Q29",
+    "image_file": "Q29.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Thực hiện trace code dòng lệnh:\n1. `A objA = new A();` -> objA có biến `a = 5`.\n2. `B objB = new B();` -> objB có biến `a = 6` (thuộc lớp B) và đồng thời kế thừa biến `a = 5` của lớp A (bị ẩn nhưng vẫn tồn tại trong cùng một đối tượng).\n3. `objB.rollBackA();`:\n   - `a++`: tăng biến `a` thuộc lớp B từ 6 lên 7.\n   - `a = super.getA();`: gọi phương thức `getA()` của lớp A. Phương thức này trả về biến `a` của lớp A, giá trị là `5`. Do đó biến `a` của lớp B bị gán lại thành `5`.\n4. `System.out.format(\"%d , %d%n\", objA.getA(), objB.getA());`:\n   - `objA.getA()` gọi phương thức của `objA`, trả về `a` của lớp A là `5`.\n   - `objB.getA()` gọi phương thức `getA()` được kế thừa từ lớp A (do lớp B không ghi đè phương thức này). Nó truy cập vào biến `a` thuộc phạm vi của lớp A, giá trị là `5`.\nKết quả in ra màn hình là: 5, 5.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033591",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:29:03+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064149",
+          "author": "cya",
+          "text": "5 5",
+          "timestamp": "2026-03-25T13:22:00+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1069839",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:29:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105119",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:45:53+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 35,
+    "question_id": "Q30",
+    "image_file": "Q30.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "1. Trong hàm main, lệnh `C c = new C();` khởi tạo một đối tượng lớp C.\n2. Do C kế thừa B, constructor `public C()` sẽ ngầm định gọi `super()` của lớp B trước khi thực hiện lệnh in.\n3. Do B kế thừa A, constructor `public B()` sẽ ngầm định gọi `super()` của lớp A trước khi thực hiện lệnh in.\n4. Constructor của A thực thi đầu tiên: in ra 'A,'.\n5. Sau đó constructor của B tiếp tục thực thi: in ra 'B,'.\n6. Cuối cùng constructor của C thực thi: in ra 'C'.\nKết quả cuối cùng là chuỗi 'A,B,C'.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với cộng đồng (A). Đây là một câu hỏi cơ bản về thứ tự khởi tạo trong Java."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033595",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:30:53+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069841",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:30:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105120",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:45:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 36,
+    "question_id": "Q31",
+    "image_file": "Q31.webp",
+    "question_type": "multiple_choice",
+    "community_answer": "AD",
+    "ai_answer": "AD",
+    "ai_explanation": "Phân tích các đặc điểm của Interface:\n- Phương án A đúng về mặt lý thuyết cơ bản.\n- Phương án B sai vì interface không lưu trữ trạng thái đối tượng (không có instance variables).\n- Phương án C sai vì interface không thể được instantiate nên không cần và không được phép có constructor.\n- Phương án D: Mặc dù thiếu chữ 's' (implements), nhưng đây là lỗi đánh máy phổ biến trong các đề thi. So với B và C sai hoàn toàn về bản chất kỹ thuật, D là lựa chọn hợp lý nhất để đi cùng A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "AD",
+      "ai_answer": "AD",
+      "comparison_note": "Đáp án của AI (AD) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (AD). Đáp án trùng khớp với cộng đồng (AD). Lưu ý bẫy ở phương án D là lỗi chính tả 'implement' thay vì 'implements', nhưng vẫn được chọn vì các phương án khác sai nghiêm trọng hơn."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 6,
+      "valid_vote_count": 5,
+      "top_answer_votes": 3,
+      "agreement_ratio": 0.6,
+      "vote_distribution": {
+        "AD": 3,
+        "A": 1,
+        "AB": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033596",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:31:14+0700",
+          "reactions": 1,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1034954",
+          "author": "Nhatminhk40",
+          "text": "A,D",
+          "timestamp": "2025-12-22T13:35:00+0700",
+          "reactions": 1,
+          "extracted_answer": "AD"
+        },
+        {
+          "comment_id": "xfmg-comment-1069842",
+          "author": "long156206",
+          "text": "ad",
+          "timestamp": "2026-03-27T20:30:34+0700",
+          "reactions": 1,
+          "extracted_answer": "AD"
+        },
+        {
+          "comment_id": "xfmg-comment-1105144",
+          "author": "cya",
+          "text": "ab",
+          "timestamp": "2026-04-02T21:48:13+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1117787",
+          "author": "Đỉnh cao đáy xã hội",
+          "text": "Hình như câu D thiếu s thì phải",
+          "timestamp": "2026-04-04T12:06:42+0700",
+          "reactions": 1,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1157445",
+          "author": "TOICANPASSALLMONTAIFPT",
+          "text": "ad",
+          "timestamp": "2026-04-27T22:42:05+0700",
+          "reactions": 0,
+          "extracted_answer": "AD"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 37,
+    "question_id": "Q32",
+    "image_file": "Q32.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "1. JVM bắt đầu từ hàm main, tạo một instance của lớp Main và gán cho biến tham chiếu kiểu A là obj.\n2. Lệnh obj.display() được gọi. Vì obj thực tế trỏ đến một đối tượng Main, phương thức display() của lớp Main được thực thi.\n3. Trong display(), lệnh String n = myName() được gọi. Lớp Main kế thừa phương thức public myName() từ lớp A.\n4. Trong phương thức myName(), biến private my_name của lớp A được gán giá trị \"test\" và trả về giá trị này.\n5. Biến n nhận giá trị \"test\" và lệnh System.out.println(n) in giá trị này ra console.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với cộng đồng (A). Không có bẫy phức tạp trong câu này ngoài việc kiểm tra khả năng đọc hiểu luồng thực thi của code Java cơ bản."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033597",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:32:03+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069848",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:32:50+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105157",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:49:28+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 38,
+    "question_id": "Q33",
+    "image_file": "Q33.webp",
+    "question_type": "multiple_choice",
+    "community_answer": "AB",
+    "ai_answer": "AB",
+    "ai_explanation": "Dựa trên các quy tắc của ngôn ngữ Java: Kế thừa cho phép tái sử dụng mã nguồn (A đúng). Từ khóa 'extends' là cú pháp chuẩn để thực hiện kế thừa lớp (B đúng). Các thành viên private không được kế thừa (C sai). Java không cho phép một lớp kế thừa từ nhiều lớp cha (D sai).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "AB",
+      "ai_answer": "AB",
+      "comparison_note": "Đáp án của AI (AB) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (AB). Đáp án trùng khớp với cộng đồng (AB). Đây là câu hỏi lý thuyết căn bản về OOP trong Java."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "AB": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033598",
+          "author": "hoangthai0202",
+          "text": "A,B",
+          "timestamp": "2025-12-21T07:32:59+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1064160",
+          "author": "cya",
+          "text": "ab",
+          "timestamp": "2026-03-25T13:32:48+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1069854",
+          "author": "long156206",
+          "text": "ab",
+          "timestamp": "2026-03-27T20:34:10+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1105163",
+          "author": "cya",
+          "text": "AB",
+          "timestamp": "2026-04-02T21:49:39+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 39,
+    "question_id": "Q34",
+    "image_file": "Q34.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Bước 1: Khởi tạo `A a = new B();`. Đối tượng thực tế là B, nhưng biến tham chiếu có kiểu là A.\nBước 2: Gọi `a.printValue();`. Trong Java, phương thức instance được ghi đè. JVM sẽ tìm phương thức `printValue` trong lớp thực tế (lớp B). Kết quả in ra: 'B'.\nBước 3: Gọi `System.out.print(a.i);`. Trong Java, các biến thành viên không có tính đa hình mà bị ẩn (hiding). Trình biên dịch sẽ nhìn vào kiểu của biến tham chiếu `a` (là kiểu A) để quyết định truy cập biến `i` nào. Do đó, `a.i` lấy giá trị `i` của lớp A, tức là 100.\nKết hợp lại ta được kết quả: B100.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với cộng đồng (A). Đây là một câu hỏi kinh điển về sự khác biệt giữa Overriding (phương thức) và Hiding (biến)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033599",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:33:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069874",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:49:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105180",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:51:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 40,
+    "question_id": "Q35",
+    "image_file": "Q35.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Để so sánh nội dung của hai mảng trong Java, chúng ta sử dụng phương thức static `equals()` thuộc lớp `java.util.Arrays`. Nếu sử dụng toán tử `==`, Java sẽ so sánh địa chỉ vùng nhớ thay vì nội dung.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án trùng khớp với cộng đồng (A). Đây là kiến thức cơ bản về Java Collections/Arrays Utility class."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033600",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:34:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069875",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:49:29+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105184",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:51:11+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 41,
+    "question_id": "Q36",
+    "image_file": "Q36.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, mảng là kiểu dữ liệu tham chiếu (reference type). Do đó, khi ta gán một mảng này cho một mảng khác (cùng kiểu), ta đang gán tham chiếu bộ nhớ. Kết quả là cả hai biến mảng đều tham chiếu đến cùng một đối tượng mảng trên bộ nhớ Heap.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.8-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033601",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:35:12+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064172",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T13:44:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069876",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:49:42+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105188",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:51:29+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 42,
+    "question_id": "Q37",
+    "image_file": "Q37.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Phương thức `Arrays.asList()` thuộc gói `java.util.Arrays` được sử dụng để chuyển đổi một mảng thành một đối tượng `List`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.8-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033602",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:35:28+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064173",
+          "author": "cya",
+          "text": "as",
+          "timestamp": "2026-03-25T13:44:43+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1069877",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:49:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105190",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:51:39+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 43,
+    "question_id": "Q38",
+    "image_file": "Q38.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Phân tích mã nguồn:\n1. Ban đầu `i = 0`, mảng `list` gồm 5 phần tử `{1, 2, 3, 4, 5}` với độ dài `list.length = 5`.\n2. Vòng lặp `do-while` thực hiện tăng và cập nhật các phần tử cho đến khi `i = 4` thì dừng lại.\n3. Khi thực hiện lệnh `System.out.println(list[0] + list[list.length]);`, biểu thức `list[list.length]` tương đương với `list[5]`. Do chỉ số hợp lệ của mảng 5 phần tử chỉ từ 0 đến 4, máy ảo Java sẽ ném ngoại lệ `ArrayIndexOutOfBoundsException` tại thời điểm chạy (runtime). Do đó chọn A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.8-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033603",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:36:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064178",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T13:50:29+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069878",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:52:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105196",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:52:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 44,
+    "question_id": "Q39",
+    "image_file": "Q39.webp",
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Khái niệm OOP cho phép một lớp kế thừa các thuộc tính và hành vi từ một lớp khác chính là tính kế thừa (Inheritance). Do đó đáp án chính xác là C.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án của cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.8-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033604",
+          "author": "hoangthai0202",
+          "text": "C",
+          "timestamp": "2025-12-21T07:36:17+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1064184",
+          "author": "cya",
+          "text": "C",
+          "timestamp": "2026-03-25T13:52:27+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1069879",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-03-27T20:52:33+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1105199",
+          "author": "cya",
+          "text": "C",
+          "timestamp": "2026-04-02T21:52:14+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 45,
+    "question_id": "Q40",
+    "image_file": "Q40.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong thư viện `java.util.Collections`, phương thức dùng để tìm phần tử lớn nhất trong một tập hợp (Collection) là `Collections.max()`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.8-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033605",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:37:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064187",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T13:53:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069881",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:52:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105201",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:52:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 46,
+    "question_id": "Q41",
+    "image_file": "Q41.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong `ArrayList`, phương thức `remove(int index)` trả về đối tượng vừa bị xóa khỏi danh sách (`E`). Đối với phương thức `remove(Object o)`, nếu đối tượng không tồn tại thì nó trả về `false` chứ không ném ngoại lệ. Do đó, phát biểu A là phát biểu chính xác duy nhất.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.8-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033606",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:37:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064188",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T13:54:04+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069882",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:53:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105207",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:52:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 47,
+    "question_id": "Q42",
+    "image_file": "Q42.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, `Set` (cụ thể là `HashSet`) là một tập hợp các phần tử không trùng lặp. Khi gọi `set.add(1)` lần thứ hai, phương thức sẽ trả về `false` và không thêm phần tử 1 vào tập hợp nữa. Do đó, tập hợp chỉ chứa 3 phần tử duy nhất là 1, 2, 3. Gọi `set.size()` sẽ trả về 3.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Hoàn toàn trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.8-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033607",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T07:37:51+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064190",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T13:56:38+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069883",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:53:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105212",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:52:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1157567",
+          "author": "sky@lope",
+          "text": "hashset không trùng lặp",
+          "timestamp": "2026-04-27T23:07:46+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 48,
+    "question_id": "Q43",
+    "image_file": "Q43.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, phương thức chuẩn được cung cấp bởi `java.util.ArrayList` (và interface `Collection`) để kiểm tra sự tồn tại của một phần tử là `contains(Object o)`. Phương thức này trả về `true` nếu danh sách chứa ít nhất một phần tử `e` sao cho `Objects.equals(o, e)`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Hoàn toàn trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.8-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033610",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T09:34:11+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064191",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T13:57:31+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069884",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:53:12+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105217",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:53:02+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 49,
+    "question_id": "Q44",
+    "image_file": "Q44.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trace code từng bước:\n- Khởi tạo `map` rỗng.\n- Chuỗi `data = \"heLLo\"` có các ký tự: 'h', 'e', 'L', 'L', 'o'.\n- Bước 1: `c = 'h'`. Chưa có trong map -> `map.put('h', 0)`.\n- Bước 2: `c = 'e'`. Chưa có trong map -> `map.put('e', 0)`.\n- Bước 3: `c = 'L'`. Chưa có trong map -> `map.put('L', 0)`.\n- Bước 4: `c = 'L'`. Đã có trong map -> `map.put('L', map.get('L') + 1)` => `map.put('L', 0 + 1)` => giá trị của 'L' là 1.\n- Bước 5: `c = 'o'`. Chưa có trong map -> `map.put('o', 0)`.\n- Cuối cùng, `map.get('L')` trả về 1.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án AI trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033611",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T09:35:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064195",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T14:02:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069892",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T20:57:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105221",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:53:22+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 50,
+    "question_id": "Q45",
+    "image_file": "Q45.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Cơ chế Serialization trong Java chuyển đổi trạng thái của một đối tượng thành một dòng byte. Tuy nhiên, vì lý do bảo mật hoặc logic (như các biến tạm thời, các kết nối mạng, luồng dữ liệu), chúng ta sử dụng từ khóa `transient` để ngăn chặn việc ghi các biến này vào luồng dữ liệu. Các biến `static` cũng không được serialized vì chúng không thuộc về instance của đối tượng.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án AI trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033612",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T09:35:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064196",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T14:03:37+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069898",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:01:13+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105224",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:53:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 51,
+    "question_id": "Q46",
+    "image_file": "Q46.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "FileOutputStream là một luồng xuất (output stream) dùng để ghi dữ liệu dưới dạng byte thô (raw bytes) vào một File. Theo tài liệu API của Java, các phương thức chính để thực hiện việc này là các biến thể của phương thức write(). Các phương thức như print() hay println() được thiết kế để định dạng dữ liệu thành văn bản và thuộc về các lớp bao bọc (wrapper classes) như PrintStream.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (A). Đây là kiến thức cơ bản về Java I/O."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033613",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T09:37:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064198",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T14:10:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105232",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:54:11+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 52,
+    "question_id": "Q47",
+    "image_file": "Q47.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, cấu trúc try-catch-finally được sử dụng để xử lý ngoại lệ. Khối 'try' chứa đoạn mã có khả năng ném ra ngoại lệ. Nếu ngoại lệ xảy ra, luồng điều khiển chuyển sang khối 'catch' tương ứng để xử lý. Khối 'finally' chứa đoạn mã dọn dẹp tài nguyên (như đóng file, đóng kết nối DB) và nó LUÔN LUÔN được thực thi sau khi các khối try/catch kết thúc, bất kể có ngoại lệ xảy ra hay không (ngoại trừ trường hợp gọi System.exit()).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (A). Đây là nguyên lý cơ bản của Exception Handling."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033614",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T09:37:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069900",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:02:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105237",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:54:35+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 53,
+    "question_id": "Q48",
+    "image_file": "Q48.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong thư viện java.io, các lớp dùng để ghi dữ liệu dạng ký tự (character-oriented) đều thuộc cây kế thừa của lớp trừu tượng Writer. Cụ thể: PrintWriter extends Writer; FileWriter extends OutputStreamWriter extends Writer. Vì vậy, Writer là superclass chung của cả hai lớp này.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với cộng đồng (A). Đây là kiến thức cơ bản về Java I/O Hierarchy."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033617",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T09:42:49+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064200",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T14:15:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069901",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:02:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105246",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:55:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 54,
+    "question_id": "Q49",
+    "image_file": "Q49.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Để kiểm tra một tệp tin có tồn tại hay không trong Java, ta sử dụng lớp File và gọi phương thức exists(). Phương thức này trả về true nếu tệp/thư mục tồn tại và false nếu ngược lại.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với cộng đồng (A). Đây là câu hỏi kiểm tra trí nhớ về API chuẩn của Java."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033619",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T09:49:21+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064201",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T14:15:21+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069902",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:02:35+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105247",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:55:16+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 55,
+    "question_id": "Q50",
+    "image_file": "Q50.webp",
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Để tối ưu hóa việc tìm kiếm một đối tượng dựa trên một thuộc tính định danh duy nhất (như số điện thoại), cấu trúc dữ liệu bảng băm (Hash Table) là lựa chọn hàng đầu. Trong Java, `HashMap` cung cấp cơ chế này với độ phức tạp thời gian trung bình cho các thao tác cơ bản (put, get) là O(1). Bằng cách đặt số điện thoại làm 'Key' và đối tượng Contact làm 'Value', hệ thống có thể truy xuất thông tin liên lạc ngay lập tức mà không cần duyệt qua danh sách.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án cộng đồng chọn A (6 phiếu), hoàn toàn chính xác với nguyên lý cấu trúc dữ liệu và giải thuật trong Java."
+    },
+    "ai_model": "gemini-3-flash-preview",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-1033621",
+          "author": "hoangthai0202",
+          "text": "A",
+          "timestamp": "2025-12-21T09:49:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1064202",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-03-25T14:15:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1069903",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:02:48+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105252",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:55:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1130744",
+          "author": "lovefpt",
+          "text": "a",
+          "timestamp": "2026-04-13T09:27:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1215087",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T20:20:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  }
+]
