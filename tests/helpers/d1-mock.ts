@@ -9,12 +9,19 @@ const { DatabaseSync } = require("node:sqlite");
 export function createMockD1Database(initSql?: string): D1Database {
   const sqlite = new DatabaseSync(":memory:");
 
-  // Execute base D1 migration
-  const migrationPath = path.resolve(process.cwd(), "drizzle", "0000_icy_ultimo.sql");
-  if (fs.existsSync(migrationPath)) {
-    const migrationSql = fs.readFileSync(migrationPath, "utf8");
-    const cleanSql = migrationSql.replace(/--> statement-breakpoint/g, ";");
-    sqlite.exec(cleanSql);
+  // Execute all D1 migrations in order
+  const drizzleDir = path.resolve(process.cwd(), "drizzle");
+  if (fs.existsSync(drizzleDir)) {
+    const migrationFiles = fs
+      .readdirSync(drizzleDir)
+      .filter((file) => file.endsWith(".sql"))
+      .sort();
+
+    for (const file of migrationFiles) {
+      const migrationSql = fs.readFileSync(path.join(drizzleDir, file), "utf8");
+      const cleanSql = migrationSql.replace(/--> statement-breakpoint/g, ";");
+      sqlite.exec(cleanSql);
+    }
   }
 
   if (initSql) {

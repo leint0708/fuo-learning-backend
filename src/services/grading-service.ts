@@ -32,12 +32,14 @@ export function gradeQuestion(
   };
 }
 
-export function isAttemptExpired(expiresAtIso: string): boolean {
+export function isAttemptExpired(expiresAtIso: string | null | undefined): boolean {
+  if (!expiresAtIso) return false;
   const expirationTime = new Date(expiresAtIso).getTime();
   return Date.now() >= expirationTime;
 }
 
-export function getRemainingSeconds(expiresAtIso: string): number {
+export function getRemainingSeconds(expiresAtIso: string | null | undefined): number | null {
+  if (!expiresAtIso) return null;
   const diffMs = new Date(expiresAtIso).getTime() - Date.now();
   return Math.max(0, Math.floor(diffMs / 1000));
 }

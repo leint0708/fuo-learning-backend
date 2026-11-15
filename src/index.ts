@@ -11,6 +11,7 @@ import { examsRouter } from "./api/exams";
 import { attemptsRouter, examAttemptsRouter } from "./api/attempts";
 import { statsRouter } from "./api/stats";
 import { questionsRouter } from "./api/questions";
+import { subjectPracticeRouter, practiceSessionRouter } from "./api/practice";
 
 export const app = new Hono<{ Bindings: Env }>();
 
@@ -50,5 +51,7 @@ app.route("/api/v1/exams", examAttemptsRouter);
 app.route("/api/v1/attempts", attemptsRouter);
 app.route("/api/v1/users/me", statsRouter);
 app.route("/api/v1/questions", questionsRouter);
+app.route("/api/v1/subjects", subjectPracticeRouter);
+app.route("/api/v1/practice/sessions", practiceSessionRouter);
 
 export default app;

@@ -62,8 +62,9 @@ export const exam_attempts = sqliteTable("exam_attempts", {
     .notNull()
     .references(() => exams.id),
   status: text("status").notNull(),
+  is_unlimited: integer("is_unlimited", { mode: "boolean" }).notNull().default(false),
   started_at: text("started_at").notNull(),
-  expires_at: text("expires_at").notNull(),
+  expires_at: text("expires_at"),
   submitted_at: text("submitted_at"),
   total_questions: integer("total_questions").notNull(),
   correct_answers_count: integer("correct_answers_count").notNull().default(0),
@@ -85,6 +86,48 @@ export const attempt_answers = sqliteTable("attempt_answers", {
   is_correct: integer("is_correct", { mode: "boolean" }).notNull().default(false),
   points_awarded: real("points_awarded").notNull().default(0.0),
   answered_at: text("answered_at").notNull()
+});
+
+export const practice_sessions = sqliteTable("practice_sessions", {
+  id: text("id").primaryKey(),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  subject_id: text("subject_id")
+    .notNull()
+    .references(() => subjects.id, { onDelete: "cascade" }),
+  mode: text("mode", { enum: ["cram", "learn"] }).notNull(),
+  status: text("status", { enum: ["in_progress", "completed", "abandoned"] })
+    .notNull()
+    .default("in_progress"),
+  is_unlimited: integer("is_unlimited", { mode: "boolean" }).notNull().default(true),
+  duration_minutes: integer("duration_minutes"),
+  started_at: text("started_at").notNull(),
+  completed_at: text("completed_at"),
+  total_cards: integer("total_cards").notNull(),
+  mastered_cards: integer("mastered_cards").notNull().default(0),
+  session_data: text("session_data", { mode: "json" }).notNull()
+});
+
+export const user_card_mastery = sqliteTable("user_card_mastery", {
+  id: text("id").primaryKey(),
+  user_id: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  subject_id: text("subject_id")
+    .notNull()
+    .references(() => subjects.id, { onDelete: "cascade" }),
+  question_id: text("question_id")
+    .notNull()
+    .references(() => questions.id, { onDelete: "cascade" }),
+  cram_mastered: integer("cram_mastered", { mode: "boolean" }).notNull().default(false),
+  learn_state: text("learn_state", { enum: ["not_yet_learned", "learning", "learned"] })
+    .notNull()
+    .default("not_yet_learned"),
+  consecutive_correct: integer("consecutive_correct").notNull().default(0),
+  wrong_attempts: integer("wrong_attempts").notNull().default(0),
+  total_attempts: integer("total_attempts").notNull().default(0),
+  updated_at: text("updated_at").notNull()
 });
 
 export const user_statistics = sqliteTable("user_statistics", {

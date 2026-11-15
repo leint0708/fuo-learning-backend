@@ -253,7 +253,7 @@ export const openapiSpec = {
     },
     "/api/v1/exams/{exam_id}/attempts": {
       "post": {
-        "summary": "Start a new exam attempt",
+        "summary": "Start a new exam attempt (timed or untimed)",
         "security": [
           {
             "BearerAuth": []
@@ -269,6 +269,26 @@ export const openapiSpec = {
             }
           }
         ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "is_unlimited": {
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "duration_minutes": {
+                    "type": "integer",
+                    "nullable": true
+                  }
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "201": {
             "description": "Exam attempt started",
@@ -598,6 +618,226 @@ export const openapiSpec = {
           }
         }
       }
+    },
+    "/api/v1/subjects/{code}/practice/sessions": {
+      "post": {
+        "summary": "Start or resume a subject practice session (Cram or Learn)",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["mode"],
+                "properties": {
+                  "mode": {
+                    "type": "string",
+                    "enum": ["cram", "learn"]
+                  },
+                  "is_unlimited": {
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "duration_minutes": {
+                    "type": "integer",
+                    "nullable": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Practice session started or resumed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PracticeSessionResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Subject not found"
+          }
+        }
+      }
+    },
+    "/api/v1/subjects/{code}/practice/reset": {
+      "post": {
+        "summary": "Reset user practice mastery for a subject",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mastery reset successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/practice/sessions/{session_id}": {
+      "get": {
+        "summary": "Get practice session state",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Current practice session state",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PracticeSessionResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Practice session not found"
+          }
+        }
+      }
+    },
+    "/api/v1/practice/sessions/{session_id}/answer": {
+      "post": {
+        "summary": "Submit answer for active question in practice session",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["question_id", "selected_options"],
+                "properties": {
+                  "question_id": { "type": "string" },
+                  "selected_options": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Answer evaluated and session state updated"
+          }
+        }
+      }
+    },
+    "/api/v1/practice/sessions/{session_id}/next-batch": {
+      "post": {
+        "summary": "Advance Cram batch",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Next batch sliced and ready"
+          }
+        }
+      }
+    },
+    "/api/v1/practice/sessions/{session_id}/next-round": {
+      "post": {
+        "summary": "Advance Learn round",
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Next round refilled and ready"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -839,16 +1079,21 @@ export const openapiSpec = {
             "type": "string",
             "example": "in_progress"
           },
+          "is_unlimited": {
+            "type": "boolean"
+          },
           "started_at": {
             "type": "string",
             "format": "date-time"
           },
           "expires_at": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "time_remaining_seconds": {
-            "type": "integer"
+            "type": "integer",
+            "nullable": true
           },
           "questions": {
             "type": "array",
@@ -1145,6 +1390,22 @@ export const openapiSpec = {
           "duration_seconds": {
             "type": "integer"
           }
+        }
+      },
+      "PracticeSessionResponse": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "user_id": { "type": "string" },
+          "subject_id": { "type": "string" },
+          "mode": { "type": "string", "enum": ["cram", "learn"] },
+          "status": { "type": "string", "enum": ["in_progress", "completed", "abandoned"] },
+          "is_unlimited": { "type": "boolean" },
+          "duration_minutes": { "type": "integer", "nullable": true },
+          "started_at": { "type": "string", "format": "date-time" },
+          "completed_at": { "type": "string", "format": "date-time", "nullable": true },
+          "total_cards": { "type": "integer" },
+          "mastered_cards": { "type": "integer" }
         }
       }
     }

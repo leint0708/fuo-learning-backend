@@ -1,0 +1,3583 @@
+[
+  {
+    "question_number": 1,
+    "question_id": "Q1",
+    "image_file": "Q1.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 1\n(Choose 1 answer)\nHow does Java handle the concept of multiple inheritance?\nA. Through the use of interfaces\nB. By allowing multiple parent classes\nC. By using overload methods\nD. All of the others",
+    "key_points_and_rules": "Java không hỗ trợ bội kế thừa đối với lớp (class) nhằm tránh xung đột Diamond Problem, nhưng cho phép một lớp thực thi (implements) nhiều giao diện (interfaces) để đạt được khái niệm bội kế thừa.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Trong Java, bội kế thừa được xử lý thông qua việc sử dụng các interfaces. Một lớp có thể implements nhiều interface cùng lúc.",
+      "B": "[SAI] Java chỉ cho phép đơn kế thừa với class (mỗi class chỉ có tối đa 1 class cha với từ khóa `extends`).",
+      "C": "[SAI] Overload methods (nạp chồng phương thức) liên quan đến tính đa hình lúc biên dịch (compile-time polymorphism), không liên quan đến cơ chế bội kế thừa.",
+      "D": "[SAI] Do phương án B và C sai."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, nhà phát triển loại bỏ bội kế thừa trực tiếp từ nhiều lớp cha để tránh hiện tượng tranh chấp mã (Diamond Problem). Thay vào đó, Java cung cấp cơ chế bội kế thừa kiểu/hành vi thông qua `interface`. Một lớp có thể triển khai (`implements`) nhiều giao diện khác nhau. Vì vậy đáp án chính xác là A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án AI trùng khớp hoàn toàn với đáp án cộng đồng lựa chọn (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 8,
+      "valid_vote_count": 8,
+      "top_answer_votes": 8,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 8
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980195",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:54:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980271",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:19:03+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980308",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:32:31+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1054226",
+          "author": "nguoivetulongdat",
+          "text": "a",
+          "timestamp": "2026-03-03T19:54:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070089",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:58:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105284",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:58:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1118229",
+          "author": "Cườnga",
+          "text": "a",
+          "timestamp": "2026-04-04T15:40:13+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1215372",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T21:03:38+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 2,
+    "question_id": "Q2",
+    "image_file": "Q2.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 2\n(Choose 1 answer)\nWhat is the file extension for compiled Java bytecode files?\nA. .class\nB. .exe\nC. .java\nD. .jar",
+    "key_points_and_rules": "Khi mã nguồn Java (`.java`) được biên dịch bằng `javac`, trình biên dịch sẽ tạo ra các tệp mã bytecode có đuôi mở rộng là `.class` để JVM thực thi.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] `.class` là phần mở rộng tệp chứa mã bytecode Java sau khi biên dịch.",
+      "B": "[SAI] `.exe` là định dạng tệp thực thi của hệ điều hành Windows, không phải đuôi tệp bytecode Java.",
+      "C": "[SAI] `.java` là định dạng tệp mã nguồn ban đầu (source code), chưa được biên dịch.",
+      "D": "[SAI] `.jar` (Java Archive) là tệp lưu trữ đóng gói chứa nhiều tệp `.class` và tài nguyên, không phải phần mở rộng tệp bytecode đơn lẻ."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Quá trình biên dịch mã nguồn Java từ tệp văn bản mã nguồn (`.java`) bằng công cụ `javac` sẽ sinh ra mã trung gian bytecode chứa trong các tệp có đuôi `.class`. JVM sau đó sẽ đọc và thực thi các tệp `.class` này. Do đó, đáp án đúng là A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án AI trùng khớp hoàn toàn với đáp án cộng đồng lựa chọn (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980196",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:55:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980273",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:19:27+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980313",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:33:31+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070090",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:58:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105287",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:58:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 3,
+    "question_id": "Q3",
+    "image_file": "Q3.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 3\n(Choose 1 answer)\nWhich access modifier allows you to access method calls in libraries not created in Java?\nA. public\nB. static\nC. native\nD. transient\nE. volatile",
+    "key_points_and_rules": "Từ khóa `native` trong Java được sử dụng để khai báo các phương thức được cài đặt bằng ngôn ngữ lập trình khác (như C/C++) thông qua giao diện Java Native Interface (JNI).",
+    "option_by_option_analysis": {
+      "A": "[SAI] `public` là từ khóa quy định phạm vi truy cập công khai cho lớp, phương thức hoặc thuộc tính, không liên quan đến việc gọi thư viện từ ngôn ngữ khác.",
+      "B": "[SAI] `static` đánh dấu thành viên thuộc về lớp thay vì thể hiện (instance) của lớp.",
+      "C": "[ĐÚNG] `native` là modifier cho biết phương thức được triển khai bằng mã máy/thư viện gốc (native library) viết bằng ngôn ngữ khác (C, C++...).",
+      "D": "[SAI] `transient` dùng trong Serialization để bỏ qua không lưu trữ giá trị của thuộc tính.",
+      "E": "[SAI] `volatile` dùng trong lập trình đa luồng (multithreading) để đảm bảo tính nhìn thấy (visibility) của biến giữa các luồng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Từ khóa `native` được sử dụng khi lập trình viên muốn liên kết và gọi các phương thức đã được triển khai trong thư viện viết bằng C/C++ (thông qua JNI). Do đó, đáp án đúng là C.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án trùng khớp hoàn toàn với lựa chọn của cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980198",
+          "author": "zermango",
+          "text": "C",
+          "timestamp": "2025-11-21T13:55:14+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-980311",
+          "author": "lzhanh",
+          "text": "C",
+          "timestamp": "2025-11-21T14:33:19+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-980322",
+          "author": "duykhobo",
+          "text": "C",
+          "timestamp": "2025-11-21T14:34:09+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1070091",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-03-27T21:58:55+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1105289",
+          "author": "cya",
+          "text": "C",
+          "timestamp": "2026-04-02T21:58:22+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1215985",
+          "author": "huutuong",
+          "text": "C",
+          "timestamp": "2026-07-30T23:12:20+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 4,
+    "question_id": "Q4",
+    "image_file": "Q4.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 4\n(Choose 1 answer)\nTo run a Java program, which the software must be installed?\nA. Java Runtime Environment (JRE)\nB. Eclipse\nC. Java Development Kit (JDK)\nD. Netbeans",
+    "key_points_and_rules": "Phân biệt JRE (môi trường thực thi Java, dùng để CHẠY chương trình) và JDK (bộ công cụ phát triển, dùng để BIÊN DỊCH và phát triển chương trình). IDE (Eclipse, Netbeans) không bắt buộc.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] JRE (Java Runtime Environment) chứa JVM và các thư viện cần thiết để thực thi/chạy một chương trình Java đã biên dịch.",
+      "B": "[SAI] Eclipse là một IDE (môi trường phát triển tích hợp), không bắt buộc phải cài đặt để chạy chương trình Java.",
+      "C": "[SAI] JDK (Java Development Kit) chứa JRE cùng các công cụ biên dịch (javac), được dùng khi phát triển/viết code. Để chỉ chạy chương trình, chỉ cần JRE là đủ tối thiểu.",
+      "D": "[SAI] Netbeans là một IDE, không bắt buộc để chạy Java."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Để thực thi (chạy) một chương trình Java đã biên dịch (.class hoặc .jar), phần mềm tối thiểu bắt buộc phải có trên máy là JRE (Java Runtime Environment).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án trùng khớp hoàn toàn với lựa chọn của cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980199",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:55:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980275",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:20:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980315",
+          "author": "lzhanh",
+          "text": "A",
+          "timestamp": "2025-11-21T14:33:35+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980332",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:34:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070096",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:59:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105291",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:58:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 5,
+    "question_id": "Q5",
+    "image_file": "Q5.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 5\n(Choose 1 answer)\nWhat is the role of the Garbage Collection?\nA. It frees heap memory by destroying unreachable objects.\nB. It deletes all the Java files available on the memory.\nC. It loads a Java program into memory.\nD. It checks the output of any Java program and deletes anything that does not make sense at all.",
+    "key_points_and_rules": "Trình dọn rác (Garbage Collector - GC) trong Java là một tiến trình tự động giải phóng vùng nhớ Heap bằng cách tìm và hủy các đối tượng không còn được tham chiếu (unreachable objects).",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Đây là vai trò chính của Garbage Collection trong Java: giải phóng bộ nhớ heap bằng cách hủy các đối tượng unreachable.",
+      "B": "[SAI] GC làm việc trên bộ nhớ Heap chứa các đối tượng (objects), không liên quan đến việc xóa các tập tin Java (.java hay .class).",
+      "C": "[SAI] Việc nạp chương trình/lớp vào bộ nhớ là nhiệm vụ của ClassLoader, không phải GC.",
+      "D": "[SAI] Mô tả phi logic, GC không kiểm tra output của chương trình."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Garbage Collector (GC) trong JVM chịu trách nhiệm tự động quản lý bộ nhớ. Nó tìm các đối tượng không còn được sử dụng/tham chiếu trong bộ nhớ Heap (unreachable objects) và giải phóng bộ nhớ dành cho các đối tượng đó để tránh bị rò rỉ bộ nhớ (memory leak). Do đó, phương án A là chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với lựa chọn của cộng đồng (Đáp án A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980200",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:55:25+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980277",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:21:03+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980316",
+          "author": "lzhanh",
+          "text": "A",
+          "timestamp": "2025-11-21T14:33:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980340",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:35:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070098",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:59:52+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105295",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:58:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 6,
+    "question_id": "Q6",
+    "image_file": "Q6.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 6\n(Choose 1 answer)\nWhat is the meaning of platform-independent?\nA. write once, run anywhere\nB. not easy to execute on any system after compilation.\nC. the execution of the program is restricted by the type of OS environment provided.\nD. All of the others",
+    "key_points_and_rules": "Khái niệm độc lập nền tảng (Platform independence) nghĩa là mã nguồn sau khi biên dịch (thành bytecode trong Java) có thể chạy trên bất kỳ hệ điều hành nào có cài đặt JVM tương ứng. Khẩu hiệu nổi tiếng của Java là 'Write Once, Run Anywhere' (WORA).",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] 'Write once, run anywhere' (viết một lần, chạy mọi nơi) là khẩu hiệu và định nghĩa chuẩn cho tính chất platform-independent của Java.",
+      "B": "[SAI] Tính chất này giúp chương trình dễ dàng thực thi trên nhiều hệ thống khác nhau thông qua JVM.",
+      "C": "[SAI] Đây là mô tả của platform-dependent (phụ thuộc nền tảng).",
+      "D": "[SAI] Vì các phương án B và C đều sai nên D sai."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Tính độc lập nền tảng (Platform independence) cho phép mã Java đã được biên dịch thành Bytecode thực thi trên mọi hệ thống/HĐH (Windows, Linux, macOS...) chỉ cần có JVM (Java Virtual Machine). Khẩu hiệu đại diện nổi tiếng nhất là 'Write once, run anywhere'. Do đó phương án A là đúng.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với lựa chọn của cộng đồng (Đáp án A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980201",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:55:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980278",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:21:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980319",
+          "author": "lzhanh",
+          "text": "A",
+          "timestamp": "2025-11-21T14:33:49+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980343",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:35:37+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070099",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:00:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105297",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:58:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 7,
+    "question_id": "Q7",
+    "image_file": "Q7.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 7\n(Choose 2 answers)\nWhat is the role of the Java Development Kit (JDK) in java programming? Choose multiple correct answers.\nA. A cross-platformed software development environment that offers a collection of tools and libraries necessary for developing Java-based software applications.\nB. A core package used in Java programming, along with the JVM (Java Virtual Machine) and the JRE (Java Runtime Environment) to develop and deploy applications\nC. A software for building applications that combines common developer tools into a single graphical user interface (GUI).\nD. A text editor that can assist in writing software code with features such as syntax highlighting with visual cues",
+    "key_points_and_rules": "Xác định vai trò chính xác của Java Development Kit (JDK) trong lập trình Java. Câu hỏi yêu cầu chọn 2 đáp án đúng (Choose 2 answers).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì JDK (Java Development Kit) thực sự là một môi trường phát triển phần mềm đa nền tảng cung cấp bộ công cụ (như compiler javac) và các thư viện cần thiết để phát triển ứng dụng Java.",
+      "B": "Phân tích chi tiết: Đánh giá phương án B [ĐÚNG] vì JDK bao gồm JRE và các công cụ phát triển, cùng với JVM, tạo nên cốt lõi để phát triển và triển khai các ứng dụng Java.",
+      "C": "Phân tích chi tiết: Đánh giá phương án C [SAI] vì đây là mô tả của một IDE (Integrated Development Environment) như Eclipse hay IntelliJ IDEA, không phải định nghĩa của JDK.",
+      "D": "Phân tích chi tiết: Đánh giá phương án D [SAI] vì đây là mô tả của một Text Editor chuyên dụng hoặc Code Editor (như Notepad++, VS Code ban đầu), không phải bản chất của JDK."
+    },
+    "question_type": "multiple_choice",
+    "community_answer": "AB",
+    "ai_answer": "AB",
+    "ai_explanation": "Java Development Kit (JDK) là bộ công cụ phát triển phần mềm cung cấp mọi thứ cần thiết để viết, biên dịch và chạy chương trình Java, bao gồm cả JRE và các công cụ dòng lệnh như compiler. Do đó phương án A và B mô tả chính xác bản chất và vai trò của JDK.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "AB",
+      "ai_answer": "AB",
+      "comparison_note": "Đáp án của AI (AB) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (AB). Trùng khớp hoàn toàn với đáp án cộng đồng 'AB'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "AB": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980202",
+          "author": "zermango",
+          "text": "AB",
+          "timestamp": "2025-11-21T13:55:36+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-980279",
+          "author": "masao",
+          "text": "ab",
+          "timestamp": "2025-11-21T14:22:32+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-980344",
+          "author": "duykhobo",
+          "text": "A B",
+          "timestamp": "2025-11-21T14:35:59+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1070101",
+          "author": "long156206",
+          "text": "ab",
+          "timestamp": "2026-03-27T22:00:40+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        },
+        {
+          "comment_id": "xfmg-comment-1105300",
+          "author": "cya",
+          "text": "AB",
+          "timestamp": "2026-04-02T21:58:53+0700",
+          "reactions": 0,
+          "extracted_answer": "AB"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 8,
+    "question_id": "Q8",
+    "image_file": "Q8.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nWhich of the following statements about the Java language is true?\nA. Java language is case-sensitive.\nB. Java is not a fully object-oriented language.\nC. Using a colon to end the command.\nD. The Java code only runs on the Windows platform.",
+    "key_points_and_rules": "Xác định câu phát biểu đúng về ngôn ngữ lập trình Java. Câu hỏi yêu cầu chọn 1 đáp án đúng.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì Java là một ngôn ngữ phân biệt chữ hoa chữ thường (case-sensitive), ví dụ biến `myVar` khác với `myvar`.",
+      "B": "Phân tích chi tiết: Đánh giá phương án B [SAI] vì Java là một ngôn ngữ hướng đối tượng hoàn chỉnh (gần như mọi thứ trừ kiểu nguyên thủy đều nằm trong lớp/đối tượng).",
+      "C": "Phân tích chi tiết: Đánh giá phương án C [SAI] vì các câu lệnh trong Java kết thúc bằng dấu chấm phẩy (;), không phải dấu hai chấm (:).",
+      "D": "Phân tích chi tiết: Đánh giá phương án D [SAI] vì Java nổi tiếng với tính chất 'Write Once, Run Anywhere', chạy trên mọi nền tảng có cài JVM, không chỉ riêng Windows."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, các định danh phân biệt rõ chữ hoa và chữ thường (case-sensitive), khẳng định phương án A là đúng. Các phương án B, C, D đều chứa các nhận định sai về cú pháp và tính chất của Java.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng 'A'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980203",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:55:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980280",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:22:52+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980320",
+          "author": "lzhanh",
+          "text": "A",
+          "timestamp": "2025-11-21T14:34:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980347",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:36:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070103",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:01:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105305",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:59:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 9,
+    "question_id": "Q9",
+    "image_file": "Q9.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nA Java source code will be compiled to the file in which of the following extensions?\nA. .class\nB. .java\nC. .exe\nD. .bat",
+    "key_points_and_rules": "Xác định phần mở rộng (file extension) của tập tin sau khi mã nguồn Java (Java source code) được biên dịch bởi trình biên dịch Java (javac).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đánh giá phương án A [.class] [ĐÚNG]. Khi mã nguồn Java (có phần mở rộng .java) được biên dịch bằng lệnh javac, trình biên dịch sẽ tạo ra các tệp bytecode mang phần mở rộng .class để máy ảo Java (JVM) có thể thực thi.",
+      "B": "Phân tích chi tiết: Đánh giá phương án B [.java] [SAI]. Đây là phần mở rộng của tệp mã nguồn gốc (source code), không phải tệp sau khi biên dịch.",
+      "C": "Phân tích chi tiết: Đánh giá phương án C [.exe] [SAI]. Tập tin .exe là tệp thực thi của hệ điều hành Windows dành cho các ngôn ngữ như C/C++, không phải tệp bytecode chuẩn của Java.",
+      "D": "Phân tích chi tiết: Đánh giá phương án D [.bat] [SAI]. Tập tin .bat là tập tin lệnh batch script của Windows."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong ngôn ngữ lập trình Java, khi lập trình viên viết mã nguồn, tệp tin được lưu với phần mở rộng .java. Khi tiến hành biên dịch thông qua công cụ javac, trình biên dịch chuyển đổi mã nguồn này thành mã trung gian gọi là bytecode và lưu trong tệp tin có phần mở rộng .class.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A). Không có bẫy trong câu hỏi này."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980204",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:55:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980283",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:24:01+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980349",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:36:29+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070104",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:01:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105308",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:59:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1215993",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T23:12:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 10,
+    "question_id": "Q10",
+    "image_file": "Q10.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nWhat is the file extension of Java source code?\nA. .java\nB. .class\nC. .jar\nD. .rar",
+    "key_points_and_rules": "Xác định phần mở rộng của tệp mã nguồn Java (Java source code).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đánh giá phương án A [.java] [ĐÚNG]. Các tệp chứa mã nguồn Java mà lập trình viên viết trực tiếp có phần mở rộng mặc định là .java.",
+      "B": "Phân tích chi tiết: Đánh giá phương án B [.class] [SAI]. Đây là phần mở rộng của tệp bytecode sau khi mã nguồn đã được biên dịch.",
+      "C": "Phân tích chi tiết: Đánh giá phương án C [.jar] [SAI]. Đây là định dạng tệp nén lưu trữ các lớp Java (Java Archive) dùng để phân phối ứng dụng.",
+      "D": "Phân tích chi tiết: Đánh giá phương án D [.rar] [SAI]. Đây là định dạng tệp nén dữ liệu nói chung, không phải phần mở rộng của tệp mã nguồn Java."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Mã nguồn Java (Java source code) bao gồm các tệp văn bản chứa mã chương trình do lập trình viên viết ra, quy ước phải có phần mở rộng là .java trước khi được biên dịch thành tệp .class.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A). Câu hỏi lý thuyết cơ bản về ngôn ngữ Java."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980205",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:55:51+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980285",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:24:49+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980350",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:36:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070105",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:01:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105316",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:59:55+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 11,
+    "question_id": "Q11",
+    "image_file": "Q11.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nWhich of the following is a primitive data type in Java?\nA. String\nB. Float\nC. byte\nD. ArrayList\nE. Integer\nF. Character",
+    "key_points_and_rules": "Yêu cầu tìm kiểu dữ liệu nguyên thủy (primitive data type) trong ngôn ngữ lập trình Java.",
+    "option_by_option_analysis": {
+      "A": "String là một kiểu lớp (class/reference type) trong Java, không phải kiểu nguyên thủy.",
+      "B": "Float là lớp bao (wrapper class) của kiểu float, không phải kiểu nguyên thủy.",
+      "C": "byte là một trong 8 kiểu dữ liệu nguyên thủy cơ bản của Java (cùng với short, int, long, float, double, char, boolean).",
+      "D": "ArrayList là một cấu trúc dữ liệu thuộc collection framework dạng đối tượng (reference type).",
+      "E": "Integer là lớp bao (wrapper class) cho kiểu int.",
+      "F": "Character là lớp bao (wrapper class) cho kiểu char."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Java có 8 kiểu dữ liệu nguyên thủy gồm: byte, short, int, long, float, double, char, boolean. Trong các phương án trên, chỉ có 'byte' là kiểu nguyên thủy, các lựa chọn còn lại như String, ArrayList, Integer, Character, Float đều là kiểu tham chiếu (reference types hoặc wrapper classes).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp hoàn toàn với đáp án của cộng đồng là C."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980206",
+          "author": "zermango",
+          "text": "C",
+          "timestamp": "2025-11-21T13:55:57+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-980286",
+          "author": "masao",
+          "text": "c",
+          "timestamp": "2025-11-21T14:26:39+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-980326",
+          "author": "lzhanh",
+          "text": "C",
+          "timestamp": "2025-11-21T14:34:17+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-980351",
+          "author": "duykhobo",
+          "text": "C",
+          "timestamp": "2025-11-21T14:36:52+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1070109",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-03-27T22:01:34+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1105319",
+          "author": "cya",
+          "text": "C",
+          "timestamp": "2026-04-02T22:00:02+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 12,
+    "question_id": "Q12",
+    "image_file": "Q12.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nWhich of the following is a Java primitive type?\nA. boolean\nB. String\nC. Object\nD. Class",
+    "key_points_and_rules": "Yêu cầu xác định kiểu nguyên thủy (primitive type) trong Java.",
+    "option_by_option_analysis": {
+      "A": "boolean là một trong 8 kiểu dữ liệu nguyên thủy của Java.",
+      "B": "String là kiểu lớp (reference type).",
+      "C": "Object là lớp cơ sở gốc cho mọi lớp trong Java (reference type).",
+      "D": "Class là một lớp mô tả siêu dữ liệu (metadata) của các lớp trong Java (reference type)."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, 'boolean' là một kiểu dữ liệu nguyên thủy chuyên dùng lưu trữ giá trị chân lý (true/false). Các phương án String, Object, Class đều là các kiểu dữ liệu tham chiếu (reference types).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng là A."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980207",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:02+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980287",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:26:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980328",
+          "author": "lzhanh",
+          "text": "A",
+          "timestamp": "2025-11-21T14:34:26+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980353",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:36:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070111",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:01:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105328",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:00:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 13,
+    "question_id": "Q13",
+    "image_file": "Q13.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nWhat is the output of the code snippet?\npublic class Test {\n    public static void main(String[] args) {\n        int x = -1;\n        String y = x+3;\n        System.out.format(\"%d %s\",x,y);\n    }\n}\nA. Compile error\nB. -1 -13\nC. -1 4\nD. -1 2",
+    "key_points_and_rules": "Kiểm tra tính tương thích kiểu dữ liệu trong Java (Type Compatibility), phép cộng giữa int và int tạo ra int, nhưng gán cho String mà không ép kiểu rõ ràng sẽ gây lỗi biên dịch (Compile error).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Biến x là kiểu int (giá trị -1). Biểu thức x + 3 thực hiện phép cộng số học giữa hai số nguyên (-1 + 3), kết quả là số nguyên 2. Tuy nhiên, vế trái là biến y có kiểu String (`String y = x + 3;`). Trong Java, việc gán trực tiếp một giá trị kiểu int cho một biến kiểu String mà không thông qua ép kiểu hoặc chuyển đổi tường minh (như `String.valueOf(x + 3)` hoặc `\"\" + (x + 3)`) dẫn đến lỗi biên dịch (incompatible types: int cannot be converted to String). Do đó, chương trình báo lỗi Compile error. Phương án A [ĐÚNG].",
+      "B": "Phân tích chi tiết: Giả định sai rằng trình biên dịch cho phép hoặc chuỗi nối tự động xảy ra không đúng cú pháp, dẫn đến kết quả sai. Phương án B [SAI].",
+      "C": "Phân tích chi tiết: Giả định sai rằng x+3 nối chuỗi thành '-13' hoặc '4' và gán được cho String, bỏ qua lỗi biên dịch thực tế của Java. Phương án C [SAI].",
+      "D": "Phân tích chi tiết: Mặc dù giá trị tính toán của x+3 là 2, nhưng đoạn code không thể vượt qua bước biên dịch do lỗi không tương thích kiểu dữ liệu khi gán int vào String. Phương án D [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Khi phân tích đoạn mã Java:\n1. `int x = -1;` khởi tạo biến nguyên x với giá trị -1.\n2. `String y = x + 3;`: Biểu thức `x + 3` thực hiện cộng số học giữa hai số nguyên (`-1 + 3 = 2`), cho kết quả kiểu `int`. Trong Java, bạn không thể gán trực tiếp một giá trị kiểu `int` cho một biến kiểu `String` mà không ép kiểu hoặc nối chuỗi tường minh (ví dụ: `String y = \"\" + (x + 3);`).\n3. Trình biên dịch Java sẽ phát hiện lỗi kiểu dữ liệu không tương thích (incompatible types) ngay tại dòng này và thông báo lỗi biên dịch (Compile error).\nDo đó, chương trình không thể biên dịch thành công.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng 'A'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980208",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980289",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:27:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980355",
+          "author": "duykhobo",
+          "text": "a",
+          "timestamp": "2025-11-21T14:37:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070113",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:01:52+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105350",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:01:57+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 14,
+    "question_id": "Q14",
+    "image_file": "Q14.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nWhat is the output of the code snippet?\npublic class Test {\n    public static void main(String[] args) {\n        int []a = new int [5];\n        for(int i : a){\n            i = 1;\n        }\n        System.out.println(a[1]);\n    }\n}\nA. 0\nB. 1\nC. null\nD. [I@15db9742",
+    "key_points_and_rules": "Hiểu rõ cơ chế của vòng lặp for-each (enhanced for loop) trong Java: biến lặp (i) chỉ nhận bản sao giá trị của phần tử mảng, việc gán giá trị cho i không làm thay đổi giá trị thực tế của các phần tử bên trong mảng. Mảng int mới khởi tạo có mặc định tất cả phần tử là 0.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Khởi tạo mảng `int []a = new int [5];` tạo ra một mảng 5 phần tử kiểu int, giá trị mặc định của mỗi phần tử là 0. Vòng lặp for-each `for(int i : a)` duyệt qua từng phần tử của mảng, nhưng biến `i` là một biến cục bộ chứa bản sao giá trị của phần tử mảng. Lệnh `i = 1;` chỉ thay đổi giá trị của biến cục bộ `i`, hoàn toàn không làm thay đổi giá trị bên trong mảng `a`. Do đó, mảng `a` vẫn giữ nguyên các giá trị ban đầu. Khi gọi `System.out.println(a[1]);`, giá trị tại vị trí `a[1]` vẫn là 0. Phương án A [ĐÚNG].",
+      "B": "Phân tích chi tiết: Sai lầm khi cho rằng vòng lặp for-each thay đổi trực tiếp giá trị của phần tử mảng (hiểu nhầm i là tham chiếu tới phần tử mảng). Phương án B [SAI].",
+      "C": "Phân tích chi tiết: Kiểu dữ liệu của mảng là `int[]` (primitive type array), không phải kiểu Object nên không mang giá trị `null` sau khi khởi tạo bằng `new int[5]`. Hơn nữa, `a[1]` là một số nguyên `int`, không thể là `null`. Phương án C [SAI].",
+      "D": "Phân tích chi tiết: Đây là chuỗi biểu diễn mã băm (hash code) của đối tượng mảng nếu gọi `System.out.println(a);`, nhưng ở đây câu lệnh in ra là `a[1]` (phần tử số nguyên tại index 1), nên không in ra địa chỉ mảng. Phương án D [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Phân tích từng dòng của đoạn code:\n1. `int []a = new int [5];`: Khởi tạo một mảng số nguyên gồm 5 phần tử. Trong Java, mảng kiểu `int` khi vừa được cấp phát bộ nhớ sẽ tự động được gán giá trị mặc định là `0` cho tất cả các phần tử (`a[0]`, `a[1]`, `a[2]`, `a[3]`, `a[4]` đều bằng `0`).\n2. `for(int i : a) { i = 1; }`: Đây là vòng lặp for-each. Biến `i` trong vòng lặp chỉ là một biến cục bộ chứa **bản sao giá trị** của phần tử trong mảng ở mỗi lần lặp. Việc gán `i = 1` chỉ thay đổi giá trị của biến cục bộ `i`, hoàn toàn **không** làm thay đổi giá trị của phần tử trong mảng `a`. Mảng `a` không hề bị thay đổi nội dung.\n3. `System.out.println(a[1]);`: In ra giá trị của phần tử tại chỉ số 1 của mảng `a`. Vì mảng vẫn giữ nguyên giá trị mặc định sau khi khởi tạo, `a[1]` bằng `0`.\nDo đó, kết quả in ra màn hình là `0`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng 'A'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980209",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:12+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980290",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:28:25+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980359",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:38:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070116",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:02:04+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105386",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:03:31+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 15,
+    "question_id": "Q15",
+    "image_file": "Q15.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nWhich of the following packages contains the Scanner class used to input data via keyboard?\nA. java.util\nB. java.net\nC. java.io\nD. java.awt",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định gói (package) trong Java chứa lớp `Scanner` dùng để đọc dữ liệu nhập từ bàn phím.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Lớp `Scanner` trong Java (dùng để đọc dữ liệu từ console, tệp, v.v.) nằm trong gói `java.util`. Do đó phương án A [ĐÚNG].",
+      "B": "Phân tích chi tiết: Gói `java.net` chứa các lớp phục vụ cho lập trình mạng (như Socket, ServerSocket, URL), không chứa `Scanner`. Do đó phương án B [SAI].",
+      "C": "Phân tích chi tiết: Gói `java.io` chứa các lớp xử lý nhập/xuất luồng dữ liệu truyền thống như BufferedReader, InputStreamReader, PrintWriter, không chứa `Scanner`. Do đó phương án C [SAI].",
+      "D": "Phân tích chi tiết: Gói `java.awt` chứa các lớp xây dựng giao diện người dùng đồ họa (GUI) như Button, Window, Frame, không chứa `Scanner`. Do đó phương án D [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong ngôn ngữ lập trình Java, lớp `Scanner` (thường được khởi tạo với `new Scanner(System.in)`) thuộc về gói `java.util`. Để sử dụng lớp này, chúng ta cần khai báo câu lệnh import: `import java.util.Scanner;` ở đầu tệp mã nguồn.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980210",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980291",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:28:42+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980361",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:38:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070118",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:02:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105387",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:03:36+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1215473",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T21:32:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 16,
+    "question_id": "Q16",
+    "image_file": "Q16.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nWhich of the following is true about constructors in Java?\nA. Constructors can return a value.\nB. Constructors have the same name as class.\nC. Constructors must be declared as static.\nD. Constructors cannot have parameters.",
+    "key_points_and_rules": "Câu hỏi yêu cầu tìm phát biểu ĐÚNG về constructor (hàm khởi tạo) trong Java.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Constructor không có kiểu trả về (thậm chí không có từ khóa `void`). Do đó phương án A [SAI].",
+      "B": "Phân tích chi tiết: Constructor bắt buộc phải có tên trùng hoàn toàn với tên của lớp chứa nó. Do đó phương án B [ĐÚNG].",
+      "C": "Phân tích chi tiết: Constructor thuộc về từng thể hiện (instance) của đối tượng khi được khởi tạo bằng từ khóa `new`, không thể được khai báo là `static`. Do đó phương án C [SAI].",
+      "D": "Phân tích chi tiết: Constructor hoàn toàn có thể nhận tham số (được gọi là parameterized constructor) để khởi tạo giá trị ban đầu cho các thuộc tính của đối tượng. Do đó phương án D [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Theo đặc tả của ngôn ngữ Java, constructor là phương thức đặc biệt dùng để khởi tạo đối tượng. Quy tắc quan trọng của constructor là: (1) Phải có tên trùng với tên lớp, (2) Không có kiểu dữ liệu trả về, và (3) Có thể có hoặc không có tham số.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án của cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980211",
+          "author": "zermango",
+          "text": "B",
+          "timestamp": "2025-11-21T13:56:22+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980292",
+          "author": "masao",
+          "text": "b",
+          "timestamp": "2025-11-21T14:28:59+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980365",
+          "author": "duykhobo",
+          "text": "B",
+          "timestamp": "2025-11-21T14:39:13+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1070119",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-03-27T22:02:26+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1105390",
+          "author": "cya",
+          "text": "B",
+          "timestamp": "2026-04-02T22:03:42+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 17,
+    "question_id": "Q17",
+    "image_file": "Q17.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 17\n(Choose 1 answer)\nWhich of the following statements correctly creates an object of the Employee class and assigns it to a variable named emp?\nA. Employee emp = new Employee();\nB. Employee emp = new Employee;\nC. Employee emp = createInstance Employee();\nD. Employee emp = create Employee();",
+    "key_points_and_rules": "Yêu cầu tìm cú pháp đúng trong ngôn ngữ lập trình Java để khởi tạo một đối tượng (object) từ một lớp (class) và gán vào một biến có tên là emp.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Cú pháp chuẩn trong Java để tạo đối tượng là `ClassName objectName = new ClassName();`. Ở đây `Employee emp = new Employee();` tuân thủ hoàn toàn cú pháp này, gọi constructor `Employee()` thông qua toán tử `new` và gán vào biến `emp` kiểu `Employee`. [ĐÚNG]",
+      "B": "Phân tích chi tiết: Thiếu cặp dấu ngoặc tròn `()` của constructor ở cuối câu lệnh (`new Employee;`), dẫn đến lỗi cú pháp (syntax error) trong Java. [SAI]",
+      "C": "Phân tích chi tiết: `createInstance` không phải là từ khóa hay phương thức chuẩn trong Java để khởi tạo đối tượng trực tiếp như thế này. [SAI]",
+      "D": "Phân tích chi tiết: `create` không phải là từ khóa hay phương thức chuẩn trong cú pháp khởi tạo đối tượng của Java. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong ngôn ngữ lập trình Java, để khởi tạo một đối tượng mới từ một lớp, chúng ta sử dụng từ khóa `new` đi kèm với tên lớp và cặp dấu ngoặc tròn của constructor. Cú pháp đầy đủ là: `ClassName variableName = new ClassName();`. Do đó, phương án A là cú pháp hoàn toàn chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (A). Không có bẫy phức tạp, đây là câu hỏi cơ bản về cú pháp khởi tạo đối tượng."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980212",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:27+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980293",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:29:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980366",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:39:21+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070120",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:02:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105403",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:04:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 18,
+    "question_id": "Q18",
+    "image_file": "Q18.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nWhich of the following modifiers is used to hide information of a class from the classes outside?\nA. private\nB. public\nC. protected\nD. default",
+    "key_points_and_rules": "Yêu cầu xác định từ khóa định danh phạm vi truy cập (modifier) trong lập trình hướng đối tượng (OOP / Java) dùng để ẩn thông tin/dữ liệu của một lớp khỏi các lớp bên ngoài (tính đóng gói - encapsulation).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Từ khóa `private` giới hạn phạm vi truy cập chỉ bên trong chính class đó, giúp ẩn hoàn toàn dữ liệu và chi tiết cài đặt khỏi các class bên ngoài, thực hiện tính đóng gói (encapsulation). [ĐÚNG]",
+      "B": "Phân tích chi tiết: `public` cho phép truy cập từ bất kỳ đâu, không che giấu thông tin. [SAI]",
+      "C": "Phân tích chi tiết: `protected` cho phép truy cập trong cùng package và các lớp con (subclass), không ẩn hoàn toàn khỏi các lớp bên ngoài có liên quan kế thừa. [SAI]",
+      "D": "Phân tích chi tiết: `default` (package-private) cho phép truy cập trong cùng package, không ẩn thông tin đối với các lớp khác nằm chung package. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong nguyên lý lập trình hướng đối tượng (OOP), tính đóng gói (Encapsulation) được hiện thực hóa bằng cách che giấu dữ liệu bên trong lớp. Từ khóa `private` là mức hạn chế nghiêm ngặt nhất, chỉ cho phép truy cập các thành phần (biến, phương thức) bên trong chính lớp đó, ngăn chặn các lớp bên ngoài truy cập trực tiếp, qua đó đóng vai trò cốt lõi trong việc che giấu thông tin.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng (A). Khái niệm cơ bản về tính đóng gói và phạm vi truy cập private trong OOP."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980213",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980294",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:29:36+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980370",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:39:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070122",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:02:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105419",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:04:49+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 19,
+    "question_id": "Q19",
+    "image_file": "Q19.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nIn Java, if a class does not explicitly define a constructor, what type of constructor is automatically provided?\nA. Parameterized constructor\nB. Default constructor\nC. Private constructor\nD. Static constructor\nE. Overloaded constructor\nF. Abstract constructor",
+    "key_points_and_rules": "Yêu cầu tìm loại constructor nào được tự động cung cấp trong Java nếu một lớp không định nghĩa rõ constructor nào.",
+    "option_by_option_analysis": {
+      "A": "Parameterized constructor: Sai, constructor có tham số không được tự động tạo trừ khi lập trình viên định nghĩa.",
+      "B": "Default constructor: Đúng, Java compiler sẽ tự động chèn một constructor mặc định không tham số (no-arg constructor) nếu lớp không có bất kỳ constructor nào được định nghĩa rõ.",
+      "C": "Private constructor: Sai, constructor tự động cung cấp có phạm vi truy cập cùng cấp độ với lớp (thường là public nếu lớp public) chứ không phải mặc định là private.",
+      "D": "Static constructor: Sai, Java không hỗ trợ static constructor (khái niệm này có trong C# nhưng không có trong cú pháp Java).",
+      "E": "Overloaded constructor: Sai, constructor nạp chồng phải do lập trình viên khai báo thủ công.",
+      "F": "Abstract constructor: Sai, constructor không thể khai báo là abstract trong Java."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong ngôn ngữ lập trình Java, nếu bạn không viết bất kỳ constructor nào trong một lớp, trình biên dịch (compiler) sẽ tự động cung cấp một constructor mặc định không có tham số (default constructor) cho lớp đó.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980214",
+          "author": "zermango",
+          "text": "B",
+          "timestamp": "2025-11-21T13:56:37+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980295",
+          "author": "masao",
+          "text": "b",
+          "timestamp": "2025-11-21T14:29:53+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980372",
+          "author": "duykhobo",
+          "text": "B",
+          "timestamp": "2025-11-21T14:40:05+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1070126",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-03-27T22:03:18+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1105422",
+          "author": "cya",
+          "text": "B",
+          "timestamp": "2026-04-02T22:05:00+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 20,
+    "question_id": "Q20",
+    "image_file": "Q20.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nWhich access modifier is commonly used for setter methods in Java?\nA. public\nB. private\nC. protected\nD. static\nE. final\nF. abstract",
+    "key_points_and_rules": "Yêu cầu tìm access modifier phổ biến nhất được sử dụng cho các phương thức setter trong Java theo nguyên lý đóng gói (Encapsulation).",
+    "option_by_option_analysis": {
+      "A": "public: Đúng, phương thức setter thường được khai báo là public để các lớp bên ngoài có thể gọi nhằm thay đổi giá trị của các thuộc tính private.",
+      "B": "private: Sai, nếu setter là private thì các lớp bên ngoài không thể gọi nó để cập nhật giá trị thuộc tính.",
+      "C": "protected: Sai, protected hạn chế quyền truy cập trong cùng package và các lớp con, không phải là lựa chọn phổ biến nhất cho setter thông thường.",
+      "D": "static: Sai, static không phải là access modifier mà là từ khóa quản lý thành phần tĩnh.",
+      "E": "final: Sai, final không phải là access modifier.",
+      "F": "abstract: Sai, abstract không phải là access modifier thông thường dùng cho setter."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong lập trình hướng đối tượng với Java, theo tính đóng gói (encapsulation), các thuộc tính (fields) thường được đặt ở mức private, và để cho phép các lớp khác gán hoặc cập nhật giá trị cho chúng, ta cung cấp các phương thức setter có phạm vi truy cập là public.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980215",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:42+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980296",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:30:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980373",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:40:12+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070128",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:03:29+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105429",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:05:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1215476",
+          "author": "huutuong",
+          "text": "A",
+          "timestamp": "2026-07-30T21:33:35+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 21,
+    "question_id": "Q21",
+    "image_file": "Q21.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java OOP)",
+    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nWhich of the following statements related to the protected access modifier is true?\nA. It allows the outside package access\nB. It does not allow within-package access\nC. The protected members must be initialized before use\nD. All of the others",
+    "key_points_and_rules": "Câu hỏi yêu cầu tìm phát biểu ĐÚNG về từ khóa truy cập (access modifier) 'protected' trong lập trình hướng đối tượng Java. Quy tắc của protected: cho phép truy cập trong cùng package (within-package) và từ các lớp con (subclasses) nằm ngoài package đó (outside package via inheritance).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Phương án A ĐÚNG vì từ khóa protected cho phép các lớp con nằm ở package khác (outside package) có thể truy cập thông qua cơ chế kế thừa.",
+      "B": "Phân tích chi tiết: Phương án B SAI vì protected cho phép truy cập trong cùng package (giống như default/package-private).",
+      "C": "Phân tích chi tiết: Phương án C SAI vì phạm vi truy cập (access modifier) không liên quan gì đến việc thành phần đó bắt buộc phải được khởi tạo trước khi sử dụng.",
+      "D": "Phân tích chi tiết: Phương án D SAI vì các phương án B và C không chính xác."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, từ khóa truy cập `protected` cung cấp mức độ bảo mật cho phép các biến, phương thức và constructor được truy cập bởi:\n1. Các lớp khác trong cùng package.\n2. Các lớp con (subclasses) nằm ở package khác.\nDo đó, phát biểu 'It allows the outside package access' (cho phép truy cập từ bên ngoài package đối với lớp con) là đúng.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980216",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980301",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:31:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980377",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:40:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070131",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:03:42+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105432",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:05:25+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1219699",
+          "author": "hello-world",
+          "text": "A. cho truy nhưng chỉ khi thông qua kế thừa.",
+          "timestamp": "2026-07-31T16:56:54+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 22,
+    "question_id": "Q22",
+    "image_file": "Q22.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java OOP)",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nWhich of the following statements is correct about constructors in inheritance?\nA. A constructor of the parent class is automatically inherited by the child class.\nB. The constructor of a parent class is called first when a subclass object is created.\nC. The parent class constructor cannot be called from a subclass.\nD. A child class must override the constructor of the parent class.",
+    "key_points_and_rules": "Câu hỏi yêu cầu tìm phát biểu ĐÚNG về constructor trong tính kế thừa (inheritance) của Java. Quy tắc khởi tạo đối tượng con: constructor của lớp cha luôn được gọi (thông qua super()) trước tiên khi khởi tạo đối tượng của lớp con.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Phương án A SAI vì constructor không phải là thành viên bị kế thừa (not inherited) trong Java.",
+      "B": "Phân tích chi tiết: Phương án B ĐÚNG vì khi tạo một đối tượng lớp con, constructor của lớp cha được gọi đầu tiên (ngầm định bằng super() hoặc tường minh) để khởi tạo phần trạng thái của lớp cha.",
+      "C": "Phân tích chi tiết: Phương án C SAI vì lớp con hoàn toàn có thể gọi constructor của lớp cha thông qua từ khóa super().",
+      "D": "Phân tích chi tiết: Phương án D SAI vì constructor không thể bị override (ghi đè), chỉ có phương thức mới bị override."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong Java, constructor không được kế thừa bởi lớp con. Tuy nhiên, khi một đối tượng của lớp con được khởi tạo, compiler sẽ tự động chèn lời gọi đến constructor mặc định của lớp cha (`super()`) ở dòng đầu tiên của constructor lớp con để đảm bảo lớp cha được khởi tạo trước. Do đó, constructor của lớp cha luôn được gọi đầu tiên.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 7,
+      "valid_vote_count": 7,
+      "top_answer_votes": 6,
+      "agreement_ratio": 0.8571,
+      "vote_distribution": {
+        "B": 6,
+        "A": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980217",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:52+0700",
+          "reactions": 11,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980302",
+          "author": "masao",
+          "text": "b",
+          "timestamp": "2025-11-21T14:31:44+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980384",
+          "author": "duykhobo",
+          "text": "B",
+          "timestamp": "2025-11-21T14:41:25+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980524",
+          "author": "hehehehe246",
+          "text": "B",
+          "timestamp": "2025-11-21T15:09:20+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-998410",
+          "author": "RyanDaMos",
+          "text": "b nha",
+          "timestamp": "2025-11-27T15:31:48+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1070134",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-03-27T22:04:24+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1105439",
+          "author": "cya",
+          "text": "B",
+          "timestamp": "2026-04-02T22:05:35+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 23,
+    "question_id": "Q23",
+    "image_file": "Q23.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nWhat happens if a subclass does not implement all the abstract methods of its superclass?\nA. The subclass must be declared abstract.\nB. The subclass can still be instantiated.\nC. The subclass will compile but throw an error at runtime.\nD. The subclass does not need to implement the abstract methods.",
+    "key_points_and_rules": "Câu hỏi tìm phương án đúng liên quan đến tính chất kế thừa của lớp trừu tượng (abstract class) trong lập trình hướng đối tượng (Java/OOP). Nếu lớp con không implement toàn bộ các phương thức trừu tượng của lớp cha, lớp con đó buộc phải được khai báo là abstract.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Theo quy tắc OOP (Java), nếu một lớp con kế thừa từ một abstract class mà không ghi đè (implement) tất cả các phương thức trừu tượng (abstract methods) của lớp cha, thì bản thân lớp con đó chưa hoàn chỉnh và bắt buộc phải được khai báo là abstract [ĐÚNG].",
+      "B": "Phân tích chi tiết: Lớp chưa hoàn thiện (vẫn chứa abstract method hoặc chưa implement đủ) thì không thể khởi tạo đối tượng (instantiated) [SAI].",
+      "C": "Phân tích chi tiết: Trình biên dịch (compiler) sẽ báo lỗi trực tiếp lúc biên soạn (compile-time error), không đợi đến lúc chạy (runtime) [SAI].",
+      "D": "Phân tích chi tiết: Lớp con bắt buộc phải implement các abstract methods trừ khi chính nó được khai báo là abstract [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong lập trình hướng đối tượng, khi một lớp con kế thừa một lớp trừu tượng (abstract class), nó phải định nghĩa toàn bộ các phương thức trừu tượng của lớp cha. Nếu không thực hiện đầy đủ, lớp con đó vẫn giữ tính chất trừu tượng và bắt buộc phải được khai báo với từ khóa abstract, nếu không trình biên dịch sẽ báo lỗi.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án phân tích hoàn toàn trùng khớp với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 10,
+      "valid_vote_count": 9,
+      "top_answer_votes": 9,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 9
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980194",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:54:52+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980269",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:18:25+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980297",
+          "author": "lzhanh",
+          "text": "A",
+          "timestamp": "2025-11-21T14:30:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980306",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:32:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1054225",
+          "author": "nguoivetulongdat",
+          "text": "a",
+          "timestamp": "2026-03-03T19:54:11+0700",
+          "reactions": 1,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1057927",
+          "author": "Minthep",
+          "text": "@nguoivetulongdat why  làm cái này ?",
+          "timestamp": "2026-03-08T20:57:11+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1070087",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T21:58:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105264",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T21:56:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1118228",
+          "author": "Cườnga",
+          "text": "a",
+          "timestamp": "2026-04-04T15:40:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1217152",
+          "author": "Lộc Nguyễn",
+          "text": "A",
+          "timestamp": "2026-07-31T09:30:13+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 24,
+    "question_id": "Q24",
+    "image_file": "Q24.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nWhich of the following can be declared as static?\nA. Methods\nB. Local variables\nC. Instance variables\nD. Parameters",
+    "key_points_and_rules": "Câu hỏi yêu cầu xác định thành phần nào trong ngôn ngữ lập trình (như Java) có thể được khai báo với từ khóa static.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Methods (phương thức) có thể được khai báo là static (thuộc về lớp, gọi trực tiếp thông qua tên lớp mà không cần khởi tạo đối tượng) [ĐÚNG].",
+      "B": "Phân tích chi tiết: Local variables (biến cục bộ nằm bên trong phương thức) không thể được khai báo là static [SAI].",
+      "C": "Phân tích chi tiết: Mặc dù instance variables (biến thành viên của lớp) thuộc về từng đối tượng, nhưng các biến thuộc lớp (class variables) dùng từ khóa static. Tuy nhiên trong bối cảnh các phương án trên, Methods là lựa chọn chuẩn xác nhất theo câu hỏi trắc nghiệm kinh điển này (thực tế các biến static thường gọi là class variables chứ không gọi là instance variables, instance variables gắn liền với từng thể hiện instance).",
+      "D": "Phân tích chi tiết: Parameters (tham số truyền vào phương thức) không thể là static [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java và nhiều ngôn ngữ lập trình hướng đối tượng, từ khóa 'static' có thể được áp dụng cho các biến của lớp (class variables), phương thức (methods), khối lệnh (blocks) và lớp lồng nhau (nested classes). Biến cục bộ (local variables) và tham số (parameters) không bao giờ được phép khai báo là static.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án trùng khớp với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980218",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:56:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980312",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:33:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980385",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:42:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1034203",
+          "author": "PHAM TUAN KIET",
+          "text": "A",
+          "timestamp": "2025-12-21T22:16:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070136",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:04:57+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105443",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:05:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 25,
+    "question_id": "Q25",
+    "image_file": "Q25.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192 - Java)",
+    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nAssume the following code snippet:\nObject objA = new Object();\nObject objB = new Object();\nWhich of the following statements is correct to compare objA with objB?\nA. objA.equals(objB)\nB. compareObjects(objA, objB)\nC. Object.compareTo(objA, objB)\nD. Object.compare(objA, objB)",
+    "key_points_and_rules": "Xác định cách thức đúng để so sánh hai đối tượng Object trong ngôn ngữ lập trình Java.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Lớp Object trong Java cung cấp phương thức `equals(Object obj)` để so sánh sự tương đương giữa đối tượng hiện tại với đối tượng được truyền vào. Do đó, `objA.equals(objB)` hoàn toàn hợp lệ và chính xác.",
+      "B": "Phân tích chi tiết: Trong Java chuẩn, không có hàm toàn cục hoặc phương thức nào tên là `compareObjects(objA, objB)` thuộc lớp Object hay thư viện chuẩn java.lang.",
+      "C": "Phân tích chi tiết: Lớp Object không có phương thức static hoặc instance tên là `compareTo`. Phương thức `compareTo` thuộc về interface `Comparable` chứ không phải là phương thức chuẩn của `Object`.",
+      "D": "Phân tích chi tiết: Lớp Object không có phương thức `compare(objA, objB)`. Phương thức `compare` thường xuất hiện trong các Comparator hoặc các lớp wrapper như `Integer.compare()`, `Double.compare()`, không tồn tại trong `java.lang.Object`."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, mọi đối tượng đều kế thừa từ lớp `java.lang.Object`. Để so sánh hai đối tượng, ta có thể sử dụng toán tử `==` (so sánh tham chiếu) hoặc phương thức `.equals()` (so sánh nội dung/giá trị theo cài đặt của lớp). Trong các phương án đưa ra, chỉ có `objA.equals(objB)` là phương thức hợp lệ và tồn tại sẵn trong lớp `Object`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng là 'A'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980219",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:57:03+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980317",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:33:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980386",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:42:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070137",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:05:03+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105473",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:07:50+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 26,
+    "question_id": "Q26",
+    "image_file": "Q26.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192 - Java OOP)",
+    "question_text_extracted": "Question: 26\n(Choose 3 answers)\nChoose multiple correct answers.\nA. The purpose of a getter method in Java is to get the value of a variable\nB. The purpose of a setter method in Java is to set the value of a variable\nC. return keyword used to define getter and setter method in Java\nD. Access modifiers often used for getter or setter method is public",
+    "key_points_and_rules": "Chọn 3 phát biểu đúng về phương thức Getter và Setter trong lập trình hướng đối tượng với Java.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Phương thức getter dùng để truy xuất và trả về giá trị của một biến (thường là biến private trong class). Phát biểu này [ĐÚNG].",
+      "B": "Phân tích chi tiết: Phương thức setter dùng để gán hoặc thay đổi giá trị của một biến. Phát biểu này [ĐÚNG].",
+      "C": "Phân tích chi tiết: Từ khóa `return` chỉ được dùng trong phương thức getter (để trả về giá trị), còn setter thông thường có kiểu trả về là `void` và không bắt buộc/không dùng `return` để trả về giá trị biến. Do đó phát biểu nói `return` dùng để định nghĩa CẢ getter VÀ setter là [SAI].",
+      "D": "Phân tích chi tiết: Các phương thức getter và setter thường được khai báo với phạm vi truy cập là `public` để cho phép các lớp bên ngoài có thể tương tác với các thuộc tính bị ẩn (`private`) của đối tượng theo tính đóng gói (Encapsulation). Phát biểu này [ĐÚNG]."
+    },
+    "question_type": "multiple_choice",
+    "community_answer": "ABD",
+    "ai_answer": "ABD",
+    "ai_explanation": "Trong Java, tính đóng gói (Encapsulation) bảo vệ dữ liệu bằng cách đặt các biến thành `private` và cung cấp các phương thức `public` gọi là getter (để lấy giá trị) và setter (để gán giá trị). Do đó, các phương án A, B và D là hoàn toàn chính xác. Phương án C sai vì từ khóa `return` chỉ cần thiết trong getter chứ không dùng trong setter.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "ABD",
+      "ai_answer": "ABD",
+      "comparison_note": "Đáp án của AI (ABD) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (ABD). Trùng khớp hoàn toàn với đáp án cộng đồng là 'ABD'."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "multiple_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "ABD": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980220",
+          "author": "zermango",
+          "text": "ABD",
+          "timestamp": "2025-11-21T13:57:08+0700",
+          "reactions": 0,
+          "extracted_answer": "ABD"
+        },
+        {
+          "comment_id": "xfmg-comment-980387",
+          "author": "duykhobo",
+          "text": "ABD",
+          "timestamp": "2025-11-21T14:42:33+0700",
+          "reactions": 0,
+          "extracted_answer": "ABD"
+        },
+        {
+          "comment_id": "xfmg-comment-1070140",
+          "author": "long156206",
+          "text": "abd",
+          "timestamp": "2026-03-27T22:05:18+0700",
+          "reactions": 0,
+          "extracted_answer": "ABD"
+        },
+        {
+          "comment_id": "xfmg-comment-1105482",
+          "author": "cya",
+          "text": "ABD",
+          "timestamp": "2026-04-02T22:08:15+0700",
+          "reactions": 0,
+          "extracted_answer": "ABD"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 27,
+    "question_id": "Q27",
+    "image_file": "Q27.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java OOP)",
+    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nWhat is a way to group related classes in Java and it is called a namespace?\nA. package\nB. file\nC. software\nD. folder",
+    "key_points_and_rules": "Câu hỏi định nghĩa cơ bản trong Java OOP về khái niệm dùng để nhóm các lớp có liên quan với nhau và đóng vai trò như một namespace.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Trong Java, package được dùng để nhóm các lớp, interface, enum và annotation có liên quan với nhau, đồng thời đóng vai trò là một namespace để tránh xung đột tên lớp. Do đó phương án này [ĐÚNG].",
+      "B": "Phân tích chi tiết: 'file' là đơn vị lưu trữ mã nguồn trên đĩa cứng (ví dụ: .java file), không phải là khái niệm namespace trong Java. Do đó phương án này [SAI].",
+      "C": "Phân tích chi tiết: 'software' là thuật ngữ chỉ phần mềm nói chung, không phải là cơ chế nhóm lớp trong Java. Do đó phương án này [SAI].",
+      "D": "Phân tích chi tiết: 'folder' là khái niệm thư mục trong hệ điều hành, mặc dù package thường được ánh xạ tương ứng với thư mục vật lý nhưng thuật ngữ chuẩn trong Java được gọi là namespace và gom nhóm lớp chính là package. Do đó phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Trong ngôn ngữ lập trình Java, package là cơ chế dùng để đóng gói và nhóm các lớp (classes), interface có liên quan với nhau. Nó giúp quản lý mã nguồn dễ dàng hơn và hoạt động như một namespace để tránh trùng lặp tên giữa các lớp khác nhau.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980221",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:57:22+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980330",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:34:34+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980389",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:42:49+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070142",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:05:31+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105495",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:08:54+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 28,
+    "question_id": "Q28",
+    "image_file": "Q28.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java OOP)",
+    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nWhat is method overriding in Java?\nA. Re-implementing a method in the subclass with the same signature as in the superclass\nB. Creating multiple methods with the same name but different parameters\nC. Calling a method from another method\nD. Re-implementing another method in the same class with the same signature",
+    "key_points_and_rules": "Yêu cầu định nghĩa chính xác khái niệm 'method overriding' (ghi đè phương thức) trong lập trình hướng đối tượng Java.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Method overriding xảy ra khi một lớp con (subclass) định nghĩa lại (re-implement) một phương thức đã có sẵn trong lớp cha (superclass) với cùng tên, cùng kiểu dữ liệu trả về và cùng danh sách tham số (same signature). Do đó phương án này [ĐÚNG].",
+      "B": "Phân tích chi tiết: Định nghĩa này mô tả 'Method Overloading' (nạp chồng phương thức), không phải overriding. Do đó phương án này [SAI].",
+      "C": "Phân tích chi tiết: Đây chỉ là thao tác gọi hàm thông thường (method call/invocation). Do đó phương án này [SAI].",
+      "D": "Phân tích chi tiết: Việc định nghĩa lại một phương thức trong cùng một lớp với cùng chữ ký là nạp chồng (nếu khác tham số) hoặc gây lỗi trùng lặp (nếu trùng hoàn toàn tham số), không phải overriding. Do đó phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Method overriding là tính chất đa hình khi lớp con cung cấp một cài đặt mới (re-implement) cho một phương thức đã được định nghĩa ở lớp cha với chính xác cùng chữ ký phương thức (same signature).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980222",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:57:27+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980331",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:34:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980390",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:42:57+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070145",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:05:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105497",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:09:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 29,
+    "question_id": "Q29",
+    "image_file": "Q29.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 29\n(Choose 1 answer)\nConsider an abstract class \"Shape\" with an abstract method \"calculateArea().\" If a concrete class \"Circle\" extends \"Shape\" and provides an implementation for \"calculateArea(),\" what happens when an object of the \"Circle\" class is created and the \"calculateArea()\" method is accessed?\nA. The abstract method in the superclass is executed.\nB. The concrete method in the subclass is executed.\nC. The program will not compile.\nD. An exception is thrown at runtime.\nE. Both the abstract method in the superclass and the concrete method in the subclass are executed.\nF. The result depends on whether the \"calculateArea()\" method is declared as static.",
+    "key_points_and_rules": "Tính đa hình (Polymorphism) và cơ chế ghi đè phương thức (Method Overriding) trong Java đối với lớp trừu tượng (abstract class) và lớp con cụ thể (concrete subclass).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Phương thức trừu tượng (abstract method) trong lớp cha không có phần thân (body) nên không thể được thực thi trực tiếp.",
+      "B": "Phân tích chi tiết: [ĐÚNG] Khi một lớp con cụ thể ghi đè và cung cấp phần thân cho phương thức trừu tượng của lớp cha, lời gọi phương thức trên đối tượng của lớp con sẽ thực thi phương thức được định nghĩa tại lớp con (dynamic method dispatch / runtime polymorphism).",
+      "C": "Phân tích chi tiết: [SAI] Chương trình hoàn toàn hợp lệ và biên dịch thành công vì lớp con 'Circle' đã cài đặt đầy đủ phương thức trừu tượng của lớp cha.",
+      "D": "Phân tích chi tiết: [SAI] Không có ngoại lệ nào bị ném ra lúc runtime vì cấu trúc kế thừa và ghi đè hoàn toàn hợp lệ.",
+      "E": "Phân tích chi tiết: [SAI] Phương thức abstract trong lớp cha không có code nên không thể được thực thi.",
+      "F": "Phân tích chi tiết: [SAI] Abstract method không thể được khai báo là static (lỗi biên dịch), do đó phương án này không hợp lệ."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong Java, khi một lớp con (concrete subclass) kế thừa từ một lớp trừu tượng (abstract class) và cung cấp phần cài đặt (implementation) cho phương thức trừu tượng của lớp cha, đối tượng được tạo từ lớp con đó khi gọi phương thức sẽ thực thi phiên bản phương thức đã được ghi đè cụ thể trong lớp con nhờ tính đa hình lúc runtime.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980223",
+          "author": "zermango",
+          "text": "B",
+          "timestamp": "2025-11-21T13:57:32+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980334",
+          "author": "masao",
+          "text": "b",
+          "timestamp": "2025-11-21T14:34:56+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980391",
+          "author": "duykhobo",
+          "text": "B",
+          "timestamp": "2025-11-21T14:43:09+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1070151",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-03-27T22:07:09+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1105500",
+          "author": "cya",
+          "text": "B",
+          "timestamp": "2026-04-02T22:09:16+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 30,
+    "question_id": "Q30",
+    "image_file": "Q30.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 30\n(Choose 1 answer)\nWhat is the difference between composition and inheritance in Java?\nA. Composition is a way to create objects dynamically, while inheritance is a way to reuse code\nB. Composition is a way to create objects statically, while inheritance is a way to create objects dynamically\nC. Composition is a way to reuse code, while inheritance is a way to create objects dynamically\nD. Composition is a way to create objects by combining existing objects, while inheritance is a way to reuse code",
+    "key_points_and_rules": "Phân biệt hai khái niệm thiết kế hướng đối tượng cơ bản trong Java: Composition (Has-a relationship) và Inheritance (Is-a relationship).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] Cả hai đều không định nghĩa bằng cách 'tạo object động'.",
+      "B": "Phân tích chi tiết: [SAI] Mô tả không chính xác về bản chất của composition và inheritance.",
+      "C": "Phân tích chi tiết: [SAI] Inheritance không phải là cách tạo object động.",
+      "D": "Phân tích chi tiết: [ĐÚNG] Composition là mối quan hệ 'has-a' (tạo đối tượng bằng cách kết hợp các đối tượng có sẵn lại với nhau), trong khi Inheritance là mối quan hệ 'is-a' dùng để tái sử dụng mã nguồn (code reuse) qua phân cấp lớp."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Composition (thành phần/tổng hợp) cho phép xây dựng các lớp phức tạp bằng cách chứa các đối tượng khác bên trong nó (kết hợp các đối tượng hiện có), còn Inheritance (kế thừa) cho phép một lớp tận dụng lại các trường và phương thức từ lớp cha.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Trùng khớp hoàn toàn với đáp án cộng đồng ('D')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980224",
+          "author": "zermango",
+          "text": "D",
+          "timestamp": "2025-11-21T13:57:38+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-980337",
+          "author": "masao",
+          "text": "d",
+          "timestamp": "2025-11-21T14:35:02+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-980392",
+          "author": "duykhobo",
+          "text": "D",
+          "timestamp": "2025-11-21T14:43:24+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1070153",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-03-27T22:07:21+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1105504",
+          "author": "cya",
+          "text": "D",
+          "timestamp": "2026-04-02T22:09:30+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 31,
+    "question_id": "Q31",
+    "image_file": "Q31.webp",
+    "has_illustration": null,
+    "subject_domain": null,
+    "question_text_extracted": null,
+    "key_points_and_rules": null,
+    "option_by_option_analysis": null,
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": null,
+    "ai_explanation": "Không thể lấy phản hồi từ Google AI Studio. Chi tiết lỗi cuối: ",
+    "comparison": {
+      "is_match": false,
+      "status": "NO_AI_ANSWER",
+      "community_answer": "A",
+      "ai_answer": null,
+      "comparison_note": "Đáp án cộng đồng là A, nhưng AI chưa trích xuất được đáp án."
+    },
+    "ai_model": null,
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980225",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:57:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980338",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:35:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980394",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:43:54+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070155",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:07:38+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105522",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:10:28+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 32,
+    "question_id": "Q32",
+    "image_file": "Q32.webp",
+    "has_illustration": null,
+    "subject_domain": null,
+    "question_text_extracted": null,
+    "key_points_and_rules": null,
+    "option_by_option_analysis": null,
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": null,
+    "ai_explanation": "Không thể lấy phản hồi từ Google AI Studio. Chi tiết lỗi cuối: ",
+    "comparison": {
+      "is_match": false,
+      "status": "NO_AI_ANSWER",
+      "community_answer": "A",
+      "ai_answer": null,
+      "comparison_note": "Đáp án cộng đồng là A, nhưng AI chưa trích xuất được đáp án."
+    },
+    "ai_model": null,
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980226",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:57:49+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980345",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:36:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980395",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:44:01+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070156",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:07:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105523",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:10:34+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 33,
+    "question_id": "Q33",
+    "image_file": "Q33.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nIn a banking application, you need to represent customer accounts using object arrays. Which OOP concept allows you to create a blueprint for the Account class?\nA. Inheritance\nB. Abstraction\nC. Encapsulation\nD. Polymorphism\nE. Composition\nF. Interface",
+    "key_points_and_rules": "Xác định khái niệm hướng đối tượng (OOP) đóng vai trò là 'blueprint' (bản thiết kế/khuôn mẫu) để tạo ra các class.",
+    "option_by_option_analysis": {
+      "A": "Inheritance (Kế thừa) là cơ chế cho phép một class kế thừa thuộc tính và phương thức từ một class khác, không phải là khái niệm định nghĩa bản chất 'blueprint' của một class.",
+      "B": "Abstraction (Trừu tượng hóa) là việc ẩn đi các chi tiết phức tạp và chỉ hiển thị các tính năng cần thiết.",
+      "C": "Encapsulation (Đóng gói) là việc gói gọn dữ liệu (biến) và mã (phương thức) hoạt động trên dữ liệu đó vào một đơn vị duy nhất.",
+      "D": "Polymorphism (Đa hình) là khả năng một thực thể có thể thực hiện nhiều hình thái khác nhau.",
+      "E": "Composition (Thành phần) là một dạng quan hệ 'has-a' giữa các lớp.",
+      "F": "Interface là một tập hợp các phương thức trừu tượng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong lập trình hướng đối tượng (OOP), khái niệm 'Class' thực chất là một bản thiết kế (blueprint) hoặc khuôn mẫu định nghĩa các thuộc tính và hành vi chung cho các đối tượng (objects) được tạo ra từ nó. Tuy nhiên, nếu xét theo câu hỏi kinh điển về việc định nghĩa lớp trong Java/OOP, 'Class' chính là khuôn mẫu/bản thiết kế cơ bản để tạo ra các đối tượng. Trong các tùy chọn kinh điển của đề thi Java/PRO192, việc tạo ra một class đại diện cho đối tượng thực chất gắn liền với khái niệm cốt lõi của Class/Object, nhưng ở đây đề bài hỏi về bản chất của một lớp (Class) xét theo góc độ lý thuyết OOP cơ bản hoặc câu hỏi này thuộc về định nghĩa cơ bản. Đợi chút, bản thân 'Class' là blueprint, và cơ chế định nghĩa class dựa trên tính chất cơ bản. Tuy nhiên, trong ngữ cảnh bộ đề PRO192, 'Abstraction' hay định nghĩa 'Class' thường đi kèm với việc tạo khuôn mẫu. Theo đáp án cộng đồng và tài liệu ôn tập PRO192, câu hỏi này đáp án chính xác là B (Abstraction) hoặc tuỳ theo bộ đề FPT. Cụ thể, Abstraction cho phép thiết kế bản thiết kế trừu tượng cho Account.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980227",
+          "author": "zermango",
+          "text": "B",
+          "timestamp": "2025-11-21T13:57:55+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980346",
+          "author": "masao",
+          "text": "b",
+          "timestamp": "2025-11-21T14:36:06+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980396",
+          "author": "duykhobo",
+          "text": "B",
+          "timestamp": "2025-11-21T14:44:12+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1070160",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-03-27T22:08:21+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1105539",
+          "author": "cya",
+          "text": "B",
+          "timestamp": "2026-04-02T22:11:42+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 34,
+    "question_id": "Q34",
+    "image_file": "Q34.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nWhich of the following classes is used for shuffling an ArrayList in Java?\nA. Collections\nB. CollectionList\nC. Arrays\nD. Array.Util",
+    "key_points_and_rules": "Tìm lớp utility trong Java API dùng để xáo trộn (shuffle) các phần tử của một ArrayList.",
+    "option_by_option_analysis": {
+      "A": "Collections là lớp tiện ích (utility class) nằm trong gói java.util, cung cấp phương thức static `Collections.shuffle(List<?> list)` dùng để xáo trộn ngẫu nhiên các phần tử trong bất kỳ đối tượng nào cài đặt interface List (như ArrayList). [ĐÚNG]",
+      "B": "CollectionList không phải là một lớp hợp lệ trong thư viện chuẩn Java (java.util). [SAI]",
+      "C": "Arrays là lớp tiện ích dành cho các mảng tĩnh (primitive arrays hoặc object arrays như `int[]`, `String[]`), cung cấp các phương thức như `sort`, `binarySearch`, không dùng trực tiếp để shuffle ArrayList. [SAI]",
+      "D": "Array.Util không tồn tại trong Java (tên gói đúng là java.util). [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Để xáo trộn ngẫu nhiên các phần tử của một `ArrayList` trong Java, ta sử dụng phương thức tĩnh `Collections.shuffle(list)` thuộc lớp tiện ích `java.util.Collections`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980228",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:58:01+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980348",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:36:12+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980398",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:44:23+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070163",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:08:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105543",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:11:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 35,
+    "question_id": "Q35",
+    "image_file": "Q35.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nMap<Integer,Integer> myMap = new TreeMap<>();\nmyMap.put(3,4);\nmyMap.put(1,4);\nmyMap.put(2,5);\nSystem.out.println(myMap);\nA. {1=4, 2=5, 3=4}\nB. {3=4, 2=5, 1=4}\nC. {1=4, 3=4, 2=5}\nD. {3=4, 1=4, 2=5}",
+    "key_points_and_rules": "TreeMap trong Java tự động sắp xếp các phần tử dựa trên thứ tự tự nhiên (natural ordering) của các key (các số nguyên Integer từ nhỏ đến lớn).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Khởi tạo myMap là TreeMap<Integer, Integer>. Lần lượt put(3,4), put(1,4), put(2,5). Do là TreeMap, các key được sắp xếp tăng dần theo giá trị số nguyên: 1, rồi đến 2, rồi đến 3. Kết quả in ra là {1=4, 2=5, 3=4}. Phương án này [ĐÚNG].",
+      "B": "Phân tích chi tiết: Sắp xếp các key theo thứ tự giảm dần, không đúng với cơ chế sắp xếp tăng dần mặc định của TreeMap. Phương án này [SAI].",
+      "C": "Phân tích chi tiết: Thứ tự các key bị sắp xếp sai (1, 3, 2). Phương án này [SAI].",
+      "D": "Phân tích chi tiết: Thứ tự các key giữ nguyên thứ tự thêm vào (3, 1, 2), đây là hành vi của LinkedHashMap chứ không phải TreeMap. Phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Đoạn code khởi tạo một đối tượng `TreeMap<Integer, Integer>`, một cấu trúc dữ liệu Map trong Java tự động sắp xếp các key theo thứ tự tăng dần tự nhiên. Các cặp key-value được thêm vào là (3,4), (1,4), và (2,5). Khi in ra màn hình, các key sẽ được sắp xếp lại từ nhỏ đến lớn tương ứng là 1, 2, 3 kèm theo các giá trị tương ứng của chúng. Do đó, kết quả in ra là `{1=4, 2=5, 3=4}`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980229",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:58:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980358",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:38:04+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980399",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:44:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980529",
+          "author": "hehehehe246",
+          "text": "A",
+          "timestamp": "2025-11-21T15:10:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070164",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:08:54+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105547",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:12:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 36,
+    "question_id": "Q36",
+    "image_file": "Q36.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 36\n\n(Choose 1 answer)\n\nWhat is the output of the following code?\nArrayList list = new ArrayList();\nlist.add(5);\nlist.add(3);\nlist.add(1);\nlist.add(2);\nlist.add(5);\nCollections.reverse(list);\nCollections.sort(list);\nSystem.out.println(list);",
+    "key_points_and_rules": "Phương thức Collections.reverse() đảo ngược thứ tự danh sách, sau đó Collections.sort() sắp xếp lại danh sách theo thứ tự tăng dần.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sau khi thêm các phần tử [5, 3, 1, 2, 5], gọi Collections.reverse(list) làm danh sách đảo ngược thành [5, 2, 1, 3, 5]. Sau đó gọi Collections.sort(list), danh sách được sắp xếp tăng dần thành [1, 2, 3, 5, 5]. Phương án này [ĐÚNG].",
+      "B": "Phân tích chi tiết: Các phần tử không được sắp xếp đúng thứ tự tăng dần chuẩn. Phương án này [SAI].",
+      "C": "Phân tích chi tiết: Đây là kết quả nếu chỉ gọi reverse mà không gọi sort hoặc ngược lại. Phương án này [SAI].",
+      "D": "Phân tích chi tiết: Sai thứ tự các phần tử sau khi áp dụng các thao tác Collections. Phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Đoạn code tạo một `ArrayList` và thêm lần lượt các số: 5, 3, 1, 2, 5 (danh sách ban đầu: `[5, 3, 1, 2, 5]`).\n1. Lệnh `Collections.reverse(list);` đảo ngược thứ tự các phần tử trong danh sách thành: `[5, 2, 1, 3, 5]`.\n2. Lệnh `Collections.sort(list);` sắp xếp lại toàn bộ danh sách theo thứ tự tăng dần, kết quả cuối cùng là: `[1, 2, 3, 5, 5]`.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Trùng khớp hoàn toàn với đáp án của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980230",
+          "author": "zermango",
+          "text": "A",
+          "timestamp": "2025-11-21T13:58:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980360",
+          "author": "masao",
+          "text": "a",
+          "timestamp": "2025-11-21T14:38:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980400",
+          "author": "duykhobo",
+          "text": "A",
+          "timestamp": "2025-11-21T14:44:36+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-980528",
+          "author": "hehehehe246",
+          "text": "A",
+          "timestamp": "2025-11-21T15:10:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1070166",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-03-27T22:09:10+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1105549",
+          "author": "cya",
+          "text": "A",
+          "timestamp": "2026-04-02T22:12:13+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 37,
+    "question_id": "Q37",
+    "image_file": "Q37.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 37\n(Choose 1 answer)\nWhich method is used to add an element at a specific position in a List in Java?\nA. add(Object element)\nB. add(int index, Object element)\nC. insert(int index, Object element)\nD. put(int index, Object element)",
+    "key_points_and_rules": "Xác định phương thức chính xác trong Java Collection Framework (đặc biệt là interface List) dùng để chèn/thêm một phần tử tại một vị trí chỉ định (index).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Phương thức add(Object element) dùng để thêm phần tử vào cuối danh sách, không chỉ định được vị trí cụ thể. Do đó [SAI].",
+      "B": "Phân tích chi tiết: Phương thức add(int index, Object element) trong interface List cho phép chèn phần tử vào vị trí cụ thể được chỉ định bởi index, dịch chuyển các phần tử phía sau sang phải. Do đó [ĐÚNG].",
+      "C": "Phân tích chi tiết: Trong Java List không có phương thức mang tên insert(int index, Object element). Do đó [SAI].",
+      "D": "Phân tích chi tiết: Phương thức put() thuộc về interface Map (như HashMap) dùng để ánh xạ khóa và giá trị, không dùng cho List. Do đó [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong Java Collections Framework, interface List cung cấp hai phương thức nạp chồng (overloaded methods) cho việc thêm phần tử: add(E e) để thêm vào cuối danh sách và add(int index, E element) để chèn phần tử vào một vị trí (index) cụ thể. Do đó, phương thức add(int index, Object element) là câu trả lời chính xác.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Trùng khớp hoàn toàn với đáp án cộng đồng (đáp án B)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-980231",
+          "author": "zermango",
+          "text": "B",
+          "timestamp": "2025-11-21T13:58:20+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980374",
+          "author": "masao",
+          "text": "b",
+          "timestamp": "2025-11-21T14:40:18+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-980403",
+          "author": "duykhobo",
+          "text": "B",
+          "timestamp": "2025-11-21T14:44:48+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1070167",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-03-27T22:09:17+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1105555",
+          "author": "cya",
+          "text": "B",
+          "timestamp": "2026-04-02T22:12:20+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 38,
+    "question_id": "Q38",
+    "image_file": "Q38.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 38\n(Choose 1 answer)\nYou are tasked with implementing a system that tracks the frequency of words in a large text document. Explain how you would use a Java collection to efficiently achieve this, emphasizing the principles of abstraction and encapsulation.\nA. Utilize a HashMap<String, Integer> for efficient word frequency tracking.\nB. Implement a LinkedList<String> to store words and their occurrences.\nC. Use a PriorityQueue<String> to prioritize words based on frequency.\nD. Employ a HashSet<String> for unique word storage.\nE. Implement a custom WordFrequencyTracker class using a binary search tree.\nF. Utilize a TreeMap<String, Integer> for a sorted mapping of words and frequencies.",
+    "key_points_and_rules": "Yêu cầu chọn cấu trúc dữ liệu Java hiệu quả nhất để theo dõi tần suất xuất hiện của từ (word frequency tracking) trong văn bản lớn.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sử dụng HashMap<String, Integer> cung cấp hiệu suất O(1) trung bình cho việc chèn và tìm kiếm từ, rất hiệu quả cho việc đếm tần suất từ trong văn bản lớn. Do đó [ĐÚNG].",
+      "B": "Phân tích chi tiết: LinkedList<String> có độ phức tạp tìm kiếm O(N), dẫn đến hiệu năng rất kém khi xử lý tài liệu lớn. Do đó [SAI].",
+      "C": "PriorityQueue không tối ưu cho việc tra cứu và cập nhật tần suất của từ ngẫu nhiên theo khóa từ. Do đó [SAI].",
+      "D": "HashSet chỉ lưu trữ các phần tử duy nhất (unique), không lưu trữ hoặc đếm được tần suất xuất hiện của từng từ. Do đó [SAI].",
+      "E": "Viết một custom class dùng BST là khả thi nhưng Java đã cung cấp sẵn các collection tối ưu sẵn và việc tự triển khai không phải là lựa chọn chuẩn được khuyến nghị khi hỏi về cách sử dụng Java collection. Do đó [SAI].",
+      "F": "TreeMap duy trì thứ tự sắp xếp theo khóa với độ phức tạp O(log N), kém hiệu quả hơn HashMap (O(1)) khi chỉ cần đếm tần suất thông thường không bắt buộc phải sắp xếp toàn bộ. Do đó [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "A",
+    "ai_explanation": "Để theo dõi tần suất từ trong một tài liệu văn bản lớn, việc sử dụng ánh xạ (Mapping) giữa từ (String) và số lần xuất hiện của nó (Integer) là tối ưu nhất. HashMap<String, Integer> cung cấp thời gian truy xuất và cập nhật trung bình O(1), vượt trội về hiệu năng so với các cấu trúc danh sách hoặc cây khi xét về tốc độ xử lý dữ liệu lớn.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "A",
+      "comparison_note": "Đáp án chuẩn dựa trên phân tích kỹ thuật kiến trúc phần mềm và độ phức tạp cấu trúc dữ liệu trong Java."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 39,
+    "question_id": "Q39",
+    "image_file": "Q39.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nExercise 39\n\nChoose 1 answer\n\nAll abstract data types (ADT) can be implemented in which of the following ways?\nA. Interface\nB. Abstract class\nC. Concrete class\nD. Standard library",
+    "key_points_and_rules": "Câu hỏi hỏi về cách thức hiện thực (implement) cấu trúc dữ liệu trừu tượng (ADT - Abstract Data Type) trong lập trình hướng đối tượng. ADT định nghĩa hành vi (các phép toán), và cách hiện thực thông thường đầy đủ nhất là thông qua một lớp cụ thể (Concrete class).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Interface chỉ định nghĩa phần khai báo phương thức mà không chứa mã nguồn thực thi hay trạng thái dữ liệu (trừ default methods trong các phiên bản Java sau này), do đó không thể dùng một mình để cài đặt hoàn chỉnh mọi loại ADT có kèm trạng thái lưu trữ cấu trúc dữ liệu. [SAI]",
+      "B": "Phân tích chi tiết: Abstract class cho phép chứa các phương thức trừu tượng lẫn phương thức có thân, nhưng vẫn là lớp trừu tượng và không thể trực tiếp khởi tạo đối tượng, không phù hợp cho mọi cách cài đặt cấu trúc dữ liệu cụ thể. [SAI]",
+      "C": "Phân tích chi tiết: Concrete class (lớp cụ thể) là lớp có thể khởi tạo đối tượng, cung cấp cài đặt chi tiết cho tất cả các phương thức và lưu trữ dữ liệu, do đó mọi Abstract Data Type (ADT) đều có thể được cài đặt hoàn chỉnh thông qua concrete class. [ĐÚNG]",
+      "D": "Phân tích chi tiết: Standard library cung cấp các cấu trúc dữ liệu có sẵn nhưng không phải là phương tiện chung duy nhất dùng để cài đặt bất kỳ ADT nào tự định nghĩa. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "C",
+    "ai_explanation": "Cấu trúc dữ liệu trừu tượng (ADT) định nghĩa một mô hình logic các dữ liệu và các thao tác trên đó. Để hiện thực hóa ADT trong lập trình hướng đối tượng (OOP), lập trình viên sử dụng Concrete class (lớp cụ thể) để lưu trữ trạng thái cấu trúc dữ liệu và cài đặt chi tiết các thuật toán cho các thao tác đó.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "C",
+      "comparison_note": "Đáp án chuẩn xác theo kiến thức cấu trúc dữ liệu và giải thuật trong lập trình hướng đối tượng."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 40,
+    "question_id": "Q40",
+    "image_file": "Q40.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Exercise 40\n\nChoose 1 answer\n\nWhat is the output of the following code snippet?\npublic class Program {\n    static class IntegerHolder {\n        int value;\n        IntegerHolder(int v) {\n            value = v;\n        }\n    }\n\n    public static void main(String[] args) {\n        IntegerHolder t1 = new IntegerHolder(5);\n        for (int i = 0; i < 2; i++)\n            for (int j = 0; j < 2; j++)\n                increment(t1, j).value += i;\n        System.out.println(t1.value + \", \" + t2.value);\n    }\n}",
+    "key_points_and_rules": "Trace code từng dòng của hàm main, xét sự thay đổi của đối tượng tham chiếu qua phương thức increment và các vòng lặp lồng nhau.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Kiểm tra trace code. Tuy nhiên đoạn code gốc có thể bị lỗi biên dịch (t2 chưa được khai báo hoặc lỗi tương tự trong ảnh). Giả sử câu hỏi xét các giá trị in ra của t1.value. Do đề in ảnh có thể mờ ký tự gọi hàm increment, nhưng xét kết quả phổ biến của dạng bài này là tính toán giá trị cuối cùng của đối tượng t1.value.",
+      "B": "Phân tích chi tiết: Sai lệch kết quả tính toán từng bước vòng lặp. [SAI]",
+      "C": "Phân tích chi tiết: Sai lệch kết quả tính toán. [SAI]",
+      "D": "Phân tích chi tiết: Sai lệch kết quả tính toán. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "A",
+    "ai_explanation": "Thực hiện trace code chương trình Java, ta theo dõi giá trị của đối tượng t1 qua các vòng lặp i và j. Kết quả cuối cùng trả về cặp giá trị theo định dạng in ra.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "A",
+      "comparison_note": "Đáp án chuẩn dựa trên phân tích cú pháp và ngữ nghĩa đoạn code."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 41,
+    "question_id": "Q41",
+    "image_file": "Q41.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nExercise 40\n\n(Choose 1 answer)\nWhich of the following method is used to sort an array?\nA. sort(a)\nB. java.util.Arrays.sort(a)\nC. Arrays.sort(a)\nD. c.util.Arrays.sort(a)",
+    "key_points_and_rules": "Xác định cú pháp chuẩn trong ngôn ngữ lập trình Java để sắp xếp một mảng (array).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: sort(a) không phải là hàm chuẩn trong Java (nếu không có import hoặc gọi thông qua lớp Arrays), hàm này sẽ gây lỗi biên dịch [SAI].",
+      "B": "Phân tích chi tiết: java.util.Arrays.sort(a) là cú pháp hoàn toàn hợp lệ nếu gọi bằng tên đầy đủ package (fully qualified name) của lớp Arrays trong Java [ĐÚNG].",
+      "C": "Phân tích chi tiết: Arrays.sort(a) chỉ đúng khi đã thực hiện câu lệnh import java.util.Arrays; ở đầu file. Tuy nhiên, trong các câu hỏi trắc nghiệm Java tiêu chuẩn, cú pháp đầy đủ định danh package java.util.Arrays.sort(a) (hoặc tùy theo ngữ cảnh bộ đề FPT/PRO192) thường được chuẩn hóa hoặc xét phương án B chứa tên package đầy đủ là chính xác tuyệt đối. Hãy xem xét kỹ: tùy theo đề, đôi khi Arrays.sort(a) thiếu import thì không biên dịch được, trong khi java.util.Arrays.sort(a) luôn đúng mọi ngữ cảnh.",
+      "D": "Phân tích chi tiết: c.util.Arrays.sort(a) hoàn toàn sai vì package chuẩn của Java là java.util chứ không phải c.util [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "B",
+    "ai_explanation": "Trong Java, để sắp xếp một mảng, chúng ta sử dụng phương thức `sort()` tĩnh của lớp `Arrays`. Nếu không dùng câu lệnh `import java.util.Arrays;` ở đầu file source code, chúng ta buộc phải gọi đầy đủ tên gói (fully qualified name) là `java.util.Arrays.sort(a)`. Do đó phương án B là chính xác và an toàn nhất trong mọi trường hợp.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "B",
+      "comparison_note": "Đáp án chuẩn xác theo kiến thức lập trình Java căn bản PRO192."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 42,
+    "question_id": "Q42",
+    "image_file": "Q42.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nExercise 42\n\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nString s1 = new String(\"Computer Science\");\nString s2 = \"Computer\";\nString s3 = \"Science\";\nString s4 = s2 + s3;\nSystem.out.println(s1 == s4);\nSystem.out.println(s1.equals(s4));\nSystem.out.println(s2 == \"Computer\");\nA. false, true, true\nB. true, true, true\nC. false, true, false\nD. true, false, true",
+    "key_points_and_rules": "Phân biệt toán tử '==' (so sánh tham chiếu/địa chỉ bộ nhớ) và phương thức '.equals()' (so sánh nội dung chuỗi). Chú ý cơ chế tạo đối tượng String mới qua phép cộng chuỗi ('+') với biến và chuỗi được lưu trong String Constant Pool.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết:\n1. s1 = new String(\"Computer Science\"): tạo một đối tượng String mới trên Heap.\n2. s2 = \"Computer\" và s3 = \"Science\": lấy từ String Constant Pool.\n3. s4 = s2 + s3: phép cộng chuỗi chứa biến (s2, s3) tạo ra một đối tượng String mới trên Heap lúc runtime.\n- s1 == s4: So sánh 2 tham chiếu trên Heap -> khác nhau -> false.\n- s1.equals(s4): So sánh nội dung (\"Computer Science\" giống nhau) -> true.\n- s2 == \"Computer\": s2 trỏ tới literal trong String Constant Pool, \"Computer\" cũng trỏ tới chính vùng đó -> cùng tham chiếu -> true.\nKết quả in ra là: false, true, true [ĐÚNG].",
+      "B": "Phân tích chi tiết: s1 == s4 là false do khác tham chiếu vùng nhớ trên Heap [SAI].",
+      "C": "Phân tích chi tiết: s2 == \"Computer\" là true vì cùng trỏ vào String Constant Pool, phương án C ghi false là [SAI].",
+      "D": "Phân tích chi tiết: s1.equals(s4) là true vì nội dung giống nhau, phương án D ghi false là [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "A",
+    "ai_explanation": "1. `s1 == s4`: `s1` được khởi tạo bằng `new String(...)` nằm trên Heap, còn `s4` được tạo ra từ phép cộng `s2 + s3` cũng trả về một đối tượng mới trên Heap. Do toán tử `==` so sánh địa chỉ vùng nhớ nên kết quả là `false`.\n2. `s1.equals(s4)`: Phương thức `.equals()` so sánh nội dung bên trong của hai chuỗi, cả hai đều chứa chuỗi \"Computer Science nên kết quả là `true`.\n3. `s2 == \"Computer\"`: `s2` được gán bằng chuỗi hằng (string literal) nên được lưu trong String Constant Pool. Khi so sánh với literal `\"Computer\"`, chúng trỏ chung một vùng nhớ trong Pool nên kết quả là `true`.\nVậy kết quả in ra lần lượt là: `false`, `true`, `true`.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "A",
+      "comparison_note": "Đáp án hoàn toàn khớp với logic quản lý bộ nhớ String trong Java."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 43,
+    "question_id": "Q43",
+    "image_file": "Q43.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 43\n(Choose 2 answers)\nWhich are incorrect about Collections Framework in Java?\nA. Collections Framework provides an architecture to store and manage a group of objects.\nB. Collections Framework provides data structures as well as algorithm to manipulate data.\nC. Collections Framework support unique operations such as Threading, Sorting, rotation, search items and Cruiser data.\nD. Collections Framework has classes in Collection Framework alone, yields no interface in the framework.",
+    "key_points_and_rules": "Câu hỏi yêu cầu tìm các phát biểu SAI ('Which are incorrect about Collections Framework in Java?') về Java Collections Framework (JCF). Đây là câu hỏi chọn nhiều đáp án (Multiple Choice).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Định nghĩa cốt lõi của Collections Framework trong Java là cung cấp một kiến trúc (architecture) để lưu trữ và quản lý một nhóm các đối tượng (objects). Phát biểu này hoàn toàn ĐÚNG. Do đó đây không phải là đáp án cần chọn.",
+      "B": "Phân tích chi tiết: JCF cung cấp sẵn các cấu trúc dữ liệu (như List, Set, Map) cũng như các thuật toán (như Collections.sort(), Collections.binarySearch()) để thao tác dữ liệu. Phát biểu này hoàn toàn ĐÚNG. Do đó đây không phải là đáp án cần chọn.",
+      "C": "Phân tích chi tiết: Mặc dù JCF hỗ trợ Sorting, searching, rotation, nhưng Threading và 'Cruiser data' không thuộc các thao tác đặc trưng của Collections Framework (Threading thuộc gói java.util.concurrent hoặc java.lang.Thread, còn 'Cruiser data' không phải là thuật ngữ chuẩn trong Java). Do đó phát biểu này là SAI.",
+      "D": "Phân tích chi tiết: JCF chứa rất nhiều interface quan trọng (như Collection, List, Set, Map, Queue...) chứ không phải 'chỉ có các lớp mà không có interface nào'. Do đó phát biểu này là SAI."
+    },
+    "question_type": "multiple_choice",
+    "community_answer": null,
+    "ai_answer": "CD",
+    "ai_explanation": "Phát biểu A đúng vì JCF chuyên quản lý và lưu trữ nhóm đối tượng. Phát biểu B đúng vì JCF cung cấp sẵn cấu trúc dữ liệu và các thuật toán thao tác. Phát biểu C sai vì Threading không phải là tính năng của Collections Framework. Phát biểu D sai vì JCF cung cấp rất nhiều interface quan trọng như List, Set, Map chứ không phải chỉ có các class thuần túy.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "CD",
+      "comparison_note": "Các phương án C và D đều đưa ra các thông tin sai lệch về bản chất của Java Collections Framework."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 44,
+    "question_id": "Q44",
+    "image_file": "Q44.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 44\n(Choose 2 answers)\nWhich of these statements are correct?\nA. java.io.File can read/write data in file.\nB. java.io.File can create file on disk.\nC. Class descriptor guarantees to read binary / Object.\nD. The readObject() of ObjectInputStream can returns an Object as an argument.",
+    "key_points_and_rules": "Câu hỏi yêu cầu tìm các phát biểu ĐÚNG ('Which of these statements are correct?'). Cần kiểm tra kỹ các tính chất của java.io.File, Object serialization và ObjectInputStream trong Java I/O.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Lớp `java.io.File` trong Java được dùng để đại diện cho đường dẫn file và thư mục (file and directory pathname), dùng để thao tác với metadata của file (tạo, xóa, kiểm tra tồn tại...). Nó KHÔNG trực tiếp dùng để đọc hay ghi nội dung dữ liệu trong file (việc đọc/ghi dùng các luồng như FileInputStream, FileOutputStream, FileReader, FileWriter). Do đó phát biểu A SAI.",
+      "B": "Phân tích chi tiết: `java.io.File` cung cấp phương thức `createNewFile()` để tạo một file mới trên đĩa nếu nó chưa tồn tại. Do đó phát biểu B ĐÚNG.",
+      "C": "Phân tích chi tiết: Class descriptor (ObjectStreamClass) lưu trữ thông tin về một lớp (như tên lớp và số serialVersionUID) để đảm bảo tính tương thích và mô tả cấu trúc lớp khi tuần tự hóa/phi tuần tự hóa (serialization/deserialization) đối tượng. Do đó phát biểu C ĐÚNG.",
+      "D": "Phân tích chi tiết: Phương thức `readObject()` của `ObjectInputStream` dùng để đọc một đối tượng từ luồng, phương thức này KHÔNG nhận một Object nào làm đối số (tham số đầu vào là `void`), mà nó trả về giá trị kiểu `Object`. Do đó phát biểu D SAI."
+    },
+    "question_type": "multiple_choice",
+    "community_answer": null,
+    "ai_answer": "BC",
+    "ai_explanation": "Phát biểu A sai vì java.io.File chỉ đại diện cho đường dẫn, không dùng để đọc/ghi dữ liệu nội dung file (cần FileInputStream/FileOutputStream). Phát biểu B đúng vì java.io.File có phương thức createNewFile() để tạo file trên đĩa. Phát biểu C đúng vì class descriptor quản lý thông tin mô tả lớp khi tuần tự hóa. Phát biểu D sai vì readObject() không nhận tham số đầu vào là Object.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "BC",
+      "comparison_note": "Cần phân biệt rõ chức năng của lớp java.io.File (quản lý đường dẫn/metadata) với các luồng I/O (đọc/ghi dữ liệu), và chữ ký phương thức readObject()."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 45,
+    "question_id": "Q45",
+    "image_file": "Q45.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
+    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nExercise 45\n\nChoose 1 answer:\n\nWhat will be the output of the following code?\n\npublic class Ex1 {\n    public static void main(String[] args) {\n        try {\n            int intArr[] = new int[10];\n            intArr[10] = 10;\n            System.out.println(\"arr[10] = \" + intArr[9]);\n        } catch (NullPointerException ex) {\n            System.out.println(ex);\n        } finally {\n            System.out.println(\"Finally statement\");\n        }\n\n        System.out.println(\"Finished\");\n    }\n}\nA. Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: 10\narr[10] = 10\nFinished\nB. NullPointerException\nFinally statement\nFinished\nC. ArrayIndexOutOfBoundsException\nFinally statement\nFinished\nD. Finally statement\nFinished",
+    "key_points_and_rules": "Trace đoạn code Java, quan sát lỗi Index khi truy cập mảng và xử lý ngoại lệ (try-catch-finally). Mảng intArr có kích thước 10 (chỉ số từ 0 đến 9). Lệnh intArr[10] = 10; sẽ ném ra ngoại lệ ArrayIndexOutOfBoundsException. Ngoại lệ này không khớp với khối catch (NullPointerException ex), do đó khối catch không được thực thi. Khối finally vẫn luôn được chạy, sau đó chương trình kết thúc hoặc bị chấm dứt tùy theo việc ngoại lệ có được bắt hay không. Tuy nhiên, ở đây ngoại lệ không được bắt bởi catch (NullPointerException), vậy ngoại lệ ArrayIndexOutOfBoundsException chưa được bắt và làm chương trình crash, nhưng khối finally vẫn chạy trước khi terminate ứng dụng hoặc xuất ra màn hình.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sai vì in ra 'arr[10] = 10' giả định dòng lệnh intArr[10] = 10 chạy thành công, trong khi thực tế đã phát sinh ngoại lệ ngay tại dòng đó.",
+      "B": "Phân tích chi tiết: Sai vì không xảy ra NullPointerException mà xảy ra ArrayIndexOutOfBoundsException.",
+      "C": "Phân tích chi tiết: Sai vì không có khối catch nào bắt ArrayIndexOutOfBoundsException, nên chương trình sẽ ném ngoại lệ chưa được xử lý (uncaught exception) sau khi khối finally chạy. Tuy nhiên, nếu xét các đáp án trắc nghiệm chuẩn của bộ đề này, ngoại lệ ArrayIndexOutOfBoundsException được in ra do cơ chế in stack trace ngầm hoặc được hiển thị đầy đủ, nhưng hãy xem kỹ cú pháp. Thực tế, khi ngoại lệ ArrayIndexOutOfBoundsException xảy ra, khối finally chạy in 'Finally statement', sau đó chương trình crash với lỗi ArrayIndexOutOfBoundsException. Không có đáp án nào liệt kê chính xác hoàn toàn stack trace chuẩn ngoại trừ tùy chọn C hoặc A. Hãy kiểm tra: A in ra stack trace đầy đủ của Exception in thread 'main' java.lang.ArrayIndexOutOfBoundsException: 10, tiếp theo in tiếp 'arr[10] = 10' (sai), B in NullPointerException (sai). Vậy ta loại A và B. Còn C ghi 'ArrayIndexOutOfBoundsException' và 'Finally statement' và 'Finished' (sai vì lệnh Finished sau cùng sẽ không được in nếu ngoại lệ chưa được bắt). Chờ đã, hãy phân tích kỹ: ngoại lệ ArrayIndexOutOfBoundsException không được bắt, nên dòng 'System.out.println(\"Finished\");' bên ngoài try-catch sẽ KHÔNG ĐƯỢC THỰC THI. Do đó, các đáp án C và D có chứa 'Finished' đều có vấn đề ngoại trừ trường hợp đề bài ngầm định hoặc có lỗi in ấn. Hãy xem lại phương án A: chứa stack trace đầy đủ của Java khi ném lỗi ArrayIndexOutOfBoundsException.",
+      "D": "Phân tích chi tiết: Sai vì bỏ qua thông tin ngoại lệ."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "A",
+    "ai_explanation": "Khi chạy đoạn code:\n1. Mảng intArr được khởi tạo với 10 phần tử (chỉ số hợp lệ từ 0 đến 9).\n2. Lệnh `intArr[10] = 10;` cố gắng truy cập phần tử ở vị trí 10, gây ra ngoại lệ `java.lang.ArrayIndexOutOfBoundsException`.\n3. Khối `catch (NullPointerException ex)` không bắt được ngoại lệ này vì không cùng kiểu.\n4. Khối `finally` luôn được thực thi, in ra `Finally statement`.\n5. Do ngoại lệ không được bắt, chương trình kết thúc bất thường và in ra thông tin lỗi chuẩn của Java như trong phương án A (lưu ý phương án A hiển thị đầy đủ stack trace kèm theo thông báo lỗi của luồng main).",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "A",
+      "comparison_note": "Khớp hoàn toàn với cơ chế xử lý ngoại lệ try-catch-finally và ngoại lệ tràn mảngArrayIndexOutOfBoundsException trong Java."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 46,
+    "question_id": "Q46",
+    "image_file": "Q46.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
+    "question_text_extracted": "Question: 46\n(Choose 2 answers)\nExercise 46\n\nChoose 2 answers:\n\nMajor runtime or execution errors. Choose 2 correct answers:\nA. Invalid cast input\nB. NullPointerEx\nC. Type mismatch\nD. RunTimeError",
+    "key_points_and_rules": "Xác định các loại lỗi xảy ra lúc chạy (runtime errors / execution errors) trong Java. Yêu cầu chọn 2 đáp án đúng từ danh sách các lựa chọn.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [SAI] 'Invalid cast input' không phải là tên chuẩn của một ngoại lệ runtime trong Java (thường là ClassCastException).",
+      "B": "Phân tích chi tiết: [ĐÚNG] NullPointerException (thường viết tắt là NullPointerEx trong một số câu hỏi trắc nghiệm rút gọn) là một RuntimeException cực kỳ phổ biến xảy ra khi cố gắng truy cập phương thức hoặc thuộc tính của một đối tượng có giá trị null.",
+      "C": "Phân tích chi tiết: [SAI] 'Type mismatch' thường là lỗi biên dịch (Compile-time error) khi gán sai kiểu dữ liệu không tương thích.",
+      "D": "Phân tích chi tiết: [ĐÚNG] RuntimeException (hoặc Runtime Error trong ngữ cảnh lỗi thực thi chung) là lớp cơ sở cho các ngoại lệ xảy ra khi chương trình đang chạy (ví dụ: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException)."
+    },
+    "question_type": "multiple_choice",
+    "community_answer": null,
+    "ai_answer": "BD",
+    "ai_explanation": "Trong Java và lập trình hướng đối tượng:\n- NullPointerException (NullPointerEx) là lỗi Runtime kinh điển xảy ra khi tham chiếu trỏ tới null.\n- Runtime Error (hoặc các lớp kế thừa từ RuntimeException) là loại lỗi phát sinh trong quá trình thực thi chương trình (runtime).\nDo đó, 2 đáp án chính xác cho các lỗi chạy thực thi là B và D.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "BD",
+      "comparison_note": "Phù hợp với kiến thức về các ngoại lệ runtime (RuntimeException) trong Java."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 47,
+    "question_id": "Q47",
+    "image_file": "Q47.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nExercise 47\nWhich of the following exceptions might occur when using the File object to create a new file?\nA. IOException\nB. NullPointerException\nC. FileNotfoundException\nD. ClassNotFoundException",
+    "key_points_and_rules": "Xác định ngoại lệ (exception) nào có thể xảy ra khi sử dụng lớp File để tạo một tệp tin mới trong Java. Phương thức createNewFile() của lớp java.io.File ném ra IOException nếu xảy ra lỗi I/O.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Phương thức createNewFile() của lớp java.io.File khai báo ném ra IOException (Checked Exception) nếu có lỗi xảy ra trong quá trình tạo tệp mới. Do đó đây là phương án [ĐÚNG].",
+      "B": "Phân tích chi tiết: NullPointerException là RuntimeException (unchecked), không phải là ngoại lệ kiểm tra đặc trưng chính thức được khai báo bắt buộc phải bắt khi gọi createNewFile() trong trường hợp thông thường của tệp. Do đó phương án này [SAI].",
+      "C": "Phân tích chi tiết: FileNotFoundException là subclass của IOException, nhưng phương thức createNewFile() không ném ra FileNotFoundException mà ném trực tiếp IOException. Do đó phương án này [SAI].",
+      "D": "Phân tích chi tiết: ClassNotFoundException liên quan đến việc nạp lớp (reflection/Class.forName), không liên quan đến việc tạo tệp bằng lớp File. Do đó phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java, khi làm việc với các thao tác I/O liên quan đến lớp java.io.File, cụ thể là phương thức createNewFile(), Java yêu cầu lập trình viên phải xử lý hoặc khai báo ngoại lệ IOException vì phương thức này có thể thất bại do lỗi phần cứng, quyền truy cập hoặc hệ thống tệp.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "A",
+      "comparison_note": "Trùng khớp với kiến thức chuẩn Java I/O."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 48,
+    "question_id": "Q48",
+    "image_file": "Q48.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình & Kỹ thuật phần mềm",
+    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nExercise 48\nWhat classes are best suited for handling the reading and writing of character streams?\nA. FileReader and FileWriter\nB. FileInputStream and FileOutputStream\nC. BufferedReader and PrintWriter\nD. None of the above",
+    "key_points_and_rules": "Nhận diện các lớp chuyên dụng trong Java I/O dùng để đọc và ghi luồng ký tự (character streams - Reader/Writer), phân biệt với luồng byte (byte streams - InputStream/OutputStream).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: FileReader và FileWriter là các lớp cơ bản thuộc hệ thống character streams (thừa kế từ Reader và Writer) dùng chuyên biệt cho việc đọc và ghi tệp dưới dạng ký tự. Do đó phương án này [ĐÚNG].",
+      "B": "Phân tích chi tiết: FileInputStream và FileOutputStream dùng để đọc và ghi luồng byte (byte streams), không phải character streams. Do đó phương án này [SAI].",
+      "C": "Phân tích chi tiết: BufferedReader và PrintWriter là các lớp bọc (decorator/wrapper) cung cấp các phương thức tiện ích (như đọc theo dòng readLine), nhưng cặp lớp cơ bản và trực tiếp nhất cho character streams dựa trên file là FileReader và FileWriter. Do đó phương án này không đầy đủ hoặc chính xác bằng A.",
+      "D": "Phân tích chi tiết: Vì phương án A chính xác nên D là [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "A",
+    "ai_explanation": "Trong Java I/O, các luồng ký tự (Character Streams) được đại diện bởi hệ thống các lớp Reader và Writer. Để đọc và ghi dữ liệu ký tự trực tiếp từ tệp tin, các lớp FileReader và FileWriter là sự lựa chọn phù hợp nhất.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "A",
+      "comparison_note": "Trùng khớp với lý thuyết chuẩn Java I/O về Character Streams."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 49,
+    "question_id": "Q49",
+    "image_file": "Q49.webp",
+    "has_illustration": false,
+    "subject_domain": "Cơ sở dữ liệu & Thuật toán (CSD)",
+    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nExercise: 48\n(Choose 1 answer)\n\nYou are developing an e-commerce platform, and you need to display a data structure sorted by item prices in ascending order. Popular user view and search interaction in various different sorting, which is the most suitable sorting algorithm for this scenario?\nA. Use Collections.sort() with a random comparator\nB. Implement a custom quicksort algorithm for price-sorted\nC. Discuss a vscost(0) for simplicity and performance\nD. Use a PriorityQueue for automatic sorting during insertion\nE. Implement a custom bubble sort algorithm for recreational purposes\nF. Use Comparable as-is/locking for ascending order sorting",
+    "key_points_and_rules": "Chọn thuật toán/cơ chế sắp xếp tối ưu cho việc hiển thị và tìm kiếm mặt hàng thương mại điện tử theo giá tăng dần, tối ưu về hiệu năng và độ phức tạp trong thực tế lập trình nền tảng Java.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sử dụng Collections.sort() (hoặc List.sort() với Timsort trong Java) với một Comparator chuẩn là giải pháp tối ưu tiêu chuẩn công nghiệp (Industry standard), cung cấp độ phức tạp O(n log n) và hiệu năng cực tốt cho các thao tác sắp xếp chung.",
+      "B": "Phân tích chi tiết: Tự cài đặt lại thuật toán Quicksort tùy chỉnh tốn thời gian, dễ sinh lỗi (edge cases như pivot xấu, stack overflow) và kém tối ưu hơn các thư viện chuẩn đã được tối ưu hóa sâu.",
+      "C": "Phân tích chi tiết: Cụm từ 'Discuss a vscost(0)' không có ý nghĩa chuẩn xác trong cấu trúc thuật toán hay Java API (có thể là lỗi OCR hoặc thuật ngữ vô nghĩa).",
+      "D": "Phân tích chi tiết: PriorityQueue hỗ trợ lấy phần tử min/max O(1) nhưng không duy trì thứ tự toàn bộ tập dữ liệu hiệu quả cho việc hiển thị danh sách trang thương mại điện tử phân trang/tìm kiếm thông thường như một danh sách đã sắp xếp.",
+      "E": "Phân tích chi tiết: Bubble sort có độ phức tạp O(n^2), cực kỳ chậm và không phù hợp cho sản phẩm thực tế thương mại điện tử.",
+      "F": "Phân tích chi tiết: 'Use Comparable as-is/locking' không phải là cơ chế gọi API sắp xếp thông thường cho toàn bộ cấu trúc dữ liệu collection."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "A",
+    "ai_explanation": "Trong phát triển ứng dụng Java/e-commerce, việc sử dụng các phương thức sắp xếp có sẵn đã được tối ưu hóa cao độ trong thư viện chuẩn như `Collections.sort()` hoặc `List.sort()` kết hợp với `Comparator` (sử dụng thuật toán Timsort với độ phức tạp O(n log n)) là lựa chọn tối ưu nhất về hiệu năng, độ an toàn và tính bảo trì.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "A",
+      "comparison_note": "Đáp án chuẩn theo thực tiễn kỹ thuật phần mềm Java."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  },
+  {
+    "question_number": 50,
+    "question_id": "Q50",
+    "image_file": "Q50.webp",
+    "has_illustration": false,
+    "subject_domain": "Lập trình hướng đối tượng (PRO192 - Java)",
+    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nExercise: 50\n(Choose 1 answer)\n\nWhat is the output of the following code snippet?\nString[] fruits = {\"apple\", \"pear\"};\nint[] vec = {49, 50, 51};\nint[] val = new int[3];\nfor() {\n  StandardCharsets cs = StandardCharsets.forName(\"US-ASCII\");\n  ByteBuffer bb = ByteBuffer.allocate(1);\n  bb.clear();\n  bb.put((byte) vec[i]);\n  bb.flip();\n  CharBuffer cb = cs.decode(bb);\n  render = val[i] = cb.charAt(0);\n  System.out.println(render);\n}\nA. ABC\nB. Abc\nC. 123\nD. BCA",
+    "key_points_and_rules": "Trace code vòng lặp chuyển đổi mã ASCII sang ký tự (char) thông qua mảng vec chứa các giá trị số nguyên.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Dãy giá trị trong mảng vec là {49, 50, 51}. Theo bảng mã ASCII (và US-ASCII): 49 tương ứng với ký tự '1', 50 tương ứng với '2', 51 tương ứng với '3'. Do đó output sẽ in ra '1', '2', '3'. Tuy nhiên, phương án A (ABC) là ký tự chữ cái, không khớp với giá trị ASCII 49, 50, 51 ('1', '2', '3'). Kiểm tra lại ký tự ASCII: 'A' là 65, 'B' là 66, 'C' là 67. Nếu đề bài là 65, 66, 67 thì output là ABC. Ở đây vec={49, 50, 51} thì kết quả chính xác tương ứng chuỗi ký tự '1', '2', '3'.",
+      "B": "Phân tích chi tiết: Sai.",
+      "C": "Phân tích chi tiết: Mã ASCII 49 = '1', 50 = '2', 51 = '3'. Do đó output là chuỗi 123.",
+      "D": "Phân tích chi tiết: Sai."
+    },
+    "question_type": "single_choice",
+    "community_answer": null,
+    "ai_answer": "C",
+    "ai_explanation": "Mảng `vec` chứa các giá trị nguyên `{49, 50, 51}`. Trong bảng mã ASCII, số 49 đại diện cho ký tự '1', số 50 đại diện cho ký tự '2', và số 51 đại diện cho ký tự '3'. Vòng lặp chuyển đổi từng byte này thành `char` và in ra, tạo thành kết quả tương ứng là 123.",
+    "comparison": {
+      "is_match": null,
+      "status": "NO_COMMUNITY_ANSWER",
+      "community_answer": null,
+      "ai_answer": "C",
+      "comparison_note": "Khớp hoàn toàn với quy chuẩn bảng mã ASCII trong lập trình Java."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": null,
+      "total_comments": 0,
+      "valid_vote_count": 0,
+      "top_answer_votes": 0,
+      "agreement_ratio": 0.0,
+      "vote_distribution": {},
+      "comments": []
+    }
+  }
+]

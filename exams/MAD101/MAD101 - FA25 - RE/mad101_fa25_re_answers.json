@@ -1,0 +1,4085 @@
+[
+  {
+    "question_number": 1,
+    "question_id": "Q1",
+    "image_file": "Q1.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 1\n(Choose 1 answer)\nChoose a tuple of values of p, q, r such that the proposition\n(p → q) ∨ r\nis False.\nA. p=F, q=T, r=F\nB. p=q=T, r=F\nC. p=T, q=F, r=F\nD. p= q= r=F\nE. None of the mentioned",
+    "key_points_and_rules": "Mệnh đề dạng tuyển A ∨ B nhận giá trị Sai (False) khi và chỉ khi cả A và B đều Sai. Mệnh đề kéo theo p → q nhận giá trị Sai khi và chỉ khi p Đúng (True) và q Sai (False).",
+    "option_by_option_analysis": {
+      "A": "Phân tích phương án A: Nếu p=F, q=T, r=F thì (F → T) = T, do đó (T) ∨ F = T (Đúng). Phương án này [SAI].",
+      "B": "Phân tích phương án B: Nếu p=T, q=T, r=F thì (T → T) = T, do đó (T) ∨ F = T (Đúng). Phương án này [SAI].",
+      "C": "Phân tích phương án C: Nếu p=T, q=F, r=F thì (T → F) = F, do đó F ∨ F = F (Sai). Phương án này [ĐÚNG].",
+      "D": "Phân tích phương án D: Nếu p=F, q=F, r=F thì (F → F) = T, do đó T ∨ F = T (Đúng). Phương án này [SAI].",
+      "E": "Phân tích phương án E: Vì đã tìm thấy phương án C thỏa mãn, nên phương án E [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Để biểu thức ((p → q) ∨ r) nhận giá trị False, ta cần đồng thời:\n1) r = F (Sai)\n2) (p → q) = F (Sai)\n\nPhép kéo theo p → q chỉ Sai khi tiền đề p = T (Đúng) và kết luận q = F (Sai).\nDo đó, bộ giá trị cần tìm là: p = T, q = F, r = F.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 8,
+      "valid_vote_count": 7,
+      "top_answer_votes": 7,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 7
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999402",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:05:46+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1040108",
+          "author": "Phatfpt",
+          "text": "C",
+          "timestamp": "2026-02-23T18:29:50+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1059423",
+          "author": "Silk-Road",
+          "text": "từ ngoài vào trong, bên ngoài có phép tuyển nên chỉ sai khi cả hai sai => r sai. trong ngoặc phép kéo theo chỉ sai khi p đúng q sai. => q và r sai, p đúng.",
+          "timestamp": "2026-03-17T02:27:21+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1120003",
+          "author": "V1C3",
+          "text": "C",
+          "timestamp": "2026-04-05T01:28:46+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121521",
+          "author": "tungmurom",
+          "text": "C",
+          "timestamp": "2026-04-05T16:02:49+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121657",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-04-05T16:49:21+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121799",
+          "author": "sky@lope",
+          "text": "C",
+          "timestamp": "2026-04-05T17:41:42+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1153263",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:13:49+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 2,
+    "question_id": "Q2",
+    "image_file": "Q2.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 2\n(Choose 1 answer)\nGiven the propositions\n\np= \"Tom washed the car\" and\nq= \"Tom went to mercantile\".\n\nExpress the following sentence into a logical expression\n\n\"Tom neither washed the car nor went to mercantile\".\n\n(i) ¬(p ∨ q)\n(ii) ¬(p ∧ q)\n(iii) ¬p ∨ q\n(iv) p ∨ ¬q\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
+    "key_points_and_rules": "Cấu trúc \"Neither A nor B\" (Không A cũng không B) trong logic mệnh đề tương đương với ¬A ∧ ¬B, theo định luật De Morgan tương đương với ¬(A ∨ B).",
+    "option_by_option_analysis": {
+      "A": "Phân tích phương án A: Chọn biểu thức (i) ¬(p ∨ q), đúng với quy tắc chuyển đổi \"Neither p nor q\" thành ¬(p ∨ q). Phương án này [ĐÚNG].",
+      "B": "Phân tích phương án B: Chọn biểu thức (ii) ¬(p ∧ q), tương đương với \"Tom không vừa rửa xe vừa đi đến cửa hàng\" (không phải 'neither... nor'). Phương án này [SAI].",
+      "C": "Phân tích phương án C: Chọn biểu thức (iii) ¬p ∨ q, có nghĩa là \"Tom không rửa xe hoặc Tom đi đến cửa hàng\". Phương án này [SAI].",
+      "D": "Phân tích phương án D: Chọn biểu thức (iv) p ∨ ¬q, có nghĩa là \"Tom rửa xe hoặc Tom không đi đến cửa hàng\". Phương án này [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Câu \"Tom neither washed the car nor went to mercantile\" có nghĩa là Tom không rửa xe VÀ Tom không đi đến cửa hàng, tức là ¬p ∧ ¬q.\nTheo định luật De Morgan, ¬p ∧ ¬q ≡ ¬(p ∨ q).\nDo đó, biểu thức đúng là (i), tương ứng với lựa chọn A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 7,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999403",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:05:54+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1040109",
+          "author": "Phatfpt",
+          "text": "A",
+          "timestamp": "2026-02-23T18:30:53+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1059424",
+          "author": "Silk-Road",
+          "text": "neither---nor---=> nagative 2 vế",
+          "timestamp": "2026-03-17T02:29:33+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1120005",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T01:30:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121659",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T16:49:33+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121801",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-05T17:42:27+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153266",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:14:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 3,
+    "question_id": "Q3",
+    "image_file": "Q3.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 3\n(Choose 1 answer)\nWhich propositions are logically equivalent to\n¬ (p ↔ q) ?\n\n(i) p ↔ ¬q\n(ii) ¬p ↔ q\nA. (i) and (ii)\nB. (ii)\nC. (i)\nD. None of the other choices is correct",
+    "key_points_and_rules": "Tính chất tương đương logic của mệnh đề kéo theo hai chiều (biconditional). Mệnh đề ¬(p ↔ q) có cùng giá trị chân lý với phép XOR (p ⊕ q), tức là đúng khi p và q có giá trị chân lý trái ngược nhau.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Cả (i) và (ii) đều có bảng chân lý hoàn toàn trùng khớp với ¬(p ↔ q). Khi p và q trái ngược nhau, p ↔ ¬q và ¬p ↔ q đều cho giá trị Đúng (True). Khi p và q cùng giá trị, cả hai đều cho giá trị Sai (False).",
+      "B": "[SAI] Phương án này thiếu mệnh đề (i) vốn cũng tương đương logic với ¬(p ↔ q).",
+      "C": "[SAI] Phương án này thiếu mệnh đề (ii) vốn cũng tương đương logic với ¬(p ↔ q).",
+      "D": "[SAI] Vì phương án A là chính xác."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Ta xét giá trị chân lý của mệnh đề ¬(p ↔ q):\n- ¬(p ↔ q) nhận giá trị T khi p và q có giá trị chân lý khác nhau ((T, F) hoặc (F, T)) và nhận giá trị F khi p và q giống nhau ((T, T) hoặc (F, F)).\n- Với (i) p ↔ ¬q: Khi p=T, q=F ⇒ ¬q=T ⇒ T ↔ T là T. Khi p=T, q=T ⇒ ¬q=F ⇒ T ↔ F là F. Vậy (i) ≡ ¬(p ↔ q).\n- Với (ii) ¬p ↔ q: Khi p=T, q=F ⇒ ¬p=F ⇒ F ↔ F là T. Khi p=T, q=T ⇒ ¬p=F ⇒ F ↔ T là F. Vậy (ii) ≡ ¬(p ↔ q).\nDo đó, cả (i) và (ii) đều tương đương logic với ¬(p ↔ q).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng chọn (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 7,
+      "valid_vote_count": 7,
+      "top_answer_votes": 7,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 7
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999404",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:06:12+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120009",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T01:33:18+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121662",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T16:50:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121813",
+          "author": "sky@lope",
+          "text": "A. Mệnh đề tương đương đúng khi cả 2 giống nhau, dạng phủ định tương đương thì cả hai mệnh đề phải khác nhau",
+          "timestamp": "2026-04-05T17:47:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1122416",
+          "author": "khanh929gg",
+          "text": "A",
+          "timestamp": "2026-04-05T21:43:45+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153272",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:14:52+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1199412",
+          "author": "Wang lin",
+          "text": "a",
+          "timestamp": "2026-07-26T17:23:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 4,
+    "question_id": "Q4",
+    "image_file": "Q4.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 4\n(Choose 1 answer)\nLet C(x) = \"x has a cat,\"\nD(x) = \"x has a dog,\"\nF(x) = \"x has a ferret.\"\n\nLet the domain consist of all students in your class.\n\nExpress the sentence\n\n\"All students in your class have a cat, a dog, or a ferret.\"\n\nin terms of C(x), D(x), F(x), quantifiers, and logical connectives.\n\n(i) ∃x C(x) ∨ D(x) ∨ F(x)\n(ii) ∃x ¬C(x) ∧ ¬D(x) ∧ ¬F(x)\n(iii) ∀x C(x) ∨ D(x) ∨ F(x)\n(iv) ∀x ¬C(x) ∧ ¬D(x) ∧ ¬F(x)\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
+    "key_points_and_rules": "Biểu diễn mệnh đề ngôn ngữ tự nhiên trong logic vị tự (Predicate Logic):\n- Cụm từ \"All students\" biểu thị lượng từ với mọi ∀x.\n- Cụm từ \"have a cat, a dog, or a ferret\" biểu thị phép tuyển (disjunction ∨) giữa các vị tự C(x), D(x), F(x).",
+    "option_by_option_analysis": {
+      "A": "[SAI] (i) sử dụng lượng từ tồn tại ∃x nghĩa là \"Có ít nhất một học sinh...\", không đúng với yêu cầu \"Tất cả học sinh\".",
+      "B": "[SAI] (ii) diễn đạt \"Tồn tại học sinh không có mèo, không có chó và không có chồn\".",
+      "C": "[ĐÚNG] (iii) ∀x C(x) ∨ D(x) ∨ F(x) diễn đạt chính xác \"Với mọi học sinh x, x có mèo hoặc x có chó hoặc x có chồn\". Mệnh đề (iii) tương ứng với đáp án C.",
+      "D": "[SAI] (iv) diễn đạt \"Tất cả học sinh đều không có mèo, không có chó và không có chồn\"."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Biến đổi câu văn \"All students in your class have a cat, a dog, or a ferret\":\n1. \"All students in your class\": dùng lượng từ với mọi ∀x.\n2. \"have a cat, a dog, or a ferret\": dùng phép tuyển giữa ba vị tự C(x) ∨ D(x) ∨ F(x).\nGhép lại ta được biểu thức: ∀x (C(x) ∨ D(x) ∨ F(x)), tương ứng với mệnh đề (iii).\nDo đó chọn C (ứng với mệnh đề (iii)).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng chọn (C)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999405",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:06:29+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1040110",
+          "author": "Phatfpt",
+          "text": "C",
+          "timestamp": "2026-02-23T18:34:01+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1120010",
+          "author": "V1C3",
+          "text": "C",
+          "timestamp": "2026-04-05T01:33:43+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121663",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-04-05T16:50:35+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121816",
+          "author": "sky@lope",
+          "text": "C",
+          "timestamp": "2026-04-05T17:47:55+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1153281",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:15:47+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 5,
+    "question_id": "Q5",
+    "image_file": "Q5.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic (MAD101)",
+    "question_text_extracted": "Question: 5\n(Choose 1 answer)\nLet P(x) be a propositional function on {-2, -1, 0, 1, 2, 3}.\nFind a proposition that is logically equivalent to\n\n∀x [(x ≥ 1) → P(x)]\n\n(i) P(1) → (P(2) ∧ P(3))\n(ii) P(1) ∨ P(2) ∨ P(3)\n(iii) P(1) ∧ P(2) ∧ P(3)\n(iv) P(1) → (P(2) ∨ P(3))\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
+    "key_points_and_rules": "Khai triển lượng tử toàn thể ∀x trên miền xác định hữu hạn D = {-2, -1, 0, 1, 2, 3}:\n∀x Q(x) ≡ Q(-2) ∧ Q(-1) ∧ Q(0) ∧ Q(1) ∧ Q(2) ∧ Q(3).\nVới Q(x) = (x ≥ 1) → P(x):\n- Khi x ∈ {-2, -1, 0}: Bất đẳng thức (x ≥ 1) nhận giá trị Sai (F). Mệnh đề kéo theo F → P(x) luôn ĐÚNG (T) với mọi P(x).\n- Khi x ∈ {1, 2, 3}: Bất đẳng thức (x ≥ 1) nhận giá trị Đúng (T). Mệnh đề kéo theo T → P(x) tương đương logic với P(x).\nDo đó, biểu thức tương đương với: T ∧ T ∧ T ∧ P(1) ∧ P(2) ∧ P(3) ≡ P(1) ∧ P(2) ∧ P(3).",
+    "option_by_option_analysis": {
+      "A": "[SAI] (i) P(1) → (P(2) ∧ P(3)) không tương đương với P(1) ∧ P(2) ∧ P(3).",
+      "B": "[SAI] (ii) P(1) ∨ P(2) ∨ P(3) là phép tuyển (OR), chỉ tương đương với lượng tử tồn tại ∃x [(x ≥ 1) ∧ P(x)].",
+      "C": "[ĐÚNG] (iii) P(1) ∧ P(2) ∧ P(3) chính xác là dạng rút gọn của mệnh đề đề bài đưa ra.",
+      "D": "[SAI] (iv) P(1) → (P(2) ∨ P(3)) không tương đương logic với phép hội của cả 3 mệnh đề.",
+      "E": "[SAI] Đã có phương án C đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Khai triển biểu thức ∀x [(x ≥ 1) → P(x)] trên miền D = {-2, -1, 0, 1, 2, 3}:\n- Với x = -2: (-2 ≥ 1) → P(-2) ≡ F → P(-2) ≡ T.\n- Với x = -1: (-1 ≥ 1) → P(-1) ≡ F → P(-1) ≡ T.\n- Với x = 0: (0 ≥ 1) → P(0) ≡ F → P(0) ≡ T.\n- Với x = 1: (1 ≥ 1) → P(1) ≡ T → P(1) ≡ P(1).\n- Với x = 2: (2 ≥ 1) → P(2) ≡ T → P(2) ≡ P(2).\n- Với x = 3: (3 ≥ 1) → P(3) ≡ T → P(3) ≡ P(3).\nKết hợp lại bằng phép hội ∧:\nT ∧ T ∧ T ∧ P(1) ∧ P(2) ∧ P(3) ≡ P(1) ∧ P(2) ∧ P(3).\nĐáp án tương ứng với biểu thức (iii), tức là phương án C.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án tính toán trùng khớp hoàn toàn với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999406",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:07:35+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1120011",
+          "author": "V1C3",
+          "text": "C",
+          "timestamp": "2026-04-05T01:34:45+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121665",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-04-05T16:51:21+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121820",
+          "author": "sky@lope",
+          "text": "C",
+          "timestamp": "2026-04-05T17:49:32+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1153282",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:16:10+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 6,
+    "question_id": "Q6",
+    "image_file": "Q6.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic (MAD101)",
+    "question_text_extracted": "Question: 6\n(Choose 1 answer)\nLet L(x,y) be the statement \"x + y > 5\".\n\nTranslate the statement into logical expression\n\n\"For any x, there are y and y' such that x + y > 5 and x + y' ≤ 5\"\n\n(i) ∀x(∃yL(x, y) ∧ ∃y'(¬L(x, y')))\n(ii) ∀x(∃yL(x, y) ∧ ∃y'(L(x, y')))\n(iii) ∀x(∃yL(x, y) ∧ ∀y'(¬L(x, y')))\n(iv) ∀x(∃yL(x, y) ∨ ∃y'(¬L(x, y')))\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
+    "key_points_and_rules": "Dịch mệnh đề ngôn ngữ tự nhiên sang biểu thức logic:\n1. \"For any x\": ∀x\n2. \"there are y and y'\": ∃y ∃y'\n3. \"such that x + y > 5\": L(x, y)\n4. \"and\": ∧\n5. \"x + y' ≤ 5\": Là phủ định của \"x + y' > 5\", tức là ¬L(x, y').\nDo hai biến y và y' độc lập trong phạm vi tồn tại, ∃y ∃y' (L(x, y) ∧ ¬L(x, y')) tương đương với (∃y L(x, y)) ∧ (∃y' ¬L(x, y')).",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] (i) ∀x(∃yL(x, y) ∧ ∃y'(¬L(x, y'))) dịch chính xác mệnh đề đề bài.",
+      "B": "[SAI] (ii) Dùng L(x, y') tương ứng với x + y' > 5, không đúng với điều kiện x + y' ≤ 5.",
+      "C": "[SAI] (iii) Dùng ∀y' (\"for all y'\") thay vì ∃y' (\"there is y'\").",
+      "D": "[SAI] (iv) Dùng phép tuyển ∨ (\"or\") thay vì phép hội ∧ (\"and\").",
+      "E": "[SAI] Đã có phương án A đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Phân tích câu \"For any x, there are y and y' such that x + y > 5 and x + y' ≤ 5\":\n- \"For any x\" ➔ ∀x\n- \"there are y and y' such that ...\" ➔ ∃y ... ∧ ∃y' ...\n- \"x + y > 5\" ➔ L(x, y)\n- \"and\" ➔ ∧\n- \"x + y' ≤ 5\" ➔ ¬(x + y' > 5) ➔ ¬L(x, y')\nGhép lại ta thu được: ∀x(∃y L(x, y) ∧ ∃y'(¬L(x, y'))), ứng với dạng (i), tức phương án A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án tính toán trùng khớp hoàn toàn với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999407",
+          "author": "kohaku_19",
+          "text": "a",
+          "timestamp": "2025-11-28T12:08:10+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1040111",
+          "author": "Phatfpt",
+          "text": "a",
+          "timestamp": "2026-02-23T18:54:48+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120012",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T01:35:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121826",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-05T17:51:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153283",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:17:48+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 7,
+    "question_id": "Q7",
+    "image_file": "Q7.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 7\n(Choose 1 answer)\nLet m, n be integers. Translate the sentence into a logical expression\n“Each integer is either odd or even”\n(i) ∀ m ∀ n [(m=2n+1) ∨ (m=2n)]\n(ii) ∀ m ∃ n [(m=2n+1) ∨ (m=2n)]\n(iii) ∃ m ∃ n [(m=2n+1) ∨ (m=2n)]\n(iv) ∃ m ∀ n [(m=2n+1) ∨ (m=2n)]\nA. (ii)\nB. (i)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
+    "key_points_and_rules": "Cú pháp dịch ngôn ngữ tự nhiên sang lượng từ logic:\n- \"Each integer\" (Mọi số nguyên m): sử dụng lượng từ toàn thể ∀ m.\n- \"is either odd or even\" (là số lẻ m = 2n + 1 hoặc số chẵn m = 2n): tồn tại số nguyên n (∃ n) sao cho m = 2n + 1 hoặc m = 2n.\n- Biểu thức hoàn chỉnh: ∀ m ∃ n [(m = 2n + 1) ∨ (m = 2n)].",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Tương ứng với mệnh đề (ii): ∀ m ∃ n [(m=2n+1) ∨ (m=2n)], diễn tả chính xác mệnh đề \"Với mọi số nguyên m, tồn tại một số nguyên n sao cho m là số lẻ (m = 2n+1) hoặc m là số chẵn (m = 2n)\".",
+      "B": "[SAI] Mệnh đề (i) dùng ∀ n, nghĩa là với mọi m và với mọi n thì m = 2n+1 hoặc m = 2n, điều này không đúng (chỉ tồn tại một số n cụ thể cho mỗi m).",
+      "C": "[SAI] Mệnh đề (iii) dùng ∃ m ∃ n, nghĩa là chỉ có ít nhất một số m là số lẻ hoặc số chẵn, không thể hiện tính tổng quát \"Each integer\".",
+      "D": "[SAI] Mệnh đề (iv) dùng ∃ m ∀ n, nghĩa là tồn tại một số m thỏa mãn với mọi n, điều này sai về mặt logic.",
+      "E": "[SAI] Phương án A đúng nên E sai."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Mệnh đề \"Each integer is either odd or even\" phát biểu rằng với mọi số nguyên $m$, tồn tại số nguyên $n$ sao cho $m$ có dạng $2n+1$ (lẻ) hoặc $2n$ (chẵn). \nKý hiệu logic tương ứng là: $\\forall m \\exists n [(m=2n+1) \\lor (m=2n)]$, ứng với công thức (ii).\nDo đó, đáp án đúng là A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án phân tích hoàn toàn trùng khớp với đáp án cộng đồng (lựa chọn A - biểu thức (ii))."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999408",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:08:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1040112",
+          "author": "Phatfpt",
+          "text": "A",
+          "timestamp": "2026-02-23T18:58:06+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120015",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T01:36:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121671",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T16:53:02+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121828",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-05T17:52:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153284",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:18:34+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 8,
+    "question_id": "Q8",
+    "image_file": "Q8.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nRecall some rules of inference\nModus ponens: p ∧ (p → q) → q\nModus tollens: ¬q ∧ (p → q) → ¬p\nHypothetical syllogism: (p → q) ∧ (q → r) → (p → r)\nDisjunctive syllogism: [(p ∨ q) ∧ ¬p] → q\nDetermine the rule used in the argument:\n“If I wake up early then I will read a book. I woke up early today. Therefore I will read a book.”\nA. Modus ponens\nB. Modus tollens\nC. Hypothetical syllogism\nD. Disjunctive syllogism\nE. None of the other choices is correct",
+    "key_points_and_rules": "Quy tắc suy luận Modus Ponens (Khẳng định giả thiết):\n- Đặt $p$: \"I wake up early\" (Tôi thức dậy sớm).\n- Đặt $q$: \"I will read a book\" (Tôi sẽ đọc sách).\n- Tiền đề 1: $p \\rightarrow q$ (\"If I wake up early then I will read a book\").\n- Tiền đề 2: $p$ (\"I woke up early today\").\n- Kết luận: $q$ (\"Therefore I will read a book\").\n- Dạng suy luận: $(p \\rightarrow q) \\land p \\Rightarrow q$, đây chính là quy tắc Modus Ponens.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Quy tắc Modus Ponens có dạng $[p \\land (p \\rightarrow q)] \\rightarrow q$, phù hợp chính xác với lập luận đã cho.",
+      "B": "[SAI] Modus Tollens có dạng $[\\neg q \\land (p \\rightarrow q)] \\rightarrow \\neg p$ (Phủ định kết luận để phủ định giả thiết).",
+      "C": "[SAI] Hypothetical Syllogism là tam cú luận giả định có dạng $[(p \\rightarrow q) \\land (q \\rightarrow r)] \\rightarrow (p \\rightarrow r)$.",
+      "D": "[SAI] Disjunctive Syllogism là tam cú luận phân liệt có dạng $[(p \\lor q) \\land \\neg p] \\rightarrow q$.",
+      "E": "[SAI] Vì phương án A đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Lập luận cho trong đề bài có cấu trúc:\n- Tiền đề 1: Nếu $p$ thì $q$ ($p \\rightarrow q$)\n- Tiền đề 2: $p$ xảy ra ($p$)\n- Kết luận: Vậy $q$ xảy ra ($q$)\nĐây là dạng suy luận điển hình của Modus Ponens (Khẳng định tiền đề). Do đó đáp án đúng là A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án phân tích hoàn toàn trùng khớp với đáp án cộng đồng (lựa chọn A - Modus ponens)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999409",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:09:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120017",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T01:40:35+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121835",
+          "author": "sky@lope",
+          "text": "A . p(T) and (p->q) (T) suy ra q (T)",
+          "timestamp": "2026-04-05T17:56:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153285",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:19:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 9,
+    "question_id": "Q9",
+    "image_file": "Q9.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc (MAD101)",
+    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nSuppose S = {1, 2, 3, 4, 5}. Find |P(S)| .\nA. 5\nB. 10\nC. 25\nD. 32",
+    "key_points_and_rules": "Số phần tử của tập hợp lũy thừa P(S) (Power set) của tập S có n phần tử được tính theo công thức: |P(S)| = 2^n.",
+    "option_by_option_analysis": {
+      "A": "Sai. Đây là số phần tử của tập S, tức là |S| = 5, không phải |P(S)|.",
+      "B": "Sai. 10 không phải là số phần tử của P(S).",
+      "C": "Sai. Đây là 5^2 = 25, tính nhầm công thức n^2 thay vì 2^n.",
+      "D": "Đúng. Tập S = {1, 2, 3, 4, 5} có |S| = 5 phần tử. Số phần tử của tập lũy thừa P(S) là |P(S)| = 2^5 = 32."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Tập hợp S có 5 phần tử. Số tập con của S (tức là số phần tử của tập lũy thừa P(S)) là |P(S)| = 2^|S| = 2^5 = 32. Do đó đáp án chính xác là D.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Đáp án trùng khớp hoàn toàn với đáp án cộng đồng ('D')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999410",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:09:18+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1040114",
+          "author": "Phatfpt",
+          "text": "D 2^số lượng pt của tập hợp 2^5 = 32",
+          "timestamp": "2026-02-23T19:25:17+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1120018",
+          "author": "V1C3",
+          "text": "D",
+          "timestamp": "2026-04-05T01:41:01+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121676",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-04-05T16:53:43+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121844",
+          "author": "sky@lope",
+          "text": "D. |P(S)| = 2 ^n mà tập S có 5 phần tử nên n = 5 => 2^5=32",
+          "timestamp": "2026-04-05T17:59:41+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1153286",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:19:27+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 10,
+    "question_id": "Q10",
+    "image_file": "Q10.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc (MAD101)",
+    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nWhich of the following statements is FALSE?\n(i) x ∈ {x}\n(ii) {x} ⊆ {x}\n(iii) {x} ∈ {x}\n(iv) {x} ∈ {{x}}\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
+    "key_points_and_rules": "Cần xác định mệnh đề SAI (FALSE). Phân biệt quan hệ thuộc (∈) và quan hệ tập con (⊆):\n- x ∈ {x}: phần tử x thuộc tập hợp {x} -> ĐÚNG.\n- {x} ⊆ {x}: mọi tập hợp đều là tập con của chính nó -> ĐÚNG.\n- {x} ∈ {x}: tập {x} chứa duy nhất phần tử x, nên {x} không phải là một phần tử của {x} -> SAI.\n- {x} ∈ {{x}}: tập {{x}} chứa duy nhất phần tử là tập hợp {x} -> ĐÚNG.",
+    "option_by_option_analysis": {
+      "A": "Sai. Mệnh đề (i) là ĐÚNG (x là phần tử thuộc tập {x}).",
+      "B": "Sai. Mệnh đề (ii) là ĐÚNG (mọi tập hợp luôn là tập con của chính nó).",
+      "C": "Đúng. Mệnh đề (iii) là SAI vì phần tử duy nhất của tập hợp {x} là x, chứ không phải tập hợp {x}. Do mệnh đề (iii) SAI nên lựa chọn C là đáp án cần chọn.",
+      "D": "Sai. Mệnh đề (iv) là ĐÚNG vì phần tử của tập {{x}} chính là tập hợp {x}."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Đề bài yêu cầu tìm mệnh đề SAI (FALSE).\n- (i) x ∈ {x} là đúng.\n- (ii) {x} ⊆ {x} là đúng.\n- (iii) {x} ∈ {x} là sai vì phần tử duy nhất của {x} là x.\n- (iv) {x} ∈ {{x}} là đúng.\nVậy mệnh đề (iii) là mệnh đề SAI, tương ứng với đáp án C.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án trùng khớp hoàn toàn với đáp án cộng đồng ('C')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999411",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:09:30+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1040115",
+          "author": "Phatfpt",
+          "text": "C",
+          "timestamp": "2026-02-23T19:25:56+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1120019",
+          "author": "V1C3",
+          "text": "C",
+          "timestamp": "2026-04-05T01:41:46+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121678",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-04-05T16:53:53+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121847",
+          "author": "sky@lope",
+          "text": "C",
+          "timestamp": "2026-04-05T18:01:09+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1153287",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:19:40+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 11,
+    "question_id": "Q11",
+    "image_file": "Q11.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nIf A = {1, 2, 3} and B = {x | x ∈ ℝ ∧ x² - 5x + 6 = 0}. Find B - A.\nA. {1}\nB. {2, 3}\nC. {1, 2, 3}\nD. ∅\nE. None of the other choices is correct",
+    "key_points_and_rules": "Định nghĩa hiệu của hai tập hợp: B - A = {x | x ∈ B ∧ x ∉ A}. Giải phương trình x² - 5x + 6 = 0 để tìm các phần tử của tập B.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Tập {1} chính là A - B, không phải B - A nên [SAI].",
+      "B": "Phân tích chi tiết: Tập {2, 3} chính là tập B, chưa loại bỏ các phần tử thuộc A nên [SAI].",
+      "C": "Phân tích chi tiết: {1, 2, 3} chính là tập A, không phải B - A nên [SAI].",
+      "D": "Phân tích chi tiết: Giải x² - 5x + 6 = 0 ⇔ (x - 2)(x - 3) = 0 ⇔ x = 2 hoặc x = 3. Vậy B = {2, 3}. Ta có A = {1, 2, 3}. Do đó B - A = {2, 3} \\ {1, 2, 3} = ∅ (tập rỗng). Phương án này [ĐÚNG].",
+      "E": "Phân tích chi tiết: Vì phương án D đúng nên E [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "1. Giải phương trình tìm tập B: x² - 5x + 6 = 0 ⇔ x = 2 hoặc x = 3, suy ra B = {2, 3}.\n2. Ta có A = {1, 2, 3}.\n3. Hiệu hai tập hợp B - A gồm các phần tử thuộc B nhưng không thuộc A. Vì cả 2 và 3 đều thuộc A nên không có phần tử nào thuộc B mà không thuộc A.\n4. Vậy B - A = ∅ (tập rỗng). Do đó chọn đáp án D.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Khẳng định trùng khớp hoàn toàn với đáp án cộng đồng (D)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999412",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:09:38+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120020",
+          "author": "V1C3",
+          "text": "D",
+          "timestamp": "2026-04-05T01:43:20+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121682",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-04-05T16:55:13+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121852",
+          "author": "sky@lope",
+          "text": "giải hpt => B = {2,3} B - A = tập rỗng or {}",
+          "timestamp": "2026-04-05T18:04:16+0700",
+          "reactions": 20,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153288",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:20:14+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 12,
+    "question_id": "Q12",
+    "image_file": "Q12.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nHow many bijective functions from a set of 6 elements to a set of 7 elements?\nA. 0\nB. 1\nC. 7\nD. 6\nE. 5040",
+    "key_points_and_rules": "Số song ánh (bijective functions) giữa hai tập hữu hạn X và Y bằng 0 nếu |X| ≠ |Y| (vì song ánh yêu cầu |X| = |Y|).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Tập nguồn có 6 phần tử, tập đích có 7 phần tử. Vì 6 ≠ 7 nên không thể tồn tại song ánh giữa hai tập hợp này. Số lượng song ánh là 0 [ĐÚNG].",
+      "B": "Phân tích chi tiết: Không tồn tại song ánh nào nên số lượng = 1 [SAI].",
+      "C": "Phân tích chi tiết: 7 không phải là số song ánh [SAI].",
+      "D": "Phân tích chi tiết: 6 không phải là số song ánh [SAI].",
+      "E": "Phân tích chi tiết: 5040 (là 7!) là số đơn ánh từ tập 6 phần tử đến tập 7 phần tử (P(7,6) = 5040), không phải số song ánh [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "1. Ánh xạ f: X → Y là song ánh khi và chỉ khi f vừa là đơn ánh vừa là toàn ánh.\n2. Điều kiện cần để tồn tại song ánh giữa hai tập hợp hữu hạn X và Y là |X| = |Y|.\n3. Trong bài toán này, |X| = 6 và |Y| = 7. Do |X| ≠ |Y| nên không có song ánh nào giữa hai tập hợp này.\n4. Số lượng song ánh là 0, đáp án đúng là A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Khẳng định trùng khớp hoàn toàn với đáp án cộng đồng (A). Bẫy phổ biến là nhầm lẫn giữa số đơn ánh (P(7, 6) = 5040) và số song ánh (0)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999413",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:10:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120022",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T01:44:42+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121623",
+          "author": "tungmurom",
+          "text": "A",
+          "timestamp": "2026-04-05T16:41:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121685",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T16:56:07+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121857",
+          "author": "sky@lope",
+          "text": "A",
+          "timestamp": "2026-04-05T18:07:22+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153289",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:20:42+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 13,
+    "question_id": "Q13",
+    "image_file": "Q13.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nLet f, g: R → R be two functions given by\nf(x) = x² + 1 and g(x) = x + 1.\nWhich functions are bijection?\nA. Only f\nB. Only g\nC. Both f and g\nD. None of the other choices is correct",
+    "key_points_and_rules": "Một hàm số f: ℝ → ℝ được gọi là song ánh (bijection) khi và chỉ khi nó vừa là đơn ánh (injective) vừa là toàn ánh (surjective).",
+    "option_by_option_analysis": {
+      "A": "SAI. Hàm f(x) = x² + 1 không phải là đơn ánh (vì f(1) = f(-1) = 2) và không phải toàn ánh (tập giá trị là [1, +∞) ≠ ℝ). Do đó f không phải là song ánh.",
+      "B": "ĐÚNG. Hàm g(x) = x + 1 là đơn ánh (g(x₁) = g(x₂) ⇔ x₁ = x₂) và là toàn ánh (với mọi y ∈ ℝ, tồn tại x = y - 1 ∈ ℝ để g(x) = y). Do đó g là song ánh.",
+      "C": "SAI. Vì f không phải là song ánh.",
+      "D": "SAI. Phương án B là khẳng định đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Để một hàm số f: ℝ → ℝ là song ánh (bijection), hàm đó phải thỏa mãn đồng thời hai điều kiện:\n1. Đơn ánh (Injective): Với x₁ ≠ x₂ thì f(x₁) ≠ f(x₂).\n2. Toàn ánh (Surjective): Tập giá trị của hàm số phải bằng toàn bộ tập đích ℝ.\n\n- Xét hàm f(x) = x² + 1:\n  + Ta có f(1) = f(-1) = 2 nên f không phải là đơn ánh.\n  + Tập giá trị Im(f) = [1, +∞) ≠ ℝ nên f không phải là toàn ánh.\n  => f không là song ánh.\n\n- Xét hàm g(x) = x + 1:\n  + g(x₁) = g(x₂) ⇒ x₁ + 1 = x₂ + 1 ⇒ x₁ = x₂ (đơn ánh).\n  + Với mọi y ∈ ℝ, chọn x = y - 1 ∈ ℝ, ta có g(x) = (y - 1) + 1 = y (toàn ánh).\n  => g là song ánh.\n\nDo đó, chỉ có hàm g là song ánh (Only g).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án phân tích hoàn toàn trùng khớp với lựa chọn của cộng đồng (B)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999414",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:11:06+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120023",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T01:48:01+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121631",
+          "author": "tungmurom",
+          "text": "B",
+          "timestamp": "2026-04-05T16:43:09+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121687",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-04-05T16:57:22+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121898",
+          "author": "sky@lope",
+          "text": "B",
+          "timestamp": "2026-04-05T18:22:52+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1153290",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:21:05+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 14,
+    "question_id": "Q14",
+    "image_file": "Q14.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nCompute ∑_{i=1}^{97} i(i + 3)\nA. 323200\nB. 323204\nC. 323208\nD. 323312",
+    "key_points_and_rules": "Sử dụng các công thức tính tổng cơ bản:\n- ∑_{i=1}^{n} i = n(n+1)/2\n- ∑_{i=1}^{n} i² = n(n+1)(2n+1)/6",
+    "option_by_option_analysis": {
+      "A": "Tính toán:\n∑_{i=1}^{97} i(i + 3) = ∑_{i=1}^{97} (i² + 3i) = ∑_{i=1}^{97} i² + 3 ∑_{i=1}^{97} i\nVới n = 97:\n∑_{i=1}^{97} i = (97 × 98) / 2 = 4753\n∑_{i=1}^{97} i² = (97 × 98 × (2×97 + 1)) / 6 = (97 × 98 × 195) / 6 = 308945\nDo đó, Tổng = 308945 + 3 × 4753 = 308945 + 14259 = 323204.\nPhương án A (323200) là SAI.",
+      "B": "Kết quả tính toán chính xác là 323204. Phương án B [ĐÚNG].",
+      "C": "Phương án C (323208) là SAI.",
+      "D": "Phương án D (323312) là SAI."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Ta khai triển biểu thức dưới dấu tổng:\n$$\\sum_{i=1}^{97} i(i + 3) = \\sum_{i=1}^{97} i^2 + 3 \\sum_{i=1}^{97} i$$\n- Tính $\\sum_{i=1}^{97} i = \\frac{97 \\times 98}{2} = 4753$\n- Tính $\\sum_{i=1}^{97} i^2 = \\frac{97 \\times 98 \\times 195}{6} = 308945$\nTổng cần tìm là: $308945 + 3 \\times 4753 = 308945 + 14259 = 323204$.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả hoàn toàn trùng khớp với lựa chọn của cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999415",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:11:28+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120024",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T01:48:47+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121636",
+          "author": "tungmurom",
+          "text": "B",
+          "timestamp": "2026-04-05T16:43:56+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121689",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-04-05T16:57:51+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121899",
+          "author": "sky@lope",
+          "text": "B",
+          "timestamp": "2026-04-05T18:23:30+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1153291",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:21:37+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 15,
+    "question_id": "Q15",
+    "image_file": "Q15.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nGiven the Binary search algorithm\n\nprocedure Binarysearch(a₁ < a₂ < ... < aₙ, x: integer)\ni := 1\nj := n\nwhile (i < j)\n    m := ⌊(i + j) / 2⌋\n    if x > aₘ then i := m + 1\n    else j := m\nif x = aᵢ then location := i\nelse location := 0\n\nIf input = 2, 4, 5, 7, 8, 9, 10, 13 and x = 11, after the second time of dividing into sublists, the sublist to be considered is__\nA. 10, 13\nB. 9, 10, 13\nC. 9, 10\nD. 10",
+    "key_points_and_rules": "Thuật toán tìm kiếm nhị phân (Binary Search): Với mỗi bước lặp, tính m vị trí giữa. Nếu x > a_m thì thu hẹp khoảng tìm kiếm thành từ (m + 1) đến j. Đề yêu cầu tìm danh sách con (sublist) được xem xét sau lần chia thứ hai.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Ban đầu danh sách có 8 phần tử: a = [2, 4, 5, 7, 8, 9, 10, 13], i = 1, j = 8, x = 11.\n- Lần chia 1: m = ⌊(1 + 8)/2⌋ = 4. Ta có a₄ = 7. Do 11 > 7 nên i = 4 + 1 = 5. Khoảng còn lại là từ i = 5 đến j = 8 (các giá trị [8, 9, 10, 13]).\n- Lần chia 2: m = ⌊(5 + 8)/2⌋ = 6. Ta có a₆ = 9. Do 11 > 9 nên i = 6 + 1 = 7. Khoảng còn lại để xem xét tiếp theo là từ i = 7 đến j = 8, tương ứng các giá trị [10, 13].",
+      "B": "[SAI] Bị thừa phần tử 9 (đã bị loại sau lần chia thứ 2 vì 11 > a₆ = 9).",
+      "C": "[SAI] Đây là danh sách sai chỉ số và giá trị.",
+      "D": "[SAI] Chỉ có 1 phần tử, đây là kết quả ở các bước sau nữa."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Thực hiện mô phỏng thuật toán Tìm kiếm Nhị phân:\n- Mảng ban đầu: [2, 4, 5, 7, 8, 9, 10, 13] (i = 1, j = 8)\n- Lần lặp 1: m = 4 (a₄ = 7). Vì x = 11 > 7 nên i = 5, j = 8. Danh sách con còn lại là [8, 9, 10, 13].\n- Lần lặp 2: m = 6 (a₆ = 9). Vì x = 11 > 9 nên i = 7, j = 8. Danh sách con còn lại được xem xét tiếp theo là [10, 13].\nDo đó, câu trả lời chính xác là A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với đáp án được đồng thuận cao nhất của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999416",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:12:50+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120026",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T01:52:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121643",
+          "author": "tungmurom",
+          "text": "A",
+          "timestamp": "2026-04-05T16:45:40+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121695",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T16:59:48+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153292",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:21:55+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 16,
+    "question_id": "Q16",
+    "image_file": "Q16.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nUse the Greedy Change-Making algorithm to make a change for 63 cents using quarters, nickels and pennies (1 quarter = 25 cents, 1 nickel = 5 cents, 1 penny = 1 cent). What is the total number of coins used?\nA. 5\nB. 7\nC. 2\nD. 6\nE. None of the other choices",
+    "key_points_and_rules": "Thuật toán tham lam đổi tiền (Greedy Change-Making Algorithm): Luôn ưu tiên chọn đồng tiền có mệnh giá lớn nhất không vượt quá số tiền còn lại cần đổi cho đến khi đủ tiền.",
+    "option_by_option_analysis": {
+      "A": "[SAI] 5 đồng là không đủ vì 2 quarters (50) + 1 nickel (5) + 2 pennies (2) = 57 cents.",
+      "B": "[ĐÚNG] Tổng số tiền cần đổi là 63 cents:\n- Chọn 25 cents: ⌊63 / 25⌋ = 2 đồng quarter (tổng 50 cents, còn dư 13 cents).\n- Chọn 5 cents: ⌊13 / 5⌋ = 2 đồng nickel (tổng 10 cents, còn dư 3 cents).\n- Chọn 1 cent: ⌊3 / 1⌋ = 3 đồng penny (tổng 3 cents, còn dư 0 cents).\nTổng số đồng tiền được dùng = 2 + 2 + 3 = 7 đồng.",
+      "C": "[SAI] 2 đồng chỉ được tối đa 50 cents.",
+      "D": "[SAI] 6 đồng không tối ưu theo quy tắc tham lam.",
+      "E": "[SAI] Phương án B (7) là đúng nên không chọn phương án này."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Áp dụng thuật toán Tham lam đổi tiền 63 cents với các mệnh giá {25, 5, 1}:\n1. Đồng 25 cents: Sử dụng 2 đồng (50 cents), còn lại 13 cents.\n2. Đồng 5 cents: Sử dụng 2 đồng (10 cents), còn lại 3 cents.\n3. Đồng 1 cent: Sử dụng 3 đồng (3 cents), còn lại 0 cents.\nTổng số đồng tiền = 2 + 2 + 3 = 7 đồng. Phương án đúng là B.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả hoàn toàn trùng khớp với đáp án được đồng thuận cao nhất của cộng đồng (B)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999417",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:12:57+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120027",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T01:53:40+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121647",
+          "author": "tungmurom",
+          "text": "B",
+          "timestamp": "2026-04-05T16:46:21+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121697",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-04-05T17:00:25+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121916",
+          "author": "sky@lope",
+          "text": "B 63 - 25-25 = 13 => 2 tờ 25 13-5-5 =3 => 2 tờ 5 3 => 3 tờ 1 Cộng lại 2+2+1=7",
+          "timestamp": "2026-04-05T18:29:30+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153293",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:22:25+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 17,
+    "question_id": "Q17",
+    "image_file": "Q17.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc & Giải tích (Growth of Functions / Big-O)",
+    "question_text_extracted": "Question: 17\n(Choose 1 answer)\nLet f(x) = x²log(x) and g(x) = xlog(x⁴).\n\nChoose the correct statements:\n(i) f(x) = O(g(x))\n(ii) g(x) = O(f(x))\nA. (i)\nB. (ii)\nC. Both (i) and (ii)\nD. None of the other choices is correct",
+    "key_points_and_rules": "Định nghĩa độ tăng Big-O: g(x) = O(f(x)) nếu tồn tại các số nguyên dương C và k sao cho |g(x)| ≤ C|f(x)| với mọi x > k, hay tương đương lim_{x→∞} |g(x)/f(x)| < ∞.",
+    "option_by_option_analysis": {
+      "A": "Phân tích phát biểu (i): f(x) = x² log(x) và g(x) = x log(x⁴) = 4x log(x). Tỷ số f(x)/g(x) = (x² log x) / (4x log x) = x / 4. Khi x → ∞, f(x)/g(x) → ∞, do đó f(x) tăng nhanh hơn g(x) rất nhiều nên f(x) không thể là O(g(x)). Do đó (i) SAI.",
+      "B": "Phân tích phát biểu (ii): Tỷ số g(x)/f(x) = 4 / x. Khi x → ∞ (với x ≥ 4), ta có g(x)/f(x) ≤ 1 ⇒ g(x) ≤ 1 · f(x). Vậy g(x) = O(f(x)) là ĐÚNG. Do đó (ii) ĐÚNG.",
+      "C": "Cả (i) và (ii) đúng là SAI vì (i) sai.",
+      "D": "Không đúng vì đáp án B (ii) là đáp án đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Ta có:\n- $f(x) = x^2 \\log(x)$\n- $g(x) = x \\log(x^4) = 4x \\log(x)$\n\nXét tỷ số khi $x \\to \\infty$:\n- $\\lim_{x \\to \\infty} \\frac{f(x)}{g(x)} = \\lim_{x \\to \\infty} \\frac{x^2 \\log x}{4x \\log x} = \\lim_{x \\to \\infty} \\frac{x}{4} = \\infty \\implies f(x) \\neq O(g(x))$. Do đó (i) sai.\n- $\\lim_{x \\to \\infty} \\frac{g(x)}{f(x)} = \\lim_{x \\to \\infty} \\frac{4}{x} = 0 < \\infty \\implies g(x) = O(f(x))$. Do đó (ii) đúng.\n\nVậy phương án đúng là B.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả tính toán khớp tuyệt đối với lựa chọn của cộng đồng (B)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999418",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:13:53+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120028",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T01:55:48+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121650",
+          "author": "tungmurom",
+          "text": "B",
+          "timestamp": "2026-04-05T16:46:57+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121702",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-04-05T17:01:43+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121970",
+          "author": "sky@lope",
+          "text": "B",
+          "timestamp": "2026-04-05T18:50:52+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1153294",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:22:38+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 18,
+    "question_id": "Q18",
+    "image_file": "Q18.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc & Thuật toán (Algorithm Complexity & Trace)",
+    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nGiven the following algorithm\n\nprocedure LS (x, a₁, ..., aₙ: integer)\ni := 1\nwhile (i ≤ n and x > aᵢ)\n  i := i + 1\n\nHow many comparisons used in the algorithm with input x = 10 and the sequence 1, 3, 5, 7, 9, 11?\nA. 11\nB. 10\nC. 12\nD. 6\nE. None of the other choices is correct",
+    "key_points_and_rules": "Mỗi lần kiểm tra điều kiện của vòng lặp `while (i ≤ n and x > a_i)`, có tối đa 2 phép so sánh: (1) so sánh chỉ số `i ≤ n`, (2) so sánh giá trị `x > a_i`. Nếu phép so sánh đầu đúng thì phép so sánh thứ hai tiếp tục được thực hiện.",
+    "option_by_option_analysis": {
+      "A": "11 phép so sánh: Sai do tính thiếu phép so sánh dừng ở bước cuối.",
+      "B": "10 phép so sánh: Sai.",
+      "C": "12 phép so sánh: Đúng. Dãy gồm 6 phần tử (n = 6): a₁=1, a₂=3, a₃=5, a₄=7, a₅=9, a₆=11. \n- Vòng 1 (i=1): 1 ≤ 6 (Đúng, 1 phép SS), 10 > 1 (Đúng, 1 phép SS) -> 2 phép SS. i trở thành 2.\n- Vòng 2 (i=2): 2 ≤ 6 (Đúng, 1 phép SS), 10 > 3 (Đúng, 1 phép SS) -> 2 phép SS. i trở thành 3.\n- Vòng 3 (i=3): 3 ≤ 6 (Đúng, 1 phép SS), 10 > 5 (Đúng, 1 phép SS) -> 2 phép SS. i trở thành 4.\n- Vòng 4 (i=4): 4 ≤ 6 (Đúng, 1 phép SS), 10 > 7 (Đúng, 1 phép SS) -> 2 phép SS. i trở thành 5.\n- Vòng 5 (i=5): 5 ≤ 6 (Đúng, 1 phép SS), 10 > 9 (Đúng, 1 phép SS) -> 2 phép SS. i trở thành 6.\n- Vòng 6 (i=6): 6 ≤ 6 (Đúng, 1 phép SS), 10 > 11 (Sai, 1 phép SS) -> 2 phép SS. Vòng lặp dừng.\nTổng số phép so sánh = 6 vòng × 2 phép SS/vòng = 12.",
+      "D": "6 phép so sánh: Sai do chỉ đếm số lần so sánh phần tử mà bỏ qua so sánh chỉ số và phép so sánh dừng.",
+      "E": "Sai vì phương án C đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Đầu vào: $n = 6$, $x = 10$, dãy $a = (1, 3, 5, 7, 9, 11)$.\nVòng lặp `while (i ≤ n and x > a_i)` thực hiện kiểm tra 2 điều kiện ở mỗi bước:\n- $i = 1$: $1 \\le 6$ (True) và $10 > 1$ (True) $\\to$ 2 phép so sánh. $i \\leftarrow 2$.\n- $i = 2$: $2 \\le 6$ (True) và $10 > 3$ (True) $\\to$ 2 phép so sánh. $i \\leftarrow 3$.\n- $i = 3$: $3 \\le 6$ (True) và $10 > 5$ (True) $\\to$ 2 phép so sánh. $i \\leftarrow 4$.\n- $i = 4$: $4 \\le 6$ (True) và $10 > 7$ (True) $\\to$ 2 phép so sánh. $i \\leftarrow 5$.\n- $i = 5$: $5 \\le 6$ (True) và $10 > 9$ (True) $\\to$ 2 phép so sánh. $i \\leftarrow 6$.\n- $i = 6$: $6 \\le 6$ (True) và $10 > 11$ (False) $\\to$ 2 phép so sánh. Vòng lặp kết thúc.\n\nTổng cộng: $2 + 2 + 2 + 2 + 2 + 2 = 12$ phép so sánh.\nĐáp án đúng là C.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Kết quả khớp hoàn toàn với đa số ý kiến bình luận của cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 8,
+      "valid_vote_count": 8,
+      "top_answer_votes": 7,
+      "agreement_ratio": 0.875,
+      "vote_distribution": {
+        "C": 7,
+        "D": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999419",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:14:09+0700",
+          "reactions": 1,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1058080",
+          "author": "Barld",
+          "text": "D",
+          "timestamp": "2026-03-10T00:53:06+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1058256",
+          "author": "Nguyễn Hoàng Khoa",
+          "text": "c vì bài này có 6 vòng lặp, mỗi vòng là 2 phép so sánh (comparision) nên tổng phép so sánh là 6x2=12",
+          "timestamp": "2026-03-11T10:22:46+0700",
+          "reactions": 1,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1120030",
+          "author": "V1C3",
+          "text": "C",
+          "timestamp": "2026-04-05T01:59:50+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121656",
+          "author": "tungmurom",
+          "text": "C",
+          "timestamp": "2026-04-05T16:49:19+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121706",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-04-05T17:02:36+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121981",
+          "author": "sky@lope",
+          "text": "C",
+          "timestamp": "2026-04-05T18:53:33+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1153301",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:24:16+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 19,
+    "question_id": "Q19",
+    "image_file": "Q19.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nLet {x_n} be a sequence of pseudorandom numbers such that\nx_{n+1} = (3x_n + 4) mod 16 for n > 0\nSuppose x_3 = 9. Find x_2 and x_4.\nA. 7 and 1\nB. 6 and 15\nC. 3 and 15\nD. 7 and 15\nE. None of the other choices is correct",
+    "key_points_and_rules": "Phương trình sinh số giả ngẫu nhiên: x_{n+1} = (3x_n + 4) mod 16.\n- Tính x_4: x_4 = (3x_3 + 4) mod 16.\n- Tính x_2: Giải phương trình đồng dư 3x_2 + 4 ≡ x_3 (mod 16).",
+    "option_by_option_analysis": {
+      "A": "SAI. x_2 = 7 đúng nhưng x_4 = 15 chứ không phải 1.",
+      "B": "SAI. Với x_2 = 6, ta có x_3 = (3*6 + 4) mod 16 = 22 mod 16 = 6 != 9.",
+      "C": "SAI. Với x_2 = 3, ta có x_3 = (3*3 + 4) mod 16 = 13 mod 16 = 13 != 9.",
+      "D": "ĐÚNG. x_4 = (3*9 + 4) mod 16 = 31 mod 16 = 15. Giải 3x_2 + 4 ≡ 9 (mod 16) ⇒ 3x_2 ≡ 5 (mod 16). Nhân 11 vào hai vế (vì 3 * 11 ≡ 1 mod 16) thu được x_2 ≡ 55 ≡ 7 (mod 16). Vậy x_2 = 7 và x_4 = 15.",
+      "E": "SAI. Phương án D là đáp án đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "1. Tính $x_4$:\n$x_4 = (3x_3 + 4) \\bmod 16 = (3 \\times 9 + 4) \\bmod 16 = 31 \\bmod 16 = 15$.\n\n2. Tính $x_2$:\n$x_3 = (3x_2 + 4) \\bmod 16 \\implies 9 \\equiv 3x_2 + 4 \\pmod{16} \\implies 3x_2 \\equiv 5 \\pmod{16}$.\nDo $\\gcd(3, 16) = 1$, nghịch đảo của $3 \\pmod{16}$ là $11$ (vì $3 \\times 11 = 33 \\equiv 1 \\pmod{16}$).\nSuy ra $x_2 \\equiv 5 \\times 11 = 55 \\equiv 7 \\pmod{16}$, nên $x_2 = 7$.\n\nVậy $x_2 = 7$ và $x_4 = 15$.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (chọn D)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999422",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:15:10+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120031",
+          "author": "V1C3",
+          "text": "D",
+          "timestamp": "2026-04-05T02:02:20+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121720",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-04-05T17:07:10+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121995",
+          "author": "sky@lope",
+          "text": "D",
+          "timestamp": "2026-04-05T18:55:49+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1122089",
+          "author": "tungmurom",
+          "text": "D",
+          "timestamp": "2026-04-05T19:46:53+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1153305",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:25:37+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 20,
+    "question_id": "Q20",
+    "image_file": "Q20.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nLet a = 131 mod 37 and b = -131 mod 37. Find a-b.\nA. 3\nB. -3\nC. 7\nD. -21\nE. 17",
+    "key_points_and_rules": "Phép toán $n \\bmod m$ trong Toán rời rạc cho kết quả số dư không âm $r$ thỏa mãn $0 \\le r < m$ sao cho $n = qm + r$ với $q \\in \\mathbb{Z}$.",
+    "option_by_option_analysis": {
+      "A": "ĐÚNG. $a = 131 \\bmod 37 = 20$ (do $131 = 37 \\times 3 + 20$). $b = -131 \\bmod 37 = 17$ (do $-131 = 37 \\times (-4) + 17$). Vậy $a - b = 20 - 17 = 3$.",
+      "B": "SAI. Lầm tưởng lấy $b - a$ hoặc tính nhầm số dư âm.",
+      "C": "SAI. Do tính sai số dư $a$ hoặc $b$.",
+      "D": "SAI. Phép tính $a - b = 20 - 17 = 3$, không phải $-21$.",
+      "E": "SAI. 17 là giá trị của $b$, không phải $a - b$."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "1. Tính $a = 131 \\bmod 37$:\n$131 = 37 \\times 3 + 20$ với $0 \\le 20 < 37 \\implies a = 20$.\n\n2. Tính $b = -131 \\bmod 37$:\n$-131 = 37 \\times (-4) + 17$ với $0 \\le 17 < 37 \\implies b = 17$.\n\n3. Tính $a - b$:\n$a - b = 20 - 17 = 3$.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (chọn A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 7,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999423",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:15:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120032",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T02:03:27+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121726",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:08:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1122004",
+          "author": "sky@lope",
+          "text": "131 mod 37 là 20 - 131 mod 37 là -20 vì -20<37 nên lấy 37-20 là 17 => a -b = 20-17 = 3 Đáp án A",
+          "timestamp": "2026-04-05T18:59:52+0700",
+          "reactions": 1,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1122092",
+          "author": "tungmurom",
+          "text": "A",
+          "timestamp": "2026-04-05T19:52:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1128196",
+          "author": "ducmanh7806",
+          "text": "a = 131 mod 37 b=-131 mod 37 thì có thể suy ra là a đồng dư với 131 mod 37 và b đồng dư với -131 mod 37, trừ trực tiếp a-b = 131--(131) mod 37 = 262(mod37) (casio 2s)=3",
+          "timestamp": "2026-04-10T00:50:07+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153311",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:26:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 21,
+    "question_id": "Q21",
+    "image_file": "Q21.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nHow many 0s are there at the end of 24! ?\nA. 3\nB. 4\nC. 5\nD. 6\nE. None of the other choices is correct",
+    "key_points_and_rules": "Số chữ số 0 tận cùng của n! bằng tổng số thừa số 5 trong phân tích thừa số nguyên tố của n!, tính bằng công thức Legendre: k = ⌊n/5⌋ + ⌊n/5²⌋ + ⌊n/5³⌋ + ...",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: 3 là số lượng chữ số 0 không chính xác vì ⌊24/5⌋ = 4.",
+      "B": "Phân tích chi tiết: Áp dụng công thức Legendre cho 24!: ⌊24/5⌋ + ⌊24/25⌋ = 4 + 0 = 4. Các bội của 5 trong khoảng từ 1 đến 24 là 5, 10, 15, 20 (gồm 4 thừa số 5). Do đó 24! có đúng 4 chữ số 0 ở cuối. Phương án này [ĐÚNG].",
+      "C": "Phân tích chi tiết: 5 lớn hơn số lượng thừa số 5 thực tế trong 24!.",
+      "D": "Phân tích chi tiết: 6 là sai.",
+      "E": "Phân tích chi tiết: Phương án này sai vì phương án B là đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Số chữ số 0 ở cuối của 24! được xác định bởi số lần xuất hiện của thừa số 5 trong tích 24! = 1 × 2 × ... × 24.\nCác số là bội của 5 trong phạm vi từ 1 đến 24 là: 5, 10, 15, 20.\nMỗi số chứa đúng 1 thừa số 5.\nTổng số thừa số 5 là: ⌊24/5⌋ = 4.\nVậy có 4 chữ số 0 ở cuối của 24!.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án tính toán trùng khớp hoàn toàn với lựa chọn của cộng đồng (B)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 7,
+      "valid_vote_count": 6,
+      "top_answer_votes": 6,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 6
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999424",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:15:30+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120035",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T02:09:39+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120667",
+          "author": "deptrai123",
+          "text": "B Số lượng số 0 ở đuôi phụ thuộc vào số lượng số 5 xuất hiện trong phân tích thừa số nguyên tố của từng số. Ta có từ 1 -> 24 có 5 = 5x1 (1 lần), 10 = 5x2 (1 lần), 15 = 5x3 (1 lần), 20 = 5x4 (1 lần). Tổng là 4 lần số 5 xuất hiện --> có 4 số 0 ở đuôi",
+          "timestamp": "2026-04-05T11:01:46+0700",
+          "reactions": 25,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1121739",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-04-05T17:15:09+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1122016",
+          "author": "sky@lope",
+          "text": "B",
+          "timestamp": "2026-04-05T19:01:58+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1122109",
+          "author": "tungmurom",
+          "text": "B",
+          "timestamp": "2026-04-05T20:11:29+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1153314",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:26:47+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 22,
+    "question_id": "Q22",
+    "image_file": "Q22.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nHow many primes are in {89, 111, 103, 205}?\nA. 2\nB. 3\nC. 4\nD. None of the other choices is correct\nE. 1",
+    "key_points_and_rules": "Số nguyên tố là số tự nhiên lớn hơn 1 chỉ có đúng 2 ước nguyên dương là 1 và chính nó. Để kiểm tra n có phải là số nguyên tố hay không, ta kiểm tra xem n có chia hết cho số nguyên tố nào nhỏ hơn hoặc bằng √n hay không.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Trong tập {89, 111, 103, 205}: 89 và 103 là số nguyên tố; 111 = 3 × 37 (hợp số); 205 = 5 × 41 (hợp số). Vậy có 2 số nguyên tố. Phương án này [ĐÚNG].",
+      "B": "Phân tích chi tiết: Sai vì chỉ có 2 số nguyên tố.",
+      "C": "Phân tích chi tiết: Sai vì 111 và 205 là hợp số.",
+      "D": "Phân tích chi tiết: Sai vì đáp án 2 nằm ở phương án A.",
+      "E": "Phân tích chi tiết: Sai vì có 2 số nguyên tố chứ không phải 1."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Kiểm tra từng số trong tập hợp {89, 111, 103, 205}:\n1. 89: √89 ≈ 9.4. Kiểm tra chia cho các số nguyên tố ≤ 9 (2, 3, 5, 7) thấy không chia hết. Nền 89 là SỐ NGUYÊN TỐ.\n2. 111: Tổng các chữ số là 1 + 1 + 1 = 3 chia hết cho 3 (111 = 3 × 37), nên 111 là HỢP SỐ.\n3. 103: √103 ≈ 10.1. Kiểm tra chia cho 2, 3, 5, 7 thấy không chia hết. Nên 103 là SỐ NGUYÊN TỐ.\n4. 205: Tận cùng là 5 nên chia hết cho 5 (205 = 5 × 41), nên 205 là HỢP SỐ.\n\nVậy có 2 số nguyên tố trong tập hợp là 89 và 103.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án tính toán trùng khớp hoàn toàn với lựa chọn của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999425",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:15:35+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120038",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T02:13:56+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121740",
+          "author": "long156206",
+          "text": "casio shift->FACT",
+          "timestamp": "2026-04-05T17:15:49+0700",
+          "reactions": 2939,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1122112",
+          "author": "tungmurom",
+          "text": "A",
+          "timestamp": "2026-04-05T20:13:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153316",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:27:13+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 23,
+    "question_id": "Q23",
+    "image_file": "Q23.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nFind 3¹⁷ mod 26.\nA. 6\nB. 7\nC. 8\nD. 9\nE. None of the other choices is correct",
+    "key_points_and_rules": "Tính số dư của phép lũy thừa $a^n \\bmod m$ bằng cách tìm chu kỳ của lũy thừa hoặc áp dụng định lý Euler.",
+    "option_by_option_analysis": {
+      "A": "Phân tích: 6 ≠ 9, nên phương án A [SAI].",
+      "B": "Phân tích: 7 ≠ 9, nên phương án B [SAI].",
+      "C": "Phân tích: 8 ≠ 9, nên phương án C [SAI].",
+      "D": "Phân tích: Ta có $3^3 = 27 \\equiv 1 \\pmod{26}$. Do đó $3^{17} = (3^3)^5 \\cdot 3^2 \\equiv 1^5 \\cdot 9 \\equiv 9 \\pmod{26}$. Do đó phương án D [ĐÚNG].",
+      "E": "Phân tích: Phương án D đã đúng nên phương án E [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Để tính $3^{17} \\bmod 26$, ta xét lũy thừa của 3 theo mod 26:\n- $3^1 = 3 \\equiv 3 \\pmod{26}$\n- $3^2 = 9 \\equiv 9 \\pmod{26}$\n- $3^3 = 27 \\equiv 1 \\pmod{26}$\n\nDo $3^3 \\equiv 1 \\pmod{26}$, ta phân tích $17 = 3 \\times 5 + 2$:\n$3^{17} = (3^3)^5 \\cdot 3^2 \\equiv 1^5 \\cdot 9 \\equiv 9 \\pmod{26}$.\nVậy kết quả là 9.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Đáp án trùng khớp hoàn toàn với lựa chọn phổ biến của cộng đồng (D)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999426",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:15:41+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120039",
+          "author": "V1C3",
+          "text": "D",
+          "timestamp": "2026-04-05T02:14:20+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121741",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-04-05T17:16:05+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1122116",
+          "author": "tungmurom",
+          "text": "D",
+          "timestamp": "2026-04-05T20:15:21+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1153318",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:27:27+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 24,
+    "question_id": "Q24",
+    "image_file": "Q24.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nFind the product of a = (1110)₂ and b = (1011)₂.\nA. 10011010\nB. 11001001\nC. 10001110\nD. 11110000\nE. None of the other choices is correct",
+    "key_points_and_rules": "Nhân hai số nhị phân hoặc chuyển hai số nhị phân về hệ thập phân, thực hiện phép nhân, sau đó chuyển kết quả trở lại hệ nhị phân.",
+    "option_by_option_analysis": {
+      "A": "Phân tích: $a = (1110)_2 = 14_{10}$, $b = (1011)_2 = 11_{10}$. Tích $a \\cdot b = 14 \\times 11 = 154_{10}$. Đổi $154_{10}$ sang nhị phân: $154 = 128 + 16 + 8 + 2 = 2^7 + 2^4 + 2^3 + 2^1 = (10011010)_2$. Phương án A [ĐÚNG].",
+      "B": "Phân tích: $(11001001)_2 = 201_{10} \\neq 154_{10}$. Phương án B [SAI].",
+      "C": "Phân tích: $(10001110)_2 = 142_{10} \\neq 154_{10}$. Phương án C [SAI].",
+      "D": "Phân tích: $(11110000)_2 = 240_{10} \\neq 154_{10}$. Phương án D [SAI].",
+      "E": "Phân tích: Phương án A đã đúng nên phương án E [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Cách 1: Chuyển về hệ thập phân:\n- $a = (1110)_2 = 8 + 4 + 2 + 0 = 14$\n- $b = (1011)_2 = 8 + 0 + 2 + 1 = 11$\n- Tích $a \\times b = 14 \\times 11 = 154$\n- Chuyển $154$ sang hệ nhị phân:\n  $154 = 128 + 16 + 8 + 2 = (10011010)_2$\n\nCách 2: Nhân nhị phân trực tiếp:\n   1110\n x 1011\n ------\n   1110\n  11100\n 000000\n1110000\n-------\n10011010₂\n\nVậy kết quả đúng là (10011010)₂.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án trùng khớp hoàn toàn với lựa chọn phổ biến của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999427",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:15:51+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120042",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T02:16:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121742",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:16:26+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1122118",
+          "author": "tungmurom",
+          "text": "A",
+          "timestamp": "2026-04-05T20:18:00+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153322",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:27:51+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 25,
+    "question_id": "Q25",
+    "image_file": "Q25.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc (MAD101)",
+    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nThe harmonic numbers H_j , j = 1, 2, 3, . . . , are defined by H_j = 1 + 1/2 + 1/3 + . . . + 1/j.\nH(4) and H(k+1) are __________\n\n(i) 21/12 and 1 + 1/2 + 1/3 + . . . + 1/k + 1/(k+1)\n(ii) 25/12 and 1 + 1/2 + 1/3 + . . . + 1/(k-1) + 1/k\n(iii) 25/12 and 1 + 1/2 + 1/3 + . . . + 1/(k+1) + 1/(k+2)\n(iv) 25/12 and 1 + 1/2 + 1/3 + . . . + 1/k + 1/(k+1)\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
+    "key_points_and_rules": "Định nghĩa số Harmonic H_j: H_j = 1 + 1/2 + 1/3 + ... + 1/j.\nTính H(4) = H_4 và viết biểu thức của H(k+1) = H_{k+1}.",
+    "option_by_option_analysis": {
+      "A": "Phân tích (i): H(4) = 1 + 1/2 + 1/3 + 1/4 = 25/12, nhưng phương án này ghi 21/12 => [SAI].",
+      "B": "Phân tích (ii): H(k+1) kết thúc ở 1/(k+1), nhưng biểu thức ở đây chỉ dừng lại ở 1/k => [SAI].",
+      "C": "Phân tích (iii): H(k+1) kết thúc ở 1/(k+1), nhưng biểu thức ở đây ghi tới 1/(k+2) => [SAI].",
+      "D": "Phân tích (iv): H(4) = 1 + 1/2 + 1/3 + 1/4 = (12 + 6 + 4 + 3)/12 = 25/12. H(k+1) = 1 + 1/2 + 1/3 + ... + 1/k + 1/(k+1). Cả hai giá trị đều chính xác => [ĐÚNG]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Ta có định nghĩa dãy số Harmonic $H_j = 1 + \\frac{1}{2} + \\frac{1}{3} + \\dots + \\frac{1}{j}$.\n1. Tính $H(4) = H_4 = 1 + \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} = \\frac{12 + 6 + 4 + 3}{12} = \\frac{25}{12}$.\n2. Biểu diễn $H(k+1) = H_{k+1} = 1 + \\frac{1}{2} + \\frac{1}{3} + \\dots + \\frac{1}{k} + \\frac{1}{k+1}$.\nDo đó phương án đúng là (iv), tương ứng với lựa chọn D.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Kết quả trùng khớp hoàn toàn với đáp án cộng đồng (D)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999428",
+          "author": "kohaku_19",
+          "text": "IV",
+          "timestamp": "2025-11-28T12:16:07+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1120044",
+          "author": "V1C3",
+          "text": "D",
+          "timestamp": "2026-04-05T02:17:08+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121746",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-04-05T17:17:00+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1122138",
+          "author": "tungmurom",
+          "text": "D",
+          "timestamp": "2026-04-05T20:29:08+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1153332",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:29:28+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 26,
+    "question_id": "Q26",
+    "image_file": "Q26.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc (MAD101)",
+    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nLet S be the set defined recursively as follows:\n\nBasis step: 2 ∈ S\nRecursive step: If x ∈ S then 2x ∈ S\n\nWhat is S?\n\n(i) S = {2^n | n = 1, 2, ...}\n(ii) S = {2^(2n) | n = 1, 2, ...}\n(iii) S = {2n | n = 1, 2, ...}\nA. (i)\nB. (ii)\nC. (iii)\nD. None of the other choices is correct",
+    "key_points_and_rules": "Định nghĩa tập hợp bằng đệ quy (Recursive definition of sets):\n- Bước cơ sở (Basis step): X định phần tử ban đầu tạo tiền đề.\n- Bước đệ quy (Recursive step): Quy tắc sinh ra các phần tử mới từ phần tử đã có trong tập.",
+    "option_by_option_analysis": {
+      "A": "Phân tích (i): Các phần tử sinh ra là 2^1, 2^2, 2^3, ..., 2^n với n = 1, 2, ... Do đó S = {2^n | n = 1, 2, ...} => [ĐÚNG].",
+      "B": "Phân tích (ii): S = {2^(2n)} chỉ chứa các lũy thừa mũ chẵn như 2^2=4, 2^4=16..., thiếu các số 2, 8, 32... => [SAI].",
+      "C": "Phân tích (iii): S = {2n} chứa toàn bộ các số chẵn dương (2, 4, 6, 8, 10...), trong khi tập S đệ quy không sinh ra 6 vì 6 không phải dạng 2^n => [SAI].",
+      "D": "Phân tích D: Vì (i) đúng nên D là phương án sai => [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Xét các bước xây dựng tập S bằng đệ quy:\n- Bước cơ sở: $2 = 2^1 \\in S$.\n- Bước đệ quy:\n  + Từ $2^1 \\in S \\Rightarrow 2 \\cdot 2^1 = 2^2 = 4 \\in S$.\n  + Từ $2^2 \\in S \\Rightarrow 2 \\cdot 2^2 = 2^3 = 8 \\in S$.\n  + Tổng quát: Tập $S$ gồm tất cả các số có dạng $2^n$ với $n \\in \\{1, 2, 3, \\dots\\}$.\n\nDo đó $S = \\{2^n \\mid n = 1, 2, \\dots\\}$, ứng với khẳng định (i), tức phương án A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả trùng khớp hoàn toàn với đáp án cộng đồng chọn nhiều nhất (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 5,
+      "top_answer_votes": 4,
+      "agreement_ratio": 0.8,
+      "vote_distribution": {
+        "A": 4,
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999429",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:16:18+0700",
+          "reactions": 1,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-999626",
+          "author": "rex17",
+          "text": "A",
+          "timestamp": "2025-11-28T16:46:55+0700",
+          "reactions": 1,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1119641",
+          "author": "trần Minh quý",
+          "text": "A",
+          "timestamp": "2026-04-04T22:48:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120046",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T02:18:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121751",
+          "author": "long156206",
+          "text": "2^1, 2^2 , 2^3,... -> A",
+          "timestamp": "2026-04-05T17:18:08+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153336",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:29:57+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 27,
+    "question_id": "Q27",
+    "image_file": "Q27.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nGiven the set S defined recursively as follows:\n(1, 1), (1, 2), (2, 1) is in S\nIf (a, b) is in S then (a+2, b) and (a, b+2) are also in S.\n\nWhich of the following pairs is in S?\nA. (5, 4)\nB. (4, 4)\nC. (2, 6)\nD. (4, 6)",
+    "key_points_and_rules": "Tập S được định nghĩa đệ quy. Việc cộng thêm 2 vào một hoành độ hoặc tung độ sẽ không làm thay đổi tính chẵn lẻ (parity) của tọa độ đó. Do đó, các cặp có tính chẵn lẻ của tọa độ (chẵn/lẻ) sẽ kế thừa từ các phần tử cơ sở: (1, 1) - (lẻ, lẻ); (1, 2) - (lẻ, chẵn); (2, 1) - (chẵn, lẻ). Không có phần tử cơ sở nào có dạng (chẵn, chẵn).",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Cặp (5, 4) có hoành độ lẻ (5) và tung độ chẵn (4). Ta có thể sinh ra (5, 4) từ (1, 2) ∈ S như sau: (1, 2) → (3, 2) → (5, 2) → (5, 4) ∈ S.",
+      "B": "[SAI] Cặp (4, 4) gồm cả hai tọa độ đều là số chẵn. Do không có phần tử cơ sở nào thuộc dạng (chẵn, chẵn) và quy tắc sinh chỉ cộng 2 nên không bao giờ tạo ra được (4, 4).",
+      "C": "[SAI] Cặp (2, 6) gồm cả hai tọa độ đều chẵn (2 chẵn, 6 chẵn), do đó không thuộc S.",
+      "D": "[SAI] Cặp (4, 6) gồm cả hai tọa độ đều chẵn, do đó không thuộc S."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Tập cơ sở ban đầu có các phần tử:\n- (1, 1): dạng (lẻ, lẻ)\n- (1, 2): dạng (lẻ, chẵn)\n- (2, 1): dạng (chẵn, lẻ)\n\nQuy tắc tạo phần tử mới: từ $(a, b)$ tạo ra $(a+2, b)$ và $(a, b+2)$. Vì cộng thêm 2 giữ nguyên tính chẵn lẻ của tọa độ, nên các phần tử trong $S$ chỉ có thể thuộc 1 trong 3 dạng tính chất trên (không có dạng (chẵn, chẵn)).\n- Xét phương án A: (5, 4) là dạng (lẻ, chẵn). Ta sinh từ (1, 2): (1, 2) ∈ S ⇒ (3, 2) ∈ S ⇒ (5, 2) ∈ S ⇒ (5, 4) ∈ S. Do đó (5, 4) ∈ S.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án tính toán trùng khớp hoàn toàn với đáp án cộng đồng chọn (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999430",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:16:29+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120050",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T02:21:01+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121759",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:19:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153339",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:31:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 28,
+    "question_id": "Q28",
+    "image_file": "Q28.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nHow many comparisons are needed to merge the two lists\n1, 3, 5, 7, 8, 10 and 2, 4, 6, 9 ?\nA. 6\nB. 7\nC. 8\nD. 9\nE. 10",
+    "key_points_and_rules": "Thuật toán trộn (Merge Algorithm) hai danh sách đã sắp xếp: So sánh từng phần tử ở đầu hai danh sách, đưa phần tử nhỏ hơn vào danh sách kết quả cho đến khi một trong hai danh sách rỗng, sau đó chép toàn bộ phần còn lại của danh sách kia sang mà không cần so sánh thêm.",
+    "option_by_option_analysis": {
+      "A": "[SAI] Số phép so sánh thực tế là 9, không phải 6.",
+      "B": "[SAI] Số phép so sánh thực tế là 9, không phải 7.",
+      "C": "[SAI] Số phép so sánh thực tế là 9, không phải 8.",
+      "D": "[ĐÚNG] Chi tiết các bước so sánh:\n1. So sánh 1 và 2 -> chọn 1\n2. So sánh 3 và 2 -> chọn 2\n3. So sánh 3 và 4 -> chọn 3\n4. So sánh 5 và 4 -> chọn 4\n5. So sánh 5 và 6 -> chọn 5\n6. So sánh 7 và 6 -> chọn 6\n7. So sánh 7 và 9 -> chọn 7\n8. So sánh 8 và 9 -> chọn 8\n9. So sánh 10 và 9 -> chọn 9 (Danh sách 2 rỗng, phần tử 10 được đưa thẳng vào danh sách kết quả mà không cần so sánh nữa).\nTổng số phép so sánh là 9.",
+      "E": "[SAI] Số phép so sánh thực tế là 9, không phải 10."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Thực hiện thuật toán Merge trên 2 danh sách $L_1 = [1, 3, 5, 7, 8, 10]$ và $L_2 = [2, 4, 6, 9]$:\n- So sánh 1: 1 < 2 ⇒ đưa 1 ra, $L_1$ còn [3, 5, 7, 8, 10]\n- So sánh 2: 3 > 2 ⇒ đưa 2 ra, $L_2$ còn [4, 6, 9]\n- So sánh 3: 3 < 4 ⇒ đưa 3 ra, $L_1$ còn [5, 7, 8, 10]\n- So sánh 4: 5 > 4 ⇒ đưa 4 ra, $L_2$ còn [6, 9]\n- So sánh 5: 5 < 6 ⇒ đưa 5 ra, $L_1$ còn [7, 8, 10]\n- So sánh 6: 7 > 6 ⇒ đưa 6 ra, $L_2$ còn [9]\n- So sánh 7: 7 < 9 ⇒ đưa 7 ra, $L_1$ còn [8, 10]\n- So sánh 8: 8 < 9 ⇒ đưa 8 ra, $L_1$ còn [10]\n- So sánh 9: 10 > 9 ⇒ đưa 9 ra, $L_2$ rỗng.\nĐến đây $L_2$ hết phần tử, phần tử 10 được nối trực tiếp vào mảng kết quả. Tổng cộng cần 9 phép so sánh.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Đáp án tính toán trùng khớp hoàn toàn với đáp án cộng đồng chọn (D)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999431",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:17:24+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120052",
+          "author": "V1C3",
+          "text": "D",
+          "timestamp": "2026-04-05T02:24:23+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121760",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-04-05T17:19:51+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1153342",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:32:12+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 29,
+    "question_id": "Q29",
+    "image_file": "Q29.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 29\n(Choose 1 answer)\nGiven the recursive algorithm that computes the n-th Fibonacci number\n\nProcedure F(n: natural number)\nIf n = 0 then F(n): = 0\nelse\n  If n = 1 then F(n): = 1\n  else F(n):= F(n-1) + F(n-2);\n\nHow many additions are used if n = 6?\nA. 8\nB. 7\nC. 9\nD. 12\nE. None of the other choices is correct",
+    "key_points_and_rules": "Số phép cộng $A(n)$ để tính $F(n)$ theo thuật toán đệ quy thỏa mãn:\n- $A(0) = 0$\n- $A(1) = 0$\n- $A(n) = A(n-1) + A(n-2) + 1$ với mọi $n \\ge 2$. (Tổng quát: $A(n) = F(n+1) - 1$).",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: 8 là sai. Tính lần lượt: A(0)=0, A(1)=0, A(2)=1, A(3)=2, A(4)=4, A(5)=7, A(6)=12.",
+      "B": "Phân tích chi tiết: 7 là số phép cộng khi n = 5, không phải n = 6.",
+      "C": "Phân tích chi tiết: 9 là giá trị sai do tính nhầm.",
+      "D": "Phân tích chi tiết: [ĐÚNG] Tính lần lượt:\n- A(0) = 0\n- A(1) = 0\n- A(2) = A(1) + A(0) + 1 = 0 + 0 + 1 = 1\n- A(3) = A(2) + A(1) + 1 = 1 + 0 + 1 = 2\n- A(4) = A(3) + A(2) + 1 = 2 + 1 + 1 = 4\n- A(5) = A(4) + A(3) + 1 = 4 + 2 + 1 = 7\n- A(6) = A(5) + A(4) + 1 = 7 + 4 + 1 = 12.",
+      "E": "Phân tích chi tiết: Sai vì đáp án D (12) đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Để tính số phép cộng khi gọi $F(6)$ theo thuật toán đệ quy:\nGọi $A(n)$ là số phép cộng cần dùng để tính $F(n)$.\nTa có cơ sở:\n- $A(0) = 0$\n- $A(1) = 0$\nCông thức đệ quy:\n- $A(n) = A(n-1) + A(n-2) + 1$ cho $n \\ge 2$\n\nTính từng bước:\n- $A(2) = 0 + 0 + 1 = 1$\n- $A(3) = 1 + 0 + 1 = 2$\n- $A(4) = 2 + 1 + 1 = 4$\n- $A(5) = 4 + 2 + 1 = 7$\n- $A(6) = 7 + 4 + 1 = 12$\n\nVậy có tổng cộng 12 phép cộng.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Kết quả trùng khớp hoàn toàn với lựa chọn phổ biến của cộng đồng (D)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999432",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:17:54+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120056",
+          "author": "V1C3",
+          "text": "D",
+          "timestamp": "2026-04-05T02:30:20+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121762",
+          "author": "long156206",
+          "text": "Tổng số phép cộng là  F(n+1) -1 -> 12",
+          "timestamp": "2026-04-05T17:24:18+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153356",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:34:02+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 30,
+    "question_id": "Q30",
+    "image_file": "Q30.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 30\n(Choose 1 answer)\nHow many strings of four decimal digits have exactly two digits that are 0s?\nA. 486\nB. 560\nC. 600\nD. None of them.",
+    "key_points_and_rules": "Chuỗi gồm 4 chữ số thập phân có độ dài 4 (chữ số 0 ở đầu được chấp nhận). Ta áp dụng quy tắc nhân và tổ hợp:\n1. Chọn 2 vị trí trong số 4 vị trí để đặt chữ số '0': C(4, 2) cách.\n2. Với 2 vị trí còn lại, mỗi vị trí nhận một chữ số khác '0' (từ 1 đến 9): $9 \\times 9$ cách.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: [ĐÚNG] Số chuỗi thỏa mãn là $C(4,2) \\times 9^2 = 6 \\times 81 = 486$.",
+      "B": "Phân tích chi tiết: Sai, đây là kết quả của tính toán sai quy tắc.",
+      "C": "Phân tích chi tiết: Sai, đây là kết quả không chính xác.",
+      "D": "Phân tích chi tiết: Sai vì đáp án A (486) chính xác."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Một chuỗi 4 chữ số thập phân có cấu trúc gồm 4 vị trí.\nĐể chuỗi có đúng hai chữ số 0:\n1. Chọn 2 vị trí trong 4 vị trí để điền chữ số 0: có $C(4, 2) = 6$ cách.\n2. Ở 2 vị trí còn lại, mỗi vị trí phải chọn một chữ số khác 0 (tức là chọn từ {1, 2, 3, 4, 5, 6, 7, 8, 9}, có 9 khả năng cho mỗi vị trí): có $9 \\times 9 = 81$ cách.\n\nTổng số chuỗi là: $6 \\times 81 = 486$.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả trùng khớp hoàn toàn với lựa chọn phổ biến của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999433",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:18:12+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1119676",
+          "author": "trần Minh quý",
+          "text": "A",
+          "timestamp": "2026-04-04T22:57:47+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120058",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T02:32:34+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121765",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:25:53+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 31,
+    "question_id": "Q31",
+    "image_file": "Q31.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 31\n(Choose 1 answer)\nHow many one-to-one functions are there from a set with 5 elements to another set with 10 elements?\nA. 0\nB. 30240\nC. 100000\nD. 50\nE. None of the other choices is correct",
+    "key_points_and_rules": "Số hàm đơn ánh (one-to-one function) từ tập hợp A có m phần tử vào tập hợp B có n phần tử (với m ≤ n) được tính bằng số chỉnh hợp chập m của n phần tử: P(n, m) = n! / (n - m)! = n × (n - 1) × ... × (n - m + 1).",
+    "option_by_option_analysis": {
+      "A": "SAI: Vì 5 ≤ 10 nên tồn tại các hàm đơn ánh, số lượng phải lớn hơn 0.",
+      "B": "ĐÚNG: Số hàm đơn ánh là P(10, 5) = 10 × 9 × 8 × 7 × 6 = 30240.",
+      "C": "SAI: 10^5 = 100000 là tổng số hàm từ tập 5 phần tử vào tập 10 phần tử (kể cả hàm không đơn ánh).",
+      "D": "SAI: 50 = 5 × 10 không phải là công thức tính số hàm đơn ánh.",
+      "E": "SAI: Vì phương án B đã hoàn toàn chính xác."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Tập nguồn có m = 5 phần tử, tập đích có n = 10 phần tử.\nSố lượng hàm đơn ánh từ tập 5 phần tử sang tập 10 phần tử là số chỉnh hợp chập 5 của 10:\nP(10, 5) = 10 × 9 × 8 × 7 × 6 = 30240.\nDo đó đáp án chính xác là B.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả tính toán độc lập hoàn toàn trùng khớp với đáp án B được cộng đồng lựa chọn nhiều nhất."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999434",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:18:45+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120062",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T02:35:02+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121768",
+          "author": "long156206",
+          "text": "5 người điền vào 10 ghế  - > 10.9.8.7.6",
+          "timestamp": "2026-04-05T17:27:18+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1128381",
+          "author": "ducmanh7806",
+          "text": "one-to-one thì chắc chắn là có rồi vì 1 tập 5 phần tử tập 10 phần tử, câu hỏi giờ trở thành có bao nhiêu cách nối 5 phần tử vào 10 phần tử thì dùng chỉnh hợp chập 5 của 10 =30240.",
+          "timestamp": "2026-04-10T15:52:22+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153370",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:36:14+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 32,
+    "question_id": "Q32",
+    "image_file": "Q32.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 32\n(Choose 1 answer)\nA young pair of rabbits (one of each sex) is placed on an island. A pair of rabbits does not breed until they are 2 month old. After they are 2 month old they will produce 2 pairs of rabbits each month. Find the number of pairs of rabbits after 5 months.\nA. 11\nB. 13\nC. 21\nD. 20",
+    "key_points_and_rules": "Đây là bài toán thiết lập hệ thức truy hồi đếm số lượng thỏ (tương tự bài toán Fibonacci mở rộng trong tài liệu Discrete Mathematics của Kenneth Rosen).\n- Gọi $f_n$ là số cặp thỏ sau $n$ tháng.\n- Hệ thức truy hồi: $f_n = f_{n-1} + 2 f_{n-2}$ với $n \\ge 2$.\n- Điều kiện ban đầu: $f_0 = 1$ (tháng 0) và $f_1 = 1$ (sau 1 tháng).",
+    "option_by_option_analysis": {
+      "A": "Phân tích phương án A: 11 là số cặp thỏ sau 4 tháng ($f_4 = 11$). Nếu chọn phương án này là do đếm thiếu 1 tháng. Do đó phương án A [SAI].",
+      "B": "Phân tích phương án B: 13 là giá trị Fibonacci chuẩn $F_7$, không áp dụng cho trường hợp mỗi cặp đẻ 2 cặp mới. Do đó phương án B [SAI].",
+      "C": "Phân tích phương án C: Tính từng tháng:\n- $f_0 = 1$\n- $f_1 = 1$\n- $f_2 = f_1 + 2 f_0 = 1 + 2(1) = 3$\n- $f_3 = f_2 + 2 f_1 = 3 + 2(1) = 5$\n- $f_4 = f_3 + 2 f_2 = 5 + 2(3) = 11$\n- $f_5 = f_4 + 2 f_3 = 11 + 2(5) = 21$.\nVậy sau 5 tháng có 21 cặp thỏ. Phương án C [ĐÚNG].",
+      "D": "Phân tích phương án D: 20 là kết quả tính toán sai. Do đó phương án D [SAI]."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "C",
+    "ai_explanation": "Phương trình truy hồi mô tả số cặp thỏ sau $n$ tháng là:\n$$f_n = f_{n-1} + 2 f_{n-2}$$\nVới các giá trị khởi tạo:\n- Ban đầu ($n=0$): $f_0 = 1$\n- Sau 1 tháng ($n=1$): $f_1 = 1$\n- Sau 2 tháng ($n=2$): $f_2 = 1 + 2(1) = 3$\n- Sau 3 tháng ($n=3$): $f_3 = 3 + 2(1) = 5$\n- Sau 4 tháng ($n=4$): $f_4 = 5 + 2(3) = 11$\n- Sau 5 tháng ($n=5$): $f_5 = 11 + 2(5) = 21$\n\nDo đó, sau 5 tháng có tổng cộng 21 cặp thỏ.",
+    "comparison": {
+      "is_match": false,
+      "status": "MISMATCH",
+      "community_answer": "A",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) KHÁC với đáp án được bình luận nhiều nhất của cộng đồng (A). Đáp án cộng đồng đang nghiêng về A (4 lượt chọn), nhưng A là kết quả sau 4 tháng ($f_4 = 11$). Kết quả chính xác sau 5 tháng ($f_5$) phải là 21 (đáp án C)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 8,
+      "valid_vote_count": 7,
+      "top_answer_votes": 4,
+      "agreement_ratio": 0.5714,
+      "vote_distribution": {
+        "A": 4,
+        "C": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999435",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:20:10+0700",
+          "reactions": 11,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-999632",
+          "author": "rex17",
+          "text": "A",
+          "timestamp": "2025-11-28T16:48:12+0700",
+          "reactions": 42,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120067",
+          "author": "V1C3",
+          "text": "C",
+          "timestamp": "2026-04-05T02:38:00+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121773",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:30:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1123428",
+          "author": "Tienvd123",
+          "text": "A",
+          "timestamp": "2026-04-06T02:25:08+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1123495",
+          "author": "Thành Hữu Ming",
+          "text": "C",
+          "timestamp": "2026-04-06T05:52:37+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1153371",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:37:14+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1186595",
+          "author": "LilNhan",
+          "text": "tuỳ vào là bắt đâu từ tháng mấy , nếu mà bắt đầu từ tháng 0 thì là 21 , tháng 1 thì là 11",
+          "timestamp": "2026-07-20T10:10:12+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 33,
+    "question_id": "Q33",
+    "image_file": "Q33.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic (MAD101)",
+    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nSuppose that\nf(n) = 7f(n/2) + 15n²/4,\nwhen n is an even positive integer.\n\nGive the best big-O estimate for f(n) if f is an increasing function.\n\n(i) O(n⁷)\n(ii) O(n²)\n(iii) O(n²logn)\n(iv) O(n^(log₂7))\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
+    "key_points_and_rules": "Áp dụng định lý Master (Master Theorem) cho quan hệ truy hồi dạng f(n) = a f(n/b) + g(n):\n- Ở đây a = 7, b = 2, g(n) = 15/4 * n².\n- Số mũ so sánh là log_b(a) = log₂7 ≈ 2.807.\n- So sánh g(n) = O(n²) với n^(log₂7): Vì 2 < log₂7, ta có g(n) = O(n^(log₂7 - ε)) với ε > 0.\n- Theo TH1 của định lý Master, f(n) = Θ(n^(log₂7)), do đó ước lượng Big-O tốt nhất là O(n^(log₂7)).",
+    "option_by_option_analysis": {
+      "A": "Phương án A ứng với (i) O(n⁷) là [SAI] vì log₂7 ≈ 2.807 chứ không phải 7.",
+      "B": "Phương án B ứng với (ii) O(n²) là [SAI] vì hàm g(n) = 15/4 * n² bị tăng chậm hơn n^(log₂7).",
+      "C": "Phương án C ứng với (iii) O(n²logn) là [SAI] vì đây không phải trường hợp bằng nhau của Master Theorem.",
+      "D": "Phương án D ứng với (iv) O(n^(log₂7)) là [ĐÚNG] theo đúng kết quả tính toán từ định lý Master.",
+      "E": "Phương án E là [SAI] vì phương án D là đáp án chính xác."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Sử dụng Định lý Master cho phương trình truy hồi $f(n) = 7f(n/2) + \\frac{15}{4}n^2$:\n- $a = 7$, $b = 2$, $g(n) = \\frac{15}{4}n^2$.\n- Ta có $n^{\\log_b a} = n^{\\log_2 7}$.\n- Vì $\\log_2 7 \\approx 2.807 > 2$, ta có $g(n) = O(n^2) = O(n^{\\log_2 7 - \\varepsilon})$ cho $\\varepsilon = \\log_2 7 - 2 > 0$.\n- Do đó, theo TH1 của Master Theorem, $f(n) = \\Theta(n^{\\log_2 7})$, tương ứng với ước lượng Big-O là $O(n^{\\log_2 7})$, tức mục (iv).",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Kết quả tính toán hoàn toàn trùng khớp với đáp án 'D' của cộng đồng."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999436",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:20:29+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120078",
+          "author": "V1C3",
+          "text": "D",
+          "timestamp": "2026-04-05T02:45:53+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121775",
+          "author": "long156206",
+          "text": "Master theorem . 7>2^2 -> IV",
+          "timestamp": "2026-04-05T17:32:00+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153372",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:38:45+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 34,
+    "question_id": "Q34",
+    "image_file": "Q34.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic (MAD101)",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nLet G be a bipartite simple graph with 6 vertices. Find the maximum number of edges of G.\nA. 9\nB. 10\nC. 8\nD. 11\nE. 12",
+    "key_points_and_rules": "Đồ thị hai phía đơn (bipartite simple graph) có tập đỉnh n được chia làm 2 tập độc lập có kích thước m và n - m.\nSố cạnh tối đa thu được khi đồ thị là đồ thị hai phía đầy đủ K_{m, n-m}, với số cạnh là m * (n - m).\nĐể m * (n - m) đạt giá trị lớn nhất khi n = 6, ta chia đều các đỉnh: m = 3 và n - m = 3.",
+    "option_by_option_analysis": {
+      "A": "Phương án A [ĐÚNG] vì số cạnh tối đa là 3 * (6 - 3) = 3 * 3 = 9.",
+      "B": "Phương án B [SAI] vì không có cách chia tập đỉnh 6 thành 2 tập sao cho tích số phần tử bằng 10 (chỉ có 1*5=5, 2*4=8, 3*3=9).",
+      "C": "Phương án C [SAI] vì 8 chưa phải số cạnh tối đa (vẫn nhỏ hơn 9).",
+      "D": "Phương án D [SAI] vì số cạnh vượt quá số cạnh tối đa của đồ thị hai phía 6 đỉnh.",
+      "E": "Phương án E [SAI] vì 12 là không thể đạt được cho đồ thị hai phía 6 đỉnh."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Một đồ thị hai phía đơn với $n = 6$ đỉnh có số cạnh cực đại khi tập đỉnh được phân hoạch thành 2 tập có số đỉnh chênh lệch ít nhất có thể, tức là mỗi tập có 3 đỉnh. Khi đó đồ thị hai phía đầy đủ $K_{3,3}$ có số cạnh tối đa là $3 \\times 3 = 9$.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả tính toán hoàn toàn trùng khớp với đáp án 'A' của cộng đồng."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999437",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:20:41+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120093",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T02:56:32+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121778",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:34:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1129157",
+          "author": "huyne123",
+          "text": "(m^2)/4 nhé",
+          "timestamp": "2026-04-11T00:59:15+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 35,
+    "question_id": "Q35",
+    "image_file": "Q35.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc (Discrete Mathematics - MAD101)",
+    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nA complete bipartite graph K_{m,n} (m>1, n>1) with 15 edges has ____________\nA. 7 vertices\nB. 8 vertices\nC. 9 vertices\nD. 10 vertices\nE. None of the other choices",
+    "key_points_and_rules": "Đồ thị hai phía đầy đủ K_{m,n} có số cạnh bằng m * n và tổng số đỉnh bằng m + n. Điều kiện đề bài m > 1 và n > 1.",
+    "option_by_option_analysis": {
+      "A": "Phân tích [SAI]: Nếu tổng số đỉnh là 7, do m + n = 7 và m*n = 15, phương trình x^2 - 7x + 15 = 0 có Δ = 49 - 60 = -11 < 0 (không có nghiệm nguyên).",
+      "B": "Phân tích [ĐÚNG]: Số cạnh m * n = 15. Vì m > 1 và n > 1, phân tích 15 thành tích hai số nguyên lớn hơn 1 ta được 15 = 3 * 5. Vậy m = 3 và n = 5 (hoặc ngược lại). Tổng số đỉnh của K_{3,5} là m + n = 3 + 5 = 8 vertices.",
+      "C": "Phân tích [SAI]: 9 vertices tương ứng với m + n = 9, không thỏa mãn m * n = 15.",
+      "D": "Phân tích [SAI]: 10 vertices tương ứng với m + n = 10, không thỏa mãn m * n = 15.",
+      "E": "Phân tích [SAI]: Phương án B đúng nên E sai."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Số cạnh của đồ thị hai phía đầy đủ K_{m,n} là E = m * n = 15. Do điều kiện m > 1 và n > 1, ta phân tích 15 thành tích 3 * 5 (nghĩa là m = 3, n = 5 hoặc m = 5, n = 3). Số đỉnh của đồ thị là V = m + n = 3 + 5 = 8 đỉnh.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án tính toán ra 8 vertices hoàn toàn trùng khớp với lựa chọn B và đáp án phổ biến của cộng đồng ('B')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999438",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:20:50+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120094",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T02:57:17+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121786",
+          "author": "long156206",
+          "text": "m . n =  3x5 cạnh -> đỉnh = m + n",
+          "timestamp": "2026-04-05T17:37:00+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153373",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:43:43+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 36,
+    "question_id": "Q36",
+    "image_file": "Q36.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán rời rạc (Discrete Mathematics - MAD101)",
+    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nLet M be the incidence matrix of the given graph with the rows indexed by v1, v2, v3, v4, and the columns indexed by e1, e2, e3, e4, e5. What is the sum of the entries in the fourth row of M?\nA. 3\nB. 1\nC. 2\nD. 0",
+    "key_points_and_rules": "Ma trận kề đỉnh - cạnh (Incidence Matrix) M của đồ thị vô hướng có dòng i tương ứng với đỉnh v_i. Phần tử M[i,j] = 1 nếu cạnh e_j nối tới đỉnh v_i, ngược lại bằng 0. Do đó, tổng các phần tử nằm trên hàng i chính bằng bậc của đỉnh v_i (deg(v_i)).",
+    "option_by_option_analysis": {
+      "A": "Phân tích [ĐÚNG]: Hàng thứ 4 của ma trận M ứng với đỉnh v4. Nhìn vào đồ thị, các cạnh nối trực tiếp với v4 là: e2 (nối v4 và v1), e3 (nối v4 và v2), e5 (nối v4 và v3). Do đó deg(v4) = 3. Tổng các phần tử ở hàng 4 là 1 + 1 + 1 = 3.",
+      "B": "Phân tích [SAI]: Kết quả là 1 nếu đỉnh v4 chỉ kề với 1 cạnh, nhưng v4 kề với 3 cạnh.",
+      "C": "Phân tích [SAI]: Số 2 là bậc của đỉnh v2 hoặc v3, không phải đỉnh v4.",
+      "D": "Phân tích [SAI]: Đỉnh v4 không phải đỉnh cô lập."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Tổng các phần tử trên dòng thứ 4 của ma trận liên thuộc (incidence matrix) M đại diện cho bậc (degree) của đỉnh v4. Đỉnh v4 có 3 cạnh liên thuộc là e2, e3 và e5, do đó tổng các phần tử trên hàng 4 là 1 + 1 + 1 = 3.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án tính toán là 3 (phương án A), trùng khớp hoàn toàn với đáp án của cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999439",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:20:59+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120095",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T02:58:36+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121794",
+          "author": "long156206",
+          "text": "ma trận liên thuộc là đỉnh nối với cạnh v4 nối với e2 e3 e5",
+          "timestamp": "2026-04-05T17:39:24+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153374",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:45:10+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 37,
+    "question_id": "Q37",
+    "image_file": "Q37.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic (Graph Theory)",
+    "question_text_extracted": "Question: 37\n\n(Choose 1 answer)\n\n(See picture)\n\nA. Both (i) and (ii)\nB. Only (i)\nC. Only (ii)\nD. None of (i) or (ii)",
+    "key_points_and_rules": "Kiểm tra tính đồng cấu (isomorphism) giữa hai đồ thị vô hướng đơn G và H dựa vào ma trận kề và ánh xạ giữa các đỉnh.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Cả (i) và (ii) đều đúng. Tuy nhiên, mệnh đề (i) khẳng định G và H không đồng cấu vì có ma trận kề khác nhau là SAI vì hai đồ thị đồng cấu vẫn có thể có ma trận kề khác nhau tùy thuộc vào cách gán nhãn đỉnh.",
+      "B": "Phân tích chi tiết: Mệnh đề (i) nói rằng 'G and H are not isomorphic because they have different adjacency matrices' là SAI, vì việc hai ma trận kề khác nhau không chứng minh được chúng không đồng cấu (chỉ cần đổi nhãn đỉnh là ma trận khác nhau). Do đó B là sai.",
+      "C": "Phân tích chi tiết: Mệnh đề (i) là SAI (khác ma trận kề chưa chắc không đồng cấu). Mệnh đề (ii) xét hàm f: {a,b,c,d} → {x,y,z,t} với f(a)=y, f(b)=x, f(c)=z, f(d)=t. Ta kiểm tra xem ánh xạ này có bảo toàn cạnh hay không. Ma trận kề của H qua ánh xạ f cho thấy cấu trúc kề giữa các đỉnh trùng khớp hoàn toàn với G (ví dụ bậc các đỉnh tương ứng: deg(a)=3, deg(b)=2, deg(c)=2, deg(d)=1 và deg(y)=3, deg(x)=2, deg(z)=2, deg(t)=1). Do đó f là một phép đồng cấu (isomorphism). Mệnh đề (ii) ĐÚNG. Vậy chỉ có (ii) đúng.",
+      "D": "Phân tích chi tiết: Mệnh đề (ii) đúng nên D sai."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Xét mệnh đề (i): 'G và H không đồng cấu vì có ma trận kề khác nhau'. Đây là phát biểu SAI, bởi vì hai đồ thị đồng cấu hoàn toàn có thể có ma trận kề khác nhau nếu ta sắp xếp thứ tự (nhãn) các đỉnh khác nhau.\nXét mệnh đề (ii): Cho hàm số f(a)=y, f(b)=x, f(c)=z, f(d)=t. Ta kiểm tra tính bảo toàn kề: đỉnh a kề với b, c, d tương ứng với y kề với x, z, t. Kiểm tra toàn bộ ma trận ta thấy ánh xạ f là một song ánh bảo toàn tập cạnh, tức là G và H đồng cấu. Do đó mệnh đề (ii) là ĐÚNG.\nVì vậy, chỉ có mệnh đề (ii) đúng.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp với đáp án cộng đồng (C). Cộng đồng đa số chọn C."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 4,
+      "top_answer_votes": 3,
+      "agreement_ratio": 0.75,
+      "vote_distribution": {
+        "C": 3,
+        "D": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999440",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:21:06+0700",
+          "reactions": 1,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1062322",
+          "author": "chennlongg",
+          "text": "D",
+          "timestamp": "2026-03-23T12:32:44+0700",
+          "reactions": 1827,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120097",
+          "author": "V1C3",
+          "text": "c",
+          "timestamp": "2026-04-05T03:00:55+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121803",
+          "author": "long156206",
+          "text": "i, sai  -> là isomorphic vì có bậc đỉnh giống nhau",
+          "timestamp": "2026-04-05T17:43:18+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153376",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:46:20+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 38,
+    "question_id": "Q38",
+    "image_file": "Q38.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic (Graph Theory)",
+    "question_text_extracted": "Question: 38\n(Choose 1 answer)\nHow many cut vertices does this graph have?\nA. 1\nB. 2\nC. 3\nD. 4",
+    "key_points_and_rules": "Đỉnh cắt (cut vertex) của một đồ thị là đỉnh mà khi loại bỏ nó (cùng với các cạnh kề) làm tăng số thành phần liên thông của đồ thị.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sai, số lượng đỉnh cắt lớn hơn 1.",
+      "B": "Phân tích chi tiết: Sai, số lượng đỉnh cắt là 3.",
+      "C": "Phân tích chi tiết: Xét các đỉnh trong đồ thị G:\n- Đỉnh c: Là đỉnh nối giữa tam giác trên (a,b,c) và phần dưới. Nếu bỏ c, đồ thị bị tách rời thành phần trên (a,b) và phần dưới (d,f,e,g). Vậy c là đỉnh cắt.\n- Đỉnh f: Nối với đỉnh g (cạnh treo) và chu trình giữa/trên. Bỏ f thì đỉnh g bị cô lập nhưng G vẫn liên thông qua c,d... Tuy nhiên, xét chu trình f-c-d-f và cạnh f-g: khi bỏ f thì đỉnh g tách ra khỏi đồ thị (tăng số thành phần liên thông). Do đó f là đỉnh cắt.\n- Đỉnh d: Tương tự đỉnh f, d nối với đỉnh treo e. Khi bỏ d, đỉnh e bị tách rời khỏi phần còn lại của đồ thị (tăng số thành phần liên thông). Do đó d là đỉnh cắt.\n- Các đỉnh a, b, e, g không phải là đỉnh cắt.\nTổng số đỉnh cắt là 3 (gồm c, f, d).",
+      "D": "Phân tích chi tiết: Sai, chỉ có 3 đỉnh cắt là c, f, d."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Đỉnh cắt là đỉnh mà khi xóa nó đi, số thành phần liên thông của đồ thị tăng lên.\n1. Xóa đỉnh c: Đồ thị bị chia thành 2 phần (phần trên gồm a, b và phần dưới gồm f, d, e, g). Vậy c là đỉnh cắt.\n2. Xóa đỉnh f: Đỉnh g (có bậc 1) bị tách khỏi phần còn lại của đồ thị, làm tăng số thành phần liên thông. Vậy f là đỉnh cắt.\n3. Xóa đỉnh d: Đỉnh e (có bậc 1) bị tách khỏi phần còn lại của đồ thị, làm tăng số thành phần liên thông. Vậy d là đỉnh cắt.\nCác đỉnh khác (a, b, e, g) không phải đỉnh cắt.\nTổng số đỉnh cắt là 3.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Trùng khớp với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.5-flash-lite",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 5,
+      "top_answer_votes": 4,
+      "agreement_ratio": 0.8,
+      "vote_distribution": {
+        "C": 4,
+        "B": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999441",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:21:20+0700",
+          "reactions": 1,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-999633",
+          "author": "rex17",
+          "text": "C",
+          "timestamp": "2025-11-28T16:49:31+0700",
+          "reactions": 1,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1060858",
+          "author": "Ngọcnam",
+          "text": "C",
+          "timestamp": "2026-03-20T14:50:08+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1120098",
+          "author": "V1C3",
+          "text": "c",
+          "timestamp": "2026-04-05T03:02:34+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121804",
+          "author": "long156206",
+          "text": "c bỏ f d  c- > đồ thị bị tách - > cut verties",
+          "timestamp": "2026-04-05T17:44:00+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153377",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:46:33+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 39,
+    "question_id": "Q39",
+    "image_file": "Q39.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nLet G be an undirected graph of three vertices A, B, C with the adjacency matrix\n[1 3 0]\n[3 0 1]\n[0 1 2]\nHow many paths of length 3 from A to C are there in G?\nA. 10\nB. 3\nC. 19\nD. 9",
+    "key_points_and_rules": "Số đường đi có độ dài $k$ giữa đỉnh thứ $i$ và đỉnh thứ $j$ trong đồ thị bằng phần tử ở hàng $i$, cột $j$ của ma trận kề lũy thừa $k$ ($M^k$).",
+    "option_by_option_analysis": {
+      "A": "Phân tích: 10 là giá trị của phần tử $(M^2)_{1,1}$, không phải phần tử $(M^3)_{1,3}$. Vậy A SAI.",
+      "B": "Phân tích: 3 là giá trị của phần tử $(M^2)_{1,3}$, biểu thị số đường đi độ dài 2 từ A đến C, không phải độ dài 3. Vậy B SAI.",
+      "C": "Phân tích: 19 không phải là kết quả của $(M^3)_{1,3}$. Vậy C SAI.",
+      "D": "Phân tích: Tính $M^2 = \\begin{pmatrix} 1 & 3 & 0 \\\\ 3 & 0 & 1 \\\\ 0 & 1 & 2 \\end{pmatrix} \\begin{pmatrix} 1 & 3 & 0 \\\\ 3 & 0 & 1 \\\\ 0 & 1 & 2 \\end{pmatrix} = \\begin{pmatrix} 10 & 3 & 3 \\\\ 3 & 10 & 2 \\\\ 3 & 2 & 5 \\end{pmatrix}$. Phần tử $(M^3)_{1,3}$ là tích vô hướng của Hàng 1 của $M^2$ và Cột 3 của $M$: $(10, 3, 3) \\cdot (0, 1, 2)^T = 10 \\times 0 + 3 \\times 1 + 3 \\times 2 = 9$. Vậy D ĐÚNG."
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Số đường đi độ dài 3 từ đỉnh A (tương ứng hàng 1) đến C (tương ứng cột 3) chính là phần tử ở hàng 1, cột 3 của ma trận $M^3$.\n- Ta có $M^2 = \\begin{pmatrix} 10 & 3 & 3 \\\\ 3 & 10 & 2 \\\\ 3 & 2 & 5 \\end{pmatrix}$.\n- Phần tử $(M^3)_{1,3} = \\text{Hàng 1}(M^2) \\times \\text{Cột 3}(M) = 10 \\times 0 + 3 \\times 1 + 3 \\times 2 = 9$.\nDo đó đáp án chính xác là D.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Kết quả tính toán khớp hoàn toàn với đáp án D của cộng đồng (3/3 lượt chọn)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999442",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:22:07+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120100",
+          "author": "V1C3",
+          "text": "D (G^3 -> A -> C = 9)",
+          "timestamp": "2026-04-05T03:06:43+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121810",
+          "author": "long156206",
+          "text": "casio bấm Ma trận 3x3 . M^2*M",
+          "timestamp": "2026-04-05T17:45:37+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153378",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:47:31+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 40,
+    "question_id": "Q40",
+    "image_file": "Q40.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nLet m>n>2. Which of the following graphs do NOT have Hamilton circuits?\nA. Km,n\nB. Cn\nC. Qn\nD. Kn\nE. Wn\nF. None of the other choices is correct",
+    "key_points_and_rules": "Điều kiện để các đồ thị đặc biệt có chu trình Hamilton:\n- Đồ thị lưỡng phân đầy đủ $K_{m,n}$ có chu trình Hamilton khi và chỉ khi $m = n \\ge 2$.\n- Đồ thị vòng $C_n$ có chu trình Hamilton với mọi $n \\ge 3$.\n- Khối lập phương $Q_n$ có chu trình Hamilton với mọi $n \\ge 2$.\n- Đồ thị đầy đủ $K_n$ có chu trình Hamilton với mọi $n \\ge 3$.\n- Đồ thị bánh xe $W_n$ có chu trình Hamilton với mọi $n \\ge 3$.",
+    "option_by_option_analysis": {
+      "A": "Phân tích: Vì $m > n > 2$, số đỉnh ở 2 tập độc lập không bằng nhau ($m \\neq n$). Do đó $K_{m,n}$ KHÔNG CÓ chu trình Hamilton. Vậy A ĐÚNG.",
+      "B": "Phân tích: $C_n$ với $n > 2$ luôn có chu trình Hamilton. Vậy B SAI.",
+      "C": "Phân tích: $Q_n$ với $n > 2$ luôn có chu trình Hamilton. Vậy C SAI.",
+      "D": "Phân tích: $K_n$ với $n > 2$ luôn có chu trình Hamilton. Vậy D SAI.",
+      "E": "Phân tích: $W_n$ với $n > 2$ luôn có chu trình Hamilton. Vậy E SAI.",
+      "F": "Phân tích: Vì A đúng nên F SAI."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Một đồ thị lưỡng phân đầy đủ $K_{m,n}$ chỉ có chu trình Hamilton khi $m = n \\ge 2$. Vì đề bài cho $m > n > 2$ nên $m \\neq n$, do đó $K_{m,n}$ không thể chứa chu trình Hamilton. Các đồ thị $C_n$, $Q_n$, $K_n$, $W_n$ với $n > 2$ đều có chu trình Hamilton. Đáp án là A.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả trùng khớp với lựa chọn đa số của cộng đồng (đáp án A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 6,
+      "valid_vote_count": 5,
+      "top_answer_votes": 4,
+      "agreement_ratio": 0.8,
+      "vote_distribution": {
+        "A": 4,
+        "E": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999443",
+          "author": "kohaku_19",
+          "text": "E",
+          "timestamp": "2025-11-28T12:22:18+0700",
+          "reactions": 31,
+          "extracted_answer": "E"
+        },
+        {
+          "comment_id": "xfmg-comment-1059380",
+          "author": "Khoa Long",
+          "text": "A",
+          "timestamp": "2026-03-16T22:41:17+0700",
+          "reactions": 1,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1118420",
+          "author": "Vua Hà Nội",
+          "text": "A",
+          "timestamp": "2026-04-04T16:21:43+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120102",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T03:11:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121812",
+          "author": "long156206",
+          "text": "km,n có hamilton circuit khi m=n và >=2",
+          "timestamp": "2026-04-05T17:46:34+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153379",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:48:11+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 41,
+    "question_id": "Q41",
+    "image_file": "Q41.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nWhich graphs have Euler circuits?\n(i) K₄\n(ii) C₄\n(iii) C₅\n(iv) Q₅\nA. (i)\nB. (iv)\nC. (ii) and (iii)\nD. (i) and (ii)",
+    "key_points_and_rules": "Đồ thị đơn liên thông có chu trình Euler (Euler circuit) khi và chỉ khi MỌI đỉnh của đồ thị đều có bậc chẵn (degree is even).",
+    "option_by_option_analysis": {
+      "A": "Phân tích (i) K₄: Đồ thị đầy đủ 4 đỉnh. Bậc của mỗi đỉnh trong K₄ là n - 1 = 4 - 1 = 3 (bậc lẻ). Do đó K₄ không có chu trình Euler -> SAI.",
+      "B": "Phân tích (iv) Q₅: Đồ thị khối 5 chiều. Bậc của mỗi đỉnh trong Qₙ là n. Ở đây n = 5 (bậc lẻ). Do đó Q₅ không có chu trình Euler -> SAI.",
+      "C": "Phân tích (ii) C₄ và (iii) C₅:\n- C₄ là đồ thị chu trình 4 đỉnh, mỗi đỉnh có bậc là 2 (bậc chẵn) -> Có chu trình Euler.\n- C₅ là đồ thị chu trình 5 đỉnh, mỗi đỉnh có bậc là 2 (bậc chẵn) -> Có chu trình Euler.\nCả (ii) và (iii) đều có chu trình Euler -> ĐÚNG.",
+      "D": "(i) K₄ không có chu trình Euler -> SAI."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Để một đồ thị đơn liên thông có chu trình Euler, tất cả các đỉnh của đồ thị đó phải có bậc chẵn.\n- K₄: Đỉnh có bậc 3 (lẻ) => Không có chu trình Euler.\n- C₄: Tất cả các đỉnh có bậc 2 (chẵn) => Có chu trình Euler.\n- C₅: Tất cả các đỉnh có bậc 2 (chẵn) => Có chu trình Euler.\n- Q₅: Tất cả các đỉnh có bậc 5 (lẻ) => Không có chu trình Euler.\nVậy đồ thị có chu trình Euler là (ii) C₄ và (iii) C₅.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Kết quả tính toán hoàn toàn trùng khớp với đáp án được cộng đồng lựa chọn nhiều nhất (C)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 3,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999444",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:22:56+0700",
+          "reactions": 1,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121815",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-04-05T17:47:51+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1153380",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:48:36+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 42,
+    "question_id": "Q42",
+    "image_file": "Q42.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nUse Dijkstra's algorithm to find the shortest path from A to Z. What is the next chosen vertex after E?\nA. The vertex C\nB. The vertex D\nC. The vertex Z\nD. None of the other choices is correct",
+    "key_points_and_rules": "Thuật toán Dijkstra tìm đường đi ngắn nhất từ A:\n1. Chọn đỉnh có khoảng cách nhỏ nhất chưa duyệt.\n2. Cập nhật khoảng cách đến các đỉnh láng giềng chưa duyệt.\n3. Lặp lại cho đến khi duyệt hết hoặc chạm tới mốc yêu cầu.",
+    "option_by_option_analysis": {
+      "A": "Các bước thực hiện thuật toán Dijkstra từ đỉnh bắt đầu A:\n- Khởi tạo: L(A) = 0, L(v) = ∞ với mọi v ≠ A.\n- Bước 1: Chọn A (L(A) = 0). Cập nhật các láng giềng của A:\n  + L(B) = min(∞, 0 + 2) = 2\n  + L(C) = min(∞, 0 + 7) = 7\n- Bước 2: Chọn đỉnh có nhãn nhỏ nhất trong các đỉnh chưa chọn {B, C, D, E, Z} -> Chọn B (L(B) = 2).\n  Cập nhật các láng giềng của B:\n  + L(C) = min(7, 2 + 4) = 6\n  + L(D) = min(∞, 2 + 5) = 7\n  + L(E) = min(∞, 2 + 3) = 5\n- Bước 3: Trong các đỉnh chưa chọn {C:6, D:7, E:5, Z:∞}, đỉnh có khoảng cách nhỏ nhất là E (L(E) = 5) -> Chọn E.\n  Cập nhật các láng giềng của E:\n  + L(C) = min(6, 5 + 3) = 6\n  + L(D) = min(7, 5 + 2) = 7\n  + L(Z) = min(∞, 5 + 3) = 8\n- Bước 4: Xét đỉnh tiếp theo ĐƯỢC CHỌN SAU E: Trong tập các đỉnh chưa duyệt {C:6, D:7, Z:8}, đỉnh có khoảng cách tạm thời nhỏ nhất là C (L(C) = 6). Do đó, đỉnh tiếp theo được chọn sau E chính là đỉnh C -> ĐÚNG.",
+      "B": "Đỉnh D có nhãn khoảng cách là 7, lớn hơn C (6) nên không được chọn ngay sau E -> SAI.",
+      "C": "Đỉnh Z có nhãn khoảng cách là 8, lớn hơn C (6) nên không được chọn ngay sau E -> SAI.",
+      "D": "Phương án A đúng nên phương án D sai."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Từng bước thực thi thuật toán Dijkstra để xác định đỉnh được chọn tiếp theo sau đỉnh E:\n1. Chọn A (L=0). Nhãn: B=2, C=7.\n2. Chọn B (L=2). Nhãn: C=6, D=7, E=5.\n3. Chọn E (L=5). Cập nhật nhãn láng giềng của E: C=6 (giữ nguyên), D=7 (giữ nguyên), Z=8.\n4. So sánh nhãn của các đỉnh chưa được chọn: C(6), D(7), Z(8). Nhãn nhỏ nhất là 6 thuộc về đỉnh C.\nVì vậy, đỉnh tiếp theo được chọn sau E là đỉnh C.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án tính toán hoàn toàn trùng khớp với lựa chọn đa số của cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 3,
+      "agreement_ratio": 0.75,
+      "vote_distribution": {
+        "A": 3,
+        "C": 1
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999446",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:26:01+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120104",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T03:17:44+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121819",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:49:17+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153381",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:49:33+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 43,
+    "question_id": "Q43",
+    "image_file": "Q43.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic (MAD101 - Lý thuyết đồ thị & Cây)",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nHow many vertices in a full 4-ary tree with 50 internal vertices?\nA. 50\nB. 201\nC. 54\nD. None of the other choices is correct\nE. 200",
+    "key_points_and_rules": "Công thức cơ bản cho cây $m$-ary đầy đủ (full $m$-ary tree):\n- Tổng số đỉnh $n = m \\cdot i + 1$, trong đó $m$ là số nhánh tối đa của mỗi đỉnh trong (ở đây $m = 4$), $i$ là số đỉnh trong (internal vertices).\n- Với $m = 4$ và $i = 50$, ta tính được tổng số đỉnh $n = 4 \\times 50 + 1 = 201$.",
+    "option_by_option_analysis": {
+      "A": "[SAI] 50 chỉ là số lượng đỉnh trong (internal vertices), không phải tổng số đỉnh.",
+      "B": "[ĐÚNG] Áp dụng công thức $n = m \\cdot i + 1 = 4 \\times 50 + 1 = 201$.",
+      "C": "[SAI] 54 không tuân theo công thức tính tổng số đỉnh của cây $m$-ary.",
+      "D": "[SAI] Vì phương án B (201) là đáp án đúng.",
+      "E": "[SAI] 200 là kết quả của $m \\cdot i = 4 \\times 50$, quên cộng đỉnh gốc (+1)."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Trong một cây 4-ary đầy đủ (full 4-ary tree), mỗi đỉnh trong đều có đúng 4 đỉnh con. Mỗi đỉnh trong tạo thêm 4 đỉnh mới. Do đó, tổng số đỉnh của cây luôn bằng $n = 4 \\cdot i + 1$. Với số đỉnh trong $i = 50$, tổng số đỉnh của cây là $n = 4 \\times 50 + 1 = 201$.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án hoàn toàn trùng khớp với đáp án cộng đồng (B - 201)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999447",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:26:08+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120108",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T03:22:48+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121822",
+          "author": "long156206",
+          "text": "n= m *i khi full ary tree",
+          "timestamp": "2026-04-05T17:50:15+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1122820",
+          "author": "khanh929gg",
+          "text": "n = m * i + 1",
+          "timestamp": "2026-04-05T23:27:25+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153382",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:50:00+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 44,
+    "question_id": "Q44",
+    "image_file": "Q44.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán học & Logic (MAD101 - Lý thuyết đồ thị & Cây)",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nWhat is the minimum value of the height of a full 3-ary tree with 40 internal vertices?\nA. 4\nB. 1\nC. 2\nD. 3\nE. 5",
+    "key_points_and_rules": "Để chiều cao $h$ của cây $m$-ary là nhỏ nhất (minimum height), cây đó phải cân đối nhất có thể (các mức/level đều được điền đầy số đỉnh trong trước khi sang mức tiếp theo).\n- Số lượng đỉnh lá $l = (m - 1)i + 1$. Với $m = 3, i = 40 \\Rightarrow l = 2 \\times 40 + 1 = 81$.\n- Chiều cao tối thiểu $h_{min} = \\lceil \\log_m l \\rceil = \\lceil \\log_3 81 \\rceil = \\lceil 4 \\rceil = 4$.",
+    "option_by_option_analysis": {
+      "A": "[ĐÚNG] Chiều cao tối thiểu của cây 3-ary đầy đủ với 40 đỉnh trong là 4 (vì $3^4 = 81$ lá nằm ở mức 4).",
+      "B": "[SAI] Chiều cao 1 chỉ có thể chứa tối đa 1 đỉnh trong (đỉnh gốc).",
+      "C": "[SAI] Chiều cao 2 chứa tối đa $1 + 3 = 4$ đỉnh trong.",
+      "D": "[SAI] Chiều cao 3 chứa tối đa $1 + 3 + 9 = 13$ đỉnh trong, không đủ cho 40 đỉnh trong.",
+      "E": "[SAI] Chiều cao 5 là chiều cao lớn hơn chiều cao tối thiểu."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Một cây 3-ary đầy đủ có 40 đỉnh trong thì số lá là $l = (3-1) \\times 40 + 1 = 81$. Chiều cao tối thiểu $h$ thỏa mãn $3^h \\ge 81 \\Rightarrow h \\ge 4$. Vậy chiều cao nhỏ nhất có thể của cây là 4.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Đáp án hoàn toàn trùng khớp với đáp án cộng đồng (A - 4)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999448",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:26:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120109",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T03:24:02+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121832",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:54:15+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153385",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:51:22+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 45,
+    "question_id": "Q45",
+    "image_file": "Q45.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc & Lý thuyết mã hóa (MAD101)",
+    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nWhich are prefix codes?\n(i) a: 11, e: 00, t: 10, s: 01\n(ii) a: 0, e: 1, t: 01, s: 001\nA. None of the other choices is correct\nB. (ii)\nC. (i)\nD. (i) and (ii)",
+    "key_points_and_rules": "Mã tiền tố (Prefix code) là hệ thống mã hóa mà trong đó không có từ mã (codeword) nào là tiền tố của một từ mã khác.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Sai, vì bộ mã (i) là mã tiền tố, do đó phương án C đúng.",
+      "B": "Phân tích chi tiết: Sai. Trong bộ mã (ii), từ mã của 'a' là '0', đây là tiền tố của từ mã 't' ('01') và 's' ('001'). Do đó (ii) không phải là mã tiền tố.",
+      "C": "Phân tích chi tiết: Đúng. Trong bộ mã (i), tất cả các từ mã {11, 00, 10, 01} đều có độ dài bằng 2, không có từ mã nào là tiền tố của từ mã khác.",
+      "D": "Phân tích chi tiết: Sai, vì (ii) không phải là mã tiền tố."
+    },
+    "question_type": "single_choice",
+    "community_answer": "C",
+    "ai_answer": "C",
+    "ai_explanation": "Mã tiền tố đòi hỏi không có từ mã nào là tiền tố của một từ mã khác trong tập mã.\n- Xét (i): Các từ mã là {11, 00, 10, 01}. Do tất cả đều có cùng độ dài 2 bit nên không từ nào là tiền tố của từ khác -> (i) là mã tiền tố.\n- Xét (ii): Các từ mã là {0, 1, 01, 001}. Ta thấy '0' (mã của a) là tiền tố của '01' (mã của t) và '001' (mã của s) -> (ii) không phải là mã tiền tố.\nVậy chỉ có (i) là mã tiền tố.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "C",
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (C)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "C": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999449",
+          "author": "kohaku_19",
+          "text": "C",
+          "timestamp": "2025-11-28T12:26:24+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1120110",
+          "author": "V1C3",
+          "text": "C",
+          "timestamp": "2026-04-05T03:24:49+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1121833",
+          "author": "long156206",
+          "text": "c",
+          "timestamp": "2026-04-05T17:54:24+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        },
+        {
+          "comment_id": "xfmg-comment-1153387",
+          "author": "hamsothuan13",
+          "text": "c",
+          "timestamp": "2026-04-25T16:51:41+0700",
+          "reactions": 0,
+          "extracted_answer": "C"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 46,
+    "question_id": "Q46",
+    "image_file": "Q46.webp",
+    "has_illustration": false,
+    "subject_domain": "Toán rời rạc & Thuật toán mã hóa Huffman (MAD101)",
+    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nGiven the message 'weekend'. Find the length of the bit string when encoding this message by a Huffman coding.\nA. 15\nB. 16\nC. 14\nD. 13\nE. 12",
+    "key_points_and_rules": "Mã hóa Huffman: Đếm tần số xuất hiện của từng ký tự trong chuỗi, dựng cây Huffman bằng cách ghép 2 nút có tần số nhỏ nhất lại với nhau cho tới khi hoàn tất cây, sau đó xác định độ dài mã (độ sâu) của từng ký tự.",
+    "option_by_option_analysis": {
+      "A": "Phân tích chi tiết: Đúng. Chuỗi 'weekend' có 7 ký tự với tần số: e: 3, w: 1, k: 1, n: 1, d: 1. Xây dựng cây Huffman: ghép (w,1) và (k,1) -> node1(2); ghép (n,1) và (d,1) -> node2(2); ghép node1(2) và node2(2) -> node3(4); ghép e(3) và node3(4) -> Root(7). Độ dài từ mã: 'e' có độ dài 1 bit; 'w', 'k', 'n', 'd' có độ dài 3 bit. Tổng số bit = 3×1 + 1×3 + 1×3 + 1×3 + 1×3 = 15 bit.",
+      "B": "Phân tích chi tiết: Sai. Kết quả tính được là 15 bit.",
+      "C": "Phân tích chi tiết: Sai. Kết quả tính được là 15 bit.",
+      "D": "Phân tích chi tiết: Sai. Kết quả tính được là 15 bit.",
+      "E": "Phân tích chi tiết: Sai. Kết quả tính được là 15 bit."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Bước 1: Thống kê tần số ký tự trong từ 'weekend':\n- 'e': 3\n- 'w': 1\n- 'k': 1\n- 'n': 1\n- 'd': 1\n\nBước 2: Dựng cây Huffman:\n1. Ghép 2 ký tự tần số 1 (ví dụ w và k) thành nút N1 (tần số 2).\n2. Ghép 2 ký tự tần số 1 còn lại (n và d) thành nút N2 (tần số 2).\n3. Các nút hiện có: N1 (2), N2 (2), e (3). Ghép N1 và N2 thành nút N3 (tần số 4).\n4. Ghép e (3) và N3 (4) thành Gốc (tần số 7).\n\nBước 3: Xác định độ dài mã bit cho từng ký tự:\n- 'e': nằm ở độ sâu 1 -> 1 bit.\n- 'w', 'k', 'n', 'd': nằm ở độ sâu 3 -> 3 bit mỗi ký tự.\n\nBước 4: Tính tổng độ dài chuỗi bit mã hóa:\nTổng độ dài = (3 × 1) + (1 × 3) + (1 × 3) + (1 × 3) + (1 × 3) = 3 + 3 + 3 + 3 + 3 = 15 bit.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (A)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 3,
+      "top_answer_votes": 3,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 3
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999450",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:26:38+0700",
+          "reactions": 1,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120413",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T09:57:46+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121838",
+          "author": "long156206",
+          "text": "d1 k1 n1 w1 e3 1+1 =2 1+1=2   2+2 =4    4+3=7 2 2 4 7=15",
+          "timestamp": "2026-04-05T17:56:56+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153388",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:53:13+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 47,
+    "question_id": "Q47",
+    "image_file": "Q47.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nFind the inorder traversal of the tree\nA. e - h - c - n - s - y - t - m - a\nB. e - c - h - a - n - m - s - t - y\nC. e - c - h - n - m - s - t - y - a\nD. a - c - e - h - m - n - t - s - y\nE. None of the other choices is correct",
+    "key_points_and_rules": "Duyệt trung thứ (Inorder Traversal) cho một cây: Duyệt cây con bên trái theo thứ tự trung thứ → Thăm gốc → Duyệt cây con bên phải theo thứ tự trung thứ.",
+    "option_by_option_analysis": {
+      "A": "Phân tích sai: Thứ tự này đưa gốc 'a' về cuối cùng, đây là biểu hiện của duyệt hậu thứ (Postorder), không phải Inorder.",
+      "B": "Phân tích đúng: \n- Cây con trái của a (gốc c): Inorder(e) = e -> c -> Inorder(h) = h. Chuỗi thu được: e - c - h.\n- Gốc: a.\n- Cây con phải của a (gốc m):\n  + Cây con trái: n.\n  + Gốc: m.\n  + Cây con phải (gốc t): Inorder(s) = s -> t -> Inorder(y) = y => s - t - y.\n  + Kết hợp cây con phải gốc m: n - m - s - t - y.\n- Kết quả toàn bộ cây: e - c - h - a - n - m - s - t - y.",
+      "C": "Phân tích sai: Thứ tự này đặt gốc 'a' ở cuối cùng, là duyệt sai cấu trúc cây.",
+      "D": "Phân tích sai: Thứ tự này thăm gốc 'a' đầu tiên, đây là duyệt tiền thứ (Preorder).",
+      "E": "Phân tích sai: Vì phương án B đã đúng chính xác."
+    },
+    "question_type": "single_choice",
+    "community_answer": "B",
+    "ai_answer": "B",
+    "ai_explanation": "Áp dụng quy tắc duyệt trung thứ (Inorder Traversal: Left -> Root -> Right):\n1. Duyệt cây con trái của gốc `a` (cây gốc `c`): `e` -> `c` -> `h`.\n2. Thăm gốc: `a`.\n3. Duyệt cây con phải của gốc `a` (cây gốc `m`):\n   - Cây con trái: `n`\n   - Nút gốc: `m`\n   - Cây con phải (gốc `t`): `s` -> `t` -> `y`\n   => Kết quả cây con phải: `n` -> `m` -> `s` -> `t` -> `y`.\n\nGhép lại ta được thứ tự duyệt: `e - c - h - a - n - m - s - t - y`, tương ứng với phương án B.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "B",
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (chọn B với 100% sự đồng thuận)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "B": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999451",
+          "author": "kohaku_19",
+          "text": "B",
+          "timestamp": "2025-11-28T12:27:35+0700",
+          "reactions": 1,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1120423",
+          "author": "V1C3",
+          "text": "B",
+          "timestamp": "2026-04-05T09:58:47+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1121839",
+          "author": "long156206",
+          "text": "b",
+          "timestamp": "2026-04-05T17:58:15+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        },
+        {
+          "comment_id": "xfmg-comment-1153389",
+          "author": "hamsothuan13",
+          "text": "b",
+          "timestamp": "2026-04-25T16:53:33+0700",
+          "reactions": 0,
+          "extracted_answer": "B"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 48,
+    "question_id": "Q48",
+    "image_file": "Q48.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nWhat is the position of the letter n when using the preorder traversal?\nA. 8\nB. 7\nC. 6\nD. 10\nE. 11\nF. None of the other choices is correct",
+    "key_points_and_rules": "Duyệt tiền thứ (Preorder Traversal): Thăm nút gốc trước, sau đó duyệt từng cây con từ trái sang phải theo thứ tự tiền thứ.",
+    "option_by_option_analysis": {
+      "A": "Phân tích đúng: Duyệt cây theo thứ tự Preorder:\n1. a (gốc cây)\n2. b (con trái của a)\n3. d (con trái của b)\n4. e (con phải của b)\n5. i (con trái của e)\n6. j (con phải của e)\n7. m (con thứ nhất của j)\n8. n (con thứ hai của j)\nNhư vậy, nút 'n' đứng ở vị trí thứ 8.",
+      "B": "Phân tích sai: Vị trí thứ 7 là nút 'm'.",
+      "C": "Phân tích sai: Vị trí thứ 6 là nút 'j'.",
+      "D": "Phân tích sai: Vị trí thứ 10 là nút 'c'.",
+      "E": "Phân tích sai: Vị trí thứ 11 là nút 'f'.",
+      "F": "Phân tích sai: Vì đáp án A = 8 đúng."
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Quy trình duyệt tiền thứ (Preorder: Root -> Left Subtrees -> Right Subtrees):\n1. `a` (vị trí 1)\n2. `b` (vị trí 2)\n3. `d` (vị trí 3)\n4. `e` (vị trí 4)\n5. `i` (vị trí 5)\n6. `j` (vị trí 6)\n7. `m` (vị trí 7)\n8. `n` (vị trí 8)\n\nDo đó, chữ cái `n` xuất hiện ở vị trí thứ 8.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng (chọn A với 100% sự đồng thuận)."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 5,
+      "top_answer_votes": 5,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 5
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999452",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:28:05+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-999462",
+          "author": "Duy23",
+          "text": "A",
+          "timestamp": "2025-11-28T13:13:55+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120444",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T10:02:09+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121842",
+          "author": "long156206",
+          "text": "a",
+          "timestamp": "2026-04-05T17:59:01+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1153390",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:53:58+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 49,
+    "question_id": "Q49",
+    "image_file": "Q49.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nFind a spanning tree for K_{1,6}.\n\n(i)\n[Illustration]\n(ii)\n[Illustration]\n(iii)\n[Illustration]\nA. (i)\nB. (ii)\nC. None of the choices is correct\nD. (iii)",
+    "key_points_and_rules": "Đồ thị lưỡng dụng đầy đủ $K_{1,6}$ (hay còn gọi là đồ thị hình sao $S_6$) có 7 đỉnh (1 đỉnh trung tâm và 6 đỉnh lá) và 6 cạnh. Cây bao phủ (spanning tree) của $K_{1,6}$ phải chứa tất cả 7 đỉnh và là một đồ thị con không có chu trình của $K_{1,6}$. Do bản thân $K_{1,6}$ là một cây có 7 đỉnh và 6 cạnh, nên cây bao phủ duy nhất của nó chính là bản thân $K_{1,6}$.",
+    "option_by_option_analysis": {
+      "A": "Hình (i) có 8 đỉnh (4 đỉnh hàng trên, 4 đỉnh hàng dưới), trong khi $K_{1,6}$ chỉ có 7 đỉnh. Do đó (i) không phải là cây bao phủ của $K_{1,6}$. [SAI]",
+      "B": "Hình (ii) chứa các đường đi độ dài lớn hơn 2 (ví dụ đường đi a-b-c-e-f-g), trong khi trong $K_{1,6}$ bậc lớn nhất của đỉnh là 6 và khoảng cách giữa 2 đỉnh bất kỳ tối đa là 2. Do đó (ii) không thể là đồ thị con của $K_{1,6}$. [SAI]",
+      "C": "Hình (iii) chính là cây bao phủ đúng của $K_{1,6}$, nên phương án C là sai. [SAI]",
+      "D": "Hình (iii) có 1 đỉnh trung tâm nối với đúng 6 đỉnh lá (tổng cộng 7 đỉnh, 6 cạnh), đúng dạng của $K_{1,6}$. [ĐÚNG]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "D",
+    "ai_answer": "D",
+    "ai_explanation": "Đồ thị $K_{1,6}$ gồm 1 đỉnh trung tâm liên kết với 6 đỉnh còn lại. Do $K_{1,6}$ vốn đã là một cây (cây hình sao), cây bao phủ của nó phải có cấu trúc gồm 1 đỉnh nối tới 6 đỉnh lá. Hình (iii) biểu diễn chính xác dạng đồ thị này với 7 đỉnh và 6 cạnh.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "D",
+      "ai_answer": "D",
+      "comparison_note": "Đáp án của AI (D) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (D). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng ('D')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 4,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "D": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999453",
+          "author": "kohaku_19",
+          "text": "D",
+          "timestamp": "2025-11-28T12:28:11+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1120451",
+          "author": "V1C3",
+          "text": "d",
+          "timestamp": "2026-04-05T10:02:57+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1121845",
+          "author": "long156206",
+          "text": "d",
+          "timestamp": "2026-04-05T18:00:07+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        },
+        {
+          "comment_id": "xfmg-comment-1153391",
+          "author": "hamsothuan13",
+          "text": "d",
+          "timestamp": "2026-04-25T16:54:08+0700",
+          "reactions": 0,
+          "extracted_answer": "D"
+        }
+      ]
+    }
+  },
+  {
+    "question_number": 50,
+    "question_id": "Q50",
+    "image_file": "Q50.webp",
+    "has_illustration": true,
+    "subject_domain": "Toán học & Logic",
+    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nFind the total weight of a minimum spanning tree in the following undirected weighted graph.\n\n[Illustration]\nA. 28\nB. 30\nC. 27\nD. 29\nE. 31",
+    "key_points_and_rules": "Áp dụng thuật toán Kruskal để tìm cây bao phủ nhỏ nhất (MST) trên đồ thị có 8 đỉnh {a, b, c, d, e, f, g, h}:\n1. Sắp xếp danh sách các cạnh theo trọng số tăng dần.\n2. Lần lượt chọn các cạnh có trọng số nhỏ nhất sao cho không tạo thành chu trình cho đến khi chọn đủ 8 - 1 = 7 cạnh.",
+    "option_by_option_analysis": {
+      "A": "Áp dụng thuật toán Kruskal:\n- Chọn (c, e) trọng số 1\n- Chọn (a, d) trọng số 2\n- Chọn (c, h) trọng số 3\n- Chọn (h, f) trọng số 4\n- Chọn (d, c) trọng số 5\n- Chọn (a, b) trọng số 6\n- Chọn (g, f) trọng số 7\nĐã liên thông cả 8 đỉnh {a, b, c, d, e, f, g, h} với 7 cạnh mà không có chu trình.\nTổng trọng số MST = 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. Phương án A ĐÚNG.",
+      "B": "30 là kết quả tính sai trọng số MST. [SAI]",
+      "C": "27 là kết quả tính thiếu hoặc tính sai trọng số MST. [SAI]",
+      "D": "29 là kết quả dư trọng số. [SAI]",
+      "E": "31 không phải tổng trọng số tối ưu. [SAI]"
+    },
+    "question_type": "single_choice",
+    "community_answer": "A",
+    "ai_answer": "A",
+    "ai_explanation": "Sử dụng thuật toán Kruskal chọn 7 cạnh có trọng số nhỏ nhất không tạo chu trình:\n- (c, e): 1\n- (a, d): 2\n- (c, h): 3\n- (h, f): 4\n- (d, c): 5\n- (a, b): 6\n- (g, f): 7\nTổng trọng số của cây bao phủ nhỏ nhất là: 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.",
+    "comparison": {
+      "is_match": true,
+      "status": "MATCH",
+      "community_answer": "A",
+      "ai_answer": "A",
+      "comparison_note": "Đáp án của AI (A) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (A). Kết quả hoàn toàn trùng khớp với đáp án cộng đồng ('A')."
+    },
+    "ai_model": "gemini-3.5-flash",
+    "community_stats": {
+      "question_choice_type_from_comments": "single_choice",
+      "total_comments": 5,
+      "valid_vote_count": 4,
+      "top_answer_votes": 4,
+      "agreement_ratio": 1.0,
+      "vote_distribution": {
+        "A": 4
+      },
+      "comments": [
+        {
+          "comment_id": "xfmg-comment-999454",
+          "author": "kohaku_19",
+          "text": "A",
+          "timestamp": "2025-11-28T12:28:19+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-999461",
+          "author": "Duy23",
+          "text": "A",
+          "timestamp": "2025-11-28T13:13:25+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1120467",
+          "author": "V1C3",
+          "text": "A",
+          "timestamp": "2026-04-05T10:05:20+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        },
+        {
+          "comment_id": "xfmg-comment-1121848",
+          "author": "long156206",
+          "text": "1 2 3 4 5 6 7 = 28",
+          "timestamp": "2026-04-05T18:01:21+0700",
+          "reactions": 0,
+          "extracted_answer": null
+        },
+        {
+          "comment_id": "xfmg-comment-1153392",
+          "author": "hamsothuan13",
+          "text": "a",
+          "timestamp": "2026-04-25T16:55:30+0700",
+          "reactions": 0,
+          "extracted_answer": "A"
+        }
+      ]
+    }
+  }
+]

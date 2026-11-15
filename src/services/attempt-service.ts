@@ -19,7 +19,8 @@ import type {
 export async function startAttempt(
   db: Database,
   userId: string,
-  examId: string
+  examId: string,
+  options?: { is_unlimited?: boolean; duration_minutes?: number | null }
 ): Promise<AttemptSessionResponse> {
   const exam = await db.select().from(exams).where(eq(exams.id, examId)).get();
   if (!exam) {
@@ -40,9 +41,10 @@ export async function startAttempt(
     )
     .all();
 
-  const activeAttempt = existingAttempts.find(
-    (a) => new Date(a.expires_at).getTime() > now
-  );
+  const activeAttempt = existingAttempts.find((a) => {
+    if (a.is_unlimited || !a.expires_at) return true;
+    return new Date(a.expires_at).getTime() > now;
+  });
 
   if (activeAttempt) {
     throw new HTTPException(400, {
@@ -52,13 +54,20 @@ export async function startAttempt(
 
   const attemptId = crypto.randomUUID();
   const nowIso = new Date().toISOString();
-  const expiresIso = new Date(now + exam.duration_minutes * 60 * 1000).toISOString();
+  const isUnlimited = options?.is_unlimited ?? false;
+  let expiresIso: string | null = null;
+
+  if (!isUnlimited) {
+    const durationMins = options?.duration_minutes ?? exam.duration_minutes ?? 60;
+    expiresIso = new Date(now + durationMins * 60 * 1000).toISOString();
+  }
 
   await db.insert(exam_attempts).values({
     id: attemptId,
     user_id: userId,
     exam_id: examId,
     status: "in_progress",
+    is_unlimited: isUnlimited,
     started_at: nowIso,
     expires_at: expiresIso,
     total_questions: exam.total_questions,
@@ -91,8 +100,13 @@ export async function getAttemptSession(
     throw new HTTPException(403, { message: "Forbidden: Not the attempt owner" });
   }
 
-  // Check auto-expiration
-  if (attempt.status === "in_progress" && isAttemptExpired(attempt.expires_at)) {
+  // Check auto-expiration (only if not unlimited)
+  if (
+    attempt.status === "in_progress" &&
+    !attempt.is_unlimited &&
+    attempt.expires_at &&
+    isAttemptExpired(attempt.expires_at)
+  ) {
     return (await submitAttempt(db, userId, attemptId, true)) as any;
   }
 
@@ -136,9 +150,10 @@ export async function getAttemptSession(
     exam_id: attempt.exam_id,
     exam_title: exam?.title || "",
     status: attempt.status as "in_progress" | "completed" | "timed_out",
+    is_unlimited: Boolean(attempt.is_unlimited),
     started_at: attempt.started_at,
     expires_at: attempt.expires_at,
-    time_remaining_seconds: getRemainingSeconds(attempt.expires_at),
+    time_remaining_seconds: attempt.is_unlimited ? null : getRemainingSeconds(attempt.expires_at),
     questions: maskedQuestions
   };
 }
@@ -168,7 +183,7 @@ export async function saveAnswer(
     throw new HTTPException(400, { message: "Attempt is already finalized" });
   }
 
-  if (isAttemptExpired(attempt.expires_at)) {
+  if (!attempt.is_unlimited && isAttemptExpired(attempt.expires_at)) {
     await submitAttempt(db, userId, attemptId, true);
     throw new HTTPException(400, { message: "Attempt duration has expired and was auto-submitted" });
   }

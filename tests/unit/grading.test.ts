@@ -59,5 +59,12 @@ describe("Grading Service & All-or-Nothing Scoring (T028)", () => {
       expect(isAttemptExpired(futureTime)).toBe(false);
       expect(getRemainingSeconds(futureTime)).toBeGreaterThan(50);
     });
+
+    it("should return false for isAttemptExpired and null for getRemainingSeconds when untimed", () => {
+      expect(isAttemptExpired(null)).toBe(false);
+      expect(isAttemptExpired(undefined)).toBe(false);
+      expect(getRemainingSeconds(null)).toBeNull();
+      expect(getRemainingSeconds(undefined)).toBeNull();
+    });
   });
 });

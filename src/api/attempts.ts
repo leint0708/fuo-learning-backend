@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import type { Env } from "../types/env";
 import { createDb } from "../db";
-import { SubmitAnswerRequestSchema } from "../schemas/attempts";
+import { SubmitAnswerRequestSchema, StartAttemptRequestSchema } from "../schemas/attempts";
 import {
   startAttempt,
   getAttemptSession,
@@ -22,9 +22,16 @@ examAttemptsRouter.use("*", authGuard);
 examAttemptsRouter.post("/:exam_id/attempts", async (c) => {
   const user = c.get("user");
   const examId = c.req.param("exam_id");
+  let options = undefined;
+  try {
+    const rawBody = await c.req.json();
+    options = StartAttemptRequestSchema.parse(rawBody);
+  } catch {
+    // No body or invalid json - defaults to standard timed attempt
+  }
   const db = createDb(c.env.DB);
 
-  const session = await startAttempt(db, user.sub, examId);
+  const session = await startAttempt(db, user.sub, examId, options);
   return c.json(session, 201);
 });
 

@@ -11,14 +11,20 @@ export const AttemptQuestionSchema = z.object({
   selected_options: z.string().nullable()
 });
 
+export const StartAttemptRequestSchema = z.object({
+  is_unlimited: z.boolean().optional().default(false),
+  duration_minutes: z.number().int().positive().nullable().optional()
+});
+
 export const AttemptSessionResponseSchema = z.object({
   attempt_id: z.string(),
   exam_id: z.string(),
   exam_title: z.string(),
   status: z.enum(["in_progress", "completed", "timed_out", "abandoned"]),
+  is_unlimited: z.boolean().optional(),
   started_at: z.string(),
-  expires_at: z.string(),
-  time_remaining_seconds: z.number(),
+  expires_at: z.string().nullable(),
+  time_remaining_seconds: z.number().nullable(),
   questions: z.array(AttemptQuestionSchema)
 });
 

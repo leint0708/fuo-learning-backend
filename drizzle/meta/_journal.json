@@ -8,6 +8,13 @@
       "when": 1794438454937,
       "tag": "0000_icy_ultimo",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1794760438631,
+      "tag": "0001_regular_quicksilver",
+      "breakpoints": true
     }
   ]
 }
