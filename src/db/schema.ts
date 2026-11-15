@@ -64,7 +64,7 @@ export const exam_attempts = sqliteTable("exam_attempts", {
   status: text("status").notNull(),
   is_unlimited: integer("is_unlimited", { mode: "boolean" }).notNull().default(false),
   started_at: text("started_at").notNull(),
-  expires_at: text("expires_at"),
+  expires_at: text("expires_at").notNull(),
   submitted_at: text("submitted_at"),
   total_questions: integer("total_questions").notNull(),
   correct_answers_count: integer("correct_answers_count").notNull().default(0),

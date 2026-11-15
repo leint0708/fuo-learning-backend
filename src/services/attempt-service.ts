@@ -42,7 +42,7 @@ export async function startAttempt(
     .all();
 
   const activeAttempt = existingAttempts.find((a) => {
-    if (a.is_unlimited || !a.expires_at) return true;
+    if (a.is_unlimited || a.expires_at === "9999-12-31T23:59:59.999Z") return true;
     return new Date(a.expires_at).getTime() > now;
   });
 
@@ -55,9 +55,11 @@ export async function startAttempt(
   const attemptId = crypto.randomUUID();
   const nowIso = new Date().toISOString();
   const isUnlimited = options?.is_unlimited ?? false;
-  let expiresIso: string | null = null;
+  let expiresIso: string;
 
-  if (!isUnlimited) {
+  if (isUnlimited) {
+    expiresIso = "9999-12-31T23:59:59.999Z";
+  } else {
     const durationMins = options?.duration_minutes ?? exam.duration_minutes ?? 60;
     expiresIso = new Date(now + durationMins * 60 * 1000).toISOString();
   }
@@ -152,8 +154,8 @@ export async function getAttemptSession(
     status: attempt.status as "in_progress" | "completed" | "timed_out",
     is_unlimited: Boolean(attempt.is_unlimited),
     started_at: attempt.started_at,
-    expires_at: attempt.expires_at,
-    time_remaining_seconds: attempt.is_unlimited ? null : getRemainingSeconds(attempt.expires_at),
+    expires_at: attempt.is_unlimited || attempt.expires_at === "9999-12-31T23:59:59.999Z" ? null : attempt.expires_at,
+    time_remaining_seconds: attempt.is_unlimited || attempt.expires_at === "9999-12-31T23:59:59.999Z" ? null : getRemainingSeconds(attempt.expires_at),
     questions: maskedQuestions
   };
 }

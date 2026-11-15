@@ -33,7 +33,7 @@ export function gradeQuestion(
 }
 
 export function isAttemptExpired(expiresAtIso: string | null | undefined): boolean {
-  if (!expiresAtIso) return false;
+  if (!expiresAtIso || expiresAtIso === "9999-12-31T23:59:59.999Z") return false;
   const expirationTime = new Date(expiresAtIso).getTime();
   return Date.now() >= expirationTime;
 }
