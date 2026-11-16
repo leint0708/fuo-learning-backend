@@ -11,7 +11,7 @@ import type {
 export async function getDrillQuestions(
   db: Database,
   subjectCode: string,
-  count: number = 10
+  count: number | null = 10
 ): Promise<PracticeQuestion[]> {
   const subject = await db
     .select()
@@ -34,14 +34,15 @@ export async function getDrillQuestions(
   }
 
   const examIds = subjectExams.map((e) => e.id);
-  const clampedCount = Math.max(1, Math.min(count, 50));
-
-  const drillQuestions = await db
+  const baseQuery = db
     .select()
     .from(questions)
-    .where(inArray(questions.exam_id, examIds))
-    .limit(clampedCount)
-    .all();
+    .where(inArray(questions.exam_id, examIds));
+
+  const drillQuestions =
+    count === null
+      ? await baseQuery.all()
+      : await baseQuery.limit(Math.max(1, Math.floor(count))).all();
 
   return drillQuestions.map((q) => {
     let parsedOptions: Record<string, string> = {};

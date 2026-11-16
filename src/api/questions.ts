@@ -7,7 +7,7 @@ import { getDrillQuestions, checkDrillAnswer } from "../services/drill-service";
 
 export const questionsRouter = new Hono<{ Bindings: Env }>();
 
-// GET /api/v1/questions/drills?subject_code=MAD101&count=10
+// GET /api/v1/questions/drills?subject_code=MAD101&count=10 (or all=true for full subject bank)
 questionsRouter.get("/drills", async (c) => {
   const subjectCode = c.req.query("subject_code");
   if (!subjectCode) {
@@ -16,14 +16,21 @@ questionsRouter.get("/drills", async (c) => {
     });
   }
 
+  const allFlag = c.req.query("all");
+  const includeAll = allFlag === "true" || allFlag === "1";
   const countStr = c.req.query("count");
-  const count = countStr ? parseInt(countStr, 10) : 10;
+  const parsedCount = countStr ? parseInt(countStr, 10) : 10;
+  const resolvedCount = includeAll
+    ? null
+    : Number.isFinite(parsedCount) && parsedCount > 0
+      ? parsedCount
+      : 10;
 
   const db = createDb(c.env.DB);
   const drillQuestions = await getDrillQuestions(
     db,
     subjectCode,
-    isNaN(count) ? 10 : count
+    resolvedCount
   );
 
   return c.json(drillQuestions, 200);

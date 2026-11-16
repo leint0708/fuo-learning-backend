@@ -487,6 +487,15 @@ export const openapiSpec = {
               "type": "integer",
               "default": 10
             }
+          },
+          {
+            "name": "all",
+            "in": "query",
+            "description": "When true, returns all questions in the subject bank regardless of count",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
           }
         ],
         "responses": {
