@@ -202,7 +202,15 @@ export async function seedExamsFromDirectory(db: Database, examsRootDir: string)
           option_by_option_analysis: q.option_by_option_analysis
             ? JSON.stringify(q.option_by_option_analysis)
             : null,
-          community_stats: q.community_stats ? JSON.stringify(q.community_stats) : null,
+          community_stats: q.community_stats
+            ? JSON.stringify({
+                ...q.community_stats,
+                community_answer:
+                  typeof q.community_answer === "string" && q.community_answer.trim().length > 0
+                    ? q.community_answer.trim().toUpperCase()
+                    : null
+              })
+            : null,
           created_at: nowIso
         });
         totalQuestions++;

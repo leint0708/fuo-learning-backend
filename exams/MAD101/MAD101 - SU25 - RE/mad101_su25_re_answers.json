@@ -3,9 +3,9 @@
     "question_number": 1,
     "question_id": "Q21_22_20250805105403",
     "image_file": "Q21_22_20250805105403.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 1\n(Choose 1 answer)\nLet P(x) be a propositional function on {a, b, c}. Which statements are propositions?\n(i) P(c)\n(ii) ∀x P(x)\n(iii) ¬P(a) ∨ P(b)\nA. (i), (ii) and (iii)\nB. (iii)\nC. (ii)\nD. None of the other choices is correct\nE. (i)\nF. (i) and (ii)",
+    "question_text_extracted": "Question: 1\n(Choose 1 answer)\nLet P(x) be a propositional function on {a, b, c}. Which statements are propositions?\n\n(i) P(c)\n(ii) ∀xP(x)\n(iii) ¬P(a) ∨ P(b)\nA. (i), (ii) and (iii)\nB. (iii)\nC. (ii)\nD. None of the other choices is correct\nE. (i)\nF. (i) and (ii)",
     "key_points_and_rules": "Xác định mệnh đề (proposition) là một phát biểu khẳng định có giá trị chân lý xác định (hoặc ĐÚNG hoặc SAI, nhưng không phải cả hai). Hàm mệnh đề (propositional function / predicate) P(x) chứa biến x nên chưa có giá trị chân lý cố định cho đến khi x được gán giá trị hoặc được lượng hóa.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Xét (i) P(c): c là một phần tử cụ thể trong tập {a, b, c}, khi thay c vào hàm mệnh đề P(x), ta được P(c) là một phát biểu có giá trị chân lý xác định (ĐÚNG hoặc SAI), do đó (i) là một mệnh đề. Xét (ii) ∀x P(x): Đây là một mệnh đề được lượng hóa toàn thể (universal quantification) trên miền giá trị {a, b, c}, nó mang giá trị chân lý xác định (ĐÚNG nếu P(x) đúng với mọi x trong miền, SAI nếu có ít nhất một phần tử làm P(x) sai), do đó (ii) là một mệnh đề. Xét (iii) ¬P(a) ∨ P(b): Đây là một biểu thức logic kết hợp các giá trị chân lý cụ thể P(a) và P(b) (sau khi gán các phần tử a và b vào hàm P(x)), kết quả của biểu thức này có giá trị chân lý xác định, do đó (iii) là một mệnh đề. Cả ba phát biểu (i), (ii) và (iii) đều là mệnh đề. Do đó, phương án A [ĐÚNG].",
@@ -633,7 +633,7 @@
     "image_file": "Q6_192_20250805105343.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nWhich statements are correct?\n(i) G1 and G2 are isomorphic\n(ii) H1 and H2 are isomorphic\nA. (i) and (ii)\nB. (ii)\nC. (i)\nD. None of the statements is correct",
+    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nA. (i) and (ii)\nB. (ii)\nC. (i)\nD. None of the statements is correct",
     "key_points_and_rules": "Kiểm tra tính đẳng cấu (isomorphism) giữa các cặp đồ thị G1, G2 và H1, H2.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Sai vì mệnh đề (i) không đúng (G1 và G2 không đẳng cấu).",
@@ -713,7 +713,7 @@
     "image_file": "Q7_1_20250805105339.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nQuestion:\n(Choose 1 answer)\nFind a proposition with the given truth table\np q ?\nT T T\nT F T\nF T T\nF F F\n\n(i) p → q\n(ii) q → p\n(iii) p → ¬q\n(iv) ¬p → q\nA. (i)\nB. (iv)\nC. (iii)\nD. (ii)",
+    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nQuestion:\n(Choose 1 answer)\nFind a proposition with the given truth table\n\n(i) p → q\n(ii) q → p\n(iii) p → ¬q\n(iv) ¬p → q\nA. (i)\nB. (iv)\nC. (iii)\nD. (ii)",
     "key_points_and_rules": "Xác định mệnh đề logic tương ứng với bảng chân trị cho trước. Bảng chân trị có các giá trị T, T, T, F tương ứng với các hàng (T,T), (T,F), (F,T), (F,F).",
     "option_by_option_analysis": {
       "A": "Phân tích phương án (i) p → q: Bảng chân trị của p → q là T, F, T, T (chỉ sai khi T → F). Khớp với hàng thứ 2 là F, không khớp với bảng chân trị đề bài cho là T, T, T, F. Do đó phương án này SAI.",
@@ -920,7 +920,7 @@
     "image_file": "Q9_213_20250805105350.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc",
-    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nLet S be the set of all directed graphs with the sequence of (out-degree, in-degree) :\n[(2, 2), (2, 2), (2, 1), (2, 3)].\nWhich of the following is TRUE:\n(i) \\forall G \\in S : G has no Euler paths\n(ii) \\exists G \\in S : G has an Euler circuit\n(iii) \\exists G \\in S : G has an Euler path, but no Euler circuits\nA. None of the other choices\nB. (iii)\nC. (i)\nD. (ii)",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nLet S be the set of all directed graphs with the sequence of (out-degree, in-degree) :\n[(2, 2), (2, 2), (2, 1), (2, 3)].\nWhich of the following is TRUE:\n(i) ∀ G ∈ S : G has no Euler paths\n(ii) ∃ G ∈ S : G has an Euler circuit\n(iii) ∃ G ∈ S : G has an Euler path, but no Euler circuits\nA. None of the other choices\nB. (iii)\nC. (i)\nD. (ii)",
     "key_points_and_rules": "Đồ thị có hướng có chu trình Euler khi và chỉ khi nó liên thông yếu và mọi đỉnh có out-degree = in-degree. Đồ thị có đường đi Euler khi và chỉ khi số đỉnh có in-degree = out-degree + 1 bằng 1, và số đỉnh có out-degree = in-degree + 1 bằng 1, còn các đỉnh khác đều có in-degree = out-degree.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương án A [SAI] vì mệnh đề (iii) là đúng.",
@@ -1015,7 +1015,7 @@
     "image_file": "Q10_70_20250805105352.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc",
-    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nLet N = {0, 1, 2, ...}. Let f, g be two functions from N to N\nwith f(x) = x^2 + 1 và g(x) = x + 1\nWhich functions are one-to-one?",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nLet N = {0, 1, 2, ...}. Let f, g be two functions from N to N\n\nwith f(x) = x² + 1 và g(x) = x + 1\n\nWhich functions are one-to-one?\nA. f and g\nB. g\nC. f\nD. None of the other choices is correct",
     "key_points_and_rules": "Hàm số f: A -> B gọi là đơn ánh (one-to-one) nếu với mọi x1, x2 thuộc A, nếu f(x1) = f(x2) thì x1 = x2.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: f và g đều không đúng vì chỉ có g là đơn ánh.",
@@ -1102,7 +1102,7 @@
     "image_file": "Q11_207_20250805105352.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc",
-    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nLet u, v be two vertices on one side of the bipartite graph K_{2,2}.\nHow many paths of length 4 from u to v?\nA. 4\nB. None of the other choices is correct\nC. 0\nD. 8\nE. 2",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nLet u, v be two vertices on one side of the bipartite graph K₂,₂.\nHow many paths of length 4 from u to v?\nA. 4\nB. None of the other choices is correct\nC. 0\nD. 8\nE. 2",
     "key_points_and_rules": "Đồ thị hai phía đầy đủ K_{2,2} có tập đỉnh được chia thành 2 phần, mỗi phần có 2 đỉnh. Đặt phần thứ nhất là X = {u, x} và phần thứ hai là Y = {v, y}. Xét đường đi độ dài 4 xuất phát từ u và kết thúc tại v.",
     "option_by_option_analysis": {
       "A": "Phương án A (4): Sai vì số lượng đường đi tính toán thực tế không phải là 4.",
@@ -1207,7 +1207,7 @@
     "image_file": "Q12_239_20250805105353.webp",
     "has_illustration": false,
     "subject_domain": "Cấu trúc dữ liệu và giải thuật",
-    "question_text_extracted": "What is the value of the following prefix expression?\n+ - ↑ 3 2 ↑ 2 3 / 6 - 4 2",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nWhat is the value of the following prefix expression?\n\n+ - ↑ 3 2 ↑ 2 3 / 6 - 4 2\nA. 3\nB. 8\nC. None of the choices is correct\nD. 5\nE. 7\nF. 1",
     "key_points_and_rules": "Tính giá trị biểu thức tiền tố (prefix expression) bằng cách duyệt từ phải sang trái, sử dụng một ngăn xếp (stack): gặp toán hạng thì push vào stack, gặp toán tử thì pop ra 2 toán hạng theo thứ tự (operand1 operator operand2 hoặc ngược lại tùy quy ước, với prefix duyệt từ phải sang trái thì toán hạng đầu pop ra là toán hạng thứ nhất của phép toán). Ký hiệu ↑ ở đây thường biểu diễn phép lũy thừa (power, a^b).",
     "option_by_option_analysis": {
       "A": "Phương án A (3): Sai.",
@@ -1629,9 +1629,9 @@
     "question_number": 18,
     "question_id": "Q16_181_20250805105357",
     "image_file": "Q16_181_20250805105357.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán học & Logic (Lý thuyết đồ thị)",
-    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nConsider the following statements:\n(i) W_n has n vertices.\n(ii) W_n has 2n edges.\n(iii) The degree of each vertex in W_n is 3.\n(iv) The degree of each vertex in W_n is n.\nChoose the incorrect statement(s):",
+    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nConsider the following statements:\n(i) Wₙ has n vertices.\n(ii) Wₙ has 2n edges.\n(iii) The degree of each vertex in Wₙ is 3.\n(iv) The degree of each vertex in Wₙ is n.\nChoose the incorrect statement(s):\nA. (ii) and (iii)\nB. (i) and (ii)\nC. (i), (iii) and (iv)\nD. (ii)",
     "key_points_and_rules": "Đồ thị bánh xe $W_n$ (Wheel graph) với $n \\ge 3$: \n- Được tạo thành từ một đồ thị chu trình $C_n$ bằng cách thêm một đỉnh mới (đỉnh trung tâm) và nối đỉnh trung tâm đó với tất cả $n$ đỉnh của chu trình $C_n$.\n- Tổng số đỉnh của $W_n$ là $n + 1$.\n- Số cạnh của $W_n$ là $2n$ ($n$ cạnh của chu trình + $n$ cạnh nối từ tâm ra).\n- Đỉnh tâm có bậc là $n$, các đỉnh còn lại trên chu trình có bậc là 3.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI].",
@@ -1821,7 +1821,7 @@
     "image_file": "Q18_146_20250805105359.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Cấu trúc dữ liệu",
-    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nWhich of the following procedures are recursive algorithms?\n(i) procedure tt1(x: int, n: positive int)\nd:=0\nfor i:=1 to n do\nd:=d+x\nprint(d)\n(ii) procedure tt2(x: int, n: positive int)\nIf n=1 then tt2(x,n):=x\nelse tt2(x,n):=tt2(x,n-1)+x\n(iii) procedure tt3(n: positive int)\ns:=0\nFor i:=1 to n do\ns:=s+n\nPrint(s)\n(iv) procedure tt4(n: positive int)\nIf n=1 then tt4(n):=1\nelse tt4(n):=tt4(n-1)+n;",
+    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nWhich of the following procedures are recursive algorithms?\n\n(i) procedure tt1(x: int, n: positive int)\nd:=0\nfor i:=1 to n do\nd:=d+x\nprint(d)\n\n(ii) procedure tt2(x: int, n: positive int)\nIf n=1 then tt2(x,n):=x\nelse tt2(x,n):=tt2(x,n-1)+x\n\n(iii) procedure tt3(n: positive int)\ns:=0\nFor i:=1 to n do\ns:=s+n\nPrint(s)\n\n(iv) procedure tt4(n: positive int)\nIf n=1 then tt4(n):=1\nelse tt4(n):=tt4(n-1)+n;\nA. (iii), (iv)\nB. (i), (ii)\nC. (ii), (iv)\nD. (i), (iii)\nE. None of the other choices is correct",
     "key_points_and_rules": "Thuật toán đệ quy (recursive algorithm) là thuật toán trong đó thủ tục/hàm gọi lại chính nó để giải quyết các bài toán nhỏ hơn cùng dạng.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Xét (iii) dùng vòng lặp for thông thường (iterative), không gọi lại chính nó nên không phải đệ quy; (iv) gọi lại tt4(n-1), đây là đệ quy. Do (iii) không phải đệ quy nên A [SAI].",
@@ -2017,9 +2017,9 @@
     "question_number": 22,
     "question_id": "Q20_81_20250805105402",
     "image_file": "Q20_81_20250805105402.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Thuật toán & Cấu trúc dữ liệu",
-    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nGiven the Binary search algorithm\nIf input = 2, 4, 5, 7, 8, 9, 10, 13 and x = 11, after the second time of dividing into sublists, the sublist to be considered is__\nA. 9, 10\nB. 10\nC. 9, 10, 13\nD. 10, 13",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nGiven the Binary search algorithm\nprocedure BinarySearch(a₁ < a₂ < ... < aₙ, x: integer)\ni := 1\nj := n\nwhile (i < j)\n  m := ⌊(i + j) / 2⌋\n  if x > aₘ then i := m + 1\n  else j := m\nif x = aᵢ then location := i\nelse location := 0\n\nIf input = 2, 4, 5, 7, 8, 9, 10, 13 and x = 11, after the second time of dividing into sublists, the sublist to be considered is__\nA. 9, 10\nB. 10\nC. 9, 10, 13\nD. 10, 13",
     "key_points_and_rules": "Trace thủ công từng bước thuật toán tìm kiếm nhị phân (Binary Search) với danh sách các chỉ số bắt đầu từ 1 đến $n$. Phép chia lấy phần nguyên dưới được ký hiệu là $\\lfloor \\cdot \\rfloor$.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phản án A chứa phần tử 9, 10, không phải là phân đoạn sau lần chia thứ hai. Do đó phương án A [SAI].",
@@ -2104,9 +2104,9 @@
     "question_number": 23,
     "question_id": "Q22_91_20250805105404",
     "image_file": "Q22_91_20250805105404.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán học rời rạc & Phân tích thuật toán",
-    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nWhich function is NOT O(x³)?\n\n(i) log²⁰¹⁰ x\n\n(ii) (x⁵ + 2) / (x log x - 4)\n\n(iii) 2x² + x - 1\nA. (iii)\nB. None of the other choices is correct\nC. (i)\nD. (ii)",
+    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nWhich function is NOT O(x³)?\n(i) log²⁰¹⁰ x\n(ii) (x⁵ + 2) / (x log x - 4)\n(iii) 2x² + x - 1\nA. (iii)\nB. None of the other choices is correct\nC. (i)\nD. (ii)",
     "key_points_and_rules": "Đề bài yêu cầu tìm hàm số KHÔNG thuộc lớp độ phức tạp O(x³) (NOT O(x³)). Xét tốc độ tăng trưởng của từng hàm số so với x³ khi x → ∞.",
     "option_by_option_analysis": {
       "A": "Xét hàm (iii) 2x² + x - 1: Đây là hàm đa thức bậc 2. Do bậc 2 nhỏ hơn 3 (2 < 3), nên 2x² + x - 1 = O(x³). Do đó hàm này THUỘC O(x³), phương án A sai vì hỏi NOT O(x³).",
@@ -2378,7 +2378,7 @@
     "image_file": "Q25_6_20250805105407.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Let p, q be the propositions\n\np = \"She is out of work\"\nq = \"She spends less on clothes\"\n\nTranslate the sentence into logical expression\n\n\"Although she is out of work, she doesn't spend less on clothes.\"\n\n(i) p -> ¬q\n\n(ii) p ^ ¬q\n\n(iii) p v ¬q\n\n(iv) p <-> ¬q\n\n(v) ¬q -> p",
+    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nLet p, q be the propositions\n\np = \"She is out of work\"\nq = \"She spends less on clothes\"\n\nTranslate the sentence into logical expression\n\n\"Although she is out of work, she doesn't spend less on clothes.\"\n\n(i) p → ¬q\n\n(ii) p ∧ ¬q\n\n(iii) p ∨ ¬q\n\n(iv) p ↔ ¬q\n\n(v) ¬q → p\nA. (iv)\nB. (v)\nC. (iii)\nD. (i)\nE. (ii)",
     "key_points_and_rules": "Dịch mệnh đề tiếng Anh sang biểu thức logic. Liên từ 'Although' (mặc dù) diễn tả sự đồng thời xảy ra của hai mệnh đề, tương đương với phép hội (AND, ký hiệu ^). Mệnh đề thứ hai chứa phủ định 'doesn't spend less on clothes' tương ứng với ¬q.",
     "option_by_option_analysis": {
       "A": "(iv) p <-> ¬q sai vì 'Although' không mang ý nghĩa tương đương hai chiều.",
@@ -2904,7 +2904,7 @@
     "image_file": "Q31_130_20250805105413.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc",
-    "question_text_extracted": "Question: Let P(n) be the statement \"3^n = 1\". The domain consists of all non-negative integers.\nA proof of ∀nP(n) is as follows:\n(i) P(0) is clearly true.\n(ii) Assume that P(0), ..., P(k) are true for some non negative integer k.\n(iii) We have:\n3^(k+1) = 3^(2k)/3^(k-1) = 3^k . 3^k/3^(k-1) = 1 . 1/1 = 1. Thus P(k + 1) is true. By strong induction, we conclude ∀nP(n).\nWhich step is wrong in this proof?",
+    "question_text_extracted": "Question: 32\n(Choose 1 answer)\nLet P(n) be the statement \"3ⁿ = 1\". The domain consists of all non-negative integers.\n\nA proof of ∀nP(n) is as follows:\n\n(i) P(0) is clearly true.\n\n(ii) Assume that P(0), ..., P(k) are true for some non-negative integer k.\n\n(iii) We have:\n3ᵏ⁺¹ = 3²ᵏ/3ᵏ⁻¹ = 3ᵏ · 3ᵏ/3ᵏ⁻¹ = 1 · 1/1 = 1. Thus P(k + 1) is true. By strong induction, we conclude ∀nP(n).\n\nWhich step is wrong in this proof?\nA. None of the other choices\nB. (i)\nC. (iii)\nD. (ii)",
     "key_points_and_rules": "Xác định bước sai trong chứng minh bằng quy nạp mạnh đối với mệnh đề P(n): 3^n = 1 trên tập các số nguyên không âm.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Sai vì tồn tại bước sai trong chứng minh.",
@@ -3079,7 +3079,7 @@
     "image_file": "Q33_202_20250805105415.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic (Lý thuyết đồ thị)",
-    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nWhich statement is correct?\n(i) G1 is strongly connected\n(ii) G2 is strongly connected\nA. (i) only\nB. (ii) only\nC. None of the statements is correct\nD. Both (i) and (ii)",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\n(i) G1 is strongly connected\n(ii) G2 is strongly connected\nA. (i) only\nB. (ii) only\nC. None of the statements is correct\nD. Both (i) and (ii)",
     "key_points_and_rules": "Đồ thị có hướng được gọi là liên thông mạnh (strongly connected) nếu tồn tại đường đi có hướng từ mọi đỉnh đến mọi đỉnh khác trong đồ thị.",
     "option_by_option_analysis": {
       "A": "Mệnh đề (i) chỉ ra G1 liên thông mạnh. Xét G1 (hình ngôi sao 6 cánh), các mũi tên tạo thành các chu trình khép kín hoặc không thể đi từ một số đỉnh ngược lại các đỉnh khác (đồ thị vô hướng được vẽ có chiều sao cho có các đỉnh cụt hoặc không đủ đường đi ngược chiều). Do đó G1 không liên thông mạnh.",
@@ -3253,7 +3253,7 @@
     "image_file": "Q35_108_20250805105417.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Đại số số học",
-    "question_text_extracted": "The number n = 32670000 can be written uniquely as a product of powers of distinct primes, n = a^x b^y c^z d^t, where a, b, c, d are primes.\nFind x+y+z+t.",
+    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nThe number n = 326700000 can be written uniquely as a product of powers of distinct primes, n = aˣ bʸ cᶻ dᵗ, where a, b, c, d are primes.\n\nFind x+y+z+t.\nA. 17\nB. 13\nC. 15\nD. 11",
     "key_points_and_rules": "Phân tích một số nguyên ra thừa số nguyên tố và tính tổng các số mũ của các thừa số nguyên tố đó.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Sai. [SAI]",
@@ -3841,7 +3841,7 @@
     "image_file": "Q42_35_20250805105426.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: Let\n\nP(x) = \"x is a student\"\nQ(x, y) = \"x knows the programming language y\"\n\nTranslate the sentence into a logical expression:\n\"Every student knows some programming language\"\n\n(i) \\forall y \\exists x (P(x) \\rightarrow Q(x, y))\n(ii) \\forall x \\exists y (P(x) \\rightarrow Q(x, y))\n(iii) \\forall x \\exists y (P(x) \\wedge Q(x, y))\n(iv) \\forall x \\exists y (P(x) \\wedge Q(x, y))\nA. (ii)\nB. (iii)\nC. (i)\nD. None of the other choices is correct\nE. (iv)",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: Let\n\nP(x) = \"x is a student\"\nQ(x, y) = \"x knows the programming language y\"\n\nTranslate the sentence into a logical expression:\n\"Every student knows some programming language\"\n\n(i) ∀ y ∃ x (P(x) → Q(x, y))\n(ii) ∀ x ∃ y (P(x) → Q(x, y))\n(iii) ∀ x ∃ y (P(x) \\wedge Q(x, y))\n(iv) ∀ x ∃ y (P(x) \\wedge Q(x, y))\nA. (ii)\nB. (iii)\nC. (i)\nD. None of the other choices is correct\nE. (iv)",
     "key_points_and_rules": "Chuyển đổi câu tiếng Anh \"Every student knows some programming language\" sang biểu thức logic vị từ sử dụng các vị từ P(x) và Q(x, y).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết phương án A: (ii) tương ứng với \\forall x \\exists y (P(x) \\rightarrow Q(x, y)). Theo ngữ nghĩa, câu này có nghĩa là \"Với mọi x, nếu x là sinh viên thì tồn tại y sao cho x biết ngôn ngữ lập trình y\". Mệnh đề kéo theo P(x) \\rightarrow Q(x, y) khi kết hợp với lượng từ \\forall x \\exists y chính xác biểu diễn phát biểu \"Mọi học sinh đều biết một ngôn ngữ lập trình nào đó\".",
@@ -3929,7 +3929,7 @@
     "image_file": "Q43_252_20250805105427.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic (Lý thuyết đồ thị)",
-    "question_text_extracted": "Question:\nWhat is the height of spanning tree obtained from W_{100} by the Depth-first search, starting at the vertex of degree 100?",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nWhat is the height of spanning tree obtained from W₁₀₀ by the Depth-first search, starting at the vertex of degree 100?\nA. 0\nB. 100\nC. 99\nD. 1\nE. 2\nF. None of the choices is correct",
     "key_points_and_rules": "Đồ thị bánh xe W_{100} có đỉnh tâm có bậc 100 và 100 đỉnh trên chu trình biên (mỗi đỉnh bậc 3). Chiều cao của cây khung (spanning tree) tạo bởi thuật toán tìm kiếm chiều sâu (DFS) xuất phát từ đỉnh tâm.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết phương án A (0): Sai, cây khung có nhiều hơn 1 đỉnh nên chiều cao lớn hơn 0.",
@@ -4096,9 +4096,9 @@
     "question_number": 46,
     "question_id": "Q45_86_20250805105429",
     "image_file": "Q45_86_20250805105429.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nQuestion: Given the Insertion sort algorithm\nIf input = 3, 2, 4, 7, 1, 6, 5, after running the outer loop with i = 5, the order of the elements in the list is_____\nA. 1, 2, 3, 4, 6, 7, 5\nB. 1, 2, 3, 7, 4, 6, 5\nC. 1, 2, 3, 4, 7, 5, 6\nD. 1, 2, 3, 4, 7, 6, 5",
+    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nQuestion: Given the Insertion sort algorithm\nProcedure Insertionsort(a₁, a₂, ..., aₙ: integer)\n\nfor i = 2 to n do\n    j := 1\n    while aⱼ < aᵢ\n        j := j+1\n    temp := aᵢ\n    for k := i down to j+1\n        aₖ := aₖ₋₁\n    aⱼ := temp\n\nIf input = 3, 2, 4, 7, 1, 6, 5, after running the outer loop with i = 5, the order of the elements in the list is_____\nA. 1, 2, 3, 4, 6, 7, 5\nB. 1, 2, 3, 7, 4, 6, 5\nC. 1, 2, 3, 4, 7, 5, 6\nD. 1, 2, 3, 4, 7, 6, 5",
     "key_points_and_rules": "Mã giả Insertion Sort theo chuẩn 1-based indexing của cuốn sách Discrete Mathematics and Its Applications của Kenneth H. Rosen.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Sai trật tự phần tử sau khi kết thúc bước i = 5.",

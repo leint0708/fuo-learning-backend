@@ -30,18 +30,29 @@ function escapeSql(str: string | null | undefined): string {
 function extractOptions(q: any): Record<string, string> {
   const optionsDict: Record<string, string> = {};
 
-  if (q.option_by_option_analysis) {
-    for (const key of Object.keys(q.option_by_option_analysis)) {
-      optionsDict[key] = `Option ${key}`;
-    }
-  }
-
   if (q.question_text_extracted) {
     const lines = q.question_text_extracted.split("\n");
     for (const line of lines) {
       const match = line.trim().match(/^([A-Z])[\.:\)]\s+(.*)$/);
       if (match) {
         optionsDict[match[1]] = match[2].trim();
+      }
+    }
+  }
+
+  if (Object.keys(optionsDict).length > 0) {
+    return optionsDict;
+  }
+
+  if (q.option_by_option_analysis) {
+    for (const [key, val] of Object.entries(q.option_by_option_analysis)) {
+      if (
+        /^[A-Z]$/.test(key) &&
+        typeof val === "string" &&
+        val.trim().length > 0 &&
+        !/không có|no option/i.test(val)
+      ) {
+        optionsDict[key] = `Option ${key}`;
       }
     }
   }
@@ -65,7 +76,7 @@ export function generateSeedSql(examsRootDir: string, outFile: string) {
   const subjectEntries = fs.readdirSync(examsRootDir, { withFileTypes: true });
 
   for (const subjectEntry of subjectEntries) {
-    if (!subjectEntry.isDirectory()) continue;
+    if (!subjectEntry.isDirectory() || subjectEntry.name.startsWith(".")) continue;
     const subjectCode = subjectEntry.name;
     const subjectPath = path.join(examsRootDir, subjectCode);
 
@@ -78,13 +89,16 @@ export function generateSeedSql(examsRootDir: string, outFile: string) {
 
     const examEntries = fs.readdirSync(subjectPath, { withFileTypes: true });
 
-    // Verify the subject has at least one valid exam with a .json answers file
+    // Verify the subject has at least one valid exam with a .json answers array
     const hasValidExams = examEntries.some((examEntry) => {
-      if (!examEntry.isDirectory()) return false;
+      if (!examEntry.isDirectory() || examEntry.name.startsWith(".")) return false;
       const examPath = path.join(subjectPath, examEntry.name);
       try {
         const files = fs.readdirSync(examPath);
-        return files.some((f) => f.endsWith(".json"));
+        const jsonFileName = files.find((f) => f.endsWith(".json"));
+        if (!jsonFileName) return false;
+        const parsed = JSON.parse(fs.readFileSync(path.join(examPath, jsonFileName), "utf8"));
+        return Array.isArray(parsed);
       } catch {
         return false;
       }
@@ -97,7 +111,7 @@ export function generateSeedSql(examsRootDir: string, outFile: string) {
     );
 
     for (const examEntry of examEntries) {
-      if (!examEntry.isDirectory()) continue;
+      if (!examEntry.isDirectory() || examEntry.name.startsWith(".")) continue;
       const examDirName = examEntry.name;
       const examPath = path.join(subjectPath, examDirName);
 
@@ -106,7 +120,8 @@ export function generateSeedSql(examsRootDir: string, outFile: string) {
       if (!jsonFileName) continue;
 
       const rawContent = fs.readFileSync(path.join(examPath, jsonFileName), "utf8");
-      const questionItems: any[] = JSON.parse(rawContent);
+      const questionItems: unknown = JSON.parse(rawContent);
+      if (!Array.isArray(questionItems)) continue;
 
       const examCode = examDirName;
       const hash = crypto.createHash("sha256").update(examCode).digest("hex").substring(0, 24);
@@ -118,7 +133,7 @@ export function generateSeedSql(examsRootDir: string, outFile: string) {
 
       for (let i = 0; i < questionItems.length; i++) {
         const q = questionItems[i];
-        const qNumber = q.question_number || i + 1;
+        const qNumber = Number(q.question_number) || i + 1;
         const qCode = q.question_id || `Q${qNumber}`;
         const questionId = `${examId}-${qCode}`;
 
@@ -136,7 +151,24 @@ export function generateSeedSql(examsRootDir: string, outFile: string) {
         const optionAnalysisJson = q.option_by_option_analysis
           ? JSON.stringify(q.option_by_option_analysis)
           : null;
-        const communityStatsJson = q.community_stats ? JSON.stringify(q.community_stats) : null;
+        const normalizedCommunityAnswer =
+          typeof q.community_answer === "string" && q.community_answer.trim().length > 0
+            ? q.community_answer.trim().toUpperCase()
+            : null;
+        const enrichedCommunityStats = q.community_stats
+          ? { ...q.community_stats, community_answer: normalizedCommunityAnswer }
+          : normalizedCommunityAnswer
+            ? {
+                total_comments: 0,
+                valid_vote_count: 1,
+                top_answer_votes: 1,
+                agreement_ratio: 1,
+                community_answer: normalizedCommunityAnswer
+              }
+            : null;
+        const communityStatsJson = enrichedCommunityStats
+          ? JSON.stringify(enrichedCommunityStats)
+          : null;
 
         sqlStatements.push(
           `INSERT INTO questions (id, subject_id, exam_id, question_number, question_id_code, question_text, image_file, question_type, options, correct_answer, ai_explanation, option_by_option_analysis, community_stats, created_at) VALUES (${escapeSql(questionId)}, ${escapeSql(subjectId)}, ${escapeSql(examId)}, ${qNumber}, ${escapeSql(qCode)}, ${escapeSql(q.question_text_extracted || `Question ${qNumber}`)}, ${escapeSql(imageRelPath)}, ${escapeSql(q.question_type || "single_choice")}, ${escapeSql(optionsJson)}, ${escapeSql(normalizedCorrectAnswer)}, ${escapeSql(q.ai_explanation)}, ${escapeSql(optionAnalysisJson)}, ${escapeSql(communityStatsJson)}, ${escapeSql(now)}) ON CONFLICT(id) DO UPDATE SET question_text = excluded.question_text, image_file = excluded.image_file, question_type = excluded.question_type, options = excluded.options, correct_answer = excluded.correct_answer, ai_explanation = excluded.ai_explanation, option_by_option_analysis = excluded.option_by_option_analysis, community_stats = excluded.community_stats;`

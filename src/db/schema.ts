@@ -71,7 +71,8 @@ export const exam_attempts = sqliteTable("exam_attempts", {
   total_score: real("total_score").notNull().default(0.0),
   percentage_score: real("percentage_score").notNull().default(0.0),
   is_passed: integer("is_passed", { mode: "boolean" }).notNull().default(false),
-  duration_seconds: integer("duration_seconds").notNull().default(0)
+  duration_seconds: integer("duration_seconds").notNull().default(0),
+  question_ids: text("question_ids", { mode: "json" })
 });
 
 export const attempt_answers = sqliteTable("attempt_answers", {

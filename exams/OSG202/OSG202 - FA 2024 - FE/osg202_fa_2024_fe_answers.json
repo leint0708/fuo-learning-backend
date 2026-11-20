@@ -609,7 +609,7 @@
     "image_file": "Q6.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Since operating systems interact closely with the hardware, some knowledge of computer hardware is useful for understanding them. Computers are built up of processors, memory, and I/O devices....\nWhich of the following is not a part of the operating system?",
+    "question_text_extracted": "Question: 6\n(Choose 1 answer)\nSince operating systems interact closely with the hardware, some knowledge of computer hardware is useful for understanding them. Computers are built up of processors, memory, and I/O devices....\nWhich of the following is not a part of the operating system?\nA. Performance monitor\nB. Input/output control program\nC. Job control program\nD. Supervisor",
     "key_points_and_rules": "Tìm thành phần không phải là một phần cốt lõi của hệ điều hành trong danh sách các chương trình/tiện ích hệ thống.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Performance monitor (Trình theo dõi hiệu năng) là một công cụ ứng dụng hoặc phần mềm tiện ích/giám sát chạy trên hệ thống dùng để đo lường hiệu suất, không phải là một thành phần nhân hoặc cấu trúc cốt lõi bên trong của hệ điều hành (như supervisor hay các trình điều khiển I/O). [ĐÚNG]",
@@ -1109,7 +1109,7 @@
     "image_file": "Q10.webp",
     "has_illustration": false,
     "subject_domain": "Hệ điều hành (Operating Systems)",
-    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nQuestion: A computer has 4GB RAM of which the operating system occupies 2GB. The processes are all 1024 MB and have the same characteristics. How many percent is CPU utilization when these programs are idle waiting for I/O 50% of the time?\n(Choose 1 answer)\nA. 75%\nB. 90%\nC. 1%-D. 50%",
+    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nQuestion: A computer has 4GB RAM of which the operating system occupies 2GB. The processes are all 1024 MB and have the same characteristics. How many percent is CPU utilization when these programs are idle waiting for I/O 50% of the time?\n(Choose 1 answer)\nA. 75%\nB. 90%\nC. 1%\nD. 50%",
     "key_points_and_rules": "Bài toán tính hiệu suất CPU (CPU Utilization) trong hệ thống đa chương (Multiprogramming) với thời gian chờ I/O. Công thức kinh điển: CPU_utilization = 1 - p^n, trong đó p là tỷ lệ thời gian tiến trình chờ I/O, và n là bậc đa chương (degree of multiprogramming) - số lượng tiến trình có thể chứa đồng thời trong bộ nhớ khả dụng.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG]. Tổng RAM = 4GB = 4096 MB. Hệ điều hành chiếm 2GB = 2048 MB. Bộ nhớ còn lại cho các tiến trình người dùng = 4096 - 2048 = 2048 MB (2GB). Mỗi tiến trình tốn 1024 MB (1GB). Vậy bậc đa chương n = 2048 / 1024 = 2 tiến trình. Tỷ lệ tiến trình chờ I/O là p = 50% = 0.5. Áp dụng công thức CPU utilization = 1 - p^n = 1 - (0.5)^2 = 1 - 0.25 = 0.75 tương đương 75%.",
@@ -4299,7 +4299,7 @@
     "image_file": "Q34.webp",
     "has_illustration": false,
     "subject_domain": "Hệ điều hành & Kiến trúc máy tính",
-    "question_text_extracted": "Question: 4\n(Choose 1 answer)\nAn interrupt has four properties:\n1. The PC (Program Counter) is saved in a known place.\n2. All instructions before the one pointed to by the PC have completed.\n3. No instruction beyond the one pointed to by the PC has finished.\n4. The execution state of the instruction pointed to by the PC is known.\nWhat type of Interrupt is it?",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nAn interrupt has four properties:\n1. The PC (Program Counter) is saved in a known place.\n2. All instructions before the one pointed to by the PC have completed.\n3. No instruction beyond the one pointed to by the PC has finished.\n4. The execution state of the instruction pointed to by the PC is known.\nWhat type of Interrupt is it?\nA. Imprecise interrupt\nB. Synchronous interrupt\nC. Sequential interrupt\nD. Precise interrupt",
     "key_points_and_rules": "Nhận diện định nghĩa của ngắt chính xác (Precise interrupt) dựa trên 4 đặc tính kinh điển trong kiến trúc máy tính và hệ điều hành.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Ngắt không chính xác (Imprecise interrupt) xảy ra khi trạng thái của các lệnh trước và sau PC không thỏa mãn các điều kiện trên, khiến việc khôi phục và tiếp tục thực thi gặp khó khăn. [SAI]",

@@ -2974,7 +2974,7 @@
     "image_file": "Q7.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 42\n(Choose 3 answers)\nWhat three items are contained in an Ethernet header and trailer? (Choose three.)\nA. source IP address\nB. source MAC address\nC. destination IP address\nd. destination MAC address\nE. error-checking information",
+    "question_text_extracted": "Question: 42\n(Choose 3 answers)\nWhat three items are contained in an Ethernet header and trailer? (Choose three.)\nA. source IP address\nB. source MAC address\nC. destination IP address\nD. destination MAC address\nE. error-checking information",
     "key_points_and_rules": "Xác định các thành phần trường dữ liệu nằm trong Ethernet Header và Trailer ở Tầng 2 (Data Link layer). Lưu ý câu hỏi yêu cầu chọn 3 đáp án.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 'source IP address' là địa chỉ logic thuộc Tầng 3 (Network Layer - gói tin IP), không nằm trong Ethernet header (tầng 2). Do đó, phương án A [SAI].",

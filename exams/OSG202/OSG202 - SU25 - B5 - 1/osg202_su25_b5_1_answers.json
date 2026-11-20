@@ -758,7 +758,7 @@
     "image_file": "Q9.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nKizspy | Question: 9\n(Choose 1 answer)\nIn the preemptive priority scheduling algorithm, when a process arrives at the ready queue, its priority is compared with the priority of ________\nA. all process\nB. currently running process\nC. parent process\nD. init process",
+    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nQuestion: 9\n(Choose 1 answer)\nIn the preemptive priority scheduling algorithm, when a process arrives at the ready queue, its priority is compared with the priority of ________\nA. all process\nB. currently running process\nC. parent process\nD. init process",
     "key_points_and_rules": "Thuật toán định thời ưu tiên có cướp quyền (Preemptive Priority Scheduling): Khi một tiến trình mới xuất hiện ở hàng đợi sẵn sàng (ready queue), hệ điều hành sẽ so sánh độ ưu tiên của tiến trình mới này với tiến trình đang thực thi (currently running process). Nếu tiến trình mới có độ ưu tiên cao hơn, nó sẽ chiếm (preempt) CPU của tiến trình đang chạy.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [SAI] Do tiến trình đang chạy (currently running process) đã là tiến trình có độ ưu tiên cao nhất trong số các tiến trình nằm trong ready queue trước đó, nên chỉ cần so sánh tiến trình mới với tiến trình đang chạy chứ không cần so sánh với tất cả các tiến trình.",
@@ -861,7 +861,7 @@
     "image_file": "Q10.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nKizspy | Question: 10\n(Choose 1 answer)\nWhich scheduling algorithm allocates the CPU first to the process that requests the CPU first?\nA. first-come, first-served scheduling\nB. shortest job scheduling\nC. priority scheduling\nD. multi-level queue",
+    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nQuestion: 10\n(Choose 1 answer)\nWhich scheduling algorithm allocates the CPU first to the process that requests the CPU first?\nA. first-come, first-served scheduling\nB. shortest job scheduling\nC. priority scheduling\nD. multi-level queue",
     "key_points_and_rules": "Định nghĩa thuật toán định thời CPU First-Come, First-Served (FCFS): Tiến trình nào yêu cầu CPU trước sẽ được cấp CPU trước (quản lý theo nguyên tắc hàng đợi FIFO).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [ĐÚNG] Thuật toán First-Come, First-Served (FCFS) phục vụ các tiến trình theo thứ tự yêu cầu CPU đến trước thì được cấp trước.",
@@ -956,7 +956,7 @@
     "image_file": "Q11.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nKizspy | Question: 11\n(Choose 1 answer)\nA computer has 4GB RAM of which the operating system occupies 2GB.The processes are all 1024 MB and have the same characteristics. How many percent is CPU utilization when these programs are idle waiting for I/O 50% of the time?\nA. 75%\nB. 90%\nC. 1%\nD. 50%",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nQuestion: 11\n(Choose 1 answer)\nA computer has 4GB RAM of which the operating system occupies 2GB.The processes are all 1024 MB and have the same characteristics. How many percent is CPU utilization when these programs are idle waiting for I/O 50% of the time?\nA. 75%\nB. 90%\nC. 1%\nD. 50%",
     "key_points_and_rules": "Công thức tính hiệu suất sử dụng CPU (CPU utilization) trong mô hình đa chương trình (Multiprogramming Model): CPU utilization = 1 - p^n, trong đó p là tỷ lệ thời gian tiến trình chờ I/O, n là số lượng tiến trình tối đa nằm trong bộ nhớ RAM cùng một lúc.",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Dung lượng RAM còn lại dành cho các tiến trình = 4GB - 2GB = 2GB = 2048 MB. Số tiến trình (n) = 2048 MB / 1024 MB = 2. Tỷ lệ chờ I/O p = 50% = 0.5. Hiệu suất CPU = 1 - (0.5)^2 = 1 - 0.25 = 0.75 = 75%.",
@@ -1059,7 +1059,7 @@
     "image_file": "Q12.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nKizspy | Question: 12\n(Choose 1 answer)\nWhich of the following process state transitions(from-to) is illegal?\nA. Ready, Blocked (waiting)\nB. Running, Blocked (waiting)\nC. Blocked, Ready\nD. Running, Ready",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nQuestion: 12\n(Choose 1 answer)\nWhich of the following process state transitions(from-to) is illegal?\nA. Ready, Blocked (waiting)\nB. Running, Blocked (waiting)\nC. Blocked, Ready\nD. Running, Ready",
     "key_points_and_rules": "Sơ đồ chuyển trạng thái tiến trình (Process State Transition Diagram): \n- Ready -> Running (được cấp CPU)\n- Running -> Ready (hết ngắt/hết time-slice)\n- Running -> Blocked (chờ I/O hoặc sự kiện)\n- Blocked -> Ready (I/O hoặc sự kiện hoàn thành)\nChuyển trực tiếp từ Ready sang Blocked là không hợp lệ (illegal) vì tiến trình phải đang chạy (Running) thì mới có thể yêu cầu thao tác I/O hoặc đợi sự kiện.",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Chuyển trạng thái từ Ready sang Blocked là KHÔNG HỢP LỆ (illegal) vì một tiến trình ở trạng thái Ready đang chờ CPU, nó chưa được thực thi dòng lệnh nào để yêu cầu I/O hay chờ sự kiện.",
@@ -1328,7 +1328,7 @@
     "image_file": "Q15.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nKizspy | Question: 15\n(Choose 1 answer)\nA preemptive version of shortest job first (SJF) is____.\nA. Shortest Process Next\nB. First-Come, First-Served\nC. Shortest remaining time next\nD. Shortest used time",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nQuestion: 15\n(Choose 1 answer)\nA preemptive version of shortest job first (SJF) is____.\nA. Shortest Process Next\nB. First-Come, First-Served\nC. Shortest remaining time next\nD. Shortest used time",
     "key_points_and_rules": "Thuật toán định thời CPU SJF (Shortest Job First) có phiên bản không trưng dụng (non-preemptive) là Shortest Process Next (SPN) và phiên bản có trưng dụng (preemptive) là Shortest Remaining Time Next (SRTN) / Shortest Remaining Time First (SRTF).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Shortest Process Next (SPN) là tên gọi khác của thuật toán SJF ở phiên bản không trưng dụng (non-preemptive). do đó phương án này [SAI].",
@@ -1415,7 +1415,7 @@
     "image_file": "Q16.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nKizspy | Question: 16\n(Choose 1 answer)\nWhat is the primary goal of the Best Fit algorithm in memory allocation?\nA. To allocate the largest available memory block\nB. To allocate the first memory block large enough for the request\nC. To find the smallest hole that is adequate for the request\nD. To minimize external fragmentation by allocating contiguous blocks",
+    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nQuestion: 16\n(Choose 1 answer)\nWhat is the primary goal of the Best Fit algorithm in memory allocation?\nA. To allocate the largest available memory block\nB. To allocate the first memory block large enough for the request\nC. To find the smallest hole that is adequate for the request\nD. To minimize external fragmentation by allocating contiguous blocks",
     "key_points_and_rules": "Quản lý bộ nhớ - Các thuật toán cấp phát vùng nhớ trống (Hole Allocation Algorithms):\n- First Fit: Cấp phát lỗ trống phù hợp đầu tiên tìm thấy.\n- Best Fit: Cấp phát lỗ trống nhỏ nhất vừa đủ chứa yêu cầu (nhằm giảm lãng phí kích thước lỗ trống dư thừa).\n- Worst Fit: Cấp phát lỗ trống lớn nhất hiện có.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Cấp phát khối bộ nhớ lớn nhất hiện có là nguyên lý của thuật toán Worst Fit. Do đó phương án này [SAI].",
@@ -1684,7 +1684,7 @@
     "image_file": "Q19.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nKizspy | Question: 19\n(Choose 1 answer)\nSuppose there are 6 memory blocks B1, B2, B3, B4, B5, and B6 with corresponding sizes of 300 KB, 600 KB, 380KB, 200 KB, 750 KB, and 125 KB. And we have 5 processes, P1, P2, P3, P4, and P5, with corresponding request sizes of 115KB, 500KB, 358KB, 200 KB, and 375 KB. When applying the best-fit algorithm, which memory block is process P5 assigned to?\nA. B5\nB. B3\nC. B4\nD. B2",
+    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nQuestion: 19\n(Choose 1 answer)\nSuppose there are 6 memory blocks B1, B2, B3, B4, B5, and B6 with corresponding sizes of 300 KB, 600 KB, 380KB, 200 KB, 750 KB, and 125 KB. And we have 5 processes, P1, P2, P3, P4, and P5, with corresponding request sizes of 115KB, 500KB, 358KB, 200 KB, and 375 KB. When applying the best-fit algorithm, which memory block is process P5 assigned to?\nA. B5\nB. B3\nC. B4\nD. B2",
     "key_points_and_rules": "Thuật toán Best-Fit: Chọn khối bộ nhớ còn trống nhỏ nhất nhưng đủ lớn để chứa tiến trình requested.",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Từng bước phân bổ theo thuật toán Best-Fit:\n- P1 (115 KB): Khối phù hợp nhỏ nhất là B6 (125 KB) -> Cấp cho B6.\n- P2 (500 KB): Khối phù hợp nhỏ nhất là B2 (600 KB) -> Cấp cho B2.\n- P3 (358 KB): Khối phù hợp nhỏ nhất là B3 (380 KB) -> Cấp cho B3.\n- P4 (200 KB): Khối phù hợp nhỏ nhất còn trống là B4 (200 KB) -> Cấp cho B4.\n- P5 (375 KB): Các khối còn lại hoặc chưa dùng chỉ có B1 (300 KB - không đủ) và B5 (750 KB - đủ). Do đó, P5 được cấp phát vào khối B5.",
@@ -1771,7 +1771,7 @@
     "image_file": "Q20.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nKizspy | Question: 20\n(Choose 1 answer)\nAssume we have a 16-bit virtual address and a 4-KB page size.\nHow many indexes are in a one-level page table?\nA. 16\nB. 4\nC. 8\nD. 64",
+    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nQuestion: 20\n(Choose 1 answer)\nAssume we have a 16-bit virtual address and a 4-KB page size.\nHow many indexes are in a one-level page table?\nA. 16\nB. 4\nC. 8\nD. 64",
     "key_points_and_rules": "- Địa chỉ ảo = 16 bits.\n- Kích thước trang (Page size) = 4 KB = 2^12 bytes -> Số bit dành cho Offset d = 12 bits.\n- Số bit dành cho số trang (Page number p) = 16 - 12 = 4 bits.\n- Số lượng mục/chỉ số (indexes/entries) trong bảng trang một cấp = 2^p = 2^4 = 16.",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Số bit cho số trang p = 16 - 12 = 4 bit. Số lượng chỉ số (entries) trong bảng trang = 2^4 = 16.",
@@ -2048,7 +2048,7 @@
     "image_file": "Q23.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nKizspy | Question: 23\n(Choose 1 answer)\n\nIf LRU page replacement is used with three page frames, how many page faults will occur with the reference string 7, 0, 1, 2, 0, 3 (if the three frames are initially empty)?\nA. 5\nB. 4\nC. 6\nD. 3",
+    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nQuestion: 23\n(Choose 1 answer)\n\nIf LRU page replacement is used with three page frames, how many page faults will occur with the reference string 7, 0, 1, 2, 0, 3 (if the three frames are initially empty)?\nA. 5\nB. 4\nC. 6\nD. 3",
     "key_points_and_rules": "Thuật toán thay thế trang LRU (Least Recently Used) loại bỏ trang nào lâu không được truy cập nhất khi bộ nhớ đầy. Ba khung trang ban đầu trống.",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Chi tiết từng bước mô phỏng LRU:\n- Truy cập 7: Khung trang [7, -, -] -> Lỗi trang (1)\n- Truy cập 0: Khung trang [7, 0, -] -> Lỗi trang (2)\n- Truy cập 1: Khung trang [7, 0, 1] -> Lỗi trang (3)\n- Truy cập 2: Trang 7 được dùng lâu nhất trước đó (ở bước 1), thay 7 bằng 2 -> Khung trang [2, 0, 1] -> Lỗi trang (4)\n- Truy cập 0: Trang 0 đã có trong bộ nhớ -> Hit (Không lỗi trang). Thứ tự truy cập gần nhất hiện tại: 1 (cũ nhất), 2, 0 (mới nhất)\n- Truy cập 3: Trang 1 là trang lâu chưa dùng nhất, thay 1 bằng 3 -> Khung trang [2, 0, 3] -> Lỗi trang (5).\nTổng số lỗi trang (page faults) = 5.",
@@ -2143,7 +2143,7 @@
     "image_file": "Q24.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nKizspy | Question: 24\n(Choose 1 answer)\n\nWhen a new process is created in a paging system, which of the following is appropriate to determine program size and create page table?\nA. process creation time.\nB. process execution time.\nC. page fault time.\nD. process termination time.",
+    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nQuestion: 24\n(Choose 1 answer)\n\nWhen a new process is created in a paging system, which of the following is appropriate to determine program size and create page table?\nA. process creation time.\nB. process execution time.\nC. page fault time.\nD. process termination time.",
     "key_points_and_rules": "Trong hệ thống phân trang (Paging system), khi một tiến trình mới được khởi tạo (process creation), hệ điều hành cần xác định kích thước tiến trình và khởi tạo bảng trang (Page Table) cho tiến trình đó.",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Thời điểm tạo tiến trình (process creation time) là thời điểm hệ điều hành xác định kích thước chương trình và xây dựng bảng trang (page table) cho tiến trình mới.",
@@ -2230,7 +2230,7 @@
     "image_file": "Q25.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nKizspy | Question: 25\n\n(Choose 1 answer)\n\nA straight forward and quite general solution is to provide the machine with many completely independent address spaces, which is called?\nA. Segment\nB. Paging\nC. Partition\nD. Virtual",
+    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nQuestion: 25\n\n(Choose 1 answer)\n\nA straight forward and quite general solution is to provide the machine with many completely independent address spaces, which is called?\nA. Segment\nB. Paging\nC. Partition\nD. Virtual",
     "key_points_and_rules": "Trích dẫn chính xác từ giáo trình Modern Operating Systems (Andrew S. Tanenbaum): \"A straightforward and quite general solution is to provide the machine with many completely independent address spaces, called segments.\"",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Phương đoạn (Segmentation) cung cấp cho máy tính nhiều không gian địa chỉ hoàn toàn độc lập với nhau (mỗi segment bắt đầu từ địa chỉ 0 đến một độ dài nhất định).",
@@ -2350,7 +2350,7 @@
     "image_file": "Q26.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nKizspy | Question: 26\n\n(Choose 1 answer)\n\nIn Windows 95, which is the maximum partition size, if the FAT type is FAT-32 and the block size is 16 KB?\nA. 1TB\nB. 2TB\nC. 512MB\nD. 128MB",
+    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nQuestion: 26\n\n(Choose 1 answer)\n\nIn Windows 95, which is the maximum partition size, if the FAT type is FAT-32 and the block size is 16 KB?\nA. 1TB\nB. 2TB\nC. 512MB\nD. 128MB",
     "key_points_and_rules": "FAT-32 giới hạn địa chỉ sector là 32-bit (với kích thước sector 512 bytes), dẫn đến giới hạn dung lượng phân vùng tối đa về mặt lý thuyết trong Windows 95/98 là 2TB (2^32 * 512 bytes = 2 TB).",
     "option_by_option_analysis": {
       "A": "[SAI] Không phải giới hạn tối đa của FAT32.",
@@ -2644,7 +2644,7 @@
     "image_file": "Q29.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 29\n(Choose 1 answer)\nKizspy | Question: 29\n(Choose 1 answer)\nIn file access system, random access files are essential for many applications, for example database systems. What two methods are used to specify where to start reading?\nA. Write and Read\nB. Write and Seek\nC. Read and Seek\nD. Read and Write",
+    "question_text_extracted": "Question: 29\n(Choose 1 answer)\nQuestion: 29\n(Choose 1 answer)\nIn file access system, random access files are essential for many applications, for example database systems. What two methods are used to specify where to start reading?\nA. Write and Read\nB. Write and Seek\nC. Read and Seek\nD. Read and Write",
     "key_points_and_rules": "Đối với truy cập ngẫu nhiên (Direct / Random Access) trong hệ thống tập tin, có hai cách để xác định vị trí bắt đầu đọc dữ liệu: (1) Sử dụng thao tác `Read` với tham số là số hiệu khối/bản ghi (`read n`), hoặc (2) Sử dụng thao tác `Seek` để di chuyển con trỏ tập tin tới vị trí mong muốn (`seek n`) rồi thực hiện đọc.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Write và Read là hai thao tác ghi và đọc dữ liệu cơ bản, không phải hai phương pháp định vị điểm bắt đầu đọc trong truy cập ngẫu nhiên. do đó [SAI].",
@@ -2723,7 +2723,7 @@
     "image_file": "Q30.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 30\n(Choose 1 answer)\nKizspy | Question: 30\n(Choose 1 answer)\nIn a memory system consisting of the following hole sizes: 10MB, 18MB, 9MB, and 14MB, suppose the Best Fit algorithm is used. Which holes are allocated in order for consecutive segment requests of 11MB, 2MB, 9MB, and 8MB?\nA. 14MB, 3MB, 10MB, 9MB\nB. 18MB, 7MB, 10MB, 9MB\nC. 14MB, 3MB, 9MB, 10MB\nD. 18MB, 7MB, 9MB, 10MB",
+    "question_text_extracted": "Question: 30\n(Choose 1 answer)\nQuestion: 30\n(Choose 1 answer)\nIn a memory system consisting of the following hole sizes: 10MB, 18MB, 9MB, and 14MB, suppose the Best Fit algorithm is used. Which holes are allocated in order for consecutive segment requests of 11MB, 2MB, 9MB, and 8MB?\nA. 14MB, 3MB, 10MB, 9MB\nB. 18MB, 7MB, 10MB, 9MB\nC. 14MB, 3MB, 9MB, 10MB\nD. 18MB, 7MB, 9MB, 10MB",
     "key_points_and_rules": "Thuật toán Best Fit: Chọn vùng nhớ trống (hole) nhỏ nhất nhưng đủ lớn để chứa tiến trình/phân đoạn yêu cầu. Sau khi cấp phát, phần trống còn dư của hole đó sẽ trở thành một hole mới có kích thước = (kích thước hole cũ - kích thước yêu cầu).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Thứ tự cấp phát ghi 10MB cho 9MB và 9MB cho 8MB là sai thứ tự bước 3 và 4, do đó [SAI].",
@@ -2985,7 +2985,7 @@
     "image_file": "Q33.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nKizspy | Question: 33\n(Choose 1 answer)\nWhat is fragmentation in the context of file-system implementation?\nA. A technique for managing directory structures.\nB. The allocation of memory for file storage.\nC. The splitting of files or free space into smaller, non-contiguous blocks.\nD. The arrangement of files on storage devices.",
+    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nQuestion: 33\n(Choose 1 answer)\nWhat is fragmentation in the context of file-system implementation?\nA. A technique for managing directory structures.\nB. The allocation of memory for file storage.\nC. The splitting of files or free space into smaller, non-contiguous blocks.\nD. The arrangement of files on storage devices.",
     "key_points_and_rules": "Định nghĩa về sự phân mảnh (fragmentation) trong hệ thống tệp (File System): Phân mảnh xảy ra khi các tệp hoặc vùng trống trên đĩa bị chia nhỏ thành nhiều khối không liên tục (non-contiguous blocks), làm giảm hiệu năng đọc/ghi đĩa.",
     "option_by_option_analysis": {
       "A": "[SAI] Việc quản lý thư mục sử dụng các cấu trúc dữ liệu như danh sách liên kết, bảng băm (hash tables) hoặc cây B-tree, không phải định nghĩa của phân mảnh.",
@@ -3064,7 +3064,7 @@
     "image_file": "Q34.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nKizspy | Question: 34\n(Choose 1 answer)\nWhat is the main disadvantage of programmed I/O?\nA. It is too complex to implement.\nB. It ties up the CPU full-time until the I/O is completed.\nC. It is only suitable for embedded systems.\nD. It requires expensive hardware.",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nQuestion: 34\n(Choose 1 answer)\nWhat is the main disadvantage of programmed I/O?\nA. It is too complex to implement.\nB. It ties up the CPU full-time until the I/O is completed.\nC. It is only suitable for embedded systems.\nD. It requires expensive hardware.",
     "key_points_and_rules": "Nhược điểm của vào/ra lập trình (Programmed I/O - Polling): CPU phải liên tục kiểm tra trạng thái thiết bị ngoại vi (busy waiting), dẫn đến việc chiếm dụng CPU toàn bộ thời gian cho đến khi tác vụ I/O hoàn tất.",
     "option_by_option_analysis": {
       "A": "[SAI] Programmed I/O là phương pháp đơn giản nhất để triển khai về mặt phần cứng và phần mềm, không hề phức tạp.",
@@ -3507,7 +3507,7 @@
     "image_file": "Q39.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 39\n(Choose 4 answers)\nKizspy | Question: 39\n(Choose 4 answers)\nWhat are the four important issues for I/O software? Choose correct answers.\nA. Error handling\nB. Device independence\nC. Synchronous and Asynchronous\nD. Uniform naming\nE. Buffering",
+    "question_text_extracted": "Question: 39\n(Choose 4 answers)\nQuestion: 39\n(Choose 4 answers)\nWhat are the four important issues for I/O software? Choose correct answers.\nA. Error handling\nB. Device independence\nC. Synchronous and Asynchronous\nD. Uniform naming\nE. Buffering",
     "key_points_and_rules": "Theo giáo trình Hệ điều hành (Andrew S. Tanenbaum - Modern Operating Systems), các mục tiêu/vấn đề chính trong thiết kế phần mềm I/O bao gồm: Device independence (Tính độc lập thiết bị), Uniform naming (Định danh đồng nhất), Error handling (Xử lý lỗi), Synchronous vs. Asynchronous transfers (Truyền đồng bộ và bất đồng bộ), và Buffering (Đệm dữ liệu). Câu hỏi yêu cầu chọn 4 đáp án đúng trong số các phương án đưa ra.",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Xử lý lỗi (Error handling) là một vấn đề quan trọng của phần mềm I/O, giúp phát hiện và xử lý lỗi ở cấp độ thấp nhất có thể trước khi báo lên các tầng trên.",
@@ -3890,7 +3890,7 @@
     "image_file": "Q43.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nKizspy | Question: 43\n(Choose 1 answer)\nIf the wait for graph contains a cycle __________\nA. then a deadlock does not exist\nB. then a deadlock exists\nC. then the system is in a safe state\nD. either deadlock exists or the system is in a safe state",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: 43\n(Choose 1 answer)\nIf the wait for graph contains a cycle __________\nA. then a deadlock does not exist\nB. then a deadlock exists\nC. then the system is in a safe state\nD. either deadlock exists or the system is in a safe state",
     "key_points_and_rules": "Đồ thị chờ (Wait-for graph) là biến thể của Đồ thị cấp phát tài nguyên (Resource-Allocation Graph) được áp dụng riêng cho các hệ thống mà mỗi loại tài nguyên chỉ có DUY NHẤT một thể hiện (single instance). Nguyên lý: Hệ thống xảy ra Deadlock khi và chỉ khi đồ thị wait-for có chứa chu trình (cycle).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [SAI] Vì sự xuất hiện của chu trình trong wait-for graph là điều kiện cần và đủ để khẳng định chắc chắn có Deadlock xảy ra.",
@@ -3977,7 +3977,7 @@
     "image_file": "Q44.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nKizspy | Question: 44\n(Choose 1 answer)\nIn Operating Systems. How does livelock differ from deadlock?\nA. In deadlock, processes make progress; in livelock, they do not.\nB. In livelock, processes make progress; in deadlock, they do not.\nC. Deadlock and livelock are the same.\nD. Livelock is the process before becoming deadlock.",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nQuestion: 44\n(Choose 1 answer)\nIn Operating Systems. How does livelock differ from deadlock?\nA. In deadlock, processes make progress; in livelock, they do not.\nB. In livelock, processes make progress; in deadlock, they do not.\nC. Deadlock and livelock are the same.\nD. Livelock is the process before becoming deadlock.",
     "key_points_and_rules": "Phân biệt Deadlock (Tắc nghẽn) và Livelock (Tắc nghẽn động):\n- Deadlock: Các tiến trình bị khóa (blocked/waiting), không tiêu tốn CPU và hoàn toàn KHÔNG tạo ra bất kỳ sự tiến triển/thay đổi trạng thái nào.\n- Livelock: Các tiến trình vẫn liên tục thay đổi trạng thái/chạy mã CPU (nhiều bộ tài liệu trắc nghiệm mô tả ngắn gọn là 'make progress' hoặc 'active state transition' so với sự đóng băng của deadlock), mặc dù xét về mặt tổng thể nhiệm vụ vẫn bị quẩn.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [SAI] Trong deadlock, tiến trình bị đóng băng (blocked) nên không thể thực thi hay tạo ra tiến triển nào.",
@@ -4056,7 +4056,7 @@
     "image_file": "Q45.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nKizspy | Question: 45\n(Choose 1 answer)\nThe resource allocation graph does not apply to a resource allocation system ____________\nA. with multiple instances of each resource type\nB. with a single instance of each resource type\nC. single & multiple instances of each resource type\nD. none of the mentioned",
+    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nQuestion: 45\n(Choose 1 answer)\nThe resource allocation graph does not apply to a resource allocation system ____________\nA. with multiple instances of each resource type\nB. with a single instance of each resource type\nC. single & multiple instances of each resource type\nD. none of the mentioned",
     "key_points_and_rules": "Thuật toán Đồ thị phân bố tài nguyên (Resource Allocation Graph - RAG) chỉ áp dụng hiệu quả cho hệ thống mà mỗi loại tài nguyên chỉ có đúng một thể hiện (single instance), trong đó sự xuất hiện của một chu trình (cycle) là điều kiện cần và đủ để xảy ra deadlock. Khi loại tài nguyên có nhiều thể hiện (multiple instances), chu trình không còn là điều kiện đủ để kết luận deadlock và RAG không còn áp dụng được nữa; thay vào đó hệ thống phải dùng Thuật toán Ngân hàng (Banker's Algorithm).",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Thuật toán đồ thị phân bố tài nguyên (Resource Allocation Graph) không áp dụng được cho hệ thống có nhiều thể hiện của mỗi loại tài nguyên (multiple instances of each resource type). Với trường hợp này, ta phải áp dụng thuật toán Banker.",
@@ -4160,7 +4160,7 @@
     "image_file": "Q46.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nKizspy | Question: 46\n(Choose 1 answer)\nIf a process has begun to burn a Blu-ray, suddenly taking the Blu-ray recorder away from it and giving it to another process will result in a garbled Blu-ray. What does the scenario above indicate?\nA. It's an Un-preemptable resource\nB. It's a Preemptable resource\nC. It's a Non-sharable recourse\nD. It's a Non-preemptable resource",
+    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nQuestion: 46\n(Choose 1 answer)\nIf a process has begun to burn a Blu-ray, suddenly taking the Blu-ray recorder away from it and giving it to another process will result in a garbled Blu-ray. What does the scenario above indicate?\nA. It's an Un-preemptable resource\nB. It's a Preemptable resource\nC. It's a Non-sharable recourse\nD. It's a Non-preemptable resource",
     "key_points_and_rules": "Phân loại tài nguyên trong Hệ điều hành (theo Andrew S. Tanenbaum - Modern Operating Systems):\n- Preemptable resource (Tài nguyên có thể thu hồi/trưng dụng): Có thể thu hồi từ tiến trình đang giữ mà không gây lỗi hoặc mất mát dữ liệu (ví dụ: CPU, bộ nhớ RAM).\n- Non-preemptable resource (Tài nguyên không thể thu hồi/trưng dụng): Không thể thu hồi khi tiến trình chưa hoàn thành công việc, nếu cố tình thu hồi sẽ làm hỏng dữ liệu/tiến trình (ví dụ: ổ ghi đĩa CD/DVD/Blu-ray).",
     "option_by_option_analysis": {
       "A": "[SAI] Dù nghĩa gần giống, thuật ngữ chuẩn chuyên ngành được định nghĩa trong các tài liệu Hệ điều hành là 'Non-preemptable resource', không phải 'Un-preemptable resource'.",

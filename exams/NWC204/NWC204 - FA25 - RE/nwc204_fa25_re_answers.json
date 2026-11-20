@@ -835,7 +835,7 @@
     "image_file": "Q11.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nFor the TCP/IP protocol suite, what is the correct order of events when a Telnet message is being prepared to be sent over the network?\n\n1. The IP header is added.    A. First\n2. The TCP header is added.    B. Second\n3. The Ethernet header is added    C. Third\n4. The Telnet-formatted data is provided to the next layer    D. Fourth\nA. 1C-2B-3D-4A\nB. 1C-2D-3B-4A\nC. 1A-2B-3C-4D\nD. 1B-2A-3D-4C",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nFor the TCP/IP protocol suite, what is the correct order of events when a Telnet message is being prepared to be sent over the network?\nA. 1C-2B-3D-4A\nB. 1C-2D-3B-4A\nC. 1A-2B-3C-4D\nD. 1B-2A-3D-4C",
     "key_points_and_rules": "Quá trình đóng gói dữ liệu (Encapsulation) trong mô hình TCP/IP diễn ra từ tầng ứng dụng xuống tầng vật lý:\n1. Tầng Ứng dụng (Application): Dữ liệu Telnet được định dạng và chuyển xuống tầng tiếp theo -> Thứ 1 (A. First)\n2. Tầng Giao vận (Transport): Thêm TCP Header vào dữ liệu -> Thứ 2 (B. Second)\n3. Tầng Mạng (Network/Internet): Thêm IP Header -> Thứ 3 (C. Third)\n4. Tầng Liên kết dữ liệu (Data Link): Thêm Ethernet Header -> Thứ 4 (D. Fourth)",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Ghép nối chính xác thứ tự thực hiện:\n- 1 (IP header added) là bước Thứ 3 (C)\n- 2 (TCP header added) là bước Thứ 2 (B)\n- 3 (Ethernet header added) là bước Thứ 4 (D)\n- 4 (Telnet-formatted data provided) là bước Thứ 1 (A)\nDo đó kết hợp chính xác là 1C-2B-3D-4A.",
@@ -1057,7 +1057,7 @@
     "image_file": "Q14.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nThree methods allow IPv6 and IPv4 to co-exist. Match each method with its description. (Not all options are used.)\nA. The IPv4 packets and IPv6 packets coexist in the same network. | 1. DHCP\nB. The IPv6 packet is transported inside an IPv4 packet. | 2. translation\nC. IPv6 packets are converted into IPv4 packets, and vice versa. | 3. tunneling\n | 4. dual-stack\n\nA. A4-B3-C2\nB. A3-B2-C2\nC. A2-B3-C1\nD. A1-B3-C4",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nThree methods allow IPv6 and IPv4 to co-exist. Match each method with its description. (Not all options are used.)\nA. A4-B3-C2\nB. A3-B2-C2\nC. A2-B3-C1\nD. A1-B3-C4",
     "key_points_and_rules": "Các kỹ thuật chuyển đổi/đồng tồn tại IPv4 và IPv6:\n1. Dual-stack: Thiết bị chạy đồng thời cả hai chồng giao thức IPv4 và IPv6 (IPv4 và IPv6 cùng tồn tại trên mạng).\n2. Tunneling: Đóng gói gói tin IPv6 bên trong gói tin IPv4 để truyền qua mạng IPv4.\n3. Translation (NAT64): Biến dịch gói tin IPv6 thành IPv4 và ngược lại.",
     "option_by_option_analysis": {
       "A": "Phân tích phương án A (A4-B3-C2): \n- A (IPv4 và IPv6 cùng tồn tại trong cùng một mạng) khớp với 4 (dual-stack).\n- B (Gói tin IPv6 được vận chuyển bên trong gói tin IPv4) khớp với 3 (tunneling).\n- C (Gói tin IPv6 được chuyển đổi thành IPv4 và ngược lại) khớp với 2 (translation).\nĐây là kết hợp hoàn toàn chính xác.",
@@ -1660,7 +1660,7 @@
     "image_file": "Q22.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nMatch the requirements of a reliable network with the supporting network architecture. (Not all options are used.)\nA. fault tolerance\nB. scalability\nC. security\n\n1. Protect the network from unauthorized access.\n2. Provide redundant links and devices.\n3. Match the type of communication with a specific priority.\n4. Expand the network without degrading the service for existing users.\n5. Ensure that streaming data is provided over high speed links.\n\nA. A2-B4-C1\nB. A2-B1-C4\nC. A1-B5-C3\nD. A3-B2-C4",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nMatch the requirements of a reliable network with the supporting network architecture. (Not all options are used.)\nA. A2-B4-C1\nB. A2-B1-C4\nC. A1-B5-C3\nD. A3-B2-C4",
     "key_points_and_rules": "Khái niệm các thuộc tính cốt lõi của kiến trúc mạng tin cậy (Reliable Network Architecture):\n- Fault Tolerance (Khả năng chịu lỗi): Sử dụng các đường liên kết và thiết bị dự phòng.\n- Scalability (Khả năng mở rộng): Cho phép mở rộng quy mô mạng mà không làm giảm chất lượng dịch vụ của người dùng hiện có.\n- Security (Bảo mật): Bảo vệ mạng khỏi các truy cập trái phép.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [ĐÚNG] Ghép nối chính xác:\n- A. fault tolerance -> 2. Provide redundant links and devices (A2)\n- B. scalability -> 4. Expand the network without degrading the service for existing users (B4)\n- C. security -> 1. Protect the network from unauthorized access (C1)\nTạo thành chuỗi ghép nối A2-B4-C1.",

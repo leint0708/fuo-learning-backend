@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import { createDb } from "../db";
 import { authGuard, type AuthContext } from "../middleware/auth";
 import { getUserStatistics, getUserAttemptHistory } from "../services/stats-service";
+import { getUserPracticeProgressSummary } from "../services/practice-service";
 
 export const statsRouter = new Hono<AuthContext>();
 
@@ -33,4 +34,12 @@ statsRouter.get("/attempts", async (c) => {
   });
 
   return c.json(history, 200);
+});
+
+// GET /api/v1/users/me/practice-progress
+statsRouter.get("/practice-progress", async (c) => {
+  const user = c.get("user");
+  const db = createDb(c.env.DB);
+  const summary = await getUserPracticeProgressSummary(db, user.sub);
+  return c.json(summary, 200);
 });

@@ -251,7 +251,7 @@
     "image_file": "Q3.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 3\n(Choose 1 answer)\nKizspy | Question: 3\n(Choose 1 answer)\nTo run a Java program, which the software must be installed?\nA. Java Runtime Environment (JRE)\nB. Eclipse\nC. Java Development Kit (JDK)\nD. Netbeans",
+    "question_text_extracted": "Question: 3\n(Choose 1 answer)\nQuestion: 3\n(Choose 1 answer)\nTo run a Java program, which the software must be installed?\nA. Java Runtime Environment (JRE)\nB. Eclipse\nC. Java Development Kit (JDK)\nD. Netbeans",
     "key_points_and_rules": "Xác định thành phần tối thiểu cần thiết để CHẠY (run) một chương trình Java đã được biên dịch.",
     "option_by_option_analysis": {
       "A": "Java Runtime Environment (JRE) bao gồm Java Virtual Machine (JVM), các thư viện cốt lõi và các thành phần khác cần thiết để thực thi (run) các ứng dụng Java. Do đó, đây là phần mềm bắt buộc phải cài đặt để chạy chương trình Java. [ĐÚNG]",
@@ -370,7 +370,7 @@
     "image_file": "Q4.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 4\n(Choose 1 answer)\nKizspy | Question: 4\n(Choose 1 answer)\nWhat is the meaning of platform-independent?\nA. write once, run anywhere\nB. not easy to execute on any system after compilation.\nC. the execution of the program is restricted by the type of OS environment provided.\nD. All of the others",
+    "question_text_extracted": "Question: 4\n(Choose 1 answer)\nQuestion: 4\n(Choose 1 answer)\nWhat is the meaning of platform-independent?\nA. write once, run anywhere\nB. not easy to execute on any system after compilation.\nC. the execution of the program is restricted by the type of OS environment provided.\nD. All of the others",
     "key_points_and_rules": "Giải thích khái niệm tính độc lập nền tảng (platform-independent) trong Java.",
     "option_by_option_analysis": {
       "A": "Khẩu hiệu nổi tiếng và cũng là định nghĩa chuẩn của tính độc lập nền tảng trong Java là 'write once, run anywhere' (viết một lần, chạy mọi nơi). [ĐÚNG]",
@@ -490,7 +490,7 @@
     "image_file": "Q5.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 5\n(Choose 2 answers)\nKizspy | Question: 5\n(Choose 2 answers)\nWhat is the role of the Java Development Kit (JDK) in java programming? Choose multiple correct answers.\nA. A cross-platformed software development environment that offers a collection of tools and libraries necessary for developing Java-based software applications.\nB. A core package used in Java programming, along with the JVM (Java Virtual Machine) and the JRE (Java Runtime Environment) to develop and deploy applications\nC. A software for building applications that combines common developer tools into a single graphical user interface (GUI).\nD. A text editor that can assist in writing software code with features such as syntax highlighting with visual cues",
+    "question_text_extracted": "Question: 5\n(Choose 2 answers)\nQuestion: 5\n(Choose 2 answers)\nWhat is the role of the Java Development Kit (JDK) in java programming? Choose multiple correct answers.\nA. A cross-platformed software development environment that offers a collection of tools and libraries necessary for developing Java-based software applications.\nB. A core package used in Java programming, along with the JVM (Java Virtual Machine) and the JRE (Java Runtime Environment) to develop and deploy applications\nC. A software for building applications that combines common developer tools into a single graphical user interface (GUI).\nD. A text editor that can assist in writing software code with features such as syntax highlighting with visual cues",
     "key_points_and_rules": "Xác định vai trò của JDK (Java Development Kit) trong lập trình Java. Câu hỏi yêu cầu chọn 2 đáp án đúng.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì JDK (Java Development Kit) chính là một môi trường phát triển phần mềm đa nền tảng cung cấp bộ công cụ (như trình biên dịch javac) và thư viện cần thiết để phát triển ứng dụng Java.",
@@ -601,7 +601,7 @@
     "image_file": "Q6.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 6\n(Choose 1 answer)\nKizspy | Question: 6\n(Choose 1 answer)\nWhat is the file extension of Java source code?\nA. .java\nB. .class\nC. .jar\nD. .rar",
+    "question_text_extracted": "Question: 6\n(Choose 1 answer)\nQuestion: 6\n(Choose 1 answer)\nWhat is the file extension of Java source code?\nA. .java\nB. .class\nC. .jar\nD. .rar",
     "key_points_and_rules": "Xác định đuôi mở rộng của tệp mã nguồn Java (source code) trước khi biên dịch.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì các tệp chứa mã nguồn Java do lập trình viên viết ra đều có phần mở rộng mặc định là .java (ví dụ: Main.java).",
@@ -1015,7 +1015,7 @@
     "image_file": "Q10.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nWhat will be the output of the following code?\npublic class Test1 {\n    int x;\n    x = 5;\n    public static void main(String[] args) {\n        Test1 t = new Test1();\n        System.out.println(t.x);\n    }\n}",
+    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nWhat will be the output of the following code?\npublic class Test1 {\n    int x;\n    x = 5;\n    public static void main(String[] args) {\n        Test1 t = new Test1();\n        System.out.println(t.x);\n    }\n}\nA. complie error\nB. runtime error\nC. 5\nD. 0",
     "key_points_and_rules": "Phân tích cú pháp khai báo và khởi tạo biến trong thân lớp (class body) của Java. Các câu lệnh thực thi (như gán giá trị x = 5) không được phép đặt trực tiếp bên trong thân lớp mà phải nằm bên trong phương thức (method), constructor hoặc khối khởi tạo (initializer block).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Dòng lệnh `x = 5;` nằm trực tiếp trong thân class `Test1` thay vì nằm trong một method hoặc constructor. Cú pháp này gây ra lỗi biên dịch (compile error) trong Java. Do đó phương án này [ĐÚNG].",
@@ -1142,7 +1142,7 @@
     "image_file": "Q11.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nKizspy | Question: 11\n(Choose 1 answer)\nWhat will be the output of the following code?\npublic class Test10 {\n    public static void main(String[] args) {\n        Integer x = new Integer(5);\n        Integer y = new Integer(10);\n        System.out.println((String)(x+y));\n    }\n}\nA. 15\nB. 510\nC. Runtime error\nD. Compiler Error",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nQuestion: 11\n(Choose 1 answer)\nWhat will be the output of the following code?\npublic class Test10 {\n    public static void main(String[] args) {\n        Integer x = new Integer(5);\n        Integer y = new Integer(10);\n        System.out.println((String)(x+y));\n    }\n}\nA. 15\nB. 510\nC. Runtime error\nD. Compiler Error",
     "key_points_and_rules": "1. Quy tắc ép kiểu (Casting): Trong Java, không thể ép kiểu trực tiếp từ một kiểu dữ liệu nguyên thủy (int) hoặc lớp bao (Integer) sang String bằng toán tử cast (String) vì chúng không thuộc cùng một cây thừa kế.\n2. Phép toán cộng (+): Khi cộng hai đối tượng Integer, Java sẽ thực hiện unboxing để lấy giá trị int, kết quả là một giá trị int.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương án này sai vì mã nguồn không thể biên dịch thành công để in ra kết quả 15.",
@@ -1261,7 +1261,7 @@
     "image_file": "Q12.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192 - Java Programming)",
-    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nKizspy | Question: 12\n(Choose 1 answer)\nWhat is the output of the code snippet?\npublic class Test {\npublic static void main(String[] args) {\nint []a = new int [5];\nfor(int i : a){\ni = 1;\n}\nSystem.out.println(a[1]);\n}};\nA. 0\nB. 1\nC. null\nD. [I@15db9742",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nQuestion: 12\n(Choose 1 answer)\nWhat is the output of the code snippet?\npublic class Test {\npublic static void main(String[] args) {\nint []a = new int [5];\nfor(int i : a){\ni = 1;\n}\nSystem.out.println(a[1]);\n}};\nA. 0\nB. 1\nC. null\nD. [I@15db9742",
     "key_points_and_rules": "Xét đoạn code Java sử dụng vòng lặp for-each để duyệt qua mảng số nguyên `int[] a = new int[5];`. Cần phân tích cơ chế sao chép giá trị (pass-by-value) của biến lặp trong for-each đối với các kiểu dữ liệu nguyên thủy (primitive types) như `int` và trạng thái ban đầu của mảng được khởi tạo bằng `new int[5]` trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Khi khởi tạo `int[] a = new int[5];`, mảng gồm 5 phần tử kiểu int với giá trị mặc định khởi tạo trong Java là 0. Vòng lặp for-each `for(int i : a)` tạo ra một biến cục bộ `i` nhận bản sao giá trị của từng phần tử trong mảng. Lệnh `i = 1;` chỉ thay đổi giá trị của biến cục bộ `i`, hoàn toàn không làm thay đổi giá trị các phần tử bên trong mảng `a`. Do đó, `a[1]` vẫn giữ nguyên giá trị mặc định ban đầu là 0. Lệnh `System.out.println(a[1]);` sẽ in ra giá trị 0. Phương án A [ĐÚNG].",
@@ -1483,7 +1483,7 @@
     "image_file": "Q14.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192 - Java)",
-    "question_text_extracted": "QUESTION 14\nChoose 1 answer\nWhat is the output of the code snippet?\npublic class Test {\n    public static void main(String[] args) {\n        try {\n            int kq = 10 / 0;\n            throw new Exception();\n        } catch (ArithmeticException e) {\n            System.out.println(\"Error1\");\n        } catch (NumberFormatException e) {\n            System.out.println(\"Error2\");\n        } catch (Exception e) {\n            System.out.println(\"Error3\");\n        } finally {\n            System.out.println(\"Finish\");\n        }\n    }\n}",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nWhat is the output of the code snippet?\npublic class Test {\n    public static void main(String[] args) {\n        try {\n            int kq = 10 / 0;\n            throw new Exception();\n        } catch (ArithmeticException e) {\n            System.out.println(\"Error1\");\n        } catch (NumberFormatException e) {\n            System.out.println(\"Error2\");\n        } catch (Exception e) {\n            System.out.println(\"Error3\");\n        } finally {\n            System.out.println(\"Finish\");\n        }\n    }\n}\nA. Error1\nFinish\nB. Error2\nFinish\nC. Error3\nFinish\nD. Finish",
     "key_points_and_rules": "Trace code xử lý ngoại lệ (Exception Handling) trong Java với khối try-catch-finally, ngoại lệ số học (ArithmeticException) và thứ tự khối finally.",
     "option_by_option_analysis": {
       "A": "Trace code: Lệnh `int kq = 10 / 0;` ném ra ngoại lệ `ArithmeticException` do chia cho 0. Quá trình thực thi trong `try` dừng ngay lập tức và chuyển đến khối `catch` phù hợp đầu tiên là `catch (ArithmeticException e)`, in ra dòng `Error1`. Sau đó khối `finally` luôn được thực thi, in ra dòng `Finish`. Do đó, output gồm 'Error1' và 'Finish'. Phương án A [ĐÚNG].",
@@ -1594,7 +1594,7 @@
     "image_file": "Q15.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nKizspy | Question: 15\n(Choose 1 answer)\nWhich of the following modifiers is used to hide information of a class from the classes outside?\nA. private\nB. public\nC. protected\nD. default",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nQuestion: 15\n(Choose 1 answer)\nWhich of the following modifiers is used to hide information of a class from the classes outside?\nA. private\nB. public\nC. protected\nD. default",
     "key_points_and_rules": "Xác định từ khóa định danh truy cập (access modifier) trong lập trình hướng đối tượng (Java) có chức năng ẩn thông tin (data hiding / encapsulation) của một class khỏi các class bên ngoài hoàn toàn.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì từ khóa private giới hạn quyền truy cập thành viên bên trong chính lớp đó, ngăn chặn hoàn toàn việc truy cập từ các lớp bên ngoài, giúp thực hiện tính đóng gói (encapsulation) và ẩn thông tin.",
@@ -1697,7 +1697,7 @@
     "image_file": "Q16.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nKizspy | Question: 16\n(Choose 1 answer)\nChoose the correct statement related to the constructors.\nA. Constructor is a block of codes similar to the method. It is called when an instance of the class is created\nB. Constructor is a special type of method that is used to initialize default members of the object only\nC. Constructor is an abstract method with an empty body\nD. Constructor is a method that does not allow parameters",
+    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nQuestion: 16\n(Choose 1 answer)\nChoose the correct statement related to the constructors.\nA. Constructor is a block of codes similar to the method. It is called when an instance of the class is created\nB. Constructor is a special type of method that is used to initialize default members of the object only\nC. Constructor is an abstract method with an empty body\nD. Constructor is a method that does not allow parameters",
     "key_points_and_rules": "Hiểu định nghĩa chính xác về Constructor (Hàm khởi tạo) trong Java/OOP: Khái niệm, thời điểm thực thi và đặc điểm cú pháp.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì constructor là một khối mã có cấu trúc tương tự phương thức (nhưng không có kiểu trả về và trùng tên với lớp), được tự động gọi khi một thể hiện (instance/object) của lớp được tạo ra bằng từ khóa 'new'.",
@@ -1800,7 +1800,7 @@
     "image_file": "Q17.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 17\n(Choose 1 answer)\nKizspy | Question: 17\n(Choose 1 answer)\nWhat is the output of the following code snippet?\npublic class Test {\n    int x = 5;\n    int y = 2;\n    public static void main(String[] args) {\n        Test obj;\n        obj.x = 10;\n        obj.y = 20;\n        System.out.println(obj.x + obj.y);\n    }\n}\nA. Compile error\nB. 7\nC. 30\nD. 90",
+    "question_text_extracted": "Question: 17\n(Choose 1 answer)\nQuestion: 17\n(Choose 1 answer)\nWhat is the output of the following code snippet?\npublic class Test {\n    int x = 5;\n    int y = 2;\n    public static void main(String[] args) {\n        Test obj;\n        obj.x = 10;\n        obj.y = 20;\n        System.out.println(obj.x + obj.y);\n    }\n}\nA. Compile error\nB. 7\nC. 30\nD. 90",
     "key_points_and_rules": "Xác định lỗi biên dịch (Compile error) trong Java khi sử dụng biến tham chiếu chưa được khởi tạo (chưa gán đối tượng bằng từ khóa 'new').",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Biến 'obj' được khai báo là 'Test obj;' nhưng chưa được khởi tạo (không trỏ đến một đối tượng thực tế nào trên Heap bằng từ khóa 'new'). Khi dòng 'obj.x = 10;' chạy, trình biên dịch Java sẽ phát hiện biến 'obj' có thể chưa được khởi tạo (variable obj might not have been initialized) và gây ra lỗi biên dịch (Compile error). Do đó, phương án A [ĐÚNG].",
@@ -1903,7 +1903,7 @@
     "image_file": "Q18.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nKizspy | Question: 18\n(Choose 1 answer)\nWhat is the output of the following code snippet?\npublic class Person {\n    protected String id = \"New Id\";\n    public static void main(String[] args) {\n        Person p = new Person();\n        p.id = \"FPTU\";\n        System.out.println(p.id);\n    }\n}\nA. FPTU\nB. null\nC. New Id\nD. Runtime error",
+    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nQuestion: 18\n(Choose 1 answer)\nWhat is the output of the following code snippet?\npublic class Person {\n    protected String id = \"New Id\";\n    public static void main(String[] args) {\n        Person p = new Person();\n        p.id = \"FPTU\";\n        System.out.println(p.id);\n    }\n}\nA. FPTU\nB. null\nC. New Id\nD. Runtime error",
     "key_points_and_rules": "Trace code từng dòng: khởi tạo đối tượng Person, gán lại giá trị cho thuộc tính 'id', và in ra giá trị hiện tại của 'id'.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Dòng 'Person p = new Person();' tạo một đối tượng Person mới, thuộc tính 'id' ban đầu được khởi tạo là \"New Id\". Tiếp theo, dòng 'p.id = \"FPTU\";' cập nhật giá trị của thuộc tính 'id' thành \"FPTU\". Cuối cùng, câu lệnh 'System.out.println(p.id);' in ra giá trị hiện tại của 'id' là \"FPTU\". Do đó, phương án A [ĐÚNG].",
@@ -2006,7 +2006,7 @@
     "image_file": "Q19.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nKizspy | Question: 19\n(Choose 1 answer)\nWhat is the output of the following code snippet?\npublic class Main{\nstatic void m1(Integer i){\nSystem.out.println(1);\n}\nstatic void m1(Double d){\nSystem.out.println(2);\n}\nstatic void m1(Object o){\nSystem.out.println(3);\n}\npublic static void main(String[] args)\n{\nm1(12.5);\n}\n}\nA. 2\nB. 3\nC. 1\nD. 12.5",
+    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nQuestion: 19\n(Choose 1 answer)\nWhat is the output of the following code snippet?\npublic class Main{\nstatic void m1(Integer i){\nSystem.out.println(1);\n}\nstatic void m1(Double d){\nSystem.out.println(2);\n}\nstatic void m1(Object o){\nSystem.out.println(3);\n}\npublic static void main(String[] args)\n{\nm1(12.5);\n}\n}\nA. 2\nB. 3\nC. 1\nD. 12.5",
     "key_points_and_rules": "Xác định cơ chế Overloading resolution trong Java với kiểu dữ liệu nguyên thủy (primitive) được ép kiểu tự động (widening/autoboxing) trước khi khớp với các wrapper class hoặc Object.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Giá trị truyền vào là 12.5, đây là một literal số thực có kiểu nguyên thủy là double. Trong Java, khi gọi phương thức nạp chồng (overloading), trình biên dịch sẽ ưu tiên tìm kiếm kiểu dữ liệu phù hợp nhất theo thứ tự: kiểu chính xác -> boxing/widening -> varargs. Ở đây có phương thức m1(Double d) nhận trực tiếp đối tượng Wrapper Double tương ứng với kiểu double (thông qua cơ chế autoboxing từ 12.5 sang Double), do đó phương thức m1(Double) được chọn. Lệnh System.out.println(2); được thực thi, in ra màn hình số 2. Phương án A [ĐÚNG].",
@@ -2126,7 +2126,7 @@
     "image_file": "Q20.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nKizspy | Question: 20\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nclass Test{\nvoid method(int x){\nSystem.out.print(x*x);\n}\nvoid method(int... a){\nSystem.out.print(a.length);\n}\npublic static void main(String[] args){\nTest t = new Test();\nt.method();\nt.method(2);\nt.method(3, 4);\n}\n}\nA. 042\nB. 034\nC. 234\nD. 242",
+    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nQuestion: 20\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nclass Test{\nvoid method(int x){\nSystem.out.print(x*x);\n}\nvoid method(int... a){\nSystem.out.print(a.length);\n}\npublic static void main(String[] args){\nTest t = new Test();\nt.method();\nt.method(2);\nt.method(3, 4);\n}\n}\nA. 042\nB. 034\nC. 234\nD. 242",
     "key_points_and_rules": "Phân tích quy tắc ưu tiên chọn phương thức giữa phương thức có tham số cố định và phương thức varargs (variable arguments) trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: \n- Lời gọi t.method(); truyền vào 0 đối số. Phương thức method(int x) yêu cầu bắt buộc ít nhất 1 đối số nên không khớp. Chỉ có phương thức varargs method(int... a) là khớp vì mảng số lượng biến đổi có thể nhận 0 đối số (độ dài a.length = 0). Lệnh in ra a.length nên in ra '0'.\n- Lời gọi t.method(2); truyền vào 1 đối số nguyên. Java ưu tiên phương thức có tham số cố định chính xác hơn là method(int x) thay vì varargs. Do đó method(int x) được gọi với x = 2, thực hiện System.out.print(x*x) -> in ra 2*2 = 4.\n- Lời gọi t.method(3, 4); truyền vào 2 đối số. method(int x) chỉ nhận 1 đối số nên không khớp. Phương thức duy nhất phù hợp là method(int... a) với độ dài mảng a.length = 2. Lệnh in ra a.length nên in ra '2'.\nKết quả nối chuỗi các lần in là: 0, 4, 2 -> \"042\". Phương án A [ĐÚNG].",
@@ -2427,7 +2427,7 @@
     "image_file": "Q23.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java OOP)",
-    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nKizspy | Question: 23\n(Choose 1 answer)\nWhich of the following methods belongs to the Object class?\nA. equals\nB. compareTo\nC. concat\nD. compare",
+    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nQuestion: 23\n(Choose 1 answer)\nWhich of the following methods belongs to the Object class?\nA. equals\nB. compareTo\nC. concat\nD. compare",
     "key_points_and_rules": "Câu hỏi yêu cầu tìm phương thức thuộc lớp java.lang.Object trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương thức `equals(Object obj)` được định nghĩa sẵn trong lớp `java.lang.Object` dùng để so sánh tính tương đương giữa hai đối tượng. Do đó, phương án A [ĐÚNG].",
@@ -2530,7 +2530,7 @@
     "image_file": "Q24.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java OOP)",
-    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nKizspy | Question: 24\n(Choose 1 answer)\nWhich of the following statements is true about superclass and subclass relationships in Java?\nA. A subclass can access private members of its subclass.\nB. A superclass can extend multiple subclasses simultaneously.\nC. A subclass constructor must always call the superclass constructor explicitly.\nD. A superclass reference can be used to directly access subclass-specific methods.\nE. A subclass can override a private method in its superclass.\nF. A subclass con have more than one superclass.",
+    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nQuestion: 24\n(Choose 1 answer)\nWhich of the following statements is true about superclass and subclass relationships in Java?\nA. A subclass can access private members of its subclass.\nB. A superclass can extend multiple subclasses simultaneously.\nC. A subclass constructor must always call the superclass constructor explicitly.\nD. A superclass reference can be used to directly access subclass-specific methods.\nE. A subclass can override a private method in its superclass.\nF. A subclass con have more than one superclass.",
     "key_points_and_rules": "Câu hỏi yêu cầu tìm phát biểu ĐÚNG về mối quan hệ giữa lớp cha (superclass) và lớp con (subclass) trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Thành viên có phạm vi `private` chỉ có thể được truy cập bên trong chính lớp đó, lớp con hoàn toàn không thể truy cập trực tiếp các thành viên `private` của lớp cha. Do đó, phương án A [SAI].",
@@ -2841,7 +2841,7 @@
     "image_file": "Q27.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nKizspy | Question: 27\n(Choose 1 answer)\nWhich of the following is/are advantages of packages?\nA. Packages avoid name clashes\nB. Classes, even though they are visible outside their package, can have fields visible to packages only\nC. We have hidden classes that are used by the packages, but not visible outside.\nD. All of the mentioned",
+    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nQuestion: 27\n(Choose 1 answer)\nWhich of the following is/are advantages of packages?\nA. Packages avoid name clashes\nB. Classes, even though they are visible outside their package, can have fields visible to packages only\nC. We have hidden classes that are used by the packages, but not visible outside.\nD. All of the mentioned",
     "key_points_and_rules": "Câu hỏi tìm kiếm các ưu điểm của package (gói) trong lập trình Java. Cần kiểm tra từng phương án liên quan đến quản lý tên (name clashes), mức độ truy cập (package-private / default visibility) và tính đóng gói của package.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Packages giúp phân nhóm các lớp và tránh xung đột tên (name clashes) giữa các lớp trùng tên nhưng ở các package khác nhau. [ĐÚNG]",
@@ -2944,7 +2944,7 @@
     "image_file": "Q28.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Kizspy | Question: 28\n(Choose 1 answer)\nclass DemoClass {\n    static void m() {\n        System.out.println(\"A\");\n    }\n}\nclass DemoClassChild extends DemoClass {\n    static void m() {\n        System.out.println(\"B\");\n    }\n}\npublic class Main {\n    public static void main(String[] args) {\n        DemoClass obj = new DemoClassChild();\n        obj.m();\n    }\n}",
+    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nclass DemoClass {\n    static void m() {\n        System.out.println(\"A\");\n    }\n}\nclass DemoClassChild extends DemoClass {\n    static void m() {\n        System.out.println(\"B\");\n    }\n}\npublic class Main {\n    public static void main(String[] args) {\n        DemoClass obj = new DemoClassChild();\n        obj.m();\n    }\n}\nA. A\nB. B\nC. AB\nD. BA",
     "key_points_and_rules": "Phương thức static trong Java không được đa hình động (runtime polymorphism / method overriding) mà được giải quyết lúc biên dịch (compile-time binding) dựa vào kiểu khai báo (declared type) của biến tham chiếu.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Biến `obj` được khai báo kiểu `DemoClass`. Khi gọi phương thức `static void m()`, trình biên dịch gắn kết phương thức này với kiểu khai báo `DemoClass`, do đó phương thức `m()` của `DemoClass` được thực thi và in ra \"A\". [ĐÚNG]",
@@ -3431,7 +3431,7 @@
     "image_file": "Q33.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java OOP)",
-    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nKizspy | Question: 33\n(Choose 1 answer)\nWhat is the output following the code snippet?\nclass StaticTest {\n    static void staticMethod() {\n        System.out.println(\"Static Method\");\n    }\n}\npublic class Main {\n    public static void main(String[] args) {\n        StaticTest first = null;\n        first.staticMethod();\n    }\n}\nA. Static Method\nB. Throws a NullPointerException\nC. null\nD. None of the others",
+    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nQuestion: 33\n(Choose 1 answer)\nWhat is the output following the code snippet?\nclass StaticTest {\n    static void staticMethod() {\n        System.out.println(\"Static Method\");\n    }\n}\npublic class Main {\n    public static void main(String[] args) {\n        StaticTest first = null;\n        first.staticMethod();\n    }\n}\nA. Static Method\nB. Throws a NullPointerException\nC. null\nD. None of the others",
     "key_points_and_rules": "Xét tính chất của từ khóa static trong Java: phương thức static thuộc về class chứ không thuộc về instance cụ thể nào của class. Do đó, việc gọi phương thức static thông qua biến tham chiếu (dù biến đó đang mang giá trị null) vẫn được biên dịch và thực thi bình thường dựa trên kiểu tĩnh của biến (StaticTest), không gây ra NullPointerException tại thời điểm runtime.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương thức staticMethod() là phương thức tĩnh. Trong Java, ta có thể gọi phương thức static thông qua một biến tham chiếu có giá trị null vì compiler phân giải phương thức dựa trên kiểu khai báo của biến (StaticTest) chứ không cần đối tượng thực tế trên heap. Kết quả là chương trình in ra \"Static Method\" mà không báo lỗi. [ĐÚNG]",
@@ -3518,7 +3518,7 @@
     "image_file": "Q34.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java Collections Framework)",
-    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nKizspy | Question: 34\n(Choose 1 answer)\nWhich method is used to convert an array to a List in Java?\nA. Arrays.asList()\nB. Arrays.toList()\nC. Arrays.convertToList()\nD. Arrays.arrayToList()",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nQuestion: 34\n(Choose 1 answer)\nWhich method is used to convert an array to a List in Java?\nA. Arrays.asList()\nB. Arrays.toList()\nC. Arrays.convertToList()\nD. Arrays.arrayToList()",
     "key_points_and_rules": "Nhớ chính xác các phương thức tiện ích (utility methods) trong lớp java.util.Arrays của thư viện chuẩn Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương thức `Arrays.asList(T... a)` là phương thức chuẩn trong gói `java.util.Arrays` dùng để trả về một danh sách (List) được hỗ trợ bởi mảng được chỉ định. [ĐÚNG]",
@@ -3963,7 +3963,7 @@
     "image_file": "Q39.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nKizspy | Question: 39\n(Choose 1 answer)\nAll abstract data structures: List, Set, Map is implemented in which of the following types?\nA. Interface\nB. Abstract class\nC. Concrete class\nD. Derived class",
+    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nQuestion: 39\n(Choose 1 answer)\nAll abstract data structures: List, Set, Map is implemented in which of the following types?\nA. Interface\nB. Abstract class\nC. Concrete class\nD. Derived class",
     "key_points_and_rules": "Xác định kiểu thành phần trong Java Collections Framework dùng để định nghĩa các cấu trúc dữ liệu trừu tượng như List, Set, Map.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Trong Java Collections Framework, các cấu trúc dữ liệu trừu tượng như List, Set và Map đều được định nghĩa dưới dạng Interface (giao diện) để quy định các phương thức chuẩn mà các lớp cài đặt (concrete classes) phải triển khai. Do đó phương án này [ĐÚNG].",
@@ -4050,7 +4050,7 @@
     "image_file": "Q40.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nKizspy | Question: 40\n(Choose 1 answer)\nHow do you find the frequency of occurrence of an element in a collection of the Collections class?\nA. frequency()\nB. countOccurrence()\nC. frequencyOf()\nD. findFrequency()",
+    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nQuestion: 40\n(Choose 1 answer)\nHow do you find the frequency of occurrence of an element in a collection of the Collections class?\nA. frequency()\nB. countOccurrence()\nC. frequencyOf()\nD. findFrequency()",
     "key_points_and_rules": "Xác định tên phương thức tĩnh trong lớp tiện ích java.util.Collections dùng để đếm số lần xuất hiện của một phần tử trong một collection.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương thức `Collections.frequency(Collection<?> c, Object o)` là phương thức chuẩn trong Java để trả về số lần xuất hiện của phần tử `o` trong collection `c`. Do đó phương án này [ĐÚNG].",
@@ -4137,7 +4137,7 @@
     "image_file": "Q41.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nKizspy | Question: 41\n(Choose 1 answer)\nYou are working on an application that simulates a deck of playing cards. Explain how you would use Java collections to represent the deck, ensuring that cards are efficiently shuffled, drawn, and replaced. Discuss the choice of collection type and considerations for card removal and addition.\nA. Utilize an ArrayList<Card> for easy manipulation and shuffling.\nB. Design a custom Deck class with a circular linked list for efficient cycling.\nC. Use a HashSet<Card> for unique card storage.\nD. Implement a TreeSet<Card> for sorted card ordering.\nE. Choose a PriorityQueue<Card> for card prioritization based on rank.\nF. Utilize a custom CardDeck class with an embedded array for control over addition and removal.",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nQuestion: 41\n(Choose 1 answer)\nYou are working on an application that simulates a deck of playing cards. Explain how you would use Java collections to represent the deck, ensuring that cards are efficiently shuffled, drawn, and replaced. Discuss the choice of collection type and considerations for card removal and addition.\nA. Utilize an ArrayList<Card> for easy manipulation and shuffling.\nB. Design a custom Deck class with a circular linked list for efficient cycling.\nC. Use a HashSet<Card> for unique card storage.\nD. Implement a TreeSet<Card> for sorted card ordering.\nE. Choose a PriorityQueue<Card> for card prioritization based on rank.\nF. Utilize a custom CardDeck class with an embedded array for control over addition and removal.",
     "key_points_and_rules": "Bài toán yêu cầu biểu diễn một bộ bài (deck of playing cards) bằng Java collections sao cho việc xáo trộn (shuffle), rút bài (draw), và thay thế/bổ sung bài được thực hiện hiệu quả.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: ArrayList<Card> cung cấp quyền truy cập ngẫu nhiên O(1) qua chỉ số, rất phù hợp để sử dụng với phương thức Collections.shuffle() (thuật toán Fisher-Yates shuffle với độ phức tạp O(N)), đồng thời cho phép rút bài và bổ sung bài một cách thuận tiện ở cuối danh sách (O(1) amortized). Đây là lựa chọn tối ưu và phổ biến nhất trong Java cho bộ bài.",
@@ -4226,7 +4226,7 @@
     "image_file": "Q42.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nKizspy | Question: 42\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nSet<Integer> set1 = new TreeSet();\nset1.add(1); set1.add(3); set1.add(2); set1.add(1);\nSystem.out.println(set1);\nA. [1,2,3]\nB. [1,1,2,3]\nC. [1,3,2]\nD. [1,3,2,1]",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nQuestion: 42\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nSet<Integer> set1 = new TreeSet();\nset1.add(1); set1.add(3); set1.add(2); set1.add(1);\nSystem.out.println(set1);\nA. [1,2,3]\nB. [1,1,2,3]\nC. [1,3,2]\nD. [1,3,2,1]",
     "key_points_and_rules": "Đoạn code sử dụng `TreeSet<Integer>`, tính chất của TreeSet là lưu trữ các phần tử duy nhất (không trùng lặp) và luôn được sắp xếp theo thứ tự tăng dần tự nhiên (natural ordering).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: `TreeSet` tự động loại bỏ các phần tử trùng lặp (số 1 được thêm 2 lần nhưng chỉ xuất hiện 1 lần) và tự động sắp xếp các số theo thứ tự tăng dần: 1, 2, 3. Kết quả in ra định dạng của Set trong Java là [1, 2, 3]. Do đó phương án A [ĐÚNG].",
@@ -4313,7 +4313,7 @@
     "image_file": "Q43.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nKizspy | Question: 43\n(Choose 1 answer)\nChoose correct answer about anonymous class?\nA. A class that is defined without a name and can be instantiated only once\nB. The purpose of using an anonymous class is to provide a way to implement an interface or extend a class without explicitly defining a named class.\nC. An anonymous class is created using the \"new\" keyword followed by the name of the interface or class being implemented or extended.\nD. Anonymous classes are like local classes except that they do not have a name.\nE. All of the others",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: 43\n(Choose 1 answer)\nChoose correct answer about anonymous class?\nA. A class that is defined without a name and can be instantiated only once\nB. The purpose of using an anonymous class is to provide a way to implement an interface or extend a class without explicitly defining a named class.\nC. An anonymous class is created using the \"new\" keyword followed by the name of the interface or class being implemented or extended.\nD. Anonymous classes are like local classes except that they do not have a name.\nE. All of the others",
     "key_points_and_rules": "Câu hỏi yêu cầu xác định các đặc điểm đúng của lớp vô danh (anonymous class) trong Java. Các quy tắc chính bao gồm: không có tên, được định nghĩa và khởi tạo cùng lúc, dùng để triển khai nhanh interface/lớp cha, và là một dạng lớp nội bộ cục bộ (local inner class).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [ĐÚNG] Lớp vô danh không có tên định danh riêng và vì nó được định nghĩa ngay trong biểu thức khởi tạo, nó chỉ được tạo ra một thực thể duy nhất tại vị trí đó.",
@@ -4401,7 +4401,7 @@
     "image_file": "Q44.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nKizspy | Question: 44\n(Choose 1 answer)\nWhat is the main difference between HashSet and TreeSet?\nA. HashSet uses a hash table; TreeSet uses a balanced tree.\nB. HashSet allows duplicate elements; TreeSet does not.\nC. HashSet sorts elements based on natural ordering; TreeSet does not.\nD. HashSet allows null elements; TreeSet does not.",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nQuestion: 44\n(Choose 1 answer)\nWhat is the main difference between HashSet and TreeSet?\nA. HashSet uses a hash table; TreeSet uses a balanced tree.\nB. HashSet allows duplicate elements; TreeSet does not.\nC. HashSet sorts elements based on natural ordering; TreeSet does not.\nD. HashSet allows null elements; TreeSet does not.",
     "key_points_and_rules": "Câu hỏi yêu cầu phân biệt sự khác biệt chính giữa hai cấu trúc dữ liệu HashSet và TreeSet trong Java Collections Framework. Cần tập trung vào cấu trúc dữ liệu bên dưới (underlying data structure) và các đặc tính về thứ tự, giá trị null.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [ĐÚNG] Đây là sự khác biệt cốt lõi về mặt cấu trúc. HashSet dựa trên HashMap (bảng băm - hash table), cho phép truy cập O(1). TreeSet dựa trên TreeMap (cây đỏ-đen - balanced tree), cho phép truy cập O(log n) và duy trì thứ tự.",
@@ -4488,7 +4488,7 @@
     "image_file": "Q45.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nKizspy | Question: 45\n(Choose 1 answer)\nHow do you check if a File object refers to a file (NOT a directory) in Java?\nA. isFile()\nB. checkFile()\nC. isNotDirectory()\nD. notIsDirectory()",
+    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nQuestion: 45\n(Choose 1 answer)\nHow do you check if a File object refers to a file (NOT a directory) in Java?\nA. isFile()\nB. checkFile()\nC. isNotDirectory()\nD. notIsDirectory()",
     "key_points_and_rules": "Câu hỏi kiểm tra kiến thức về các phương thức làm việc với file trong Java (java.io.File). Phương thức dùng để kiểm tra xem một đối tượng File có trỏ tới một tập tin thông thường (không phải thư mục) hay không.",
     "option_by_option_analysis": {
       "A": "Phương thức isFile() trong lớp java.io.File trả về true nếu đối tượng File tồn tại và là một tập tin chuẩn (không phải thư mục), ngược lại trả về false. Đây là phương thức chuẩn xác trong Java. [ĐÚNG]",
@@ -4575,7 +4575,7 @@
     "image_file": "Q46.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nKizspy | Question: 46\n(Choose 1 answer)\nFor the low-level binary stream class FileInputStream, which of the following methods is used to retrieve a byte from a source stream?\nA. read()\nB. readByte()\nC. fetch()\nD. fetchLine()",
+    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nQuestion: 46\n(Choose 1 answer)\nFor the low-level binary stream class FileInputStream, which of the following methods is used to retrieve a byte from a source stream?\nA. read()\nB. readByte()\nC. fetch()\nD. fetchLine()",
     "key_points_and_rules": "Câu hỏi kiểm tra kiến thức về InputStream trong Java, cụ thể là lớp FileInputStream chuyên đọc dữ liệu dạng nhị phân theo từng byte.",
     "option_by_option_analysis": {
       "A": "Phương thức read() của FileInputStream được sử dụng để đọc một byte dữ liệu từ luồng đầu vào (trả về giá trị nguyên từ 0 đến 255, hoặc -1 nếu đã đạt đến cuối luồng). [ĐÚNG]",
@@ -4670,7 +4670,7 @@
     "image_file": "Q47.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java I/O)",
-    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nKizspy | Question: 47\n(Choose 1 answer)\nWhich of the following classes is the superclass of the PrintWriter and FileWriter classes?\nA. Writer class\nB. Input class\nC. File class\nD. Object class",
+    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nQuestion: 47\n(Choose 1 answer)\nWhich of the following classes is the superclass of the PrintWriter and FileWriter classes?\nA. Writer class\nB. Input class\nC. File class\nD. Object class",
     "key_points_and_rules": "Xác định lớp cha (superclass) trực tiếp hoặc gián tiếp của cả PrintWriter và FileWriter trong hệ thống I/O của Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Cả hai lớp PrintWriter và FileWriter đều kế thừa trực tiếp từ lớp trừu tượng java.io.Writer (FileWriter extends OutputStreamWriter extends Writer, và PrintWriter extends Writer). Do đó Writer class là superclass chung của chúng. [ĐÚNG]",
@@ -4757,7 +4757,7 @@
     "image_file": "Q48.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java I/O)",
-    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nKizspy | Question: 48\n(Choose 1 answer)\nWhich of the following classes is used for reading byte-oriented data (streams of raw bytes) such as image data, audio, and video?\nA. FileInputStream class\nB. BufferedReader class\nC. PrintWriter class\nD. DataOutputStream class",
+    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nQuestion: 48\n(Choose 1 answer)\nWhich of the following classes is used for reading byte-oriented data (streams of raw bytes) such as image data, audio, and video?\nA. FileInputStream class\nB. BufferedReader class\nC. PrintWriter class\nD. DataOutputStream class",
     "key_points_and_rules": "Tìm lớp dùng để đọc (reading) dữ liệu dạng byte thô (byte-oriented data) như hình ảnh, âm thanh, video.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: FileInputStream là lớp dùng để đọc dữ liệu dạng byte từ tệp, rất thích hợp cho các dữ liệu nhị phân như hình ảnh, âm thanh, video. [ĐÚNG]",
@@ -4860,7 +4860,7 @@
     "image_file": "Q49.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nKizspy | Question: 49\n(Choose 1 answer)\nWhich of the following classes is used to iterate through lines in a text file when reading line by line?\nA. BufferedReader\nB. FileReader\nC. FileInputStream\nD. InputStreamReader",
+    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nQuestion: 49\n(Choose 1 answer)\nWhich of the following classes is used to iterate through lines in a text file when reading line by line?\nA. BufferedReader\nB. FileReader\nC. FileInputStream\nD. InputStreamReader",
     "key_points_and_rules": "Xác định lớp trong Java I/O hỗ trợ phương thức đọc dòng (readLine()) để duyệt qua từng dòng trong tệp văn bản.",
     "option_by_option_analysis": {
       "A": "BufferedReader [ĐÚNG]: Cung cấp phương thức readLine() giúp đọc dữ liệu theo từng dòng văn bản một cách hiệu quả nhờ cơ chế đệm (buffer).",
@@ -4947,7 +4947,7 @@
     "image_file": "Q50.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nKizspy | Question: 50\n(Choose 1 answer)\nYou are developing a contact management system, and you need to quickly find a contact by their phone number. Explain how you would use Java collections to efficiently search for a contact based on a specific criterion.\nA. Use a HashMap with phone numbers as keys for O(1) lookup.\nB. Implement a linear search through the list of contacts.\nC. Utilize Collections.binarySearch() with a sorted list.\nD. Choose a HashSet for efficient phone number-based searching.\nE. Implement a custom trie data structure for optimized searching.\nF. Use Collections.max() với một custom comparator for finding the maximum value.",
+    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nYou are developing a contact management system, and you need to quickly find a contact by their phone number. Explain how you would use Java collections to efficiently search for a contact based on a specific criterion.\nA. Use a HashMap with phone numbers as keys for O(1) lookup.\nB. Implement a linear search through the list of contacts.\nC. Utilize Collections.binarySearch() with a sorted list.\nD. Choose a HashSet for efficient phone number-based searching.\nE. Implement a custom trie data structure for optimized searching.\nF. Use Collections.max() with a custom comparator for finding the maximum value.",
     "key_points_and_rules": "Yêu cầu tìm kiếm nhanh (O(1) lookup) dựa trên một khóa duy nhất (số điện thoại) trong Java Collections.",
     "option_by_option_analysis": {
       "A": "Use a HashMap with phone numbers as keys for O(1) lookup. [ĐÚNG]: Cấu trúc dữ liệu HashMap cho phép ánh xạ khóa (số điện thoại) tới đối tượng liên lạc với độ phức tạp thời gian tìm kiếm trung bình là O(1).",

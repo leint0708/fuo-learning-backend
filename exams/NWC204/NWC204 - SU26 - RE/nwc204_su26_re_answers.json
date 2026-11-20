@@ -1607,7 +1607,7 @@
     "image_file": "Q34.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính (Phương tiện truyền dẫn)",
-    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nMatch the situation with the appropriate use of network media.\n\n1. backbone cabling in an enterprise | A. Copper Cables\n2. guest access in a coffee shop | B. Fiber Optic\n3. horizontal cabling structure | C. Wireless\n4. waiting rooms in a hospital |\n5. desktop PCs in an enterprise office |\n6. long-haul networks |\nA. 3A-5A-1B-6B-2C-4C\nB. 3A-5A-2B-4B-1C-6C\nC. 1A-6A-3B-5B-2C-4C\nD. 1A-6A-2B-4B-3C-5C",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nMatch the situation with the appropriate use of network media.\nA. 3A-5A-1B-6B-2C-4C\nB. 3A-5A-2B-4B-1C-6C\nC. 1A-6A-3B-5B-2C-4C\nD. 1A-6A-2B-4B-3C-5C",
     "key_points_and_rules": "Câu hỏi yêu cầu ghép nối các tình huống sử dụng mạng với loại phương tiện truyền dẫn phù hợp nhất (Cáp đồng, Cáp quang, Không dây). Cần dựa trên đặc tính về khoảng cách, băng thông và tính tiện dụng của từng loại.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [ĐÚNG] \n- 3A (Horizontal cabling) & 5A (Desktop PCs): Thường dùng cáp đồng (UTP) vì rẻ và dễ lắp đặt.\n- 1B (Backbone) & 6B (Long-haul): Cần băng thông lớn và khoảng cách xa nên dùng cáp quang.\n- 2C (Coffee shop) & 4C (Hospital waiting rooms): Cần sự tiện lợi cho thiết bị di động nên dùng Wireless.",
@@ -1751,7 +1751,7 @@
     "image_file": "Q37.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 37\n(Choose 1 answer)\nMatch the commands to the correct actions. (Not all options are used.)\n\nA. provides security on the console\nB. displays a message when the router is accessed\nC. configures a name on the router\n\n1. Router(config)# hostname CL1\n2. Router(config)# enable password Cisco\n3. Router(config-line)# password class\n4. Router(config)# password Cisco\n5. Router(config)# banner motd #\nA. A3-B5-C1\nB. A2-B3-C4\nC. A1-B2-C3\nD. A4-B1-C5",
+    "question_text_extracted": "Question: 37\n(Choose 1 answer)\nMatch the commands to the correct actions. (Not all options are used.)\nA. A3-B5-C1\nB. A2-B3-C4\nC. A1-B2-C3\nD. A4-B1-C5",
     "key_points_and_rules": "Yêu cầu ghép nối lệnh cấu hình Cisco IOS với chức năng tương ứng. A: Bảo mật console (cần vào line console), B: Thông báo khi truy cập (banner motd), C: Đặt tên router (hostname).",
     "option_by_option_analysis": {
       "A": "A3 (password class trong line console) là bảo mật console. B5 (banner motd) là thông báo truy cập. C1 (hostname CL1) là đặt tên router. Đây là khớp nối chính xác.",

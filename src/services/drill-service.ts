@@ -3,6 +3,11 @@ import { HTTPException } from "hono/http-exception";
 import type { Database } from "../db";
 import { subjects, exams, questions } from "../db/schema";
 import { gradeQuestion, normalizeAnswer } from "./grading-service";
+import {
+  parseCommunityStats,
+  resolveBenchmarkAnswer,
+  type BenchmarkMode
+} from "./community-stats";
 import type {
   PracticeQuestion,
   DrillCheckResponse
@@ -66,7 +71,8 @@ export async function getDrillQuestions(
 export async function checkDrillAnswer(
   db: Database,
   questionId: string,
-  selectedOptions: string
+  selectedOptions: string,
+  benchmarkMode: BenchmarkMode = "ai"
 ): Promise<DrillCheckResponse> {
   const q = await db
     .select()
@@ -78,8 +84,15 @@ export async function checkDrillAnswer(
     throw new HTTPException(404, { message: "Question not found" });
   }
 
+  const communityStats = parseCommunityStats(q.community_stats);
+  const { benchmarkSource, correctAnswer } = resolveBenchmarkAnswer(
+    q.correct_answer,
+    communityStats,
+    benchmarkMode
+  );
+
   const normalizedSelection = normalizeAnswer(selectedOptions);
-  const grading = gradeQuestion(q.question_type, normalizedSelection, q.correct_answer);
+  const grading = gradeQuestion(q.question_type, normalizedSelection, correctAnswer);
 
   let parsedAnalysis: Record<string, string> | null = null;
   if (q.option_by_option_analysis) {
@@ -96,9 +109,11 @@ export async function checkDrillAnswer(
   return {
     question_id: q.id,
     selected_options: normalizedSelection,
-    correct_answer: q.correct_answer,
+    correct_answer: correctAnswer,
     is_correct: grading.isCorrect,
     ai_explanation: q.ai_explanation,
-    option_by_option_analysis: parsedAnalysis
+    option_by_option_analysis: parsedAnalysis,
+    benchmark_source: benchmarkSource,
+    community_stats: communityStats
   };
 }

@@ -567,7 +567,7 @@
     "image_file": "Q7.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java)",
-    "question_text_extracted": "Question: 7\n(Choose 1 answer)\nKizspy | Question: 7\n\n(Choose 1 answer)\n\nWhat will be the output of the following code?\nA. complie error\nB. 0\nC. 5.5\n\npublic class q4 {\n    static float y=0;\n    public static void main(String[] args) {\n        y= 5.5;\n        Test1 t = new Test1();\n        System.out.println(y);\n    }\n}",
+    "question_text_extracted": "Question: 7\n(Choose 1 answer)\nQuestion: 7\n\n(Choose 1 answer)\n\nWhat will be the output of the following code?\nA. complie error\nB. 0\nC. 5.5\n\npublic class q4 {\n    static float y=0;\n    public static void main(String[] args) {\n        y= 5.5;\n        Test1 t = new Test1();\n        System.out.println(y);\n    }\n}",
     "key_points_and_rules": "Xét kiểu dữ liệu của biến y là float và gán giá trị thực (floating-point literal) 5.5 vào biến y trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Trong Java, hằng số thực (như 5.5) mặc định mang kiểu double. Khi gán một giá trị kiểu double (5.5) cho một biến kiểu float (y), trình biên dịch sẽ báo lỗi kiểu dữ liệu (Lossy conversion from double to float) trừ khi được ép kiểu rõ ràng (ví dụ: 5.5f). Do đó, đoạn code sẽ gây ra lỗi biên dịch (Compile error). Phương án này [ĐÚNG].",
@@ -685,7 +685,7 @@
     "image_file": "Q8.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java Strings & Memory Management)",
-    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nKizspy | Question: 8\n\n(Choose 1 answer)\n\nWhat will be the output of the following code snippet?\nString s1 = \"Java\";\nString s2 = \"Java\";\nString s3 = new String(\"Java\");\nSystem.out.println(s1 == s2);\nSystem.out.println(s1 == s3);\nSystem.out.println(s1.equals(s3));\nA. true\ntrue\ntrue\nB. true\nfalse\ntrue\nC. false\ntrue\ntrue\nD. true\ntrue\nfalse",
+    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nQuestion: 8\n\n(Choose 1 answer)\n\nWhat will be the output of the following code snippet?\nString s1 = \"Java\";\nString s2 = \"Java\";\nString s3 = new String(\"Java\");\nSystem.out.println(s1 == s2);\nSystem.out.println(s1 == s3);\nSystem.out.println(s1.equals(s3));\nA. true\ntrue\ntrue\nB. true\nfalse\ntrue\nC. false\ntrue\ntrue\nD. true\ntrue\nfalse",
     "key_points_and_rules": "Phân biệt toán tử '==' (so sánh tham chiếu/địa chỉ bộ nhớ) và phương thức '.equals()' (so sánh nội dung chuỗi). Hiểu cơ chế String Constant Pool trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Dòng thứ hai in s1 == s3 là false vì s1 nằm trong String Pool còn s3 được tạo bằng từ khóa new nằm trên Heap. Do đó A [SAI].",
@@ -988,7 +988,7 @@
     "image_file": "Q11.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java)",
-    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nKizspy | Question: 11\n(Choose 1 answer)\n\nWhich data type is not a reference data type?\nA. byte\nB. Class\nC. Array\nD. Interface",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nQuestion: 11\n(Choose 1 answer)\n\nWhich data type is not a reference data type?\nA. byte\nB. Class\nC. Array\nD. Interface",
     "key_points_and_rules": "Xác định kiểu dữ liệu nào không phải là kiểu dữ liệu tham chiếu (reference data type). Trong Java, kiểu dữ liệu được chia thành hai loại chính: kiểu nguyên thủy (primitive data types) và kiểu tham chiếu (reference data types). Các kiểu nguyên thủy gồm: byte, short, int, long, float, double, boolean, char.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 'byte' là một trong 8 kiểu dữ liệu nguyên thủy (primitive data types) trong Java, không phải là kiểu tham chiếu. Do đó phương án này [ĐÚNG].",
@@ -1083,7 +1083,7 @@
     "image_file": "Q12.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java)",
-    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nKizspy | Question: 12\n(Choose 1 answer)\n\nWhat will be the output of the following code?\npublic class Test10 {\npublic static void main(String[] args) {\nInteger x = new Integer(5);\nInteger y = new Integer(10);\nSystem.out.println((String)(x+y));\n}}\nA. 15\nB. 510\nC. Runtime error\nD. Compiler Error",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nQuestion: 12\n(Choose 1 answer)\n\nWhat will be the output of the following code?\npublic class Test10 {\npublic static void main(String[] args) {\nInteger x = new Integer(5);\nInteger y = new Integer(10);\nSystem.out.println((String)(x+y));\n}}\nA. 15\nB. 510\nC. Runtime error\nD. Compiler Error",
     "key_points_and_rules": "Trace code đoạn chương trình Java và kiểm tra tính hợp lệ về mặt kiểu dữ liệu khi ép kiểu (cast) giữa các đối tượng trong Java. Cụ thể xem xét biểu thức `(String)(x + y)` với `x` và `y` là các đối tượng kiểu `Integer`.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 15 là kết quả của phép cộng số học, nhưng biểu thức có ép kiểu sang `String`, và hơn nữa cấu trúc ép kiểu không hợp lệ trong Java nếu sai quan hệ phân cấp lớp. Do đó phương án này [SAI].",
@@ -1368,7 +1368,7 @@
     "image_file": "Q15.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nKizspy | Question: 15\n(Choose 1 answer)\nWhat will be the output of the following code snippet?\nclass A {\n    static void print() {\n        System.out.println(\"Class A\");\n    }\n}\n\nclass B extends A {\n    static void print() {\n        System.out.println(\"Class B\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        A obj = new B();\n        obj.print();\n    }\n}\nA. Class A\nB. Class B\nC. Compilation error\nD. Runtime error",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nQuestion: 15\n(Choose 1 answer)\nWhat will be the output of the following code snippet?\nclass A {\n    static void print() {\n        System.out.println(\"Class A\");\n    }\n}\n\nclass B extends A {\n    static void print() {\n        System.out.println(\"Class B\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        A obj = new B();\n        obj.print();\n    }\n}\nA. Class A\nB. Class B\nC. Compilation error\nD. Runtime error",
     "key_points_and_rules": "Xét từ khóa static trong phương thức, tính chất method hiding trong kế thừa và cơ chế liên kết tĩnh (static binding) dựa trên kiểu tham chiếu (reference type) của biến trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương thức 'print()' trong cả lớp A và B đều được khai báo là static. Trong Java, các phương thức static bị ẩn (method hiding) chứ không phải ghi đè (overriding). Khi gọi phương thức static thông qua biến, Java quyết định phương thức nào sẽ được thực thi dựa trên kiểu khai báo của biến (kiểu tham chiếu), chứ không phải kiểu thực tế của đối tượng. Ở đây biến 'obj' được khai báo kiểu 'A' (A obj = new B();), nên 'obj.print()' sẽ gọi phương thức static 'print()' của lớp A. Kết quả in ra là 'Class A'. Do đó phương án này [ĐÚNG].",
@@ -1471,7 +1471,7 @@
     "image_file": "Q16.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nKizspy | Question: 16\n(Choose 1 answer)\nWhat are not components of a class in Java OOP?\nA. Constructors are responsible for object creation\nB. Attributes, Fields, Properties of a class represents by variables\nC. Behaviours, Modification code represent by methods or functions\nD. main() method for execution of the class",
+    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nQuestion: 16\n(Choose 1 answer)\nWhat are not components of a class in Java OOP?\nA. Constructors are responsible for object creation\nB. Attributes, Fields, Properties of a class represents by variables\nC. Behaviours, Modification code represent by methods or functions\nD. main() method for execution of the class",
     "key_points_and_rules": "Câu hỏi yêu cầu tìm thành phần KHÔNG phải là thành phần mặc định/bắt buộc cấu thành nên một lớp (class) trong Java OOP.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Constructor (Hàm khởi tạo) là thành phần chuẩn của một lớp dùng để khởi tạo đối tượng, nên phương án này mô tả một thành phần thực sự của lớp [ĐÚNG nghĩa là thành phần của class, do đó sai với câu hỏi hỏi về cái KHÔNG phải].",
@@ -1566,7 +1566,7 @@
     "image_file": "Q17.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 17\n(Choose 1 answer)\nKizspy | Question: 17\n(Choose 1 answer)\nWhat is the purpose of the \"this\" keyword in Java?\nA. It refers to the current class\nB. It refers to the current object\nC. It refers to the superclass\nD. It refers to the subclass\nE. It initializes a variable\nF. It denotes a static method",
+    "question_text_extracted": "Question: 17\n(Choose 1 answer)\nQuestion: 17\n(Choose 1 answer)\nWhat is the purpose of the \"this\" keyword in Java?\nA. It refers to the current class\nB. It refers to the current object\nC. It refers to the superclass\nD. It refers to the subclass\nE. It initializes a variable\nF. It denotes a static method",
     "key_points_and_rules": "Xác định mục đích chính của từ khóa 'this' trong lập trình hướng đối tượng Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Sai, từ khóa 'this' không trỏ đến class mà trỏ đến thể hiện (instance) cụ thể của class đó.",
@@ -1671,7 +1671,7 @@
     "image_file": "Q18.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nKizspy | Question: 18\n(Choose 1 answer)\nWhat is the difference between a class and an object?\nA. A class is a blueprint to make an object\nB. An object is a blueprint to make a class\nC. A class is only like an object\nD. None of the others",
+    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nQuestion: 18\n(Choose 1 answer)\nWhat is the difference between a class and an object?\nA. A class is a blueprint to make an object\nB. An object is a blueprint to make a class\nC. A class is only like an object\nD. None of the others",
     "key_points_and_rules": "Phân biệt định nghĩa cơ bản giữa Lớp (Class) và Đối tượng (Object) trong Lập trình hướng đối tượng (OOP).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đúng, Class đóng vai trò như một bản thiết kế (blueprint/template), và từ bản thiết kế đó người ta khởi tạo ra các đối tượng (objects) cụ thể.",
@@ -2377,7 +2377,7 @@
     "image_file": "Q25.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nKizspy | Question: 25\n\n(Choose 1 answer)\n\nWhat is the output of the following Java program?\nclass A {\n    int i, j;\n    A() {\n        i = 1;\n        j = 2;\n    }\n}\npublic class Main {\n    public static void main(String args[]) {\n        A obj1 = new A();\n        A obj2 = new A();\n        System.out.println(obj1.equals(obj2));\n    }\n}\nA. false\nB. true\nC. obj1.equals(obj2)\nD. Runtime error",
+    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nQuestion: 25\n\n(Choose 1 answer)\n\nWhat is the output of the following Java program?\nclass A {\n    int i, j;\n    A() {\n        i = 1;\n        j = 2;\n    }\n}\npublic class Main {\n    public static void main(String args[]) {\n        A obj1 = new A();\n        A obj2 = new A();\n        System.out.println(obj1.equals(obj2));\n    }\n}\nA. false\nB. true\nC. obj1.equals(obj2)\nD. Runtime error",
     "key_points_and_rules": "Xác định câu hỏi tìm kết quả khi in ra màn hình của phương thức equals() mặc định trên các đối tượng lớp A được khởi tạo bằng new.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Lớp A không ghi đè phương thức equals(Object obj), do đó nó kế thừa phương thức equals từ lớp Object. Phương thức equals của lớp Object so sánh các tham chiếu ô nhớ (tương đương với toán tử ==). Vì obj1 và obj2 là hai đối tượng khác nhau được tạo ra bằng hai lời gọi new A() riêng biệt, chúng trỏ đến hai vùng nhớ khác nhau trên Heap, kết quả trả về là false. [ĐÚNG]",
@@ -2480,7 +2480,7 @@
     "image_file": "Q26.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nKizspy | Question: 26\n\n(Choose 1 answer)\n\nWhich of the following is/are advantages of packages?\nA. Packages avoid name clashes\nB. Classes, though they are visible outside their package, can have fields visible to packages only\nC. We have hidden classes that are used by the packages, but not visible outside.\nD. All of the mentioned",
+    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nQuestion: 26\n\n(Choose 1 answer)\n\nWhich of the following is/are advantages of packages?\nA. Packages avoid name clashes\nB. Classes, though they are visible outside their package, can have fields visible to packages only\nC. We have hidden classes that are used by the packages, but not visible outside.\nD. All of the mentioned",
     "key_points_and_rules": "Tìm các ưu điểm của package trong Java (gom nhóm class, tránh trùng lặp tên, kiểm soát tầm vực truy cập package-private).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Packages giúp tránh xung đột tên (name clashes) bằng cách cung cấp không gian tên riêng biệt (namespace). Hai lớp có thể trùng tên nếu nằm ở các package khác nhau. [ĐÚNG]",
@@ -2567,7 +2567,7 @@
     "image_file": "Q27.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nKizspy | Question: 27\n(Choose 1 answer)\nWhich of the following statements about the final keyword and inheritance is true?\nA. A final class can have subclasses..\nB. A final method cannot be overridden by subclasses.\nC. A final variable can be reassigned within a subclass.\nD. A final class must have a final method.",
+    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nQuestion: 27\n(Choose 1 answer)\nWhich of the following statements about the final keyword and inheritance is true?\nA. A final class can have subclasses..\nB. A final method cannot be overridden by subclasses.\nC. A final variable can be reassigned within a subclass.\nD. A final class must have a final method.",
     "key_points_and_rules": "Xác định câu lệnh ĐÚNG về từ khóa final và tính kế thừa (inheritance) trong lập trình hướng đối tượng (Java).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương án A [SAI] vì một lớp được khai báo là final (final class) không thể bị kế thừa, tức là nó không thể có subclass nào cả.",
@@ -2646,7 +2646,7 @@
     "image_file": "Q28.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nKizspy | Question: 28\n(Choose 1 answer)\nConsider a superclass \"Shape\" with a method \"draw()\" and a subclass \"Circle\" that overrides the \"draw()\" method. If an object of the \"Circle\" class is declared using the superclass type and the \"draw()\" method is invoked, what will happen?\nA. The \"draw()\" method of the superclass will be executed.\nB. The \"draw()\" method of the subclass will be executed.\nC. A compilation error will occur.\nD. The \"draw()\" method will execute based on the type of the reference variable.\nE. Both the \"draw()\" methods of the superclass and subclass will be executed.\nF. The result depends on whether the \"draw()\" method is static or instance.",
+    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nQuestion: 28\n(Choose 1 answer)\nConsider a superclass \"Shape\" with a method \"draw()\" and a subclass \"Circle\" that overrides the \"draw()\" method. If an object of the \"Circle\" class is declared using the superclass type and the \"draw()\" method is invoked, what will happen?\nA. The \"draw()\" method of the superclass will be executed.\nB. The \"draw()\" method of the subclass will be executed.\nC. A compilation error will occur.\nD. The \"draw()\" method will execute based on the type of the reference variable.\nE. Both the \"draw()\" methods of the superclass and subclass will be executed.\nF. The result depends on whether the \"draw()\" method is static or instance.",
     "key_points_and_rules": "Khái niệm đa hình (Polymorphism) và tính ghi đè phương thức (method overriding) trong lập trình hướng đối tượng tại thời điểm thực thi (runtime).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương án A [SAI] vì đây là ghi đè phương thức (overriding), không phải gọi hàm của lớp cha do cơ chế đa hình động.",
@@ -2926,7 +2926,7 @@
     "image_file": "Q31.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 31\n(Choose 1 answer)\nKizspy | Question: 31\n\n(Choose 1 answer)\n\nWhat is the output of the following Java program?\nabstract class A {\n    private String my_name = null;\n    public String myName() {\n        my_name = \"test\";\n        return my_name;\n    }\n    abstract void display();\n}\npublic class Main extends A {\n    void display() {\n        String n = myName();\n        System.out.println(n);\n    }\n    public static void main(String args[]) {\n        A obj = new Main();\n        obj.display();\n    }\n}\nA. test\nB. Runtime error\nC. null\nD. None of the others",
+    "question_text_extracted": "Question: 31\n(Choose 1 answer)\nQuestion: 31\n\n(Choose 1 answer)\n\nWhat is the output of the following Java program?\nabstract class A {\n    private String my_name = null;\n    public String myName() {\n        my_name = \"test\";\n        return my_name;\n    }\n    abstract void display();\n}\npublic class Main extends A {\n    void display() {\n        String n = myName();\n        System.out.println(n);\n    }\n    public static void main(String args[]) {\n        A obj = new Main();\n        obj.display();\n    }\n}\nA. test\nB. Runtime error\nC. null\nD. None of the others",
     "key_points_and_rules": "Trace code từng dòng của chương trình Java để xác định kết quả in ra màn hình khi chạy phương thức main.",
     "option_by_option_analysis": {
       "A": "Phân tích: Trong main, khởi tạo đối tượng A obj = new Main(); sau đó gọi obj.display();. Phương thức display() được định nghĩa trong lớp Main, trong đó gọi phương thức myName() được kế thừa từ lớp trừu tượng A. Phương thức myName() gán biến my_name = \"test\" và trả về giá trị này (chuỗi \"test\"). Sau đó in chuỗi n bằng System.out.println(n); kết quả in ra là 'test'. Do đó phương án A là [ĐÚNG].",
@@ -3021,7 +3021,7 @@
     "image_file": "Q32.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 32\n(Choose 2 answers)\nKizspy | Question: 32\n\n(Choose 2 answers)\n\nChoose multiple correct answers.\nA. Inheritance allows a class to inherit the properties and methods of another class\nB. The keyword \"extends\" is used to indicate inheritance in Java. It is used in the declaration of a subclass to specify the superclass that it is inheriting from.\nC. A subclass can inherit the private members of the superclass\nD. Java supports both multiple inheritance of classes and interfaces",
+    "question_text_extracted": "Question: 32\n(Choose 2 answers)\nQuestion: 32\n\n(Choose 2 answers)\n\nChoose multiple correct answers.\nA. Inheritance allows a class to inherit the properties and methods of another class\nB. The keyword \"extends\" is used to indicate inheritance in Java. It is used in the declaration of a subclass to specify the superclass that it is inheriting from.\nC. A subclass can inherit the private members of the superclass\nD. Java supports both multiple inheritance of classes and interfaces",
     "key_points_and_rules": "Nhận diện các đặc điểm và quy tắc của tính kế thừa (Inheritance) trong ngôn ngữ lập trình Java.",
     "option_by_option_analysis": {
       "A": "Phân tích: Tính kế thừa (Inheritance) trong lập trình hướng đối tượng cho phép một lớp (subclass) kế thừa các thuộc tính (properties) và phương thức (methods) của lớp khác (superclass). Đây là định nghĩa cơ bản và chính xác. [ĐÚNG]",
@@ -3124,7 +3124,7 @@
     "image_file": "Q33.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nKizspy | Question: 33\n(Choose 1 answer)\nWhat is the output of the following Java program?\nclass A{\n    int i = 100;\n    public void printValue(){\n        System.out.print(\"A\");\n    }\n}\nclass B extends A{\n    int i = 120;\n    public void printValue(){\n        System.out.print(\"B\");\n    }\n}\npublic class Main{\n    public static void main(String args[]){\n        A a = new B();\n        a.printValue();\n        System.out.print(a.i);\n    }\n}\nA. B100\nB. B120\nC. A100\nD. A120",
+    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nQuestion: 33\n(Choose 1 answer)\nWhat is the output of the following Java program?\nclass A{\n    int i = 100;\n    public void printValue(){\n        System.out.print(\"A\");\n    }\n}\nclass B extends A{\n    int i = 120;\n    public void printValue(){\n        System.out.print(\"B\");\n    }\n}\npublic class Main{\n    public static void main(String args[]){\n        A a = new B();\n        a.printValue();\n        System.out.print(a.i);\n    }\n}\nA. B100\nB. B120\nC. A100\nD. A120",
     "key_points_and_rules": "Kiểm tra tính đa hình (Polymorphism) đối với phương thức (method overriding) và hiện tượng che khuất biến (variable shadowing/hiding) trong lập trình hướng đối tượng Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 'a' được khai báo là kiểu A nhưng tham chiếu đến đối tượng thực tế thuộc lớp B (A a = new B();). Khi gọi phương thức a.printValue();, tính đa hình (runtime polymorphism) được áp dụng, gọi phương thức printValue() của lớp B, in ra 'B'. Khi truy cập biến a.i, trong Java các biến không có tính đa hình mà được phân giải theo kiểu khai báo tĩnh của biến (kiểu A), do đó a.i lấy giá trị biến i của lớp A là 100. Kết quả là 'B100'. Do đó phương án A là [ĐÚNG].",
@@ -3219,7 +3219,7 @@
     "image_file": "Q34.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nKizspy | Question: 34\n(Choose 1 answer)\nWhat is method overloading in Java?\nA. Having two methods in a class with the same name and parameters but different return types\nB. Having two methods in a class with the same name but different parameters\nC. Having two methods in a class with the same name and parameters but different access modifiers\nD. Having two methods in a class with the same name and the same parameters",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nQuestion: 34\n(Choose 1 answer)\nWhat is method overloading in Java?\nA. Having two methods in a class with the same name and parameters but different return types\nB. Having two methods in a class with the same name but different parameters\nC. Having two methods in a class with the same name and parameters but different access modifiers\nD. Having two methods in a class with the same name and the same parameters",
     "key_points_and_rules": "Định nghĩa về nạp chồng phương thức (Method Overloading) trong Java: các phương thức cùng tên nhưng khác danh sách tham số.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Chỉ khác kiểu trả về (return type) nhưng trùng tên và trùng tham số KHÔNG được coi là method overloading trong Java và sẽ gây lỗi biên dịch (Compile-time error). Do đó phương án A là [SAI].",
@@ -3393,7 +3393,7 @@
     "image_file": "Q36.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java)",
-    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nWhat is the output following code snippet:\nint sum=0;\nfor(int i=0;i<=10;i++){\nsum+=(i%2==0?i:-i);\n}\nSystem.out.println(sum);",
+    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nWhat is the output following code snippet:\nint sum=0;\nfor(int i=0;i<=10;i++){\nsum+=(i%2==0?i:-i);\n}\nSystem.out.println(sum);\nA. 5\nB. 2\nC. The program will raise an exception.\nD. 3",
     "key_points_and_rules": "Trace code từng bước vòng lặp for từ i = 0 đến i = 10, kết hợp toán tử điều kiện (ternary operator) để tính tổng biến sum.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Trace code chi tiết:\n- i = 0: 0%2 == 0 đúng -> sum += 0 (sum = 0)\n- i = 1: 1%2 == 0 sai -> sum += -1 (sum = -1)\n- i = 2: 2%2 == 0 đúng -> sum += 2 (sum = 1)\n- i = 3: 3%2 == 0 sai -> sum += -3 (sum = -2)\n- i = 4: 4%2 == 0 đúng -> sum += 4 (sum = 2)\n- i = 5: 5%2 == 0 sai -> sum += -5 (sum = -3)\n- i = 6: 6%2 == 0 đúng -> sum += 6 (sum = 3)\n- i = 7: 7%2 == 0 sai -> sum += -7 (sum = -4)\n- i = 8: 8%2 == 0 đúng -> sum += 8 (sum = 4)\n- i = 9: 9%2 == 0 sai -> sum += -9 (sum = -5)\n- i = 10: 10%2 == 0 đúng -> sum += 10 (sum = 5).\nKết quả cuối cùng sum = 5. Do đó phương án A [ĐÚNG].",
@@ -3654,7 +3654,7 @@
     "image_file": "Q39.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình Java & Collections Framework",
-    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nKizspy | Question: 39\n\n(Choose 1 answer)\n\nHow do you find the frequency of occurrence of an element in a collection of the Collections class?\nA. frequency()\nB. countOccurrence()\nC. frequencyOf()\nD. findFrequency()",
+    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nQuestion: 39\n\n(Choose 1 answer)\n\nHow do you find the frequency of occurrence of an element in a collection of the Collections class?\nA. frequency()\nB. countOccurrence()\nC. frequencyOf()\nD. findFrequency()",
     "key_points_and_rules": "Xác định phương thức tĩnh trong lớp java.util.Collections dùng để đếm số lần xuất hiện của một phần tử trong một Collection.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương thức java.util.Collections.frequency(Collection<?> c, Object o) trả về số lần phần tử o xuất hiện trong collection c. Đây là phương thức chuẩn trong Java API, do đó [ĐÚNG].",
@@ -3749,7 +3749,7 @@
     "image_file": "Q40.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình Java & Collections Framework",
-    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nKizspy | Question: 40\n\n(Choose 1 answer)\n\nWhat is the output of the following code snippet?\nSet<Integer> set1 = new HashSet();\nset1.add(1); set1.add(2); set1.add(3); set1.add(1);\nSet<Integer> set2 = new HashSet();\nset2.add(1); set2.add(4);\nset1.removeAll(set2);\nSystem.out.println(set1);\nA. [2, 3]\nB. [3, 1]\nC. [1, 2]\nD. [4, 1]",
+    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nQuestion: 40\n\n(Choose 1 answer)\n\nWhat is the output of the following code snippet?\nSet<Integer> set1 = new HashSet();\nset1.add(1); set1.add(2); set1.add(3); set1.add(1);\nSet<Integer> set2 = new HashSet();\nset2.add(1); set2.add(4);\nset1.removeAll(set2);\nSystem.out.println(set1);\nA. [2, 3]\nB. [3, 1]\nC. [1, 2]\nD. [4, 1]",
     "key_points_and_rules": "Trace code thao tác với HashSet và phương thức removeAll() trong Java. HashSet không chứa các phần tử trùng lặp và thứ tự duyệt không được đảm bảo cố định, tuy nhiên hàm removeAll sẽ loại bỏ tất cả các phần tử có trong set2 khỏi set1.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Khởi tạo set1 thêm các phần tử {1, 2, 3} (số 1 thêm 2 lần nhưng HashSet loại bỏ trùng lặp). set2 chứa {1, 4}. Gọi `set1.removeAll(set2)` sẽ loại bỏ các phần tử có trong set2 (tức là số 1) khỏi set1, kết quả set1 chỉ còn lại {2, 3}. Do đó phương án A [ĐÚNG].",
@@ -3836,7 +3836,7 @@
     "image_file": "Q41.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nKizspy | Question: 41\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nSet<Integer> set = new HashSet();\nset.add(1); set.add(2); set.add(3); set.add(1);\nSystem.out.println(set.size());\nA. 3\nB. 4\nC. 1\nD. 0",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nQuestion: 41\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nSet<Integer> set = new HashSet();\nset.add(1); set.add(2); set.add(3); set.add(1);\nSystem.out.println(set.size());\nA. 3\nB. 4\nC. 1\nD. 0",
     "key_points_and_rules": "Cấu trúc dữ liệu Set trong Java không cho phép chứa các phần tử trùng lặp (duplicate elements). Khi thêm một phần tử đã tồn tại vào Set, phương thức add() sẽ trả về false và kích thước của Set không đổi.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Set khởi tạo rỗng. Thêm các phần tử 1, 2, 3 lần lượt vào set (các phần tử đều hợp lệ và chưa có). Sau đó thêm lại phần tử 1 nhưng phần tử 1 đã tồn tại trong HashSet nên không được thêm mới. Kích thước (size) của set lúc này là 3. Do đó phương án A [ĐÚNG].",
@@ -3923,7 +3923,7 @@
     "image_file": "Q42.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nKizspy | Question: 42\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nMap<Character, Integer> map = new TreeMap();\nString data = \"hello\";\nfor (Character c : data.toCharArray()) {\n    if (map.containsKey(c)) {\n        map.put(c, map.get(c) + 1);\n    } else {\n        map.put(c, 0);\n    }\n}\nSystem.out.println(map.keySet());\nA. ['e','h','l','o']\nB. ['h','o','e','l']\nC. ['e','o','h','l']\nD. ['h','e','l','o']",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nQuestion: 42\n(Choose 1 answer)\nWhat is the output of the following code snippet?\nMap<Character, Integer> map = new TreeMap();\nString data = \"hello\";\nfor (Character c : data.toCharArray()) {\n    if (map.containsKey(c)) {\n        map.put(c, map.get(c) + 1);\n    } else {\n        map.put(c, 0);\n    }\n}\nSystem.out.println(map.keySet());\nA. ['e','h','l','o']\nB. ['h','o','e','l']\nC. ['e','o','h','l']\nD. ['h','e','l','o']",
     "key_points_and_rules": "TreeMap trong Java lưu trữ các khóa (keys) theo thứ tự sắp xếp tự nhiên (natural ordering). Đối với kiểu Character, thứ tự sắp xếp theo bảng mã Unicode/ASCII tăng dần: 'e', 'h', 'l', 'o'. Phương thức keySet() trả về tập hợp các khóa của Map.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: TreeMap tự động sắp xếp các ký tự xuất hiện trong chuỗi \"hello\" (gồm 'h', 'e', 'l', 'o') theo thứ tự tăng dần của bảng chữ cái: 'e', 'h', 'l', 'o'. Kết quả của `map.keySet()` in ra theo định dạng `['e', 'h', 'l', 'o']`. Do đó phương án A [ĐÚNG].",
@@ -4027,7 +4027,7 @@
     "image_file": "Q43.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nKizspy | Question: 43\n(Choose 1 answer)\nWhat is the size of an ArrayList if capacity is NOT specified during initialization?\nA. 0\nB. 1\nC. 16\nD. 10",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: 43\n(Choose 1 answer)\nWhat is the size of an ArrayList if capacity is NOT specified during initialization?\nA. 0\nB. 1\nC. 16\nD. 10",
     "key_points_and_rules": "Phân biệt rõ giữa 'size' (số lượng phần tử hiện có trong danh sách) và 'capacity' (dung lượng mảng ngầm định chứa các phần tử của ArrayList). Khi khởi tạo mặc định bằng constructor không tham số ArrayList(), dung lượng ban đầu (capacity) là 10 (trong các phiên bản Java gần đây, capacity khởi tạo là 0 cho đến khi thêm phần tử đầu tiên rồi mở rộng thành 10, tuy nhiên trong các câu hỏi trắc nghiệm giáo trình Java tiêu chuẩn PRO192, size mặc định là 0 vì chưa có phần tử nào được thêm vào).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Size (kích thước thực tế số lượng phần tử) của một ArrayList vừa được khởi tạo và chưa thêm bất kỳ phần tử nào luôn luôn bằng 0. [ĐÚNG]",
@@ -4147,7 +4147,7 @@
     "image_file": "Q44.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nKizspy | Question: 44\n(Choose 1 answer)\nWhich of the following exceptions is thrown when an attempt is made to open a file that CANNOT be found by the FileInputStream class?\nA. FileNotFoundException\nB. IOException\nC. FileAccessException\nD. NotFoundIOException",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nQuestion: 44\n(Choose 1 answer)\nWhich of the following exceptions is thrown when an attempt is made to open a file that CANNOT be found by the FileInputStream class?\nA. FileNotFoundException\nB. IOException\nC. FileAccessException\nD. NotFoundIOException",
     "key_points_and_rules": "Nhận diện ngoại lệ (Checked Exception) được ném ra trong gói `java.io` khi khởi tạo một đối tượng `FileInputStream` với đường dẫn file không tồn tại trên hệ thống tập tin.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Lớp `FileInputStream` ném ra `java.io.FileNotFoundException` (là lớp con của `IOException`) khi đường dẫn file được truyền vào constructor không tồn tại hoặc không thể mở được. [ĐÚNG]",
@@ -4234,7 +4234,7 @@
     "image_file": "Q45.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nKizspy | Question: 45\n(Choose 1 answer)\nIn the RandomAccessFile class, which mode supports metadata changes ( file attributes) of the file immediately?\nA. \"rws\"\nB. \"rw\"\nC. \"rwd\"\nD. \"r\"",
+    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nQuestion: 45\n(Choose 1 answer)\nIn the RandomAccessFile class, which mode supports metadata changes ( file attributes) of the file immediately?\nA. \"rws\"\nB. \"rw\"\nC. \"rwd\"\nD. \"r\"",
     "key_points_and_rules": "Câu hỏi yêu cầu tìm chế độ (mode) trong lớp RandomAccessFile của Java đảm bảo rằng mọi thay đổi về nội dung lẫn siêu dữ liệu (metadata/file attributes) của tệp được ghi xuống thiết bị lưu trữ ngay lập tức (synchronously).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Chế độ \"rws\" (read-write synchronous) trong lớp RandomAccessFile đồng bộ hóa cả các thao tác ghi dữ liệu nội dung file lẫn các thay đổi về metadata (thuộc tính tệp) của file xuống ổ đĩa ngay lập tức [ĐÚNG].",
@@ -4321,7 +4321,7 @@
     "image_file": "Q46.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nKizspy | Question: 46\n(Choose 1 answer)\nWhat is the purpose of the FileOutputStream class in Java?\nA. To write raw bytes to a file\nB. To write primitive data types to a file\nC. To create an object stream for a file\nD. All of the others",
+    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nQuestion: 46\n(Choose 1 answer)\nWhat is the purpose of the FileOutputStream class in Java?\nA. To write raw bytes to a file\nB. To write primitive data types to a file\nC. To create an object stream for a file\nD. All of the others",
     "key_points_and_rules": "Câu hỏi tìm mục đích chính của lớp FileOutputStream trong Java I/O.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: FileOutputStream là một OutputStream hướng byte (byte stream), dùng để ghi các luồng dữ liệu byte thô (raw bytes) vào một tệp [ĐÚNG].",

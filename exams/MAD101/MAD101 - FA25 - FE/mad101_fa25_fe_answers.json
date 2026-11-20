@@ -5,7 +5,7 @@
     "image_file": "Q1.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 1\n(Choose 1 answer)\nFind a proposition with the given truth table\n\n| p | q | ? |\n|---|---|---|\n| T | T | F |\n| T | F | F |\n| F | T | T |\n| F | F | T |\n\n(i) (¬p ∧ q) ∨ (¬p ∧ ¬q)\n(ii) ¬p ∧ q\n(iii) q ∨ (¬p ∧ ¬q)\nA. (i)\nB. (ii)\nC. (iii)",
+    "question_text_extracted": "Question: 1\n(Choose 1 answer)\nFind a proposition with the given truth table\n\n\n(i) (¬p ∧ q) ∨ (¬p ∧ ¬q)\n(ii) ¬p ∧ q\n(iii) q ∨ (¬p ∧ ¬q)\nA. (i)\nB. (ii)\nC. (iii)",
     "key_points_and_rules": "Lập bảng chân trị và rút gọn biểu thức logic theo DNF (Disjunctive Normal Form). Cột '?' nhận giá trị True tại hai dòng (p=F, q=T) và (p=F, q=F). Công thức DNF tương ứng là (¬p ∧ q) ∨ (¬p ∧ ¬q).",
     "option_by_option_analysis": {
       "A": "Biểu thức (i) là (¬p ∧ q) ∨ (¬p ∧ ¬q). Khi rút gọn: (¬p ∧ q) ∨ (¬p ∧ ¬q) = ¬p ∧ (q ∨ ¬q) = ¬p ∧ T = ¬p. Ta kiểm tra bảng giá trị: Khi p=T thì ¬p=F; khi p=F thì ¬p=T. Giá trị trùng khớp hoàn toàn với cột '?' trong bảng. Do đó [ĐÚNG].",
@@ -1663,7 +1663,7 @@
     "image_file": "Q18.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc & Thuật toán",
-    "question_text_extracted": "Question: 18\n(Choose 1 answer)\n\nGiven the algorithm\n\nprocedure XYZ(n: integer)\nsum:=0\nfor i:=1 to n do\n    for j:=1 to (i*i) do\n        sum:=sum+i/j\nPrint(sum)\n\nIf n=6, how many divisions are required ?",
+    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nGiven the algorithm\n\nprocedure XYZ(n: integer)\nsum:=0\nfor i:=1 to n do\n    for j:=1 to (i*i) do\n        sum:=sum+i/j\nPrint(sum)\n\nIf n=6, how many divisions are required ?\nA. 91\nB. 55\nC. 66\nD. 37\nE. 140",
     "key_points_and_rules": "Đếm số phép chia: Phép chia 'i/j' được thực hiện trong mỗi vòng lặp trong (vòng lặp j). Với mỗi giá trị của i từ 1 đến n, vòng lặp j chạy từ 1 đến i², do đó ứng với mỗi i sẽ thực hiện i² phép chia.",
     "option_by_option_analysis": {
       "A": "Phân tích [ĐÚNG]: Tổng số phép chia khi n = 6 là: ∑_{i=1}^6 i² = 1² + 2² + 3² + 4² + 5² + 6² = 1 + 4 + 9 + 16 + 25 + 36 = 91.",
@@ -3499,7 +3499,7 @@
     "image_file": "Q36.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic (Lý thuyết đồ thị)",
-    "question_text_extracted": "Question: 36\n(Choose 1 answer)\n(See picture)\nWhat is the sum of the numbers in the third row of the adjacency matrix, in the order a,b,c,d of the given graph?",
+    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nWhat is the sum of the numbers in the third row of the adjacency matrix, in the order a,b,c,d of the given graph?\nA. 5\nB. 6\nC. 7\nD. 8",
     "key_points_and_rules": "Ma trận kề (Adjacency Matrix) của đồ thị vô hướng có khuyên (loops) và cạnh bội (multiple edges): phần tử A[i][j] biểu diễn số lượng cạnh nối giữa đỉnh i và đỉnh j. Tổng các phần tử ở hàng thứ i chính là tổng số đầu mút của các cạnh xuất phát từ đỉnh thứ i (hoặc tương đương: degree(v_i) cộng thêm 2 lần số khuyên nếu khuyên tính 2 lần, hoặc đếm tổng số cạnh nối từ đỉnh đó tùy theo quy ước ma trận kề của đồ thị vô hướng có khuyên). Trong chuẩn thông thường, mỗi khuyên đóng góp 2 vào bậc của đỉnh và 1 vào đường chéo chính của ma trận kề.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Sai.",
@@ -4054,9 +4054,9 @@
     "question_number": 41,
     "question_id": "Q41",
     "image_file": "Q41.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán học & Logic (Toán rời rạc)",
-    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nWhich of the following graphs have Euler circuits?\n\n(i) K₅\n\n(ii) C₂₀\n\n(iii) W₁₀\nA. (ii)\nB. (i), (ii) and (iii)\nC. (i) and (ii)\nD. (i)",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nWhich of the following graphs have Euler circuits?\n\n(i) K₅\n(ii) C₂₀\n(iii) W₁₀\nA. (ii)\nB. (i), (ii) and (iii)\nC. (i) and (ii)\nD. (i)",
     "key_points_and_rules": "Đồ thị có chu trình Euler (Euler circuit) khi và chỉ khi đồ thị liên thông và tất cả các đỉnh đều có bậc chẵn.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI] vì thiếu đồ thị (i).",
@@ -4135,7 +4135,7 @@
     "image_file": "Q42.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic (Lý thuyết đồ thị)",
-    "question_text_extracted": "Question: 42\n\n(Choose 1 answer)\n\nWhat is the minimum total weight of a Hamilton path in this graph?",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nWhat is the minimum total weight of a Hamilton path in this graph?\nA. 16\nB. 14\nC. 17\nD. 18",
     "key_points_and_rules": "Đường đi Hamilton (Hamilton path) là đường đi qua tất cả các đỉnh của đồ thị đúng một lần. Trọng lượng tổng cộng của đường đi Hamilton là tổng trọng lượng các cạnh thuộc đường đi đó. Ta cần tìm đường đi Hamilton có tổng trọng lượng nhỏ nhất.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG]. Các đỉnh của đồ thị gồm A, B, C, D, E. Đỉnh E chỉ có một cạnh duy nhất nối với A có trọng lượng 4, do đó đường đi Hamilton bắt buộc phải bắt đầu hoặc kết thúc tại E (đi qua cạnh EA, trọng lượng 4). Xét đường đi Hamilton: E - A - B - C - D:\n- Cạnh E - A có trọng lượng = 4\n- Cạnh A - B có trọng lượng = 2\n- Cạnh B - C có trọng lượng = 5\n- Cạnh C - D có trọng lượng = 8\nTổng trọng lượng = 4 + 2 + 5 + 8 = 19 (không phải tối thiểu).\nXét đường đi Hamilton: E - A - D - B - C:\n- Cạnh E - A = 4\n- Cạnh A - D = 1\n- Cạnh D - B = 6\n- Cạnh B - C = 5\nTổng trọng lượng = 4 + 1 + 6 + 5 = 16.\nXét đường đi Hamilton: E - A - C - B - D:\n- Cạnh E - A = 4\n- Cạnh A - C = 3\n- Cạnh C - B = 5\n- Cạnh B - D = 6\nTổng trọng lượng = 4 + 3 + 5 + 6 = 18.\nXét đường đi Hamilton tối ưu nhất qua kiểm tra các khả năng là 16 (hoặc qua đường đi E - A - D - C - B: E-A=4, A-D=1, D-C=8, C-B=5 -> 4+1+8+5 = 18; hoặc B - D - A - C - E: B-D=6, D-A=1, A-C=3, C-E không có cạnh...).\nKiểm tra kỹ lưỡng hơn cho trọng lượng min là 16 (theo đáp án cộng đồng A).",
@@ -4733,7 +4733,7 @@
     "image_file": "Q48.webp",
     "has_illustration": true,
     "subject_domain": "Cấu trúc dữ liệu & Giải thuật (Cây/Tree)",
-    "question_text_extracted": "Question: 48\n(Choose 1 answer)\n(See picture)\nWhat is the position of the letter f when using the postorder traversal?",
+    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nWhat is the position of the letter f when using the postorder traversal?\nA. 9\nB. 12\nC. 11\nD. 13\nE. None of the other choices is correct\nF. 10",
     "key_points_and_rules": "Duyệt cây theo thứ tự sau (Postorder traversal: Left - Right - Root). Yêu cầu tìm vị trí (thứ tự xuất hiện từ 1) của chữ cái 'f' trong kết quả duyệt.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Xét cây tổng quát có các nút:\nThực hiện duyệt Postorder (Left - Right - Root) cho từng nhánh:\n- Nhánh trái của a là b: con là d, e (e có con i, j với j có m, n, o). \n  + Cây con d: duyệt d -> d\n  + Cây con e: con trái i -> i; con của j gồm m, n, o -> m, n, o rồi j; rồi e.\n  + Gốc b: d, i, m, n, o, j, e, b\n- Nhánh phải của a là c: con gồm f, g, h (h có k và l với l có p).\n  + Nút f không có con (là lá).\n  + Theo thứ tự postorder, các nút con của c được duyệt từ trái sang phải rồi mới đến c: duyệt f trước, tiếp theo g, rồi các con của h (k, p, l, h), rồi c, rồi a.\n  + Cụ thể thứ tự duyệt toàn cây:\n    1. d\n    2. i\n    3. m\n    4. n\n    5. o\n    6. j\n    7. e\n    8. b\n    9. f\n    ... \n  + Như vậy, chữ cái 'f' nằm ở vị trí số 9. Do đó phương án A là [ĐÚNG].",
@@ -4836,7 +4836,7 @@
     "image_file": "Q49.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc & Lý thuyết đồ thị",
-    "question_text_extracted": "Question: 49\n\n(Choose 1 answer)\n\n(See picture)\n\nWhat is the height of the spanning tree obtained from the complete bipartite graph K_{4,3} by depth-first search, starting at a vertex of degree 4?",
+    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nWhat is the height of the spanning tree obtained from the complete bipartite graph K₄,₃ by depth-first search, starting at a vertex of degree 4?\nA. 4\nB. 3\nC. 1\nD. 5\nE. None of the other choices\nF. 2",
     "key_points_and_rules": "Yêu cầu tìm chiều cao (height) của cây bao trùm (spanning tree) thu được bằng thuật toán tìm kiếm theo chiều sâu (DFS) trên đồ thị hai phía đầy đủ K_{4,3}, bắt đầu tại một đỉnh có bậc 4.",
     "option_by_option_analysis": {
       "A": "Phân tích phương án A [SAI]: Không phải là 4.",
@@ -4941,7 +4941,7 @@
     "image_file": "Q50.webp",
     "has_illustration": true,
     "subject_domain": "Toán học rời rạc & Lý thuyết đồ thị",
-    "question_text_extracted": "Question: 50\n\n(Choose 1 answer)\n\n(See picture)\n\nUse Kruskal's algorithm to find a minimum spanning tree for the weighted graph with the first edge being {A, C}. Assume that the vertices are ordered alphabetically.",
+    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nUse Kruskal's algorithm to find a minimum spanning tree for the weighted graph with the first edge being {A, C}. Assume that the vertices are ordered alphabetically.\nA. {A,C},{B,E},{D,F},{A,D},{A,B},{F,G}\nB. {B,E},{A,C},{D,F},{A,D},{A,B},{F,G}\nC. {A,C},{B,E},{D,F},{A,B},{A,D},{F,G}\nD. {A,C},{D,F},{B,E},{A,D},{A,B},{F,G}",
     "key_points_and_rules": "Thuật toán Kruskal tìm cây khung nhỏ nhất (MST) bằng cách lần lượt chọn các cạnh có trọng số nhỏ nhất sao cho không tạo chu trình, ưu tiên theo thứ tự trọng số và xét các cạnh theo thứ tự bảng chữ cái nếu cùng trọng số.",
     "option_by_option_analysis": {
       "A": "Phân tích phương án A [SAI]: Tập cạnh không khớp theo thứ tự thực hiện của thuật toán Kruskal.",

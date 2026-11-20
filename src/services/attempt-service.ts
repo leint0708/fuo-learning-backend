@@ -1,7 +1,7 @@
-import { eq, and, sql } from "drizzle-orm";
+import { eq, and, isNull, inArray } from "drizzle-orm";
 import { HTTPException } from "hono/http-exception";
 import type { Database } from "../db";
-import { exams, questions, exam_attempts, attempt_answers } from "../db/schema";
+import { subjects, exams, questions, exam_attempts, attempt_answers } from "../db/schema";
 import {
   normalizeAnswer,
   gradeQuestion,
@@ -9,6 +9,7 @@ import {
   getRemainingSeconds
 } from "./grading-service";
 import { recalculateUserStatsOnSubmit } from "./stats-service";
+import { shuffleArray } from "./practice-service";
 import type {
   AttemptSessionResponse,
   AnswerSavedResponse,
@@ -16,18 +17,211 @@ import type {
   AttemptQuestion
 } from "../schemas/attempts";
 
+export function parseAttemptQuestionIds(raw: unknown): string[] | null {
+  if (!raw) return null;
+  try {
+    const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
+    if (Array.isArray(parsed) && parsed.length > 0) {
+      const ids = parsed.filter((id): id is string => typeof id === "string" && id.length > 0);
+      return ids.length > 0 ? ids : null;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
+
+export async function loadAttemptQuestions(
+  db: Database,
+  attempt: { exam_id: string; question_ids?: unknown },
+  examRecord?: typeof exams.$inferSelect | null
+): Promise<Array<typeof questions.$inferSelect>> {
+  const customIds = parseAttemptQuestionIds(attempt.question_ids);
+  if (!customIds) {
+    return db.select().from(questions).where(eq(questions.exam_id, attempt.exam_id)).all();
+  }
+
+  const exam =
+    examRecord ??
+    (await db.select().from(exams).where(eq(exams.id, attempt.exam_id)).get());
+  if (!exam) {
+    return [];
+  }
+
+  const subjectQuestions = await db
+    .select()
+    .from(questions)
+    .where(eq(questions.subject_id, exam.subject_id))
+    .all();
+
+  const questionMap = new Map(subjectQuestions.map((q) => [q.id, q]));
+  const ordered: Array<typeof questions.$inferSelect> = [];
+  customIds.forEach((id, idx) => {
+    const q = questionMap.get(id);
+    if (q) {
+      ordered.push({ ...q, question_number: idx + 1 });
+    }
+  });
+  return ordered;
+}
+
+export async function resolveAttemptExamTitle(
+  db: Database,
+  exam: typeof exams.$inferSelect | null | undefined,
+  attempt: { question_ids?: unknown }
+): Promise<string> {
+  const customIds = parseAttemptQuestionIds(attempt.question_ids);
+  if (!customIds) {
+    return exam?.title || "";
+  }
+  const subject = exam
+    ? await db.select().from(subjects).where(eq(subjects.id, exam.subject_id)).get()
+    : null;
+  const prefix = subject?.code ? `Đề tùy chỉnh - ${subject.code}` : "Đề tùy chỉnh";
+  return `${prefix} (${customIds.length} câu)`;
+}
+
+function resolveUnlimitedFlag(options?: {
+  is_unlimited?: boolean;
+  is_timed?: boolean;
+  duration_minutes?: number | null;
+}): boolean {
+  return Boolean(
+    options?.is_unlimited || options?.is_timed === false || options?.duration_minutes === null
+  );
+}
+
+async function createCustomAttemptForSubject(
+  db: Database,
+  userId: string,
+  subjectId: string,
+  baseExam: typeof exams.$inferSelect,
+  options?: {
+    is_unlimited?: boolean;
+    is_timed?: boolean;
+    duration_minutes?: number | null;
+    question_count?: number;
+  }
+): Promise<AttemptSessionResponse> {
+  let allSubjectQuestions = await db
+    .select()
+    .from(questions)
+    .where(eq(questions.subject_id, subjectId))
+    .all();
+
+  if (allSubjectQuestions.length === 0) {
+    const subjectExams = await db
+      .select({ id: exams.id })
+      .from(exams)
+      .where(eq(exams.subject_id, subjectId))
+      .all();
+    const examIds = subjectExams.map((e) => e.id);
+    if (examIds.length > 0) {
+      allSubjectQuestions = await db
+        .select()
+        .from(questions)
+        .where(inArray(questions.exam_id, examIds))
+        .all();
+    }
+  }
+
+  if (allSubjectQuestions.length === 0) {
+    throw new HTTPException(400, { message: "No questions available for this subject" });
+  }
+
+  const requestedCount = options?.question_count ?? allSubjectQuestions.length;
+  const targetCount = Math.min(Math.max(1, Math.floor(requestedCount)), allSubjectQuestions.length);
+  const selectedQuestions = shuffleArray(allSubjectQuestions).slice(0, targetCount);
+  const selectedIds = selectedQuestions.map((q) => q.id);
+
+  const attemptId = crypto.randomUUID();
+  const now = Date.now();
+  const nowIso = new Date(now).toISOString();
+  const isUnlimited = resolveUnlimitedFlag(options);
+  const expiresIso = isUnlimited
+    ? "9999-12-31T23:59:59.999Z"
+    : new Date(now + (options?.duration_minutes ?? baseExam.duration_minutes ?? 60) * 60 * 1000).toISOString();
+
+  await db.insert(exam_attempts).values({
+    id: attemptId,
+    user_id: userId,
+    exam_id: baseExam.id,
+    status: "in_progress",
+    is_unlimited: isUnlimited,
+    started_at: nowIso,
+    expires_at: expiresIso,
+    total_questions: selectedIds.length,
+    correct_answers_count: 0,
+    total_score: 0.0,
+    percentage_score: 0.0,
+    is_passed: false,
+    duration_seconds: 0,
+    question_ids: JSON.stringify(selectedIds)
+  });
+
+  return getAttemptSession(db, userId, attemptId);
+}
+
+export async function startCustomSubjectAttempt(
+  db: Database,
+  userId: string,
+  subjectCode: string,
+  options?: {
+    is_unlimited?: boolean;
+    is_timed?: boolean;
+    duration_minutes?: number | null;
+    question_count?: number;
+  }
+): Promise<AttemptSessionResponse> {
+  const subject = await db
+    .select()
+    .from(subjects)
+    .where(eq(subjects.code, subjectCode.toUpperCase()))
+    .get();
+
+  if (!subject) {
+    throw new HTTPException(404, { message: `Subject '${subjectCode}' not found` });
+  }
+
+  const baseExam = await db
+    .select()
+    .from(exams)
+    .where(eq(exams.subject_id, subject.id))
+    .get();
+
+  if (!baseExam) {
+    throw new HTTPException(404, { message: `No exams found for subject '${subjectCode}'` });
+  }
+
+  return createCustomAttemptForSubject(db, userId, subject.id, baseExam, options);
+}
+
 export async function startAttempt(
   db: Database,
   userId: string,
   examId: string,
-  options?: { is_unlimited?: boolean; duration_minutes?: number | null }
+  options?: {
+    is_unlimited?: boolean;
+    is_timed?: boolean;
+    duration_minutes?: number | null;
+    question_count?: number;
+  }
 ): Promise<AttemptSessionResponse> {
   const exam = await db.select().from(exams).where(eq(exams.id, examId)).get();
   if (!exam) {
     throw new HTTPException(404, { message: "Exam not found" });
   }
 
-  // Check for existing active, unexpired attempt
+  // If a custom question count differing from this fixed exam is requested, sample from the subject bank
+  if (
+    typeof options?.question_count === "number" &&
+    options.question_count > 0 &&
+    options.question_count !== exam.total_questions
+  ) {
+    return createCustomAttemptForSubject(db, userId, exam.subject_id, exam, options);
+  }
+
+  // Check for existing active, unexpired attempt on this standard exam
   const now = Date.now();
   const existingAttempts = await db
     .select()
@@ -36,7 +230,8 @@ export async function startAttempt(
       and(
         eq(exam_attempts.user_id, userId),
         eq(exam_attempts.exam_id, examId),
-        eq(exam_attempts.status, "in_progress")
+        eq(exam_attempts.status, "in_progress"),
+        isNull(exam_attempts.question_ids)
       )
     )
     .all();
@@ -54,7 +249,7 @@ export async function startAttempt(
 
   const attemptId = crypto.randomUUID();
   const nowIso = new Date().toISOString();
-  const isUnlimited = options?.is_unlimited ?? false;
+  const isUnlimited = resolveUnlimitedFlag(options);
   let expiresIso: string;
 
   if (isUnlimited) {
@@ -113,11 +308,8 @@ export async function getAttemptSession(
   }
 
   const exam = await db.select().from(exams).where(eq(exams.id, attempt.exam_id)).get();
-  const examQuestions = await db
-    .select()
-    .from(questions)
-    .where(eq(questions.exam_id, attempt.exam_id))
-    .all();
+  const examQuestions = await loadAttemptQuestions(db, attempt, exam);
+  const examTitle = await resolveAttemptExamTitle(db, exam, attempt);
 
   const recordedAnswers = await db
     .select()
@@ -150,7 +342,7 @@ export async function getAttemptSession(
   return {
     attempt_id: attempt.id,
     exam_id: attempt.exam_id,
-    exam_title: exam?.title || "",
+    exam_title: examTitle,
     status: attempt.status as "in_progress" | "completed" | "timed_out",
     is_unlimited: Boolean(attempt.is_unlimited),
     started_at: attempt.started_at,
@@ -260,11 +452,7 @@ export async function submitAttempt(
     throw new HTTPException(404, { message: "Exam not found" });
   }
 
-  const examQuestions = await db
-    .select()
-    .from(questions)
-    .where(eq(questions.exam_id, attempt.exam_id))
-    .all();
+  const examQuestions = await loadAttemptQuestions(db, attempt, exam);
 
   const recordedAnswers = await db
     .select()

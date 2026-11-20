@@ -405,9 +405,9 @@
     "question_number": 12,
     "question_id": "Q12",
     "image_file": "Q12.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán rời rạc (MAD101) - Hàm sàn và trần",
-    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nCompute\nExpressions given:\n[ 3/2 + ⌊ 1/2 ⌊ 5/2 ⌋ ⌋ ] + ⌊ 3 - 7/8 ⌋\nA. 3\nB. 4\nC. 5\nD. 6",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nExpressions given:\nCompute\n[3/2 + ⌊1/2 ⋅ ⌈5/2⌉⌋ + ⌊3 - 7/8⌋]\nA. 3\nB. 4\nC. 5\nD. 6",
     "key_points_and_rules": "Áp dụng định nghĩa hàm sàn (floor) $\\lfloor x \\rfloor$ là số nguyên lớn nhất không vượt quá $x$, và hàm trần (ceiling) $\\lceil x \\rceil$ là số nguyên nhỏ nhất không nhỏ hơn $x$. Tính toán lần lượt từ trong ra ngoài.",
     "option_by_option_analysis": {
       "A": "Sai, kết quả tính toán không bằng 3.",
@@ -515,9 +515,9 @@
     "question_number": 15,
     "question_id": "Q15",
     "image_file": "Q15.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán rời rạc (MAD101) - Thuật toán và Mã giả",
-    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nGiven the algorithm to find the maximum element of a list\n\nExpressions given:\nProcedure Max (a₁, a₂, ..., aₙ: integers)\n    Max := a₁\n    for i := 2 to n do\n        if Max < aᵢ then Max := aᵢ\n\nIf the input is the sequence 4, 1, 5, 2, 3, 9, 7, then all the values of the variable Max are__________\nA. 4, 1, 5, 9\nB. 4, 5, 9, 7\nC. 1, 4, 5, 2, 9, 7\nD. 4, 5, 9",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nGiven the algorithm to find the maximum element of a list\n\nProcedure Max (a₁, a₂, ..., aₙ: integers)\n\nMax := a₁\nfor i := 2 to n do\n    if Max < aᵢ then Max := aᵢ\n\nIf the input is the sequence 4, 1, 5, 2, 3, 9, 7, then all the values of the variable Max are__________\nA. 4, 1, 5, 9\nB. 4, 5, 9, 7\nC. 1, 4, 5, 2, 9, 7\nD. 4, 5, 9",
     "key_points_and_rules": "Mỗi lần biến Max được cập nhật giá trị mới khi phần tử hiện tại lớn hơn Max hiện tại. Khởi tạo Max = 4. Duyệt các phần tử tiếp theo: 1 (không đổi), 5 > 4 (Max = 5), 2 (không đổi), 3 (không đổi), 9 > 5 (Max = 9), 7 (không đổi). Vậy các giá trị của Max là 4, 5, 9.",
     "option_by_option_analysis": {
       "A": "Sai, chứa giá trị 1 không phải là giá trị cập nhật của Max.",
@@ -624,9 +624,9 @@
     "question_number": 18,
     "question_id": "Q18",
     "image_file": "Q18.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán rời rạc và Khoa học máy tính (Độ phức tạp thuật toán Big-O)",
-    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nGive the best big-O estimate for the number of operations (where an operation is an addition or a multiplication) used in this segment of an algorithm.\n\nfor i := 1 to n\n    k := 1\n    while k < n + 1\n        k := k * 2\n    end\nend\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
+    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nGive the best big-O estimate for the number of operations (where an operation is an addition or a multiplication) used in this segment of an algorithm.\n\nfor i := 1 to n\n    k := 1\n    while k < n + 1\n        k := k * 2\n    end\nend\n\n(i) O(n)\n(ii) O(n log n)\n(iii) O(n²)\n(iv) O(n⁴)\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
     "key_points_and_rules": "Tính độ phức tạp thời gian Big-O của đoạn mã giả (pseudocode) bằng cách đếm số lần thực hiện các phép toán cộng và nhân trong vòng lặp lồng nhau.",
     "option_by_option_analysis": {
       "A": "Vòng lặp ngoài chạy n lần (i từ 1 đến n). Vòng lặp trong (while k < n + 1) với k được nhân đôi sau mỗi bước (k := k * 2) thực hiện khoảng ⌈log₂(n + 1)⌉ lần. Do đó, tổng số phép toán tỉ lệ với n log n, tương ứng với (ii), không phải (i) - O(n). Sai.",
@@ -697,7 +697,7 @@
     "question_number": 20,
     "question_id": "Q20",
     "image_file": "Q20.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán rời rạc - Sinh số giả ngẫu nhiên",
     "question_text_extracted": "Question: 20\n(Choose 1 answer)\nA pseudorandom number sequence is generated as follows:\n\nx₀ = 2, xₙ = (3xₙ₋₁ + 2) mod 11.\n\nFind x₃.\nA. 5\nB. 8\nC. 3\nD. 4\nE. None of the other choices is correct",
     "key_points_and_rules": "Áp dụng công thức truy hồi xₙ = (3xₙ₋₁ + 2) mod 11 để tính lần lượt x₁, x₂, x₃ từ giá trị ban đầu x₀ = 2.",
@@ -859,14 +859,14 @@
     },
     "question_type": "single_choice",
     "community_answer": null,
-    "ai_answer": "E",
-    "ai_explanation": "Ta thực hiện tính toán 11^5 mod 101 như sau:\n- 11^1 ≡ 11 (mod 101)\n- 11^2 = 121 ≡ 20 (mod 101)\n- 11^4 = (11^2)^2 ≡ 20^2 = 400 ≡ 96 (mod 101)\n- 11^5 = 11^4 * 11 ≡ 96 * 11 = 1056 (mod 101)\nTa chia 1056 cho 101: 1056 = 10 * 101 + 46, vậy 1056 mod 101 = 46.\nVì kết quả tính được là 46 nhưng các lựa chọn A, B, C, D lần lượt là 57, 58, 59, 60 nên đáp án đúng phải là E (None of the other choices is correct).",
+    "ai_answer": "A",
+    "ai_explanation": "Ta thực hiện tính toán 11^5 mod 101 như sau:\n- 11^1 ≡ 11 (mod 101)\n- 11^2 = 121 ≡ 20 (mod 101)\n- 11^4 = (11^2)^2 ≡ 20^2 = 400 = 3 × 101 + 97 ≡ 97 ≡ -4 (mod 101)\n- 11^5 = 11^4 × 11 ≡ (-4) × 11 = -44 ≡ -44 + 101 = 57 (mod 101).\nVậy kết quả là 57, chọn phương án A.",
     "comparison": {
       "is_match": null,
       "status": "NO_COMMUNITY_ANSWER",
       "community_answer": null,
-      "ai_answer": "E",
-      "comparison_note": "Kết quả tính toán chính xác là 46, do đó chọn E."
+      "ai_answer": "A",
+      "comparison_note": "Kết quả tính toán chính xác là 57, tương ứng với phương án A."
     },
     "ai_model": "gemini-3.5-flash-lite",
     "community_stats": {
@@ -1176,9 +1176,9 @@
     "question_number": 33,
     "question_id": "Q33",
     "image_file": "Q33.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán rời rạc (MAD101)",
-    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nFind f(3) if f(9) = 25 and\n\nf(n) = 7 - (n²/9) * f(n/3)\nA. -1\nB. 1\nC. -2\nD. 2\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nFind f(3) if f(9) = 25 and\n\nf(n) = 7 - (n²/9) f(n/3)\nA. -1\nB. 1\nC. -2\nD. 2\nE. None of the other choices is correct",
     "key_points_and_rules": "Sử dụng phương pháp thế ngược (back-substitution) cho quan hệ truy hồi. Cho n=9, ta có f(9) = 7 - (9²/9) * f(9/3) => 25 = 7 - 9 * f(3). Giải phương trình bậc nhất để tìm f(3).",
     "option_by_option_analysis": {
       "A": "Sai. Kết quả tính toán là -2.",
@@ -1256,14 +1256,14 @@
     "key_points_and_rules": "Áp dụng định lý bắt tay (Handshaking Theorem) và các tiêu chuẩn kiểm tra dãy bậc của đồ thị vô hướng: (1) Tổng các bậc trong dãy phải là số chẵn. (2) Số đỉnh có bậc lớn nhất không được vượt quá số đỉnh trừ đi 1. Có thể dùng thuật toán Havel-Hakimi để kiểm tra tính hợp lệ của dãy bậc.",
     "option_by_option_analysis": {
       "A": "Kiểm tra dãy (i): 7, 5, 4, 3, 2, 2. Tổng các bậc = 7 + 5 + 4 + 3 + 2 + 2 = 23 (là số lẻ). Theo định lý bắt tay, tổng bậc của mọi đồ thị vô hướng phải là số chẵn. Do đó dãy (i) không phải là dãy bậc của đồ thị vô hướng.",
-      "B": "Kiểm tra dãy (ii): 5, 5, 4, 3, 2, 1, 0. Dãy gồm 7 đỉnh (n=7). Đỉnh có bậc lớn nhất là 5, nhưng có tới 2 đỉnh có bậc 5, vi phạm định lý Erdős–Gallai hoặc khi áp dụng Havel-Hakimi: Bỏ đỉnh đầu tiên bậc 5, trừ 1 đơn vị vào 5 đỉnh tiếp theo ta được: (5-1, 4-1, 3-1, 2-1, 1-1, 0) => 4, 3, 2, 1, 0, 0. Sắp xếp lại: 4, 3, 2, 1, 0, 0. Tiếp tục bỏ đỉnh đầu tiên bậc 4, trừ 1 vào 4 đỉnh tiếp theo: (3, 1, 0, -1, 0) xuất hiện số âm (-1). Do đó dãy (ii) không hợp lệ.",
+      "B": "Sai (đối với đồ thị đơn vô hướng). Kiểm tra dãy (ii): 5, 5, 4, 3, 2, 1, 0 (tổng bằng 20, chẵn). Áp dụng thuật toán Havel-Hakimi: bỏ đỉnh đầu tiên bậc 5, trừ 1 vào 5 bậc tiếp theo ta được (4, 3, 2, 1, 0, 0). Tiếp tục bỏ đỉnh bậc 4, trừ 1 vào 4 bậc tiếp theo ta được (2, 1, 0, -1, 0) — xuất hiện số âm (-1). Do đó dãy (ii) không thể là dãy bậc của một đồ thị đơn vô hướng.",
       "C": "Đúng vì cả hai dãy (i) và (ii) đều không thỏa mãn điều kiện là dãy bậc của một đồ thị vô hướng.",
       "D": "Sai vì cả (i) và (ii) đều không phải là dãy bậc của đồ thị vô hướng."
     },
     "question_type": "single_choice",
     "community_answer": null,
     "ai_answer": "C",
-    "ai_explanation": "Theo Định lý bắt tay (Handshaking Lemma), tổng bậc của các đỉnh trong một đồ thị vô hướng phải là một số chẵn. Với dãy (i), tổng là 23 (lẻ) nên loại. Với dãy (ii), tổng là 20 (chẵn), nhưng khi áp dụng thuật toán Havel-Hakimi để kiểm tra tính khả thi: (5, 5, 4, 3, 2, 1, 0) -> bỏ đỉnh bậc 5 -> (4, 3, 2, 1, 0, -1). Vì xuất hiện giá trị âm, dãy này không thể là dãy bậc của đồ thị đơn. Vậy cả hai đều sai.",
+    "ai_explanation": "Theo Định lý bắt tay (Handshaking Lemma), tổng bậc của các đỉnh trong một đồ thị vô hướng phải là một số chẵn. Với dãy (i), tổng là 7 + 5 + 4 + 3 + 2 + 2 = 23 (lẻ) nên loại. Với dãy (ii), tổng là 20 (chẵn), nhưng khi áp dụng thuật toán Havel-Hakimi để kiểm tra đồ thị đơn: (5, 5, 4, 3, 2, 1, 0) -> bỏ đỉnh bậc 5 -> (4, 3, 2, 1, 0, 0) -> bỏ đỉnh bậc 4 -> (2, 1, 0, -1, 0). Vì xuất hiện giá trị âm (-1), dãy (ii) không thể là dãy bậc của đồ thị đơn vô hướng. Vậy cả hai đều sai, chọn C.",
     "comparison": {
       "is_match": null,
       "status": "NO_COMMUNITY_ANSWER",
@@ -1364,22 +1364,22 @@
     "question_text_extracted": "Question: 38\n(Choose 1 answer)\nDelete one edge from each graph to obtain 2 new graphs. How many cut-edges in total of the new graphs?\nA. 6\nB. 4\nC. 5\nD. 2\nE. None of the other choices is correct",
     "key_points_and_rules": "Cạnh cầu (cut-edge hoặc bridge) trong một đồ thị là cạnh mà khi xóa nó đi sẽ làm tăng số thành phần liên thông của đồ thị. Đồ thị X là đồ thị hình ngôi sao 5 cánh (có chu trình 5 cạnh), đồ thị Y là đồ thị dạng hai tam giác chung một đỉnh ở giữa. Bằng cách xóa 1 cạnh thích hợp từ mỗi đồ thị để tạo ra 2 đồ thị mới, ta đếm tổng số cạnh cầu của cả hai đồ thị mới đó.",
     "option_by_option_analysis": {
-      "A": "Sai",
-      "B": "Sai",
-      "C": "Sai",
-      "D": "Đúng. Xóa một cạnh trong đồ thị chu trình 5 cạnh (X) sẽ biến nó thành đường đi đơn gồm 5 đỉnh và 4 cạnh, trong đó tất cả 4 cạnh đều là cạnh cầu. Đồ thị Y sau khi xóa 1 cạnh thích hợp sẽ có số cạnh cầu là 0 hoặc số khác sao cho tổng số cạnh cầu là 2.",
-      "E": "Sai"
+      "A": "Đúng. Đồ thị X là đồ thị ngôi sao 5 cánh (tương đương chu trình C₅ gồm 5 đỉnh và 5 cạnh). Xóa 1 cạnh khỏi C₅ thu được đường đi P₅ gồm 4 cạnh, và cả 4 cạnh này đều là cạnh cầu (cut-edges). Đồ thị Y gồm 2 tam giác (K₃) chung nhau 1 đỉnh ở giữa (6 cạnh). Xóa 1 cạnh bất kỳ khỏi Y sẽ phá vỡ 1 tam giác thành đường đi gồm 2 cạnh (cả 2 đều trở thành cạnh cầu), tam giác còn lại giữ nguyên (0 cạnh cầu). Tổng số cạnh cầu của 2 đồ thị mới là 4 + 2 = 6.",
+      "B": "Sai. 4 chỉ là số cạnh cầu của riêng đồ thị X sau khi xóa 1 cạnh.",
+      "C": "Sai. Tổng số cạnh cầu phải là 4 + 2 = 6.",
+      "D": "Sai. 2 chỉ là số cạnh cầu của riêng đồ thị Y sau khi xóa 1 cạnh.",
+      "E": "Sai vì phương án A (6) là đáp án đúng."
     },
     "question_type": "single_choice",
     "community_answer": null,
-    "ai_answer": "B",
-    "ai_explanation": "Phân tích cấu trúc đồ thị X và Y trong đề bài:\n- Đồ thị X là đồ thị đầy đủ K_5 (hoặc đồ thị tương đương), có tính liên thông cao (3-connected), do đó việc xóa đi bất kỳ 1 cạnh nào cũng không tạo ra cạnh cầu (số cạnh cầu = 0).\n- Đồ thị Y sau khi xóa 1 cạnh thích hợp sẽ tạo ra các cạnh cầu. Tổng số cạnh cầu của 2 đồ thị mới sau khi xóa mỗi đồ thị 1 cạnh là 4.",
+    "ai_answer": "A",
+    "ai_explanation": "Phân tích hai đồ thị X và Y:\n- Đồ thị X có 5 đỉnh (các điểm giao nhau của cạnh không phải đỉnh) và 5 cạnh tạo thành một chu trình đơn C₅. Khi xóa đi 1 cạnh bất kỳ, đồ thị X trở thành một đường đi P₅ gồm 4 cạnh; tất cả 4 cạnh này đều là cạnh cầu (cut-edges).\n- Đồ thị Y gồm 5 đỉnh và 6 cạnh tạo thành 2 tam giác chung nhau 1 đỉnh ở giữa. Khi xóa đi 1 cạnh bất kỳ, một tam giác bị phá vỡ thành 2 cạnh không còn nằm trong chu trình nào (tạo ra 2 cạnh cầu), còn tam giác kia vẫn khép kín (0 cạnh cầu).\nTổng số cạnh cầu của hai đồ thị mới là: 4 + 2 = 6. Chọn đáp án A.",
     "comparison": {
       "is_match": null,
       "status": "NO_COMMUNITY_ANSWER",
       "community_answer": null,
-      "ai_answer": "B",
-      "comparison_note": "Chọn B (4)."
+      "ai_answer": "A",
+      "comparison_note": "Tổng số cạnh cầu sau khi xóa 1 cạnh ở mỗi đồ thị là 4 + 2 = 6, chọn A."
     },
     "ai_model": "gemini-3.5-flash-lite",
     "community_stats": {
@@ -1401,21 +1401,21 @@
     "question_text_extracted": "Question: 39\n(Choose 1 answer)\nHow many cut-vertices and cut-edges in this graph?\nA. 2 and 3\nB. 2 and 2\nC. 3 and 3\nD. 3 and 2",
     "key_points_and_rules": "Điểm cắt (cut-vertex) là đỉnh mà khi xóa nó cùng các cạnh liên kề sẽ làm tăng số thành phần liên thông của đồ thị. Cạnh cắt (cut-edge/bridge) là cạnh mà khi xóa nó sẽ làm tăng số thành phần liên thông. Trong đồ thị này, các cạnh không thuộc chu trình là cạnh cắt, và các đỉnh nối chúng (ngoại trừ đỉnh bậc 1) là điểm cắt.",
     "option_by_option_analysis": {
-      "A": "Sai. Số lượng điểm cắt là 3, không phải 2.",
-      "B": "Sai. Cả số điểm cắt và cạnh cắt đều là 3.",
-      "C": "Đúng. Đồ thị có 3 cạnh cắt (3 cạnh tạo thành đường dẫn từ đỉnh lá vào chu trình) và 3 điểm cắt (các đỉnh trung gian nối các cạnh cắt này).",
-      "D": "Sai. Số lượng cạnh cắt là 3, không phải 2."
+      "A": "Sai. Đồ thị có 3 đỉnh cắt (cut-vertices), không phải 2.",
+      "B": "Sai. Đồ thị có 3 đỉnh cắt và 3 cạnh cắt.",
+      "C": "Đúng. Đồ thị gồm một chu trình 4 đỉnh (C₄) gắn với một nhánh đường đi gồm 3 cạnh. Có 3 đỉnh cắt là đỉnh gắn giữa nhánh với chu trình và 2 đỉnh bậc 2 nằm trên nhánh. Có 3 cạnh cắt là toàn bộ 3 cạnh thuộc nhánh đường đi đó (vì chúng không nằm trong chu trình nào).",
+      "D": "Sai. Nhánh đường đi gắn vào chu trình gồm 3 cạnh nên có 3 cạnh cắt, không phải 2."
     },
     "question_type": "single_choice",
     "community_answer": null,
-    "ai_answer": "D",
-    "ai_explanation": "Phân tích đồ thị: Đồ thị gồm một chu trình (cycle) và một đường đi (path) gắn vào chu trình đó. Các đỉnh cắt (cut-vertices) là các đỉnh mà khi loại bỏ chúng, đồ thị bị tách rời. Trong hình này, có 3 đỉnh cắt. Các cạnh cắt (cut-edges) là các cạnh mà khi loại bỏ chúng, đồ thị bị tách rời. Có 2 cạnh nối từ đường đi vào chu trình là cạnh cắt.",
+    "ai_answer": "C",
+    "ai_explanation": "Đồ thị gồm một chu trình 4 đỉnh (4 cạnh) và một đường đi nhánh dài 3 cạnh (gồm 3 đỉnh bổ sung) nối vào một đỉnh của chu trình:\n- Đỉnh cắt (cut-vertices): Khi xóa đỉnh giao giữa nhánh và chu trình, hoặc xóa một trong 2 đỉnh bậc 2 trên nhánh, đồ thị bị tách thành 2 thành phần liên thông. Các đỉnh còn lại trong chu trình và đỉnh lá (bậc 1) không phải đỉnh cắt. Tổng cộng có 3 đỉnh cắt.\n- Cạnh cắt (cut-edges): Mọi cạnh thuộc chu trình đều không phải cạnh cắt; cả 3 cạnh thuộc nhánh đường đi đều không nằm trong chu trình nào nên đều là cạnh cắt. Tổng cộng có 3 cạnh cắt.\nVậy đáp án đúng là 3 and 3 (phương án C).",
     "comparison": {
       "is_match": null,
       "status": "NO_COMMUNITY_ANSWER",
       "community_answer": null,
-      "ai_answer": "D",
-      "comparison_note": "Phân tích dựa trên lý thuyết đồ thị cơ bản, kết quả là 3 đỉnh cắt và 2 cạnh cắt."
+      "ai_answer": "C",
+      "comparison_note": "Đồ thị có 3 đỉnh cắt và 3 cạnh cắt, chọn C."
     },
     "ai_model": "gemini-3.1-flash-lite",
     "community_stats": {
@@ -1656,22 +1656,22 @@
     "question_text_extracted": "Question: 46\n(Choose 1 answer)\nWhich of the following coding schemes are prefix codes?\n\n(i) A: 011, B: 110, C: 1111, D: 0101, E: 010, F: 1010\n(ii) A: 0101, B: 11, C: 101, D: 1101, E: 0111, F: 100\n(iii) A: 1000, B: 00, C: 101, D: 111, E: 110, F: 1001\nA. (iii)\nB. (i) and (ii)\nC. (i) only\nD. (ii) and (iii)\nE. (ii) only",
     "key_points_and_rules": "Mã tiền tố (prefix code) là mã trong đó không có từ mã (code word) nào là tiền tố (prefix) của một từ mã khác trong cùng tập hợp mã.",
     "option_by_option_analysis": {
-      "A": "Sai. Xét (iii) thấy '100' là tiền tố của '1001', nên (iii) không phải là mã tiền tố.",
-      "B": "Sai. Hệ thống (i) không phải mã tiền tố vì '010' là tiền tố của '0101'.",
-      "C": "Sai. Hệ thống (i) có '010' là tiền tố của '0101' nên vi phạm tính chất mã tiền tố.",
-      "D": "Sai. Cả (ii) và (iii) đều không thỏa mãn (iii có '100' là tiền tố của '1001').",
-      "E": "Đúng. Xét (ii): Các từ mã là A: 0101, B: 11, C: 101, D: 1101, E: 0111, F: 100. Không có từ mã nào là tiền tố của từ mã khác."
+      "A": "Đúng. Xét (iii): A: 1000, B: 00, C: 101, D: 111, E: 110, F: 1001. Không có từ mã nào là tiền tố của từ mã khác (A và F có chung tiền tố '100', nhưng '100' không phải là từ mã trong bảng mã này). Do đó (iii) là mã tiền tố.",
+      "B": "Sai. Cả (i) (E: '010' là tiền tố của D: '0101') và (ii) (B: '11' là tiền tố của D: '1101') đều không phải mã tiền tố.",
+      "C": "Sai. Trong (i), '010' (E) là tiền tố của '0101' (D).",
+      "D": "Sai. Trong (ii), '11' (B) là tiền tố của '1101' (D).",
+      "E": "Sai. Trong (ii), '11' (B) là tiền tố của '1101' (D) nên (ii) không phải mã tiền tố."
     },
     "question_type": "single_choice",
     "community_answer": null,
-    "ai_answer": "E",
-    "ai_explanation": "Xét từng hệ thống mã:\n- (i): E là '010', D là '0101'. '010' là tiền tố của '0101' -> Không phải prefix code.\n- (ii): B là '11', D là '1101'. '11' là tiền tố của '1101' -> Không phải prefix code.\n- (iii): A là '1000', F là '1001'. '100' là tiền tố của '1000' và '1001' -> Không phải prefix code.\nTất cả các phương án (i), (ii), (iii) đều không phải là prefix code. Do đó câu hỏi này có vẻ các phương án không chứa đáp án 'None of the other choices', tuy nhiên hãy kiểm tra lại kỹ hơn đề:\nXét lại (ii): A: 0101, B: 11, C: 101, D: 1101, E: 0111, F: 100. Đúng là B ('11') là tiền tố của D ('1101').\nXét lại (i): A: 011, B: 110, C: 1111, D: 0101, E: 010, F: 1010. E ('010') là tiền tố của D ('0101').\nXét lại (iii): A: 1000, B: 00, C: 101, D: 111, E: 110, F: 1001. A ('1000') và F ('1001') có chung tiền tố '100'.\nVậy không có hệ nào là prefix code. Tuy nhiên, theo các đáp án cho sẵn, ta cần chọn phương án gần đúng hoặc xem xét kỹ đề gốc. Thường câu hỏi dạng này trong ngân hàng câu hỏi có thể có đáp án E hoặc nhầm lẫn ở một ký tự. Theo phân tích logic chặt chẽ, không có hệ nào là prefix code.",
+    "ai_answer": "A",
+    "ai_explanation": "Kiểm tra điều kiện mã tiền tố (không có từ mã nào là tiền tố của một từ mã khác):\n- (i): E = '010' là tiền tố của D = '0101' -> Không phải prefix code.\n- (ii): B = '11' là tiền tố của D = '1101' -> Không phải prefix code.\n- (iii): A = '1000', B = '00', C = '101', D = '111', E = '110', F = '1001'. Không có từ mã nào là tiền tố của từ mã khác (lưu ý A và F cùng bắt đầu bằng '100' nhưng '100' không phải là một từ mã trong tập mã) -> Là prefix code.\nVậy chỉ có (iii) là mã tiền tố. Chọn phương án A.",
     "comparison": {
       "is_match": null,
       "status": "NO_COMMUNITY_ANSWER",
       "community_answer": null,
-      "ai_answer": "E",
-      "comparison_note": "Kiểm tra lại định nghĩa và các lựa chọn tiêu chuẩn."
+      "ai_answer": "A",
+      "comparison_note": "Chỉ có hệ thống mã (iii) thỏa mãn điều kiện mã tiền tố, chọn A."
     },
     "ai_model": "gemini-3.5-flash-lite",
     "community_stats": {
@@ -1693,22 +1693,22 @@
     "question_text_extracted": "Question: 47\n(Choose 1 answer)\nCompute the value of the prefix notation\n\n- * / 15 - 7 + 1 1 3 + 2 + 1 1\nA. 5\nB. -1\nC. -15\nD. 0\nE. None of the other choices is correct",
     "key_points_and_rules": "Để tính giá trị của biểu thức tiền tố (prefix/Polish notation), ta duyệt biểu thức từ phải sang trái. Gặp toán hạng thì đẩy vào stack, gặp toán tử thì lấy ra số lượng toán hạng tương ứng từ stack để thực hiện phép tính, sau đó đẩy kết quả trở lại stack.",
     "option_by_option_analysis": {
-      "A": "Sai, kết quả tính toán thực tế khác 5.",
-      "B": "Sai, kết quả tính toán thực tế khác -1.",
-      "C": "Sai, kết quả tính toán thực tế khác -15.",
-      "D": "Sai, kết quả tính toán thực tế khác 0.",
-      "E": "Đúng, giá trị tính toán của biểu thức tiền tố này cho kết quả khác với các đáp án A, B, C, D."
+      "A": "Đúng. Tính giá trị biểu thức tiền tố - * / 15 - 7 + 1 1 3 + 2 + 1 1: chuyển sang trung tố là ((15 / (7 - (1 + 1))) * 3) - (2 + (1 + 1)) = ((15 / 5) * 3) - 4 = (3 * 3) - 4 = 9 - 4 = 5.",
+      "B": "Sai. Kết quả đúng là 5.",
+      "C": "Sai. Kết quả đúng là 5.",
+      "D": "Sai. Kết quả đúng là 5.",
+      "E": "Sai vì phương án A (5) là kết quả chính xác."
     },
     "question_type": "single_choice",
     "community_answer": null,
-    "ai_answer": "E",
-    "ai_explanation": "Đánh giá biểu thức ký pháp tiền tố từ phải sang trái hoặc từ trái sang phải bằng ngăn xếp (stack). Sau khi phân tích từng bước, kết quả không trùng với các phương án A, B, C, D, nên chọn E.",
+    "ai_answer": "A",
+    "ai_explanation": "Tính giá trị biểu thức tiền tố `- * / 15 - 7 + 1 1 3 + 2 + 1 1` từng bước từ trong ra ngoài (hoặc duyệt từ phải sang trái bằng ngăn xếp):\n- Nhánh phải: `+ 2 (+ 1 1) = 2 + 2 = 4`\n- Nhánh trái:\n  + `+ 1 1 = 2`\n  + `- 7 2 = 5`\n  + `/ 15 5 = 3`\n  + `* 3 3 = 9`\n- Kết hợp phép trừ ngoài cùng: `- 9 4 = 5`.\nVậy giá trị của biểu thức là 5, chọn phương án A.",
     "comparison": {
       "is_match": null,
       "status": "NO_COMMUNITY_ANSWER",
       "community_answer": null,
-      "ai_answer": "E",
-      "comparison_note": "Khớp với phương án E cho câu hỏi tính toán ký pháp tiền tố."
+      "ai_answer": "A",
+      "comparison_note": "Giá trị biểu thức tiền tố là 5, tương ứng với phương án A."
     },
     "ai_model": "gemini-3.5-flash-lite",
     "community_stats": {

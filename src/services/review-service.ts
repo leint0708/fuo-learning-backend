@@ -1,7 +1,9 @@
 import { eq } from "drizzle-orm";
 import { HTTPException } from "hono/http-exception";
 import type { Database } from "../db";
-import { exams, questions, exam_attempts, attempt_answers } from "../db/schema";
+import { exams, exam_attempts, attempt_answers } from "../db/schema";
+import { loadAttemptQuestions, resolveAttemptExamTitle } from "./attempt-service";
+import { parseCommunityStats } from "./community-stats";
 import type { AttemptReviewResponse, ReviewQuestionItem } from "../schemas/review";
 
 export async function getAttemptReview(
@@ -30,11 +32,8 @@ export async function getAttemptReview(
   }
 
   const exam = await db.select().from(exams).where(eq(exams.id, attempt.exam_id)).get();
-  const examQuestions = await db
-    .select()
-    .from(questions)
-    .where(eq(questions.exam_id, attempt.exam_id))
-    .all();
+  const examQuestions = await loadAttemptQuestions(db, attempt, exam);
+  const examTitle = await resolveAttemptExamTitle(db, exam, attempt);
 
   const recordedAnswers = await db
     .select()
@@ -78,13 +77,14 @@ export async function getAttemptReview(
       correct_answer: q.correct_answer,
       is_correct: recorded ? recorded.is_correct : false,
       ai_explanation: q.ai_explanation,
-      option_by_option_analysis: parsedAnalysis
+      option_by_option_analysis: parsedAnalysis,
+      community_stats: parseCommunityStats(q.community_stats)
     };
   });
 
   return {
     attempt_id: attempt.id,
-    exam_title: exam?.title || "",
+    exam_title: examTitle,
     status: attempt.status as "completed" | "timed_out",
     percentage_score: attempt.percentage_score,
     is_passed: attempt.is_passed,

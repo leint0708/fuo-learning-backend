@@ -1509,14 +1509,13 @@
     "image_file": "Q22.jpg",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nAn employee at a branch office is creating a quote for a customer. In order to do this, the employee needs to access confidential pricing information from internal servers at the Head Office. What type of network would the employee access?\nA. an intranet\nB. the Internet\nC. an extranet\nd. a local area network",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nAn employee at a branch office is creating a quote for a customer. In order to do this, the employee needs to access confidential pricing information from internal servers at the Head Office. What type of network would the employee access?\nA. an intranet\nB. the Internet\nC. an extranet\nD. a local area network",
     "key_points_and_rules": "Phân biệt các khái niệm mạng: Intranet (mạng nội bộ riêng tư của một tổ chức chỉ cho nhân viên truy cập), Internet (mạng công cộng toàn cầu), Extranet (mạng mở rộng cho đối tác/khách hàng bên ngoài), LAN (mạng cục bộ giới hạn trong một khu vực vật lý).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Intranet là một mạng riêng tư nội bộ thuộc quyền sở hữu của tổ chức (chẳng hạn kết nối giữa trụ sở chính và các chi nhánh), cho phép nhân viên truy cập thông tin nội bộ một cách an toàn [ĐÚNG].",
       "B": "Phân tích chi tiết: Internet là mạng công cộng toàn cầu, không phải là mạng nội bộ chứa thông tin giá cả mật của công ty [SAI].",
       "C": "Phân tích chi tiết: Extranet cho phép các đối tác bên ngoài hoặc khách hàng được ủy quyền truy cập một phần mạng của tổ chức, nhưng ở đây là nhân viên nội bộ của công ty truy cập máy chủ nội bộ [SAI].",
-      "D": "Phân tích chi tiết: Local area network (LAN) chỉ giới hạn trong một khu vực địa lý nhỏ (như một tòa nhà, một văn phòng cụ thể), trong khi đề bài nhắc đến nhân viên ở chi nhánh truy cập máy chủ tại Trụ sở chính (Head Office) [SAI].",
-      "ai_answer": "A"
+      "D": "Phân tích chi tiết: Local area network (LAN) chỉ giới hạn trong một khu vực địa lý nhỏ (như một tòa nhà, một văn phòng cụ thể), trong khi đề bài nhắc đến nhân viên ở chi nhánh truy cập máy chủ tại Trụ sở chính (Head Office) [SAI]."
     },
     "question_type": "single_choice",
     "community_answer": "A",
@@ -3381,7 +3380,7 @@
     "image_file": "Q48.jpg",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nRefer to the exhibit. Match the packets with their destination IP address to the exiting interfaces on the router. (Not all targets are used.)\n<output omitted>\nGateway of last resort is 0.0.0.0 to network 0.0.0.0\n\n     10.0.0.0/24 is subnetted, 1 subnets\nC    10.1.0.0 is directly connected, Serial0/0/0\n     172.17.0.0/24 is subnetted, 4 subnets\nO    172.17.6.0 [110/2] via 192.168.3.4, 00:10:41, FastEthernet0/0\nO    172.17.10.0 [110/2] via 192.168.5.2, 00:09:52, FastEthernet1/1\nO    172.17.12.0 [110/2] via 192.168.4.2, 00:12:23, FastEthernet1/0\nC    172.17.14.0 is directly connected, FastEthernet0/0\nC    192.168.3.0/24 is directly connected, FastEthernet0/0\nC    192.168.4.0/24 is directly connected, FastEthernet1/0\nC    192.168.5.0/24 is directly connected, FastEthernet1/1\nS*   0.0.0.0/0 is directly connected, Serial0/0/0\n\nA. 172.17.10.5                                            1. FastEthernet0/0\nB. 172.17.12.10                                           2. FastEthernet0/1\nC. 172.17.14.8                                            3. FastEthernet1/0\nD. 172.17.8.20                                            4. FastEthernet1/1\nE. 172.17.6.15                                            5. Serial0/0/0\n                                                         6. The packet is dropped.\nA. 1E-2C-3B-4A-5D\nB. 1E-2B-3C-4A-5D\nC. 1E-2C-3A-4B-5D\nD. 1E-2C-3B-4D-5A",
+    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nRefer to the exhibit. Match the packets with their destination IP address to the exiting interfaces on the router. (Not all targets are used.)\nA. 1E-2C-3B-4A-5D\nB. 1E-2B-3C-4A-5D\nC. 1E-2C-3A-4B-5D\nD. 1E-2C-3B-4D-5A",
     "key_points_and_rules": "Sử dụng quy tắc Longest Prefix Match (khớp tiền tố dài nhất) trong bảng định tuyến. Nếu không tìm thấy mạng đích, sử dụng Gateway of last resort (0.0.0.0/0).",
     "option_by_option_analysis": {
       "A": "172.17.10.5 thuộc mạng 172.17.10.0/24 -> FastEthernet0/1 (tương ứng số 2).",

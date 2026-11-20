@@ -5502,7 +5502,7 @@
     "image_file": "Q44.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nIn deadlock, what is no-preemption condition?\nA. Processes currently holding resources that were granted earlier can request new resources.\nB. Resources previously đã granted cannot be forcibly taken away from a process. tài nguyên được cấp trước đó không thể bị thu hồi một cách cưỡng bức từ tiến trình. They must be explicitly released by the process holding them.\nC. There must be a circular list of two or more processes, each of which is waiting for a resource help by the next member of the chain.\nD. Each resource is either currently assigned to exactly one process or is available.",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nIn deadlock, what is no-preemption condition?\nA. Processes currently holding resources that were granted earlier can request new resources.\nB. Resources previously granted cannot be forcibly taken away from a process. They must be explicitly released by the process holding them.\nC. There must be a circular list of two or more processes, each of which is waiting for a resource help by the next member of the chain.\nD. Each resource is either currently assigned to exactly one process or is available.",
     "key_points_and_rules": "Câu hỏi yêu cầu định nghĩa chính xác về điều kiện 'No preemption' (Không cho phép thu hồi tài nguyên) trong bài toán Deadlock (Tắc nghẽn) của Hệ điều hành.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đây là mô tả của điều kiện 'Hold and wait' (Giữ và chờ), nơi tiến trình đang giữ tài nguyên có thể yêu cầu thêm tài nguyên mới -> [SAI].",

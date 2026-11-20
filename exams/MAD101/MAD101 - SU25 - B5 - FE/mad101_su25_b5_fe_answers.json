@@ -298,7 +298,7 @@
     "image_file": "Q4.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 4\n(Choose 1 answer)\nLet C(x) = \"x has a cat,\"\nD(x) = \"x has a dog,\"\nF(x) = \"x has a ferret.\"\nLet the domain consist of all students in your class.\n\nExpress the sentence\n\"For each of the three animals, cats, dogs, and ferrets, there is a student in your class who has this animal as a pet.\"\nin terms of C(x), D(x), F(x), quantifiers, and logical connectives.\n\n(i) ∃x C(x) ∨ ∃x D(x) ∨ ∃x F(x)\n(ii) ∃x C(x) ∧ ∃x D(x) ∧ ∃x F(x)\n(iii) ∀x (C(x) ∧ D(x) ∧ F(x))\n(iv) ∀x (¬C(x) ∧ ¬D(x) ∧ ¬F(x))",
+    "question_text_extracted": "Question: 4\n(Choose 1 answer)\nLet C(x) = \"x has a cat,\"\n    D(x) = \"x has a dog,\"\n    F(x) = \"x has a ferret.\"\nLet the domain consist of all students in your class.\n\nExpress the sentence\n\n\"For each of the three animals, cats, dogs, and ferrets, there is a student in your class who has this animal as a pet.\"\n\nin terms of C(x), D(x), F(x), quantifiers, and logical connectives.\n\n(i) ∃x C(x) ∨ ∃x D(x) ∨ ∃x F(x)\n(ii) ∃x C(x) ∧ ∃x D(x) ∧ ∃x F(x)\n(iii) ∀x (C(x) ∧ D(x) ∧ F(x))\n(iv) ∀x (¬C(x) ∧ ¬D(x) ∧ ¬F(x))\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
     "key_points_and_rules": "Biểu diễn câu phát biểu tiếng Anh thành logic vị từ bằng cách sử dụng các định lượng tồn tại (∃) và hội (∧).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương án (i) dùng phép tuyển (∨): ∃x C(x) ∨ ∃x D(x) ∨ ∃x F(x) có nghĩa là 'Có ít nhất một sinh viên nuôi mèo, hoặc có ít nhất một sinh viên nuôi chó, hoặc có ít nhất một sinh viên nuôi chồn'. Điều này không đòi hỏi phải thỏa mãn cho *tất cả ba* loài động vật. Phương án A [SAI].",
@@ -782,7 +782,7 @@
     "image_file": "Q9.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nKizspy | Question: 9\n(Choose 1 answer)\nFind the cardinality of the set\n{1, {1}, 3, {1, 3}}\nA. 2\nB. 3\nC. 5\nD. 4\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nQuestion: 9\n(Choose 1 answer)\nFind the cardinality of the set\n{1, {1}, 3, {1, 3}}\nA. 2\nB. 3\nC. 5\nD. 4\nE. None of the other choices is correct",
     "key_points_and_rules": "Xác định lực lượng (cardinality) của tập hợp bằng cách đếm số lượng phần tử phân biệt nằm ở cấp độ ngoài cùng của tập hợp đó.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Sai, vì tập hợp có nhiều hơn 2 phần tử.",
@@ -869,7 +869,7 @@
     "image_file": "Q10.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nKizspy | Question: 10\n(Choose 1 answer)\nLet U = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}.\nThe bit string representing the subset {0, 1, 4, 5, 8, 9} is________\nA. 11001100110\nB. 11001100111\nC. 11101100110\nD. 11011101110\nE. 10011001100",
+    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nQuestion: 10\n(Choose 1 answer)\nLet U = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}.\nThe bit string representing the subset {0, 1, 4, 5, 8, 9} is________\nA. 11001100110\nB. 11001100111\nC. 11101100110\nD. 11011101110\nE. 10011001100",
     "key_points_and_rules": "Biểu diễn một tập con bằng xâu bit (bit string) đối với tập vũ toàn phần U sắp xếp tăng dần từ 0 đến 10. Phần tử nào thuộc tập con ứng với bit 1, không thuộc ứng với bit 0.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đúng. Ta xét lần lượt từng phần tử từ 0 đến 10 trong U = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}:\n- 0 thuộc tập con -> bit 1\n- 1 thuộc tập con -> bit 1\n- 2 không thuộc -> bit 0\n- 3 không thuộc -> bit 0\n- 4 thuộc -> bit 1\n- 5 thuộc -> bit 1\n- 6 không thuộc -> bit 0\n- 7 không thuộc -> bit 0\n- 8 thuộc -> bit 1\n- 9 thuộc -> bit 1\n- 10 không thuộc -> bit 0\nGhép lại ta được xâu bit: 11001100110.",
@@ -1049,9 +1049,9 @@
     "question_number": 12,
     "question_id": "Q12",
     "image_file": "Q12.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán học & Logic (Toán rời rạc / Đại số)",
-    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nLet f: N → Z be the function defined as follows:\nf(n) =\n-n/2, if n is even\n(n^2 + 1)/2, if n is odd\nChoose the correct answer.\nA. f is one-to-one but not onto.\nB. f is onto but not one-to-one.\nC. f is both one-to-one and onto.\nD. f is neither one-to-one nor onto.",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nChoose the correct answer.\nLet f: ℕ → ℤ be the function defined as follows\n\nf(n) = {\n  -n / 2, if n is even\n  (n² + 1) / 2, if n is odd\n}\nA. f is one-to-one but not onto.\nB. f is onto but not one-to-one.\nC. f is both one-to-one and onto.\nD. f is neither one-to-one nor onto.",
     "key_points_and_rules": "Xét hàm số f: N → Z:\n- Trường hợp n chẵn (n = 2k, k ≥ 0): f(n) = -n/2 = -k. Miền giá trị cho n chẵn là các số nguyên âm và 0 (0, -1, -2, -3, ...).\n- Trường hợp n lẻ (n = 2k+1, k ≥ 0): f(n) = (n^2 + 1)/2. Với n = 1 -> f(1) = 1; n = 3 -> f(3) = 5; ... Miền giá trị cho n lẻ là các số nguyên dương (1, 5, 13, 25, ...).\nKiểm tra tính đơn ánh (one-to-one): Xét xem mọi n1 ≠ n2 thì f(n1) ≠ f(n2). Kiểm tra tính toàn ánh (onto): Xét xem mọi phần tử y ∈ Z có tồn tại n ∈ N sao cho f(n) = y hay không.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: f is one-to-one but not onto. Ta chứng minh f là đơn ánh (one-to-one): \n- Với n chẵn: f(n) = -n/2 là hàm nghịch biến trên tập chẵn, các giá trị nhận được là các số nguyên âm và 0.\n- Với n lẻ: f(n) = (n^2 + 1)/2 là hàm đồng biến trên tập lẻ (với n ≥ 1), các giá trị nhận được là các số nguyên dương rời rạc.\n- Không có hai giá trị n khác nhau nào cho cùng một kết quả f(n). Do đó f là đơn ánh.\n- f không phải là toàn ánh (not onto) vì tập đích là Z (tập hợp tất cả các số nguyên), nhưng miền giá trị của f chỉ bao gồm {0, -1, -2, ...} và các số nguyên dương dạng (n^2+1)/2 (ví dụ không có phần tử nào trong N ánh xạ ra 2, 3, 4, 6, v.v.). Do đó f không phủ kín tập Z. [ĐÚNG]",
@@ -1138,7 +1138,7 @@
     "image_file": "Q13.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nKizspy | Question: 13\n\n(Choose 1 answer)\n\nFind the terms a_0, a_1, a_2, a_3, and a_4 of the sequence {a_n}, where\na_n = ⌊2n/3⌋ + ⌈2n/3⌉\nA. 0, 1, 2, 3, 4\nB. 0, 2, 3, 4, 5\nC. 0, 1, 3, 4, 5\nD. 0, 1, 2, 4, 5\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nQuestion: 13\n\n(Choose 1 answer)\n\nFind the terms a_0, a_1, a_2, a_3, and a_4 of the sequence {a_n}, where\na_n = ⌊2n/3⌋ + ⌈2n/3⌉\nA. 0, 1, 2, 3, 4\nB. 0, 2, 3, 4, 5\nC. 0, 1, 3, 4, 5\nD. 0, 1, 2, 4, 5\nE. None of the other choices is correct",
     "key_points_and_rules": "Tính các giá trị của dãy số a_n với n từ 0 đến 4 dựa trên công thức chứa hàm sàn (floor) ⌊x⌋ và hàm trần (ceiling) ⌈x⌉.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Tính a_0 = ⌊0⌋ + ⌈0⌉ = 0; a_1 = ⌊2/3⌋ + ⌈2/3⌉ = 0 + 1 = 1; a_2 = ⌊4/3⌋ + ⌈4/3⌉ = 1 + 2 = 3; a_3 = ⌊6/3⌋ + ⌈6/3⌉ = 2 + 2 = 4; a_4 = ⌊8/3⌋ + ⌈8/3⌉ = 2 + 3 = 5. Dãy số tìm được là 0, 1, 3, 4, 5. Phương án A có giá trị a_2 = 2 nên [SAI].",
@@ -1223,9 +1223,9 @@
     "question_number": 14,
     "question_id": "Q14",
     "image_file": "Q14.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nKizspy | Question: 14\n\n(Choose 1 answer)\n\nGiven the Insertion sort algorithm\n\nIf input = 7, 2, 4, 3, 1, 6, 5, after running the outer loop with i = 4, the order of the elements in the list is________\nA. 2, 3, 4, 7, 1, 6, 5\nB. 2, 4, 7, 3, 1, 6, 5\nC. 2, 4, 7, 1, 3, 6, 5\nD. 1, 2, 3, 4, 7, 6, 5",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nQuestion: 14\n\n(Choose 1 answer)\n\nGiven the Insertion sort algorithm\n\nprocedure InsertionSort(a₁, a₂, ..., aₙ: integer)\nfor i := 2 to n do\n    j := 1\n    while aⱼ < aᵢ\n        j := j+1\n    temp := aᵢ\n    for k := i down to j+1\n        aₖ := aₖ₋₁\n    aⱼ := temp\n\nIf input = 7, 2, 4, 3, 1, 6, 5, after running the outer loop with i = 4, the order of the elements in the list is________\nA. 2, 3, 4, 7, 1, 6, 5\nB. 2, 4, 7, 3, 1, 6, 5\nC. 2, 4, 7, 1, 3, 6, 5\nD. 1, 2, 3, 4, 7, 6, 5",
     "key_points_and_rules": "Mô phỏng thuật toán Insertion Sort với input ban đầu [7, 2, 4, 3, 1, 6, 5], xem xét trạng thái của mảng sau khi kết thúc vòng lặp ngoài với i = 4.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Ban đầu: [7, 2, 4, 3, 1, 6, 5]. Vòng lặp ngoài chạy từ i = 2 đến n:\n- i = 2: chèn a_2 = 2 vào phần đầu đã sắp xếp [7] -> mảng thành [2, 7, 4, 3, 1, 6, 5].\n- i = 3: chèn a_3 = 4 vào [2, 7] -> mảng thành [2, 4, 7, 3, 1, 6, 5].\n- i = 4: chèn a_4 = 3 vào [2, 4, 7] -> mảng thành [2, 3, 4, 7, 1, 6, 5]. Kết quả này khớp với phương án A nên [ĐÚNG].",
@@ -1320,7 +1320,7 @@
     "image_file": "Q15.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc & Thuật toán",
-    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nKizspy | Question: 15\n(Choose 1 answer)\nUse the binary search algorithm to find the location of 10 in the sequence {1, 4, 5, 7, 8, 10, 12}. How many iterations are needed?\n\nALGORITHM The Binary Search Algorithm.\nprocedure binary search (x: integer, a₁, a₂, ..., aₙ: increasing integers)\ni := 1 {i is left endpoint of search interval}\nj := n {j is right endpoint of search interval}\nwhile i < j\nbegin\n  m := ⌊(i + j)/2⌋\n  if x > aₘ then i := m + 1\n  else j := m\nend\nif x = aᵢ then location := i\nelse location := 0\n{location is the subscript of the term equal to x, or 0 if x is not found}\nA. 3\nB. 2\nC. 4\nD. 5\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nQuestion: 15\n(Choose 1 answer)\nUse the binary search algorithm to find the location of 10 in the sequence {1, 4, 5, 7, 8, 10, 12}. How many iterations are needed?\n\nALGORITHM The Binary Search Algorithm.\nprocedure binary search (x: integer, a₁, a₂, ..., aₙ: increasing integers)\ni := 1 {i is left endpoint of search interval}\nj := n {j is right endpoint of search interval}\nwhile i < j\nbegin\n  m := ⌊(i + j)/2⌋\n  if x > aₘ then i := m + 1\n  else j := m\nend\nif x = aᵢ then location := i\nelse location := 0\n{location is the subscript of the term equal to x, or 0 if x is not found}\nA. 3\nB. 2\nC. 4\nD. 5\nE. None of the other choices is correct",
     "key_points_and_rules": "Theo dõi từng bước thực thi của thuật toán tìm kiếm nhị phân với x = 10 và dãy a = {1, 4, 5, 7, 8, 10, 12} (n = 7). Đếm số lần lặp (iterations) của vòng lặp while.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: \n- Khởi tạo: x = 10, i = 1, j = 7, dãy a = [1, 4, 5, 7, 8, 10, 12].\n- Vòng lặp 1: i = 1 < j = 7 (Đúng).\n  + m = ⌊(1 + 7)/2⌋ = 4.\n  + a₄ = 7. Kiểm tra x > a₄ (10 > 7): Đúng, nên i = m + 1 = 5.\n- Vòng lặp 2: i = 5 < j = 7 (Đúng).\n  + m = ⌊(5 + 7)/2⌋ = 6.\n  + a₆ = 10. Kiểm tra x > a₆ (10 > 10): Sai, nên j = m = 6.\n- Vòng lặp 3: i = 5 < j = 6 (Đúng).\n  + m = ⌊(5 + 6)/2⌋ = 5.\n  + a₅ = 8. Kiểm tra x > a₅ (10 > 8): Đúng, nên i = m + 1 = 6.\n- Vòng lặp tiếp theo: i = 6 < j = 6 (Sai, vòng lặp kết thúc).\n- Tổng số lần lặp vòng while là 3 lần. Sau đó kiểm tra x = a₆ (10 = 10), location := 6.\nVậy số vòng lặp cần thiết là 3. Do đó phương án A là [ĐÚNG].",
@@ -1424,7 +1424,7 @@
     "image_file": "Q16.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc & Độ phức tạp thuật toán",
-    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nKizspy | Question: 16\n(Choose 1 answer)\nFind the smallest integer n such that the following function is O(xⁿ)\nx² + x² log x\nA. 3\nB. 2\nC. 4\nD. 1\nE. 0",
+    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nQuestion: 16\n(Choose 1 answer)\nFind the smallest integer n such that the following function is O(xⁿ)\nx² + x² log x\nA. 3\nB. 2\nC. 4\nD. 1\nE. 0",
     "key_points_and_rules": "Tìm số nguyên nhỏ nhất n sao cho hàm f(x) = x² + x² log x thuộc O(xⁿ). Sử dụng định nghĩa Big-O và tính tăng trưởng của hàm logarit so với lũy thừa.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Với n = 3, ta xét giới hạn hoặc tỉ lệ khi x -> ∞ giữa x² + x² log x và x³:\nlim (x² + x² log x) / x³ = lim (1/x + (log x)/x) = 0 + 0 = 0.\nDo đó x² + x² log x = O(x³).\nHơn nữa, với n = 2, f(x) / x² = 1 + log x, khi x -> ∞ thì log x không bị chặn, do đó f(x) KHÔNG thuộc O(x²).\nVậy số nguyên nhỏ nhất n lớn hơn hoặc bằng 3 sao cho f(x) = O(xⁿ) là n = 3. Phương án A là [ĐÚNG].",
@@ -1786,9 +1786,9 @@
     "question_number": 20,
     "question_id": "Q20",
     "image_file": "Q20.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 20\n(Choose 1 answer)\n(See picture)\nSuppose a = 2^3 3^4 5^2 7^1 and b = 2^2 3^3 5^4 7^1. Find lcm(a, b) / gcd(a, b).\n\n(i) 2^2 3^1 5^2\n(ii) 2^1 3^1 5^1 7^1\n(iii) 2^1 3^1 5^2 7^1\n(iv) 2^1 3^1 5^2",
+    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nSuppose a = 2³ 3⁴ 5² 7¹ and b = 2² 3³ 5⁴ 7¹. Find lcm(a,b)/gcd(a,b).\n\ni) 2² 3¹ 5²\nii) 2¹ 3¹ 5¹ 7¹\niii) 2¹ 3¹ 5² 7¹\niv) 2¹ 3¹ 5²\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
     "key_points_and_rules": "Cho hai số nguyên phân tích ra thừa số nguyên tố a = p_1^{a_1} p_2^{a_2} ... và b = p_1^{b_1} p_2^{b_2} ... Khi đó gcd(a, b) lấy số mũ nhỏ nhất của mỗi thừa số nguyên tố, lcm(a, b) lấy số mũ lớn nhất của mỗi thừa số nguyên tố. Tỷ số lcm(a, b) / gcd(a, b) sẽ có số mũ của mỗi thừa số nguyên tố bằng hiệu tuyệt đối giữa số mũ lớn nhất và số mũ nhỏ nhất: |a_i - b_i|.",
     "option_by_option_analysis": {
       "A": "Phân tích phương án (i): Sai.",
@@ -1867,7 +1867,7 @@
     "image_file": "Q21.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nKizspy | Question: 21\n(Choose 1 answer)\nHow many positive integers less than 15 are relatively prime to 15?\nA. 6\nB. 10\nC. 9\nD. 8\nE. 7\nF. None of the other choices is correct",
+    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nQuestion: 21\n(Choose 1 answer)\nHow many positive integers less than 15 are relatively prime to 15?\nA. 6\nB. 10\nC. 9\nD. 8\nE. 7\nF. None of the other choices is correct",
     "key_points_and_rules": "Đề bài yêu cầu tìm số lượng các số nguyên dương nhỏ hơn 15 nguyên tố cùng nhau với 15 (tức là tính hàm Euler phi $\\phi(15)$).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 6 [SAI].",
@@ -1970,7 +1970,7 @@
     "image_file": "Q22.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic / Kiến trúc máy tính",
-    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nKizspy | Question: 22\n(Choose 1 answer)\nFind the binary expansion of (D0A)₁₆\n(i) (10110001101)₂\n(ii) (110001010)₂\n(iii) (110100001010)₂\n(iv) (101101101)₂\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nQuestion: 22\n(Choose 1 answer)\nFind the binary expansion of (D0A)₁₆\n(i) (10110001101)₂\n(ii) (110001010)₂\n(iii) (110100001010)₂\n(iv) (101101101)₂\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
     "key_points_and_rules": "Chuyển đổi số ở hệ cơ số 16 $(D0A)_{16}$ sang hệ cơ số 2 bằng cách đổi từng ký tự hex sang dạng nhị phân 4 bít.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: (i) [SAI].",
@@ -2136,7 +2136,7 @@
     "image_file": "Q24.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc & Logic (MAD101)",
-    "question_text_extracted": "Let S be the subset of the set of ordered pairs of integers defined recursively by\nBasis step: (0,0) ∈ S.\nRecursive step: If (a, b) ∈ S, then (a + 2, b + 3) ∈ S and (a + 3, b + 2) ∈ S.\nWhich element is in S?",
+    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nLet S be the subset of the set of ordered pairs of integers defined recursively by\nBasis step: (0,0) ∈ S.\nRecursive step: If (a, b) ∈ S, then (a + 2, b + 3) ∈ S and\n(a + 3, b + 2) ∈ S.\nWhich element is in S?\nA. (12, 15)\nB. (10, 15)\nC. (9, 15)\nD. (8, 15)",
     "key_points_and_rules": "Định nghĩa tập hợp bằng quy nạp (Recursive definition): Bước cơ sở (0,0) ∈ S; Bước đệ quy cho phép cộng các vector (2,3) hoặc (3,2). Do đó, bất kỳ phần tử (x, y) nào thuộc S đều phải được tạo thành từ tổng số lần áp dụng quy tắc cộng vector từ (0,0). Tổng các tọa độ x + y sau mỗi bước tăng thêm 2 + 3 = 5 đơn vị. Do đó, tổng tọa độ x + y của mọi phần tử trong S phải chia hết cho 5.",
     "option_by_option_analysis": {
       "A": "(12, 15): Tổng x + y = 12 + 15 = 27 (không chia hết cho 5). [SAI]",
@@ -2223,7 +2223,7 @@
     "image_file": "Q25.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Cấu trúc dữ liệu",
-    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nKizspy | Question: 25\n(Choose 1 answer)\nWhich of the following algorithms are recursive?\n(i) procedure ABC(n, P: integers)\nP:=0;\nfor j:=1 to n\nbegin\nif (j mod 2 = 0) then\nP := P - j;\nelse P := P + j;\nend\n(ii) procedure ABC(n, P: integer)\nP := 1;\nfor j:=1 to n\nbegin\nif (j mod 2 = 0) then\nP := P + j;\nelse P := P * j;\nend\nA. None of them\nB. Only (i)\nC. Only (ii)\nD. Both of them",
+    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nQuestion: 25\n(Choose 1 answer)\nWhich of the following algorithms are recursive?\n(i) procedure ABC(n, P: integers)\nP:=0;\nfor j:=1 to n\nbegin\nif (j mod 2 = 0) then\nP := P - j;\nelse P := P + j;\nend\n(ii) procedure ABC(n, P: integer)\nP := 1;\nfor j:=1 to n\nbegin\nif (j mod 2 = 0) then\nP := P + j;\nelse P := P * j;\nend\nA. None of them\nB. Only (i)\nC. Only (ii)\nD. Both of them",
     "key_points_and_rules": "Xác định thuật toán đệ quy (recursive algorithm): là thuật toán có hàm hoặc thủ tục gọi lại chính nó trực tiếp hoặc gián tiếp. Kiểm tra thân của hai thủ tục (i) và (ii) xem có lời gọi đến thủ tục 'ABC' hay không.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Cả hai thủ tục (i) và (ii) đều sử dụng vòng lặp for tuyến tính từ 1 đến n và không hề có lời gọi hàm đệ quy nào gọi lại chính thủ tục 'ABC'. Do đó, cả hai đều là thuật toán lặp (iterative), không phải đệ quy (recursive). Vậy phương án này ĐÚNG.",
@@ -2302,7 +2302,7 @@
     "image_file": "Q26.webp",
     "has_illustration": false,
     "subject_domain": "Cấu trúc dữ liệu & Giải thuật",
-    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nKizspy | Question: 26\n(Choose 1 answer)\nHow many comparisons are required to merge this pair of lists [2, 3, 5, 6, 9, 22] and [1, 4, 7, 25]?\nA. 7\nB. 9\nC. 8\nD. 10\nE. None of the other choices",
+    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nQuestion: 26\n(Choose 1 answer)\nHow many comparisons are required to merge this pair of lists [2, 3, 5, 6, 9, 22] and [1, 4, 7, 25]?\nA. 7\nB. 9\nC. 8\nD. 10\nE. None of the other choices",
     "key_points_and_rules": "Đếm số phép so sánh (comparisons) trong thuật toán trộn (Merge) hai danh sách đã sắp xếp: [2, 3, 5, 6, 9, 22] (6 phần tử) và [1, 4, 7, 25] (4 phần tử). Tổng số phần tử là 10. Trong thuật toán merge tiêu chuẩn, mỗi lần so sánh một phần tử từ danh sách này với một phần tử từ danh sách kia cho đến khi một trong hai danh sách cạn kiệt, phần tử còn lại của danh sách kia được đưa trực tiếp vào danh sách kết quả mà không cần so sánh thêm.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Số 7 nhỏ hơn số lượng phép so sánh thực tế khi mô phỏng thuật toán trộn. Vậy phương án này SAI.",
@@ -2390,7 +2390,7 @@
     "image_file": "Q27.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc & Lý thuyết số",
-    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nKizspy | Question: 27\n(Choose 1 answer)\nHow many positive integers not exceeding 100 and divisible by exactly one of 6 or 9?\nA. 17\nB. 22\nC. 26\nD. 27\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nQuestion: 27\n(Choose 1 answer)\nHow many positive integers not exceeding 100 and divisible by exactly one of 6 or 9?\nA. 17\nB. 22\nC. 26\nD. 27\nE. None of the other choices is correct",
     "key_points_and_rules": "Yêu cầu tìm số các số nguyên dương không vượt quá 100 và chia hết cho đúng một trong hai số 6 hoặc 9. Tức là số các phần tử thuộc đúng một trong hai tập hợp chia hết cho 6 hoặc chia hết cho 100.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đặt A là tập hợp các số nguyên dương $\\le 100$ chia hết cho 6, và B là tập hợp các số nguyên dương $\\le 100$ chia hết cho 9.\n- Số phần tử của A: $|A| = \\lfloor 100 / 6 \\rfloor = 16$ (các số: 6, 12, 18, ..., 96).\n- Số phần tử của B: $|B| = \\lfloor 100 / 9 \\rfloor = 11$ (các số: 9, 18, 27, ..., 99).\n- Giao của hai tập hợp A và B là các số chia hết cho bội chung nhỏ nhất của 6 và 9 là $\\text{BCNN}(6, 9) = 18$.\n- Số phần tử của giao: $|A \\cap B| = \\lfloor 100 / 18 \\rfloor = 5$ (các số: 18, 36, 54, 72, 90).\n- Số các số chia hết cho đúng một trong hai số là: $|A \\cup B| - |A \\cap B| = (|A| + |B| - 2|A \\cap B|) = 16 + 11 - 2 \\times 5 = 27 - 10 = 17$.\nDo đó, phương án A là [ĐÚNG].",
@@ -2477,7 +2477,7 @@
     "image_file": "Q28.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc & Tổ hợp",
-    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nKizspy | Question: 28\n(Choose 1 answer)\nHow many 8-digits numbers that are divisible by 10?\nA. None of the other choices is correct\nB. 9 000 001\nC. 10 000 000\nD. 10 000 001\nE. 9 000 000",
+    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nQuestion: 28\n(Choose 1 answer)\nHow many 8-digits numbers that are divisible by 10?\nA. None of the other choices is correct\nB. 9 000 001\nC. 10 000 000\nD. 10 000 001\nE. 9 000 000",
     "key_points_and_rules": "Yêu cầu đếm số lượng các số có 8 chữ số chia hết cho 10. Số có 8 chữ số bắt đầu từ $10^7 = 10,000,000$ đến $99,999,999$. Một số chia hết cho 10 khi và chỉ khi tận cùng của nó là chữ số 0.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá [SAI] vì đáp án E đã cho kết quả chính xác.",
@@ -2557,7 +2557,7 @@
     "image_file": "Q29.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc & Lý thuyết thuật toán (MAD101)",
-    "question_text_extracted": "Question: 29\n(Choose 1 answer)\nKizspy | Question: 29\n\n(Choose 1 answer)\n\n\nConsider the simultaneous recurrence relations\n\\begin{cases} aₙ = aₙ₋₁ - bₙ₋₁ \\\\ bₙ = 3aₙ₋₁ + 5bₙ₋₁ \\end{cases}\nwith the initial conditions a₀ = 1, b₀ = 2. What are the values of a₃ and b₃?\n\n(i) a₃ = -14, b₃ = 62;\n(ii) a₃ = -1, b₃ = 13;\n(iii) a₃ = -76, b₃ = 268;\n(iv) a₃ = -59, b₃ = 210.\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 29\n(Choose 1 answer)\nQuestion: 29\n\n(Choose 1 answer)\n\n\nConsider the simultaneous recurrence relations\n\\begin{cases} aₙ = aₙ₋₁ - bₙ₋₁ \\\\ bₙ = 3aₙ₋₁ + 5bₙ₋₁ \\end{cases}\nwith the initial conditions a₀ = 1, b₀ = 2. What are the values of a₃ and b₃?\n\n(i) a₃ = -14, b₃ = 62;\n(ii) a₃ = -1, b₃ = 13;\n(iii) a₃ = -76, b₃ = 268;\n(iv) a₃ = -59, b₃ = 210.\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
     "key_points_and_rules": "Tính giá trị của các số hạng $a_3$ và $b_3$ dựa trên hệ thức truy hồi đồng thời đã cho và điều kiện ban đầu $a_0 = 1, b_0 = 2$.",
     "option_by_option_analysis": {
       "A": "Kiểm tra phương án (i): Ta tính từ $a_0=1, b_0=2$. Bước 1 ($n=1$): $a_1 = 1 - 2 = -1$, $b_1 = 3(1) + 5(2) = 13$. Bước 2 ($n=2$): $a_2 = -1 - 13 = -14$, $b_2 = 3(-1) + 5(13) = 62$. Bước 3 ($n=3$): $a_3 = -14 - 62 = -76$, $b_3 = 3(-14) + 5(62) = -42 + 310 = 268$. Do đó $a_3 = -76, b_3 = 268$, tức là khớp với mệnh đề (iii), không phải (i). Vậy phương án A SAI.",
@@ -3016,7 +3016,7 @@
     "image_file": "Q35.webp",
     "has_illustration": true,
     "subject_domain": "Toán rời rạc & Lý thuyết đồ thị",
-    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nKizspy | Question: 35\n\n(Choose 1 answer)\n\nWhich of the following is NOT a circuit in this graph ?\nA. A-B-C-D-F-B-A\nB. D-B-F-E-D\nC. E-F-B-A-D-E\nD. C-D-E-F-B-A-C\nE. B-A-D-E-F-B",
+    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nQuestion: 35\n\n(Choose 1 answer)\n\nWhich of the following is NOT a circuit in this graph ?\nA. A-B-C-D-F-B-A\nB. D-B-F-E-D\nC. E-F-B-A-D-E\nD. C-D-E-F-B-A-C\nE. B-A-D-E-F-B",
     "key_points_and_rules": "Đề bài yêu cầu tìm phương án KHÔNG phải là một chu trình (circuit) trong đồ thị cho trước. Một chu trình trong đồ thị là một đường đi đóng (closed walk), tức là một đường đi có đỉnh bắt đầu trùng với đỉnh kết thúc, và không có ràng buộc phải đi qua mỗi cạnh đúng một lần (khác với chu trình Euler). Ngoài ra, các cạnh xuất hiện trong chu trình phải tồn tại thực sự trong đồ thị.",
     "option_by_option_analysis": {
       "A": "Xét A-B-C-D-F-B-A: Kiểm tra các cạnh: A-B (tồn tại), B-C (tồn tại), C-D (tồn tại), nhưng cạnh D-F KHÔNG tồn tại trên đồ thị (vì D chỉ kề với A, B, C, E). Do đó phương án này không phải là một chu trình hợp lệ.",
@@ -3095,7 +3095,7 @@
     "image_file": "Q36.webp",
     "has_illustration": true,
     "subject_domain": "Toán rời rạc & Lý thuyết đồ thị",
-    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nKizspy | Question: 36\n\n(Choose 1 answer)\n\nWhich graph has more cut vertices?\nA. Y\nB. X\nC. They have the same number of cut vertices",
+    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nQuestion: 36\n\n(Choose 1 answer)\n\nWhich graph has more cut vertices?\nA. Y\nB. X\nC. They have the same number of cut vertices",
     "key_points_and_rules": "Đỉnh cắt (cut vertex) của một đồ thị vô hướng là một đỉnh mà khi xóa nó đi (cùng với các cạnh kề với nó) sẽ làm tăng số thành phần liên thông của đồ thị. Cần xác định số đỉnh cắt của đồ thị X và đồ thị Y để so sánh.",
     "option_by_option_analysis": {
       "A": "Phân tích đồ thị Y: Đồ thị Y gồm 5 đỉnh (2 đỉnh ở trên, 1 đỉnh ở giữa, 2 đỉnh ở dưới). Đỉnh ở giữa là giao điểm của các cạnh chéo, nối liền hai bên. Khi xóa đỉnh ở giữa này, đồ thị Y bị tách thành các thành phần rời nhau (mất kết nối giữa nửa trái và nửa phải), do đó đồ thị Y có ít nhất 1 đỉnh cắt (hoặc nhiều hơn tùy cấu trúc). Xét kỹ hơn, đồ thị Y có cấu trúc dạng hai tam giác hoặc hình cánh bướm chung một đỉnh ở giữa, đỉnh ở giữa là đỉnh cắt duy nhất hoặc có số đỉnh cắt lớn hơn X.",
@@ -3172,10 +3172,15 @@
     "question_id": "Q37",
     "image_file": "Q37.webp",
     "has_illustration": false,
-    "subject_domain": "",
-    "question_text_extracted": "",
-    "key_points_and_rules": "",
-    "option_by_option_analysis": {},
+    "subject_domain": "Toán rời rạc (Lý thuyết đồ thị)",
+    "question_text_extracted": "Question: 37\n(Choose 1 answer)\nWhich of the following propositions is TRUE:\n(i) If K₁,₂ has a Hamilton path, then K₂ has an Hamilton circuit\n(ii) If W₄ has a Hamilton path, then K₄,₃ has an Euler path\n(iii) If K₄,₅ has an Euler path, then Q₃ has a Hamilton circuit\nA. (i)\nB. (ii)\nC. (iii)\nD. None of the other choices",
+    "key_points_and_rules": "Kiểm tra tính đúng đắn của mệnh đề logic P → Q (chỉ sai khi P đúng và Q sai). Điều kiện tồn tại đường đi/chu trình Euler: Đồ thị liên thông có 0 hoặc 2 đỉnh bậc lẻ (đường đi), 0 đỉnh bậc lẻ (chu trình). Đồ thị Qₙ luôn có chu trình Hamilton với n ≥ 2.",
+    "option_by_option_analysis": {
+      "A": "Xét (i): K₁,₂ có đường đi Hamilton (đúng). K₂ chỉ có 2 đỉnh nên không thể có chu trình Hamilton (sai, cần ít nhất 3 đỉnh). Mệnh đề True → False là Sai.",
+      "B": "Xét (ii): W₄ có đường đi Hamilton (đúng). K₄,₃ có 4 đỉnh bậc 3 (bậc lẻ), vì số đỉnh bậc lẻ > 2 nên không có đường đi Euler (sai). Mệnh đề True → False là Sai.",
+      "C": "Xét (iii): K₄,₅ có 4 đỉnh bậc 5 (bậc lẻ), vì số đỉnh bậc lẻ > 2 nên không có đường đi Euler (sai). Q₃ là khối lập phương, luôn có chu trình Hamilton (đúng). Mệnh đề False → True là Đúng.",
+      "D": "Vì mệnh đề (iii) ở đáp án C là đúng nên phương án này bị loại."
+    },
     "question_type": "single_choice",
     "community_answer": "C",
     "ai_answer": "C",
@@ -3318,7 +3323,7 @@
     "image_file": "Q39.webp",
     "has_illustration": true,
     "subject_domain": "Toán học rời rạc & Cấu trúc dữ liệu",
-    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nKizspy | Question: 39\n(Choose 1 answer)\nApply the Dijkstra algorithm to find the shortest path from A to Z. What is the next vertex chosen after E?\nA. C\nB. D\nC. Z\nD. None of the other choices is correct",
+    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nQuestion: 39\n(Choose 1 answer)\nApply the Dijkstra algorithm to find the shortest path from A to Z. What is the next vertex chosen after E?\nA. C\nB. D\nC. Z\nD. None of the other choices is correct",
     "key_points_and_rules": "Thuật toán Dijkstra tìm đường đi ngắn nhất từ đỉnh nguồn A đến các đỉnh khác trong đồ thị vô hướng có trọng số dương.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Khởi tạo đỉnh nguồn A, khoảng cách d(A) = 0. Các đỉnh kề với A là B (d=2) và C (d=6). Chọn đỉnh B (d=2 nhỏ nhất).\n- Bước 1: Chọn B. Các đỉnh kề với B gồm D (d = 2 + 5 = 7), E (d = 2 + 3 = 5), C (d = min(6, 2+8=10) = 6). Các khoảng cách tạm thời hiện tại từ A: B đã thăm, C(6), D(7), E(5).\n- Bước 2: Chọn E có khoảng cách nhỏ nhất d(E) = 5. Các đỉnh kề với E gồm D (d = 5 + 4 = 9, không nhỏ hơn 7 hiện tại), Z (d = 5 + 3 = 8). Các đỉnh chưa thăm và khoảng cách hiện tại: C(6), D(7), Z(8).\n- Bước 3: Đỉnh tiếp theo được chọn sau E có khoảng cách nhỏ nhất trong các đỉnh chưa thăm là C (d(C) = 6). Do đó đỉnh tiếp theo được chọn sau E là C. Phương án A ĐÚNG.",
@@ -3414,7 +3419,7 @@
     "image_file": "Q40.webp",
     "has_illustration": true,
     "subject_domain": "Toán học rời rạc & Lý thuyết đồ thị",
-    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nKizspy | Question: 40\n(Choose 1 answer)\nHow many internal vertices in this tree?\nA. 4\nB. 7\nC. 10\nD. 13\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nQuestion: 40\n(Choose 1 answer)\nHow many internal vertices in this tree?\nA. 4\nB. 7\nC. 10\nD. 13\nE. None of the other choices is correct",
     "key_points_and_rules": "Đỉnh trong (internal vertex) của một cây là đỉnh có bậc lớn hơn hoặc bằng 2 (hoặc đỉnh không phải là đỉnh lá - leaf vertex, tức là đỉnh có ít nhất một con). Gốc của cây (nếu không phải là lá duy nhất) cũng là đỉnh trong.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Dựa vào hình cây, ta liệt kê toàn bộ các đỉnh:\n- Tổng số đỉnh: a, b, c, d, e, f, g, h, i, k, l, m, n (13 đỉnh).\n- Các đỉnh lá (không có con): d, g, h, f, l, m, i, n, k (tổng cộng 9 đỉnh lá).\n- Các đỉnh trong (có ít nhất một con): a, b, c, e (tổng cộng 4 đỉnh trong).\nCụ thể:\n+ a có con là b, d, c (là đỉnh trong)\n+ b có con là e, h, g (là đỉnh trong)\n+ c có con là f, l, m (là đỉnh trong)\n+ e có con là i, n, k (là đỉnh trong)\nVậy số lượng đỉnh trong là 4. Phương án A ĐÚNG.",
@@ -3486,7 +3491,7 @@
     "image_file": "Q41.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc",
-    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nKizspy | Question: 41\n(Choose 1 answer)\nFind the least number of leaves in a balanced full 4-ary tree of height 3.\nA. 19\nB. 20\nC. 15\nD. 17\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nQuestion: 41\n(Choose 1 answer)\nFind the least number of leaves in a balanced full 4-ary tree of height 3.\nA. 19\nB. 20\nC. 15\nD. 17\nE. None of the other choices is correct",
     "key_points_and_rules": "Cây m-ary đầy đủ (full m-ary tree) là cây trong đó mọi nút trong đều có đúng m con. Cây cân đối (balanced tree) nghĩa là các lá có chiều cao chênh lệch tối đa là 1. Cây full 4-ary có gốc ở độ cao (height) 3 nghĩa là khoảng cách từ gốc đến lá xa nhất là 3. Số lá ít nhất trong một cây full 4-ary cân đối chiều cao h được xây dựng sao cho có số lượng nút trong tối thiểu.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Trong cây full 4-ary có chiều cao 3, cây có cấu trúc sao cho ở tầng sâu nhất (tầng 3) số lá là tối thiểu. Để cây có chiều cao 3 và là cây full 4-ary cân đối có số lá ít nhất, gốc có 4 con ở tầng 1. Trong đó, ít nhất một nút ở tầng 1 phải phát triển đủ 4 con để đạt chiều cao 3. Cụ thể, số lá tối thiểu trong cây full 4-ary cân đối chiều cao h được tính bằng công thức: số lá ít nhất = m^(h-1) + (m-1) = 4^(3-1) + (4-1) = 4^2 + 3 = 16 + 3 = 19. Do đó phương án A [ĐÚNG].",
@@ -3581,7 +3586,7 @@
     "image_file": "Q42.webp",
     "has_illustration": false,
     "subject_domain": "Lý thuyết thông tin & Toán rời rạc",
-    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nKizspy | Question: 42\n(Choose 1 answer)\nWhich are prefix codes?\n(i) a: 11, e: 00, t: 10, s: 01\n(ii) a: 0, e: 1, t: 01, s: 001\nA. None of the other choices is correct\nB. (ii)\nC. (i)\nD. (i) and (ii)",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nQuestion: 42\n(Choose 1 answer)\nWhich are prefix codes?\n(i) a: 11, e: 00, t: 10, s: 01\n(ii) a: 0, e: 1, t: 01, s: 001\nA. None of the other choices is correct\nB. (ii)\nC. (i)\nD. (i) and (ii)",
     "key_points_and_rules": "Mã tiền tố (prefix code) là một mã trong đó không có từ mã (code word) nào là tiền tố của bất kỳ từ mã nào khác trong tập hợp.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương án này sai vì tập (i) thỏa mãn là mã tiền tố. [SAI]",
@@ -3660,7 +3665,7 @@
     "image_file": "Q43.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc & Cấu trúc dữ liệu",
-    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nKizspy | Question: 43\n(Choose 1 answer)\nFind the least number of comparisons needed to sort a list of 6 elements?\nA. 5\nB. 9\nC. 10\nD. 720",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: 43\n(Choose 1 answer)\nFind the least number of comparisons needed to sort a list of 6 elements?\nA. 5\nB. 9\nC. 10\nD. 720",
     "key_points_and_rules": "Yêu cầu tìm số lượng so sánh ít nhất (lower bound) để sắp xếp một danh sách gồm n = 6 phần tử bằng các thuật toán so sánh (comparison-based sorting). Công thức lý thuyết thông tin cho số so sánh tối thiểu trong trường hợp xấu nhất là ⌈log₂(n!)5rceil.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 5 so sánh cho phép phân biệt nhiều nhất 2⁵ = 32 hoán vị. Với n = 6, số hoán vị là 6! = 720. Vì 2⁵ = 32 < 720, nên 5 so sánh là không đủ để sắp xếp 6 phần tử. Do đó phương án này [SAI].",
@@ -3763,7 +3768,7 @@
     "image_file": "Q44.webp",
     "has_illustration": false,
     "subject_domain": "Cấu trúc dữ liệu & Giải thuật",
-    "question_text_extracted": "Kizspy | Question: 44\n(Choose 1 answer)\nGiven the prefix notation of some expression\n+ * 3 + x y ↑ - x y 2\nFind the postfix notation.\n(i) 3 x y + * x y - 2 ↑ +\n(ii) 3 * + x y + x - y ↑ 2\n(iii) x 3 y + * x y - 2 ↑ +",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nGiven the prefix notation of some expression\n\n+ * 3 + x y ↑ - x y 2\n\nFind the postfix notation.\n\n(i) 3 x y + * x y - 2 ↑ +\n(ii) 3 * + x y + x - y ↑ 2\n(iii) x 3 y + * x y - 2 ↑ +\nA. (i)\nB. (ii)\nC. (iii)\nD. None of the other choices is correct",
     "key_points_and_rules": "Chuyển đổi biểu thức tiền tố (Prefix) sang hậu tố (Postfix). Biểu thức tiền tố cho trước: + * 3 + x y ↑ - x y 2. Quy tắc tiền tố: Toán tử đứng trước các toán hạng của nó.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương án (i) đưa ra biểu thức hậu tố: 3 x y + * x y - 2 ↑ +. Khi chuyển đổi từ biểu thức tiền tố + * 3 + x y ↑ - x y 2 sang biểu thức hậu tố, ta thực hiện phân tích cây cú pháp hoặc quy đổi tương đương chuẩn xác và thu được đúng biểu thức (i). Do đó phương án này [ĐÚNG].",
@@ -3842,7 +3847,7 @@
     "image_file": "Q45.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nKizspy | Question: 45\n\n(Choose 1 answer)\n\n\nFind the prefix notation for the expression\n\n(x-y) ↑ 2+x * (y+5)\n\n(i) x - y ↑ 2 + x * y + 5\n(ii) x y - 2 ↑ x y 5 + * +\n(iii) + ↑ - x y 2 * x + y 5\n(iv) + ↑ - x y 2 * x 5 + y\nA. None of the other choices is correct\nB. (i)\nC. (ii)\nD. (iii)\nE. (iv)",
+    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nQuestion: 45\n\n(Choose 1 answer)\n\n\nFind the prefix notation for the expression\n\n(x-y) ↑ 2+x * (y+5)\n\n(i) x - y ↑ 2 + x * y + 5\n(ii) x y - 2 ↑ x y 5 + * +\n(iii) + ↑ - x y 2 * x + y 5\n(iv) + ↑ - x y 2 * x 5 + y\nA. None of the other choices is correct\nB. (i)\nC. (ii)\nD. (iii)\nE. (iv)",
     "key_points_and_rules": "Yêu cầu chuyển đổi biểu thức trung tố (infix notation) sang tiền tố (prefix notation).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI] vì đáp án đúng tồn tại ở mục (iii).",
@@ -3914,7 +3919,7 @@
     "image_file": "Q46.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic (Lý thuyết đồ thị)",
-    "question_text_extracted": "Kizspy | Question: 46\n\n(Choose 1 answer)\n\n(See picture)\n\nWhat is the height of the spanning tree obtained from W_n by the breadth-first search, starting at the central vertex of W_n?",
+    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nWhat is the height of the spanning tree obtained from Wₙ by the breadth-first search, starting at the central vertex of Wₙ?\nA. 1\nB. n\nC. n-1\nD. None of the other choices is correct",
     "key_points_and_rules": "Đồ thị bánh xe $W_n$ có một đỉnh trung tâm kề với tất cả $n$ đỉnh trên vành ngoài. Khi chạy thuật toán tìm kiếm theo chiều rộng (BFS) bắt đầu từ đỉnh trung tâm, đỉnh trung tâm có khoảng cách 0, và tất cả các đỉnh còn lại đều có khoảng cách bằng 1 tới đỉnh trung tâm.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì khoảng cách lớn nhất từ gốc (đỉnh trung tâm) đến bất kỳ đỉnh nào khác trong cây bao trùm BFS bằng 1, do đó chiều cao của cây bao trùm là 1.",
@@ -3985,7 +3990,7 @@
     "image_file": "Q47.webp",
     "has_illustration": true,
     "subject_domain": "Toán rời rạc & Đồ thị",
-    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nKizspy | Question: 47\n\n(Choose 1 answer)\n\nWhat is the total weight of a minimal spanning tree of the graph?\nA. 14\nB. 13\nC. 15\nD. 12\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nQuestion: 47\n\n(Choose 1 answer)\n\nWhat is the total weight of a minimal spanning tree of the graph?\nA. 14\nB. 13\nC. 15\nD. 12\nE. None of the other choices is correct",
     "key_points_and_rules": "Tìm trọng số của cây khung nhỏ nhất (Minimal Spanning Tree - MST) của đồ thị vô hướng có trọng số. Áp dụng thuật toán Kruskal hoặc Prim.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI].",
@@ -4057,7 +4062,7 @@
     "image_file": "Q48.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc & Đại số",
-    "question_text_extracted": "Kizspy | Question: 48\n\n(Choose 1 answer)\n\nConsider the functions from Z x Z -> Z given by\nf(m, n) = m + 2n\ng(m, n) = 2m + 2n + 1\nh(m, n) = m - n\n\nWhich functions are onto?",
+    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nConsider the functions from ℤ × ℤ → ℤ given by\nf(m, n) = m + 2n\ng(m, n) = 2m + 2n + 1\nh(m, n) = m - n\nWhich functions are onto?\nA. f and h\nB. Only g\nC. Only f\nD. g and h\nE. None of the other choices is correct",
     "key_points_and_rules": "Kiểm tra tính toàn ánh (onto / surjection) của các hàm số từ Z x Z vào Z. Một hàm số f: Z x Z -> Z là toàn ánh nếu với mọi z thuộc Z, tồn tại (m, n) thuộc Z x Z sao cho f(m, n) = z.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG]. Xét hàm f(m,n) = m+2n: với mọi số nguyên z, ta chọn m = z và n = 0 thì f(z, 0) = z + 2(0) = z, suy ra f toàn ánh. Xét hàm h(m,n) = m-n: với mọi số nguyên z, ta chọn m = z và n = 0 thì h(z, 0) = z - 0 = z, suy ra h toàn ánh. Xét hàm g(m,n) = 2m+2n+1 = 2(m+n)+1, tập giá trị của g chỉ chứa các số nguyên lẻ, do đó không thể nhận các giá trị chẵn thuộc Z, suy ra g không toàn ánh. Vậy f và h là toàn ánh.",
@@ -4208,7 +4213,7 @@
     "image_file": "Q50.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nSuppose that f is defined recursively by f(1) = 2, f(2) = 3 and f(n) = 3f(n-1) + f(n-2) for n ≥ 3.\nFind f(6) .",
+    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nSuppose that f is defined recursively by f(1) = 2, f(2) = 3 and f(n) = 3f(n - 1) + f(n - 2) for n ≥ 3.\n\nFind f(6).\nA. 119\nB. 327\nC. 99\nD. 393\nE. None of the other choices is correct",
     "key_points_and_rules": "Cho dãy số xác định bằng truy hồi f(1) = 2, f(2) = 3 và f(n) = 3f(n-1) + f(n-2) với n ≥ 3. Cần tính giá trị của f(6).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 119 không phải kết quả tính toán chính xác. Do đó phương án A là [SAI].",

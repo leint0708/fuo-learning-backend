@@ -1534,7 +1534,7 @@
     "image_file": "Q13.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic (Toán rời rạc)",
-    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nKizspy | Question: 13\n\n(Choose 1 answer)\n\n\nThe function f: N → N is given by f(n) = ⌊√n⌋.\n\nWhich statement is TRUE ?\nA. f is one-to-one but not onto\nB. f is onto but not one-to-one\nC. f is bijection\nD. f is neither one-to-one nor onto",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nQuestion: 13\n\n(Choose 1 answer)\n\n\nThe function f: N → N is given by f(n) = ⌊√n⌋.\n\nWhich statement is TRUE ?\nA. f is one-to-one but not onto\nB. f is onto but not one-to-one\nC. f is bijection\nD. f is neither one-to-one nor onto",
     "key_points_and_rules": "Xét tính đơn ánh (one-to-one / injective) và toàn ánh (onto / surjective) của hàm số f: N → N với f(n) = ⌊√n⌋, trong đó N là tập hợp các số tự nhiên (bao gồm 0).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Hàm số không phải là đơn ánh. Ví dụ, lấy n = 2 và n = 3, ta có f(2) = ⌊√2⌋ = ⌊1.414⌋ = 1 và f(3) = ⌊√3⌋ = ⌊1.732⌋ = 1, tức là f(2) = f(3) nhưng 2 ≠ 3. Do đó, phương án A [SAI].",
@@ -1653,7 +1653,7 @@
     "image_file": "Q14.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic (Toán rời rạc)",
-    "question_text_extracted": "Kizspy | Question: 14\n\n(Choose 1 answer)\n\n(See picture)\n\nLet a₁, a₂, ... be the sequence\n\n0, 1, 1, 0, 0, 1, 1, 1, ...\n\nFind a₁₀₀ and a₁₁₀.",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nLet a₁, a₂, ... be the sequence\n\n0, 1, 1, 0, 0, 0, 1, 1, 1, 1, ...\n\nFind a₁₀₀ and a₁₁₀.\nA. 1 and 1\nB. 1 and 0\nC. 0 and 1\nD. 0 and 0",
     "key_points_and_rules": "Xác định quy luật của dãy số nhị phân hoặc chuỗi lặp lại các khối số để tìm giá trị của phần tử thứ 100 (a₁₀₀) và thứ 110 (a₁₁₀).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Giả sử a₁₀₀ = 1 và a₁₁₀ = 1. Kiểm tra theo quy luật chuỗi, phương án này sai.",
@@ -1763,9 +1763,9 @@
     "question_number": 15,
     "question_id": "Q15",
     "image_file": "Q15.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Lập trình & Thuật toán",
-    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nKizspy | Question: 15\n\n(Choose 1 answer)\n\nGiven the algorithm to find the maximum element of a list\n\nIf the input is the sequence 1, 4, 5, 2, 7, 9, 3, then all the values of the variable Max are________________________\nA. 4, 5, 7, 9\nB. 1, 4, 5, 7, 9\nC. 1, 5, 7, 9\nD. 1, 4, 5, 2, 7, 9",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nQuestion: 15\n\n(Choose 1 answer)\n\nGiven the algorithm to find the maximum element of a list\n\nProcedure Max (a₁, a₂, ..., aₙ: integers)\nMax := a₁\nfor i := 2 to n do\n    if Max < aᵢ then Max := aᵢ\n\nIf the input is the sequence 1, 4, 5, 2, 7, 9, 3, then all the values of the variable Max are________________________\nA. 4, 5, 7, 9\nB. 1, 4, 5, 7, 9\nC. 1, 5, 7, 9\nD. 1, 4, 5, 2, 7, 9",
     "key_points_and_rules": "Theo dõi (trace) các giá trị mà biến Max nhận được trong quá trình thực thi thuật toán tìm phần tử lớn nhất.",
     "option_by_option_analysis": {
       "A": "Bắt đầu bỏ qua bước gán ban đầu Max = a1, chỉ liệt kê các giá trị cập nhật sau khi so sánh nên [SAI].",
@@ -1890,9 +1890,9 @@
     "question_number": 16,
     "question_id": "Q16",
     "image_file": "Q16.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Lập trình & Cấu trúc dữ liệu",
-    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nKizspy | Question: 16\n\n(Choose 1 answer)\n\nGiven the Bubble sort algorithm\n\nIf input = 3, 2, 6, 4, 5, 1, find the order of the elements in the list after the third pass (i = 3).\nA. 2, 3, 1, 4, 5, 6\nB. 2, 1, 3, 4, 5, 6\nC. 3, 2, 1, 4, 5, 6\nD. 1, 2, 3, 4, 5, 6",
+    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nQuestion: 16\n\n(Choose 1 answer)\n\nGiven the Bubble sort algorithm\n\nprocedure Bubblesort(a₁, a₂, ..., aₙ: integer)\n\nfor i = 1 to (n-1) do\n    for j = 1 to (n-i) do\n        if aⱼ > aⱼ₊₁ then\n            swap(aⱼ, aⱼ₊₁)\n\nIf input = 3, 2, 6, 4, 5, 1, find the order of the elements in the list after the third pass (i = 3).\nA. 2, 3, 1, 4, 5, 6\nB. 2, 1, 3, 4, 5, 6\nC. 3, 2, 1, 4, 5, 6\nD. 1, 2, 3, 4, 5, 6",
     "key_points_and_rules": "Mô phỏng thuật toán Bubble Sort (sắp xếp nổi bọt) qua từng bước lặp (pass / i).",
     "option_by_option_analysis": {
       "A": "Kiểm tra kết quả sau pass 3 cho dãy [3, 2, 6, 4, 5, 1]:\n- Ban đầu: 3, 2, 6, 4, 5, 1\n- Pass 1 (i=1): So sánh các cặp liền kề từ đầu đến n-1:\n  + (3,2) -> đổi thành 2, 3, 6, 4, 5, 1\n  + (3,6) -> giữ nguyên\n  + (6,4) -> đổi thành 2, 3, 4, 6, 5, 1\n  + (6,5) -> đổi thành 2, 3, 4, 5, 6, 1\n  + (6,1) -> đổi thành 2, 3, 4, 5, 1, 6 (6 nổi lên cuối)\n- Pass 2 (i=2): Dừng ở n-2:\n  + (2,3), (3,4), (4,5), (5,1) -> đổi thành 2, 3, 4, 1, 5, 6 (5 nổi lên vị trí áp chót)\n- Pass 3 (i=3): Dừng ở n-3:\n  + (2,3), (3,4), (4,1) -> đổi 4 và 1 thành 1, 4. Dãy thành: 2, 3, 1, 4, 5, 6.\nKết quả hoàn toàn khớp với phương án A -> [ĐÚNG].",
@@ -2513,7 +2513,7 @@
     "image_file": "Q21.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nKizspy | Question: 21\n(Choose 1 answer)\nFind the exponent of 3 in the prime factorization of 10!.\nA. 4\nB. 3\nC. 5\nD. 2\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nQuestion: 21\n(Choose 1 answer)\nFind the exponent of 3 in the prime factorization of 10!.\nA. 4\nB. 3\nC. 5\nD. 2\nE. None of the other choices is correct",
     "key_points_and_rules": "Tìm số mũ của số nguyên tố 3 trong phân tích tiêu chuẩn ra thừa số nguyên tố của 10!. Áp dụng định lý Legendre: E_p(n!) = sum_{k=1}^infty floor(n / p^k).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Áp dụng công thức Legendre cho số 10! với số nguyên tố p = 3:\n- Số lượng bội số của 3 trong các số từ 1 đến 10 là: floor(10 / 3) = 3 (các số là 3, 6, 9).\n- Số lượng bội số của 3^2 = 9 trong các số từ 1 đến 10 là: floor(10 / 9) = 1 (số 9).\nTổng số mũ của 3 trong 10! là: 3 + 1 = 4. Do đó phương án A là [ĐÚNG].",
@@ -2624,7 +2624,7 @@
     "image_file": "Q22.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Kizspy | Question: 22\n(Choose 1 answer)\nSuppose a = 2^3 3^3 5^2 7^1 and b = 2^2 3^3 5^4 7^1. Find \\frac{lcm(a,b)}{gcd(a,b)}.\n(i) 2^1 3^1 5^1 7^1\n(ii) 2^1 5^2\n(iii) 2^1 3^1 5^2\n(iv) 2^2 3^1 5^2",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nSuppose a = 2³ 3³ 5² 7¹ and b = 2² 3³ 5⁴ 7¹. Find lcm(a,b)/gcd(a,b).\nA. 2¹ 3¹ 5¹ 7¹\nB. 2¹ 5²\nC. 2¹ 3¹ 5²\nD. 2² 3¹ 5²",
     "key_points_and_rules": "Tính bội chung nhỏ nhất lcm(a,b) và ước chung lớn nhất gcd(a,b) thông qua các số mũ tối đa và tối thiểu của các thừa số nguyên tố. Chú ý tính chất: lcm(a,b) * gcd(a,b) = a * b, do đó lcm(a,b) / gcd(a,b) = (a * b) / (gcd(a,b))^2.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Tương ứng với mệnh đề (i), giá trị 2^1 3^1 5^1 7^1 là [SAI] vì kết quả tính toán thực tế không có thừa số 3 và 7.",
@@ -2751,7 +2751,7 @@
     "image_file": "Q23.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nKizspy | Question: 23\n\n(Choose 1 answer)\n\n\nWhen using the modular exponentiation algorithm to compute 7^9 mod 19, the remainders computed by successively squaring are _______\nA. 7,7,11,11\nB. 11,11,7,7\nC. 11,7,11,7\nD. 7,11,7,11",
+    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nQuestion: 23\n\n(Choose 1 answer)\n\n\nWhen using the modular exponentiation algorithm to compute 7^9 mod 19, the remainders computed by successively squaring are _______\nA. 7,7,11,11\nB. 11,11,7,7\nC. 11,7,11,7\nD. 7,11,7,11",
     "key_points_and_rules": "Thuật toán lũy thừa modulo (Modular Exponentiation) bằng phương pháp bình phương và nhân liên tiếp (successive squaring). Xét số mũ 9 trong hệ nhị phân: 9 = (1001)_2 = 2^3 + 2^0.",
     "option_by_option_analysis": {
       "A": "Phân tích phương án A: 7, 7, 11, 11 [SAI].",
@@ -2886,7 +2886,7 @@
     "image_file": "Q24.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nKizspy | Question: 24\n\n(Choose 1 answer)\n\n\nFind the binary expansion of 243\n\n(i) (11110010)_2\n(ii) (11100010)_2\n(iii) (11010011)_2\n(iv) (11110011)_2\nA. (iii)\nB. (i)\nC. (ii)\nD. (iv)\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nQuestion: 24\n\n(Choose 1 answer)\n\n\nFind the binary expansion of 243\n\n(i) (11110010)_2\n(ii) (11100010)_2\n(iii) (11010011)_2\n(iv) (11110011)_2\nA. (iii)\nB. (i)\nC. (ii)\nD. (iv)\nE. None of the other choices is correct",
     "key_points_and_rules": "Chuyển đổi một số thập phân sang hệ nhị phân bằng cách chia liên tiếp cho 2 và lấy phần dư theo chiều ngược lại.",
     "option_by_option_analysis": {
       "A": "Phân tích phương án A (iii): (11010011)_2 tương đương 211 [SAI].",
@@ -3006,7 +3006,7 @@
     "image_file": "Q25.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nKizspy | Question: 25\n\n(Choose 1 answer)\n\n\nFind the correct order of steps of a proof by induction of the problem\n\n\"Prove that for all positive integers n > 6 then 3ⁿ < n!\"\n\n1. Assume the inequality is true for some k > 6. We need to show that 3ᵏ⁺¹ < (k + 1)!.\n\n2. For n = 7 then 3⁷ = 72187 < 7! = 5040.\n\n3. Then 3n < n! for all positive integers n > 6.\n\n4. Indeed, 3ᵏ⁺¹ = 3 · 3ᵏ < 3(k!) by the induction hypothesis. Since 3(k!) < (k + 1)! for k > 6, we have 3ᵏ⁺¹ < (k + 1)!.\nA. 1, 2, 4, 3\nB. None of the other choices is correct\nC. 1, 2, 3, 4\nD. 2, 1, 3, 4\nE. 2, 1, 4, 3",
+    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nQuestion: 25\n\n(Choose 1 answer)\n\n\nFind the correct order of steps of a proof by induction of the problem\n\n\"Prove that for all positive integers n > 6 then 3ⁿ < n!\"\n\n1. Assume the inequality is true for some k > 6. We need to show that 3ᵏ⁺¹ < (k + 1)!.\n\n2. For n = 7 then 3⁷ = 72187 < 7! = 5040.\n\n3. Then 3n < n! for all positive integers n > 6.\n\n4. Indeed, 3ᵏ⁺¹ = 3 · 3ᵏ < 3(k!) by the induction hypothesis. Since 3(k!) < (k + 1)! for k > 6, we have 3ᵏ⁺¹ < (k + 1)!.\nA. 1, 2, 4, 3\nB. None of the other choices is correct\nC. 1, 2, 3, 4\nD. 2, 1, 3, 4\nE. 2, 1, 4, 3",
     "key_points_and_rules": "Phương pháp chứng minh quy toán toán học gồm các bước:\n1. Cơ sở quy nạp: Kiểm tra mệnh đề đúng với giá trị cơ sở nhỏ nhất ($n = 7$). Ở bước này, biểu thức ở ý 2 cho thấy $3^7 = 2187 < 5040 = 7!$ (lưu ý: đề bài viết $3^7 = 72187$ là lỗi đánh máy từ nguồn đề, nhưng xét về logic trình tự đây vẫn là bước cơ sở).\n2. Giả thiết quy nạp: Giả sử mệnh đề đúng với $n = k > 6$, tức là giả sử $3^k < k!$.\n3. Bước quy nạp: Chứng minh mệnh đề đúng với $n = k + 1$, tức là chứng minh $3^{k+1} < (k+1)!$.\n4. Kết luận: Suy ra mệnh đề đúng với mọi số nguyên dương $n > 6$.\nTrật tự chuẩn của các bước: Bước 2 (Cơ sở quy nạp) -> Bước 1 (Giả thiết quy nạp) -> Bước 4 (Chứng minh bước quy nạp) -> Bước 3 (Kết luận).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Thứ tự 1, 2, 4, 3 bắt đầu bằng giả thiết quy nạp trước cơ sở quy nạp là sai trình tự chứng minh.",
@@ -3100,9 +3100,9 @@
     "question_number": 26,
     "question_id": "Q26",
     "image_file": "Q26.webp",
-    "has_illustration": true,
+    "has_illustration": false,
     "subject_domain": "Toán học & Logic (Discrete Mathematics)",
-    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nKizspy | Question: 26\n\n(Choose 1 answer)\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 26\n(Choose 1 answer)\nQuestion: 26\n\n(Choose 1 answer)\n\nFind a recursive definition for the set of all positive integers NOT divisible by 3.\n\n(i) 1 ∈ S, if a ∈ S then a+3 ∈ S and a-3 ∈ S\n\n(ii) 1 ∈ S, if a ∈ S then a+3 ∈ S\n\n(iii) 1, 2 ∈ S, if a ∈ S then a+3 ∈ S and a-3 ∈ S\n\n(iv) 1, 2 ∈ S, if a ∈ S then a+3 ∈ S\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)\nE. None of the other choices is correct",
     "key_points_and_rules": "Tập hợp các số nguyên dương không chia hết cho 3 gồm các số có dạng 3k + 1 hoặc 3k + 2 với k là số nguyên không âm, cụ thể là: {1, 2, 4, 5, 7, 8, 10, 11, ...}.",
     "option_by_option_analysis": {
       "A": "Xét (i): Chỉ có 1 ∈ S, và a+3 ∈ S, a-3 ∈ S. Nếu bắt đầu từ 1 và cộng/trừ 3, ta chỉ tạo ra được các số có dạng 3k + 1 (ví dụ: 1, 4, 7,... và các số âm). Các số có dạng 3k + 2 (như 2, 5, 8,...) không thể xuất hiện trong tập này. Do đó (i) SAI.",
@@ -3435,7 +3435,7 @@
     "image_file": "Q29.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc",
-    "question_text_extracted": "Question: 29\n(Choose 1 answer)\nKizspy | Question: 29\n(Choose 1 answer)\nHow many positive integers not exceeding 2016 and divisible by neither 7 nor 9?\nA. 480\nB. 512\nC. None of the other choices is correct\nD. 1504\nE. 1536",
+    "question_text_extracted": "Question: 29\n(Choose 1 answer)\nQuestion: 29\n(Choose 1 answer)\nHow many positive integers not exceeding 2016 and divisible by neither 7 nor 9?\nA. 480\nB. 512\nC. None of the other choices is correct\nD. 1504\nE. 1536",
     "key_points_and_rules": "Áp dụng Nguyên lý bù trừ (Inclusion-Exclusion Principle) để đếm số lượng các số nguyên dương không vượt quá N chia hết cho các số nguyên tố hoặc hợp số cho trước. Tìm số lượng số nguyên dương ≤ 2016 không chia hết cho 7 và cũng không chia hết cho 9.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Tính số lượng các số chia hết cho 7 hoặc 9 để lấy tổng trừ đi, không cho kết quả 480. Do đó phương án A [SAI].",
@@ -3555,7 +3555,7 @@
     "image_file": "Q30.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc",
-    "question_text_extracted": "Question: 30\n(Choose 1 answer)\nKizspy | Question: 30\n(Choose 1 answer)\nCounting bit strings of length 6 with no two consecutive 0s.\nA. 21\nB. 13\nC. 8\nD. 35",
+    "question_text_extracted": "Question: 30\n(Choose 1 answer)\nQuestion: 30\n(Choose 1 answer)\nCounting bit strings of length 6 with no two consecutive 0s.\nA. 21\nB. 13\nC. 8\nD. 35",
     "key_points_and_rules": "Đếm số chuỗi bit độ dài n không chứa hai số 0 liên tiếp. Đây là bài toán kinh điển liên quan đến dãy số Fibonacci. Số chuỗi bit độ dài n thỏa mãn điều kiện là F_{n+2}.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đối với chuỗi bit độ dài n = 6, số chuỗi thỏa mãn không có hai số 0 liên tiếp bằng số Fibonacci thứ F_{6+2} = F_8 = 21. Do đó phương án A [ĐÚNG].",
@@ -3905,7 +3905,7 @@
     "image_file": "Q33.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic (Graph Theory)",
-    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nKizspy | Question: 33\n(Choose 1 answer)\nFind all bipartite graphs in the list\nK₄, W₄, C₄, K_{3,4}\n(i) K₄, W₄\n(ii) W₄, C₄\n(iii) C₄, K_{3,4}\nA. (i)\nB. (ii)\nC. (iii)\nD. None of the other choices is correct",
+    "question_text_extracted": "Question: 33\n(Choose 1 answer)\nQuestion: 33\n(Choose 1 answer)\nFind all bipartite graphs in the list\nK₄, W₄, C₄, K₃,₄\n(i) K₄, W₄\n(ii) W₄, C₄\n(iii) C₄, K₃,₄\nA. (i)\nB. (ii)\nC. (iii)\nD. None of the other choices is correct",
     "key_points_and_rules": "Xác định đồ thị lưỡng phân (bipartite graph): Một đồ thị là lưỡng phân nếu và chỉ nếu nó không chứa chu trình có độ dài lẻ (hoặc có thể tô màu các đỉnh bằng 2 màu mà không có hai đỉnh kề nhau nào cùng màu).",
     "option_by_option_analysis": {
       "A": "Phân tích phương án A: (i) K₄, W₄. K₄ là đồ thị đầy đủ 4 đỉnh, chứa chu trình tam giác (độ dài 3 - lẻ), do đó không phải đồ thị lưỡng phân. W₄ là đồ thị bánh xe với một đỉnh tâm và chu trình C₄ ở vành ngoài, có chứa các tam giác (chu trình độ dài 3), nên W₄ không phải đồ thị lưỡng phân. Vậy (i) SAI.",
@@ -4032,7 +4032,7 @@
     "image_file": "Q34.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic (Graph Theory)",
-    "question_text_extracted": "Kizspy | Question: 34\n(Choose 1 answer)\n(See picture)\nHow many 0s are there in the adjacency matrix of the graph K_{m,n} ?\n(i) mn\n(ii) 2mn\n(iii) m² + n²\n(iv) m² + n² + mn",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nHow many 0s are there in the adjacency matrix of the graph K_{m,n}?\n\n(i) mn\n(ii) 2mn\n(iii) m² + n²\n(iv) m² + n² + mn\nA. (i)\nB. (ii)\nC. (iii)\nD. (iv)",
     "key_points_and_rules": "Đồ thị song phân đầy đủ K_{m,n} có tổng số đỉnh là m + n. Ma trận kề (adjacency matrix) của K_{m,n} là ma trận vuông kích thước (m + n) × (m + n).",
     "option_by_option_analysis": {
       "A": "Phân tích phương án A: (i) mn. Đây là số lượng số 1 trong ma trận kề (hoặc số cạnh của đồ thị K_{m,n}), không phải số lượng số 0. Vậy (i) SAI.",
@@ -4151,7 +4151,7 @@
     "image_file": "Q35.webp",
     "has_illustration": true,
     "subject_domain": "Toán rời rạc",
-    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nKizspy | Question: 35\n(Choose 1 answer)\n\nGiven a pseudo graph G with incident matrix\n\n[ 0 1 0 1 0 ]\n[ 1 0 0 0 1 ]\n[ 0 1 1 0 1 ]\n\nHow many loops does G have?\nA. 5\nB. 3\nC. 0\nD. 1\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nQuestion: 35\n(Choose 1 answer)\n\nGiven a pseudo graph G with incident matrix\n\nHow many loops does G have?\nA. 5\nB. 3\nC. 0\nD. 1\nE. None of the other choices is correct",
     "key_points_and_rules": "Ma trận kề hoặc ma trận liên thuộc (incidence matrix) của một giả đồ thị (pseudo graph). Cần nhớ định nghĩa: Trong ma trận liên thuộc giữa đỉnh và cạnh của một pseudo graph, một khuyên (loop) là một cạnh nối từ một đỉnh về chính nó, do đó tương ứng với một cột mà đỉnh đó có giá trị 2 (hoặc số lượng số 1 tại cột đó là 2 đối với cùng một hàng, hoặc xét quy ước ma trận liên thuộc trong lý thuyết đồ thị: mỗi cột biểu diễn một cạnh, khuyên là cạnh chỉ kết nối đến 1 đỉnh duy nhất nên ở cột đó hàng ứng với đỉnh đó có giá trị 2, hoặc nếu biểu diễn ma trận bằng 0/1 thì khuyên được thể hiện qua các dấu hiệu đặc biệt). Tuy nhiên, xét chuẩn ma trận liên thuộc trong đồ thị: nếu ma trận có giá trị 1 và 2, hoặc nếu đây là ma trận biểu diễn đặc biệt. Hãy kiểm tra các cột của ma trận đã cho: ma trận có kích thước 3 hàng (đỉnh) và 5 cột (cạnh).\nCột 1: [0, 1, 0]^T -> nối đỉnh 2\nCột 2: [1, 0, 1]^T -> nối đỉnh 1 và 3\nCột 3: [0, 0, 1]^T -> nối đỉnh 3\nCột 4: [1, 0, 0]^T -> nối đỉnh 1\nCột 5: [0, 1, 1]^T -> nối đỉnh 2 và 3\nKhông có cột nào chỉ có đúng 1 giá trị khác 0 mà là giá trị 2, hoặc không có cột nào có tổng bằng 2 ở cùng một hàng (hoặc tổng số đầu mút là 2 tại một hàng cho một cạnh). Thực tế, một khuyên tại đỉnh v sẽ có cột trong ma trận liên thuộc với giá trị 2 tại hàng tương ứng với v (hoặc tổng số đầu mút của cạnh đó bằng 2 tại đỉnh v). Ở đây tất cả các cột đều có các giá trị là 0 hoặc 1, không có cột nào có giá trị 2. Do đó số lượng khuyên (loops) bằng 0.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 5 là tổng số cạnh của đồ thị (số cột của ma trận liên thuộc), không phải số khuyên -> [SAI].",
@@ -4271,7 +4271,7 @@
     "image_file": "Q36.webp",
     "has_illustration": false,
     "subject_domain": "Toán rời rạc (Discrete Mathematics)",
-    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nLet u, v be two vertices on different sides of the bipartite graph K_{2,2}.\nHow many paths of length 3 from u to v?\nA. 4\nB. 2\nC. 0\nD. 8\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nLet u, v be two vertices on different sides of the bipartite graph K₂,₂.\nHow many paths of length 3 from u to v?\nA. 4\nB. 2\nC. 0\nD. 8\nE. None of the other choices is correct",
     "key_points_and_rules": "Đồ thị hai phía đầy đủ K_{2,2} gồm hai tập đỉnh V_1 và V_2, mỗi tập có 2 đỉnh. Đỉnh u thuộc tập này và v thuộc tập kia (khác phía). Yêu cầu tìm số đường đi (paths) có độ dài 3 từ u đến v.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đồ thị K_{2,2} là đồ thị hai phía đầy đủ (mỗi đỉnh ở tập V_1 nối với cả 2 đỉnh ở tập V_2). Ký hiệu V_1 = {u, x} và V_2 = {v, y}. Xét u thuộc V_1 và v thuộc V_2. Một đường đi độ dài 3 từ u đến v có dạng: u -> w1 -> w2 -> v. Vì là đồ thị hai phía, các đỉnh phải đan xen giữa V_1 và V_2. Cụ thể: w1 phải thuộc V_2, w2 phải thuộc V_1, và v thuộc V_2. Các lựa chọn cho đường đi: \n- w1 có thể là v hoặc y (2 cách chọn).\n- w2 có thể là u hoặc x (2 cách chọn).\n- Sau đó đi từ w2 về v (1 cách vì w2 thuộc V_1 và v thuộc V_2 luôn có cạnh nối). \nTổng số đường đi có độ dài 3 là: 2 * 2 * 1 = 4. Do đó phương án A là [ĐÚNG].",
@@ -4408,7 +4408,7 @@
     "image_file": "Q37.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic (Toán rời rạc)",
-    "question_text_extracted": "Question: 37\n(Choose 1 answer)\nKizspy | Question: 37\n\n(Choose 1 answer)\n\nHow many connected components in the graph?\nA. 3\nB. 0\nC. 1\nD. 2\nE. 13\nF. None of the other choices is correct",
+    "question_text_extracted": "Question: 37\n(Choose 1 answer)\nQuestion: 37\n\n(Choose 1 answer)\n\nHow many connected components in the graph?\nA. 3\nB. 0\nC. 1\nD. 2\nE. 13\nF. None of the other choices is correct",
     "key_points_and_rules": "Xác định số thành phần liên thông (connected components) của đồ thị. Một đồ thị có k thành phần liên thông nếu nó được chia thành k tập hợp đỉnh rời nhau sao cho có đường đi giữa bất kỳ cặp đỉnh nào trong cùng một tập hợp, và không có cạnh nối giữa các tập hợp khác nhau.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI]. Đồ thị không có 3 thành phần liên thông.",
@@ -4545,7 +4545,7 @@
     "image_file": "Q38.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic (Toán rời rạc)",
-    "question_text_extracted": "Question: 38\n(Choose 1 answer)\nKizspy | Question: 38\n\n(Choose 1 answer)\n\nFind all values of m and n such that the complete bi-partite graph Km,n have Hamilton circuits.\nA. None of the other choices is correct\nB. m=n and m ≥ 2\nC. m=n and m ≥ 3\nD. m>n and n ≥ 2\nE. m>n and n ≥ 3",
+    "question_text_extracted": "Question: 38\n(Choose 1 answer)\nQuestion: 38\n\n(Choose 1 answer)\n\nFind all values of m and n such that the complete bi-partite graph Km,n have Hamilton circuits.\nA. None of the other choices is correct\nB. m=n and m ≥ 2\nC. m=n and m ≥ 3\nD. m>n and n ≥ 2\nE. m>n and n ≥ 3",
     "key_points_and_rules": "Đồ thị hai phía đầy đủ $K_{m,n}$ có chứa chu trình Hamilton (Hamilton circuit) khi và chỉ khi $m = n$ và $m \\ge 2$ (hoặc $n \\ge 2$). Lý do: Chu trình Hamilton phải đi qua tất cả các đỉnh và quay về đỉnh xuất phát, đòi hỏi số lượng đỉnh ở hai tập phân hoạch phải bằng nhau ($m = n$). Hơn nữa, để có chu trình độ dài ít nhất là 4, ta cần $m \\ge 2$.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI] vì phương án B đã chính xác.",
@@ -4904,7 +4904,7 @@
     "image_file": "Q41.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc",
-    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nKizspy | Question: 41\n(Choose 1 answer)\nHow many internal vertices in a full 3-ary tree with 101 leaves?\nA. 151\nB. 104\nC. 50\nD. None of the other choices is correct\nE. 51",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nQuestion: 41\n(Choose 1 answer)\nHow many internal vertices in a full 3-ary tree with 101 leaves?\nA. 151\nB. 104\nC. 50\nD. None of the other choices is correct\nE. 51",
     "key_points_and_rules": "Đề bài yêu cầu tìm số đỉnh trong (internal vertices) của một cây 3-ary đầy đủ (full 3-ary tree) có 101 lá (leaves). Áp dụng công thức của cây m-ary đầy đủ: số lá l = (m - 1) * i + 1, với m = 3 và l = 101, i là số đỉnh trong.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 151. [SAI] Không thỏa mãn công thức.",
@@ -5016,7 +5016,7 @@
     "image_file": "Q42.webp",
     "has_illustration": true,
     "subject_domain": "Toán học rời rạc",
-    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nKizspy | Question: 42\n(Choose 1 answer)\nHow many ancestors of the vertex d are there?\nA. 1\nB. 0\nC. 2\nD. 3",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nQuestion: 42\n(Choose 1 answer)\nHow many ancestors of the vertex d are there?\nA. 1\nB. 0\nC. 2\nD. 3",
     "key_points_and_rules": "Đề bài yêu cầu tìm số lượng tổ tiên (ancestors) của đỉnh d trong cây được cho trên hình vẽ. Tổ tiên của một đỉnh là các đỉnh nằm trên đường đi từ gốc của cây đến đỉnh đó (không bao gồm chính đỉnh đó, hoặc tùy định nghĩa cấu trúc cây nhưng thông thường gốc và các đỉnh trung gian phía trên).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 1. [ĐÚNG] Quan sát hình vẽ, đỉnh d là con trực tiếp của đỉnh gốc a. Do đó tổ tiên của d chỉ có đỉnh a, tổng cộng là 1 tổ tiên.",
@@ -5119,7 +5119,7 @@
     "image_file": "Q43.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nKizspy | Question: 43\n(Choose 1 answer)\nTo encode a message consisting of only the letters {a, b, i, n, s, t}, we want to use the following prefix coding scheme\na: 10, b: 01, i: 001, n: 110, s: 1111, t: (to be determined)\nWhich of the following bit string could be used to encode the letter t?\nA. 0001\nB. 111\nC. 100\nD. None of the other choices is correct\nE. 1",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: 43\n(Choose 1 answer)\nTo encode a message consisting of only the letters {a, b, i, n, s, t}, we want to use the following prefix coding scheme\na: 10, b: 01, i: 001, n: 110, s: 1111, t: (to be determined)\nWhich of the following bit string could be used to encode the letter t?\nA. 0001\nB. 111\nC. 100\nD. None of the other choices is correct\nE. 1",
     "key_points_and_rules": "Mã tiền tố (prefix coding) đòi hỏi không có từ mã nào là tiền tố của từ mã khác.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 0001 có i (001) là tiền tố (0001 bắt đầu bằng 000... không trùng i nhưng kiểm tra các từ mã hiện có: a: 10, b: 01, i: 001, n: 110, s: 1111. Xét 0001: các tiền tố của nó là 0, 00, 000. Không có từ mã nào là 0, 00, 000. Và 0001 không là tiền tố của bất kỳ từ mã nào khác). Kiểm tra lại kỹ hơn: Tuy nhiên, xét các đáp án khác, ta có B: 111. Tiền tố của 111 là 1, 11. Nhưng n là 110, s là 1111, do đó 111 là tiền tố của s (1111) -> SAI. C: 100 có a là 10 (tiền tố của 100) -> SAI. E: 1 là tiền tố của 10, 110, 1111 -> SAI. Vậy A (0001) thỏa mãn điều kiện mã tiền tố.",
@@ -5231,7 +5231,7 @@
     "image_file": "Q44.webp",
     "has_illustration": false,
     "subject_domain": "Cấu trúc dữ liệu & Giải thuật",
-    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nKizspy | Question: 44\n(Choose 1 answer)\nConstruct a binary search tree for the sentence\n\"Do not count your chickens before they are hatched\"\nthen find how many comparisons are needed to search the word \"hatched\".\nA. 4\nB. None of the other choices is correct\nC. 3\nD. 5\nE. 2",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nQuestion: 44\n(Choose 1 answer)\nConstruct a binary search tree for the sentence\n\"Do not count your chickens before they are hatched\"\nthen find how many comparisons are needed to search the word \"hatched\".\nA. 4\nB. None of the other choices is correct\nC. 3\nD. 5\nE. 2",
     "key_points_and_rules": "Xây dựng cây tìm kiếm nhị phân (BST) từ các từ duy nhất trong câu và tìm số phép so sánh để tìm một từ cụ thể.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Số phép so sánh không bằng 4 -> [SAI].",
@@ -5343,7 +5343,7 @@
     "image_file": "Q45.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Cấu trúc dữ liệu",
-    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nKizspy | Question: 45\n(Choose 1 answer)\nFind the value of the postfix expression\n6 3 / 5 + 7 2 - *\nA. 35\nB. -32\nC. 28\nD. -30\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 45\n(Choose 1 answer)\nQuestion: 45\n(Choose 1 answer)\nFind the value of the postfix expression\n6 3 / 5 + 7 2 - *\nA. 35\nB. -32\nC. 28\nD. -30\nE. None of the other choices is correct",
     "key_points_and_rules": "Tính giá trị của biểu thức hậu tố (postfix expression) bằng cách dùng ngăn xếp (stack): duyệt từ trái sang phải, gặp toán hạng thì đẩy vào stack, gặp toán tử thì lấy ra 2 toán hạng phù hợp từ stack để thực hiện phép tính và đẩy kết quả trở lại stack.",
     "option_by_option_analysis": {
       "A": "Phân tích biểu thức hậu tố: 6 3 / 5 + 7 2 - *\n1. Đẩy 6 vào stack: [6]\n2. Đẩy 3 vào stack: [6, 3]\n3. Gặp '/', lấy 3 và 6 ra tính 6 / 3 = 2, đẩy 2 vào stack: [2]\n4. Đẩy 5 vào stack: [2, 5]\n5. Gặp '+', lấy 5 và 2 ra tính 2 + 5 = 7, đẩy 7 vào stack: [7]\n6. Đẩy 7 vào stack: [7, 7]\n7. Đẩy 2 vào stack: [7, 7, 2]\n8. Gặp '-', lấy 2 và 7 ra tính 7 - 2 = 5, đẩy 5 vào stack: [7, 5]\n9. Gặp '*', lấy 5 và 7 ra tính 7 * 5 = 35, đẩy 35 vào stack: [35]\nKết quả cuối cùng là 35. Do đó phương án A là [ĐÚNG].",
@@ -5446,7 +5446,7 @@
     "image_file": "Q46.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Cấu trúc dữ liệu",
-    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nKizspy | Question: 46\n(Choose 1 answer)\nDetermine the order in which a post-order traversal visits the vertices of the given rooted tree.\nA. d,b,a,e,f,g,c\nB. a,b,c,d,e,f,g\nC. a,c,b,d,e,f,g\nD. f,g,d,e,b,c,a\nE. d,f,g,e,b,c,a\nF. None of the choices is correct",
+    "question_text_extracted": "Question: 46\n(Choose 1 answer)\nQuestion: 46\n(Choose 1 answer)\nA. d,b,a,e,f,g,c\nB. a,b,c,d,e,f,g\nC. a,c,b,d,e,f,g\nD. f,g,d,e,b,c,a\nE. d,f,g,e,b,c,a\nF. None of the choices is correct",
     "key_points_and_rules": "Duyệt cây theo thứ tự sau (Post-order traversal) theo quy tắc: Duyệt cây con bên trái -> Duyệt cây con bên phải -> Thăm nút gốc (Left -> Right -> Root). Cây có gốc là a, nút b có con trái là d và con phải là e, nút e có con trái là f và con phải là g, nút a có con phải là c.",
     "option_by_option_analysis": {
       "A": "Sai, thứ tự này không tuân theo quy tắc post-order của cây đã cho.",
@@ -5567,7 +5567,7 @@
     "image_file": "Q47.webp",
     "has_illustration": true,
     "subject_domain": "Toán học rời rạc & Lý thuyết đồ thị",
-    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nHow many spanning trees does the following graph have?\nA. 30\nB. 32\nC. 36\nD. 40\nE. 42\nF. 48",
+    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nA. 30\nB. 32\nC. 36\nD. 40\nE. 42\nF. 48",
     "key_points_and_rules": "Đồ thị gồm hai thành phần chính nối với nhau qua các cạnh bội giữa c và f. Thành phần bên trái là đồ thị chu trình 5 đỉnh C5 (gồm a, b, c, d, e). Thành phần bên phải là đồ thị chu trình 4 đỉnh C4 (gồm f, g, h, i). Giữa c và f có 2 cạnh song song (cạnh bội). Sử dụng định lý xoá/thêm cạnh hoặc công thức số cây khung cho đồ thị có cầu/cạnh song song.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Không khớp với kết quả tính toán.",
@@ -5776,7 +5776,7 @@
     "image_file": "Q49.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc & Đại số",
-    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nKizspy | Question: 49\n\n(Choose 1 answer)\n\n\nSuppose that f is defined recursively by f(0) = 2 and\n\nf(n + 1) = f(n)^2 + 2f(n) - 3 for n ≥ 0.\n\nFind f(3).\nA. 32\nB. 15\nC. 1085\nD. 93\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nQuestion: 49\n\n(Choose 1 answer)\n\n\nSuppose that f is defined recursively by f(0) = 2 and\n\nf(n + 1) = f(n)^2 + 2f(n) - 3 for n ≥ 0.\n\nFind f(3).\nA. 32\nB. 15\nC. 1085\nD. 93\nE. None of the other choices is correct",
     "key_points_and_rules": "Định nghĩa hàm truy hồi: f(0) = 2, f(n+1) = f(n)^2 + 2f(n) - 3. Cần tìm giá trị của f(3).",
     "option_by_option_analysis": {
       "A": "Tính toán: f(0) = 2. f(1) = f(0)^2 + 2f(0) - 3 = 2^2 + 2(2) - 3 = 4 + 4 - 3 = 5. f(2) = f(1)^2 + 2f(1) - 3 = 5^2 + 2(5) - 3 = 25 + 10 - 3 = 32. f(3) = f(2)^2 + 2f(2) - 3 = 32^2 + 2(32) - 3 = 1024 + 64 - 3 = 1085. Vậy A = 32 là SAI.",
@@ -5879,7 +5879,7 @@
     "image_file": "Q50.webp",
     "has_illustration": false,
     "subject_domain": "Toán học rời rạc & Tổ hợp",
-    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nKizspy | Question: 50\n\n(Choose 1 answer)\n\nHow many one-to-one functions from a set of 5 elements to a set of 4 elements?\nA. 0\nB. 24\nC. 120\nD. 20\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 50\n(Choose 1 answer)\nQuestion: 50\n\n(Choose 1 answer)\n\nHow many one-to-one functions from a set of 5 elements to a set of 4 elements?\nA. 0\nB. 24\nC. 120\nD. 20\nE. None of the other choices is correct",
     "key_points_and_rules": "Số lượng hàm đơn ánh (one-to-one functions) từ tập A có m phần tử sang tập B có n phần tử. Nếu m > n thì không thể có hàm đơn ánh nào do nguyên lý chuồng bồ câu (Pigeonhole Principle).",
     "option_by_option_analysis": {
       "A": "Theo nguyên lý chuồng bồ câu, nếu số phần tử của miền xác định (domain) lớn hơn số phần tử của tập đích (codomain) - ở đây 5 > 4, thì không tồn tại bất kỳ hàm đơn ánh (one-to-one) nào. Do đó số lượng hàm là 0. Phương án A ĐÚNG.",

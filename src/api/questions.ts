@@ -43,7 +43,12 @@ questionsRouter.post("/:question_id/check", async (c) => {
   const input = DrillCheckRequestSchema.parse(body);
 
   const db = createDb(c.env.DB);
-  const result = await checkDrillAnswer(db, questionId, input.selected_options);
+  const result = await checkDrillAnswer(
+    db,
+    questionId,
+    input.selected_options,
+    input.benchmark_mode
+  );
 
   return c.json(result, 200);
 });

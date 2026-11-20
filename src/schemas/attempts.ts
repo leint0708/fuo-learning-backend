@@ -13,7 +13,11 @@ export const AttemptQuestionSchema = z.object({
 
 export const StartAttemptRequestSchema = z.object({
   is_unlimited: z.boolean().optional().default(false),
-  duration_minutes: z.number().int().positive().nullable().optional()
+  duration_minutes: z.number().int().positive().nullable().optional(),
+  question_count: z.number().int().positive().optional(),
+  is_timed: z.boolean().optional(),
+  feedback_mode: z.enum(["instant", "post_exam"]).optional(),
+  benchmark_mode: z.enum(["ai", "community"]).optional()
 });
 
 export const AttemptSessionResponseSchema = z.object({

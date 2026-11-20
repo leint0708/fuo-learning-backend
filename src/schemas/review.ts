@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { CommunityStatsSchema } from "./questions";
 
 export const ReviewQuestionItemSchema = z.object({
   question_id: z.string(),
@@ -12,7 +13,8 @@ export const ReviewQuestionItemSchema = z.object({
   correct_answer: z.string(),
   is_correct: z.boolean(),
   ai_explanation: z.string().nullable(),
-  option_by_option_analysis: z.record(z.string()).nullable()
+  option_by_option_analysis: z.record(z.string()).nullable(),
+  community_stats: CommunityStatsSchema.nullable().optional()
 });
 
 export const AttemptReviewResponseSchema = z.object({

@@ -110,3 +110,65 @@ export type PracticeCard = z.infer<typeof PracticeCardSchema>;
 export type PracticeSessionResponse = z.infer<typeof PracticeSessionResponseSchema>;
 export type SubmitPracticeAnswerRequest = z.infer<typeof SubmitPracticeAnswerRequestSchema>;
 export type SubmitPracticeAnswerResponse = z.infer<typeof SubmitPracticeAnswerResponseSchema>;
+
+export const CardMasteryStatSchema = z.object({
+  question_id: z.string(),
+  consecutive_correct: z.number().int().min(0),
+  wrong_attempts: z.number().int().min(0),
+  total_attempts: z.number().int().min(0),
+  status: z.enum(["learning", "learned"]),
+  last_answered_at: z.string().optional()
+});
+
+export const CramActiveBatchSchema = z.object({
+  scope: z.enum(["deck", "mistakes"]).default("deck"),
+  scoped_question_ids: z.array(z.string()).optional(),
+  batch_question_ids: z.array(z.string()),
+  active_queue_ids: z.array(z.string()),
+  queue_pointer: z.number().int().min(0),
+  mastered_in_batch_ids: z.array(z.string()),
+  missed_ids: z.array(z.string()).default([]),
+  updated_at: z.string()
+});
+
+export const SubjectPracticeProgressResponseSchema = z.object({
+  subject_code: z.string(),
+  cram_mastered_ids: z.array(z.string()),
+  learn_mastered_ids: z.array(z.string()),
+  card_stats: z.record(CardMasteryStatSchema),
+  cram_active_batch: CramActiveBatchSchema.nullable().optional()
+});
+
+export const SyncPracticeProgressRequestSchema = z.object({
+  cram_mastered_ids: z.array(z.string()).optional(),
+  learn_mastered_ids: z.array(z.string()).optional(),
+  card_stats: z
+    .record(
+      z.object({
+        question_id: z.string().optional(),
+        consecutive_correct: z.number().int().min(0).optional(),
+        wrong_attempts: z.number().int().min(0).optional(),
+        total_attempts: z.number().int().min(0).optional(),
+        status: z.enum(["learning", "learned"]).optional(),
+        last_answered_at: z.string().optional()
+      })
+    )
+    .optional(),
+  cram_active_batch: CramActiveBatchSchema.nullable().optional()
+});
+
+export const PracticeProgressSummaryItemSchema = z.object({
+  subject_code: z.string(),
+  cram_count: z.number().int().min(0),
+  learn_count: z.number().int().min(0)
+});
+
+export const ResetPracticeRequestSchema = z.object({
+  mode: z.enum(["cram", "learn"]).optional()
+});
+
+export type CardMasteryStat = z.infer<typeof CardMasteryStatSchema>;
+export type CramActiveBatch = z.infer<typeof CramActiveBatchSchema>;
+export type SubjectPracticeProgressResponse = z.infer<typeof SubjectPracticeProgressResponseSchema>;
+export type SyncPracticeProgressRequest = z.infer<typeof SyncPracticeProgressRequestSchema>;
+export type PracticeProgressSummaryItem = z.infer<typeof PracticeProgressSummaryItemSchema>;

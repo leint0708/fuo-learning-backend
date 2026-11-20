@@ -5,7 +5,7 @@
     "image_file": "Q1.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 1\n(Choose 1 answer)\nKizspy | Question: 1\n(Choose 1 answer)\nWhich of the following statements about the Java language is true?\nA. Java language is case-sensitive.\nB. Java not a fully object-oriented language.\nC. Using a colon to end the command.\nD. The Java code only runs on the Windows platform.",
+    "question_text_extracted": "Question: 1\n(Choose 1 answer)\nQuestion: 1\n(Choose 1 answer)\nWhich of the following statements about the Java language is true?\nA. Java language is case-sensitive.\nB. Java not a fully object-oriented language.\nC. Using a colon to end the command.\nD. The Java code only runs on the Windows platform.",
     "key_points_and_rules": "Xác định câu hỏi tìm phát biểu ĐÚNG về ngôn ngữ lập trình Java theo lý thuyết cơ bản (PRO192).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Java là ngôn ngữ phân biệt chữ hoa chữ thường (case-sensitive), ví dụ biến `myVar` và `myvar` là hoàn toàn khác nhau. Phương án này [ĐÚNG].",
@@ -108,7 +108,7 @@
     "image_file": "Q2.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 2\n(Choose 1 answer)\nKizspy | Question: 2\n(Choose 1 answer)\nWhat is the purpose of a Java Virtual Machine(JVM)?\nA. It is used to interpret and execute Java bytecode\nB. It is used to write the bytecode into the .class file\nC. It is used to verify and improve performance the of Java programs\nD. All of the others",
+    "question_text_extracted": "Question: 2\n(Choose 1 answer)\nQuestion: 2\n(Choose 1 answer)\nWhat is the purpose of a Java Virtual Machine(JVM)?\nA. It is used to interpret and execute Java bytecode\nB. It is used to write the bytecode into the .class file\nC. It is used to verify and improve performance the of Java programs\nD. All of the others",
     "key_points_and_rules": "Xác định vai trò và chức năng cốt lõi của Java Virtual Machine (JVM) trong kiến trúc Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: JVM (Java Virtual Machine) có nhiệm vụ chính là đọc và thông dịch/thực thi mã bytecode Java thành mã máy tương ứng với hệ điều hành đang chạy. Phương án này [ĐÚNG].",
@@ -409,7 +409,7 @@
     "image_file": "Q5.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 5\n(Choose 1 answer)\nKizspy | Question: 5\n(Choose 1 answer)\nWhich of the following concepts does not belong to object-oriented programming features?\nA. Cross-platform\nB. Inheritance\nC. Polymorphism\nD. Encapsulation",
+    "question_text_extracted": "Question: 5\n(Choose 1 answer)\nQuestion: 5\n(Choose 1 answer)\nWhich of the following concepts does not belong to object-oriented programming features?\nA. Cross-platform\nB. Inheritance\nC. Polymorphism\nD. Encapsulation",
     "key_points_and_rules": "Câu hỏi yêu cầu tìm khái niệm KHÔNG thuộc về các đặc tính của lập trình hướng đối tượng (OOP). Các đặc tính cơ bản của OOP gồm: Tính đóng gói (Encapsulation), Tính kế thừa (Inheritance), Tính đa hình (Polymorphism) và Tính trừu tượng (Abstraction).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 'Cross-platform' (Đa nền tảng) là đặc tính liên quan đến khả năng chạy trên nhiều hệ điều hành khác nhau của một ngôn ngữ lập trình hoặc máy ảo (như JVM của Java), chứ không phải là đặc tính cốt lõi của lập trình hướng đối tượng. Do đó, đây là đáp án [ĐÚNG] cho câu hỏi tìm khái niệm không thuộc OOP.",
@@ -504,7 +504,7 @@
     "image_file": "Q6.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 6\n(Choose 1 answer)\nKizspy | Question: 6\n(Choose 1 answer)\nWhich of the following is NOT a Java feature?\nA. Use of pointers.\nB. Ease of learning.\nC. It is a secure language.\nD. Independent Platform.",
+    "question_text_extracted": "Question: 6\n(Choose 1 answer)\nQuestion: 6\n(Choose 1 answer)\nWhich of the following is NOT a Java feature?\nA. Use of pointers.\nB. Ease of learning.\nC. It is a secure language.\nD. Independent Platform.",
     "key_points_and_rules": "Câu hỏi yêu cầu tìm đặc điểm KHÔNG phải là đặc trưng của ngôn ngữ lập trình Java (NOT a Java feature). Cần xem xét các đặc điểm thiết kế của Java so với C/C++.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Java loại bỏ hoàn toàn việc sử dụng con trỏ tường minh (explicit pointers) như trong C hoặc C++ nhằm tăng tính bảo mật và đơn giản hóa lập trình, tránh các lỗi tràn bộ nhớ hoặc truy cập vùng nhớ trái phép. Do đó, 'Use of pointers' không phải là tính năng của Java, làm cho phương án này [ĐÚNG] với yêu cầu câu hỏi.",
@@ -599,7 +599,7 @@
     "image_file": "Q7.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 7\n(Choose 1 answer)\nKizspy | Question: 7\n(Choose 1 answer)\nA Java source code will be compiled to the file in which of the following extensions?\nA. .class\nB. .java\nC. .exe\nD. .bat",
+    "question_text_extracted": "Question: 7\n(Choose 1 answer)\nQuestion: 7\n(Choose 1 answer)\nA Java source code will be compiled to the file in which of the following extensions?\nA. .class\nB. .java\nC. .exe\nD. .bat",
     "key_points_and_rules": "Xác định phần mở rộng (extension) của tệp bytecode được tạo ra sau khi biên dịch mã nguồn Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Khi mã nguồn Java (tệp .java) được biên dịch bởi trình biên dịch javac, kết quả tạo ra là tệp bytecode có phần mở rộng là .class. Do đó phương án này [ĐÚNG].",
@@ -703,7 +703,7 @@
     "image_file": "Q8.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nKizspy | Question: 8\n(Choose 1 answer)\nWhich of the following is a primitive data type in Java?\nA. String\nB. Float\nC. byte\nD. ArrayList\nE. Integer\nF. Character",
+    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nQuestion: 8\n(Choose 1 answer)\nWhich of the following is a primitive data type in Java?\nA. String\nB. Float\nC. byte\nD. ArrayList\nE. Integer\nF. Character",
     "key_points_and_rules": "Nhận diện kiểu dữ liệu nguyên thủy (primitive data type) trong Java (gồm 8 loại: byte, short, int, long, float, double, boolean, char).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: String là một lớp (class) biểu diễn chuỗi ký tự, không phải là kiểu dữ liệu nguyên thủy. Do đó phương án này [SAI].",
@@ -800,7 +800,7 @@
     "image_file": "Q9.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java)",
-    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nKizspy | Question: 9\n(Choose 1 answer)\nWhich of the following is a Java primitive type?\nA. boolean\nB. String\nC. Object\nD. Class",
+    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nQuestion: 9\n(Choose 1 answer)\nWhich of the following is a Java primitive type?\nA. boolean\nB. String\nC. Object\nD. Class",
     "key_points_and_rules": "Xác định kiểu dữ liệu nguyên thủy (primitive type) trong Java. Java có 8 kiểu nguyên thủy: byte, short, int, long, float, double, char, boolean. Các kiểu còn lại như String, Object, Class là kiểu tham chiếu (reference types) hoặc lớp/interface.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 'boolean' là một trong 8 kiểu dữ liệu nguyên thủy (primitive types) trong Java, dùng để lưu trữ giá trị chân lý true hoặc false -> [ĐÚNG].",
@@ -895,7 +895,7 @@
     "image_file": "Q10.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java)",
-    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nKizspy | Question: 10\n(Choose 1 answer)\nConcerning rules and conventions for naming variables in Java, choose an incorrect statement.\nA. an identifier can begin with any character except '$' and '_'\nB. an identifier can begin with a character.\nC. an identifier can begin with the dollar sign character.\nD. an identifier can begin with the underscore character.",
+    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nQuestion: 10\n(Choose 1 answer)\nConcerning rules and conventions for naming variables in Java, choose an incorrect statement.\nA. an identifier can begin with any character except '$' and '_'\nB. an identifier can begin with a character.\nC. an identifier can begin with the dollar sign character.\nD. an identifier can begin with the underscore character.",
     "key_points_and_rules": "Câu hỏi yêu cầu tìm phát biểu SAI ('incorrect statement') về quy tắc đặt tên định danh (identifier/variable) trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phát biểu này nói rằng định danh không thể bắt đầu bằng '$' và '_'. Trên thực tế, định danh trong Java hoàn toàn CÓ THỂ bắt đầu bằng ký tự '$' hoặc '_'. Do đó đây là một phát biểu SAI -> [ĐÚNG là đáp án cần tìm vì đề yêu cầu chọn câu SAI].",
@@ -990,7 +990,7 @@
     "image_file": "Q11.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nKizspy | Question: 11\n(Choose 1 answer)\nWhat is the output of the code snippet?\npublic class Test {\n    public static void main(String[] args) {\n        int result;\n        System.out.println(result = true ? 100 : 5);\n    }\n}\nA. 100\nB. 5\nC. 0\nD. Runtime error.",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nQuestion: 11\n(Choose 1 answer)\nWhat is the output of the code snippet?\npublic class Test {\n    public static void main(String[] args) {\n        int result;\n        System.out.println(result = true ? 100 : 5);\n    }\n}\nA. 100\nB. 5\nC. 0\nD. Runtime error.",
     "key_points_and_rules": "Xác định kết quả khi thực thi biểu thức điều kiện ba ngôi trong Java kết hợp với lệnh in ra màn hình.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Biểu thức `result = true ? 100 : 5` gán giá trị trả về của toán tử điều kiện ba ngôi vào biến `result`. Vì điều kiện `true` là đúng, biểu thức trả về `100`. Đồng thời, giá trị `100` này được truyền trực tiếp vào phương thức `System.out.println()`. Do đó, kết quả in ra màn hình là 100. Phương án này [ĐÚNG].",
@@ -1094,7 +1094,7 @@
     "image_file": "Q12.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nKizspy | Question: 12\n(Choose 1 answer)\nWhich of the following packages contains the Scanner class used to input data via keyboard?\nA. java.util\nB. java.net\nC. java.io\nD. java.awt",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nQuestion: 12\n(Choose 1 answer)\nWhich of the following packages contains the Scanner class used to input data via keyboard?\nA. java.util\nB. java.net\nC. java.io\nD. java.awt",
     "key_points_and_rules": "Xác định gói (package) trong Java chứa lớp `Scanner` dùng để nhập dữ liệu từ bàn phím.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Lớp `java.util.Scanner` nằm trong gói `java.util`, được sử dụng rộng rãi để phân tích cú pháp các kiểu dữ liệu nguyên thủy và chuỗi, bao gồm cả việc đọc dữ liệu đầu vào từ bàn phím (`System.in`). Phương án này [ĐÚNG].",
@@ -1189,7 +1189,7 @@
     "image_file": "Q13.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nKizspy | Question: 13\n(Choose 1 answer)\nWhich of the following is one of the exception types in Java?\nA. RuntimeException\nB. CompileException\nC. SyntaxException\nD. LogicException",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nQuestion: 13\n(Choose 1 answer)\nWhich of the following is one of the exception types in Java?\nA. RuntimeException\nB. CompileException\nC. SyntaxException\nD. LogicException",
     "key_points_and_rules": "Xác định các loại ngoại lệ (exception types) hợp lệ trong ngôn ngữ lập trình Java theo hệ thống phân cấp của gói java.lang.Throwable.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: RuntimeException là lớp cơ sở cho tất cả các ngoại lệ khi chạy (unchecked exceptions) trong Java, nằm trong gói java.lang. Đây là một exception type chuẩn trong Java -> [ĐÚNG].",
@@ -1292,7 +1292,7 @@
     "image_file": "Q14.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nKizspy | Question: 14\n(Choose 1 answer)\nWhat will be the output of the following code snippet?\nclass A {\n    public void methodA() {\n        System.out.println(\"Class A\");\n    }\n}\nclass B extends A {\n    public void methodA() {\n        System.out.println(\"Class B\");\n    }\n    public void methodB() {\n        System.out.println(\"Class B - methodB\");\n    }\n}\npublic class Test {\n    public static void main(String[] args) {\n        A obj = new B();\n        obj.methodA();\n    }\n}\nA. Class A\nB. Class B\nC. Compilation error due to the obj.methodB() line\nD. Runtime error",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nQuestion: 14\n(Choose 1 answer)\nWhat will be the output of the following code snippet?\nclass A {\n    public void methodA() {\n        System.out.println(\"Class A\");\n    }\n}\nclass B extends A {\n    public void methodA() {\n        System.out.println(\"Class B\");\n    }\n    public void methodB() {\n        System.out.println(\"Class B - methodB\");\n    }\n}\npublic class Test {\n    public static void main(String[] args) {\n        A obj = new B();\n        obj.methodA();\n    }\n}\nA. Class A\nB. Class B\nC. Compilation error due to the obj.methodB() line\nD. Runtime error",
     "key_points_and_rules": "Trace code, áp dụng tính kế thừa, ghi đè phương thức (method overriding) và tính đa hình (polymorphism) trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương thức methodA() đã được ghi đè ở lớp con B. Do tính đa hình lúc runtime (Dynamic Method Dispatch), đối tượng thực tế là B nên khi gọi obj.methodA() sẽ thực thi phương thức của lớp B chứ không phải lớp A -> [SAI].",
@@ -1396,7 +1396,7 @@
     "image_file": "Q15.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nKizspy | Question: 15\n(Choose 1 answer)\nWhat loop is specifically designed for iterating through array elements?\nA. for-each loop\nB. for loop\nC. while loop\nD. do-while loop",
+    "question_text_extracted": "Question: 15\n(Choose 1 answer)\nQuestion: 15\n(Choose 1 answer)\nWhat loop is specifically designed for iterating through array elements?\nA. for-each loop\nB. for loop\nC. while loop\nD. do-while loop",
     "key_points_and_rules": "Xác định vòng lặp nào được thiết kế riêng biệt để duyệt qua các phần tử của mảng hoặc tập hợp trong lập trình.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Vòng lặp for-each (enhanced for loop) được thiết kế đặc biệt để duyệt qua từng phần tử của mảng hoặc tập hợp (collection) một cách ngắn gọn mà không cần sử dụng biến đếm hoặc chỉ số index [ĐÚNG].",
@@ -1483,7 +1483,7 @@
     "image_file": "Q16.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nKizspy | Question: 16\n(Choose 1 answer)\nWhich of the following statements is one of the advantages of OOP?\nA. The systems can be easily upgraded from small to large systems.\nB. OOP leads to higher programmer productivity, better software quality, and higher maintenance costs.\nC. OOP language did not allow breaking the program into bit-sized problems that can be solved easily\nD. All of the others",
+    "question_text_extracted": "Question: 16\n(Choose 1 answer)\nQuestion: 16\n(Choose 1 answer)\nWhich of the following statements is one of the advantages of OOP?\nA. The systems can be easily upgraded from small to large systems.\nB. OOP leads to higher programmer productivity, better software quality, and higher maintenance costs.\nC. OOP language did not allow breaking the program into bit-sized problems that can be solved easily\nD. All of the others",
     "key_points_and_rules": "Xác định các ưu điểm của lập trình hướng đối tượng (Object-Oriented Programming - OOP).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Một trong những ưu điểm cốt lõi của OOP là tính mô-đun hóa cao, cho phép dễ dàng mở rộng và nâng cấp hệ thống từ quy mô nhỏ lên quy mô lớn mà ít ảnh hưởng đến các phần khác [ĐÚNG].",
@@ -1760,7 +1760,7 @@
     "image_file": "Q19.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nKizspy | Question: 19\n(Choose 1 answer)\nWhich access modifier is commonly used for setter methods in Java?\nA. public\nB. private\nC. protected\nD. static\nE. final\nF. abstract",
+    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nQuestion: 19\n(Choose 1 answer)\nWhich access modifier is commonly used for setter methods in Java?\nA. public\nB. private\nC. protected\nD. static\nE. final\nF. abstract",
     "key_points_and_rules": "Xác định access modifier thường dùng cho phương thức setter trong Java. Theo tính đóng gói (encapsulation) trong OOP, các thuộc tính (fields) thường là private, và các phương thức getter/setter được cung cấp với access modifier là public để cho phép các lớp bên ngoài có thể truy cập và thay đổi giá trị một cách có kiểm soát.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì các phương thức setter (và getter) trong Java thường được khai báo là public để các đối tượng khác có thể truy cập và sửa đổi trạng thái của đối tượng theo nguyên tắc encapsulation.",
@@ -1857,7 +1857,7 @@
     "image_file": "Q20.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Kizspy | Question: 20\n(Choose 1 answer)\nWhat is the output of the following code snippet?\npublic class Person {\n    protected String id;\n    public void calPerson(Person p){\n        p.id = \"HCM\";\n        System.out.print(p.id);\n    }\n    public static void main(String[] args) {\n        Person p = new Person();\n        p.id = \"FPT\";\n        p.calPerson(p);\n    }\n}",
+    "question_text_extracted": "Question: 20\n(Choose 1 answer)\nWhat is the output of the following code snippet?\npublic class Person {\n    protected String id;\n    public void calPerson(Person p){\n        p.id = \"HCM\";\n        System.out.print(p.id);\n    }\n    public static void main(String[] args) {\n        Person p = new Person();\n        p.id = \"FPT\";\n        p.calPerson(p);\n    }\n}\nA. HCM\nB. FPT\nC. FPTHCM\nD. HCMFPT",
     "key_points_and_rules": "Trace code Java xét truyền tham chiếu đối tượng: Trong hàm main, tạo một đối tượng Person p mới, gán `p.id = \"FPT\"`. Sau đó gọi `p.calPerson(p)`. Trong phương thức `calPerson(Person p)`, tham số `p` trỏ tới cùng một vùng nhớ đối tượng, thực hiện gán `p.id = \"HCM\"` (ghi đè lên giá trị \"FPT\" cũ) và in ra `p.id` (in ra \"HCM\").",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì phương thức `calPerson` in ra chuỗi \"HCM\".",
@@ -1960,7 +1960,7 @@
     "image_file": "Q21.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nKizspy | Question: 21\n(Choose 1 answer)\nWhich of the following statements related to the protected access modifier is true?\nA. It allows the outside package access\nB. It does not allow within-package access\nC. The protected members must be initialized before use\nD. All of the others",
+    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nQuestion: 21\n(Choose 1 answer)\nWhich of the following statements related to the protected access modifier is true?\nA. It allows the outside package access\nB. It does not allow within-package access\nC. The protected members must be initialized before use\nD. All of the others",
     "key_points_and_rules": "Đề bài yêu cầu tìm phát biểu ĐÚNG liên quan đến modifier (bộ chỉ định truy cập) `protected` trong ngôn ngữ lập trình Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG]. Trong Java, từ khóa `protected` cho phép các thành viên (biến, phương thức) được truy cập từ bên trong cùng package (gói) và bởi các lớp con (subclass) nằm ở bên ngoài package đó qua cơ chế kế thừa.",
@@ -2095,7 +2095,7 @@
     "image_file": "Q22.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nKizspy | Question: 22\n(Choose 1 answer)\nWhat is a superclass in Java inheritance?\nA. The class from which the subclass is derived\nB. The class that inherits from another class\nC. The final class in the inheritance chain\nD. The class that has abstract methods",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nQuestion: 22\n(Choose 1 answer)\nWhat is a superclass in Java inheritance?\nA. The class from which the subclass is derived\nB. The class that inherits from another class\nC. The final class in the inheritance chain\nD. The class that has abstract methods",
     "key_points_and_rules": "Đề bài yêu cầu định nghĩa khái niệm 'superclass' (lớp cha) trong cơ chế kế thừa của Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG]. Superclass (lớp cha/lớp cơ sở) là lớp mà từ đó lớp con (subclass) được dẫn xuất (derived/inherited).",
@@ -2182,7 +2182,7 @@
     "image_file": "Q23.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nKizspy | Question: 23\n\n(Choose 1 answer)\nWhat is the output of the following Java program?\nclass A {\n    public int x = 1;\n    public void setX(int a) {\n        x = a;\n    }\n}\nclass B extends A {\n    public int getB() {\n        setX(2);\n        return x;\n    }\n}\npublic class Main {\n    public static void main(String[] args) {\n        A a = new A();\n        B b = new B();\n        System.out.println(a.x + \" \" + b.getB());\n    }\n}\nA. 1 2\nB. 2 1\nC. 1 1\nD. 2 2",
+    "question_text_extracted": "Question: 23\n(Choose 1 answer)\nQuestion: 23\n\n(Choose 1 answer)\nWhat is the output of the following Java program?\nclass A {\n    public int x = 1;\n    public void setX(int a) {\n        x = a;\n    }\n}\nclass B extends A {\n    public int getB() {\n        setX(2);\n        return x;\n    }\n}\npublic class Main {\n    public static void main(String[] args) {\n        A a = new A();\n        B b = new B();\n        System.out.println(a.x + \" \" + b.getB());\n    }\n}\nA. 1 2\nB. 2 1\nC. 1 1\nD. 2 2",
     "key_points_and_rules": "Trace code Java theo hướng đối tượng: Tính kế thừa, truy cập biến instance của lớp cha từ lớp con, phương thức gọi trong đối tượng hiện tại.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Khởi tạo A a = new A(); -> a.x bằng 1. Khởi tạo B b = new B(); -> b kế thừa A nên có x = 1 và phương thức setX(int). Gọi b.getB(): phương thức setX(2) được gọi, gán x của đối tượng b thành 2. Sau đó trả về x của b (lúc này là 2). Biểu thức in ra: a.x + \" \" + b.getB() -> a.x là 1, b.getB() là 2, kết quả in ra là '1 2'. Phương án này ĐÚNG.",
@@ -2277,7 +2277,7 @@
     "image_file": "Q24.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (PRO192)",
-    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nKizspy | Question: 24\n\n(Choose 1 answer)\nWhat is the purpose of the \"super\" keyword in Java?\nA. To call the constructor or methods of the parent class\nB. To call the constructor or methods of the child class\nC. To call the members of the same class\nD. To define a static method",
+    "question_text_extracted": "Question: 24\n(Choose 1 answer)\nQuestion: 24\n\n(Choose 1 answer)\nWhat is the purpose of the \"super\" keyword in Java?\nA. To call the constructor or methods of the parent class\nB. To call the constructor or methods of the child class\nC. To call the members of the same class\nD. To define a static method",
     "key_points_and_rules": "Ý nghĩa và cách sử dụng từ khóa `super` trong ngôn ngữ lập trình Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Từ khóa `super` trong Java được sử dụng để tham chiếu đến đối tượng của lớp cha (superclass). Nó dùng để gọi constructor của lớp cha (`super()`) hoặc gọi các phương thức/thuộc tính đã bị ghi đè của lớp cha. Phương án này ĐÚNG.",
@@ -2364,7 +2364,7 @@
     "image_file": "Q25.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nKizspy | Question: 25\n(Choose 1 answer)\nWhat is the primary purpose of using a superclass and subclass relationship in Java?\nA. To restrict access to certain methods or fields.\nB. To create multiple instances of a class.\nC. To implement multiple inheritance.\nD. To achieve code reusability and facilitate polymorphism.\nE. To enforce encapsulation.\nF. To establish a one-to-one mapping between classes.",
+    "question_text_extracted": "Question: 25\n(Choose 1 answer)\nQuestion: 25\n(Choose 1 answer)\nWhat is the primary purpose of using a superclass and subclass relationship in Java?\nA. To restrict access to certain methods or fields.\nB. To create multiple instances of a class.\nC. To implement multiple inheritance.\nD. To achieve code reusability and facilitate polymorphism.\nE. To enforce encapsulation.\nF. To establish a one-to-one mapping between classes.",
     "key_points_and_rules": "Câu hỏi yêu cầu tìm mục đích chính của mối quan hệ superclass (lớp cha) và subclass (lớp con) trong lập trình hướng đối tượng Java (Inheritance).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Việc giới hạn quyền truy cập (restrict access) là nhiệm vụ của các access modifiers (private, protected, public), không phải mục đích chính của kế thừa. -> [SAI]",
@@ -2461,7 +2461,7 @@
     "image_file": "Q26.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 26\n(Choose 2 answers)\nKizspy | Question: 26\n(Choose 2 answers)\nChoose multiple correct answers.\nA. private access modifier should be used for a variable or method to only be accessed within the same class\nB. public access modifier should be used for a variable or method that should be accessible from any class, regardless of the package\nC. protected access modifier should be used for a variable or method that should only be accessed within the same class and subclasses, in the same package\nD. default (no modifier) access modifier only allows access in the same class",
+    "question_text_extracted": "Question: 26\n(Choose 2 answers)\nQuestion: 26\n(Choose 2 answers)\nChoose multiple correct answers.\nA. private access modifier should be used for a variable or method to only be accessed within the same class\nB. public access modifier should be used for a variable or method that should be accessible from any class, regardless of the package\nC. protected access modifier should be used for a variable or method that should only be accessed within the same class and subclasses, in the same package\nD. default (no modifier) access modifier only allows access in the same class",
     "key_points_and_rules": "Câu hỏi yêu cầu chọn 2 đáp án đúng về các quy tắc phạm vi truy cập (access modifiers) trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Từ khóa `private` giới hạn phạm vi truy cập của biến hoặc phương thức chỉ bên trong chính lớp đó (same class). Đây là định nghĩa hoàn toàn chính xác. -> [ĐÚNG]",
@@ -2548,7 +2548,7 @@
     "image_file": "Q27.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nKizspy | Question: 27\n(Choose 1 answer)\nWhat is the \"instanceof\" operator used for?\nA. To check whether an object is an instance of a particular class or not\nB. To create a new instance of a class\nC. To compare two objects for equality\nD. To check if an object is null",
+    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nQuestion: 27\n(Choose 1 answer)\nWhat is the \"instanceof\" operator used for?\nA. To check whether an object is an instance of a particular class or not\nB. To create a new instance of a class\nC. To compare two objects for equality\nD. To check if an object is null",
     "key_points_and_rules": "Xác định mục đích sử dụng của toán tử 'instanceof' trong ngôn ngữ lập trình Java (OOP).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Toán tử 'instanceof' được dùng để kiểm tra xem một đối tượng có phải là thể hiện (instance) của một lớp cụ thể hay của một lớp con/giao diện (interface) nào đó hay không. Kết quả trả về là giá trị boolean (true hoặc false). Phương án này [ĐÚNG].",
@@ -2627,7 +2627,7 @@
     "image_file": "Q28.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nKizspy | Question: 28\n(Choose 1 answer)\nChoose the correct statement about overloading in Java.\nA. Overloading is based on having multiple methods with the same name but different by the number of input parameters or type of input parameters, or a mixture of both.\nB. Overloading is based on having multiple methods with the same name.\nC. Overloading is based on having multiple methods with the same name, parameter types, and number of parameters.\nD. Overloading is based on having multiple methods with the same name but different return types.",
+    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nQuestion: 28\n(Choose 1 answer)\nChoose the correct statement about overloading in Java.\nA. Overloading is based on having multiple methods with the same name but different by the number of input parameters or type of input parameters, or a mixture of both.\nB. Overloading is based on having multiple methods with the same name.\nC. Overloading is based on having multiple methods with the same name, parameter types, and number of parameters.\nD. Overloading is based on having multiple methods with the same name but different return types.",
     "key_points_and_rules": "Hiểu đúng định nghĩa về Method Overloading (Nạp chồng phương thức) trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Nạp chồng phương thức (Method Overloading) yêu cầu các phương thức phải có cùng tên nhưng khác nhau về số lượng tham số đầu vào, kiểu dữ liệu của tham số, hoặc kết hợp cả hai. Kiểu trả về (return type) có thể giống hoặc khác nhau nhưng không quyết định việc overloading. Phương án này [ĐÚNG].",
@@ -2920,7 +2920,7 @@
     "image_file": "Q31.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 31\n(Choose 1 answer)\nKizspy | Question: 31\n\n(Choose 1 answer)\n\nConsider an abstract class \"Shape\" with an abstract method \"calculateArea().\" If a concrete subclass \"Circle\" extends \"Shape\" and provides an implementation for \"calculateArea(),\" what happens when an object of the \"Circle\" class is created and the \"calculateArea()\" method is executed?\nA. The abstract method in the superclass is executed.\nB. The concrete method in the subclass is executed.\nC. The program will not compile.\nD. An exception is thrown at runtime.\nE. Both the abstract method in the superclass and the concrete method in the subclass are executed.\nF. The result depends on whether the \"calculateArea()\" method is declared as static.",
+    "question_text_extracted": "Question: 31\n(Choose 1 answer)\nQuestion: 31\n\n(Choose 1 answer)\n\nConsider an abstract class \"Shape\" with an abstract method \"calculateArea().\" If a concrete subclass \"Circle\" extends \"Shape\" and provides an implementation for \"calculateArea(),\" what happens when an object of the \"Circle\" class is created and the \"calculateArea()\" method is executed?\nA. The abstract method in the superclass is executed.\nB. The concrete method in the subclass is executed.\nC. The program will not compile.\nD. An exception is thrown at runtime.\nE. Both the abstract method in the superclass and the concrete method in the subclass are executed.\nF. The result depends on whether the \"calculateArea()\" method is declared as static.",
     "key_points_and_rules": "Kiểm tra cơ chế ghi đè phương thức (Method Overriding) và tính đa hình trong lập trình hướng đối tượng (OOP) Java với lớp trừu tượng (abstract class).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [SAI] Phương thức trừu tượng trong lớp cha không có phần thân (body) nên không thể được thực thi trực tiếp.",
@@ -3010,7 +3010,7 @@
     "image_file": "Q32.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 32\n(Choose 1 answer)\nKizspy | Question: 32\n\n(Choose 1 answer)\n\nChoose the correct statement about the anonymous class.\nA. An anonymous class can be used to implement an interface\nB. Anonymous class used to extend methods\nC. Anonymous class is used to define a set of constants\nD. All of the others",
+    "question_text_extracted": "Question: 32\n(Choose 1 answer)\nQuestion: 32\n\n(Choose 1 answer)\n\nChoose the correct statement about the anonymous class.\nA. An anonymous class can be used to implement an interface\nB. Anonymous class used to extend methods\nC. Anonymous class is used to define a set of constants\nD. All of the others",
     "key_points_and_rules": "Kiểm tra kiến thức về định nghĩa và ứng dụng của Anonymous Class (lớp nặc danh) trong Java.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [ĐÚNG] Lớp nặc danh (anonymous class) trong Java cho phép bạn khai báo và khởi tạo một lớp cùng một lúc. Nó thường được sử dụng để tạo tức thời một đối tượng triển khai (implement) một interface hoặc mở rộng một lớp cha.",
@@ -3637,7 +3637,7 @@
     "image_file": "Q39.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nKizspy | Question: 39\n(Choose 1 answer)\nYou are tasked with implementing a system that tracks the frequency of words in a large text document. Explain how you would use a Java collection to efficiently achieve this, emphasizing the principles of abstraction and encapsulation.\nA. Utilize a HashMap<String, Integer> for efficient word frequency tracking.\nB. Implement a LinkedList<String> to store words and their occurrences.\nC. Use a PriorityQueue<String> to prioritize words based on frequency.\nD. Employ a HashSet<String> for unique word storage.\nE. Implement a custom WordFrequencyTracker class using a binary search tree.\nF. Utilize a TreeMap<String, Integer> for a sorted mapping of words and frequencies.",
+    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nQuestion: 39\n(Choose 1 answer)\nYou are tasked with implementing a system that tracks the frequency of words in a large text document. Explain how you would use a Java collection to efficiently achieve this, emphasizing the principles of abstraction and encapsulation.\nA. Utilize a HashMap<String, Integer> for efficient word frequency tracking.\nB. Implement a LinkedList<String> to store words and their occurrences.\nC. Use a PriorityQueue<String> to prioritize words based on frequency.\nD. Employ a HashSet<String> for unique word storage.\nE. Implement a custom WordFrequencyTracker class using a binary search tree.\nF. Utilize a TreeMap<String, Integer> for a sorted mapping of words and frequencies.",
     "key_points_and_rules": "Yêu cầu tìm phương án sử dụng Java collection phù hợp và hiệu quả nhất để theo dõi tần suất xuất hiện của các từ trong một tài liệu văn bản lớn.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: HashMap<String, Integer> cung cấp hiệu suất O(1) trung bình cho các thao tác chèn, tìm kiếm và cập nhật tần suất của từ, là lựa chọn chuẩn mực và hiệu quả nhất cho bài toán đếm tần suất. [ĐÚNG]",
@@ -3726,7 +3726,7 @@
     "image_file": "Q40.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nKizspy | Question: 40\n(Choose 1 answer)\nIn a financial application, you need to store unique customer IDs efficiently, ensuring rapid lookup and insertion. Describe the Java collection you would choose, the reasons behind your choice, and how you would handle potential duplicates.\nA. Choose a TreeSet<Integer> to automatically handle duplicates and ensure quick lookups.\nB. Implement a custom CustomerIDManager class with an embedded array for efficient management.\nC. Utilize a LinkedHashSet<Integer> to maintain insertion order while ensuring uniqueness.\nD. Design a HashMap<Integer, Boolean> where uniqueness is enforced through key existence.\nE. Use a BitSet to represent customer IDs with efficient storage.\nF. Implement a custom hash table for direct control over insertion and lookup processes.",
+    "question_text_extracted": "Question: 40\n(Choose 1 answer)\nQuestion: 40\n(Choose 1 answer)\nIn a financial application, you need to store unique customer IDs efficiently, ensuring rapid lookup and insertion. Describe the Java collection you would choose, the reasons behind your choice, and how you would handle potential duplicates.\nA. Choose a TreeSet<Integer> to automatically handle duplicates and ensure quick lookups.\nB. Implement a custom CustomerIDManager class with an embedded array for efficient management.\nC. Utilize a LinkedHashSet<Integer> to maintain insertion order while ensuring uniqueness.\nD. Design a HashMap<Integer, Boolean> where uniqueness is enforced through key existence.\nE. Use a BitSet to represent customer IDs with efficient storage.\nF. Implement a custom hash table for direct control over insertion and lookup processes.",
     "key_points_and_rules": "Yêu cầu lưu trữ các ID khách hàng duy nhất một cách hiệu quả, đảm bảo tra cứu và chèn nhanh chóng trong ứng dụng tài chính.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: TreeSet duy trì các phần tử có thứ tự dựa trên cây đỏ-đen với độ phức tạp O(log N), chậm hơn cấu trúc dựa trên bảng băm. [SAI]",
@@ -3856,7 +3856,7 @@
     "image_file": "Q41.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nKizspy | Question: 41\n(Choose 1 answer)\n\nIn a logistics application, you need to associate each product with its corresponding warehouse location. Illustrate how you would use a Java collection to model this relationship, considering the principles of association and key-value mapping.\nA. Use a HashMap<Product, WarehouseLocation> for direct key-value mapping.\nB. Implement a custom ProductWarehouseAssociation class with parallel arrays.\nC. Utilize a LinkedHashMap<Product, WarehouseLocation> to maintain insertion order.\nD. Design a TreeMap<Product, WarehouseLocation> for sorted key-value mapping.\nE. Choose a HashSet<ProductWarehousePair> for efficient storage of associations.\nF. Implement a custom graph structure to represent the relationships between products and locations.",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nQuestion: 41\n(Choose 1 answer)\n\nIn a logistics application, you need to associate each product with its corresponding warehouse location. Illustrate how you would use a Java collection to model this relationship, considering the principles of association and key-value mapping.\nA. Use a HashMap<Product, WarehouseLocation> for direct key-value mapping.\nB. Implement a custom ProductWarehouseAssociation class with parallel arrays.\nC. Utilize a LinkedHashMap<Product, WarehouseLocation> to maintain insertion order.\nD. Design a TreeMap<Product, WarehouseLocation> for sorted key-value mapping.\nE. Choose a HashSet<ProductWarehousePair> for efficient storage of associations.\nF. Implement a custom graph structure to represent the relationships between products and locations.",
     "key_points_and_rules": "Đề bài yêu cầu mô hình hóa mối quan hệ ánh xạ giữa mỗi sản phẩm (Product) và vị trí kho tương ứng (WarehouseLocation) dưới dạng key-value mapping trong Java collections.",
     "option_by_option_analysis": {
       "A": "Sử dụng HashMap<Product, WarehouseLocation> cung cấp cấu trúc ánh xạ trực tiếp key-value với độ phức tạp thời gian O(1) cho các thao tác tra cứu, thêm và xóa, phù hợp nhất cho việc quản lý quan hệ 1-1 giữa sản phẩm và vị trí kho.",
@@ -3945,7 +3945,7 @@
     "image_file": "Q42.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nKizspy | Question: 42\n(Choose 1 answer)\n\nWhat is the output of the following code snippet?\nSet<Integer> set1 = new HashSet();\nset1.add(1); set1.add(2); set1.add(3); set1.add(1);\nSet<Integer> set2 = new HashSet();\nset2.add(1); set2.add(4);\nset1.removeAll(set2);\nSystem.out.println(set1);\nA. [2, 3]\nB. [3, 1]\nC. [1, 2]\nD. [4, 1]",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nQuestion: 42\n(Choose 1 answer)\n\nWhat is the output of the following code snippet?\nSet<Integer> set1 = new HashSet();\nset1.add(1); set1.add(2); set1.add(3); set1.add(1);\nSet<Integer> set2 = new HashSet();\nset2.add(1); set2.add(4);\nset1.removeAll(set2);\nSystem.out.println(set1);\nA. [2, 3]\nB. [3, 1]\nC. [1, 2]\nD. [4, 1]",
     "key_points_and_rules": "Trace code từng dòng trên cấu trúc dữ liệu Set (HashSet trong Java): phương thức add() không cho phép phần tử trùng lặp; phương thức removeAll() xóa tất cả các phần tử có trong tập hợp truyền vào khỏi tập hợp hiện tại.",
     "option_by_option_analysis": {
       "A": "Trace code:\n1. Set<Integer> set1 = new HashSet(); -> set1 trống.\n2. set1.add(1); set1.add(2); set1.add(3); set1.add(1); -> set1 chứa {1, 2, 3} (số 1 thêm lần 2 bị bỏ qua vì HashSet không chứa trùng lặp).\n3. Set<Integer> set2 = new HashSet(); -> set2 trống.\n4. set2.add(1); set2.add(4); -> set2 chứa {1, 4}.\n5. set1.removeAll(set2); -> Xóa các phần tử của set2 khỏi set1. Phần tử 1 có trong set2 bị loại bỏ khỏi set1. set1 còn lại {2, 3}.\n6. System.out.println(set1); -> In ra kết quả [2, 3] (hoặc thứ tự tương đương của HashSet). Do đó phương án A chính xác.",
@@ -4032,7 +4032,7 @@
     "image_file": "Q43.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java Collections Framework)",
-    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nKizspy | Question: 43\n\n(Choose 1 answer)\n\nWhich method is used to check if an element is present in an ArrayList?\nA. contains()\nB. exists()\nC. includes()\nD. has()",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: 43\n\n(Choose 1 answer)\n\nWhich method is used to check if an element is present in an ArrayList?\nA. contains()\nB. exists()\nC. includes()\nD. has()",
     "key_points_and_rules": "Xác định phương thức chuẩn trong Java `ArrayList` (thuộc Collection interface) dùng để kiểm tra sự tồn tại của một phần tử.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Phương thức contains(Object o) thuộc interface Collection và được implement trong lớp ArrayList để trả về true nếu list chứa phần tử chỉ định. Đây là phương thức chuẩn trong Java -> [ĐÚNG]",
@@ -4120,7 +4120,7 @@
     "image_file": "Q44.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm (Java Collections Framework)",
-    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nKizspy | Question: 44\n\n(Choose 1 answer)\n\nWhat is the size of an ArrayList if capacity is NOT specified during initialization?\nA. 0\nB. 1\nC. 16\nD. 10",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nQuestion: 44\n\n(Choose 1 answer)\n\nWhat is the size of an ArrayList if capacity is NOT specified during initialization?\nA. 0\nB. 1\nC. 16\nD. 10",
     "key_points_and_rules": "Phân biệt giữa 'size' (số lượng phần tử hiện tại) và 'capacity' (dung lượng mảng ngầm định) của một ArrayList khi khởi tạo mặc định.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Khi một ArrayList được khởi tạo bằng constructor mặc định không chỉ định capacity (new ArrayList<>()), nó tạo ra một danh sách rỗng chưa chứa phần tử nào, do đó size (số lượng phần tử thực tế) bằng 0 -> [ĐÚNG]",
@@ -4382,7 +4382,7 @@
     "image_file": "Q47.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nKizspy | Question: 47\n\n(Choose 1 answer)\n\nWhich of the following objects is a parameter of the constructor of the DataInputStream class?\nA. An object of the FileInputStream class\nB. An object of the File class\nC. An object of the BufferedReader class\nD. An object of the RandomAccessFile class",
+    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nQuestion: 47\n\n(Choose 1 answer)\n\nWhich of the following objects is a parameter of the constructor of the DataInputStream class?\nA. An object of the FileInputStream class\nB. An object of the File class\nC. An object of the BufferedReader class\nD. An object of the RandomAccessFile class",
     "key_points_and_rules": "Xác định kiểu tham số truyền vào constructor của lớp DataInputStream trong Java I/O.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Lớp DataInputStream có constructor nhận vào một đối tượng thực thi giao diện InputStream (như FileInputStream). Do đó đây là phương án ĐÚNG.",
@@ -4469,7 +4469,7 @@
     "image_file": "Q48.webp",
     "has_illustration": false,
     "subject_domain": "Lập trình & Kỹ thuật phần mềm",
-    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nKizspy | Question: 48\n\n(Choose 1 answer)\n\nWhat is the output of the following code snippet:\nString fName=\"test.txt\";\nFileInputStream fs = new FileInputStream(fName);\nbyte[] list = new byte[100];\nfs.read(list,0,4);\nSystem.out.format(\"%c%n\",list[1]);\nIf test.txt has the content as follows:\n01234567890\nA. 1\nB. 0\nC. 2\nD. 3",
+    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nQuestion: 48\n\n(Choose 1 answer)\n\nWhat is the output of the following code snippet:\nString fName=\"test.txt\";\nFileInputStream fs = new FileInputStream(fName);\nbyte[] list = new byte[100];\nfs.read(list,0,4);\nSystem.out.format(\"%c%n\",list[1]);\nIf test.txt has the content as follows:\n01234567890\nA. 1\nB. 0\nC. 2\nD. 3",
     "key_points_and_rules": "Trace đoạn code đọc tệp văn bản bằng FileInputStream và in ra phần tử của mảng byte dựa trên định dạng format '%c'.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Nội dung tệp '01234567890' tương ứng với các giá trị byte cho các ký tự ASCII '0'=48, '1'=49, '2'=50, '3'=51. Lệnh fs.read(list, 0, 4) đọc 4 byte đầu tiên vào mảng list (list[0]='0', list[1]='1', list[2]='2', list[3]='3'). Lệnh System.out.format(\"%c%n\", list[1]) in ra ký tự tương ứng với mã ASCII tại list[1], chính là ký tự '1'. Do đó đây là phương án ĐÚNG.",

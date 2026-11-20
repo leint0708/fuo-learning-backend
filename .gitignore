@@ -25,6 +25,7 @@ yarn-error.log*
 
 # Generated seed SQL
 scripts/seed.sql
+exams/.fuo_convert_cache/
 
 # AI & Agent artifacts
 .agents/

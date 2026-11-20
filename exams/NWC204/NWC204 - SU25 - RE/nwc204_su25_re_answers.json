@@ -649,7 +649,7 @@
     "image_file": "Q9.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nKizspy | Question: 9\n(Choose 1 answer)\nWhich PDU is processed when a host computer is de-encapsulating a message at the transport layer of the TCP/IP model?\nA. Bits\nB. Frame\nC. Packet\nD. Segment",
+    "question_text_extracted": "Question: 9\n(Choose 1 answer)\nQuestion: 9\n(Choose 1 answer)\nWhich PDU is processed when a host computer is de-encapsulating a message at the transport layer of the TCP/IP model?\nA. Bits\nB. Frame\nC. Packet\nD. Segment",
     "key_points_and_rules": "Xác định PDU (Protocol Data Unit) tương ứng với tầng Transport trong mô hình TCP/IP khi thực hiện quá trình gỡ gói (de-encapsulation).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI] vì 'Bits' là PDU tương ứng ở tầng Physical (Vật lý).",
@@ -728,7 +728,7 @@
     "image_file": "Q10.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nKizspy | Question: 10\n(Choose 1 answer)\nWhich statement is correct about network protocols?\nA. Network protocols define the type of hardware that is used and how it is mounted in racks.\nB. They define how messages are exchanged between the source and the destination.\nC. They all function in the network access layer of TCP/IP.\nD. They are only required for exchange of messages between devices on remote networks.",
+    "question_text_extracted": "Question: 10\n(Choose 1 answer)\nQuestion: 10\n(Choose 1 answer)\nWhich statement is correct about network protocols?\nA. Network protocols define the type of hardware that is used and how it is mounted in racks.\nB. They define how messages are exchanged between the source and the destination.\nC. They all function in the network access layer of TCP/IP.\nD. They are only required for exchange of messages between devices on remote networks.",
     "key_points_and_rules": "Xác định định nghĩa và chức năng chính xác của các giao thức mạng (network protocols).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI] vì giao thức mạng là các quy tắc phần mềm/chuẩn giao tiếp, không quy định cách lắp đặt phần cứng lên tủ rack.",
@@ -799,7 +799,7 @@
     "image_file": "Q11.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nKizspy | Question: 11\n(Choose 1 answer)\nA web client is receiving a response for a web page from a web server. From the perspective of the client, what is the correct order of the protocol stack that is used to decode the received transmission?\nA. Ethernet, IP, TCP, HTTP\nB. HTTP, TCP, IP, Ethernet\nC. Ethernet, TCP, IP, HTTP\nD. HTTP, Ethernet, IP, TCP",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nQuestion: 11\n(Choose 1 answer)\nA web client is receiving a response for a web page from a web server. From the perspective of the client, what is the correct order of the protocol stack that is used to decode the received transmission?\nA. Ethernet, IP, TCP, HTTP\nB. HTTP, TCP, IP, Ethernet\nC. Ethernet, TCP, IP, HTTP\nD. HTTP, Ethernet, IP, TCP",
     "key_points_and_rules": "Xác định thứ tự giải mã (decode/de-encapsulation) gói tin từ dưới lên (từ tầng vật lý/liên kết dữ liệu lên tầng ứng dụng) theo mô hình OSI/TCP-IP từ phía người nhận (client).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Khi client nhận một gói tin truyền tải từ mạng, dữ liệu đi qua các tầng từ ngoài vào trong/từ dưới lên: trước tiên là tầng Data Link (Ethernet) để gỡ bỏ header frame, tiếp đến là tầng Network (IP) gỡ header IP, sau đó là tầng Transport (TCP) gỡ header segment, và cuối cùng là tầng Application (HTTP) để xử lý nội dung trang web. Do đó, thứ tự giải mã từ ngoài vào trong là Ethernet, IP, TCP, HTTP. Phương án này [ĐÚNG].",
@@ -870,7 +870,7 @@
     "image_file": "Q12.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nKizspy | Question: 12\n(Choose 1 answer)\nThis is a function of the OSI session layer.\nA. compress and/or decompress data\nB. provide an interface between applications\nC. format data for the application layer\nD. exchange of information to initiate dialog between peers",
+    "question_text_extracted": "Question: 12\n(Choose 1 answer)\nQuestion: 12\n(Choose 1 answer)\nThis is a function of the OSI session layer.\nA. compress and/or decompress data\nB. provide an interface between applications\nC. format data for the application layer\nD. exchange of information to initiate dialog between peers",
     "key_points_and_rules": "Xác định chức năng chính xác của tầng Phiên (Session Layer - Tầng 5) trong mô hình OSI.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Nén và giải nén dữ liệu (cùng với mã hóa và định dạng dữ liệu) là chức năng của tầng Trình bày (Presentation layer - Tầng 6). Phương án này [SAI].",
@@ -941,7 +941,7 @@
     "image_file": "Q13.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nKizspy | Question: 13\n(Choose 1 answer)\nWhich IPv6 address type is used for communication within a single network segment and cannot be routed?\nA. Global Unicast Address (GUA)\nB. Link-Local Address (LLA)\nC. Unique Local Address (ULA)\nD. Multicast Address",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nQuestion: 13\n(Choose 1 answer)\nWhich IPv6 address type is used for communication within a single network segment and cannot be routed?\nA. Global Unicast Address (GUA)\nB. Link-Local Address (LLA)\nC. Unique Local Address (ULA)\nD. Multicast Address",
     "key_points_and_rules": "Xác định loại địa chỉ IPv6 dùng để giao tiếp trong một phân đoạn mạng duy nhất (single network segment) và không thể bị định tuyến ra ngoài (cannot be routed).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Global Unicast Address (GUA) là địa chỉ IPv6 có thể định tuyến toàn cầu trên Internet, không bị giới hạn trong một phân đoạn mạng đơn lẻ. Do đó phương án này [SAI].",
@@ -1012,7 +1012,7 @@
     "image_file": "Q14.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nKizspy | Question: 14\n(Choose 1 answer)\nWhich field in an IPv6 GUA is used for subnetting?\nA. Prefix\nB. Network\nC. Global routing prefix\nD. Subnet ID\nE. Interface ID",
+    "question_text_extracted": "Question: 14\n(Choose 1 answer)\nQuestion: 14\n(Choose 1 answer)\nWhich field in an IPv6 GUA is used for subnetting?\nA. Prefix\nB. Network\nC. Global routing prefix\nD. Subnet ID\nE. Interface ID",
     "key_points_and_rules": "Xác định trường nào trong địa chỉ IPv6 Global Unicast Address (GUA) được sử dụng để chia mạng con (subnetting).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: 'Prefix' là thuật ngữ chung chỉ phần tiền tố mạng của địa chỉ IP, quá chung chung và không phải là tên trường chuẩn chuyên biệt cho việc subnetting trong GUA theo cấu trúc quy hoạch của IPv6. Do đó phương án này [SAI].",
@@ -1226,7 +1226,7 @@
     "image_file": "Q17.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 17\n(Choose 1 answer)\nKizspy | Question: 17\n(Choose 1 answer)\nWhich of the following techniques use native IPv6 connectivity?\nA. Dual stack\nB. Tunelling\nC. Translation\nD. All of the above",
+    "question_text_extracted": "Question: 17\n(Choose 1 answer)\nQuestion: 17\n(Choose 1 answer)\nWhich of the following techniques use native IPv6 connectivity?\nA. Dual stack\nB. Tunelling\nC. Translation\nD. All of the above",
     "key_points_and_rules": "Xác định công nghệ/kỹ thuật nào sử dụng kết nối IPv6 thuần (native IPv6 connectivity).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Dual stack (Ngăn xếp kép) cho phép các thiết bị hoặc router chạy đồng thời cả IPv4 và IPv6 trên cùng một giao diện mạng, trong đó lưu lượng IPv6 được truyền qua kết nối IPv6 bản địa (native IPv6) và IPv4 qua IPv4 bản địa. Do đó, dual stack sử dụng native IPv6 connectivity. [ĐÚNG]",
@@ -1289,7 +1289,7 @@
     "image_file": "Q18.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nKizspy | Question: 18\n(Choose 1 answer)\nWhat property of ARP causes cached IP-to-MAC mappings to remain in memory longer?\nA. Entries in an ARP table are time-stamped and are purged after the timeout expires.\nB. A static IP-to-MAC address entry can be entered manually into an ARP table.\nC. The type field 0x806 appears in the header of the Ethernet frame.\nD. The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.",
+    "question_text_extracted": "Question: 18\n(Choose 1 answer)\nQuestion: 18\n(Choose 1 answer)\nWhat property of ARP causes cached IP-to-MAC mappings to remain in memory longer?\nA. Entries in an ARP table are time-stamped and are purged after the timeout expires.\nB. A static IP-to-MAC address entry can be entered manually into an ARP table.\nC. The type field 0x806 appears in the header of the Ethernet frame.\nD. The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.",
     "key_points_and_rules": "Tìm đặc tính của ARP giúp cho các bản ghi ánh xạ IP sang MAC được lưu trữ trong bộ nhớ (cache) lâu hơn (hoặc quản lý thời gian tồn tại của bản ghi trong bảng ARP).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Các mục trong bảng ARP có gắn nhãn thời gian (time-stamped) và chỉ bị xóa (purge) sau khi hết thời gian timeout (thời gian sống mặc định của ARP cache, thường là vài phút). Việc sử dụng cơ chế aging/timeout và time-stamp giúp duy trì các bản ghi này trong bộ nhớ cho đến khi hết hạn. [ĐÚNG]",
@@ -1521,7 +1521,7 @@
     "image_file": "Q21.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & An toàn thông tin",
-    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nKizspy | Question: 21\n(Choose 1 answer)\nWhat is the aim of an ARP spoofing attack?\nA. to flood the network with ARP reply broadcasts\nB. to fill switch MAC address tables with bogus addresses\nC. to associate IP addresses to the wrong MAC address\nD. to overwhelm network hosts with ARP requests",
+    "question_text_extracted": "Question: 21\n(Choose 1 answer)\nQuestion: 21\n(Choose 1 answer)\nWhat is the aim of an ARP spoofing attack?\nA. to flood the network with ARP reply broadcasts\nB. to fill switch MAC address tables with bogus addresses\nC. to associate IP addresses to the wrong MAC address\nD. to overwhelm network hosts with ARP requests",
     "key_points_and_rules": "Xác định mục đích chính của cuộc tấn công giả mạo ARP (ARP Spoofing / ARP Poisoning).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI]. Việc flood mạng với các ARP reply broadcasts thuộc về các kỹ thuật tấn công dạng DoS/flood khác, không phải mục đích chính của ARP spoofing.",
@@ -1592,7 +1592,7 @@
     "image_file": "Q22.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính",
-    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nKizspy | Question: 22\n(Choose 1 answer)\nWhich of the following is the name for all computers connected to a network that participate in sending and receiving data directly in network communication?\nA. Servers\nB. Intermediary devices\nC. Hosts\nD. Media",
+    "question_text_extracted": "Question: 22\n(Choose 1 answer)\nQuestion: 22\n(Choose 1 answer)\nWhich of the following is the name for all computers connected to a network that participate in sending and receiving data directly in network communication?\nA. Servers\nB. Intermediary devices\nC. Hosts\nD. Media",
     "key_points_and_rules": "Xác định khái niệm chỉ các thiết bị/máy tính kết nối vào mạng tham gia trực tiếp vào việc gửi và nhận dữ liệu (End devices / Hosts).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI]. Servers là một loại thiết bị cuối chuyên cung cấp dịch vụ, không bao hàm tất cả các máy tính tham gia gửi/nhận dữ liệu nói chung.",
@@ -1964,7 +1964,7 @@
     "image_file": "Q27.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nKizspy | Question: 27\n\n(Choose 1 answer)\n\nA Layer 2 switch is used to switch incoming frames from a 1000BASE-T port to a port connected to a 100Base-T network. Which method of memory buffering would work best for this task?\nA. port-based buffering\nB. level 1 cache buffering\nC. shared memory buffering\nD. fixed configuration buffering",
+    "question_text_extracted": "Question: 27\n(Choose 1 answer)\nQuestion: 27\n\n(Choose 1 answer)\n\nA Layer 2 switch is used to switch incoming frames from a 1000BASE-T port to a port connected to a 100Base-T network. Which method of memory buffering would work best for this task?\nA. port-based buffering\nB. level 1 cache buffering\nC. shared memory buffering\nD. fixed configuration buffering",
     "key_points_and_rules": "Xác định phương pháp lưu trữ đệm (memory buffering) phù hợp nhất trên switch Layer 2 khi chuyển đổi tốc độ khung hình từ cổng tốc độ cao (1000BASE-T) sang cổng tốc độ thấp hơn (100Base-T).",
     "option_by_option_analysis": {
       "A": "Port-based buffering (Bộ đệm dựa trên cổng): Các khung được lưu trữ trong các hàng đợi liên kết với từng cổng riêng lẻ. Điều này có thể dẫn đến việc rớt gói tin không cần thiết nếu một cổng bị tắc nghẽn trong khi các bộ đệm cổng khác vẫn còn trống chỗ, đặc biệt không tối ưu khi chuyển đổi giữa các tốc độ cổng khác nhau.",
@@ -2035,7 +2035,7 @@
     "image_file": "Q28.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Kizspy | Question: 28\n\n(Choose 1 answer)\n\nRefer to the exhibit. What is the destination MAC address of the Ethernet frame as it leaves the web server if the final destination is PC1?",
+    "question_text_extracted": "Question: 28\n(Choose 1 answer)\nRefer to the exhibit. What is the destination MAC address of the Ethernet frame as it leaves the web server if the final destination is PC1?\nA. 00-60-2F-3A-07-AA\nB. 00-60-2F-3A-07-BB\nC. 00-60-2F-3A-07-CC\nD. 00-60-2F-3A-07-DD",
     "key_points_and_rules": "Xác định địa chỉ MAC đích của khung Ethernet khi nó rời khỏi web server để đi đến điểm đến cuối cùng là PC1 qua mô hình định tuyến mạng.",
     "option_by_option_analysis": {
       "A": "00-60-2F-3A-07-AA: Đây là địa chỉ MAC của PC1 (192.168.1.50), nhưng khi khung dữ liệu đi qua một bộ định tuyến (router) sang mạng khác, địa chỉ MAC đích của khung Ethernet tại mỗi hop qua router sẽ thay đổi thành địa chỉ MAC của cổng router tiếp theo, không giữ nguyên MAC của thiết bị đích cuối cùng.",
@@ -2391,7 +2391,7 @@
     "image_file": "Q33.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (Computer Networking)",
-    "question_text_extracted": "Question: 33\n(Choose 3 answers)\nKizspy | Question: 33\n(Choose 3 answers)\nA network administrator is measuring the transfer of bits across the company backbone for a mission critical financial application. The administrator notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)\nA. the amount of traffic that is currently crossing the network\nB. the sophisticated of the encapsulation method applied to the data\nC. the type of traffic that is crossing the network\nD. the latency that is created by the number of network devices that the data is crossing\nE. the bandwidth of the WAN connection to the Internet\nF. the reliability of the gigabit Ethernet infrastructure of the backbone",
+    "question_text_extracted": "Question: 33\n(Choose 3 answers)\nQuestion: 33\n(Choose 3 answers)\nA network administrator is measuring the transfer of bits across the company backbone for a mission critical financial application. The administrator notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)\nA. the amount of traffic that is currently crossing the network\nB. the sophisticated of the encapsulation method applied to the data\nC. the type of traffic that is crossing the network\nD. the latency that is created by the number of network devices that the data is crossing\nE. the bandwidth of the WAN connection to the Internet\nF. the reliability of the gigabit Ethernet infrastructure of the backbone",
     "key_points_and_rules": "Xác định 3 yếu tố ảnh hưởng đến sự chênh lệch giữa throughput (thông lượng) và bandwidth (băng thông) của mạng doanh nghiệp.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG]. Lượng lưu lượng hiện tại đang đi qua mạng ảnh hưởng trực tiếp đến băng thông khả dụng cho từng ứng dụng, làm giảm throughput thực tế.",
@@ -2464,7 +2464,7 @@
     "image_file": "Q34.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (Computer Networking)",
-    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nKizspy | Question: 34\n(Choose 1 answer)\nWhich of these is the name for the capacity of a medium to carry data?\nA. Bandwidth\nB. Throughput\nC. Goodput",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nQuestion: 34\n(Choose 1 answer)\nWhich of these is the name for the capacity of a medium to carry data?\nA. Bandwidth\nB. Throughput\nC. Goodput",
     "key_points_and_rules": "Định nghĩa về khái niệm dung lượng của một môi trường truyền dẫn để mang dữ liệu (capacity of a medium to carry data).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG]. Bandwidth (Băng thông) là khả năng tối đa hoặc dung lượng của một phương tiện truyền thông để truyền tải dữ liệu trong một khoảng thời gian nhất định.",
@@ -2532,23 +2532,28 @@
     "question_number": 35,
     "question_id": "Q35",
     "image_file": "Q35.webp",
-    "has_illustration": null,
-    "subject_domain": null,
-    "question_text_extracted": null,
-    "key_points_and_rules": null,
-    "option_by_option_analysis": null,
+    "has_illustration": false,
+    "subject_domain": "Quản trị mạng (Cisco IOS)",
+    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nMột kỹ thuật viên đang thiết lập router để hỗ trợ các phương thức truy cập quản trị khác nhau. Trong mỗi loại truy cập, người này cần sử dụng lệnh 'login'. Chế độ cấu hình (configuration mode) nào cần phải được truy cập để thực hiện lệnh này?\nA. user executive mode\nB. global configuration mode\nC. any line configuration mode\nD. privileged EXEC mode",
+    "key_points_and_rules": "Lệnh 'login' trong Cisco IOS được sử dụng để kích hoạt việc kiểm tra mật khẩu trên các đường truy cập (lines) như Console, VTY (Telnet/SSH), hoặc AUX.",
+    "option_by_option_analysis": {
+      "A": "User EXEC mode (Router>) chỉ dùng để kiểm tra trạng thái cơ bản, không thể thực hiện cấu hình.",
+      "B": "Global configuration mode (Router(config)#) dùng cho các cấu hình chung toàn hệ thống, lệnh 'login' không nằm trực tiếp ở mức này.",
+      "C": "Line configuration mode (Router(config-line)#) là chế độ cụ thể cho các cổng truy cập. Lệnh 'login' phải được nhập tại đây để yêu cầu xác thực khi kết nối qua line đó.",
+      "D": "Privileged EXEC mode (Router#) dùng để xem cấu hình và thực hiện các lệnh quản trị cấp cao, không dùng để nhập lệnh cấu hình 'login'."
+    },
     "question_type": "single_choice",
     "community_answer": "C",
-    "ai_answer": null,
-    "ai_explanation": "Không thể lấy phản hồi từ Google AI Studio. Chi tiết lỗi cuối: gemini-3.8-flash: Timeout sau 75s",
+    "ai_answer": "C",
+    "ai_explanation": "Để yêu cầu mật khẩu khi người dùng cố gắng truy cập vào router qua cổng Console hoặc qua mạng (VTY), kỹ thuật viên phải vào chế độ cấu hình đường truyền tương ứng (ví dụ: 'line console 0' hoặc 'line vty 0 4') và sau đó nhập lệnh 'login'. Do đó, 'any line configuration mode' là câu trả lời chính xác.",
     "comparison": {
-      "is_match": false,
-      "status": "NO_AI_ANSWER",
+      "is_match": true,
+      "status": "MATCH",
       "community_answer": "C",
-      "ai_answer": null,
-      "comparison_note": "Đáp án cộng đồng là C, nhưng AI chưa trích xuất được đáp án."
+      "ai_answer": "C",
+      "comparison_note": "Đáp án của AI (C) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (C). Đáp án C hoàn toàn phù hợp với cấu trúc phân cấp câu lệnh của Cisco IOS."
     },
-    "ai_model": null,
+    "ai_model": "gemini-3-flash-preview",
     "community_stats": {
       "question_choice_type_from_comments": "single_choice",
       "total_comments": 5,
@@ -2606,23 +2611,28 @@
     "question_number": 36,
     "question_id": "Q36",
     "image_file": "Q36.webp",
-    "has_illustration": null,
-    "subject_domain": null,
-    "question_text_extracted": null,
-    "key_points_and_rules": null,
-    "option_by_option_analysis": null,
+    "has_illustration": false,
+    "subject_domain": "Mạng máy tính (Computer Networking)",
+    "question_text_extracted": "Question: 36\n(Choose 1 answer)\nThe global configuration command ip default-gateway 172.16.100.1 is applied to a switch. What is the effect of this command?\nA. The switch will have a management interface with the address 172.16.100.1.\nB. The switch can be remotely managed from a host on another network.\nC. The switch can communicate with other hosts on the 172.16.100.0 network.\nD. The switch is limited to sending and receiving frames to and from the gateway 172.16.100.1.",
+    "key_points_and_rules": "Lệnh `ip default-gateway` trên switch Cisco dùng để cấu hình default gateway khi switch hoạt động ở Layer 2 (chưa bật định tuyến IP - routing). Lệnh này cho phép switch có thể được quản lý từ xa (Telnet, SSH, v.v.) bởi các thiết bị nằm ở một mạng khác (khác subnet) thông qua interface quản lý (SVI).",
+    "option_by_option_analysis": {
+      "A": "Sai. Địa chỉ IP của giao diện quản lý (SVI) được cấu hình bằng lệnh `ip address`, không phải lệnh `ip default-gateway`.",
+      "B": "Đúng. Lệnh `ip default-gateway` cung cấp cho switch tuyến đường để gửi các gói tin quản lý (traffic) ra ngoài mạng cục bộ đến các mạng khác, cho phép quản trị viên truy cập switch từ xa từ một subnet khác.",
+      "C": "Sai. Các thiết bị trên cùng mạng 172.16.100.0 có thể giao tiếp trực tiếp với switch ở Layer 2 mà không cần cấu hình default gateway.",
+      "D": "Sai. Switch không bị giới hạn chỉ gửi/nhận frame với gateway mà vẫn giao tiếp bình thường với các host khác trong cùng mạng hoặc qua gateway tới mạng khác."
+    },
     "question_type": "single_choice",
     "community_answer": "B",
-    "ai_answer": null,
-    "ai_explanation": "Không thể lấy phản hồi từ Google AI Studio. Chi tiết lỗi cuối: gemini-3.8-flash: Timeout sau 75s",
+    "ai_answer": "B",
+    "ai_explanation": "Trên các switch Cisco Layer 2 (ví dụ Cisco Catalyst), lệnh cấu hình toàn cục `ip default-gateway` được dùng để trỏ tới địa chỉ IP của router mặc định. Điều này cho phép switch gửi lưu lượng quản lý (như SSH, Telnet) ra ngoài mạng nội bộ của nó, giúp switch có thể được quản lý từ xa bởi các host nằm ở các network khác.",
     "comparison": {
-      "is_match": false,
-      "status": "NO_AI_ANSWER",
+      "is_match": true,
+      "status": "MATCH",
       "community_answer": "B",
-      "ai_answer": null,
-      "comparison_note": "Đáp án cộng đồng là B, nhưng AI chưa trích xuất được đáp án."
+      "ai_answer": "B",
+      "comparison_note": "Đáp án của AI (B) TRÙNG KHỚP hoàn toàn với đáp án cộng đồng (B). Đáp án hoàn toàn trùng khớp với kiến thức chuẩn về cấu hình quản lý switch Cisco Layer 2."
     },
-    "ai_model": null,
+    "ai_model": "gemini-3.5-flash-lite",
     "community_stats": {
       "question_choice_type_from_comments": "single_choice",
       "total_comments": 4,
@@ -2674,7 +2684,7 @@
     "image_file": "Q37.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 37\n(Choose 3 answers)\nKizspy | Question: 37\n(Choose 3 answers)\nWhich three commands are used to set up secure access to a router through a connection to the console interface? (Choose three.)\nA. interface fastethernet 0/0\nB. line vty 0 4\nC. line console 0\nD. enable secret cisco\nE. login\nF. password cisco",
+    "question_text_extracted": "Question: 37\n(Choose 3 answers)\nQuestion: 37\n(Choose 3 answers)\nWhich three commands are used to set up secure access to a router through a connection to the console interface? (Choose three.)\nA. interface fastethernet 0/0\nB. line vty 0 4\nC. line console 0\nD. enable secret cisco\nE. login\nF. password cisco",
     "key_points_and_rules": "Yêu cầu chọn 3 câu lệnh dùng để cấu hình bảo mật (đặt mật khẩu và yêu cầu đăng nhập) cho cổng console của router Cisco.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI] vì 'interface fastethernet 0/0' dùng để cấu hình cổng mạng vật lý chứ không phải cổng console.",
@@ -2747,7 +2757,7 @@
     "image_file": "Q38.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 38\n(Choose 2 answers)\nKizspy | Question: 38\n(Choose 2 answers)\nWhich two functions are primary functions of a router? (Choose two.)\nA. packet forwarding\nB. Microsegmentation\nC. domain name resolution\nD. path selection\nE. flow control",
+    "question_text_extracted": "Question: 38\n(Choose 2 answers)\nQuestion: 38\n(Choose 2 answers)\nWhich two functions are primary functions of a router? (Choose two.)\nA. packet forwarding\nB. Microsegmentation\nC. domain name resolution\nD. path selection\nE. flow control",
     "key_points_and_rules": "Yêu cầu chọn 2 chức năng chính (primary functions) của một bộ định tuyến (router) trong mạng máy tính.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [ĐÚNG] vì chuyển tiếp gói tin (packet forwarding) là một trong hai chức năng cốt lõi của router khi nhận gói tin ở cổng này và chuyển ra cổng phù hợp.",
@@ -2961,7 +2971,7 @@
     "image_file": "Q41.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nKizspy | Question: 41\n(Choose 1 answer)\nWhat is the loopback address used for in IPv4 networking?\nA. To route packets to a different network\nB. To test if the IP/TCP stack is functioning correctly\nC. To identify the default gateway\nD. To assign a dynamic IP address",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nQuestion: 41\n(Choose 1 answer)\nWhat is the loopback address used for in IPv4 networking?\nA. To route packets to a different network\nB. To test if the IP/TCP stack is functioning correctly\nC. To identify the default gateway\nD. To assign a dynamic IP address",
     "key_points_and_rules": "Xác định mục đích sử dụng của địa chỉ loopback trong mạng IPv4 (dải 127.0.0.0/8, phổ biến nhất là 127.0.0.1). Địa chỉ loopback dùng để kiểm tra cấu hình mạng nội bộ của thiết bị mà không cần gửi dữ liệu ra mạng vật lý bên ngoài.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI]. Việc định tuyến gói tin sang mạng khác thuộc chức năng của bộ định tuyến (router) và gateway, không phải địa chỉ loopback.",
@@ -3032,7 +3042,7 @@
     "image_file": "Q42.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nKizspy | Question: 42\n(Choose 1 answer)\nHow many usable IP addresses are available on the 192.168.1.0/27 network?\nA. 254\nB. 30\nC. 256\nD. 16\nE. 62\nF. 32",
+    "question_text_extracted": "Question: 42\n(Choose 1 answer)\nQuestion: 42\n(Choose 1 answer)\nHow many usable IP addresses are available on the 192.168.1.0/27 network?\nA. 254\nB. 30\nC. 256\nD. 16\nE. 62\nF. 32",
     "key_points_and_rules": "Tính toán số lượng địa chỉ IP khả dụng (usable IP addresses) cho host trong một dải mạng IPv4 với CIDR /27. Công thức tính số host khả dụng là 2^(32 - prefix) - 2.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI]. Số 254 là số host khả dụng của mạng /24.",
@@ -3105,7 +3115,7 @@
     "image_file": "Q43.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống",
-    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nKizspy | Question: 43\n(Choose 1 answer)\n\nWhich access method would be the most appropriate in-band access to the IOS over a network connection?\nA. Console\nB. Telnet/SSH\nC. Aux",
+    "question_text_extracted": "Question: 43\n(Choose 1 answer)\nQuestion: 43\n(Choose 1 answer)\n\nWhich access method would be the most appropriate in-band access to the IOS over a network connection?\nA. Console\nB. Telnet/SSH\nC. Aux",
     "key_points_and_rules": "Xác định phương thức quản trị in-band (trực tiếp qua kết nối mạng) đến Cisco IOS.",
     "option_by_option_analysis": {
       "A": "Console là phương thức quản trị out-of-band (ngoại băng), kết nối vật lý trực tiếp qua cổng console của thiết bị, không qua kết nối mạng. -> [SAI]",
@@ -3175,7 +3185,7 @@
     "image_file": "Q44.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống",
-    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nKizspy | Question: 44\n(Choose 1 answer)\n\nWhich command is used to secure access to privileged EXEC mode on a switch?\nA. enable class\nB. secret class\nC. enable secret cisco@12345\nD. service password-encryption",
+    "question_text_extracted": "Question: 44\n(Choose 1 answer)\nQuestion: 44\n(Choose 1 answer)\n\nWhich command is used to secure access to privileged EXEC mode on a switch?\nA. enable class\nB. secret class\nC. enable secret cisco@12345\nD. service password-encryption",
     "key_points_and_rules": "Xác định câu lệnh cấu hình mật khẩu bảo vệ chế độ privileged EXEC (enable secret) trên thiết bị Cisco IOS.",
     "option_by_option_analysis": {
       "A": "enable class: Thiếu từ khóa 'secret' hoặc 'password', cấu trúc lệnh không đúng cú pháp Cisco IOS để cấu hình mật khẩu enable. -> [SAI]",
@@ -3390,7 +3400,7 @@
     "image_file": "Q47.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nKizspy | Question: 47\n(Choose 1 answer)\nWhat will happen if the default gateway address is incorrectly configured on a host?\nA. The host cannot communicate with other hosts in the local network.\nB. The switch will not forward packets intended by the host.\nC. The host will have to use ARP to determine the correct address of the default gateway.\nD. The host cannot communicate with hosts in other networks.\nE. A ping from the host to 127.0.0.1 would not be successful.",
+    "question_text_extracted": "Question: 47\n(Choose 1 answer)\nQuestion: 47\n(Choose 1 answer)\nWhat will happen if the default gateway address is incorrectly configured on a host?\nA. The host cannot communicate with other hosts in the local network.\nB. The switch will not forward packets intended by the host.\nC. The host will have to use ARP to determine the correct address of the default gateway.\nD. The host cannot communicate with hosts in other networks.\nE. A ping from the host to 127.0.0.1 would not be successful.",
     "key_points_and_rules": "Hiểu rõ chức năng của Default Gateway (Cổng mặc định) trong kiến trúc mạng TCP/IP: Default Gateway chỉ được sử dụng khi host cần giao tiếp với các host ở ngoài mạng nội bộ (khác subnet/khác network). Giao tiếp trong cùng mạng nội bộ (local network) sử dụng ARP trực tiếp dựa trên địa chỉ MAC.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [SAI] Giao tiếp nội bộ (local network) sử dụng ARP để phân giải địa chỉ MAC và truyền dữ liệu trực tiếp trong cùng subnet, không thông qua Default Gateway.",
@@ -3462,7 +3472,7 @@
     "image_file": "Q48.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nKizspy | Question: 48\n(Choose 1 answer)\nWhy is NAT not needed in IPv6?\nA. Because IPv6 has integrated security, there is no need to hide the IPv6 addresses of internal networks.\nB. Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.\nC. The problems that are induced by NAT applications are solved because the IPv6 header improves packet handling by intermediate routers.\nD. The end-to-end connectivity problems that are caused by NAT are solved because the number of routes increases with the number of nodes that are connected to the Internet.",
+    "question_text_extracted": "Question: 48\n(Choose 1 answer)\nQuestion: 48\n(Choose 1 answer)\nWhy is NAT not needed in IPv6?\nA. Because IPv6 has integrated security, there is no need to hide the IPv6 addresses of internal networks.\nB. Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.\nC. The problems that are induced by NAT applications are solved because the IPv6 header improves packet handling by intermediate routers.\nD. The end-to-end connectivity problems that are caused by NAT are solved because the number of routes increases with the number of nodes that are connected to the Internet.",
     "key_points_and_rules": "Hiểu rõ nguyên nhân ra đời của NAT (Network Address Translation) ở IPv4 là do sự cạn kiệt không gian địa chỉ công cộng (public IPv4 addresses), và lý do IPv6 loại bỏ sự cần thiết của NAT nhờ không gian địa chỉ cực kỳ khổng lồ cho phép mọi thiết bị đều có địa chỉ IP công cộng toàn cục (global unicast address).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: [SAI] Bảo mật tích hợp (như IPsec trong thiết kế ban đầu của IPv6) liên quan đến tính bảo mật và mã hóa chứ không thay thế mục đích ban đầu của NAT là giải quyết vấn đề thiếu hụt địa chỉ.",
@@ -3533,7 +3543,7 @@
     "image_file": "Q49.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 49\n(Choose 2 answers)\nKizspy | Question: 49\n(Choose 2 answers)\nWhat are the two most commonly referenced fields in an IPv4 packet header that indicate where the packet is coming from and where it is going? (Choose two.)\nA. Destination IP address\nB. Protocol\nC. Time to live\nD. Differentiated Service (DS)\nE. Source IP address",
+    "question_text_extracted": "Question: 49\n(Choose 2 answers)\nQuestion: 49\n(Choose 2 answers)\nWhat are the two most commonly referenced fields in an IPv4 packet header that indicate where the packet is coming from and where it is going? (Choose two.)\nA. Destination IP address\nB. Protocol\nC. Time to live\nD. Differentiated Service (DS)\nE. Source IP address",
     "key_points_and_rules": "Xác định hai trường trong tiêu đề gói tin IPv4 biểu thị nguồn gốc (nơi gói tin xuất phát) và đích đến (nơi gói tin hướng tới).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Destination IP address (Địa chỉ IP đích) là trường lưu trữ địa chỉ IP của thiết bị nhận gói tin, cho biết gói tin đang đi đâu. [ĐÚNG]",
@@ -3603,7 +3613,7 @@
     "image_file": "Q50.webp",
     "has_illustration": false,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 50\n(Choose 2 answers)\nKizspy | Question: 50\n(Choose 2 answers)\nWhat are two potential network problems that can result from ARP operation? (Choose two.)\nA. Manually configuring static ARP associations could facilitate ARP poisoning or MAC address spoofing.\nB. On large networks with low bandwidth, multiple ARP broadcasts could cause data communication delays.\nC. Network attackers could manipulate MAC address and IP address mappings in ARP messages with the intent of intercepting network traffic.\nD. Large numbers of ARP request broadcasts could cause the host MAC address table to overflow and prevent the host from communicating on the network.\nE. Multiple ARP replies result in the switch MAC address table containing entries that match the MAC addresses of hosts that are connected to the relevant switch port.",
+    "question_text_extracted": "Question: 50\n(Choose 2 answers)\nQuestion: 50\n(Choose 2 answers)\nWhat are two potential network problems that can result from ARP operation? (Choose two.)\nA. Manually configuring static ARP associations could facilitate ARP poisoning or MAC address spoofing.\nB. On large networks with low bandwidth, multiple ARP broadcasts could cause data communication delays.\nC. Network attackers could manipulate MAC address and IP address mappings in ARP messages with the intent of intercepting network traffic.\nD. Large numbers of ARP request broadcasts could cause the host MAC address table to overflow and prevent the host from communicating on the network.\nE. Multiple ARP replies result in the switch MAC address table containing entries that match the MAC addresses of hosts that are connected to the relevant switch port.",
     "key_points_and_rules": "Xác định hai vấn đề mạng tiềm ẩn phát sinh từ hoạt động của giao thức ARP (Address Resolution Protocol).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Cấu hình tĩnh (static ARP associations) giúp bảo mật hơn và thường ngăn chặn ARP poisoning chứ không phải là nguyên nhân tạo ra nó. [SAI]",

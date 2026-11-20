@@ -625,7 +625,7 @@
     "image_file": "Q13.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Giao thức IPv6",
-    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nMatch the IPv6 address with the IPv6 address type. (Not all options are used.)\nA. link-local\nB. solicited node multicast\nC. global unicast\nD. all node multicast\nE. loopback\nF. unique local\n\nTable items:\n1. 2001:DB8::BAF:3F57:FE94\n2. FF02::1\n3. ::1\n4. FF02::1:FFAE:F85F\n\nA. C1-D2-E3-B4\nB. C2-D1-E3-A4\nC. C1-F2-E4-B3\nD. C4-D2-E3-B1",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nMatch the IPv6 address with the IPv6 address type. (Not all options are used.)\nA. C1-D2-E3-B4\nB. C2-D1-E3-A4\nC. C1-F2-E4-B3\nD. C4-D2-E3-B1",
     "key_points_and_rules": "Phân loại các địa chỉ IPv6 dựa trên tiền tố (prefix) và định dạng: \n- 2001:DB8::/32 là Global Unicast Address (C).\n- FF02::1 là All-nodes multicast address (D).\n- ::1 là Loopback address (E).\n- FF02::1:FFxx:xxxx là Solicited-node multicast address (B).",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: \n- 1. 2001:DB8::BAF:3F57:FE94 thuộc loại Global Unicast (C).\n- 2. FF02::1 thuộc loại All-node multicast (D).\n- 3. ::1 thuộc loại Loopback (E).\n- 4. FF02::1:FFAE:F85F thuộc loại Solicited node multicast (B).\nKhớp với ánh xạ: C1-D2-E3-B4. Do đó phương án A [ĐÚNG].",
@@ -1767,7 +1767,7 @@
     "image_file": "Q34.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nMatch the command with the device mode at which the command is entered. (Not all options are used.)\nA. login\nB. service password-encryption\nC. ip address 192.168.4.4 255.255.255.0\nD. copy running-config startup-config\nE. enable\n\n1. R1(config)#\n2. R1>\n3. R1(config-router)#\n4. R1#\n5. R1(config-line)#\n6. R1(config-if)#\n\nA. A5-B1-C6-D4-E2\nB. A1-B5-C6-D4-E2\nC. A5-B1-C4-D6-E2\nD. A5-B1-C6-D2-E4",
+    "question_text_extracted": "Question: 34\n(Choose 1 answer)\nMatch the command with the device mode at which the command is entered. (Not all options are used.)\nA. A5-B1-C6-D4-E2\nB. A1-B5-C6-D4-E2\nC. A5-B1-C4-D6-E2\nD. A5-B1-C6-D2-E4",
     "key_points_and_rules": "Ghép lệnh với chế độ cấu hình tương ứng trong Cisco IOS: A (login) -> Line mode (5); B (service password-encryption) -> Global config mode (1); C (ip address...) -> Interface mode (6); D (copy...) -> Privileged EXEC mode (4); E (enable) -> User EXEC mode (2).",
     "option_by_option_analysis": {
       "A": "A5 (login ở line mode), B1 (service password-encryption ở global config), C6 (ip address ở interface mode), D4 (copy ở privileged EXEC), E2 (enable ở user mode). Tất cả đều khớp với logic cấu hình Cisco IOS.",

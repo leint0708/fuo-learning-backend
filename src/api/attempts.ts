@@ -4,6 +4,7 @@ import { createDb } from "../db";
 import { SubmitAnswerRequestSchema, StartAttemptRequestSchema } from "../schemas/attempts";
 import {
   startAttempt,
+  startCustomSubjectAttempt,
   getAttemptSession,
   saveAnswer,
   submitAttempt
@@ -32,6 +33,25 @@ examAttemptsRouter.post("/:exam_id/attempts", async (c) => {
   const db = createDb(c.env.DB);
 
   const session = await startAttempt(db, user.sub, examId, options);
+  return c.json(session, 201);
+});
+
+// Start a custom attempt across a subject's question bank: POST /api/v1/subjects/:code/attempts
+export const subjectAttemptsRouter = new Hono<AuthContext>();
+subjectAttemptsRouter.use("/:code/attempts", authGuard);
+subjectAttemptsRouter.post("/:code/attempts", async (c) => {
+  const user = c.get("user");
+  const subjectCode = c.req.param("code");
+  let options = undefined;
+  try {
+    const rawBody = await c.req.json();
+    options = StartAttemptRequestSchema.parse(rawBody);
+  } catch {
+    // No body or invalid json - defaults to full subject bank timed attempt
+  }
+  const db = createDb(c.env.DB);
+
+  const session = await startCustomSubjectAttempt(db, user.sub, subjectCode, options);
   return c.json(session, 201);
 });
 

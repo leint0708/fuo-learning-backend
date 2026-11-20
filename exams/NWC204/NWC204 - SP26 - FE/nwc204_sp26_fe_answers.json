@@ -1993,7 +1993,7 @@
     "image_file": "NWC204_SP26_FE (32).webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ thống (Network Media & Architecture)",
-    "question_text_extracted": "Question: 32\n(Choose 1 answer)\nMatch the situation with the appropriate use of network media.\n1. backbone cabling in an enterprise -> A. Copper Cables\n2. guest access in a coffee shop -> B. Fiber Optic\n3. horizontal cabling structure -> C. Wireless\n4. waiting rooms in a hospital\n5. desktop PCs in an enterprise office\n6. long-haul networks\nA. 3A-5A-1B-6B-2C-4C\nB. 3A-5A-2B-4B-1C-6C\nC. 1A-6A-3B-5B-2C-4C\nD. 1A-6A-2B-4B-3C-5C",
+    "question_text_extracted": "Question: 32\n(Choose 1 answer)\nMatch the situation with the appropriate use of network media.\nA. 3A-5A-1B-6B-2C-4C\nB. 3A-5A-2B-4B-1C-6C\nC. 1A-6A-3B-5B-2C-4C\nD. 1A-6A-2B-4B-3C-5C",
     "key_points_and_rules": "Ghép nối đúng các tình huống sử dụng thực tế với loại phương tiện mạng tương ứng (Copper Cables - Cáp đồng, Fiber Optic - Cáp quang, Wireless - Không dây).",
     "option_by_option_analysis": {
       "1": "backbone cabling in an enterprise: Cáp trục chính trong doanh nghiệp yêu cầu băng thông rất cao và khoảng cách dài -> B. Fiber Optic (1B).",
@@ -2188,7 +2188,7 @@
     "image_file": "NWC204_SP26_FE (35).webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ thống (NWC204)",
-    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nMatch the commands to the correct actions. (Not all options are used.)\n\nA. provides security on the console\nB. displays a message when the router is accessed\nC. configures a name on the router\n\n1. Router(config)# hostname CL1\n2. Router(config)# enable password Cisco\n3. Router(config-line)# password class\n4. Router(config)# password Cisco\n5. Router(config)# banner motd #\nA. A3-B5-C1\nB. A2-B3-C4\nC. A1-B2-C3\nD. A4-B1-C5",
+    "question_text_extracted": "Question: 35\n(Choose 1 answer)\nMatch the commands to the correct actions. (Not all options are used.)\nA. A3-B5-C1\nB. A2-B3-C4\nC. A1-B2-C3\nD. A4-B1-C5",
     "key_points_and_rules": "Khớp các cấu hình Cisco IOS với chức năng tương ứng:\n- Cấu hình đặt tên router: `hostname CL1`\n- Cấu hình thông điệp khi truy cập (banner): `banner motd #`\n- Cấu hình bảo mật đường truyền console/vty: `password class` tại chế độ `config-line`.",
     "option_by_option_analysis": {
       "A": "Phân tích A3-B5-C1: A khớp với 3 (cấu hình mật khẩu line console cung cấp tính bảo mật cho console), B khớp với 5 (banner motd hiển thị thông điệp khi truy cập), C khớp với 1 (hostname đặt tên router). Đây là các cặp ghép đôi chính xác.",

@@ -634,7 +634,7 @@
     "image_file": "Q8.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nRecall some rules of inference\nModus ponens: p ∧ (p → q) → q\nModus tollens: ¬q ∧ (p → q) → ¬p\nHypothetical syllogism: (p → q) ∧ (q → r) → (p → r)\nDisjunctive syllogism: [(p ∨ q) ∧ ¬p] → q\nDetermine the rule used in the argument:\n“If I wake up early then I will read a book. I woke up early today. Therefore I will read a book.”\nA. Modus ponens\nB. Modus tollens\nC. Hypothetical syllogism\nD. Disjunctive syllogism\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 8\n(Choose 1 answer)\nDetermine the rule used in the argument:\n“If I wake up early then I will read a book. I woke up early today. Therefore I will read a book.”\nA. Modus ponens\nB. Modus tollens\nC. Hypothetical syllogism\nD. Disjunctive syllogism\nE. None of the other choices is correct",
     "key_points_and_rules": "Quy tắc suy luận Modus Ponens (Khẳng định giả thiết):\n- Đặt $p$: \"I wake up early\" (Tôi thức dậy sớm).\n- Đặt $q$: \"I will read a book\" (Tôi sẽ đọc sách).\n- Tiền đề 1: $p \\rightarrow q$ (\"If I wake up early then I will read a book\").\n- Tiền đề 2: $p$ (\"I woke up early today\").\n- Kết luận: $q$ (\"Therefore I will read a book\").\n- Dạng suy luận: $(p \\rightarrow q) \\land p \\Rightarrow q$, đây chính là quy tắc Modus Ponens.",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Quy tắc Modus Ponens có dạng $[p \\land (p \\rightarrow q)] \\rightarrow q$, phù hợp chính xác với lập luận đã cho.",
@@ -1581,7 +1581,7 @@
     "image_file": "Q19.webp",
     "has_illustration": false,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nLet {x_n} be a sequence of pseudorandom numbers such that\nx_{n+1} = (3x_n + 4) mod 16 for n > 0\nSuppose x_3 = 9. Find x_2 and x_4.\nA. 7 and 1\nB. 6 and 15\nC. 3 and 15\nD. 7 and 15\nE. None of the other choices is correct",
+    "question_text_extracted": "Question: 19\n(Choose 1 answer)\nLet {x_n} be a sequence of pseudorandom numbers such that\nxₙ₊₁ = (3x_n + 4) mod 16 for n > 0\nSuppose x_3 = 9. Find x_2 and x_4.\nA. 7 and 1\nB. 6 and 15\nC. 3 and 15\nD. 7 and 15\nE. None of the other choices is correct",
     "key_points_and_rules": "Phương trình sinh số giả ngẫu nhiên: x_{n+1} = (3x_n + 4) mod 16.\n- Tính x_4: x_4 = (3x_3 + 4) mod 16.\n- Tính x_2: Giải phương trình đồng dư 3x_2 + 4 ≡ x_3 (mod 16).",
     "option_by_option_analysis": {
       "A": "SAI. x_2 = 7 đúng nhưng x_4 = 15 chứ không phải 1.",
@@ -3025,7 +3025,7 @@
     "image_file": "Q37.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic (Graph Theory)",
-    "question_text_extracted": "Question: 37\n\n(Choose 1 answer)\n\n(See picture)\n\nA. Both (i) and (ii)\nB. Only (i)\nC. Only (ii)\nD. None of (i) or (ii)",
+    "question_text_extracted": "Question: 37\n(Choose 1 answer)\nGiven two undirected simple graphs G and H with adjacency matrices shown in the figure below.\n(i) G and H are not isomorphic because they have different adjacency matrices\n(ii) f: {a,b,c,d} → {x,y,z,t} with f(a)=y, f(b)=x, f(c)=z, f(d)=t is an isomorphism\nA. Both (i) and (ii)\nB. Only (i)\nC. Only (ii)\nD. None of (i) or (ii)",
     "key_points_and_rules": "Kiểm tra tính đồng cấu (isomorphism) giữa hai đồ thị vô hướng đơn G và H dựa vào ma trận kề và ánh xạ giữa các đỉnh.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Cả (i) và (ii) đều đúng. Tuy nhiên, mệnh đề (i) khẳng định G và H không đồng cấu vì có ma trận kề khác nhau là SAI vì hai đồ thị đồng cấu vẫn có thể có ma trận kề khác nhau tùy thuộc vào cách gán nhãn đỉnh.",
@@ -3193,7 +3193,7 @@
     "image_file": "Q39.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nLet G be an undirected graph of three vertices A, B, C with the adjacency matrix\n[1 3 0]\n[3 0 1]\n[0 1 2]\nHow many paths of length 3 from A to C are there in G?\nA. 10\nB. 3\nC. 19\nD. 9",
+    "question_text_extracted": "Question: 39\n(Choose 1 answer)\nLet G be an undirected graph of three vertices A, B, C with the adjacency matrix\nHow many paths of length 3 from A to C are there in G?\nA. 10\nB. 3\nC. 19\nD. 9",
     "key_points_and_rules": "Số đường đi có độ dài $k$ giữa đỉnh thứ $i$ và đỉnh thứ $j$ trong đồ thị bằng phần tử ở hàng $i$, cột $j$ của ma trận kề lũy thừa $k$ ($M^k$).",
     "option_by_option_analysis": {
       "A": "Phân tích: 10 là giá trị của phần tử $(M^2)_{1,1}$, không phải phần tử $(M^3)_{1,3}$. Vậy A SAI.",
@@ -3937,7 +3937,7 @@
     "image_file": "Q49.webp",
     "has_illustration": true,
     "subject_domain": "Toán học & Logic",
-    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nFind a spanning tree for K_{1,6}.\n\n(i)\n[Illustration]\n(ii)\n[Illustration]\n(iii)\n[Illustration]\nA. (i)\nB. (ii)\nC. None of the choices is correct\nD. (iii)",
+    "question_text_extracted": "Question: 49\n(Choose 1 answer)\nA. (i)\nB. (ii)\nC. None of the choices is correct\nD. (iii)",
     "key_points_and_rules": "Đồ thị lưỡng dụng đầy đủ $K_{1,6}$ (hay còn gọi là đồ thị hình sao $S_6$) có 7 đỉnh (1 đỉnh trung tâm và 6 đỉnh lá) và 6 cạnh. Cây bao phủ (spanning tree) của $K_{1,6}$ phải chứa tất cả 7 đỉnh và là một đồ thị con không có chu trình của $K_{1,6}$. Do bản thân $K_{1,6}$ là một cây có 7 đỉnh và 6 cạnh, nên cây bao phủ duy nhất của nó chính là bản thân $K_{1,6}$.",
     "option_by_option_analysis": {
       "A": "Hình (i) có 8 đỉnh (4 đỉnh hàng trên, 4 đỉnh hàng dưới), trong khi $K_{1,6}$ chỉ có 7 đỉnh. Do đó (i) không phải là cây bao phủ của $K_{1,6}$. [SAI]",

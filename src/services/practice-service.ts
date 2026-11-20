@@ -17,7 +17,12 @@ import type {
 import type {
   PracticeSessionResponse,
   PracticeCard,
-  SubmitPracticeAnswerResponse
+  SubmitPracticeAnswerResponse,
+  SubjectPracticeProgressResponse,
+  SyncPracticeProgressRequest,
+  PracticeProgressSummaryItem,
+  CardMasteryStat,
+  CramActiveBatch
 } from "../schemas/practice";
 import { normalizeAnswer, gradeQuestion } from "./grading-service";
 
@@ -157,11 +162,12 @@ export async function upsertCardMastery(
   return newRecord;
 }
 
-// Database helper: Reset mastery records for a subject
+// Database helper: Reset mastery records for a subject (optionally scoped to cram or learn)
 export async function resetSubjectMastery(
   db: Database,
   userId: string,
-  subjectCode: string
+  subjectCode: string,
+  mode?: "cram" | "learn"
 ): Promise<{ message: string }> {
   const subject = await db
     .select()
@@ -173,29 +179,495 @@ export async function resetSubjectMastery(
     throw new HTTPException(404, { message: `Subject '${subjectCode}' not found` });
   }
 
-  // Delete all user card mastery records for this subject
-  await db
-    .delete(user_card_mastery)
+  const nowIso = new Date().toISOString();
+
+  if (mode === "cram") {
+    await db
+      .update(user_card_mastery)
+      .set({
+        cram_mastered: false,
+        updated_at: nowIso
+      })
+      .where(
+        and(
+          eq(user_card_mastery.user_id, userId),
+          eq(user_card_mastery.subject_id, subject.id)
+        )
+      );
+
+    await db
+      .update(practice_sessions)
+      .set({ status: "abandoned" })
+      .where(
+        and(
+          eq(practice_sessions.user_id, userId),
+          eq(practice_sessions.subject_id, subject.id),
+          eq(practice_sessions.mode, "cram"),
+          eq(practice_sessions.status, "in_progress")
+        )
+      );
+  } else if (mode === "learn") {
+    await db
+      .update(user_card_mastery)
+      .set({
+        learn_state: "not_yet_learned",
+        consecutive_correct: 0,
+        wrong_attempts: 0,
+        total_attempts: 0,
+        updated_at: nowIso
+      })
+      .where(
+        and(
+          eq(user_card_mastery.user_id, userId),
+          eq(user_card_mastery.subject_id, subject.id)
+        )
+      );
+
+    await db
+      .update(practice_sessions)
+      .set({ status: "abandoned" })
+      .where(
+        and(
+          eq(practice_sessions.user_id, userId),
+          eq(practice_sessions.subject_id, subject.id),
+          eq(practice_sessions.mode, "learn"),
+          eq(practice_sessions.status, "in_progress")
+        )
+      );
+  } else {
+    // Delete all user card mastery records for this subject
+    await db
+      .delete(user_card_mastery)
+      .where(
+        and(
+          eq(user_card_mastery.user_id, userId),
+          eq(user_card_mastery.subject_id, subject.id)
+        )
+      );
+
+    // Mark any active practice sessions as abandoned
+    await db
+      .update(practice_sessions)
+      .set({ status: "abandoned" })
+      .where(
+        and(
+          eq(practice_sessions.user_id, userId),
+          eq(practice_sessions.subject_id, subject.id),
+          eq(practice_sessions.status, "in_progress")
+        )
+      );
+  }
+
+  return { message: `Practice progress for subject ${subjectCode} has been reset.` };
+}
+
+export async function getUserPracticeProgressSummary(
+  db: Database,
+  userId: string
+): Promise<PracticeProgressSummaryItem[]> {
+  const rows = await db
+    .select({
+      subject_code: subjects.code,
+      cram_mastered: user_card_mastery.cram_mastered,
+      learn_state: user_card_mastery.learn_state
+    })
+    .from(user_card_mastery)
+    .innerJoin(subjects, eq(user_card_mastery.subject_id, subjects.id))
+    .where(eq(user_card_mastery.user_id, userId))
+    .all();
+
+  const bySubject = new Map<string, { cram_count: number; learn_count: number }>();
+  for (const row of rows) {
+    const entry = bySubject.get(row.subject_code) ?? { cram_count: 0, learn_count: 0 };
+    if (row.cram_mastered) {
+      entry.cram_count += 1;
+    }
+    if (row.learn_state === "learned") {
+      entry.learn_count += 1;
+    }
+    bySubject.set(row.subject_code, entry);
+  }
+
+  return Array.from(bySubject.entries()).map(([subject_code, counts]) => ({
+    subject_code,
+    cram_count: counts.cram_count,
+    learn_count: counts.learn_count
+  }));
+}
+
+function extractCramActiveBatchFromSession(sessionRow: any): CramActiveBatch | null {
+  if (!sessionRow) return null;
+  let sessionData: any = null;
+  try {
+    sessionData =
+      typeof sessionRow.session_data === "string"
+        ? JSON.parse(sessionRow.session_data)
+        : sessionRow.session_data;
+  } catch {
+    return null;
+  }
+  if (!sessionData || sessionData.mode !== "cram") return null;
+
+  const activeQueueIds: string[] = Array.isArray(sessionData.active_queue)
+    ? sessionData.active_queue.filter((id: unknown): id is string => typeof id === "string" && id.length > 0)
+    : [];
+  const masteredInBatchIds: string[] = Array.isArray(sessionData.mastered_in_batch)
+    ? sessionData.mastered_in_batch.filter((id: unknown): id is string => typeof id === "string" && id.length > 0)
+    : [];
+  const batchQuestionIds: string[] = Array.isArray(sessionData.batch_question_ids)
+    ? sessionData.batch_question_ids.filter((id: unknown): id is string => typeof id === "string" && id.length > 0)
+    : Array.from(new Set([...masteredInBatchIds, ...activeQueueIds]));
+
+  if (batchQuestionIds.length === 0 || activeQueueIds.length === 0) {
+    return null;
+  }
+
+  return {
+    scope: sessionData.scope === "mistakes" ? "mistakes" : "deck",
+    scoped_question_ids: Array.isArray(sessionData.scoped_question_ids)
+      ? sessionData.scoped_question_ids.filter((id: unknown): id is string => typeof id === "string" && id.length > 0)
+      : undefined,
+    batch_question_ids: batchQuestionIds,
+    active_queue_ids: activeQueueIds,
+    queue_pointer: Math.max(0, Math.min(Number(sessionData.current_pointer) || 0, activeQueueIds.length - 1)),
+    mastered_in_batch_ids: masteredInBatchIds,
+    missed_ids: Array.isArray(sessionData.missed_ids)
+      ? sessionData.missed_ids.filter((id: unknown): id is string => typeof id === "string" && id.length > 0)
+      : [],
+    updated_at:
+      typeof sessionData.updated_at === "string" && sessionData.updated_at
+        ? sessionData.updated_at
+        : String(sessionRow.started_at || new Date().toISOString())
+  };
+}
+
+export async function getSubjectPracticeProgress(
+  db: Database,
+  userId: string,
+  subjectCode: string
+): Promise<SubjectPracticeProgressResponse> {
+  const subject = await db
+    .select()
+    .from(subjects)
+    .where(eq(subjects.code, subjectCode.toUpperCase()))
+    .get();
+
+  if (!subject) {
+    throw new HTTPException(404, { message: `Subject '${subjectCode}' not found` });
+  }
+
+  const rows = await db
+    .select()
+    .from(user_card_mastery)
     .where(
       and(
         eq(user_card_mastery.user_id, userId),
         eq(user_card_mastery.subject_id, subject.id)
       )
-    );
+    )
+    .all();
 
-  // Mark any active practice sessions as abandoned
-  await db
-    .update(practice_sessions)
-    .set({ status: "abandoned" })
+  const cramMasteredIds: string[] = [];
+  const learnMasteredIds: string[] = [];
+  const cardStats: Record<string, CardMasteryStat> = {};
+
+  for (const row of rows) {
+    if (row.cram_mastered) {
+      cramMasteredIds.push(row.question_id);
+    }
+    if (row.learn_state === "learned") {
+      learnMasteredIds.push(row.question_id);
+    }
+    if (row.learn_state === "learned" || row.learn_state === "learning" || row.total_attempts > 0) {
+      cardStats[row.question_id] = {
+        question_id: row.question_id,
+        consecutive_correct: row.consecutive_correct,
+        wrong_attempts: row.wrong_attempts,
+        total_attempts: row.total_attempts,
+        status: row.learn_state === "learned" ? "learned" : "learning",
+        last_answered_at: row.updated_at
+      };
+    }
+  }
+
+  const activeCramSession = await db
+    .select()
+    .from(practice_sessions)
     .where(
       and(
         eq(practice_sessions.user_id, userId),
         eq(practice_sessions.subject_id, subject.id),
+        eq(practice_sessions.mode, "cram"),
         eq(practice_sessions.status, "in_progress")
       )
+    )
+    .get();
+
+  const cramActiveBatch = extractCramActiveBatchFromSession(activeCramSession);
+
+  return {
+    subject_code: subject.code,
+    cram_mastered_ids: cramMasteredIds,
+    learn_mastered_ids: learnMasteredIds,
+    card_stats: cardStats,
+    cram_active_batch: cramActiveBatch
+  };
+}
+
+export async function syncSubjectPracticeProgress(
+  db: Database,
+  userId: string,
+  subjectCode: string,
+  payload: SyncPracticeProgressRequest
+): Promise<SubjectPracticeProgressResponse> {
+  const subject = await db
+    .select()
+    .from(subjects)
+    .where(eq(subjects.code, subjectCode.toUpperCase()))
+    .get();
+
+  if (!subject) {
+    throw new HTTPException(404, { message: `Subject '${subjectCode}' not found` });
+  }
+
+  const validQuestions = await db
+    .select({ id: questions.id })
+    .from(questions)
+    .where(eq(questions.subject_id, subject.id))
+    .all();
+  const validQuestionSet = new Set(validQuestions.map((q) => q.id));
+
+  const existingRows = await db
+    .select()
+    .from(user_card_mastery)
+    .where(
+      and(
+        eq(user_card_mastery.user_id, userId),
+        eq(user_card_mastery.subject_id, subject.id)
+      )
+    )
+    .all();
+  const existingByQuestion = new Map(existingRows.map((r) => [r.question_id, r]));
+
+  const incomingCramSet = new Set(
+    (payload.cram_mastered_ids ?? []).filter((id) => validQuestionSet.has(id))
+  );
+  const incomingLearnSet = new Set(
+    (payload.learn_mastered_ids ?? []).filter((id) => validQuestionSet.has(id))
+  );
+  const incomingStatsMap = payload.card_stats ?? {};
+
+  const touchedQuestionIds = new Set<string>([
+    ...incomingCramSet,
+    ...incomingLearnSet,
+    ...Object.keys(incomingStatsMap).filter((id) => validQuestionSet.has(id))
+  ]);
+
+  const nowIso = new Date().toISOString();
+  const toInsert: Array<typeof user_card_mastery.$inferInsert> = [];
+  const toUpdate: Array<{
+    id: string;
+    cram_mastered: boolean;
+    learn_state: "not_yet_learned" | "learning" | "learned";
+    consecutive_correct: number;
+    wrong_attempts: number;
+    total_attempts: number;
+    updated_at: string;
+  }> = [];
+
+  for (const questionId of touchedQuestionIds) {
+    const existing = existingByQuestion.get(questionId);
+    const incomingStat = incomingStatsMap[questionId];
+
+    const mergedCram = Boolean(existing?.cram_mastered) || incomingCramSet.has(questionId);
+    const isLearned =
+      existing?.learn_state === "learned" ||
+      incomingLearnSet.has(questionId) ||
+      incomingStat?.status === "learned";
+    const isLearning =
+      !isLearned && (existing?.learn_state === "learning" || incomingStat?.status === "learning");
+    const mergedLearnState: "not_yet_learned" | "learning" | "learned" = isLearned
+      ? "learned"
+      : isLearning
+        ? "learning"
+        : "not_yet_learned";
+
+    const mergedWrong = Math.max(existing?.wrong_attempts ?? 0, incomingStat?.wrong_attempts ?? 0);
+    const mergedTotal = Math.max(
+      existing?.total_attempts ?? 0,
+      incomingStat?.total_attempts ?? 0,
+      mergedLearnState === "learned" ? 1 : 0
     );
 
-  return { message: `Practice progress for subject ${subjectCode} has been reset.` };
+    let mergedConsecutive = existing?.consecutive_correct ?? 0;
+    if (mergedLearnState === "learned") {
+      mergedConsecutive = Math.max(
+        mergedConsecutive,
+        incomingStat?.consecutive_correct ?? 0,
+        mergedWrong > 0 ? 2 : 1
+      );
+    } else if (incomingStat && (incomingStat.total_attempts ?? 0) >= (existing?.total_attempts ?? 0)) {
+      mergedConsecutive = incomingStat.consecutive_correct ?? mergedConsecutive;
+    }
+
+    const updatedAt = incomingStat?.last_answered_at || nowIso;
+
+    if (!existing) {
+      toInsert.push({
+        id: crypto.randomUUID(),
+        user_id: userId,
+        subject_id: subject.id,
+        question_id: questionId,
+        cram_mastered: mergedCram,
+        learn_state: mergedLearnState,
+        consecutive_correct: mergedConsecutive,
+        wrong_attempts: mergedWrong,
+        total_attempts: mergedTotal,
+        updated_at: updatedAt
+      });
+    } else {
+      const changed =
+        Boolean(existing.cram_mastered) !== mergedCram ||
+        existing.learn_state !== mergedLearnState ||
+        existing.consecutive_correct !== mergedConsecutive ||
+        existing.wrong_attempts !== mergedWrong ||
+        existing.total_attempts !== mergedTotal;
+
+      if (changed) {
+        toUpdate.push({
+          id: existing.id,
+          cram_mastered: mergedCram,
+          learn_state: mergedLearnState,
+          consecutive_correct: mergedConsecutive,
+          wrong_attempts: mergedWrong,
+          total_attempts: mergedTotal,
+          updated_at: nowIso
+        });
+      }
+    }
+  }
+
+  // Chunk multi-row inserts (9 columns per row -> 10 rows = 90 bind params, safe for D1/SQLite)
+  for (let i = 0; i < toInsert.length; i += 10) {
+    const chunk = toInsert.slice(i, i + 10);
+    await db.insert(user_card_mastery).values(chunk);
+  }
+
+  for (const row of toUpdate) {
+    await db
+      .update(user_card_mastery)
+      .set({
+        cram_mastered: row.cram_mastered,
+        learn_state: row.learn_state,
+        consecutive_correct: row.consecutive_correct,
+        wrong_attempts: row.wrong_attempts,
+        total_attempts: row.total_attempts,
+        updated_at: row.updated_at
+      })
+      .where(eq(user_card_mastery.id, row.id));
+  }
+
+  if (payload.cram_active_batch === null) {
+    await db
+      .update(practice_sessions)
+      .set({ status: "abandoned" })
+      .where(
+        and(
+          eq(practice_sessions.user_id, userId),
+          eq(practice_sessions.subject_id, subject.id),
+          eq(practice_sessions.mode, "cram"),
+          eq(practice_sessions.status, "in_progress")
+        )
+      );
+  } else if (payload.cram_active_batch) {
+    const incomingBatch = payload.cram_active_batch;
+    const batchQuestionIds = incomingBatch.batch_question_ids.filter((id) => validQuestionSet.has(id));
+    const masteredInBatchIds = incomingBatch.mastered_in_batch_ids.filter((id) =>
+      validQuestionSet.has(id)
+    );
+    const activeQueueIds = incomingBatch.active_queue_ids.filter((id) => validQuestionSet.has(id));
+    const missedIds = (incomingBatch.missed_ids ?? []).filter((id) => validQuestionSet.has(id));
+    const scopedQuestionIds = incomingBatch.scoped_question_ids?.filter((id) =>
+      validQuestionSet.has(id)
+    );
+
+    const existingSession = await db
+      .select()
+      .from(practice_sessions)
+      .where(
+        and(
+          eq(practice_sessions.user_id, userId),
+          eq(practice_sessions.subject_id, subject.id),
+          eq(practice_sessions.mode, "cram"),
+          eq(practice_sessions.status, "in_progress")
+        )
+      )
+      .get();
+
+    const existingBatch = extractCramActiveBatchFromSession(existingSession);
+    const existingMs = existingBatch ? Date.parse(existingBatch.updated_at) || 0 : 0;
+    const incomingMs = Date.parse(incomingBatch.updated_at) || 0;
+
+    if (!existingBatch || incomingMs >= existingMs) {
+      if (batchQuestionIds.length === 0 || activeQueueIds.length === 0) {
+        if (existingSession) {
+          await db
+            .update(practice_sessions)
+            .set({ status: "abandoned" })
+            .where(eq(practice_sessions.id, existingSession.id));
+        }
+      } else {
+        const clampedPointer = Math.max(
+          0,
+          Math.min(incomingBatch.queue_pointer, activeQueueIds.length - 1)
+        );
+        const sessionPayload = {
+          mode: "cram" as const,
+          batch_size: Math.max(10, batchQuestionIds.length),
+          batch_index: 0,
+          total_batches: 1,
+          active_queue: activeQueueIds,
+          current_pointer: clampedPointer,
+          mastered_in_batch: masteredInBatchIds,
+          remaining_deck: [],
+          completed_batches: 0,
+          scope: incomingBatch.scope ?? "deck",
+          scoped_question_ids: scopedQuestionIds,
+          batch_question_ids: batchQuestionIds,
+          missed_ids: missedIds,
+          updated_at: incomingBatch.updated_at || nowIso
+        };
+
+        if (existingSession) {
+          await db
+            .update(practice_sessions)
+            .set({
+              mastered_cards: masteredInBatchIds.length,
+              total_cards: batchQuestionIds.length,
+              session_data: JSON.stringify(sessionPayload)
+            })
+            .where(eq(practice_sessions.id, existingSession.id));
+        } else {
+          await db.insert(practice_sessions).values({
+            id: crypto.randomUUID(),
+            user_id: userId,
+            subject_id: subject.id,
+            mode: "cram",
+            status: "in_progress",
+            is_unlimited: true,
+            duration_minutes: null,
+            started_at: incomingBatch.updated_at || nowIso,
+            completed_at: null,
+            total_cards: batchQuestionIds.length,
+            mastered_cards: masteredInBatchIds.length,
+            session_data: JSON.stringify(sessionPayload)
+          });
+        }
+      }
+    }
+  }
+
+  return getSubjectPracticeProgress(db, userId, subject.code);
 }
 
 // Filter unmastered question IDs for subject

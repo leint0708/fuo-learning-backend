@@ -1058,7 +1058,7 @@
     "image_file": "Q11.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nMatch the description to the organization. (Not all options are used.)\n\n1. This organization is responsible for overseeing and managing IP address allocation, domain name management, and protocol identifiers. | A. ISOC\n2. This organization is the largest developer of international standards in the world for a wide variety of products and services. It is known for its Open Systems Interconnection (OSI) reference model. | B. ISO\n3. This organization promotes the open development, evolution, and use of the Internet throughout the world. | C. EIA\n | D. IANA\nA. 1D-2B-3A\nB. 1D-2C-3A\nC. 1A-2D-3C\nD. 1A-2B-3C",
+    "question_text_extracted": "Question: 11\n(Choose 1 answer)\nMatch the description to the organization. (Not all options are used.)\nA. 1D-2B-3A\nB. 1D-2C-3A\nC. 1A-2D-3C\nD. 1A-2B-3C",
     "key_points_and_rules": "Ghép nối tổ chức tiêu chuẩn mạng (Standards Organizations) với mô tả tương ứng:\n- IANA (Internet Assigned Numbers Authority): Quản lý cấp phát địa chỉ IP, tên miền và các bộ định danh giao thức (1 - D).\n- ISO (International Organization for Standardization): Nhà phát triển tiêu chuẩn quốc tế lớn nhất, nổi tiếng với mô hình tham chiếu OSI (2 - B).\n- ISOC (Internet Society): Thúc đẩy sự phát triển mở, tiến hóa và sử dụng Internet trên toàn thế giới (3 - A).",
     "option_by_option_analysis": {
       "A": "Phân tích [ĐÚNG]: 1 tương ứng với D (IANA), 2 tương ứng với B (ISO), 3 tương ứng với A (ISOC). Ghép nối 1D-2B-3A là hoàn toàn chính xác.",
@@ -1248,7 +1248,7 @@
     "image_file": "Q13.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nMatch the IPv6 address with the IPv6 address type. (Not all options are used.)\nA. link-local | 1. 2001:DB8::BAF:3F57:FE94\nB. solicited node multicast | 2. FF02::1\nC. global unicast | 3. ::1\nD. all node multicast | 4. FF02::1:FFAE:F85F\nE. loopback\nF. unique local\n\nA. C1-D2-E3-B4\nB. C2-D1-E3-A4\nC. C1-F2-E4-B3\nD. C4-D2-E3-B1",
+    "question_text_extracted": "Question: 13\n(Choose 1 answer)\nMatch the IPv6 address with the IPv6 address type. (Not all options are used.)\nA. C1-D2-E3-B4\nB. C2-D1-E3-A4\nC. C1-F2-E4-B3\nD. C4-D2-E3-B1",
     "key_points_and_rules": "Ghép cặp chính xác địa chỉ IPv6 với loại địa chỉ tương ứng:\n- 2001:DB8::/32 là địa chỉ Global Unicast (C1)\n- FF02::1 là địa chỉ All-node Multicast (D2)\n- ::1 là địa chỉ Loopback (E3)\n- FF02::1:FFxx:xxxx là địa chỉ Solicited-node Multicast (B4)",
     "option_by_option_analysis": {
       "A": "[ĐÚNG] Ghép đúng toàn bộ các cặp: C1 (2001:DB8::BAF:3F57:FE94 là Global Unicast), D2 (FF02::1 là All node multicast), E3 (::1 là Loopback), B4 (FF02::1:FFAE:F85F là Solicited node multicast).",
@@ -3628,7 +3628,7 @@
     "image_file": "Q38.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 38\n(Choose 1 answer)\nMatch the command with the device mode at which the command is entered. (Not all options are used.)\nA. login\nB. service password-encryption\nC. ip address 192.168.4.4 255.255.255.0\nD. copy running-config startup-config\nE. enable\n\n1. R1(config)#\n2. R1>\n3. R1(config-router)#\n4. R1#\n5. R1(config-line)#\n6. R1(config-if)#",
+    "question_text_extracted": "Question: 38\n(Choose 1 answer)\nMatch the command with the device mode at which the command is entered. (Not all options are used.)",
     "key_points_and_rules": "Ghép nối lệnh cấu hình Cisco IOS với đúng chế độ (mode) của thiết bị khi gõ lệnh đó.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Lệnh `login` dùng trong chế độ cấu hình đường dòng (Line configuration mode), tương ứng với `5. R1(config-line)#` (A5).",
@@ -3890,7 +3890,7 @@
     "image_file": "Q41.webp",
     "has_illustration": true,
     "subject_domain": "Mạng máy tính & Hệ điều hành",
-    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nMatch the subnetwork to a host address that would be included within the subnetwork. (Not all options are used.)\nA. A4-B2-C5\nB. A2-B4-C5\nC. A1-B3-C2\nD. A2-B5-C1\n\n(Bảng gồm 2 cột: Cột trái chứa các subnetwork A, B, C; Cột phải chứa các host address 1, 2, 3, 4, 5)",
+    "question_text_extracted": "Question: 41\n(Choose 1 answer)\nMatch the subnetwork to a host address that would be included within the subnetwork. (Not all options are used.)\nA. A4-B2-C5\nB. A2-B4-C5\nC. A1-B3-C2\nD. A2-B5-C1",
     "key_points_and_rules": "Xác định dải địa chỉ IP cho từng Subnetwork /27 để tìm host address thuộc dải đó.",
     "option_by_option_analysis": {
       "A": "Phân tích chi tiết: Đánh giá phương án A [SAI]",

@@ -8,7 +8,7 @@ import { openapiSpec } from "./docs/openapi";
 import { authRouter } from "./api/auth";
 import { subjectsRouter } from "./api/subjects";
 import { examsRouter } from "./api/exams";
-import { attemptsRouter, examAttemptsRouter } from "./api/attempts";
+import { attemptsRouter, examAttemptsRouter, subjectAttemptsRouter } from "./api/attempts";
 import { statsRouter } from "./api/stats";
 import { questionsRouter } from "./api/questions";
 import { subjectPracticeRouter, practiceSessionRouter } from "./api/practice";
@@ -46,6 +46,7 @@ app.get("/static/exams/*", async (c) => {
 // Mount Sub-Routers
 app.route("/api/v1/auth", authRouter);
 app.route("/api/v1/subjects", subjectsRouter);
+app.route("/api/v1/subjects", subjectAttemptsRouter);
 app.route("/api/v1/exams", examsRouter);
 app.route("/api/v1/exams", examAttemptsRouter);
 app.route("/api/v1/attempts", attemptsRouter);
