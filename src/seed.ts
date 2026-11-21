@@ -3,6 +3,7 @@ import * as path from "node:path";
 import { eq } from "drizzle-orm";
 import type { Database } from "./db";
 import { subjects, exams, questions } from "./db/schema";
+import { clearStaticCache } from "./services/static-cache";
 
 const SUBJECT_METADATA: Record<string, { title: string; description: string }> = {
   MAD101: {
@@ -217,6 +218,8 @@ export async function seedExamsFromDirectory(db: Database, examsRootDir: string)
       }
     }
   }
+
+  clearStaticCache();
 
   return {
     subjectsCount: totalSubjects,

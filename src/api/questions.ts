@@ -33,6 +33,7 @@ questionsRouter.get("/drills", async (c) => {
     resolvedCount
   );
 
+  c.header("Cache-Control", "public, max-age=300, s-maxage=3600");
   return c.json(drillQuestions, 200);
 });
 

@@ -1,4 +1,4 @@
-import { sqliteTable, text, integer, real } from "drizzle-orm/sqlite-core";
+import { sqliteTable, text, integer, real, index } from "drizzle-orm/sqlite-core";
 
 export const users = sqliteTable("users", {
   id: text("id").primaryKey(),
@@ -19,117 +19,160 @@ export const subjects = sqliteTable("subjects", {
   created_at: text("created_at").notNull()
 });
 
-export const exams = sqliteTable("exams", {
-  id: text("id").primaryKey(),
-  subject_id: text("subject_id")
-    .notNull()
-    .references(() => subjects.id),
-  code: text("code").notNull().unique(),
-  title: text("title").notNull(),
-  description: text("description"),
-  duration_minutes: integer("duration_minutes").notNull().default(60),
-  total_questions: integer("total_questions").notNull(),
-  passing_score_percentage: real("passing_score_percentage").notNull().default(70.0),
-  is_published: integer("is_published", { mode: "boolean" }).notNull().default(true),
-  created_at: text("created_at").notNull()
-});
+export const exams = sqliteTable(
+  "exams",
+  {
+    id: text("id").primaryKey(),
+    subject_id: text("subject_id")
+      .notNull()
+      .references(() => subjects.id),
+    code: text("code").notNull().unique(),
+    title: text("title").notNull(),
+    description: text("description"),
+    duration_minutes: integer("duration_minutes").notNull().default(60),
+    total_questions: integer("total_questions").notNull(),
+    passing_score_percentage: real("passing_score_percentage").notNull().default(70.0),
+    is_published: integer("is_published", { mode: "boolean" }).notNull().default(true),
+    created_at: text("created_at").notNull()
+  },
+  (table) => [index("idx_exams_subject_id").on(table.subject_id)]
+);
 
-export const questions = sqliteTable("questions", {
-  id: text("id").primaryKey(),
-  subject_id: text("subject_id")
-    .notNull()
-    .references(() => subjects.id),
-  exam_id: text("exam_id").references(() => exams.id),
-  question_number: integer("question_number").notNull(),
-  question_id_code: text("question_id_code").notNull(),
-  question_text: text("question_text").notNull(),
-  image_file: text("image_file"),
-  question_type: text("question_type").notNull(),
-  options: text("options", { mode: "json" }).notNull(),
-  correct_answer: text("correct_answer").notNull(),
-  ai_explanation: text("ai_explanation"),
-  option_by_option_analysis: text("option_by_option_analysis", { mode: "json" }),
-  community_stats: text("community_stats", { mode: "json" }),
-  created_at: text("created_at").notNull()
-});
+export const questions = sqliteTable(
+  "questions",
+  {
+    id: text("id").primaryKey(),
+    subject_id: text("subject_id")
+      .notNull()
+      .references(() => subjects.id),
+    exam_id: text("exam_id").references(() => exams.id),
+    question_number: integer("question_number").notNull(),
+    question_id_code: text("question_id_code").notNull(),
+    question_text: text("question_text").notNull(),
+    image_file: text("image_file"),
+    question_type: text("question_type").notNull(),
+    options: text("options", { mode: "json" }).notNull(),
+    correct_answer: text("correct_answer").notNull(),
+    ai_explanation: text("ai_explanation"),
+    option_by_option_analysis: text("option_by_option_analysis", { mode: "json" }),
+    community_stats: text("community_stats", { mode: "json" }),
+    created_at: text("created_at").notNull()
+  },
+  (table) => [
+    index("idx_questions_subject_id").on(table.subject_id),
+    index("idx_questions_exam_id").on(table.exam_id)
+  ]
+);
 
-export const exam_attempts = sqliteTable("exam_attempts", {
-  id: text("id").primaryKey(),
-  user_id: text("user_id")
-    .notNull()
-    .references(() => users.id),
-  exam_id: text("exam_id")
-    .notNull()
-    .references(() => exams.id),
-  status: text("status").notNull(),
-  is_unlimited: integer("is_unlimited", { mode: "boolean" }).notNull().default(false),
-  started_at: text("started_at").notNull(),
-  expires_at: text("expires_at").notNull(),
-  submitted_at: text("submitted_at"),
-  total_questions: integer("total_questions").notNull(),
-  correct_answers_count: integer("correct_answers_count").notNull().default(0),
-  total_score: real("total_score").notNull().default(0.0),
-  percentage_score: real("percentage_score").notNull().default(0.0),
-  is_passed: integer("is_passed", { mode: "boolean" }).notNull().default(false),
-  duration_seconds: integer("duration_seconds").notNull().default(0),
-  question_ids: text("question_ids", { mode: "json" })
-});
+export const exam_attempts = sqliteTable(
+  "exam_attempts",
+  {
+    id: text("id").primaryKey(),
+    user_id: text("user_id")
+      .notNull()
+      .references(() => users.id),
+    exam_id: text("exam_id")
+      .notNull()
+      .references(() => exams.id),
+    status: text("status").notNull(),
+    is_unlimited: integer("is_unlimited", { mode: "boolean" }).notNull().default(false),
+    started_at: text("started_at").notNull(),
+    expires_at: text("expires_at").notNull(),
+    submitted_at: text("submitted_at"),
+    total_questions: integer("total_questions").notNull(),
+    correct_answers_count: integer("correct_answers_count").notNull().default(0),
+    total_score: real("total_score").notNull().default(0.0),
+    percentage_score: real("percentage_score").notNull().default(0.0),
+    is_passed: integer("is_passed", { mode: "boolean" }).notNull().default(false),
+    duration_seconds: integer("duration_seconds").notNull().default(0),
+    question_ids: text("question_ids", { mode: "json" })
+  },
+  (table) => [
+    index("idx_exam_attempts_user_id").on(table.user_id),
+    index("idx_exam_attempts_user_exam_status").on(table.user_id, table.exam_id, table.status)
+  ]
+);
 
-export const attempt_answers = sqliteTable("attempt_answers", {
-  id: text("id").primaryKey(),
-  attempt_id: text("attempt_id")
-    .notNull()
-    .references(() => exam_attempts.id),
-  question_id: text("question_id")
-    .notNull()
-    .references(() => questions.id),
-  selected_options: text("selected_options").notNull(),
-  is_correct: integer("is_correct", { mode: "boolean" }).notNull().default(false),
-  points_awarded: real("points_awarded").notNull().default(0.0),
-  answered_at: text("answered_at").notNull()
-});
+export const attempt_answers = sqliteTable(
+  "attempt_answers",
+  {
+    id: text("id").primaryKey(),
+    attempt_id: text("attempt_id")
+      .notNull()
+      .references(() => exam_attempts.id),
+    question_id: text("question_id")
+      .notNull()
+      .references(() => questions.id),
+    selected_options: text("selected_options").notNull(),
+    is_correct: integer("is_correct", { mode: "boolean" }).notNull().default(false),
+    points_awarded: real("points_awarded").notNull().default(0.0),
+    answered_at: text("answered_at").notNull()
+  },
+  (table) => [
+    index("idx_attempt_answers_attempt_id").on(table.attempt_id),
+    index("idx_attempt_answers_attempt_question").on(table.attempt_id, table.question_id)
+  ]
+);
 
-export const practice_sessions = sqliteTable("practice_sessions", {
-  id: text("id").primaryKey(),
-  user_id: text("user_id")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
-  subject_id: text("subject_id")
-    .notNull()
-    .references(() => subjects.id, { onDelete: "cascade" }),
-  mode: text("mode", { enum: ["cram", "learn"] }).notNull(),
-  status: text("status", { enum: ["in_progress", "completed", "abandoned"] })
-    .notNull()
-    .default("in_progress"),
-  is_unlimited: integer("is_unlimited", { mode: "boolean" }).notNull().default(true),
-  duration_minutes: integer("duration_minutes"),
-  started_at: text("started_at").notNull(),
-  completed_at: text("completed_at"),
-  total_cards: integer("total_cards").notNull(),
-  mastered_cards: integer("mastered_cards").notNull().default(0),
-  session_data: text("session_data", { mode: "json" }).notNull()
-});
+export const practice_sessions = sqliteTable(
+  "practice_sessions",
+  {
+    id: text("id").primaryKey(),
+    user_id: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    subject_id: text("subject_id")
+      .notNull()
+      .references(() => subjects.id, { onDelete: "cascade" }),
+    mode: text("mode", { enum: ["cram", "learn"] }).notNull(),
+    status: text("status", { enum: ["in_progress", "completed", "abandoned"] })
+      .notNull()
+      .default("in_progress"),
+    is_unlimited: integer("is_unlimited", { mode: "boolean" }).notNull().default(true),
+    duration_minutes: integer("duration_minutes"),
+    started_at: text("started_at").notNull(),
+    completed_at: text("completed_at"),
+    total_cards: integer("total_cards").notNull(),
+    mastered_cards: integer("mastered_cards").notNull().default(0),
+    session_data: text("session_data", { mode: "json" }).notNull()
+  },
+  (table) => [
+    index("idx_practice_sessions_user_subject_mode_status").on(
+      table.user_id,
+      table.subject_id,
+      table.mode,
+      table.status
+    )
+  ]
+);
 
-export const user_card_mastery = sqliteTable("user_card_mastery", {
-  id: text("id").primaryKey(),
-  user_id: text("user_id")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
-  subject_id: text("subject_id")
-    .notNull()
-    .references(() => subjects.id, { onDelete: "cascade" }),
-  question_id: text("question_id")
-    .notNull()
-    .references(() => questions.id, { onDelete: "cascade" }),
-  cram_mastered: integer("cram_mastered", { mode: "boolean" }).notNull().default(false),
-  learn_state: text("learn_state", { enum: ["not_yet_learned", "learning", "learned"] })
-    .notNull()
-    .default("not_yet_learned"),
-  consecutive_correct: integer("consecutive_correct").notNull().default(0),
-  wrong_attempts: integer("wrong_attempts").notNull().default(0),
-  total_attempts: integer("total_attempts").notNull().default(0),
-  updated_at: text("updated_at").notNull()
-});
+export const user_card_mastery = sqliteTable(
+  "user_card_mastery",
+  {
+    id: text("id").primaryKey(),
+    user_id: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    subject_id: text("subject_id")
+      .notNull()
+      .references(() => subjects.id, { onDelete: "cascade" }),
+    question_id: text("question_id")
+      .notNull()
+      .references(() => questions.id, { onDelete: "cascade" }),
+    cram_mastered: integer("cram_mastered", { mode: "boolean" }).notNull().default(false),
+    learn_state: text("learn_state", { enum: ["not_yet_learned", "learning", "learned"] })
+      .notNull()
+      .default("not_yet_learned"),
+    consecutive_correct: integer("consecutive_correct").notNull().default(0),
+    wrong_attempts: integer("wrong_attempts").notNull().default(0),
+    total_attempts: integer("total_attempts").notNull().default(0),
+    updated_at: text("updated_at").notNull()
+  },
+  (table) => [
+    index("idx_user_card_mastery_user_subject").on(table.user_id, table.subject_id),
+    index("idx_user_card_mastery_user_question").on(table.user_id, table.question_id)
+  ]
+);
 
 export const user_statistics = sqliteTable("user_statistics", {
   user_id: text("user_id")

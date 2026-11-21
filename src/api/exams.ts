@@ -9,5 +9,6 @@ examsRouter.get("/:exam_id", async (c) => {
   const examId = c.req.param("exam_id");
   const db = createDb(c.env.DB);
   const exam = await getExamById(db, examId);
+  c.header("Cache-Control", "public, max-age=300, s-maxage=3600");
   return c.json(exam, 200);
 });

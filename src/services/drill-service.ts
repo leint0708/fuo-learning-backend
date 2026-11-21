@@ -1,13 +1,16 @@
-import { eq, inArray, sql } from "drizzle-orm";
 import { HTTPException } from "hono/http-exception";
 import type { Database } from "../db";
-import { subjects, exams, questions } from "../db/schema";
 import { gradeQuestion, normalizeAnswer } from "./grading-service";
 import {
   parseCommunityStats,
   resolveBenchmarkAnswer,
   type BenchmarkMode
 } from "./community-stats";
+import {
+  getCachedSubjectByCode,
+  getCachedQuestionsBySubjectId,
+  getCachedQuestionById
+} from "./static-cache";
 import type {
   PracticeQuestion,
   DrillCheckResponse
@@ -18,36 +21,17 @@ export async function getDrillQuestions(
   subjectCode: string,
   count: number | null = 10
 ): Promise<PracticeQuestion[]> {
-  const subject = await db
-    .select()
-    .from(subjects)
-    .where(eq(subjects.code, subjectCode))
-    .get();
+  const subject = await getCachedSubjectByCode(db, subjectCode);
 
   if (!subject) {
     throw new HTTPException(404, { message: `Subject '${subjectCode}' not found` });
   }
 
-  const subjectExams = await db
-    .select({ id: exams.id })
-    .from(exams)
-    .where(eq(exams.subject_id, subject.id))
-    .all();
-
-  if (subjectExams.length === 0) {
-    return [];
-  }
-
-  const examIds = subjectExams.map((e) => e.id);
-  const baseQuery = db
-    .select()
-    .from(questions)
-    .where(inArray(questions.exam_id, examIds));
-
+  const allSubjectQuestions = await getCachedQuestionsBySubjectId(db, subject.id);
   const drillQuestions =
     count === null
-      ? await baseQuery.all()
-      : await baseQuery.limit(Math.max(1, Math.floor(count))).all();
+      ? allSubjectQuestions
+      : allSubjectQuestions.slice(0, Math.max(1, Math.floor(count)));
 
   return drillQuestions.map((q) => {
     let parsedOptions: Record<string, string> = {};
@@ -74,11 +58,7 @@ export async function checkDrillAnswer(
   selectedOptions: string,
   benchmarkMode: BenchmarkMode = "ai"
 ): Promise<DrillCheckResponse> {
-  const q = await db
-    .select()
-    .from(questions)
-    .where(eq(questions.id, questionId))
-    .get();
+  const q = await getCachedQuestionById(db, questionId);
 
   if (!q) {
     throw new HTTPException(404, { message: "Question not found" });

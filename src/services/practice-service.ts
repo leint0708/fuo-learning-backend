@@ -25,6 +25,10 @@ import type {
   CramActiveBatch
 } from "../schemas/practice";
 import { normalizeAnswer, gradeQuestion } from "./grading-service";
+import {
+  getCachedSubjectByCode,
+  getCachedQuestionIdsBySubjectId
+} from "./static-cache";
 
 // Utility: Fisher-Yates shuffle
 export function shuffleArray<T>(array: T[]): T[] {
@@ -346,11 +350,7 @@ export async function getSubjectPracticeProgress(
   userId: string,
   subjectCode: string
 ): Promise<SubjectPracticeProgressResponse> {
-  const subject = await db
-    .select()
-    .from(subjects)
-    .where(eq(subjects.code, subjectCode.toUpperCase()))
-    .get();
+  const subject = await getCachedSubjectByCode(db, subjectCode);
 
   if (!subject) {
     throw new HTTPException(404, { message: `Subject '${subjectCode}' not found` });
@@ -420,22 +420,13 @@ export async function syncSubjectPracticeProgress(
   subjectCode: string,
   payload: SyncPracticeProgressRequest
 ): Promise<SubjectPracticeProgressResponse> {
-  const subject = await db
-    .select()
-    .from(subjects)
-    .where(eq(subjects.code, subjectCode.toUpperCase()))
-    .get();
+  const subject = await getCachedSubjectByCode(db, subjectCode);
 
   if (!subject) {
     throw new HTTPException(404, { message: `Subject '${subjectCode}' not found` });
   }
 
-  const validQuestions = await db
-    .select({ id: questions.id })
-    .from(questions)
-    .where(eq(questions.subject_id, subject.id))
-    .all();
-  const validQuestionSet = new Set(validQuestions.map((q) => q.id));
+  const validQuestionSet = await getCachedQuestionIdsBySubjectId(db, subject.id);
 
   const existingRows = await db
     .select()
@@ -567,6 +558,8 @@ export async function syncSubjectPracticeProgress(
       .where(eq(user_card_mastery.id, row.id));
   }
 
+  let resolvedCramActiveBatch: CramActiveBatch | null | undefined = undefined;
+
   if (payload.cram_active_batch === null) {
     await db
       .update(practice_sessions)
@@ -579,6 +572,7 @@ export async function syncSubjectPracticeProgress(
           eq(practice_sessions.status, "in_progress")
         )
       );
+    resolvedCramActiveBatch = null;
   } else if (payload.cram_active_batch) {
     const incomingBatch = payload.cram_active_batch;
     const batchQuestionIds = incomingBatch.batch_question_ids.filter((id) => validQuestionSet.has(id));
@@ -616,11 +610,13 @@ export async function syncSubjectPracticeProgress(
             .set({ status: "abandoned" })
             .where(eq(practice_sessions.id, existingSession.id));
         }
+        resolvedCramActiveBatch = null;
       } else {
         const clampedPointer = Math.max(
           0,
           Math.min(incomingBatch.queue_pointer, activeQueueIds.length - 1)
         );
+        const updatedAt = incomingBatch.updated_at || nowIso;
         const sessionPayload = {
           mode: "cram" as const,
           batch_size: Math.max(10, batchQuestionIds.length),
@@ -635,7 +631,7 @@ export async function syncSubjectPracticeProgress(
           scoped_question_ids: scopedQuestionIds,
           batch_question_ids: batchQuestionIds,
           missed_ids: missedIds,
-          updated_at: incomingBatch.updated_at || nowIso
+          updated_at: updatedAt
         };
 
         if (existingSession) {
@@ -656,18 +652,105 @@ export async function syncSubjectPracticeProgress(
             status: "in_progress",
             is_unlimited: true,
             duration_minutes: null,
-            started_at: incomingBatch.updated_at || nowIso,
+            started_at: updatedAt,
             completed_at: null,
             total_cards: batchQuestionIds.length,
             mastered_cards: masteredInBatchIds.length,
             session_data: JSON.stringify(sessionPayload)
           });
         }
+
+        resolvedCramActiveBatch = {
+          scope: incomingBatch.scope ?? "deck",
+          scoped_question_ids: scopedQuestionIds,
+          batch_question_ids: batchQuestionIds,
+          active_queue_ids: activeQueueIds,
+          queue_pointer: clampedPointer,
+          mastered_in_batch_ids: masteredInBatchIds,
+          missed_ids: missedIds,
+          updated_at: updatedAt
+        };
       }
+    } else {
+      resolvedCramActiveBatch = existingBatch;
+    }
+  } else {
+    const activeCramSession = await db
+      .select()
+      .from(practice_sessions)
+      .where(
+        and(
+          eq(practice_sessions.user_id, userId),
+          eq(practice_sessions.subject_id, subject.id),
+          eq(practice_sessions.mode, "cram"),
+          eq(practice_sessions.status, "in_progress")
+        )
+      )
+      .get();
+    resolvedCramActiveBatch = extractCramActiveBatchFromSession(activeCramSession);
+  }
+
+  // Construct response directly from merged in-memory state to avoid redundant D1 table reads
+  const mergedRows = new Map(existingByQuestion);
+  for (const row of toInsert) {
+    mergedRows.set(row.question_id, {
+      id: row.id,
+      user_id: row.user_id,
+      subject_id: row.subject_id,
+      question_id: row.question_id,
+      cram_mastered: Boolean(row.cram_mastered),
+      learn_state: row.learn_state ?? "not_yet_learned",
+      consecutive_correct: row.consecutive_correct ?? 0,
+      wrong_attempts: row.wrong_attempts ?? 0,
+      total_attempts: row.total_attempts ?? 0,
+      updated_at: row.updated_at
+    });
+  }
+  const updateById = new Map(toUpdate.map((u) => [u.id, u]));
+  for (const [qId, existing] of mergedRows.entries()) {
+    const upd = updateById.get(existing.id);
+    if (upd) {
+      mergedRows.set(qId, {
+        ...existing,
+        cram_mastered: upd.cram_mastered,
+        learn_state: upd.learn_state,
+        consecutive_correct: upd.consecutive_correct,
+        wrong_attempts: upd.wrong_attempts,
+        total_attempts: upd.total_attempts,
+        updated_at: upd.updated_at
+      });
     }
   }
 
-  return getSubjectPracticeProgress(db, userId, subject.code);
+  const cramMasteredIds: string[] = [];
+  const learnMasteredIds: string[] = [];
+  const cardStats: Record<string, CardMasteryStat> = {};
+  for (const row of mergedRows.values()) {
+    if (row.cram_mastered) {
+      cramMasteredIds.push(row.question_id);
+    }
+    if (row.learn_state === "learned") {
+      learnMasteredIds.push(row.question_id);
+    }
+    if (row.learn_state === "learned" || row.learn_state === "learning" || row.total_attempts > 0) {
+      cardStats[row.question_id] = {
+        question_id: row.question_id,
+        consecutive_correct: row.consecutive_correct,
+        wrong_attempts: row.wrong_attempts,
+        total_attempts: row.total_attempts,
+        status: row.learn_state === "learned" ? "learned" : "learning",
+        last_answered_at: row.updated_at
+      };
+    }
+  }
+
+  return {
+    subject_code: subject.code,
+    cram_mastered_ids: cramMasteredIds,
+    learn_mastered_ids: learnMasteredIds,
+    card_stats: cardStats,
+    cram_active_batch: resolvedCramActiveBatch ?? null
+  };
 }
 
 // Filter unmastered question IDs for subject

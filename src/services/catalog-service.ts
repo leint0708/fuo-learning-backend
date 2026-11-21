@@ -1,27 +1,27 @@
-import { eq, sql } from "drizzle-orm";
 import { HTTPException } from "hono/http-exception";
 import type { Database } from "../db";
-import { subjects, exams } from "../db/schema";
 import type { SubjectSummary, SubjectDetail, ExamSummary, ExamDetail } from "../schemas/catalog";
+import {
+  getCachedAllSubjects,
+  getCachedSubjectByCode,
+  getCachedSubjectById,
+  getCachedExamsBySubjectId,
+  getCachedExamById
+} from "./static-cache";
 
 export async function listSubjects(db: Database): Promise<SubjectSummary[]> {
-  const allSubjects = await db.select().from(subjects).all();
+  const allSubjects = await getCachedAllSubjects(db);
 
   const results: SubjectSummary[] = [];
   for (const s of allSubjects) {
-    const examCountResult = await db
-      .select({ count: sql<number>`count(*)` })
-      .from(exams)
-      .where(eq(exams.subject_id, s.id))
-      .get();
-
+    const subjectExams = await getCachedExamsBySubjectId(db, s.id);
     results.push({
       id: s.id,
       code: s.code,
       title: s.title,
       description: s.description,
       icon_url: s.icon_url,
-      total_exams: Number(examCountResult?.count || 0)
+      total_exams: subjectExams.length
     });
   }
 
@@ -29,21 +29,13 @@ export async function listSubjects(db: Database): Promise<SubjectSummary[]> {
 }
 
 export async function getSubjectByCode(db: Database, code: string): Promise<SubjectDetail> {
-  const subject = await db
-    .select()
-    .from(subjects)
-    .where(eq(subjects.code, code.toUpperCase()))
-    .get();
+  const subject = await getCachedSubjectByCode(db, code);
 
   if (!subject) {
     throw new HTTPException(404, { message: `Subject '${code}' not found` });
   }
 
-  const examCountResult = await db
-    .select({ count: sql<number>`count(*)` })
-    .from(exams)
-    .where(eq(exams.subject_id, subject.id))
-    .get();
+  const subjectExams = await getCachedExamsBySubjectId(db, subject.id);
 
   return {
     id: subject.id,
@@ -51,27 +43,19 @@ export async function getSubjectByCode(db: Database, code: string): Promise<Subj
     title: subject.title,
     description: subject.description,
     icon_url: subject.icon_url,
-    total_exams: Number(examCountResult?.count || 0),
+    total_exams: subjectExams.length,
     created_at: subject.created_at
   };
 }
 
 export async function listExamsBySubject(db: Database, subjectCode: string): Promise<ExamSummary[]> {
-  const subject = await db
-    .select()
-    .from(subjects)
-    .where(eq(subjects.code, subjectCode.toUpperCase()))
-    .get();
+  const subject = await getCachedSubjectByCode(db, subjectCode);
 
   if (!subject) {
     throw new HTTPException(404, { message: `Subject '${subjectCode}' not found` });
   }
 
-  const examList = await db
-    .select()
-    .from(exams)
-    .where(eq(exams.subject_id, subject.id))
-    .all();
+  const examList = await getCachedExamsBySubjectId(db, subject.id);
 
   return examList.map((e) => ({
     id: e.id,
@@ -85,21 +69,13 @@ export async function listExamsBySubject(db: Database, subjectCode: string): Pro
 }
 
 export async function getExamById(db: Database, examId: string): Promise<ExamDetail> {
-  const exam = await db
-    .select()
-    .from(exams)
-    .where(eq(exams.id, examId))
-    .get();
+  const exam = await getCachedExamById(db, examId);
 
   if (!exam) {
     throw new HTTPException(404, { message: `Exam '${examId}' not found` });
   }
 
-  const subject = await db
-    .select()
-    .from(subjects)
-    .where(eq(subjects.id, exam.subject_id))
-    .get();
+  const subject = await getCachedSubjectById(db, exam.subject_id);
 
   return {
     id: exam.id,
